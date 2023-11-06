@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCustomerCommissionDefinitionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCustomerCommissionDefinitionResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class SaveCustomerCommissionDefinitionResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCustomerCommissionDefinitionResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCustomerCommissionDefinitionResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

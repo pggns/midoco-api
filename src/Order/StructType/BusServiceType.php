@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for busServiceType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BusServiceType extends AbstractStructBase
 {
     /**
@@ -251,6 +252,13 @@ class BusServiceType extends AbstractStructBase
      */
     protected ?int $paxPerService = null;
     /**
+     * The noOfNights
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var int|null
+     */
+    protected ?int $noOfNights = null;
+    /**
      * Constructor method for busServiceType
      * @uses BusServiceType::setPosition()
      * @uses BusServiceType::setServiceCode()
@@ -285,6 +293,7 @@ class BusServiceType extends AbstractStructBase
      * @uses BusServiceType::setCurrency()
      * @uses BusServiceType::setVatIncluded()
      * @uses BusServiceType::setPaxPerService()
+     * @uses BusServiceType::setNoOfNights()
      * @param int $position
      * @param string $serviceCode
      * @param string $serviceName
@@ -318,8 +327,9 @@ class BusServiceType extends AbstractStructBase
      * @param string $currency
      * @param bool $vatIncluded
      * @param int $paxPerService
+     * @param int $noOfNights
      */
-    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $accomodationCode = null, ?string $accomodationDesc = null, ?string $outwardFromDate = null, ?string $outwardFromTime = null, ?string $outwardFromCityCode = null, ?string $outwardFromCityDesc = null, ?string $outwardToDate = null, ?string $outwardToTime = null, ?string $outwardToCityCode = null, ?string $outwardToCityDesc = null, ?string $outwardSeat = null, ?string $outwardPlatform = null, ?string $returnFromDate = null, ?string $returnFromTime = null, ?string $returnFromCityCode = null, ?string $returnFromCityDesc = null, ?string $returnToDate = null, ?string $returnToTime = null, ?string $returnToCityCode = null, ?string $returnToCityDesc = null, ?string $returnSeat = null, ?string $returnPlatform = null, ?string $transfer = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $servicePrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?int $paxPerService = null)
+    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $accomodationCode = null, ?string $accomodationDesc = null, ?string $outwardFromDate = null, ?string $outwardFromTime = null, ?string $outwardFromCityCode = null, ?string $outwardFromCityDesc = null, ?string $outwardToDate = null, ?string $outwardToTime = null, ?string $outwardToCityCode = null, ?string $outwardToCityDesc = null, ?string $outwardSeat = null, ?string $outwardPlatform = null, ?string $returnFromDate = null, ?string $returnFromTime = null, ?string $returnFromCityCode = null, ?string $returnFromCityDesc = null, ?string $returnToDate = null, ?string $returnToTime = null, ?string $returnToCityCode = null, ?string $returnToCityDesc = null, ?string $returnSeat = null, ?string $returnPlatform = null, ?string $transfer = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $servicePrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?int $paxPerService = null, ?int $noOfNights = null)
     {
         $this
             ->setPosition($position)
@@ -354,7 +364,8 @@ class BusServiceType extends AbstractStructBase
             ->setServicePrice($servicePrice)
             ->setCurrency($currency)
             ->setVatIncluded($vatIncluded)
-            ->setPaxPerService($paxPerService);
+            ->setPaxPerService($paxPerService)
+            ->setNoOfNights($noOfNights);
     }
     /**
      * Get position value
@@ -514,7 +525,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($outwardFromDate, true), gettype($outwardFromDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($outwardFromDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $outwardFromDate)) {
+        if (!is_null($outwardFromDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $outwardFromDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($outwardFromDate, true)), __LINE__);
         }
         $this->outwardFromDate = $outwardFromDate;
@@ -541,7 +552,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($outwardFromTime, true), gettype($outwardFromTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($outwardFromTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $outwardFromTime)) {
+        if (!is_null($outwardFromTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $outwardFromTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($outwardFromTime, true)), __LINE__);
         }
         $this->outwardFromTime = $outwardFromTime;
@@ -622,7 +633,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($outwardToDate, true), gettype($outwardToDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($outwardToDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $outwardToDate)) {
+        if (!is_null($outwardToDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $outwardToDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($outwardToDate, true)), __LINE__);
         }
         $this->outwardToDate = $outwardToDate;
@@ -649,7 +660,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($outwardToTime, true), gettype($outwardToTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($outwardToTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $outwardToTime)) {
+        if (!is_null($outwardToTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $outwardToTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($outwardToTime, true)), __LINE__);
         }
         $this->outwardToTime = $outwardToTime;
@@ -776,7 +787,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($returnFromDate, true), gettype($returnFromDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($returnFromDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $returnFromDate)) {
+        if (!is_null($returnFromDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $returnFromDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($returnFromDate, true)), __LINE__);
         }
         $this->returnFromDate = $returnFromDate;
@@ -803,7 +814,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($returnFromTime, true), gettype($returnFromTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($returnFromTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $returnFromTime)) {
+        if (!is_null($returnFromTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $returnFromTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($returnFromTime, true)), __LINE__);
         }
         $this->returnFromTime = $returnFromTime;
@@ -884,7 +895,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($returnToDate, true), gettype($returnToDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($returnToDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $returnToDate)) {
+        if (!is_null($returnToDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $returnToDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($returnToDate, true)), __LINE__);
         }
         $this->returnToDate = $returnToDate;
@@ -911,7 +922,7 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($returnToTime, true), gettype($returnToTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($returnToTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $returnToTime)) {
+        if (!is_null($returnToTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $returnToTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($returnToTime, true)), __LINE__);
         }
         $this->returnToTime = $returnToTime;
@@ -1176,6 +1187,29 @@ class BusServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($paxPerService, true), gettype($paxPerService)), __LINE__);
         }
         $this->paxPerService = $paxPerService;
+        
+        return $this;
+    }
+    /**
+     * Get noOfNights value
+     * @return int|null
+     */
+    public function getNoOfNights(): ?int
+    {
+        return $this->noOfNights;
+    }
+    /**
+     * Set noOfNights value
+     * @param int $noOfNights
+     * @return \Pggns\MidocoApi\Order\StructType\BusServiceType
+     */
+    public function setNoOfNights(?int $noOfNights = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($noOfNights) && !(is_int($noOfNights) || ctype_digit($noOfNights))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($noOfNights, true), gettype($noOfNights)), __LINE__);
+        }
+        $this->noOfNights = $noOfNights;
         
         return $this;
     }

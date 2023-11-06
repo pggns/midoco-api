@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UpdateCustomerMailingProhibitedRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UpdateCustomerMailingProhibitedRequest extends AbstractStructBase
 {
     /**
@@ -81,7 +82,7 @@ class UpdateCustomerMailingProhibitedRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateCustomerMailingProhibitedRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateCustomerMailingProhibitedRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -104,7 +105,7 @@ class UpdateCustomerMailingProhibitedRequest extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateCustomerMailingProhibitedRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateCustomerMailingProhibitedRequest
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -127,7 +128,7 @@ class UpdateCustomerMailingProhibitedRequest extends AbstractStructBase
     /**
      * Set saveHistory value
      * @param bool $saveHistory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateCustomerMailingProhibitedRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateCustomerMailingProhibitedRequest
      */
     public function setSaveHistory(?bool $saveHistory = true): self
     {
@@ -150,7 +151,7 @@ class UpdateCustomerMailingProhibitedRequest extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateCustomerMailingProhibitedRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateCustomerMailingProhibitedRequest
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -173,7 +174,7 @@ class UpdateCustomerMailingProhibitedRequest extends AbstractStructBase
     /**
      * Set mailingModifyUser value
      * @param int $mailingModifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateCustomerMailingProhibitedRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateCustomerMailingProhibitedRequest
      */
     public function setMailingModifyUser(?int $mailingModifyUser = null): self
     {
@@ -196,7 +197,7 @@ class UpdateCustomerMailingProhibitedRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateCustomerMailingProhibitedRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateCustomerMailingProhibitedRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

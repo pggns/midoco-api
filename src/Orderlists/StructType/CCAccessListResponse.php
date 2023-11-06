@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CCAccessListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CCAccessListResponse extends AbstractStructBase
 {
     /**
@@ -50,12 +51,13 @@ class CCAccessListResponse extends AbstractStructBase
         return $this->MidocoCCAccessList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCCAccessList method
+     * This method is responsible for validating the value(s) passed to the setMidocoCCAccessList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCCAccessList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCCAccessListForArrayConstraintsFromSetMidocoCCAccessList(?array $values = []): string
+    public static function validateMidocoCCAccessListForArrayConstraintFromSetMidocoCCAccessList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -84,7 +86,7 @@ class CCAccessListResponse extends AbstractStructBase
     public function setMidocoCCAccessList(?array $midocoCCAccessList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCCAccessListArrayErrorMessage = self::validateMidocoCCAccessListForArrayConstraintsFromSetMidocoCCAccessList($midocoCCAccessList))) {
+        if ('' !== ($midocoCCAccessListArrayErrorMessage = self::validateMidocoCCAccessListForArrayConstraintFromSetMidocoCCAccessList($midocoCCAccessList))) {
             throw new InvalidArgumentException($midocoCCAccessListArrayErrorMessage, __LINE__);
         }
         $this->MidocoCCAccessList = $midocoCCAccessList;

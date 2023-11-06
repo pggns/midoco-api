@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SavePrintQueueResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavePrintQueueResponse extends AbstractStructBase
 {
     /**

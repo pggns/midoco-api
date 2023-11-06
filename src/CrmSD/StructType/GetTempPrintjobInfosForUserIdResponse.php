@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTempPrintjobInfosForUserIdResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTempPrintjobInfosForUserIdResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetTempPrintjobInfosForUserIdResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTempPrintjobInfo
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo[]
      */
     protected ?array $MidocoTempPrintjobInfo = null;
     /**
      * Constructor method for GetTempPrintjobInfosForUserIdResponse
      * @uses GetTempPrintjobInfosForUserIdResponse::setMidocoTempPrintjobInfo()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
      */
     public function __construct(?array $midocoTempPrintjobInfo = null)
     {
@@ -34,19 +35,20 @@ class GetTempPrintjobInfosForUserIdResponse extends AbstractStructBase
     }
     /**
      * Get MidocoTempPrintjobInfo value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo[]
      */
     public function getMidocoTempPrintjobInfo(): ?array
     {
         return $this->MidocoTempPrintjobInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTempPrintjobInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoTempPrintjobInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTempPrintjobInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTempPrintjobInfoForArrayConstraintsFromSetMidocoTempPrintjobInfo(?array $values = []): string
+    public static function validateMidocoTempPrintjobInfoForArrayConstraintFromSetMidocoTempPrintjobInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetTempPrintjobInfosForUserIdResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getTempPrintjobInfosForUserIdResponseMidocoTempPrintjobInfoItem) {
             // validation for constraint: itemType
-            if (!$getTempPrintjobInfosForUserIdResponseMidocoTempPrintjobInfoItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo) {
+            if (!$getTempPrintjobInfosForUserIdResponseMidocoTempPrintjobInfoItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo) {
                 $invalidValues[] = is_object($getTempPrintjobInfosForUserIdResponseMidocoTempPrintjobInfoItem) ? get_class($getTempPrintjobInfosForUserIdResponseMidocoTempPrintjobInfoItem) : sprintf('%s(%s)', gettype($getTempPrintjobInfosForUserIdResponseMidocoTempPrintjobInfoItem), var_export($getTempPrintjobInfosForUserIdResponseMidocoTempPrintjobInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetTempPrintjobInfosForUserIdResponse extends AbstractStructBase
     /**
      * Set MidocoTempPrintjobInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTempPrintjobInfosForUserIdResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo[] $midocoTempPrintjobInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTempPrintjobInfosForUserIdResponse
      */
     public function setMidocoTempPrintjobInfo(?array $midocoTempPrintjobInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTempPrintjobInfoArrayErrorMessage = self::validateMidocoTempPrintjobInfoForArrayConstraintsFromSetMidocoTempPrintjobInfo($midocoTempPrintjobInfo))) {
+        if ('' !== ($midocoTempPrintjobInfoArrayErrorMessage = self::validateMidocoTempPrintjobInfoForArrayConstraintFromSetMidocoTempPrintjobInfo($midocoTempPrintjobInfo))) {
             throw new InvalidArgumentException($midocoTempPrintjobInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoTempPrintjobInfo = $midocoTempPrintjobInfo;
@@ -85,14 +87,14 @@ class GetTempPrintjobInfosForUserIdResponse extends AbstractStructBase
     /**
      * Add item to MidocoTempPrintjobInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTempPrintjobInfosForUserIdResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTempPrintjobInfosForUserIdResponse
      */
-    public function addToMidocoTempPrintjobInfo(\Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo $item): self
+    public function addToMidocoTempPrintjobInfo(\Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo) {
-            throw new InvalidArgumentException(sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTempPrintjobInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo) {
+            throw new InvalidArgumentException(sprintf('The MidocoTempPrintjobInfo property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoTempPrintjobInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTempPrintjobInfo[] = $item;
         

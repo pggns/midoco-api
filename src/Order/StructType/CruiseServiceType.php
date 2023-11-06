@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for cruiseServiceType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CruiseServiceType extends AbstractStructBase
 {
     /**
@@ -101,6 +102,13 @@ class CruiseServiceType extends AbstractStructBase
      * @var string|null
      */
     protected ?string $noOfServices = null;
+    /**
+     * The noOfNights
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var int|null
+     */
+    protected ?int $noOfNights = null;
     /**
      * The serviceStatus
      * @var string|null
@@ -255,6 +263,7 @@ class CruiseServiceType extends AbstractStructBase
      * @uses CruiseServiceType::setEndDate()
      * @uses CruiseServiceType::setPersonsPerService()
      * @uses CruiseServiceType::setNoOfServices()
+     * @uses CruiseServiceType::setNoOfNights()
      * @uses CruiseServiceType::setServiceStatus()
      * @uses CruiseServiceType::setPersonAssignment()
      * @uses CruiseServiceType::setTotalPrice()
@@ -288,6 +297,7 @@ class CruiseServiceType extends AbstractStructBase
      * @param string $endDate
      * @param string $personsPerService
      * @param string $noOfServices
+     * @param int $noOfNights
      * @param string $serviceStatus
      * @param string $personAssignment
      * @param float $totalPrice
@@ -310,7 +320,7 @@ class CruiseServiceType extends AbstractStructBase
      * @param string $returnDepartureDescr
      * @param string $returnDestinationDescr
      */
-    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $cabinCode = null, ?string $cabinDescription = null, ?string $cateringCode = null, ?string $cateringDescription = null, ?string $startDate = null, ?string $endDate = null, ?string $personsPerService = null, ?string $noOfServices = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $totalPrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?string $country = null, ?string $transfer = null, ?string $embarkation = null, ?string $debarkation = null, ?string $route = null, ?string $deck = null, ?string $cabin_no = null, ?string $vehicle = null, ?string $vehicle_dimension = null, ?string $vehicle_plate_number = null, ?string $arrivalTransportType = null, ?string $departureDescr = null, ?string $destinationDescr = null, ?string $returnTransportType = null, ?string $returnDepartureDescr = null, ?string $returnDestinationDescr = null)
+    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $cabinCode = null, ?string $cabinDescription = null, ?string $cateringCode = null, ?string $cateringDescription = null, ?string $startDate = null, ?string $endDate = null, ?string $personsPerService = null, ?string $noOfServices = null, ?int $noOfNights = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $totalPrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?string $country = null, ?string $transfer = null, ?string $embarkation = null, ?string $debarkation = null, ?string $route = null, ?string $deck = null, ?string $cabin_no = null, ?string $vehicle = null, ?string $vehicle_dimension = null, ?string $vehicle_plate_number = null, ?string $arrivalTransportType = null, ?string $departureDescr = null, ?string $destinationDescr = null, ?string $returnTransportType = null, ?string $returnDepartureDescr = null, ?string $returnDestinationDescr = null)
     {
         $this
             ->setPosition($position)
@@ -325,6 +335,7 @@ class CruiseServiceType extends AbstractStructBase
             ->setEndDate($endDate)
             ->setPersonsPerService($personsPerService)
             ->setNoOfServices($noOfServices)
+            ->setNoOfNights($noOfNights)
             ->setServiceStatus($serviceStatus)
             ->setPersonAssignment($personAssignment)
             ->setTotalPrice($totalPrice)
@@ -567,7 +578,7 @@ class CruiseServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($startDate, true), gettype($startDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($startDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $startDate)) {
+        if (!is_null($startDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $startDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($startDate, true)), __LINE__);
         }
         $this->startDate = $startDate;
@@ -594,7 +605,7 @@ class CruiseServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($endDate, true), gettype($endDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($endDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $endDate)) {
+        if (!is_null($endDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $endDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($endDate, true)), __LINE__);
         }
         $this->endDate = $endDate;
@@ -644,6 +655,29 @@ class CruiseServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($noOfServices, true), gettype($noOfServices)), __LINE__);
         }
         $this->noOfServices = $noOfServices;
+        
+        return $this;
+    }
+    /**
+     * Get noOfNights value
+     * @return int|null
+     */
+    public function getNoOfNights(): ?int
+    {
+        return $this->noOfNights;
+    }
+    /**
+     * Set noOfNights value
+     * @param int $noOfNights
+     * @return \Pggns\MidocoApi\Order\StructType\CruiseServiceType
+     */
+    public function setNoOfNights(?int $noOfNights = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($noOfNights) && !(is_int($noOfNights) || ctype_digit($noOfNights))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($noOfNights, true), gettype($noOfNights)), __LINE__);
+        }
+        $this->noOfNights = $noOfNights;
         
         return $this;
     }

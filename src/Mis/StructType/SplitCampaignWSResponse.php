@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * database)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SplitCampaignWSResponse extends AbstractStructBase
 {
     /**

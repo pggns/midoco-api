@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ParticipantListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ParticipantListResponse extends AbstractStructBase
 {
     /**
@@ -58,12 +59,13 @@ class ParticipantListResponse extends AbstractStructBase
         return $this->MidocoParticipantList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoParticipantList method
+     * This method is responsible for validating the value(s) passed to the setMidocoParticipantList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoParticipantList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoParticipantListForArrayConstraintsFromSetMidocoParticipantList(?array $values = []): string
+    public static function validateMidocoParticipantListForArrayConstraintFromSetMidocoParticipantList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -92,7 +94,7 @@ class ParticipantListResponse extends AbstractStructBase
     public function setMidocoParticipantList(?array $midocoParticipantList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoParticipantListArrayErrorMessage = self::validateMidocoParticipantListForArrayConstraintsFromSetMidocoParticipantList($midocoParticipantList))) {
+        if ('' !== ($midocoParticipantListArrayErrorMessage = self::validateMidocoParticipantListForArrayConstraintFromSetMidocoParticipantList($midocoParticipantList))) {
             throw new InvalidArgumentException($midocoParticipantListArrayErrorMessage, __LINE__);
         }
         $this->MidocoParticipantList = $midocoParticipantList;

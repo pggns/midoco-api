@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmCustomerDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmCustomerDTO extends CustomerDTO
 {
     /**
@@ -18,25 +19,25 @@ class CrmCustomerDTO extends CustomerDTO
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $MidocoCrmAddress = null;
     /**
      * The MidocoCrmPerson
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmPerson
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $MidocoCrmPerson = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $MidocoCrmPerson = null;
     /**
      * The MidocoCrmCompany
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmCompany
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $MidocoCrmCompany = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $MidocoCrmCompany = null;
     /**
      * The numTravels
      * @var int|null
@@ -102,9 +103,9 @@ class CrmCustomerDTO extends CustomerDTO
      * @uses CrmCustomerDTO::setExistContactEntries()
      * @uses CrmCustomerDTO::setExistCrmNotices()
      * @uses CrmCustomerDTO::setExistCustomerLinks()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany
      * @param int $numTravels
      * @param float $travelAmount
      * @param string $firstTravelDate
@@ -116,7 +117,7 @@ class CrmCustomerDTO extends CustomerDTO
      * @param bool $existCrmNotices
      * @param bool $existCustomerLinks
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null, ?int $numTravels = null, ?float $travelAmount = null, ?string $firstTravelDate = null, ?string $lastTravelDate = null, ?float $unpaidAmount = null, ?bool $existCrmDocuments = null, ?bool $existCrmAddress = null, ?bool $existContactEntries = null, ?bool $existCrmNotices = null, ?bool $existCustomerLinks = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $midocoCrmAddress = null, ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson = null, ?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany = null, ?int $numTravels = null, ?float $travelAmount = null, ?string $firstTravelDate = null, ?string $lastTravelDate = null, ?float $unpaidAmount = null, ?bool $existCrmDocuments = null, ?bool $existCrmAddress = null, ?bool $existContactEntries = null, ?bool $existCrmNotices = null, ?bool $existCustomerLinks = null)
     {
         $this
             ->setMidocoCrmAddress($midocoCrmAddress)
@@ -135,18 +136,18 @@ class CrmCustomerDTO extends CustomerDTO
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress|null
      */
-    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress
+    public function getMidocoCrmAddress(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress
     {
         return $this->MidocoCrmAddress;
     }
     /**
      * Set MidocoCrmAddress value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $midocoCrmAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
-    public function setMidocoCrmAddress(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
+    public function setMidocoCrmAddress(?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $midocoCrmAddress = null): self
     {
         $this->MidocoCrmAddress = $midocoCrmAddress;
         
@@ -154,18 +155,18 @@ class CrmCustomerDTO extends CustomerDTO
     }
     /**
      * Get MidocoCrmPerson value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO|null
      */
-    public function getMidocoCrmPerson(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO
+    public function getMidocoCrmPerson(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO
     {
         return $this->MidocoCrmPerson;
     }
     /**
      * Set MidocoCrmPerson value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
-    public function setMidocoCrmPerson(?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson = null): self
+    public function setMidocoCrmPerson(?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson = null): self
     {
         $this->MidocoCrmPerson = $midocoCrmPerson;
         
@@ -173,18 +174,18 @@ class CrmCustomerDTO extends CustomerDTO
     }
     /**
      * Get MidocoCrmCompany value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO|null
      */
-    public function getMidocoCrmCompany(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+    public function getMidocoCrmCompany(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
     {
         return $this->MidocoCrmCompany;
     }
     /**
      * Set MidocoCrmCompany value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
-    public function setMidocoCrmCompany(?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null): self
+    public function setMidocoCrmCompany(?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany = null): self
     {
         $this->MidocoCrmCompany = $midocoCrmCompany;
         
@@ -201,7 +202,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set numTravels value
      * @param int $numTravels
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setNumTravels(?int $numTravels = null): self
     {
@@ -224,7 +225,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set travelAmount value
      * @param float $travelAmount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setTravelAmount(?float $travelAmount = null): self
     {
@@ -247,7 +248,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set firstTravelDate value
      * @param string $firstTravelDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setFirstTravelDate(?string $firstTravelDate = null): self
     {
@@ -270,7 +271,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set lastTravelDate value
      * @param string $lastTravelDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setLastTravelDate(?string $lastTravelDate = null): self
     {
@@ -293,7 +294,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set unpaidAmount value
      * @param float $unpaidAmount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setUnpaidAmount(?float $unpaidAmount = null): self
     {
@@ -316,7 +317,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set existCrmDocuments value
      * @param bool $existCrmDocuments
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setExistCrmDocuments(?bool $existCrmDocuments = null): self
     {
@@ -339,7 +340,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set existCrmAddress value
      * @param bool $existCrmAddress
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setExistCrmAddress(?bool $existCrmAddress = null): self
     {
@@ -362,7 +363,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set existContactEntries value
      * @param bool $existContactEntries
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setExistContactEntries(?bool $existContactEntries = null): self
     {
@@ -385,7 +386,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set existCrmNotices value
      * @param bool $existCrmNotices
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setExistCrmNotices(?bool $existCrmNotices = null): self
     {
@@ -408,7 +409,7 @@ class CrmCustomerDTO extends CustomerDTO
     /**
      * Set existCustomerLinks value
      * @param bool $existCustomerLinks
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
      */
     public function setExistCustomerLinks(?bool $existCustomerLinks = null): self
     {

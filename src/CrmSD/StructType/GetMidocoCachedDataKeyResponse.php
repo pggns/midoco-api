@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoCachedDataKeyResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoCachedDataKeyResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetMidocoCachedDataKeyResponse extends AbstractStructBase
     /**
      * Set dataKey value
      * @param string $dataKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoCachedDataKeyResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoCachedDataKeyResponse
      */
     public function setDataKey(?string $dataKey = null): self
     {

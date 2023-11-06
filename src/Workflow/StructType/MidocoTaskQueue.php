@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTaskQueue StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTaskQueue extends TaskQueueDTO
 {
     /**
@@ -52,12 +53,13 @@ class MidocoTaskQueue extends TaskQueueDTO
         return $this->unitNames;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitNames method
+     * This method is responsible for validating the value(s) passed to the setUnitNames method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitNames method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitNamesForArrayConstraintsFromSetUnitNames(?array $values = []): string
+    public static function validateUnitNamesForArrayConstraintFromSetUnitNames(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -86,7 +88,7 @@ class MidocoTaskQueue extends TaskQueueDTO
     public function setUnitNames(?array $unitNames = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unitNamesArrayErrorMessage = self::validateUnitNamesForArrayConstraintsFromSetUnitNames($unitNames))) {
+        if ('' !== ($unitNamesArrayErrorMessage = self::validateUnitNamesForArrayConstraintFromSetUnitNames($unitNames))) {
             throw new InvalidArgumentException($unitNamesArrayErrorMessage, __LINE__);
         }
         $this->unitNames = $unitNames;
@@ -118,12 +120,13 @@ class MidocoTaskQueue extends TaskQueueDTO
         return $this->MidocoTaskQueueDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTaskQueueDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoTaskQueueDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTaskQueueDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTaskQueueDescriptionForArrayConstraintsFromSetMidocoTaskQueueDescription(?array $values = []): string
+    public static function validateMidocoTaskQueueDescriptionForArrayConstraintFromSetMidocoTaskQueueDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -152,7 +155,7 @@ class MidocoTaskQueue extends TaskQueueDTO
     public function setMidocoTaskQueueDescription(?array $midocoTaskQueueDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTaskQueueDescriptionArrayErrorMessage = self::validateMidocoTaskQueueDescriptionForArrayConstraintsFromSetMidocoTaskQueueDescription($midocoTaskQueueDescription))) {
+        if ('' !== ($midocoTaskQueueDescriptionArrayErrorMessage = self::validateMidocoTaskQueueDescriptionForArrayConstraintFromSetMidocoTaskQueueDescription($midocoTaskQueueDescription))) {
             throw new InvalidArgumentException($midocoTaskQueueDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoTaskQueueDescription = $midocoTaskQueueDescription;

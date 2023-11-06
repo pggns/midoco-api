@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmMidocoSettlementDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmMidocoSettlementDTO extends AbstractStructBase
 {
     /**
@@ -183,7 +184,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set bussinesYearStart value
      * @param int $bussinesYearStart
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setBussinesYearStart(?int $bussinesYearStart = null): self
     {
@@ -206,7 +207,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set chargesInvoiceSeparately value
      * @param bool $chargesInvoiceSeparately
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setChargesInvoiceSeparately(?bool $chargesInvoiceSeparately = null): self
     {
@@ -229,7 +230,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set cumulated value
      * @param bool $cumulated
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setCumulated(?bool $cumulated = null): self
     {
@@ -252,7 +253,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -275,7 +276,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set excludedSuppliers value
      * @param string $excludedSuppliers
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setExcludedSuppliers(?string $excludedSuppliers = null): self
     {
@@ -298,7 +299,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set factor value
      * @param int $factor
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setFactor(?int $factor = null): self
     {
@@ -321,7 +322,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set fixedAmount value
      * @param float $fixedAmount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setFixedAmount(?float $fixedAmount = null): self
     {
@@ -344,7 +345,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set fixedAmountDescription value
      * @param string $fixedAmountDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setFixedAmountDescription(?string $fixedAmountDescription = null): self
     {
@@ -367,7 +368,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set fixedAmountPerOrgunit value
      * @param float $fixedAmountPerOrgunit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setFixedAmountPerOrgunit(?float $fixedAmountPerOrgunit = null): self
     {
@@ -390,7 +391,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set invoiceSeparately value
      * @param bool $invoiceSeparately
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setInvoiceSeparately(?bool $invoiceSeparately = null): self
     {
@@ -413,7 +414,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set isLevelProYear value
      * @param bool $isLevelProYear
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setIsLevelProYear(?bool $isLevelProYear = null): self
     {
@@ -436,7 +437,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set isPercent value
      * @param bool $isPercent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setIsPercent(?bool $isPercent = null): self
     {
@@ -459,7 +460,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set levelType value
      * @param int $levelType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setLevelType(?int $levelType = null): self
     {
@@ -482,7 +483,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set mdocInvoiceSeparately value
      * @param bool $mdocInvoiceSeparately
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setMdocInvoiceSeparately(?bool $mdocInvoiceSeparately = null): self
     {
@@ -505,7 +506,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {
@@ -528,7 +529,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set startSettlementDate value
      * @param string $startSettlementDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setStartSettlementDate(?string $startSettlementDate = null): self
     {
@@ -551,7 +552,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set summateLevels value
      * @param bool $summateLevels
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setSummateLevels(?bool $summateLevels = null): self
     {
@@ -574,7 +575,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set topPaidAmount value
      * @param float $topPaidAmount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setTopPaidAmount(?float $topPaidAmount = null): self
     {
@@ -597,7 +598,7 @@ class CrmMidocoSettlementDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlementDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {

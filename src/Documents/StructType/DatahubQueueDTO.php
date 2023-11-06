@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DatahubQueueDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DatahubQueueDTO extends AbstractStructBase
 {
     /**
@@ -99,6 +100,11 @@ class DatahubQueueDTO extends AbstractStructBase
      */
     protected ?string $reservationId = null;
     /**
+     * The salesChannel
+     * @var string|null
+     */
+    protected ?string $salesChannel = null;
+    /**
      * The systemId
      * @var string|null
      */
@@ -127,6 +133,7 @@ class DatahubQueueDTO extends AbstractStructBase
      * @uses DatahubQueueDTO::setProcessedTime()
      * @uses DatahubQueueDTO::setProcessingStart()
      * @uses DatahubQueueDTO::setReservationId()
+     * @uses DatahubQueueDTO::setSalesChannel()
      * @uses DatahubQueueDTO::setSystemId()
      * @uses DatahubQueueDTO::setUnitName()
      * @param string $creationTime
@@ -146,10 +153,11 @@ class DatahubQueueDTO extends AbstractStructBase
      * @param string $processedTime
      * @param string $processingStart
      * @param string $reservationId
+     * @param string $salesChannel
      * @param string $systemId
      * @param string $unitName
      */
-    public function __construct(?string $creationTime = null, ?string $env = null, ?string $externalSystem = null, ?int $id = null, ?string $importError = null, ?int $importUser = null, ?string $importableAloneAfter = null, ?bool $isIgnored = null, ?bool $isImportableAlone = null, ?bool $isImported = null, ?bool $isProcessed = null, ?string $messageBytes = null, ?string $messageType = null, ?int $orderId = null, ?string $processedTime = null, ?string $processingStart = null, ?string $reservationId = null, ?string $systemId = null, ?string $unitName = null)
+    public function __construct(?string $creationTime = null, ?string $env = null, ?string $externalSystem = null, ?int $id = null, ?string $importError = null, ?int $importUser = null, ?string $importableAloneAfter = null, ?bool $isIgnored = null, ?bool $isImportableAlone = null, ?bool $isImported = null, ?bool $isProcessed = null, ?string $messageBytes = null, ?string $messageType = null, ?int $orderId = null, ?string $processedTime = null, ?string $processingStart = null, ?string $reservationId = null, ?string $salesChannel = null, ?string $systemId = null, ?string $unitName = null)
     {
         $this
             ->setCreationTime($creationTime)
@@ -169,6 +177,7 @@ class DatahubQueueDTO extends AbstractStructBase
             ->setProcessedTime($processedTime)
             ->setProcessingStart($processingStart)
             ->setReservationId($reservationId)
+            ->setSalesChannel($salesChannel)
             ->setSystemId($systemId)
             ->setUnitName($unitName);
     }
@@ -560,6 +569,29 @@ class DatahubQueueDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reservationId, true), gettype($reservationId)), __LINE__);
         }
         $this->reservationId = $reservationId;
+        
+        return $this;
+    }
+    /**
+     * Get salesChannel value
+     * @return string|null
+     */
+    public function getSalesChannel(): ?string
+    {
+        return $this->salesChannel;
+    }
+    /**
+     * Set salesChannel value
+     * @param string $salesChannel
+     * @return \Pggns\MidocoApi\Documents\StructType\DatahubQueueDTO
+     */
+    public function setSalesChannel(?string $salesChannel = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($salesChannel) && !is_string($salesChannel)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($salesChannel, true), gettype($salesChannel)), __LINE__);
+        }
+        $this->salesChannel = $salesChannel;
         
         return $this;
     }

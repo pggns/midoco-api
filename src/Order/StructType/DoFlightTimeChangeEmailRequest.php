@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DoFlightTimeChangeEmailRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DoFlightTimeChangeEmailRequest extends AbstractStructBase
 {
     /**
@@ -306,12 +307,13 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
         return $this->AdditionalTemplateMapInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setAdditionalTemplateMapInfo method
+     * This method is responsible for validating the value(s) passed to the setAdditionalTemplateMapInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAdditionalTemplateMapInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAdditionalTemplateMapInfoForArrayConstraintsFromSetAdditionalTemplateMapInfo(?array $values = []): string
+    public static function validateAdditionalTemplateMapInfoForArrayConstraintFromSetAdditionalTemplateMapInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -340,7 +342,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     public function setAdditionalTemplateMapInfo(?array $additionalTemplateMapInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($additionalTemplateMapInfoArrayErrorMessage = self::validateAdditionalTemplateMapInfoForArrayConstraintsFromSetAdditionalTemplateMapInfo($additionalTemplateMapInfo))) {
+        if ('' !== ($additionalTemplateMapInfoArrayErrorMessage = self::validateAdditionalTemplateMapInfoForArrayConstraintFromSetAdditionalTemplateMapInfo($additionalTemplateMapInfo))) {
             throw new InvalidArgumentException($additionalTemplateMapInfoArrayErrorMessage, __LINE__);
         }
         $this->AdditionalTemplateMapInfo = $additionalTemplateMapInfo;
@@ -372,12 +374,13 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
         return $this->selectedMailAttachments;
     }
     /**
-     * This method is responsible for validating the values passed to the setSelectedMailAttachments method
+     * This method is responsible for validating the value(s) passed to the setSelectedMailAttachments method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSelectedMailAttachments method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSelectedMailAttachmentsForArrayConstraintsFromSetSelectedMailAttachments(?array $values = []): string
+    public static function validateSelectedMailAttachmentsForArrayConstraintFromSetSelectedMailAttachments(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -406,7 +409,7 @@ class DoFlightTimeChangeEmailRequest extends AbstractStructBase
     public function setSelectedMailAttachments(?array $selectedMailAttachments = null): self
     {
         // validation for constraint: array
-        if ('' !== ($selectedMailAttachmentsArrayErrorMessage = self::validateSelectedMailAttachmentsForArrayConstraintsFromSetSelectedMailAttachments($selectedMailAttachments))) {
+        if ('' !== ($selectedMailAttachmentsArrayErrorMessage = self::validateSelectedMailAttachmentsForArrayConstraintFromSetSelectedMailAttachments($selectedMailAttachments))) {
             throw new InvalidArgumentException($selectedMailAttachmentsArrayErrorMessage, __LINE__);
         }
         $this->selectedMailAttachments = $selectedMailAttachments;

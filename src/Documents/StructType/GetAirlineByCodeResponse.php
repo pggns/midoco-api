@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getAirlineForBSPCode --- returns the airline for a BSP code
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAirlineByCodeResponse extends AbstractStructBase
 {
     /**

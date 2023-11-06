@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BankAccountDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BankAccountDTO extends AbstractStructBase
 {
     /**
@@ -79,16 +80,6 @@ class BankAccountDTO extends AbstractStructBase
      */
     protected ?string $department = null;
     /**
-     * The esrBankParticipantId
-     * @var string|null
-     */
-    protected ?string $esrBankParticipantId = null;
-    /**
-     * The esrParticipantId
-     * @var string|null
-     */
-    protected ?string $esrParticipantId = null;
-    /**
      * The firmCode
      * @var string|null
      */
@@ -144,6 +135,21 @@ class BankAccountDTO extends AbstractStructBase
      */
     protected ?bool $processStatements = null;
     /**
+     * The qrIban
+     * @var string|null
+     */
+    protected ?string $qrIban = null;
+    /**
+     * The qrInvoiceBankParticipantId
+     * @var string|null
+     */
+    protected ?string $qrInvoiceBankParticipantId = null;
+    /**
+     * The qrInvoiceParticipantId
+     * @var string|null
+     */
+    protected ?string $qrInvoiceParticipantId = null;
+    /**
      * The street
      * @var string|null
      */
@@ -159,10 +165,10 @@ class BankAccountDTO extends AbstractStructBase
      */
     protected ?string $unitName = null;
     /**
-     * The use4Esr
+     * The use4QrInvoice
      * @var bool|null
      */
-    protected ?bool $use4Esr = null;
+    protected ?bool $use4QrInvoice = null;
     /**
      * Constructor method for BankAccountDTO
      * @uses BankAccountDTO::setAccountId()
@@ -178,8 +184,6 @@ class BankAccountDTO extends AbstractStructBase
      * @uses BankAccountDTO::setCustomerNo()
      * @uses BankAccountDTO::setDebteeId()
      * @uses BankAccountDTO::setDepartment()
-     * @uses BankAccountDTO::setEsrBankParticipantId()
-     * @uses BankAccountDTO::setEsrParticipantId()
      * @uses BankAccountDTO::setFirmCode()
      * @uses BankAccountDTO::setIban()
      * @uses BankAccountDTO::setIntermediateAccountCredit()
@@ -191,10 +195,13 @@ class BankAccountDTO extends AbstractStructBase
      * @uses BankAccountDTO::setPlanId()
      * @uses BankAccountDTO::setPostalCode()
      * @uses BankAccountDTO::setProcessStatements()
+     * @uses BankAccountDTO::setQrIban()
+     * @uses BankAccountDTO::setQrInvoiceBankParticipantId()
+     * @uses BankAccountDTO::setQrInvoiceParticipantId()
      * @uses BankAccountDTO::setStreet()
      * @uses BankAccountDTO::setSwiftBicCode()
      * @uses BankAccountDTO::setUnitName()
-     * @uses BankAccountDTO::setUse4Esr()
+     * @uses BankAccountDTO::setUse4QrInvoice()
      * @param string $accountId
      * @param string $accountOwner
      * @param string $bankAccountNo
@@ -208,8 +215,6 @@ class BankAccountDTO extends AbstractStructBase
      * @param string $customerNo
      * @param string $debteeId
      * @param string $department
-     * @param string $esrBankParticipantId
-     * @param string $esrParticipantId
      * @param string $firmCode
      * @param string $iban
      * @param string $intermediateAccountCredit
@@ -221,12 +226,15 @@ class BankAccountDTO extends AbstractStructBase
      * @param string $planId
      * @param string $postalCode
      * @param bool $processStatements
+     * @param string $qrIban
+     * @param string $qrInvoiceBankParticipantId
+     * @param string $qrInvoiceParticipantId
      * @param string $street
      * @param string $swiftBicCode
      * @param string $unitName
-     * @param bool $use4Esr
+     * @param bool $use4QrInvoice
      */
-    public function __construct(?string $accountId = null, ?string $accountOwner = null, ?string $bankAccountNo = null, ?string $bankCountry = null, ?string $bankDescription = null, ?string $bankName = null, ?string $bankNo = null, ?string $city = null, ?string $contactPerson = null, ?string $currency = null, ?string $customerNo = null, ?string $debteeId = null, ?string $department = null, ?string $esrBankParticipantId = null, ?string $esrParticipantId = null, ?string $firmCode = null, ?string $iban = null, ?string $intermediateAccountCredit = null, ?string $intermediateAccountDebit = null, ?string $nationalBankKey = null, ?bool $nationalBankNotification = null, ?string $paymentScheme = null, ?string $phone = null, ?string $planId = null, ?string $postalCode = null, ?bool $processStatements = null, ?string $street = null, ?string $swiftBicCode = null, ?string $unitName = null, ?bool $use4Esr = null)
+    public function __construct(?string $accountId = null, ?string $accountOwner = null, ?string $bankAccountNo = null, ?string $bankCountry = null, ?string $bankDescription = null, ?string $bankName = null, ?string $bankNo = null, ?string $city = null, ?string $contactPerson = null, ?string $currency = null, ?string $customerNo = null, ?string $debteeId = null, ?string $department = null, ?string $firmCode = null, ?string $iban = null, ?string $intermediateAccountCredit = null, ?string $intermediateAccountDebit = null, ?string $nationalBankKey = null, ?bool $nationalBankNotification = null, ?string $paymentScheme = null, ?string $phone = null, ?string $planId = null, ?string $postalCode = null, ?bool $processStatements = null, ?string $qrIban = null, ?string $qrInvoiceBankParticipantId = null, ?string $qrInvoiceParticipantId = null, ?string $street = null, ?string $swiftBicCode = null, ?string $unitName = null, ?bool $use4QrInvoice = null)
     {
         $this
             ->setAccountId($accountId)
@@ -242,8 +250,6 @@ class BankAccountDTO extends AbstractStructBase
             ->setCustomerNo($customerNo)
             ->setDebteeId($debteeId)
             ->setDepartment($department)
-            ->setEsrBankParticipantId($esrBankParticipantId)
-            ->setEsrParticipantId($esrParticipantId)
             ->setFirmCode($firmCode)
             ->setIban($iban)
             ->setIntermediateAccountCredit($intermediateAccountCredit)
@@ -255,10 +261,13 @@ class BankAccountDTO extends AbstractStructBase
             ->setPlanId($planId)
             ->setPostalCode($postalCode)
             ->setProcessStatements($processStatements)
+            ->setQrIban($qrIban)
+            ->setQrInvoiceBankParticipantId($qrInvoiceBankParticipantId)
+            ->setQrInvoiceParticipantId($qrInvoiceParticipantId)
             ->setStreet($street)
             ->setSwiftBicCode($swiftBicCode)
             ->setUnitName($unitName)
-            ->setUse4Esr($use4Esr);
+            ->setUse4QrInvoice($use4QrInvoice);
     }
     /**
      * Get accountId value
@@ -560,52 +569,6 @@ class BankAccountDTO extends AbstractStructBase
         return $this;
     }
     /**
-     * Get esrBankParticipantId value
-     * @return string|null
-     */
-    public function getEsrBankParticipantId(): ?string
-    {
-        return $this->esrBankParticipantId;
-    }
-    /**
-     * Set esrBankParticipantId value
-     * @param string $esrBankParticipantId
-     * @return \Pggns\MidocoApi\OrderSD\StructType\BankAccountDTO
-     */
-    public function setEsrBankParticipantId(?string $esrBankParticipantId = null): self
-    {
-        // validation for constraint: string
-        if (!is_null($esrBankParticipantId) && !is_string($esrBankParticipantId)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($esrBankParticipantId, true), gettype($esrBankParticipantId)), __LINE__);
-        }
-        $this->esrBankParticipantId = $esrBankParticipantId;
-        
-        return $this;
-    }
-    /**
-     * Get esrParticipantId value
-     * @return string|null
-     */
-    public function getEsrParticipantId(): ?string
-    {
-        return $this->esrParticipantId;
-    }
-    /**
-     * Set esrParticipantId value
-     * @param string $esrParticipantId
-     * @return \Pggns\MidocoApi\OrderSD\StructType\BankAccountDTO
-     */
-    public function setEsrParticipantId(?string $esrParticipantId = null): self
-    {
-        // validation for constraint: string
-        if (!is_null($esrParticipantId) && !is_string($esrParticipantId)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($esrParticipantId, true), gettype($esrParticipantId)), __LINE__);
-        }
-        $this->esrParticipantId = $esrParticipantId;
-        
-        return $this;
-    }
-    /**
      * Get firmCode value
      * @return string|null
      */
@@ -859,6 +822,75 @@ class BankAccountDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get qrIban value
+     * @return string|null
+     */
+    public function getQrIban(): ?string
+    {
+        return $this->qrIban;
+    }
+    /**
+     * Set qrIban value
+     * @param string $qrIban
+     * @return \Pggns\MidocoApi\OrderSD\StructType\BankAccountDTO
+     */
+    public function setQrIban(?string $qrIban = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($qrIban) && !is_string($qrIban)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($qrIban, true), gettype($qrIban)), __LINE__);
+        }
+        $this->qrIban = $qrIban;
+        
+        return $this;
+    }
+    /**
+     * Get qrInvoiceBankParticipantId value
+     * @return string|null
+     */
+    public function getQrInvoiceBankParticipantId(): ?string
+    {
+        return $this->qrInvoiceBankParticipantId;
+    }
+    /**
+     * Set qrInvoiceBankParticipantId value
+     * @param string $qrInvoiceBankParticipantId
+     * @return \Pggns\MidocoApi\OrderSD\StructType\BankAccountDTO
+     */
+    public function setQrInvoiceBankParticipantId(?string $qrInvoiceBankParticipantId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($qrInvoiceBankParticipantId) && !is_string($qrInvoiceBankParticipantId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($qrInvoiceBankParticipantId, true), gettype($qrInvoiceBankParticipantId)), __LINE__);
+        }
+        $this->qrInvoiceBankParticipantId = $qrInvoiceBankParticipantId;
+        
+        return $this;
+    }
+    /**
+     * Get qrInvoiceParticipantId value
+     * @return string|null
+     */
+    public function getQrInvoiceParticipantId(): ?string
+    {
+        return $this->qrInvoiceParticipantId;
+    }
+    /**
+     * Set qrInvoiceParticipantId value
+     * @param string $qrInvoiceParticipantId
+     * @return \Pggns\MidocoApi\OrderSD\StructType\BankAccountDTO
+     */
+    public function setQrInvoiceParticipantId(?string $qrInvoiceParticipantId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($qrInvoiceParticipantId) && !is_string($qrInvoiceParticipantId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($qrInvoiceParticipantId, true), gettype($qrInvoiceParticipantId)), __LINE__);
+        }
+        $this->qrInvoiceParticipantId = $qrInvoiceParticipantId;
+        
+        return $this;
+    }
+    /**
      * Get street value
      * @return string|null
      */
@@ -928,25 +960,25 @@ class BankAccountDTO extends AbstractStructBase
         return $this;
     }
     /**
-     * Get use4Esr value
+     * Get use4QrInvoice value
      * @return bool|null
      */
-    public function getUse4Esr(): ?bool
+    public function getUse4QrInvoice(): ?bool
     {
-        return $this->use4Esr;
+        return $this->use4QrInvoice;
     }
     /**
-     * Set use4Esr value
-     * @param bool $use4Esr
+     * Set use4QrInvoice value
+     * @param bool $use4QrInvoice
      * @return \Pggns\MidocoApi\OrderSD\StructType\BankAccountDTO
      */
-    public function setUse4Esr(?bool $use4Esr = null): self
+    public function setUse4QrInvoice(?bool $use4QrInvoice = null): self
     {
         // validation for constraint: boolean
-        if (!is_null($use4Esr) && !is_bool($use4Esr)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($use4Esr, true), gettype($use4Esr)), __LINE__);
+        if (!is_null($use4QrInvoice) && !is_bool($use4QrInvoice)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($use4QrInvoice, true), gettype($use4QrInvoice)), __LINE__);
         }
-        $this->use4Esr = $use4Esr;
+        $this->use4QrInvoice = $use4QrInvoice;
         
         return $this;
     }

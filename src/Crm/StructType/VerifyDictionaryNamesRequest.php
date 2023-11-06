@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VerifyDictionaryNamesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VerifyDictionaryNamesRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class VerifyDictionaryNamesRequest extends AbstractStructBase
         return $this->MidocoDictionaryPerson;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDictionaryPerson method
+     * This method is responsible for validating the value(s) passed to the setMidocoDictionaryPerson method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDictionaryPerson method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDictionaryPersonForArrayConstraintsFromSetMidocoDictionaryPerson(?array $values = []): string
+    public static function validateMidocoDictionaryPersonForArrayConstraintFromSetMidocoDictionaryPerson(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class VerifyDictionaryNamesRequest extends AbstractStructBase
     public function setMidocoDictionaryPerson(?array $midocoDictionaryPerson = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDictionaryPersonArrayErrorMessage = self::validateMidocoDictionaryPersonForArrayConstraintsFromSetMidocoDictionaryPerson($midocoDictionaryPerson))) {
+        if ('' !== ($midocoDictionaryPersonArrayErrorMessage = self::validateMidocoDictionaryPersonForArrayConstraintFromSetMidocoDictionaryPerson($midocoDictionaryPerson))) {
             throw new InvalidArgumentException($midocoDictionaryPersonArrayErrorMessage, __LINE__);
         }
         $this->MidocoDictionaryPerson = $midocoDictionaryPerson;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetWSGroupsForUserRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetWSGroupsForUserRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetWSGroupsForUserRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetWSGroupsForUserRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetWSGroupsForUserRequest
      */
     public function setUserId(?int $userId = null): self
     {

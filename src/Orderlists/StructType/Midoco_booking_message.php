@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: optional dunning infos at order level | optional payments at order level | This section contains the payment information which is given by the customer | a message containing information of booked items in a reservation system
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Midoco_booking_message extends AbstractStructBase
 {
     /**
@@ -220,12 +221,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->customer;
     }
     /**
-     * This method is responsible for validating the values passed to the setCustomer method
+     * This method is responsible for validating the value(s) passed to the setCustomer method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCustomer method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCustomerForArrayConstraintsFromSetCustomer(?array $values = []): string
+    public static function validateCustomerForArrayConstraintFromSetCustomer(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -254,7 +256,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setCustomer(?array $customer = null): self
     {
         // validation for constraint: array
-        if ('' !== ($customerArrayErrorMessage = self::validateCustomerForArrayConstraintsFromSetCustomer($customer))) {
+        if ('' !== ($customerArrayErrorMessage = self::validateCustomerForArrayConstraintFromSetCustomer($customer))) {
             throw new InvalidArgumentException($customerArrayErrorMessage, __LINE__);
         }
         // validation for constraint: maxOccurs(2)
@@ -294,12 +296,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->{'package-info'};
     }
     /**
-     * This method is responsible for validating the values passed to the setPackage_info method
+     * This method is responsible for validating the value(s) passed to the setPackage_info method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPackage_info method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePackage_infoForArrayConstraintsFromSetPackage_info(?array $values = []): string
+    public static function validatePackage_infoForArrayConstraintFromSetPackage_info(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -328,7 +331,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setPackage_info(?array $package_info = null): self
     {
         // validation for constraint: array
-        if ('' !== ($package_infoArrayErrorMessage = self::validatePackage_infoForArrayConstraintsFromSetPackage_info($package_info))) {
+        if ('' !== ($package_infoArrayErrorMessage = self::validatePackage_infoForArrayConstraintFromSetPackage_info($package_info))) {
             throw new InvalidArgumentException($package_infoArrayErrorMessage, __LINE__);
         }
         $this->package_info = $this->{'package-info'} = $package_info;
@@ -360,12 +363,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->booking;
     }
     /**
-     * This method is responsible for validating the values passed to the setBooking method
+     * This method is responsible for validating the value(s) passed to the setBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBookingForArrayConstraintsFromSetBooking(?array $values = []): string
+    public static function validateBookingForArrayConstraintFromSetBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -394,7 +398,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setBooking(?array $booking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bookingArrayErrorMessage = self::validateBookingForArrayConstraintsFromSetBooking($booking))) {
+        if ('' !== ($bookingArrayErrorMessage = self::validateBookingForArrayConstraintFromSetBooking($booking))) {
             throw new InvalidArgumentException($bookingArrayErrorMessage, __LINE__);
         }
         $this->booking = $booking;
@@ -445,12 +449,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->ticket;
     }
     /**
-     * This method is responsible for validating the values passed to the setTicket method
+     * This method is responsible for validating the value(s) passed to the setTicket method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTicket method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTicketForArrayConstraintsFromSetTicket(?array $values = []): string
+    public static function validateTicketForArrayConstraintFromSetTicket(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -479,7 +484,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setTicket(?array $ticket = null): self
     {
         // validation for constraint: array
-        if ('' !== ($ticketArrayErrorMessage = self::validateTicketForArrayConstraintsFromSetTicket($ticket))) {
+        if ('' !== ($ticketArrayErrorMessage = self::validateTicketForArrayConstraintFromSetTicket($ticket))) {
             throw new InvalidArgumentException($ticketArrayErrorMessage, __LINE__);
         }
         $this->ticket = $ticket;
@@ -568,12 +573,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->{'order-remark'};
     }
     /**
-     * This method is responsible for validating the values passed to the setOrder_remark method
+     * This method is responsible for validating the value(s) passed to the setOrder_remark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrder_remark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrder_remarkForArrayConstraintsFromSetOrder_remark(?array $values = []): string
+    public static function validateOrder_remarkForArrayConstraintFromSetOrder_remark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -602,7 +608,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setOrder_remark(?array $order_remark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($order_remarkArrayErrorMessage = self::validateOrder_remarkForArrayConstraintsFromSetOrder_remark($order_remark))) {
+        if ('' !== ($order_remarkArrayErrorMessage = self::validateOrder_remarkForArrayConstraintFromSetOrder_remark($order_remark))) {
             throw new InvalidArgumentException($order_remarkArrayErrorMessage, __LINE__);
         }
         $this->order_remark = $this->{'order-remark'} = $order_remark;
@@ -634,12 +640,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->ExternalPayment;
     }
     /**
-     * This method is responsible for validating the values passed to the setExternalPayment method
+     * This method is responsible for validating the value(s) passed to the setExternalPayment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setExternalPayment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateExternalPaymentForArrayConstraintsFromSetExternalPayment(?array $values = []): string
+    public static function validateExternalPaymentForArrayConstraintFromSetExternalPayment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -668,7 +675,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setExternalPayment(?array $externalPayment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($externalPaymentArrayErrorMessage = self::validateExternalPaymentForArrayConstraintsFromSetExternalPayment($externalPayment))) {
+        if ('' !== ($externalPaymentArrayErrorMessage = self::validateExternalPaymentForArrayConstraintFromSetExternalPayment($externalPayment))) {
             throw new InvalidArgumentException($externalPaymentArrayErrorMessage, __LINE__);
         }
         $this->ExternalPayment = $externalPayment;
@@ -700,12 +707,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->{'imported-document'};
     }
     /**
-     * This method is responsible for validating the values passed to the setImported_document method
+     * This method is responsible for validating the value(s) passed to the setImported_document method
      * This method is willingly generated in order to preserve the one-line inline validation within the setImported_document method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateImported_documentForArrayConstraintsFromSetImported_document(?array $values = []): string
+    public static function validateImported_documentForArrayConstraintFromSetImported_document(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -734,7 +742,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setImported_document(?array $imported_document = null): self
     {
         // validation for constraint: array
-        if ('' !== ($imported_documentArrayErrorMessage = self::validateImported_documentForArrayConstraintsFromSetImported_document($imported_document))) {
+        if ('' !== ($imported_documentArrayErrorMessage = self::validateImported_documentForArrayConstraintFromSetImported_document($imported_document))) {
             throw new InvalidArgumentException($imported_documentArrayErrorMessage, __LINE__);
         }
         $this->imported_document = $this->{'imported-document'} = $imported_document;
@@ -766,12 +774,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->DunningInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setDunningInfo method
+     * This method is responsible for validating the value(s) passed to the setDunningInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDunningInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDunningInfoForArrayConstraintsFromSetDunningInfo(?array $values = []): string
+    public static function validateDunningInfoForArrayConstraintFromSetDunningInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -800,7 +809,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setDunningInfo(?array $dunningInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($dunningInfoArrayErrorMessage = self::validateDunningInfoForArrayConstraintsFromSetDunningInfo($dunningInfo))) {
+        if ('' !== ($dunningInfoArrayErrorMessage = self::validateDunningInfoForArrayConstraintFromSetDunningInfo($dunningInfo))) {
             throw new InvalidArgumentException($dunningInfoArrayErrorMessage, __LINE__);
         }
         $this->DunningInfo = $dunningInfo;
@@ -832,12 +841,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->voucher;
     }
     /**
-     * This method is responsible for validating the values passed to the setVoucher method
+     * This method is responsible for validating the value(s) passed to the setVoucher method
      * This method is willingly generated in order to preserve the one-line inline validation within the setVoucher method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVoucherForArrayConstraintsFromSetVoucher(?array $values = []): string
+    public static function validateVoucherForArrayConstraintFromSetVoucher(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -866,7 +876,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setVoucher(?array $voucher = null): self
     {
         // validation for constraint: array
-        if ('' !== ($voucherArrayErrorMessage = self::validateVoucherForArrayConstraintsFromSetVoucher($voucher))) {
+        if ('' !== ($voucherArrayErrorMessage = self::validateVoucherForArrayConstraintFromSetVoucher($voucher))) {
             throw new InvalidArgumentException($voucherArrayErrorMessage, __LINE__);
         }
         $this->voucher = $voucher;
@@ -898,12 +908,13 @@ class Midoco_booking_message extends AbstractStructBase
         return $this->{'verk-data'};
     }
     /**
-     * This method is responsible for validating the values passed to the setVerk_data method
+     * This method is responsible for validating the value(s) passed to the setVerk_data method
      * This method is willingly generated in order to preserve the one-line inline validation within the setVerk_data method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVerk_dataForArrayConstraintsFromSetVerk_data(?array $values = []): string
+    public static function validateVerk_dataForArrayConstraintFromSetVerk_data(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -932,7 +943,7 @@ class Midoco_booking_message extends AbstractStructBase
     public function setVerk_data(?array $verk_data = null): self
     {
         // validation for constraint: array
-        if ('' !== ($verk_dataArrayErrorMessage = self::validateVerk_dataForArrayConstraintsFromSetVerk_data($verk_data))) {
+        if ('' !== ($verk_dataArrayErrorMessage = self::validateVerk_dataForArrayConstraintFromSetVerk_data($verk_data))) {
             throw new InvalidArgumentException($verk_dataArrayErrorMessage, __LINE__);
         }
         $this->verk_data = $this->{'verk-data'} = $verk_data;

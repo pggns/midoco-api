@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UserQueryDefParamDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UserQueryDefParamDTO extends AbstractStructBase
 {
     /**
@@ -18,6 +19,11 @@ class UserQueryDefParamDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $category = null;
+    /**
+     * The compareWithField
+     * @var bool|null
+     */
+    protected ?bool $compareWithField = null;
     /**
      * The displayIndex
      * @var int|null
@@ -38,6 +44,11 @@ class UserQueryDefParamDTO extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $inPackage = null;
+    /**
+     * The isCaseInsensitive
+     * @var bool|null
+     */
+    protected ?bool $isCaseInsensitive = null;
     /**
      * The operation
      * @var string|null
@@ -66,34 +77,40 @@ class UserQueryDefParamDTO extends AbstractStructBase
     /**
      * Constructor method for UserQueryDefParamDTO
      * @uses UserQueryDefParamDTO::setCategory()
+     * @uses UserQueryDefParamDTO::setCompareWithField()
      * @uses UserQueryDefParamDTO::setDisplayIndex()
      * @uses UserQueryDefParamDTO::setExistent()
      * @uses UserQueryDefParamDTO::setFieldDbname()
      * @uses UserQueryDefParamDTO::setInPackage()
+     * @uses UserQueryDefParamDTO::setIsCaseInsensitive()
      * @uses UserQueryDefParamDTO::setOperation()
      * @uses UserQueryDefParamDTO::setParamValues()
      * @uses UserQueryDefParamDTO::setPosition()
      * @uses UserQueryDefParamDTO::setQueryId()
      * @uses UserQueryDefParamDTO::setVisible()
      * @param string $category
+     * @param bool $compareWithField
      * @param int $displayIndex
      * @param bool $existent
      * @param string $fieldDbname
      * @param bool $inPackage
+     * @param bool $isCaseInsensitive
      * @param string $operation
      * @param string $paramValues
      * @param int $position
      * @param int $queryId
      * @param bool $visible
      */
-    public function __construct(?string $category = null, ?int $displayIndex = null, ?bool $existent = null, ?string $fieldDbname = null, ?bool $inPackage = null, ?string $operation = null, ?string $paramValues = null, ?int $position = null, ?int $queryId = null, ?bool $visible = null)
+    public function __construct(?string $category = null, ?bool $compareWithField = null, ?int $displayIndex = null, ?bool $existent = null, ?string $fieldDbname = null, ?bool $inPackage = null, ?bool $isCaseInsensitive = null, ?string $operation = null, ?string $paramValues = null, ?int $position = null, ?int $queryId = null, ?bool $visible = null)
     {
         $this
             ->setCategory($category)
+            ->setCompareWithField($compareWithField)
             ->setDisplayIndex($displayIndex)
             ->setExistent($existent)
             ->setFieldDbname($fieldDbname)
             ->setInPackage($inPackage)
+            ->setIsCaseInsensitive($isCaseInsensitive)
             ->setOperation($operation)
             ->setParamValues($paramValues)
             ->setPosition($position)
@@ -120,6 +137,29 @@ class UserQueryDefParamDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($category, true), gettype($category)), __LINE__);
         }
         $this->category = $category;
+        
+        return $this;
+    }
+    /**
+     * Get compareWithField value
+     * @return bool|null
+     */
+    public function getCompareWithField(): ?bool
+    {
+        return $this->compareWithField;
+    }
+    /**
+     * Set compareWithField value
+     * @param bool $compareWithField
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
+     */
+    public function setCompareWithField(?bool $compareWithField = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($compareWithField) && !is_bool($compareWithField)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($compareWithField, true), gettype($compareWithField)), __LINE__);
+        }
+        $this->compareWithField = $compareWithField;
         
         return $this;
     }
@@ -212,6 +252,29 @@ class UserQueryDefParamDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($inPackage, true), gettype($inPackage)), __LINE__);
         }
         $this->inPackage = $inPackage;
+        
+        return $this;
+    }
+    /**
+     * Get isCaseInsensitive value
+     * @return bool|null
+     */
+    public function getIsCaseInsensitive(): ?bool
+    {
+        return $this->isCaseInsensitive;
+    }
+    /**
+     * Set isCaseInsensitive value
+     * @param bool $isCaseInsensitive
+     * @return \Pggns\MidocoApi\Order\StructType\UserQueryDefParamDTO
+     */
+    public function setIsCaseInsensitive(?bool $isCaseInsensitive = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isCaseInsensitive) && !is_bool($isCaseInsensitive)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isCaseInsensitive, true), gettype($isCaseInsensitive)), __LINE__);
+        }
+        $this->isCaseInsensitive = $isCaseInsensitive;
         
         return $this;
     }

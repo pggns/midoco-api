@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUsersFromTopMostOrgUnitRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUsersFromTopMostOrgUnitRequest extends AbstractStructBase
 {
     /**
@@ -19,14 +20,22 @@ class GetUsersFromTopMostOrgUnitRequest extends AbstractStructBase
      */
     protected ?string $unitName = null;
     /**
+     * The getOnlyIds
+     * @var bool|null
+     */
+    protected ?bool $getOnlyIds = null;
+    /**
      * Constructor method for GetUsersFromTopMostOrgUnitRequest
      * @uses GetUsersFromTopMostOrgUnitRequest::setUnitName()
+     * @uses GetUsersFromTopMostOrgUnitRequest::setGetOnlyIds()
      * @param string $unitName
+     * @param bool $getOnlyIds
      */
-    public function __construct(?string $unitName = null)
+    public function __construct(?string $unitName = null, ?bool $getOnlyIds = null)
     {
         $this
-            ->setUnitName($unitName);
+            ->setUnitName($unitName)
+            ->setGetOnlyIds($getOnlyIds);
     }
     /**
      * Get unitName value
@@ -48,6 +57,29 @@ class GetUsersFromTopMostOrgUnitRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($unitName, true), gettype($unitName)), __LINE__);
         }
         $this->unitName = $unitName;
+        
+        return $this;
+    }
+    /**
+     * Get getOnlyIds value
+     * @return bool|null
+     */
+    public function getGetOnlyIds(): ?bool
+    {
+        return $this->getOnlyIds;
+    }
+    /**
+     * Set getOnlyIds value
+     * @param bool $getOnlyIds
+     * @return \Pggns\MidocoApi\Order\StructType\GetUsersFromTopMostOrgUnitRequest
+     */
+    public function setGetOnlyIds(?bool $getOnlyIds = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($getOnlyIds) && !is_bool($getOnlyIds)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($getOnlyIds, true), gettype($getOnlyIds)), __LINE__);
+        }
+        $this->getOnlyIds = $getOnlyIds;
         
         return $this;
     }

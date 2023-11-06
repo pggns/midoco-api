@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ImportDictionaryNamesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ImportDictionaryNamesRequest extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ImportDictionaryNamesRequest extends AbstractStructBase
     /**
      * Set importData value
      * @param string $importData
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ImportDictionaryNamesRequest
      */
     public function setImportData(?string $importData = null): self
     {
@@ -78,7 +79,7 @@ class ImportDictionaryNamesRequest extends AbstractStructBase
     /**
      * Set appendMode value
      * @param bool $appendMode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ImportDictionaryNamesRequest
      */
     public function setAppendMode(?bool $appendMode = null): self
     {
@@ -101,7 +102,7 @@ class ImportDictionaryNamesRequest extends AbstractStructBase
     /**
      * Set replaceMode value
      * @param bool $replaceMode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ImportDictionaryNamesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ImportDictionaryNamesRequest
      */
     public function setReplaceMode(?bool $replaceMode = null): self
     {

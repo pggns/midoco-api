@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for attributes StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Attributes extends AbstractStructBase
 {
     /**
@@ -57,12 +58,13 @@ class Attributes extends AbstractStructBase
         return $this->attributetype;
     }
     /**
-     * This method is responsible for validating the values passed to the setAttributetype method
+     * This method is responsible for validating the value(s) passed to the setAttributetype method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAttributetype method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAttributetypeForArrayConstraintsFromSetAttributetype(?array $values = []): string
+    public static function validateAttributetypeForArrayConstraintFromSetAttributetype(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class Attributes extends AbstractStructBase
     public function setAttributetype(?array $attributetype = null): self
     {
         // validation for constraint: array
-        if ('' !== ($attributetypeArrayErrorMessage = self::validateAttributetypeForArrayConstraintsFromSetAttributetype($attributetype))) {
+        if ('' !== ($attributetypeArrayErrorMessage = self::validateAttributetypeForArrayConstraintFromSetAttributetype($attributetype))) {
             throw new InvalidArgumentException($attributetypeArrayErrorMessage, __LINE__);
         }
         $this->attributetype = $attributetype;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveSupplAgencySettlemBookRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
 {
     /**
@@ -70,12 +71,13 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
         return $this->MidocoSupplierAgencySettlementBookings;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierAgencySettlementBookings method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierAgencySettlementBookings method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierAgencySettlementBookings method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierAgencySettlementBookingsForArrayConstraintsFromSetMidocoSupplierAgencySettlementBookings(?array $values = []): string
+    public static function validateMidocoSupplierAgencySettlementBookingsForArrayConstraintFromSetMidocoSupplierAgencySettlementBookings(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -104,7 +106,7 @@ class SaveSupplAgencySettlemBookRequest extends AbstractStructBase
     public function setMidocoSupplierAgencySettlementBookings(?array $midocoSupplierAgencySettlementBookings = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierAgencySettlementBookingsArrayErrorMessage = self::validateMidocoSupplierAgencySettlementBookingsForArrayConstraintsFromSetMidocoSupplierAgencySettlementBookings($midocoSupplierAgencySettlementBookings))) {
+        if ('' !== ($midocoSupplierAgencySettlementBookingsArrayErrorMessage = self::validateMidocoSupplierAgencySettlementBookingsForArrayConstraintFromSetMidocoSupplierAgencySettlementBookings($midocoSupplierAgencySettlementBookings))) {
             throw new InvalidArgumentException($midocoSupplierAgencySettlementBookingsArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierAgencySettlementBookings = $midocoSupplierAgencySettlementBookings;

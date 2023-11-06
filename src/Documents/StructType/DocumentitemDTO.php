@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DocumentitemDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DocumentitemDTO extends AbstractStructBase
 {
     /**
@@ -53,6 +54,11 @@ class DocumentitemDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $ccValid = null;
+    /**
+     * The checkDigit
+     * @var string|null
+     */
+    protected ?string $checkDigit = null;
     /**
      * The commission
      * @var float|null
@@ -219,6 +225,11 @@ class DocumentitemDTO extends AbstractStructBase
      */
     protected ?string $referencedDocumentNo = null;
     /**
+     * The reportIndicator
+     * @var string|null
+     */
+    protected ?string $reportIndicator = null;
+    /**
      * The segmentAssignment
      * @var string|null
      */
@@ -313,6 +324,7 @@ class DocumentitemDTO extends AbstractStructBase
      * @uses DocumentitemDTO::setCcNumber()
      * @uses DocumentitemDTO::setCcType()
      * @uses DocumentitemDTO::setCcValid()
+     * @uses DocumentitemDTO::setCheckDigit()
      * @uses DocumentitemDTO::setCommission()
      * @uses DocumentitemDTO::setCommissionPercent()
      * @uses DocumentitemDTO::setCommissionVatAmount()
@@ -346,6 +358,7 @@ class DocumentitemDTO extends AbstractStructBase
      * @uses DocumentitemDTO::setPositionNo()
      * @uses DocumentitemDTO::setPrintType()
      * @uses DocumentitemDTO::setReferencedDocumentNo()
+     * @uses DocumentitemDTO::setReportIndicator()
      * @uses DocumentitemDTO::setSegmentAssignment()
      * @uses DocumentitemDTO::setSegmentCountForFee()
      * @uses DocumentitemDTO::setSellPrice()
@@ -371,6 +384,7 @@ class DocumentitemDTO extends AbstractStructBase
      * @param string $ccNumber
      * @param string $ccType
      * @param string $ccValid
+     * @param string $checkDigit
      * @param float $commission
      * @param float $commissionPercent
      * @param float $commissionVatAmount
@@ -404,6 +418,7 @@ class DocumentitemDTO extends AbstractStructBase
      * @param int $positionNo
      * @param string $printType
      * @param string $referencedDocumentNo
+     * @param string $reportIndicator
      * @param string $segmentAssignment
      * @param int $segmentCountForFee
      * @param int $sellPrice
@@ -422,7 +437,7 @@ class DocumentitemDTO extends AbstractStructBase
      * @param int $udCode
      * @param string $vatContent
      */
-    public function __construct(?float $airlineFees = null, ?string $bspAgency = null, ?string $bspValidator = null, ?float $cancellationFee = null, ?string $ccApprovalCode = null, ?string $ccNumber = null, ?string $ccType = null, ?string $ccValid = null, ?float $commission = null, ?float $commissionPercent = null, ?float $commissionVatAmount = null, ?string $currency = null, ?string $dateOfIssue = null, ?bool $deletable = null, ?string $docSubtypeDescription = null, ?string $documentNo = null, ?string $documentSubgroupEmd = null, ?string $documentSubtype = null, ?string $documentType = null, ?string $endorsement = null, ?string $exchangeInformation = null, ?float $exchangeRate = null, ?float $farePrice = null, ?string $fareType = null, ?string $feeCurrency = null, ?string $filekey = null, ?string $firstImportTimestamp = null, ?bool $isDomestic = null, ?bool $isFeeReverseCharge = null, ?bool $isInkasso = null, ?string $itCode = null, ?int $itemId = null, ?float $nonCcPaidAmount = null, ?string $originType = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?string $passengerAsignment = null, ?string $paymentType = null, ?int $positionNo = null, ?string $printType = null, ?string $referencedDocumentNo = null, ?string $segmentAssignment = null, ?int $segmentCountForFee = null, ?int $sellPrice = null, ?string $taxInformation = null, ?string $ticketDesignator = null, ?string $ticketNoConj = null, ?string $ticketTariffType = null, ?string $ticketingAgent = null, ?string $ticketingCity = null, ?string $ticketingPcc = null, ?bool $tokenChecked = null, ?float $totalPrice = null, ?float $totalSellPrice = null, ?float $totalTax = null, ?string $travelDate = null, ?int $udCode = null, ?string $vatContent = null)
+    public function __construct(?float $airlineFees = null, ?string $bspAgency = null, ?string $bspValidator = null, ?float $cancellationFee = null, ?string $ccApprovalCode = null, ?string $ccNumber = null, ?string $ccType = null, ?string $ccValid = null, ?string $checkDigit = null, ?float $commission = null, ?float $commissionPercent = null, ?float $commissionVatAmount = null, ?string $currency = null, ?string $dateOfIssue = null, ?bool $deletable = null, ?string $docSubtypeDescription = null, ?string $documentNo = null, ?string $documentSubgroupEmd = null, ?string $documentSubtype = null, ?string $documentType = null, ?string $endorsement = null, ?string $exchangeInformation = null, ?float $exchangeRate = null, ?float $farePrice = null, ?string $fareType = null, ?string $feeCurrency = null, ?string $filekey = null, ?string $firstImportTimestamp = null, ?bool $isDomestic = null, ?bool $isFeeReverseCharge = null, ?bool $isInkasso = null, ?string $itCode = null, ?int $itemId = null, ?float $nonCcPaidAmount = null, ?string $originType = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?string $passengerAsignment = null, ?string $paymentType = null, ?int $positionNo = null, ?string $printType = null, ?string $referencedDocumentNo = null, ?string $reportIndicator = null, ?string $segmentAssignment = null, ?int $segmentCountForFee = null, ?int $sellPrice = null, ?string $taxInformation = null, ?string $ticketDesignator = null, ?string $ticketNoConj = null, ?string $ticketTariffType = null, ?string $ticketingAgent = null, ?string $ticketingCity = null, ?string $ticketingPcc = null, ?bool $tokenChecked = null, ?float $totalPrice = null, ?float $totalSellPrice = null, ?float $totalTax = null, ?string $travelDate = null, ?int $udCode = null, ?string $vatContent = null)
     {
         $this
             ->setAirlineFees($airlineFees)
@@ -433,6 +448,7 @@ class DocumentitemDTO extends AbstractStructBase
             ->setCcNumber($ccNumber)
             ->setCcType($ccType)
             ->setCcValid($ccValid)
+            ->setCheckDigit($checkDigit)
             ->setCommission($commission)
             ->setCommissionPercent($commissionPercent)
             ->setCommissionVatAmount($commissionVatAmount)
@@ -466,6 +482,7 @@ class DocumentitemDTO extends AbstractStructBase
             ->setPositionNo($positionNo)
             ->setPrintType($printType)
             ->setReferencedDocumentNo($referencedDocumentNo)
+            ->setReportIndicator($reportIndicator)
             ->setSegmentAssignment($segmentAssignment)
             ->setSegmentCountForFee($segmentCountForFee)
             ->setSellPrice($sellPrice)
@@ -665,6 +682,29 @@ class DocumentitemDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ccValid, true), gettype($ccValid)), __LINE__);
         }
         $this->ccValid = $ccValid;
+        
+        return $this;
+    }
+    /**
+     * Get checkDigit value
+     * @return string|null
+     */
+    public function getCheckDigit(): ?string
+    {
+        return $this->checkDigit;
+    }
+    /**
+     * Set checkDigit value
+     * @param string $checkDigit
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentitemDTO
+     */
+    public function setCheckDigit(?string $checkDigit = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($checkDigit) && !is_string($checkDigit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($checkDigit, true), gettype($checkDigit)), __LINE__);
+        }
+        $this->checkDigit = $checkDigit;
         
         return $this;
     }
@@ -1424,6 +1464,29 @@ class DocumentitemDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($referencedDocumentNo, true), gettype($referencedDocumentNo)), __LINE__);
         }
         $this->referencedDocumentNo = $referencedDocumentNo;
+        
+        return $this;
+    }
+    /**
+     * Get reportIndicator value
+     * @return string|null
+     */
+    public function getReportIndicator(): ?string
+    {
+        return $this->reportIndicator;
+    }
+    /**
+     * Set reportIndicator value
+     * @param string $reportIndicator
+     * @return \Pggns\MidocoApi\Documents\StructType\DocumentitemDTO
+     */
+    public function setReportIndicator(?string $reportIndicator = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($reportIndicator) && !is_string($reportIndicator)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reportIndicator, true), gettype($reportIndicator)), __LINE__);
+        }
+        $this->reportIndicator = $reportIndicator;
         
         return $this;
     }

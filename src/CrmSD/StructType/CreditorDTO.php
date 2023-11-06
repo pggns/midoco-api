@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreditorDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreditorDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class CreditorDTO extends AbstractStructBase
     /**
      * Set creditorNo value
      * @param string $creditorNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreditorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreditorDTO
      */
     public function setCreditorNo(?string $creditorNo = null): self
     {
@@ -70,7 +71,7 @@ class CreditorDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreditorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreditorDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {

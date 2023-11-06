@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintSelectsForPRRLRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintSelectsForPRRLRequest extends AbstractStructBase
 {
     /**

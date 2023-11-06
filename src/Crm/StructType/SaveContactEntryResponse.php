@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveContactEntry --- depending if a contact_id is already set, insert or update a ContactEntry for the customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveContactEntryResponse extends AbstractStructBase
 {
     /**
@@ -58,12 +59,13 @@ class SaveContactEntryResponse extends AbstractStructBase
         return $this->errors;
     }
     /**
-     * This method is responsible for validating the values passed to the setErrors method
+     * This method is responsible for validating the value(s) passed to the setErrors method
      * This method is willingly generated in order to preserve the one-line inline validation within the setErrors method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateErrorsForArrayConstraintsFromSetErrors(?array $values = []): string
+    public static function validateErrorsForArrayConstraintFromSetErrors(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -92,7 +94,7 @@ class SaveContactEntryResponse extends AbstractStructBase
     public function setErrors(?array $errors = null): self
     {
         // validation for constraint: array
-        if ('' !== ($errorsArrayErrorMessage = self::validateErrorsForArrayConstraintsFromSetErrors($errors))) {
+        if ('' !== ($errorsArrayErrorMessage = self::validateErrorsForArrayConstraintFromSetErrors($errors))) {
             throw new InvalidArgumentException($errorsArrayErrorMessage, __LINE__);
         }
         $this->errors = $errors;

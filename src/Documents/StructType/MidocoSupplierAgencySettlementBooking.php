@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSupplierAgencySettlementBooking StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
 {
     /**
@@ -24,6 +25,11 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
      */
     protected ?float $settlementsSum = null;
     /**
+     * The orderId
+     * @var int|null
+     */
+    protected ?int $orderId = null;
+    /**
      * The orderNo
      * @var int|null
      */
@@ -35,6 +41,8 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
     protected ?float $siDiff = null;
     /**
      * The siInkassoMode
+     * Meta information extracted from the WSDL
+     * - documentation: Represents the paymentType for the item (AGENCY or SUPPLIER)
      * @var string|null
      */
     protected ?string $siInkassoMode = null;
@@ -69,9 +77,25 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
      */
     protected ?string $settlementTypeDebit = null;
     /**
+     * The siItemType
+     * @var string|null
+     */
+    protected ?string $siItemType = null;
+    /**
+     * The siSupplierId
+     * @var string|null
+     */
+    protected ?string $siSupplierId = null;
+    /**
+     * The unitCurrency
+     * @var string|null
+     */
+    protected ?string $unitCurrency = null;
+    /**
      * Constructor method for MidocoSupplierAgencySettlementBooking
      * @uses MidocoSupplierAgencySettlementBooking::setRevenueDiff()
      * @uses MidocoSupplierAgencySettlementBooking::setSettlementsSum()
+     * @uses MidocoSupplierAgencySettlementBooking::setOrderId()
      * @uses MidocoSupplierAgencySettlementBooking::setOrderNo()
      * @uses MidocoSupplierAgencySettlementBooking::setSiDiff()
      * @uses MidocoSupplierAgencySettlementBooking::setSiInkassoMode()
@@ -81,8 +105,12 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
      * @uses MidocoSupplierAgencySettlementBooking::setIsDeposit()
      * @uses MidocoSupplierAgencySettlementBooking::setSettlementType()
      * @uses MidocoSupplierAgencySettlementBooking::setSettlementTypeDebit()
+     * @uses MidocoSupplierAgencySettlementBooking::setSiItemType()
+     * @uses MidocoSupplierAgencySettlementBooking::setSiSupplierId()
+     * @uses MidocoSupplierAgencySettlementBooking::setUnitCurrency()
      * @param float $revenueDiff
      * @param float $settlementsSum
+     * @param int $orderId
      * @param int $orderNo
      * @param float $siDiff
      * @param string $siInkassoMode
@@ -92,12 +120,16 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
      * @param bool $isDeposit
      * @param string $settlementType
      * @param string $settlementTypeDebit
+     * @param string $siItemType
+     * @param string $siSupplierId
+     * @param string $unitCurrency
      */
-    public function __construct(?float $revenueDiff = null, ?float $settlementsSum = null, ?int $orderNo = null, ?float $siDiff = null, ?string $siInkassoMode = null, ?string $settlementsInkassoMode = null, ?bool $hasComment = null, ?float $nettoAmount = null, ?bool $isDeposit = null, ?string $settlementType = null, ?string $settlementTypeDebit = null)
+    public function __construct(?float $revenueDiff = null, ?float $settlementsSum = null, ?int $orderId = null, ?int $orderNo = null, ?float $siDiff = null, ?string $siInkassoMode = null, ?string $settlementsInkassoMode = null, ?bool $hasComment = null, ?float $nettoAmount = null, ?bool $isDeposit = null, ?string $settlementType = null, ?string $settlementTypeDebit = null, ?string $siItemType = null, ?string $siSupplierId = null, ?string $unitCurrency = null)
     {
         $this
             ->setRevenueDiff($revenueDiff)
             ->setSettlementsSum($settlementsSum)
+            ->setOrderId($orderId)
             ->setOrderNo($orderNo)
             ->setSiDiff($siDiff)
             ->setSiInkassoMode($siInkassoMode)
@@ -106,7 +138,10 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
             ->setNettoAmount($nettoAmount)
             ->setIsDeposit($isDeposit)
             ->setSettlementType($settlementType)
-            ->setSettlementTypeDebit($settlementTypeDebit);
+            ->setSettlementTypeDebit($settlementTypeDebit)
+            ->setSiItemType($siItemType)
+            ->setSiSupplierId($siSupplierId)
+            ->setUnitCurrency($unitCurrency);
     }
     /**
      * Get revenueDiff value
@@ -151,6 +186,29 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($settlementsSum, true), gettype($settlementsSum)), __LINE__);
         }
         $this->settlementsSum = $settlementsSum;
+        
+        return $this;
+    }
+    /**
+     * Get orderId value
+     * @return int|null
+     */
+    public function getOrderId(): ?int
+    {
+        return $this->orderId;
+    }
+    /**
+     * Set orderId value
+     * @param int $orderId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementBooking
+     */
+    public function setOrderId(?int $orderId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($orderId) && !(is_int($orderId) || ctype_digit($orderId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orderId, true), gettype($orderId)), __LINE__);
+        }
+        $this->orderId = $orderId;
         
         return $this;
     }
@@ -358,6 +416,75 @@ class MidocoSupplierAgencySettlementBooking extends SupplAgencySettlemBookDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementTypeDebit, true), gettype($settlementTypeDebit)), __LINE__);
         }
         $this->settlementTypeDebit = $settlementTypeDebit;
+        
+        return $this;
+    }
+    /**
+     * Get siItemType value
+     * @return string|null
+     */
+    public function getSiItemType(): ?string
+    {
+        return $this->siItemType;
+    }
+    /**
+     * Set siItemType value
+     * @param string $siItemType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementBooking
+     */
+    public function setSiItemType(?string $siItemType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($siItemType) && !is_string($siItemType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($siItemType, true), gettype($siItemType)), __LINE__);
+        }
+        $this->siItemType = $siItemType;
+        
+        return $this;
+    }
+    /**
+     * Get siSupplierId value
+     * @return string|null
+     */
+    public function getSiSupplierId(): ?string
+    {
+        return $this->siSupplierId;
+    }
+    /**
+     * Set siSupplierId value
+     * @param string $siSupplierId
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementBooking
+     */
+    public function setSiSupplierId(?string $siSupplierId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($siSupplierId) && !is_string($siSupplierId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($siSupplierId, true), gettype($siSupplierId)), __LINE__);
+        }
+        $this->siSupplierId = $siSupplierId;
+        
+        return $this;
+    }
+    /**
+     * Get unitCurrency value
+     * @return string|null
+     */
+    public function getUnitCurrency(): ?string
+    {
+        return $this->unitCurrency;
+    }
+    /**
+     * Set unitCurrency value
+     * @param string $unitCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlementBooking
+     */
+    public function setUnitCurrency(?string $unitCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($unitCurrency) && !is_string($unitCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($unitCurrency, true), gettype($unitCurrency)), __LINE__);
+        }
+        $this->unitCurrency = $unitCurrency;
         
         return $this;
     }

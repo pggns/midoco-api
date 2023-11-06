@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SequencerangeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SequencerangeDTO extends AbstractStructBase
 {
     /**
@@ -111,7 +112,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -134,7 +135,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set endValue value
      * @param int $endValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setEndValue(?int $endValue = null): self
     {
@@ -157,7 +158,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set sequenceId value
      * @param int $sequenceId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setSequenceId(?int $sequenceId = null): self
     {
@@ -180,7 +181,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set sequenceName value
      * @param string $sequenceName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setSequenceName(?string $sequenceName = null): self
     {
@@ -203,7 +204,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set sequencePoolId value
      * @param int $sequencePoolId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setSequencePoolId(?int $sequencePoolId = null): self
     {
@@ -226,7 +227,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set startValue value
      * @param int $startValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setStartValue(?int $startValue = null): self
     {
@@ -249,7 +250,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -272,7 +273,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set validEnd value
      * @param string $validEnd
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setValidEnd(?string $validEnd = null): self
     {
@@ -295,7 +296,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set validStart value
      * @param string $validStart
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setValidStart(?string $validStart = null): self
     {
@@ -318,7 +319,7 @@ class SequencerangeDTO extends AbstractStructBase
     /**
      * Set value value
      * @param int $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencerangeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencerangeDTO
      */
     public function setValue(?int $value = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSequencePoolsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSequencePoolsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSequencePoolsResponse extends AbstractStructBase
         return $this->MidocoSequencePool;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSequencePool method
+     * This method is responsible for validating the value(s) passed to the setMidocoSequencePool method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSequencePool method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSequencePoolForArrayConstraintsFromSetMidocoSequencePool(?array $values = []): string
+    public static function validateMidocoSequencePoolForArrayConstraintFromSetMidocoSequencePool(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSequencePoolsResponse extends AbstractStructBase
     public function setMidocoSequencePool(?array $midocoSequencePool = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSequencePoolArrayErrorMessage = self::validateMidocoSequencePoolForArrayConstraintsFromSetMidocoSequencePool($midocoSequencePool))) {
+        if ('' !== ($midocoSequencePoolArrayErrorMessage = self::validateMidocoSequencePoolForArrayConstraintFromSetMidocoSequencePool($midocoSequencePool))) {
             throw new InvalidArgumentException($midocoSequencePoolArrayErrorMessage, __LINE__);
         }
         $this->MidocoSequencePool = $midocoSequencePool;

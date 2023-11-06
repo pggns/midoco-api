@@ -11,13 +11,39 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemMarginDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemMarginDTO extends AbstractStructBase
 {
     /**
-     * The costNet
+     * The bookedMargin
      * @var float|null
      */
-    protected ?float $costNet = null;
+    protected ?float $bookedMargin = null;
+    /**
+     * The bookedMarginVat
+     * @var float|null
+     */
+    protected ?float $bookedMarginVat = null;
+    /**
+     * The buyPrice
+     * @var float|null
+     */
+    protected ?float $buyPrice = null;
+    /**
+     * The buyPriceNet
+     * @var float|null
+     */
+    protected ?float $buyPriceNet = null;
+    /**
+     * The calculatedMargin
+     * @var float|null
+     */
+    protected ?float $calculatedMargin = null;
+    /**
+     * The calculatedMarginVat
+     * @var float|null
+     */
+    protected ?float $calculatedMarginVat = null;
     /**
      * The feeNet
      * @var float|null
@@ -33,6 +59,11 @@ class SellItemMarginDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $marginNet = null;
+    /**
+     * The needsMarginBooking
+     * @var bool|null
+     */
+    protected ?bool $needsMarginBooking = null;
     /**
      * The salePriceNet
      * @var float|null
@@ -50,52 +81,185 @@ class SellItemMarginDTO extends AbstractStructBase
     protected ?string $updatedAt = null;
     /**
      * Constructor method for SellItemMarginDTO
-     * @uses SellItemMarginDTO::setCostNet()
+     * @uses SellItemMarginDTO::setBookedMargin()
+     * @uses SellItemMarginDTO::setBookedMarginVat()
+     * @uses SellItemMarginDTO::setBuyPrice()
+     * @uses SellItemMarginDTO::setBuyPriceNet()
+     * @uses SellItemMarginDTO::setCalculatedMargin()
+     * @uses SellItemMarginDTO::setCalculatedMarginVat()
      * @uses SellItemMarginDTO::setFeeNet()
      * @uses SellItemMarginDTO::setItemId()
      * @uses SellItemMarginDTO::setMarginNet()
+     * @uses SellItemMarginDTO::setNeedsMarginBooking()
      * @uses SellItemMarginDTO::setSalePriceNet()
      * @uses SellItemMarginDTO::setSettlementDone()
      * @uses SellItemMarginDTO::setUpdatedAt()
-     * @param float $costNet
+     * @param float $bookedMargin
+     * @param float $bookedMarginVat
+     * @param float $buyPrice
+     * @param float $buyPriceNet
+     * @param float $calculatedMargin
+     * @param float $calculatedMarginVat
      * @param float $feeNet
      * @param int $itemId
      * @param float $marginNet
+     * @param bool $needsMarginBooking
      * @param float $salePriceNet
      * @param bool $settlementDone
      * @param string $updatedAt
      */
-    public function __construct(?float $costNet = null, ?float $feeNet = null, ?int $itemId = null, ?float $marginNet = null, ?float $salePriceNet = null, ?bool $settlementDone = null, ?string $updatedAt = null)
+    public function __construct(?float $bookedMargin = null, ?float $bookedMarginVat = null, ?float $buyPrice = null, ?float $buyPriceNet = null, ?float $calculatedMargin = null, ?float $calculatedMarginVat = null, ?float $feeNet = null, ?int $itemId = null, ?float $marginNet = null, ?bool $needsMarginBooking = null, ?float $salePriceNet = null, ?bool $settlementDone = null, ?string $updatedAt = null)
     {
         $this
-            ->setCostNet($costNet)
+            ->setBookedMargin($bookedMargin)
+            ->setBookedMarginVat($bookedMarginVat)
+            ->setBuyPrice($buyPrice)
+            ->setBuyPriceNet($buyPriceNet)
+            ->setCalculatedMargin($calculatedMargin)
+            ->setCalculatedMarginVat($calculatedMarginVat)
             ->setFeeNet($feeNet)
             ->setItemId($itemId)
             ->setMarginNet($marginNet)
+            ->setNeedsMarginBooking($needsMarginBooking)
             ->setSalePriceNet($salePriceNet)
             ->setSettlementDone($settlementDone)
             ->setUpdatedAt($updatedAt);
     }
     /**
-     * Get costNet value
+     * Get bookedMargin value
      * @return float|null
      */
-    public function getCostNet(): ?float
+    public function getBookedMargin(): ?float
     {
-        return $this->costNet;
+        return $this->bookedMargin;
     }
     /**
-     * Set costNet value
-     * @param float $costNet
+     * Set bookedMargin value
+     * @param float $bookedMargin
      * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
      */
-    public function setCostNet(?float $costNet = null): self
+    public function setBookedMargin(?float $bookedMargin = null): self
     {
         // validation for constraint: float
-        if (!is_null($costNet) && !(is_float($costNet) || is_numeric($costNet))) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($costNet, true), gettype($costNet)), __LINE__);
+        if (!is_null($bookedMargin) && !(is_float($bookedMargin) || is_numeric($bookedMargin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($bookedMargin, true), gettype($bookedMargin)), __LINE__);
         }
-        $this->costNet = $costNet;
+        $this->bookedMargin = $bookedMargin;
+        
+        return $this;
+    }
+    /**
+     * Get bookedMarginVat value
+     * @return float|null
+     */
+    public function getBookedMarginVat(): ?float
+    {
+        return $this->bookedMarginVat;
+    }
+    /**
+     * Set bookedMarginVat value
+     * @param float $bookedMarginVat
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
+     */
+    public function setBookedMarginVat(?float $bookedMarginVat = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($bookedMarginVat) && !(is_float($bookedMarginVat) || is_numeric($bookedMarginVat))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($bookedMarginVat, true), gettype($bookedMarginVat)), __LINE__);
+        }
+        $this->bookedMarginVat = $bookedMarginVat;
+        
+        return $this;
+    }
+    /**
+     * Get buyPrice value
+     * @return float|null
+     */
+    public function getBuyPrice(): ?float
+    {
+        return $this->buyPrice;
+    }
+    /**
+     * Set buyPrice value
+     * @param float $buyPrice
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
+     */
+    public function setBuyPrice(?float $buyPrice = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($buyPrice) && !(is_float($buyPrice) || is_numeric($buyPrice))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($buyPrice, true), gettype($buyPrice)), __LINE__);
+        }
+        $this->buyPrice = $buyPrice;
+        
+        return $this;
+    }
+    /**
+     * Get buyPriceNet value
+     * @return float|null
+     */
+    public function getBuyPriceNet(): ?float
+    {
+        return $this->buyPriceNet;
+    }
+    /**
+     * Set buyPriceNet value
+     * @param float $buyPriceNet
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
+     */
+    public function setBuyPriceNet(?float $buyPriceNet = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($buyPriceNet) && !(is_float($buyPriceNet) || is_numeric($buyPriceNet))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($buyPriceNet, true), gettype($buyPriceNet)), __LINE__);
+        }
+        $this->buyPriceNet = $buyPriceNet;
+        
+        return $this;
+    }
+    /**
+     * Get calculatedMargin value
+     * @return float|null
+     */
+    public function getCalculatedMargin(): ?float
+    {
+        return $this->calculatedMargin;
+    }
+    /**
+     * Set calculatedMargin value
+     * @param float $calculatedMargin
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
+     */
+    public function setCalculatedMargin(?float $calculatedMargin = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($calculatedMargin) && !(is_float($calculatedMargin) || is_numeric($calculatedMargin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedMargin, true), gettype($calculatedMargin)), __LINE__);
+        }
+        $this->calculatedMargin = $calculatedMargin;
+        
+        return $this;
+    }
+    /**
+     * Get calculatedMarginVat value
+     * @return float|null
+     */
+    public function getCalculatedMarginVat(): ?float
+    {
+        return $this->calculatedMarginVat;
+    }
+    /**
+     * Set calculatedMarginVat value
+     * @param float $calculatedMarginVat
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
+     */
+    public function setCalculatedMarginVat(?float $calculatedMarginVat = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($calculatedMarginVat) && !(is_float($calculatedMarginVat) || is_numeric($calculatedMarginVat))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedMarginVat, true), gettype($calculatedMarginVat)), __LINE__);
+        }
+        $this->calculatedMarginVat = $calculatedMarginVat;
         
         return $this;
     }
@@ -165,6 +329,29 @@ class SellItemMarginDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($marginNet, true), gettype($marginNet)), __LINE__);
         }
         $this->marginNet = $marginNet;
+        
+        return $this;
+    }
+    /**
+     * Get needsMarginBooking value
+     * @return bool|null
+     */
+    public function getNeedsMarginBooking(): ?bool
+    {
+        return $this->needsMarginBooking;
+    }
+    /**
+     * Set needsMarginBooking value
+     * @param bool $needsMarginBooking
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemMarginDTO
+     */
+    public function setNeedsMarginBooking(?bool $needsMarginBooking = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($needsMarginBooking) && !is_bool($needsMarginBooking)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($needsMarginBooking, true), gettype($needsMarginBooking)), __LINE__);
+        }
+        $this->needsMarginBooking = $needsMarginBooking;
         
         return $this;
     }

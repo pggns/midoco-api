@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckSupplierAgencySettlementResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckSupplierAgencySettlementResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class CheckSupplierAgencySettlementResponse extends AbstractStructBase
         return $this->MidocoFault;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFault method
+     * This method is responsible for validating the value(s) passed to the setMidocoFault method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFault method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFaultForArrayConstraintsFromSetMidocoFault(?array $values = []): string
+    public static function validateMidocoFaultForArrayConstraintFromSetMidocoFault(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class CheckSupplierAgencySettlementResponse extends AbstractStructBase
     public function setMidocoFault(?array $midocoFault = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFaultArrayErrorMessage = self::validateMidocoFaultForArrayConstraintsFromSetMidocoFault($midocoFault))) {
+        if ('' !== ($midocoFaultArrayErrorMessage = self::validateMidocoFaultForArrayConstraintFromSetMidocoFault($midocoFault))) {
             throw new InvalidArgumentException($midocoFaultArrayErrorMessage, __LINE__);
         }
         $this->MidocoFault = $midocoFault;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: performSMSCampaign --- initiate a messaging campaign, text template (maybe modified) and campaign_id is provided. An exception should be thrown if the text template is not parsable or if SMS is not usable
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PerformSMSCampaignResponse extends AbstractStructBase
 {
 }

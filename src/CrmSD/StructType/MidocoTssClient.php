@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTssClient StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTssClient extends TssClientDTO
 {
     /**
@@ -19,7 +20,7 @@ class MidocoTssClient extends TssClientDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoTssClientMetadata
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata[]
      */
     protected ?array $MidocoTssClientMetadata = null;
     /**
@@ -37,7 +38,7 @@ class MidocoTssClient extends TssClientDTO
      * @uses MidocoTssClient::setMidocoTssClientMetadata()
      * @uses MidocoTssClient::setComment()
      * @uses MidocoTssClient::setMajor_version()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata[] $midocoTssClientMetadata
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata[] $midocoTssClientMetadata
      * @param string $comment
      * @param string $major_version
      */
@@ -50,19 +51,20 @@ class MidocoTssClient extends TssClientDTO
     }
     /**
      * Get MidocoTssClientMetadata value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata[]
      */
     public function getMidocoTssClientMetadata(): ?array
     {
         return $this->MidocoTssClientMetadata;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTssClientMetadata method
+     * This method is responsible for validating the value(s) passed to the setMidocoTssClientMetadata method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTssClientMetadata method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTssClientMetadataForArrayConstraintsFromSetMidocoTssClientMetadata(?array $values = []): string
+    public static function validateMidocoTssClientMetadataForArrayConstraintFromSetMidocoTssClientMetadata(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -71,12 +73,12 @@ class MidocoTssClient extends TssClientDTO
         $invalidValues = [];
         foreach ($values as $midocoTssClientMidocoTssClientMetadataItem) {
             // validation for constraint: itemType
-            if (!$midocoTssClientMidocoTssClientMetadataItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata) {
+            if (!$midocoTssClientMidocoTssClientMetadataItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata) {
                 $invalidValues[] = is_object($midocoTssClientMidocoTssClientMetadataItem) ? get_class($midocoTssClientMidocoTssClientMetadataItem) : sprintf('%s(%s)', gettype($midocoTssClientMidocoTssClientMetadataItem), var_export($midocoTssClientMidocoTssClientMetadataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoTssClientMetadata property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoTssClientMetadata property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,13 +87,13 @@ class MidocoTssClient extends TssClientDTO
     /**
      * Set MidocoTssClientMetadata value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata[] $midocoTssClientMetadata
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata[] $midocoTssClientMetadata
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient
      */
     public function setMidocoTssClientMetadata(?array $midocoTssClientMetadata = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTssClientMetadataArrayErrorMessage = self::validateMidocoTssClientMetadataForArrayConstraintsFromSetMidocoTssClientMetadata($midocoTssClientMetadata))) {
+        if ('' !== ($midocoTssClientMetadataArrayErrorMessage = self::validateMidocoTssClientMetadataForArrayConstraintFromSetMidocoTssClientMetadata($midocoTssClientMetadata))) {
             throw new InvalidArgumentException($midocoTssClientMetadataArrayErrorMessage, __LINE__);
         }
         $this->MidocoTssClientMetadata = $midocoTssClientMetadata;
@@ -101,14 +103,14 @@ class MidocoTssClient extends TssClientDTO
     /**
      * Add item to MidocoTssClientMetadata value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient
      */
-    public function addToMidocoTssClientMetadata(\Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata $item): self
+    public function addToMidocoTssClientMetadata(\Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata) {
-            throw new InvalidArgumentException(sprintf('The MidocoTssClientMetadata property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClientMetadata, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata) {
+            throw new InvalidArgumentException(sprintf('The MidocoTssClientMetadata property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClientMetadata, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTssClientMetadata[] = $item;
         
@@ -125,7 +127,7 @@ class MidocoTssClient extends TssClientDTO
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient
      */
     public function setComment(?string $comment = null): self
     {
@@ -148,7 +150,7 @@ class MidocoTssClient extends TssClientDTO
     /**
      * Set major_version value
      * @param string $major_version
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient
      */
     public function setMajor_version(?string $major_version = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTourOperator StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTourOperator extends TouroperatorDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoTourOperator extends TouroperatorDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator
      */
     public function setInherited(?bool $inherited = null): self
     {

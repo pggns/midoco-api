@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Payment information
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PaymentInfo extends AbstractStructBase
 {
     /**
@@ -70,12 +71,13 @@ class PaymentInfo extends AbstractStructBase
         return $this->ccPayment;
     }
     /**
-     * This method is responsible for validating the values passed to the setCcPayment method
+     * This method is responsible for validating the value(s) passed to the setCcPayment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCcPayment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCcPaymentForArrayConstraintsFromSetCcPayment(?array $values = []): string
+    public static function validateCcPaymentForArrayConstraintFromSetCcPayment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -104,7 +106,7 @@ class PaymentInfo extends AbstractStructBase
     public function setCcPayment(?array $ccPayment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($ccPaymentArrayErrorMessage = self::validateCcPaymentForArrayConstraintsFromSetCcPayment($ccPayment))) {
+        if ('' !== ($ccPaymentArrayErrorMessage = self::validateCcPaymentForArrayConstraintFromSetCcPayment($ccPayment))) {
             throw new InvalidArgumentException($ccPaymentArrayErrorMessage, __LINE__);
         }
         $this->ccPayment = $ccPayment;

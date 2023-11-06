@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BillingDataListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BillingDataListRequest extends AbstractStructBase
 {
     /**

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintSupplierReportForMediatorResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintSupplierReportForMediatorResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class PrintSupplierReportForMediatorResponse extends AbstractStructBase
         return $this->printJobId;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintJobId method
+     * This method is responsible for validating the value(s) passed to the setPrintJobId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintJobId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintJobIdForArrayConstraintsFromSetPrintJobId(?array $values = []): string
+    public static function validatePrintJobIdForArrayConstraintFromSetPrintJobId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -69,12 +71,12 @@ class PrintSupplierReportForMediatorResponse extends AbstractStructBase
      * Set printJobId value
      * @throws InvalidArgumentException
      * @param int[] $printJobId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintSupplierReportForMediatorResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintSupplierReportForMediatorResponse
      */
     public function setPrintJobId(?array $printJobId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printJobIdArrayErrorMessage = self::validatePrintJobIdForArrayConstraintsFromSetPrintJobId($printJobId))) {
+        if ('' !== ($printJobIdArrayErrorMessage = self::validatePrintJobIdForArrayConstraintFromSetPrintJobId($printJobId))) {
             throw new InvalidArgumentException($printJobIdArrayErrorMessage, __LINE__);
         }
         $this->printJobId = $printJobId;
@@ -85,7 +87,7 @@ class PrintSupplierReportForMediatorResponse extends AbstractStructBase
      * Add item to printJobId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintSupplierReportForMediatorResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintSupplierReportForMediatorResponse
      */
     public function addToPrintJobId(int $item): self
     {

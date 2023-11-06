@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetInsuranceAgencyNumbersRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetInsuranceAgencyNumbersRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetInsuranceAgencyNumbersRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetInsuranceAgencyNumbersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetInsuranceAgencyNumbersRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +71,7 @@ class GetInsuranceAgencyNumbersRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetInsuranceAgencyNumbersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetInsuranceAgencyNumbersRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {

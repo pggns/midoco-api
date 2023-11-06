@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteOrderAttributesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteOrderAttributesRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class DeleteOrderAttributesRequest extends AbstractStructBase
         return $this->MidocoAttributeValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAttributeValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoAttributeValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAttributeValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAttributeValueForArrayConstraintsFromSetMidocoAttributeValue(?array $values = []): string
+    public static function validateMidocoAttributeValueForArrayConstraintFromSetMidocoAttributeValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class DeleteOrderAttributesRequest extends AbstractStructBase
     public function setMidocoAttributeValue(?array $midocoAttributeValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAttributeValueArrayErrorMessage = self::validateMidocoAttributeValueForArrayConstraintsFromSetMidocoAttributeValue($midocoAttributeValue))) {
+        if ('' !== ($midocoAttributeValueArrayErrorMessage = self::validateMidocoAttributeValueForArrayConstraintFromSetMidocoAttributeValue($midocoAttributeValue))) {
             throw new InvalidArgumentException($midocoAttributeValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoAttributeValue = $midocoAttributeValue;

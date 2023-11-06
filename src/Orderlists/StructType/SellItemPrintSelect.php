@@ -11,8 +11,17 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemPrintSelect StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemPrintSelect extends AbstractStructBase
 {
+    /**
+     * The childrenIds
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * @var int[]
+     */
+    protected ?array $childrenIds = null;
     /**
      * The confirmationGroup
      * @var string|null
@@ -71,7 +80,13 @@ class SellItemPrintSelect extends AbstractStructBase
      */
     protected ?float $totalPrice = null;
     /**
+     * The parentId
+     * @var int|null
+     */
+    protected ?int $parentId = null;
+    /**
      * Constructor method for SellItemPrintSelect
+     * @uses SellItemPrintSelect::setChildrenIds()
      * @uses SellItemPrintSelect::setConfirmationGroup()
      * @uses SellItemPrintSelect::setSelected()
      * @uses SellItemPrintSelect::setNeedsInvoicePrint()
@@ -83,6 +98,8 @@ class SellItemPrintSelect extends AbstractStructBase
      * @uses SellItemPrintSelect::setSupplierId()
      * @uses SellItemPrintSelect::setBookingId()
      * @uses SellItemPrintSelect::setTotalPrice()
+     * @uses SellItemPrintSelect::setParentId()
+     * @param int[] $childrenIds
      * @param string $confirmationGroup
      * @param bool $selected
      * @param bool $needsInvoicePrint
@@ -94,10 +111,12 @@ class SellItemPrintSelect extends AbstractStructBase
      * @param string $supplierId
      * @param string $bookingId
      * @param float $totalPrice
+     * @param int $parentId
      */
-    public function __construct(?string $confirmationGroup = null, ?bool $selected = null, ?bool $needsInvoicePrint = null, ?bool $editable = true, ?int $itemId = null, ?string $type = null, ?int $sellingMode = null, ?string $status = null, ?string $supplierId = null, ?string $bookingId = null, ?float $totalPrice = null)
+    public function __construct(?array $childrenIds = null, ?string $confirmationGroup = null, ?bool $selected = null, ?bool $needsInvoicePrint = null, ?bool $editable = true, ?int $itemId = null, ?string $type = null, ?int $sellingMode = null, ?string $status = null, ?string $supplierId = null, ?string $bookingId = null, ?float $totalPrice = null, ?int $parentId = null)
     {
         $this
+            ->setChildrenIds($childrenIds)
             ->setConfirmationGroup($confirmationGroup)
             ->setSelected($selected)
             ->setNeedsInvoicePrint($needsInvoicePrint)
@@ -108,7 +127,75 @@ class SellItemPrintSelect extends AbstractStructBase
             ->setStatus($status)
             ->setSupplierId($supplierId)
             ->setBookingId($bookingId)
-            ->setTotalPrice($totalPrice);
+            ->setTotalPrice($totalPrice)
+            ->setParentId($parentId);
+    }
+    /**
+     * Get childrenIds value
+     * @return int[]
+     */
+    public function getChildrenIds(): ?array
+    {
+        return $this->childrenIds;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setChildrenIds method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setChildrenIds method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateChildrenIdsForArrayConstraintFromSetChildrenIds(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $sellItemPrintSelectChildrenIdsItem) {
+            // validation for constraint: itemType
+            if (!(is_int($sellItemPrintSelectChildrenIdsItem) || ctype_digit($sellItemPrintSelectChildrenIdsItem))) {
+                $invalidValues[] = is_object($sellItemPrintSelectChildrenIdsItem) ? get_class($sellItemPrintSelectChildrenIdsItem) : sprintf('%s(%s)', gettype($sellItemPrintSelectChildrenIdsItem), var_export($sellItemPrintSelectChildrenIdsItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The childrenIds property can only contain items of type int, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set childrenIds value
+     * @throws InvalidArgumentException
+     * @param int[] $childrenIds
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintSelect
+     */
+    public function setChildrenIds(?array $childrenIds = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($childrenIdsArrayErrorMessage = self::validateChildrenIdsForArrayConstraintFromSetChildrenIds($childrenIds))) {
+            throw new InvalidArgumentException($childrenIdsArrayErrorMessage, __LINE__);
+        }
+        $this->childrenIds = $childrenIds;
+        
+        return $this;
+    }
+    /**
+     * Add item to childrenIds value
+     * @throws InvalidArgumentException
+     * @param int $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintSelect
+     */
+    public function addToChildrenIds(int $item): self
+    {
+        // validation for constraint: itemType
+        if (!(is_int($item) || ctype_digit($item))) {
+            throw new InvalidArgumentException(sprintf('The childrenIds property can only contain items of type int, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->childrenIds[] = $item;
+        
+        return $this;
     }
     /**
      * Get confirmationGroup value
@@ -360,6 +447,29 @@ class SellItemPrintSelect extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalPrice, true), gettype($totalPrice)), __LINE__);
         }
         $this->totalPrice = $totalPrice;
+        
+        return $this;
+    }
+    /**
+     * Get parentId value
+     * @return int|null
+     */
+    public function getParentId(): ?int
+    {
+        return $this->parentId;
+    }
+    /**
+     * Set parentId value
+     * @param int $parentId
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPrintSelect
+     */
+    public function setParentId(?int $parentId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($parentId) && !(is_int($parentId) || ctype_digit($parentId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($parentId, true), gettype($parentId)), __LINE__);
+        }
+        $this->parentId = $parentId;
         
         return $this;
     }

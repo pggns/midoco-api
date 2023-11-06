@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ProfileAttributes StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ProfileAttributes extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ProfileAttributes extends AbstractStructBase
         return $this->MidocoProfileAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProfileAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoProfileAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProfileAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProfileAttributeForArrayConstraintsFromSetMidocoProfileAttribute(?array $values = []): string
+    public static function validateMidocoProfileAttributeForArrayConstraintFromSetMidocoProfileAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ProfileAttributes extends AbstractStructBase
     public function setMidocoProfileAttribute(?array $midocoProfileAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProfileAttributeArrayErrorMessage = self::validateMidocoProfileAttributeForArrayConstraintsFromSetMidocoProfileAttribute($midocoProfileAttribute))) {
+        if ('' !== ($midocoProfileAttributeArrayErrorMessage = self::validateMidocoProfileAttributeForArrayConstraintFromSetMidocoProfileAttribute($midocoProfileAttribute))) {
             throw new InvalidArgumentException($midocoProfileAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoProfileAttribute = $midocoProfileAttribute;

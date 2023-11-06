@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GdsAttribCatLocalDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GdsAttribCatLocalDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class GdsAttribCatLocalDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param string $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsAttribCatLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsAttribCatLocalDTO
      */
     public function setCategoryId(?string $categoryId = null): self
     {
@@ -78,7 +79,7 @@ class GdsAttribCatLocalDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsAttribCatLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsAttribCatLocalDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +102,7 @@ class GdsAttribCatLocalDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsAttribCatLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsAttribCatLocalDTO
      */
     public function setLocale(?string $locale = null): self
     {

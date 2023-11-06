@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteBonusCard --- deletes a bonus card
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteBonusCardResponse extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class DeleteBonusCardResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteBonusCardResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteBonusCardResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

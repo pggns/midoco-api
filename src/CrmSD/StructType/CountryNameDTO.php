@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CountryNameDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CountryNameDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CountryNameDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryNameDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -78,7 +79,7 @@ class CountryNameDTO extends AbstractStructBase
     /**
      * Set countryLocalized value
      * @param string $countryLocalized
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryNameDTO
      */
     public function setCountryLocalized(?string $countryLocalized = null): self
     {
@@ -101,7 +102,7 @@ class CountryNameDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryNameDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {

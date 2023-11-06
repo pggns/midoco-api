@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoImportCustomer StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoImportCustomer extends AbstractStructBase
 {
     /**
@@ -447,7 +448,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -470,7 +471,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set company value
      * @param string $company
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setCompany(?string $company = null): self
     {
@@ -493,7 +494,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set anrede value
      * @param string $anrede
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setAnrede(?string $anrede = null): self
     {
@@ -516,7 +517,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set titel value
      * @param string $titel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setTitel(?string $titel = null): self
     {
@@ -539,7 +540,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set rufname value
      * @param string $rufname
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setRufname(?string $rufname = null): self
     {
@@ -562,7 +563,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set weitereVornamen value
      * @param string $weitereVornamen
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setWeitereVornamen(?string $weitereVornamen = null): self
     {
@@ -585,7 +586,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set nachname value
      * @param string $nachname
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setNachname(?string $nachname = null): self
     {
@@ -608,7 +609,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set namenszusatz value
      * @param string $namenszusatz
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setNamenszusatz(?string $namenszusatz = null): self
     {
@@ -631,7 +632,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -654,7 +655,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set briefanrede value
      * @param string $briefanrede
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setBriefanrede(?string $briefanrede = null): self
     {
@@ -677,7 +678,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set sortierfeld value
      * @param string $sortierfeld
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setSortierfeld(?string $sortierfeld = null): self
     {
@@ -700,7 +701,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set beruf value
      * @param string $beruf
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setBeruf(?string $beruf = null): self
     {
@@ -723,7 +724,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set abteilung value
      * @param string $abteilung
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setAbteilung(?string $abteilung = null): self
     {
@@ -746,7 +747,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set kostenstelle value
      * @param string $kostenstelle
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setKostenstelle(?string $kostenstelle = null): self
     {
@@ -769,7 +770,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set adresszeile1 value
      * @param string $adresszeile1
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setAdresszeile1(?string $adresszeile1 = null): self
     {
@@ -792,7 +793,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set adresszeile2 value
      * @param string $adresszeile2
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setAdresszeile2(?string $adresszeile2 = null): self
     {
@@ -815,7 +816,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set strasse value
      * @param string $strasse
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setStrasse(?string $strasse = null): self
     {
@@ -838,7 +839,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set hausnr value
      * @param string $hausnr
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setHausnr(?string $hausnr = null): self
     {
@@ -861,7 +862,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set zusatz value
      * @param string $zusatz
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setZusatz(?string $zusatz = null): self
     {
@@ -884,7 +885,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set postfach value
      * @param string $postfach
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPostfach(?string $postfach = null): self
     {
@@ -907,7 +908,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set plz value
      * @param string $plz
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPlz(?string $plz = null): self
     {
@@ -930,7 +931,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set ort value
      * @param string $ort
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setOrt(?string $ort = null): self
     {
@@ -953,7 +954,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set land value
      * @param string $land
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setLand(?string $land = null): self
     {
@@ -976,7 +977,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setEmail(?string $email = null): self
     {
@@ -999,7 +1000,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -1022,7 +1023,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set tel value
      * @param string $tel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setTel(?string $tel = null): self
     {
@@ -1045,7 +1046,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setFax(?string $fax = null): self
     {
@@ -1068,7 +1069,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set handyPrivate value
      * @param string $handyPrivate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setHandyPrivate(?string $handyPrivate = null): self
     {
@@ -1091,7 +1092,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set handBusiness value
      * @param string $handBusiness
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setHandBusiness(?string $handBusiness = null): self
     {
@@ -1114,7 +1115,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set birthday value
      * @param string $birthday
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setBirthday(?string $birthday = null): self
     {
@@ -1137,7 +1138,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set geburtsname value
      * @param string $geburtsname
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setGeburtsname(?string $geburtsname = null): self
     {
@@ -1160,7 +1161,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set geschlecht value
      * @param string $geschlecht
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setGeschlecht(?string $geschlecht = null): self
     {
@@ -1183,7 +1184,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set sprache value
      * @param string $sprache
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setSprache(?string $sprache = null): self
     {
@@ -1206,7 +1207,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -1229,7 +1230,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set chargesGroup value
      * @param string $chargesGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setChargesGroup(?string $chargesGroup = null): self
     {
@@ -1252,7 +1253,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set creditLimit value
      * @param string $creditLimit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setCreditLimit(?string $creditLimit = null): self
     {
@@ -1275,7 +1276,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set concernId value
      * @param string $concernId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setConcernId(?string $concernId = null): self
     {
@@ -1298,7 +1299,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set bankEinzug value
      * @param string $bankEinzug
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setBankEinzug(?string $bankEinzug = null): self
     {
@@ -1321,7 +1322,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set invoiceSignature value
      * @param string $invoiceSignature
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setInvoiceSignature(?string $invoiceSignature = null): self
     {
@@ -1344,7 +1345,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setVatId(?string $vatId = null): self
     {
@@ -1367,7 +1368,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set vatLiability value
      * @param string $vatLiability
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setVatLiability(?string $vatLiability = null): self
     {
@@ -1390,7 +1391,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set handelsregister value
      * @param string $handelsregister
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setHandelsregister(?string $handelsregister = null): self
     {
@@ -1413,7 +1414,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set passNo value
      * @param string $passNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPassNo(?string $passNo = null): self
     {
@@ -1436,7 +1437,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set passValid value
      * @param string $passValid
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPassValid(?string $passValid = null): self
     {
@@ -1459,7 +1460,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set passIssued value
      * @param string $passIssued
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPassIssued(?string $passIssued = null): self
     {
@@ -1482,7 +1483,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPersonalNo(?string $personalNo = null): self
     {
@@ -1505,7 +1506,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -1528,7 +1529,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -1551,7 +1552,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set mediatorType value
      * @param string $mediatorType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setMediatorType(?string $mediatorType = null): self
     {
@@ -1574,7 +1575,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set paymentDelay value
      * @param string $paymentDelay
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPaymentDelay(?string $paymentDelay = null): self
     {
@@ -1597,7 +1598,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set paymentConditionId value
      * @param string $paymentConditionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setPaymentConditionId(?string $paymentConditionId = null): self
     {
@@ -1620,7 +1621,7 @@ class MidocoImportCustomer extends AbstractStructBase
     /**
      * Set hasBtContract value
      * @param bool $hasBtContract
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportCustomer
      */
     public function setHasBtContract(?bool $hasBtContract = null): self
     {

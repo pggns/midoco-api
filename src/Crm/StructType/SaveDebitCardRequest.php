@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveDebitCardRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveDebitCardRequest extends AbstractStructBase
 {
     /**
@@ -33,20 +34,31 @@ class SaveDebitCardRequest extends AbstractStructBase
      */
     protected ?bool $useValidation = null;
     /**
+     * The invokeWorkflow
+     * Meta information extracted from the WSDL
+     * - documentation: Optional workflow execution to show a task in workflow after saving a missing Debit card in CRM. It is optional because a workflow execution during batch processing will result in longer execution time.
+     * - default: false
+     * @var bool|null
+     */
+    protected ?bool $invokeWorkflow = null;
+    /**
      * Constructor method for SaveDebitCardRequest
      * @uses SaveDebitCardRequest::setMidocoCrmDebitCard()
      * @uses SaveDebitCardRequest::setInternalVersion()
      * @uses SaveDebitCardRequest::setUseValidation()
+     * @uses SaveDebitCardRequest::setInvokeWorkflow()
      * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
      * @param int $internalVersion
      * @param bool $useValidation
+     * @param bool $invokeWorkflow
      */
-    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null, ?int $internalVersion = null, ?bool $useValidation = true)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null, ?int $internalVersion = null, ?bool $useValidation = true, ?bool $invokeWorkflow = false)
     {
         $this
             ->setMidocoCrmDebitCard($midocoCrmDebitCard)
             ->setInternalVersion($internalVersion)
-            ->setUseValidation($useValidation);
+            ->setUseValidation($useValidation)
+            ->setInvokeWorkflow($invokeWorkflow);
     }
     /**
      * Get MidocoCrmDebitCard value
@@ -110,6 +122,29 @@ class SaveDebitCardRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($useValidation, true), gettype($useValidation)), __LINE__);
         }
         $this->useValidation = $useValidation;
+        
+        return $this;
+    }
+    /**
+     * Get invokeWorkflow value
+     * @return bool|null
+     */
+    public function getInvokeWorkflow(): ?bool
+    {
+        return $this->invokeWorkflow;
+    }
+    /**
+     * Set invokeWorkflow value
+     * @param bool $invokeWorkflow
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDebitCardRequest
+     */
+    public function setInvokeWorkflow(?bool $invokeWorkflow = false): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($invokeWorkflow) && !is_bool($invokeWorkflow)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($invokeWorkflow, true), gettype($invokeWorkflow)), __LINE__);
+        }
+        $this->invokeWorkflow = $invokeWorkflow;
         
         return $this;
     }

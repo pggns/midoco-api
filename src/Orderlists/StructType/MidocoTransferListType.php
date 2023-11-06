@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTransferListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTransferListType extends AbstractStructBase
 {
     /**

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoCachedDataResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoCachedDataResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetMidocoCachedDataResponse extends AbstractStructBase
         return $this->data;
     }
     /**
-     * This method is responsible for validating the values passed to the setData method
+     * This method is responsible for validating the value(s) passed to the setData method
      * This method is willingly generated in order to preserve the one-line inline validation within the setData method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDataForArrayConstraintsFromSetData(?array $values = []): string
+    public static function validateDataForArrayConstraintFromSetData(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -69,12 +71,12 @@ class GetMidocoCachedDataResponse extends AbstractStructBase
      * Set data value
      * @throws InvalidArgumentException
      * @param string[] $data
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoCachedDataResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoCachedDataResponse
      */
     public function setData(?array $data = null): self
     {
         // validation for constraint: array
-        if ('' !== ($dataArrayErrorMessage = self::validateDataForArrayConstraintsFromSetData($data))) {
+        if ('' !== ($dataArrayErrorMessage = self::validateDataForArrayConstraintFromSetData($data))) {
             throw new InvalidArgumentException($dataArrayErrorMessage, __LINE__);
         }
         $this->data = $data;
@@ -85,7 +87,7 @@ class GetMidocoCachedDataResponse extends AbstractStructBase
      * Add item to data value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoCachedDataResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoCachedDataResponse
      */
     public function addToData(string $item): self
     {

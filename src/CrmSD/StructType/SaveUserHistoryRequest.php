@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveUserHistoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveUserHistoryRequest extends AbstractStructBase
 {
     /**
      * The MidocoUserHistory
      * Meta information extracted from the WSDL
      * - ref: MidocoUserHistory
-     * @var \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO $MidocoUserHistory = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO $MidocoUserHistory = null;
     /**
      * Constructor method for SaveUserHistoryRequest
      * @uses SaveUserHistoryRequest::setMidocoUserHistory()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO $midocoUserHistory
+     * @param \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO $midocoUserHistory
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO $midocoUserHistory = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO $midocoUserHistory = null)
     {
         $this
             ->setMidocoUserHistory($midocoUserHistory);
     }
     /**
      * Get MidocoUserHistory value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO|null
      */
-    public function getMidocoUserHistory(): ?\Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+    public function getMidocoUserHistory(): ?\Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
     {
         return $this->MidocoUserHistory;
     }
     /**
      * Set MidocoUserHistory value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO $midocoUserHistory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveUserHistoryRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO $midocoUserHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveUserHistoryRequest
      */
-    public function setMidocoUserHistory(?\Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO $midocoUserHistory = null): self
+    public function setMidocoUserHistory(?\Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO $midocoUserHistory = null): self
     {
         $this->MidocoUserHistory = $midocoUserHistory;
         

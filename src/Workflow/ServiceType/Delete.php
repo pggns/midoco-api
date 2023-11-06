@@ -19,7 +19,7 @@ class Delete extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Workflow\ServiceType\Delete
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -298,9 +298,36 @@ class Delete extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named deleteNotice
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Workflow\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Workflow\StructType\DeleteTaskRequest $paramDeleteTaskRequest
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteTaskResponse|bool
+     */
+    public function deleteNotice(\Pggns\MidocoApi\Workflow\StructType\DeleteTaskRequest $paramDeleteTaskRequest)
+    {
+        try {
+            $this->setResult($resultDeleteNotice = $this->getSoapClient()->__soapCall('deleteNotice', [
+                $paramDeleteTaskRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultDeleteNotice;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteSubjectResponse
+     * @return \Pggns\MidocoApi\Workflow\StructType\DeleteGlobalNoticesResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionDescriptionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteMidocoTaskPriorityResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaCrmResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderAttributeResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleCriteriaOrderResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteRuleDefinitionResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteSubjectResponse|\Pggns\MidocoApi\Workflow\StructType\DeleteTaskResponse
      */
     public function getResult()
     {

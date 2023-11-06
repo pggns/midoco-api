@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TextTemplateDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TextTemplateDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class TextTemplateDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TextTemplateDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +79,7 @@ class TextTemplateDTO extends AbstractStructBase
     /**
      * Set templateContent value
      * @param string $templateContent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TextTemplateDTO
      */
     public function setTemplateContent(?string $templateContent = null): self
     {
@@ -101,7 +102,7 @@ class TextTemplateDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TextTemplateDTO
      */
     public function setTemplateId(?string $templateId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListRuleCriteriaCrmAttributeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
         return $this->MidocoRuleCriteriaCrmAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRuleCriteriaCrmAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoRuleCriteriaCrmAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRuleCriteriaCrmAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRuleCriteriaCrmAttributeForArrayConstraintsFromSetMidocoRuleCriteriaCrmAttribute(?array $values = []): string
+    public static function validateMidocoRuleCriteriaCrmAttributeForArrayConstraintFromSetMidocoRuleCriteriaCrmAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListRuleCriteriaCrmAttributeResponse extends AbstractStructBase
     public function setMidocoRuleCriteriaCrmAttribute(?array $midocoRuleCriteriaCrmAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRuleCriteriaCrmAttributeArrayErrorMessage = self::validateMidocoRuleCriteriaCrmAttributeForArrayConstraintsFromSetMidocoRuleCriteriaCrmAttribute($midocoRuleCriteriaCrmAttribute))) {
+        if ('' !== ($midocoRuleCriteriaCrmAttributeArrayErrorMessage = self::validateMidocoRuleCriteriaCrmAttributeForArrayConstraintFromSetMidocoRuleCriteriaCrmAttribute($midocoRuleCriteriaCrmAttribute))) {
             throw new InvalidArgumentException($midocoRuleCriteriaCrmAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoRuleCriteriaCrmAttribute = $midocoRuleCriteriaCrmAttribute;

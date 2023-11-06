@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoProperties StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoProperties extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class MidocoProperties extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProperty
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty[]
      */
     protected ?array $MidocoProperty = null;
     /**
      * Constructor method for MidocoProperties
      * @uses MidocoProperties::setMidocoProperty()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty[] $midocoProperty
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty[] $midocoProperty
      */
     public function __construct(?array $midocoProperty = null)
     {
@@ -34,19 +35,20 @@ class MidocoProperties extends AbstractStructBase
     }
     /**
      * Get MidocoProperty value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty[]
      */
     public function getMidocoProperty(): ?array
     {
         return $this->MidocoProperty;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProperty method
+     * This method is responsible for validating the value(s) passed to the setMidocoProperty method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProperty method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPropertyForArrayConstraintsFromSetMidocoProperty(?array $values = []): string
+    public static function validateMidocoPropertyForArrayConstraintFromSetMidocoProperty(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class MidocoProperties extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoPropertiesMidocoPropertyItem) {
             // validation for constraint: itemType
-            if (!$midocoPropertiesMidocoPropertyItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty) {
+            if (!$midocoPropertiesMidocoPropertyItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty) {
                 $invalidValues[] = is_object($midocoPropertiesMidocoPropertyItem) ? get_class($midocoPropertiesMidocoPropertyItem) : sprintf('%s(%s)', gettype($midocoPropertiesMidocoPropertyItem), var_export($midocoPropertiesMidocoPropertyItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class MidocoProperties extends AbstractStructBase
     /**
      * Set MidocoProperty value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty[] $midocoProperty
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProperties
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty[] $midocoProperty
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProperties
      */
     public function setMidocoProperty(?array $midocoProperty = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPropertyArrayErrorMessage = self::validateMidocoPropertyForArrayConstraintsFromSetMidocoProperty($midocoProperty))) {
+        if ('' !== ($midocoPropertyArrayErrorMessage = self::validateMidocoPropertyForArrayConstraintFromSetMidocoProperty($midocoProperty))) {
             throw new InvalidArgumentException($midocoPropertyArrayErrorMessage, __LINE__);
         }
         $this->MidocoProperty = $midocoProperty;
@@ -85,14 +87,14 @@ class MidocoProperties extends AbstractStructBase
     /**
      * Add item to MidocoProperty value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProperties
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProperties
      */
-    public function addToMidocoProperty(\Pggns\MidocoApi\CrmSD\StructType\MidocoProperty $item): self
+    public function addToMidocoProperty(\Pggns\MidocoApi\Crmsd\StructType\MidocoProperty $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty) {
-            throw new InvalidArgumentException(sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty) {
+            throw new InvalidArgumentException(sprintf('The MidocoProperty property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProperty[] = $item;
         

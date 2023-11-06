@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CcproxyHandlerDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CcproxyHandlerDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class CcproxyHandlerDTO extends AbstractStructBase
     /**
      * Set handlerId value
      * @param string $handlerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxyHandlerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxyHandlerDTO
      */
     public function setHandlerId(?string $handlerId = null): self
     {
@@ -70,7 +71,7 @@ class CcproxyHandlerDTO extends AbstractStructBase
     /**
      * Set handlerType value
      * @param string $handlerType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxyHandlerDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxyHandlerDTO
      */
     public function setHandlerType(?string $handlerType = null): self
     {

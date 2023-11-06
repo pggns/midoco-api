@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoRuleTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoRuleTypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoRuleTypesResponse extends AbstractStructBase
         return $this->MidocoRuleType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRuleType method
+     * This method is responsible for validating the value(s) passed to the setMidocoRuleType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRuleType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRuleTypeForArrayConstraintsFromSetMidocoRuleType(?array $values = []): string
+    public static function validateMidocoRuleTypeForArrayConstraintFromSetMidocoRuleType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoRuleTypesResponse extends AbstractStructBase
     public function setMidocoRuleType(?array $midocoRuleType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRuleTypeArrayErrorMessage = self::validateMidocoRuleTypeForArrayConstraintsFromSetMidocoRuleType($midocoRuleType))) {
+        if ('' !== ($midocoRuleTypeArrayErrorMessage = self::validateMidocoRuleTypeForArrayConstraintFromSetMidocoRuleType($midocoRuleType))) {
             throw new InvalidArgumentException($midocoRuleTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoRuleType = $midocoRuleType;

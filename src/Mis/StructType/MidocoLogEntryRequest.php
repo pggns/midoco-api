@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoLogEntryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoLogEntryRequest extends LogEntryRequestDTO
 {
 }

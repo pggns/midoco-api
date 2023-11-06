@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllCompanyCustomersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllCompanyCustomersResponse extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
         return $this->MidocoGetCompanyCustomer;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoGetCompanyCustomer method
+     * This method is responsible for validating the value(s) passed to the setMidocoGetCompanyCustomer method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoGetCompanyCustomer method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoGetCompanyCustomerForArrayConstraintsFromSetMidocoGetCompanyCustomer(?array $values = []): string
+    public static function validateMidocoGetCompanyCustomerForArrayConstraintFromSetMidocoGetCompanyCustomer(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     public function setMidocoGetCompanyCustomer(?array $midocoGetCompanyCustomer = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoGetCompanyCustomerArrayErrorMessage = self::validateMidocoGetCompanyCustomerForArrayConstraintsFromSetMidocoGetCompanyCustomer($midocoGetCompanyCustomer))) {
+        if ('' !== ($midocoGetCompanyCustomerArrayErrorMessage = self::validateMidocoGetCompanyCustomerForArrayConstraintFromSetMidocoGetCompanyCustomer($midocoGetCompanyCustomer))) {
             throw new InvalidArgumentException($midocoGetCompanyCustomerArrayErrorMessage, __LINE__);
         }
         $this->MidocoGetCompanyCustomer = $midocoGetCompanyCustomer;

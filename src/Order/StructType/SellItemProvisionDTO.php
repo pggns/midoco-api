@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemProvisionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemProvisionDTO extends AbstractStructBase
 {
     /**
@@ -286,15 +287,20 @@ class SellItemProvisionDTO extends AbstractStructBase
      */
     protected ?string $bookingText = null;
     /**
-     * The isEsrTransfer
+     * The isQrInvoiceTransfer
      * @var bool|null
      */
-    protected ?bool $isEsrTransfer = null;
+    protected ?bool $isQrInvoiceTransfer = null;
     /**
-     * The esrRefNo
+     * The qrInvoiceRefNo
      * @var string|null
      */
-    protected ?string $esrRefNo = null;
+    protected ?string $qrInvoiceRefNo = null;
+    /**
+     * The creationDate
+     * @var string|null
+     */
+    protected ?string $creationDate = null;
     /**
      * Constructor method for SellItemProvisionDTO
      * @uses SellItemProvisionDTO::setItemId()
@@ -351,8 +357,9 @@ class SellItemProvisionDTO extends AbstractStructBase
      * @uses SellItemProvisionDTO::setDueDate()
      * @uses SellItemProvisionDTO::setBookingDate()
      * @uses SellItemProvisionDTO::setBookingText()
-     * @uses SellItemProvisionDTO::setIsEsrTransfer()
-     * @uses SellItemProvisionDTO::setEsrRefNo()
+     * @uses SellItemProvisionDTO::setIsQrInvoiceTransfer()
+     * @uses SellItemProvisionDTO::setQrInvoiceRefNo()
+     * @uses SellItemProvisionDTO::setCreationDate()
      * @param int $itemId
      * @param string $bookingId
      * @param string $traveltype
@@ -407,10 +414,11 @@ class SellItemProvisionDTO extends AbstractStructBase
      * @param string $dueDate
      * @param string $bookingDate
      * @param string $bookingText
-     * @param bool $isEsrTransfer
-     * @param string $esrRefNo
+     * @param bool $isQrInvoiceTransfer
+     * @param string $qrInvoiceRefNo
+     * @param string $creationDate
      */
-    public function __construct(?int $itemId = null, ?string $bookingId = null, ?string $traveltype = null, ?float $totalPrice = null, ?int $numberOfPersons = null, ?string $traveldate = null, ?string $status = null, ?float $calculatedRevenue = null, ?float $grantedRevenue = null, ?string $invoiceDate = null, ?float $vatInclAmount = null, ?float $vatFreeAmount = null, ?float $vatInsurance = null, ?float $supplierInvoice = null, ?string $receiptNo = null, ?string $supplierId = null, ?int $orderId = null, ?int $orderNo = null, ?string $customerSurName = null, ?string $customerForeName = null, ?bool $isCollective = null, ?int $revenueId = null, ?float $nettoAmount = null, ?float $vatAmount = null, ?float $vatPercent = null, ?string $unitName = null, ?int $commissionMode = null, ?bool $entryRestAsProv = null, ?string $paymentType = null, ?bool $inPackage = null, ?bool $isInsurance = null, ?float $inkassoPrice = null, ?string $extId = null, ?string $destination = null, ?float $feeAmount = null, ?bool $manualEntriesExist = null, ?string $currency = null, ?string $foreignCurrency = null, ?float $foreignCurrencyExchangeRate = null, ?float $foreignCurrencyRateMasterData = null, ?int $foreignCurrencyLookupMethod = null, ?bool $isForeignCreditor = false, ?int $inkassoMode = null, ?float $supplierDIAmount = null, ?float $travelPrice = null, ?string $settlementType = null, ?string $settlementTypeDebit = null, ?bool $isDeposit = null, ?string $travelitemDestination = null, ?string $itemType = null, ?string $endTravel = null, ?string $dueDate = null, ?string $bookingDate = null, ?string $bookingText = null, ?bool $isEsrTransfer = null, ?string $esrRefNo = null)
+    public function __construct(?int $itemId = null, ?string $bookingId = null, ?string $traveltype = null, ?float $totalPrice = null, ?int $numberOfPersons = null, ?string $traveldate = null, ?string $status = null, ?float $calculatedRevenue = null, ?float $grantedRevenue = null, ?string $invoiceDate = null, ?float $vatInclAmount = null, ?float $vatFreeAmount = null, ?float $vatInsurance = null, ?float $supplierInvoice = null, ?string $receiptNo = null, ?string $supplierId = null, ?int $orderId = null, ?int $orderNo = null, ?string $customerSurName = null, ?string $customerForeName = null, ?bool $isCollective = null, ?int $revenueId = null, ?float $nettoAmount = null, ?float $vatAmount = null, ?float $vatPercent = null, ?string $unitName = null, ?int $commissionMode = null, ?bool $entryRestAsProv = null, ?string $paymentType = null, ?bool $inPackage = null, ?bool $isInsurance = null, ?float $inkassoPrice = null, ?string $extId = null, ?string $destination = null, ?float $feeAmount = null, ?bool $manualEntriesExist = null, ?string $currency = null, ?string $foreignCurrency = null, ?float $foreignCurrencyExchangeRate = null, ?float $foreignCurrencyRateMasterData = null, ?int $foreignCurrencyLookupMethod = null, ?bool $isForeignCreditor = false, ?int $inkassoMode = null, ?float $supplierDIAmount = null, ?float $travelPrice = null, ?string $settlementType = null, ?string $settlementTypeDebit = null, ?bool $isDeposit = null, ?string $travelitemDestination = null, ?string $itemType = null, ?string $endTravel = null, ?string $dueDate = null, ?string $bookingDate = null, ?string $bookingText = null, ?bool $isQrInvoiceTransfer = null, ?string $qrInvoiceRefNo = null, ?string $creationDate = null)
     {
         $this
             ->setItemId($itemId)
@@ -467,8 +475,9 @@ class SellItemProvisionDTO extends AbstractStructBase
             ->setDueDate($dueDate)
             ->setBookingDate($bookingDate)
             ->setBookingText($bookingText)
-            ->setIsEsrTransfer($isEsrTransfer)
-            ->setEsrRefNo($esrRefNo);
+            ->setIsQrInvoiceTransfer($isQrInvoiceTransfer)
+            ->setQrInvoiceRefNo($qrInvoiceRefNo)
+            ->setCreationDate($creationDate);
     }
     /**
      * Get itemId value
@@ -1713,48 +1722,71 @@ class SellItemProvisionDTO extends AbstractStructBase
         return $this;
     }
     /**
-     * Get isEsrTransfer value
+     * Get isQrInvoiceTransfer value
      * @return bool|null
      */
-    public function getIsEsrTransfer(): ?bool
+    public function getIsQrInvoiceTransfer(): ?bool
     {
-        return $this->isEsrTransfer;
+        return $this->isQrInvoiceTransfer;
     }
     /**
-     * Set isEsrTransfer value
-     * @param bool $isEsrTransfer
+     * Set isQrInvoiceTransfer value
+     * @param bool $isQrInvoiceTransfer
      * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionDTO
      */
-    public function setIsEsrTransfer(?bool $isEsrTransfer = null): self
+    public function setIsQrInvoiceTransfer(?bool $isQrInvoiceTransfer = null): self
     {
         // validation for constraint: boolean
-        if (!is_null($isEsrTransfer) && !is_bool($isEsrTransfer)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isEsrTransfer, true), gettype($isEsrTransfer)), __LINE__);
+        if (!is_null($isQrInvoiceTransfer) && !is_bool($isQrInvoiceTransfer)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isQrInvoiceTransfer, true), gettype($isQrInvoiceTransfer)), __LINE__);
         }
-        $this->isEsrTransfer = $isEsrTransfer;
+        $this->isQrInvoiceTransfer = $isQrInvoiceTransfer;
         
         return $this;
     }
     /**
-     * Get esrRefNo value
+     * Get qrInvoiceRefNo value
      * @return string|null
      */
-    public function getEsrRefNo(): ?string
+    public function getQrInvoiceRefNo(): ?string
     {
-        return $this->esrRefNo;
+        return $this->qrInvoiceRefNo;
     }
     /**
-     * Set esrRefNo value
-     * @param string $esrRefNo
+     * Set qrInvoiceRefNo value
+     * @param string $qrInvoiceRefNo
      * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionDTO
      */
-    public function setEsrRefNo(?string $esrRefNo = null): self
+    public function setQrInvoiceRefNo(?string $qrInvoiceRefNo = null): self
     {
         // validation for constraint: string
-        if (!is_null($esrRefNo) && !is_string($esrRefNo)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($esrRefNo, true), gettype($esrRefNo)), __LINE__);
+        if (!is_null($qrInvoiceRefNo) && !is_string($qrInvoiceRefNo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($qrInvoiceRefNo, true), gettype($qrInvoiceRefNo)), __LINE__);
         }
-        $this->esrRefNo = $esrRefNo;
+        $this->qrInvoiceRefNo = $qrInvoiceRefNo;
+        
+        return $this;
+    }
+    /**
+     * Get creationDate value
+     * @return string|null
+     */
+    public function getCreationDate(): ?string
+    {
+        return $this->creationDate;
+    }
+    /**
+     * Set creationDate value
+     * @param string $creationDate
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionDTO
+     */
+    public function setCreationDate(?string $creationDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($creationDate) && !is_string($creationDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationDate, true), gettype($creationDate)), __LINE__);
+        }
+        $this->creationDate = $creationDate;
         
         return $this;
     }

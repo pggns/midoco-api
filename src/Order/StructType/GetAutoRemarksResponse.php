@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAutoRemarksResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAutoRemarksResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAutoRemarksResponse extends AbstractStructBase
         return $this->MidocoSupplierAutoRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierAutoRemark method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierAutoRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierAutoRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierAutoRemarkForArrayConstraintsFromSetMidocoSupplierAutoRemark(?array $values = []): string
+    public static function validateMidocoSupplierAutoRemarkForArrayConstraintFromSetMidocoSupplierAutoRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAutoRemarksResponse extends AbstractStructBase
     public function setMidocoSupplierAutoRemark(?array $midocoSupplierAutoRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierAutoRemarkArrayErrorMessage = self::validateMidocoSupplierAutoRemarkForArrayConstraintsFromSetMidocoSupplierAutoRemark($midocoSupplierAutoRemark))) {
+        if ('' !== ($midocoSupplierAutoRemarkArrayErrorMessage = self::validateMidocoSupplierAutoRemarkForArrayConstraintFromSetMidocoSupplierAutoRemark($midocoSupplierAutoRemark))) {
             throw new InvalidArgumentException($midocoSupplierAutoRemarkArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierAutoRemark = $midocoSupplierAutoRemark;

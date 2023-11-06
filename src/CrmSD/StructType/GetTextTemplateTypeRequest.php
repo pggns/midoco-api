@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTextTemplateTypeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTextTemplateTypeRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetTextTemplateTypeRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTextTemplateTypeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTextTemplateTypeRequest
      */
     public function setTemplateId(?string $templateId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAmadeusExportStringRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAmadeusExportStringRequest extends AbstractStructBase
 {
     /**
@@ -22,16 +23,16 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoSelectedCrmPersonTraveller
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSelectedCrmPersonTraveller
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller[]
      */
     protected ?array $MidocoSelectedCrmPersonTraveller = null;
     /**
@@ -40,7 +41,7 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerTravel
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType[]
      */
     protected ?array $MidocoCustomerTravel = null;
     /**
@@ -70,14 +71,14 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
      * @uses GetAmadeusExportStringRequest::setExportAge()
      * @uses GetAmadeusExportStringRequest::setReturnJson()
      * @param string $expedientCode
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
      * @param bool $exportBirthday
      * @param bool $exportAge
      * @param bool $returnJson
      */
-    public function __construct(?string $expedientCode = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoSelectedCrmPersonTraveller = null, ?array $midocoCustomerTravel = null, ?bool $exportBirthday = null, ?bool $exportAge = null, ?bool $returnJson = false)
+    public function __construct(?string $expedientCode = null, ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoSelectedCrmPersonTraveller = null, ?array $midocoCustomerTravel = null, ?bool $exportBirthday = null, ?bool $exportAge = null, ?bool $returnJson = false)
     {
         $this
             ->setExpedientCode($expedientCode)
@@ -99,7 +100,7 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Set expedientCode value
      * @param string $expedientCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
     public function setExpedientCode(?string $expedientCode = null): self
     {
@@ -113,18 +114,18 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -132,19 +133,20 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSelectedCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller[]
      */
     public function getMidocoSelectedCrmPersonTraveller(): ?array
     {
         return $this->MidocoSelectedCrmPersonTraveller;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSelectedCrmPersonTraveller method
+     * This method is responsible for validating the value(s) passed to the setMidocoSelectedCrmPersonTraveller method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSelectedCrmPersonTraveller method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSelectedCrmPersonTravellerForArrayConstraintsFromSetMidocoSelectedCrmPersonTraveller(?array $values = []): string
+    public static function validateMidocoSelectedCrmPersonTravellerForArrayConstraintFromSetMidocoSelectedCrmPersonTraveller(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,12 +155,12 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAmadeusExportStringRequestMidocoSelectedCrmPersonTravellerItem) {
             // validation for constraint: itemType
-            if (!$getAmadeusExportStringRequestMidocoSelectedCrmPersonTravellerItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
+            if (!$getAmadeusExportStringRequestMidocoSelectedCrmPersonTravellerItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller) {
                 $invalidValues[] = is_object($getAmadeusExportStringRequestMidocoSelectedCrmPersonTravellerItem) ? get_class($getAmadeusExportStringRequestMidocoSelectedCrmPersonTravellerItem) : sprintf('%s(%s)', gettype($getAmadeusExportStringRequestMidocoSelectedCrmPersonTravellerItem), var_export($getAmadeusExportStringRequestMidocoSelectedCrmPersonTravellerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -167,13 +169,13 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Set MidocoSelectedCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller[] $midocoSelectedCrmPersonTraveller
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
     public function setMidocoSelectedCrmPersonTraveller(?array $midocoSelectedCrmPersonTraveller = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSelectedCrmPersonTravellerArrayErrorMessage = self::validateMidocoSelectedCrmPersonTravellerForArrayConstraintsFromSetMidocoSelectedCrmPersonTraveller($midocoSelectedCrmPersonTraveller))) {
+        if ('' !== ($midocoSelectedCrmPersonTravellerArrayErrorMessage = self::validateMidocoSelectedCrmPersonTravellerForArrayConstraintFromSetMidocoSelectedCrmPersonTraveller($midocoSelectedCrmPersonTraveller))) {
             throw new InvalidArgumentException($midocoSelectedCrmPersonTravellerArrayErrorMessage, __LINE__);
         }
         $this->MidocoSelectedCrmPersonTraveller = $midocoSelectedCrmPersonTraveller;
@@ -183,14 +185,14 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Add item to MidocoSelectedCrmPersonTraveller value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
-    public function addToMidocoSelectedCrmPersonTraveller(\Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller $item): self
+    public function addToMidocoSelectedCrmPersonTraveller(\Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller) {
-            throw new InvalidArgumentException(sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller) {
+            throw new InvalidArgumentException(sprintf('The MidocoSelectedCrmPersonTraveller property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectedCrmPersonTraveller, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSelectedCrmPersonTraveller[] = $item;
         
@@ -198,19 +200,20 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerTravel value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType[]
      */
     public function getMidocoCustomerTravel(): ?array
     {
         return $this->MidocoCustomerTravel;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerTravel method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerTravel method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerTravel method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerTravelForArrayConstraintsFromSetMidocoCustomerTravel(?array $values = []): string
+    public static function validateMidocoCustomerTravelForArrayConstraintFromSetMidocoCustomerTravel(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -219,12 +222,12 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAmadeusExportStringRequestMidocoCustomerTravelItem) {
             // validation for constraint: itemType
-            if (!$getAmadeusExportStringRequestMidocoCustomerTravelItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType) {
+            if (!$getAmadeusExportStringRequestMidocoCustomerTravelItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType) {
                 $invalidValues[] = is_object($getAmadeusExportStringRequestMidocoCustomerTravelItem) ? get_class($getAmadeusExportStringRequestMidocoCustomerTravelItem) : sprintf('%s(%s)', gettype($getAmadeusExportStringRequestMidocoCustomerTravelItem), var_export($getAmadeusExportStringRequestMidocoCustomerTravelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -233,13 +236,13 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Set MidocoCustomerTravel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType[] $midocoCustomerTravel
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
     public function setMidocoCustomerTravel(?array $midocoCustomerTravel = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerTravelArrayErrorMessage = self::validateMidocoCustomerTravelForArrayConstraintsFromSetMidocoCustomerTravel($midocoCustomerTravel))) {
+        if ('' !== ($midocoCustomerTravelArrayErrorMessage = self::validateMidocoCustomerTravelForArrayConstraintFromSetMidocoCustomerTravel($midocoCustomerTravel))) {
             throw new InvalidArgumentException($midocoCustomerTravelArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerTravel = $midocoCustomerTravel;
@@ -249,14 +252,14 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Add item to MidocoCustomerTravel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
-    public function addToMidocoCustomerTravel(\Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType $item): self
+    public function addToMidocoCustomerTravel(\Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerTravel property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerTravel[] = $item;
         
@@ -273,7 +276,7 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Set exportBirthday value
      * @param bool $exportBirthday
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
     public function setExportBirthday(?bool $exportBirthday = null): self
     {
@@ -296,7 +299,7 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Set exportAge value
      * @param bool $exportAge
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
     public function setExportAge(?bool $exportAge = null): self
     {
@@ -319,7 +322,7 @@ class GetAmadeusExportStringRequest extends AbstractStructBase
     /**
      * Set returnJson value
      * @param bool $returnJson
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAmadeusExportStringRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAmadeusExportStringRequest
      */
     public function setReturnJson(?bool $returnJson = false): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CustomerIds StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CustomerIds extends AbstractStructBase
 {
     /**
@@ -53,12 +54,13 @@ class CustomerIds extends AbstractStructBase
         return $this->included;
     }
     /**
-     * This method is responsible for validating the values passed to the setIncluded method
+     * This method is responsible for validating the value(s) passed to the setIncluded method
      * This method is willingly generated in order to preserve the one-line inline validation within the setIncluded method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateIncludedForArrayConstraintsFromSetIncluded(?array $values = []): string
+    public static function validateIncludedForArrayConstraintFromSetIncluded(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -82,12 +84,12 @@ class CustomerIds extends AbstractStructBase
      * Set included value
      * @throws InvalidArgumentException
      * @param int[] $included
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIds
      */
     public function setIncluded(?array $included = null): self
     {
         // validation for constraint: array
-        if ('' !== ($includedArrayErrorMessage = self::validateIncludedForArrayConstraintsFromSetIncluded($included))) {
+        if ('' !== ($includedArrayErrorMessage = self::validateIncludedForArrayConstraintFromSetIncluded($included))) {
             throw new InvalidArgumentException($includedArrayErrorMessage, __LINE__);
         }
         $this->included = $included;
@@ -98,7 +100,7 @@ class CustomerIds extends AbstractStructBase
      * Add item to included value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIds
      */
     public function addToIncluded(int $item): self
     {
@@ -119,12 +121,13 @@ class CustomerIds extends AbstractStructBase
         return $this->dropped;
     }
     /**
-     * This method is responsible for validating the values passed to the setDropped method
+     * This method is responsible for validating the value(s) passed to the setDropped method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDropped method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDroppedForArrayConstraintsFromSetDropped(?array $values = []): string
+    public static function validateDroppedForArrayConstraintFromSetDropped(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -148,12 +151,12 @@ class CustomerIds extends AbstractStructBase
      * Set dropped value
      * @throws InvalidArgumentException
      * @param int[] $dropped
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIds
      */
     public function setDropped(?array $dropped = null): self
     {
         // validation for constraint: array
-        if ('' !== ($droppedArrayErrorMessage = self::validateDroppedForArrayConstraintsFromSetDropped($dropped))) {
+        if ('' !== ($droppedArrayErrorMessage = self::validateDroppedForArrayConstraintFromSetDropped($dropped))) {
             throw new InvalidArgumentException($droppedArrayErrorMessage, __LINE__);
         }
         $this->dropped = $dropped;
@@ -164,7 +167,7 @@ class CustomerIds extends AbstractStructBase
      * Add item to dropped value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIds
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIds
      */
     public function addToDropped(int $item): self
     {

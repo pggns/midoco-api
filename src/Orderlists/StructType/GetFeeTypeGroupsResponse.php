@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetFeeTypeGroupsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFeeTypeGroupsResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetFeeTypeGroupsResponse extends AbstractStructBase
         return $this->feeGroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setFeeGroup method
+     * This method is responsible for validating the value(s) passed to the setFeeGroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFeeGroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFeeGroupForArrayConstraintsFromSetFeeGroup(?array $values = []): string
+    public static function validateFeeGroupForArrayConstraintFromSetFeeGroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetFeeTypeGroupsResponse extends AbstractStructBase
     public function setFeeGroup(?array $feeGroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($feeGroupArrayErrorMessage = self::validateFeeGroupForArrayConstraintsFromSetFeeGroup($feeGroup))) {
+        if ('' !== ($feeGroupArrayErrorMessage = self::validateFeeGroupForArrayConstraintFromSetFeeGroup($feeGroup))) {
             throw new InvalidArgumentException($feeGroupArrayErrorMessage, __LINE__);
         }
         $this->feeGroup = $feeGroup;

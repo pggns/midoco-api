@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,39 +13,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: returns a list of AutoBillingMatrixDTO
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteAutoBillingMatrixRequest extends AbstractStructBase
 {
     /**
      * The MidocoAutoBillingMatrix
      * Meta information extracted from the WSDL
      * - ref: MidocoAutoBillingMatrix
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO $MidocoAutoBillingMatrix = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO $MidocoAutoBillingMatrix = null;
     /**
      * Constructor method for DeleteAutoBillingMatrixRequest
      * @uses DeleteAutoBillingMatrixRequest::setMidocoAutoBillingMatrix()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix = null)
     {
         $this
             ->setMidocoAutoBillingMatrix($midocoAutoBillingMatrix);
     }
     /**
      * Get MidocoAutoBillingMatrix value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO|null
      */
-    public function getMidocoAutoBillingMatrix(): ?\Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO
+    public function getMidocoAutoBillingMatrix(): ?\Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO
     {
         return $this->MidocoAutoBillingMatrix;
     }
     /**
      * Set MidocoAutoBillingMatrix value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteAutoBillingMatrixRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteAutoBillingMatrixRequest
      */
-    public function setMidocoAutoBillingMatrix(?\Pggns\MidocoApi\CrmSD\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix = null): self
+    public function setMidocoAutoBillingMatrix(?\Pggns\MidocoApi\Crmsd\StructType\AutoBillingMatrixDTO $midocoAutoBillingMatrix = null): self
     {
         $this->MidocoAutoBillingMatrix = $midocoAutoBillingMatrix;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintDescriptionListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintDescriptionListRequest extends AbstractStructBase
 {
     /**
@@ -49,7 +50,7 @@ class GetPrintDescriptionListRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintDescriptionListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintDescriptionListRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -72,7 +73,7 @@ class GetPrintDescriptionListRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintDescriptionListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintDescriptionListRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {

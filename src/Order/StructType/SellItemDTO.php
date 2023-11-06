@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemDTO extends AbstractStructBase
 {
     /**
@@ -784,6 +785,11 @@ class SellItemDTO extends AbstractStructBase
      */
     protected ?string $vatDivisionComment = null;
     /**
+     * The vatDivisionType
+     * @var int|null
+     */
+    protected ?int $vatDivisionType = null;
+    /**
      * The vatIncluded
      * @var bool|null
      */
@@ -949,6 +955,7 @@ class SellItemDTO extends AbstractStructBase
      * @uses SellItemDTO::setVatDivisionChecked()
      * @uses SellItemDTO::setVatDivisionCheckedBy()
      * @uses SellItemDTO::setVatDivisionComment()
+     * @uses SellItemDTO::setVatDivisionType()
      * @uses SellItemDTO::setVatIncluded()
      * @uses SellItemDTO::setVatPercent()
      * @param string $accomodationCode
@@ -1105,10 +1112,11 @@ class SellItemDTO extends AbstractStructBase
      * @param string $vatDivisionChecked
      * @param int $vatDivisionCheckedBy
      * @param string $vatDivisionComment
+     * @param int $vatDivisionType
      * @param bool $vatIncluded
      * @param float $vatPercent
      */
-    public function __construct(?string $accomodationCode = null, ?string $accomodationDescription = null, ?string $accountId = null, ?string $areaDescription = null, ?string $arrivalTime = null, ?int $articleCount = null, ?int $atolIndex = null, ?string $atolPeriod = null, ?int $bookingUser = null, ?bool $bookvat = null, ?float $buyCurrencyRate = null, ?bool $calculatedFee = null, ?float $calculatedMediatorAmount = null, ?float $calculatedMediatorFeeAmount = null, ?float $calculatedRevenue = null, ?string $carrier = null, ?string $category = null, ?string $cateringDescription = null, ?float $ccPaidAmount = null, ?float $commissionAmount = null, ?string $commissionLevelId = null, ?float $commissionPercent = null, ?string $confirmationGroup = null, ?bool $confirmationReceived = null, ?bool $confirmationRequired = null, ?string $contractTime = null, ?string $costCentre = null, ?string $costUnit = null, ?string $countryCode = null, ?string $countryDescription = null, ?string $creationDate = null, ?string $creationTime = null, ?int $creationUser = null, ?string $cruiseCode = null, ?string $cruiseDescription = null, ?string $currency = null, ?bool $customerConfReceived = null, ?bool $customerConfRequired = null, ?string $departureCode = null, ?string $departureDescription = null, ?string $departureTime = null, ?float $deposit = null, ?float $depositBase = null, ?string $depositDate = null, ?string $depositPaymentType = null, ?float $depositPercent = null, ?bool $depositPreset = null, ?string $description = null, ?string $destinationArea = null, ?string $destinationCode = null, ?string $destinationDescription = null, ?float $displayedDeposit = null, ?bool $dunningStornoIgnore = null, ?string $exportDate = null, ?bool $exportRequired = null, ?string $extPaymentType = null, ?float $feeAmount = null, ?string $finalPaymentDate = null, ?string $finalPaymentType = null, ?string $flightNo = null, ?string $geographicalCategory = null, ?float $grantedRevenue = null, ?bool $hasSubItems = null, ?bool $hideServicePrices = null, ?bool $immediatePayment = null, ?float $initialPrice = null, ?float $inkassoPrice = null, ?string $insuranceDescription = null, ?bool $isChanged = null, ?bool $isFeeTaxable = null, ?bool $isManual = null, ?int $itemId = null, ?int $itemParent = null, ?float $itemPrice = null, ?string $itemType = null, ?string $locationDescription = null, ?int $lockIndicator = null, ?bool $manualRevenue = null, ?float $mediatorFeeAmount = null, ?bool $mobilityIndicator = null, ?string $modeRevenueCalculation = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?bool $needsCommissionSettlement = null, ?bool $needsInvoicePrint = null, ?bool $needsSettlement = null, ?bool $needsVatDivisionIncoming = null, ?bool $needsVatDivisionOutgoing = null, ?string $noOfNights = null, ?int $oldOrderNo = null, ?string $oldUnitName = null, ?int $opicCode = null, ?int $orderId = null, ?int $orderPosition = null, ?float $originalAmount = null, ?float $originalCalculatedRevenue = null, ?string $originalCurrency = null, ?float $originalGrantedRevenue = null, ?float $originalSupplierCommissionAmount = null, ?float $paidMediatorAmount = null, ?float $paidMediatorFeeAmount = null, ?string $paymentType = null, ?string $planId = null, ?bool $preventAutoVatDivision = null, ?bool $preventPrinting = null, ?string $pricePrintStrategy = null, ?int $printOptionId = null, ?bool $printVat = null, ?string $productType = null, ?string $providedCommissionOption = null, ?float $rateRevenueCalculation = null, ?string $receivedStatus = null, ?string $receivedStatusDate = null, ?float $reducedVatFraction = null, ?string $returnArrivalTime = null, ?string $returnCarrier = null, ?string $returnDepartureCode = null, ?string $returnDepartureDescription = null, ?string $returnDepartureTime = null, ?string $returnDestinationCode = null, ?string $returnDestinationDescription = null, ?string $returnFlightNo = null, ?float $revenueBase = null, ?float $revenuePercent = null, ?bool $revenuePredefined = null, ?string $roomDescription = null, ?float $salePrice = null, ?int $sellingMode = null, ?string $sellingModeDetermination = null, ?bool $separatedFee = null, ?float $settlementBase = null, ?bool $settlementDone = null, ?string $settlementType = null, ?string $settlementTypeDebit = null, ?bool $showInInbox = null, ?bool $stornoConfReceived = null, ?bool $stornoConfRequired = null, ?float $supplierCommissionAmount = null, ?float $supplierDeposit = null, ?string $supplierDepositDate = null, ?string $supplierFinalPaymentDate = null, ?float $supplierInvoiceAmount = null, ?bool $supplierInvoicePaid = null, ?float $taxPartPercent = null, ?string $transfer = null, ?string $turnaroundPoint = null, ?string $unitName = null, ?bool $valueDateByInvoice = null, ?float $valueRevenueCalculation = null, ?bool $vatDivisionChangeCustomer = null, ?bool $vatDivisionChangeSupplier = null, ?string $vatDivisionChecked = null, ?int $vatDivisionCheckedBy = null, ?string $vatDivisionComment = null, ?bool $vatIncluded = null, ?float $vatPercent = null)
+    public function __construct(?string $accomodationCode = null, ?string $accomodationDescription = null, ?string $accountId = null, ?string $areaDescription = null, ?string $arrivalTime = null, ?int $articleCount = null, ?int $atolIndex = null, ?string $atolPeriod = null, ?int $bookingUser = null, ?bool $bookvat = null, ?float $buyCurrencyRate = null, ?bool $calculatedFee = null, ?float $calculatedMediatorAmount = null, ?float $calculatedMediatorFeeAmount = null, ?float $calculatedRevenue = null, ?string $carrier = null, ?string $category = null, ?string $cateringDescription = null, ?float $ccPaidAmount = null, ?float $commissionAmount = null, ?string $commissionLevelId = null, ?float $commissionPercent = null, ?string $confirmationGroup = null, ?bool $confirmationReceived = null, ?bool $confirmationRequired = null, ?string $contractTime = null, ?string $costCentre = null, ?string $costUnit = null, ?string $countryCode = null, ?string $countryDescription = null, ?string $creationDate = null, ?string $creationTime = null, ?int $creationUser = null, ?string $cruiseCode = null, ?string $cruiseDescription = null, ?string $currency = null, ?bool $customerConfReceived = null, ?bool $customerConfRequired = null, ?string $departureCode = null, ?string $departureDescription = null, ?string $departureTime = null, ?float $deposit = null, ?float $depositBase = null, ?string $depositDate = null, ?string $depositPaymentType = null, ?float $depositPercent = null, ?bool $depositPreset = null, ?string $description = null, ?string $destinationArea = null, ?string $destinationCode = null, ?string $destinationDescription = null, ?float $displayedDeposit = null, ?bool $dunningStornoIgnore = null, ?string $exportDate = null, ?bool $exportRequired = null, ?string $extPaymentType = null, ?float $feeAmount = null, ?string $finalPaymentDate = null, ?string $finalPaymentType = null, ?string $flightNo = null, ?string $geographicalCategory = null, ?float $grantedRevenue = null, ?bool $hasSubItems = null, ?bool $hideServicePrices = null, ?bool $immediatePayment = null, ?float $initialPrice = null, ?float $inkassoPrice = null, ?string $insuranceDescription = null, ?bool $isChanged = null, ?bool $isFeeTaxable = null, ?bool $isManual = null, ?int $itemId = null, ?int $itemParent = null, ?float $itemPrice = null, ?string $itemType = null, ?string $locationDescription = null, ?int $lockIndicator = null, ?bool $manualRevenue = null, ?float $mediatorFeeAmount = null, ?bool $mobilityIndicator = null, ?string $modeRevenueCalculation = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?bool $needsCommissionSettlement = null, ?bool $needsInvoicePrint = null, ?bool $needsSettlement = null, ?bool $needsVatDivisionIncoming = null, ?bool $needsVatDivisionOutgoing = null, ?string $noOfNights = null, ?int $oldOrderNo = null, ?string $oldUnitName = null, ?int $opicCode = null, ?int $orderId = null, ?int $orderPosition = null, ?float $originalAmount = null, ?float $originalCalculatedRevenue = null, ?string $originalCurrency = null, ?float $originalGrantedRevenue = null, ?float $originalSupplierCommissionAmount = null, ?float $paidMediatorAmount = null, ?float $paidMediatorFeeAmount = null, ?string $paymentType = null, ?string $planId = null, ?bool $preventAutoVatDivision = null, ?bool $preventPrinting = null, ?string $pricePrintStrategy = null, ?int $printOptionId = null, ?bool $printVat = null, ?string $productType = null, ?string $providedCommissionOption = null, ?float $rateRevenueCalculation = null, ?string $receivedStatus = null, ?string $receivedStatusDate = null, ?float $reducedVatFraction = null, ?string $returnArrivalTime = null, ?string $returnCarrier = null, ?string $returnDepartureCode = null, ?string $returnDepartureDescription = null, ?string $returnDepartureTime = null, ?string $returnDestinationCode = null, ?string $returnDestinationDescription = null, ?string $returnFlightNo = null, ?float $revenueBase = null, ?float $revenuePercent = null, ?bool $revenuePredefined = null, ?string $roomDescription = null, ?float $salePrice = null, ?int $sellingMode = null, ?string $sellingModeDetermination = null, ?bool $separatedFee = null, ?float $settlementBase = null, ?bool $settlementDone = null, ?string $settlementType = null, ?string $settlementTypeDebit = null, ?bool $showInInbox = null, ?bool $stornoConfReceived = null, ?bool $stornoConfRequired = null, ?float $supplierCommissionAmount = null, ?float $supplierDeposit = null, ?string $supplierDepositDate = null, ?string $supplierFinalPaymentDate = null, ?float $supplierInvoiceAmount = null, ?bool $supplierInvoicePaid = null, ?float $taxPartPercent = null, ?string $transfer = null, ?string $turnaroundPoint = null, ?string $unitName = null, ?bool $valueDateByInvoice = null, ?float $valueRevenueCalculation = null, ?bool $vatDivisionChangeCustomer = null, ?bool $vatDivisionChangeSupplier = null, ?string $vatDivisionChecked = null, ?int $vatDivisionCheckedBy = null, ?string $vatDivisionComment = null, ?int $vatDivisionType = null, ?bool $vatIncluded = null, ?float $vatPercent = null)
     {
         $this
             ->setAccomodationCode($accomodationCode)
@@ -1265,6 +1273,7 @@ class SellItemDTO extends AbstractStructBase
             ->setVatDivisionChecked($vatDivisionChecked)
             ->setVatDivisionCheckedBy($vatDivisionCheckedBy)
             ->setVatDivisionComment($vatDivisionComment)
+            ->setVatDivisionType($vatDivisionType)
             ->setVatIncluded($vatIncluded)
             ->setVatPercent($vatPercent);
     }
@@ -4807,6 +4816,29 @@ class SellItemDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($vatDivisionComment, true), gettype($vatDivisionComment)), __LINE__);
         }
         $this->vatDivisionComment = $vatDivisionComment;
+        
+        return $this;
+    }
+    /**
+     * Get vatDivisionType value
+     * @return int|null
+     */
+    public function getVatDivisionType(): ?int
+    {
+        return $this->vatDivisionType;
+    }
+    /**
+     * Set vatDivisionType value
+     * @param int $vatDivisionType
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemDTO
+     */
+    public function setVatDivisionType(?int $vatDivisionType = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($vatDivisionType) && !(is_int($vatDivisionType) || ctype_digit($vatDivisionType))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($vatDivisionType, true), gettype($vatDivisionType)), __LINE__);
+        }
+        $this->vatDivisionType = $vatDivisionType;
         
         return $this;
     }

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CdfTitle StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CdfTitle extends AbstractStructBase
 {
     /**

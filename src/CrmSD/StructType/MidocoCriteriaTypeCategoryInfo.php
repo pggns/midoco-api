@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCriteriaTypeCategoryInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCriteriaTypeCategoryInfo extends CritTypeCatDTO
 {
     /**
@@ -47,7 +48,7 @@ class MidocoCriteriaTypeCategoryInfo extends CritTypeCatDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeCategoryInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaTypeCategoryInfo
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +71,7 @@ class MidocoCriteriaTypeCategoryInfo extends CritTypeCatDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaTypeCategoryInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaTypeCategoryInfo
      */
     public function setInherited(?bool $inherited = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchSupplierSettlPaymentConditionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
         return $this->MidocoSupplierSettlPaymentCondition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierSettlPaymentCondition method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierSettlPaymentCondition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierSettlPaymentCondition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierSettlPaymentConditionForArrayConstraintsFromSetMidocoSupplierSettlPaymentCondition(?array $values = []): string
+    public static function validateMidocoSupplierSettlPaymentConditionForArrayConstraintFromSetMidocoSupplierSettlPaymentCondition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchSupplierSettlPaymentConditionResponse extends AbstractStructBase
     public function setMidocoSupplierSettlPaymentCondition(?array $midocoSupplierSettlPaymentCondition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierSettlPaymentConditionArrayErrorMessage = self::validateMidocoSupplierSettlPaymentConditionForArrayConstraintsFromSetMidocoSupplierSettlPaymentCondition($midocoSupplierSettlPaymentCondition))) {
+        if ('' !== ($midocoSupplierSettlPaymentConditionArrayErrorMessage = self::validateMidocoSupplierSettlPaymentConditionForArrayConstraintFromSetMidocoSupplierSettlPaymentCondition($midocoSupplierSettlPaymentCondition))) {
             throw new InvalidArgumentException($midocoSupplierSettlPaymentConditionArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierSettlPaymentCondition = $midocoSupplierSettlPaymentCondition;

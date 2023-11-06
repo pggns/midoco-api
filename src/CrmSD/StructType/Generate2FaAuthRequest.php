@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Generate2FaAuthRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Generate2FaAuthRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class Generate2FaAuthRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Generate2FaAuthRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Generate2FaAuthRequest
      */
     public function setUserId(?int $userId = null): self
     {

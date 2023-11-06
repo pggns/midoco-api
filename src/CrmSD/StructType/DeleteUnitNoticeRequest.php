@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteUnitNoticeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteUnitNoticeRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class DeleteUnitNoticeRequest extends AbstractStructBase
     /**
      * Set midocoOrgUnitName value
      * @param string $midocoOrgUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteUnitNoticeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteUnitNoticeRequest
      */
     public function setMidocoOrgUnitName(?string $midocoOrgUnitName = null): self
     {
@@ -70,7 +71,7 @@ class DeleteUnitNoticeRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteUnitNoticeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteUnitNoticeRequest
      */
     public function setPosition(?int $position = null): self
     {

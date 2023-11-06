@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoInvoiceFileFormat StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
 {
     /**
@@ -41,12 +42,13 @@ class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
         return $this->MidocoInvoiceFileFormatContent;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoiceFileFormatContent method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoiceFileFormatContent method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoiceFileFormatContent method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoiceFileFormatContentForArrayConstraintsFromSetMidocoInvoiceFileFormatContent(?array $values = []): string
+    public static function validateMidocoInvoiceFileFormatContentForArrayConstraintFromSetMidocoInvoiceFileFormatContent(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
     public function setMidocoInvoiceFileFormatContent(?array $midocoInvoiceFileFormatContent = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoiceFileFormatContentArrayErrorMessage = self::validateMidocoInvoiceFileFormatContentForArrayConstraintsFromSetMidocoInvoiceFileFormatContent($midocoInvoiceFileFormatContent))) {
+        if ('' !== ($midocoInvoiceFileFormatContentArrayErrorMessage = self::validateMidocoInvoiceFileFormatContentForArrayConstraintFromSetMidocoInvoiceFileFormatContent($midocoInvoiceFileFormatContent))) {
             throw new InvalidArgumentException($midocoInvoiceFileFormatContentArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoiceFileFormatContent = $midocoInvoiceFileFormatContent;

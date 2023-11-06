@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FlightStatDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FlightStatDTO extends AbstractStructBase
 {
     /**

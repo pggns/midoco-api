@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCampaignRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCampaignRequest extends AbstractStructBase
 {
     /**
@@ -112,12 +113,13 @@ class SaveCampaignRequest extends AbstractStructBase
         return $this->orgUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrgUnit method
+     * This method is responsible for validating the value(s) passed to the setOrgUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrgUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrgUnitForArrayConstraintsFromSetOrgUnit(?array $values = []): string
+    public static function validateOrgUnitForArrayConstraintFromSetOrgUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -146,7 +148,7 @@ class SaveCampaignRequest extends AbstractStructBase
     public function setOrgUnit(?array $orgUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orgUnitArrayErrorMessage = self::validateOrgUnitForArrayConstraintsFromSetOrgUnit($orgUnit))) {
+        if ('' !== ($orgUnitArrayErrorMessage = self::validateOrgUnitForArrayConstraintFromSetOrgUnit($orgUnit))) {
             throw new InvalidArgumentException($orgUnitArrayErrorMessage, __LINE__);
         }
         $this->orgUnit = $orgUnit;
@@ -178,12 +180,13 @@ class SaveCampaignRequest extends AbstractStructBase
         return $this->estimatedNoOfResults;
     }
     /**
-     * This method is responsible for validating the values passed to the setEstimatedNoOfResults method
+     * This method is responsible for validating the value(s) passed to the setEstimatedNoOfResults method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEstimatedNoOfResults method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEstimatedNoOfResultsForArrayConstraintsFromSetEstimatedNoOfResults(?array $values = []): string
+    public static function validateEstimatedNoOfResultsForArrayConstraintFromSetEstimatedNoOfResults(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -212,7 +215,7 @@ class SaveCampaignRequest extends AbstractStructBase
     public function setEstimatedNoOfResults(?array $estimatedNoOfResults = null): self
     {
         // validation for constraint: array
-        if ('' !== ($estimatedNoOfResultsArrayErrorMessage = self::validateEstimatedNoOfResultsForArrayConstraintsFromSetEstimatedNoOfResults($estimatedNoOfResults))) {
+        if ('' !== ($estimatedNoOfResultsArrayErrorMessage = self::validateEstimatedNoOfResultsForArrayConstraintFromSetEstimatedNoOfResults($estimatedNoOfResults))) {
             throw new InvalidArgumentException($estimatedNoOfResultsArrayErrorMessage, __LINE__);
         }
         $this->estimatedNoOfResults = $estimatedNoOfResults;
@@ -244,12 +247,13 @@ class SaveCampaignRequest extends AbstractStructBase
         return $this->estimatedOrgUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setEstimatedOrgUnit method
+     * This method is responsible for validating the value(s) passed to the setEstimatedOrgUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEstimatedOrgUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEstimatedOrgUnitForArrayConstraintsFromSetEstimatedOrgUnit(?array $values = []): string
+    public static function validateEstimatedOrgUnitForArrayConstraintFromSetEstimatedOrgUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -278,7 +282,7 @@ class SaveCampaignRequest extends AbstractStructBase
     public function setEstimatedOrgUnit(?array $estimatedOrgUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($estimatedOrgUnitArrayErrorMessage = self::validateEstimatedOrgUnitForArrayConstraintsFromSetEstimatedOrgUnit($estimatedOrgUnit))) {
+        if ('' !== ($estimatedOrgUnitArrayErrorMessage = self::validateEstimatedOrgUnitForArrayConstraintFromSetEstimatedOrgUnit($estimatedOrgUnit))) {
             throw new InvalidArgumentException($estimatedOrgUnitArrayErrorMessage, __LINE__);
         }
         $this->estimatedOrgUnit = $estimatedOrgUnit;
@@ -310,12 +314,13 @@ class SaveCampaignRequest extends AbstractStructBase
         return $this->CustomerReference;
     }
     /**
-     * This method is responsible for validating the values passed to the setCustomerReference method
+     * This method is responsible for validating the value(s) passed to the setCustomerReference method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCustomerReference method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCustomerReferenceForArrayConstraintsFromSetCustomerReference(?array $values = []): string
+    public static function validateCustomerReferenceForArrayConstraintFromSetCustomerReference(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -344,7 +349,7 @@ class SaveCampaignRequest extends AbstractStructBase
     public function setCustomerReference(?array $customerReference = null): self
     {
         // validation for constraint: array
-        if ('' !== ($customerReferenceArrayErrorMessage = self::validateCustomerReferenceForArrayConstraintsFromSetCustomerReference($customerReference))) {
+        if ('' !== ($customerReferenceArrayErrorMessage = self::validateCustomerReferenceForArrayConstraintFromSetCustomerReference($customerReference))) {
             throw new InvalidArgumentException($customerReferenceArrayErrorMessage, __LINE__);
         }
         $this->CustomerReference = $customerReference;

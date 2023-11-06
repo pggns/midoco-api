@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMidocoCrmCustomerPaymentRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMidocoCrmCustomerPaymentRequest extends AbstractStructBase
 {
     /**
      * The MidocoCrmCustomerPayment
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomerPayment
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $MidocoCrmCustomerPayment = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $MidocoCrmCustomerPayment = null;
     /**
      * The internalVersion
      * @var int|null
@@ -35,11 +36,11 @@ class SaveMidocoCrmCustomerPaymentRequest extends AbstractStructBase
      * @uses SaveMidocoCrmCustomerPaymentRequest::setMidocoCrmCustomerPayment()
      * @uses SaveMidocoCrmCustomerPaymentRequest::setInternalVersion()
      * @uses SaveMidocoCrmCustomerPaymentRequest::setReactivateDebitor()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
      * @param int $internalVersion
      * @param bool $reactivateDebitor
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null, ?int $internalVersion = null, ?bool $reactivateDebitor = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null, ?int $internalVersion = null, ?bool $reactivateDebitor = null)
     {
         $this
             ->setMidocoCrmCustomerPayment($midocoCrmCustomerPayment)
@@ -48,18 +49,18 @@ class SaveMidocoCrmCustomerPaymentRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCustomerPayment value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment|null
      */
-    public function getMidocoCrmCustomerPayment(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment
+    public function getMidocoCrmCustomerPayment(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment
     {
         return $this->MidocoCrmCustomerPayment;
     }
     /**
      * Set MidocoCrmCustomerPayment value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoCrmCustomerPaymentRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMidocoCrmCustomerPaymentRequest
      */
-    public function setMidocoCrmCustomerPayment(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null): self
+    public function setMidocoCrmCustomerPayment(?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null): self
     {
         $this->MidocoCrmCustomerPayment = $midocoCrmCustomerPayment;
         
@@ -76,7 +77,7 @@ class SaveMidocoCrmCustomerPaymentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoCrmCustomerPaymentRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMidocoCrmCustomerPaymentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -99,7 +100,7 @@ class SaveMidocoCrmCustomerPaymentRequest extends AbstractStructBase
     /**
      * Set reactivateDebitor value
      * @param bool $reactivateDebitor
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoCrmCustomerPaymentRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMidocoCrmCustomerPaymentRequest
      */
     public function setReactivateDebitor(?bool $reactivateDebitor = null): self
     {

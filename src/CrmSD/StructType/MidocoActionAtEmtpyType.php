@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoActionAtEmtpyType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoActionAtEmtpyType extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoActionAtEmtpyType extends AbstractStructBase
     /**
      * Set action value
      * @param int $action
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoActionAtEmtpyType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoActionAtEmtpyType
      */
     public function setAction(?int $action = null): self
     {
@@ -70,7 +71,7 @@ class MidocoActionAtEmtpyType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoActionAtEmtpyType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoActionAtEmtpyType
      */
     public function setDescription(?string $description = null): self
     {

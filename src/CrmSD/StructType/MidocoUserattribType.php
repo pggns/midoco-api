@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoUserattribType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoUserattribType extends UserattribDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoUserattribType extends UserattribDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType
      */
     public function setDescription(?string $description = null): self
     {

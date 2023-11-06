@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getOrderRemarks --- returns the list of order Remarks for an order
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderRemarksResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetOrderRemarksResponse extends AbstractStructBase
         return $this->MidocoOrderRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderRemark method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderRemarkForArrayConstraintsFromSetMidocoOrderRemark(?array $values = []): string
+    public static function validateMidocoOrderRemarkForArrayConstraintFromSetMidocoOrderRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetOrderRemarksResponse extends AbstractStructBase
     public function setMidocoOrderRemark(?array $midocoOrderRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderRemarkArrayErrorMessage = self::validateMidocoOrderRemarkForArrayConstraintsFromSetMidocoOrderRemark($midocoOrderRemark))) {
+        if ('' !== ($midocoOrderRemarkArrayErrorMessage = self::validateMidocoOrderRemarkForArrayConstraintFromSetMidocoOrderRemark($midocoOrderRemark))) {
             throw new InvalidArgumentException($midocoOrderRemarkArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderRemark = $midocoOrderRemark;

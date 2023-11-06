@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetExternalSystemTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExternalSystemTypesResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetExternalSystemTypesResponse extends AbstractStructBase
         return $this->MidocoExternalSystemType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoExternalSystemType method
+     * This method is responsible for validating the value(s) passed to the setMidocoExternalSystemType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoExternalSystemType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoExternalSystemTypeForArrayConstraintsFromSetMidocoExternalSystemType(?array $values = []): string
+    public static function validateMidocoExternalSystemTypeForArrayConstraintFromSetMidocoExternalSystemType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -69,12 +71,12 @@ class GetExternalSystemTypesResponse extends AbstractStructBase
      * Set MidocoExternalSystemType value
      * @throws InvalidArgumentException
      * @param string[] $midocoExternalSystemType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExternalSystemTypesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetExternalSystemTypesResponse
      */
     public function setMidocoExternalSystemType(?array $midocoExternalSystemType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoExternalSystemTypeArrayErrorMessage = self::validateMidocoExternalSystemTypeForArrayConstraintsFromSetMidocoExternalSystemType($midocoExternalSystemType))) {
+        if ('' !== ($midocoExternalSystemTypeArrayErrorMessage = self::validateMidocoExternalSystemTypeForArrayConstraintFromSetMidocoExternalSystemType($midocoExternalSystemType))) {
             throw new InvalidArgumentException($midocoExternalSystemTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoExternalSystemType = $midocoExternalSystemType;
@@ -85,7 +87,7 @@ class GetExternalSystemTypesResponse extends AbstractStructBase
      * Add item to MidocoExternalSystemType value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExternalSystemTypesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetExternalSystemTypesResponse
      */
     public function addToMidocoExternalSystemType(string $item): self
     {

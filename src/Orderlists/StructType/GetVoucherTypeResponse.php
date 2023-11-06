@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetVoucherTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetVoucherTypeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetVoucherTypeResponse extends AbstractStructBase
         return $this->MidocoVoucherType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVoucherType method
+     * This method is responsible for validating the value(s) passed to the setMidocoVoucherType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVoucherType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVoucherTypeForArrayConstraintsFromSetMidocoVoucherType(?array $values = []): string
+    public static function validateMidocoVoucherTypeForArrayConstraintFromSetMidocoVoucherType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetVoucherTypeResponse extends AbstractStructBase
     public function setMidocoVoucherType(?array $midocoVoucherType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVoucherTypeArrayErrorMessage = self::validateMidocoVoucherTypeForArrayConstraintsFromSetMidocoVoucherType($midocoVoucherType))) {
+        if ('' !== ($midocoVoucherTypeArrayErrorMessage = self::validateMidocoVoucherTypeForArrayConstraintFromSetMidocoVoucherType($midocoVoucherType))) {
             throw new InvalidArgumentException($midocoVoucherTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoVoucherType = $midocoVoucherType;

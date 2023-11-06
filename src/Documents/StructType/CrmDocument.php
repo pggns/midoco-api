@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmDocument StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmDocument extends StandardDocument
 {
     /**

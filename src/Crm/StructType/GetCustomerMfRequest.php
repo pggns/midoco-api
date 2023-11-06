@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCustomerMfRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustomerMfRequest extends AbstractStructBase
 {
     /**
@@ -64,6 +65,11 @@ class GetCustomerMfRequest extends AbstractStructBase
      */
     protected ?bool $presetContent = null;
     /**
+     * The validDate
+     * @var string|null
+     */
+    protected ?string $validDate = null;
+    /**
      * Constructor method for GetCustomerMfRequest
      * @uses GetCustomerMfRequest::setMidocoCustomerId()
      * @uses GetCustomerMfRequest::setCustomerMfRuleAttribute()
@@ -74,6 +80,7 @@ class GetCustomerMfRequest extends AbstractStructBase
      * @uses GetCustomerMfRequest::setOnlyNumeric()
      * @uses GetCustomerMfRequest::setPrintEnforced()
      * @uses GetCustomerMfRequest::setPresetContent()
+     * @uses GetCustomerMfRequest::setValidDate()
      * @param \Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId
      * @param \Pggns\MidocoApi\Crm\StructType\CustomerMfRuleAttributeType[] $customerMfRuleAttribute
      * @param string $bean
@@ -83,8 +90,9 @@ class GetCustomerMfRequest extends AbstractStructBase
      * @param bool $onlyNumeric
      * @param bool $printEnforced
      * @param bool $presetContent
+     * @param string $validDate
      */
-    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?array $customerMfRuleAttribute = null, ?string $bean = null, ?string $className = null, ?string $attrName = null, ?string $unitName = null, ?bool $onlyNumeric = null, ?bool $printEnforced = null, ?bool $presetContent = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerIdDTO $midocoCustomerId = null, ?array $customerMfRuleAttribute = null, ?string $bean = null, ?string $className = null, ?string $attrName = null, ?string $unitName = null, ?bool $onlyNumeric = null, ?bool $printEnforced = null, ?bool $presetContent = null, ?string $validDate = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -95,7 +103,8 @@ class GetCustomerMfRequest extends AbstractStructBase
             ->setUnitName($unitName)
             ->setOnlyNumeric($onlyNumeric)
             ->setPrintEnforced($printEnforced)
-            ->setPresetContent($presetContent);
+            ->setPresetContent($presetContent)
+            ->setValidDate($validDate);
     }
     /**
      * Get MidocoCustomerId value
@@ -125,12 +134,13 @@ class GetCustomerMfRequest extends AbstractStructBase
         return $this->CustomerMfRuleAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setCustomerMfRuleAttribute method
+     * This method is responsible for validating the value(s) passed to the setCustomerMfRuleAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCustomerMfRuleAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCustomerMfRuleAttributeForArrayConstraintsFromSetCustomerMfRuleAttribute(?array $values = []): string
+    public static function validateCustomerMfRuleAttributeForArrayConstraintFromSetCustomerMfRuleAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -159,7 +169,7 @@ class GetCustomerMfRequest extends AbstractStructBase
     public function setCustomerMfRuleAttribute(?array $customerMfRuleAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($customerMfRuleAttributeArrayErrorMessage = self::validateCustomerMfRuleAttributeForArrayConstraintsFromSetCustomerMfRuleAttribute($customerMfRuleAttribute))) {
+        if ('' !== ($customerMfRuleAttributeArrayErrorMessage = self::validateCustomerMfRuleAttributeForArrayConstraintFromSetCustomerMfRuleAttribute($customerMfRuleAttribute))) {
             throw new InvalidArgumentException($customerMfRuleAttributeArrayErrorMessage, __LINE__);
         }
         $this->CustomerMfRuleAttribute = $customerMfRuleAttribute;
@@ -340,6 +350,29 @@ class GetCustomerMfRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($presetContent, true), gettype($presetContent)), __LINE__);
         }
         $this->presetContent = $presetContent;
+        
+        return $this;
+    }
+    /**
+     * Get validDate value
+     * @return string|null
+     */
+    public function getValidDate(): ?string
+    {
+        return $this->validDate;
+    }
+    /**
+     * Set validDate value
+     * @param string $validDate
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCustomerMfRequest
+     */
+    public function setValidDate(?string $validDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($validDate) && !is_string($validDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validDate, true), gettype($validDate)), __LINE__);
+        }
+        $this->validDate = $validDate;
         
         return $this;
     }

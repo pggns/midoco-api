@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoGenderDefinition StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoGenderDefinition extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoGenderDefinition extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGenderDefinition
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGenderDefinition
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +71,7 @@ class MidocoGenderDefinition extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGenderDefinition
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGenderDefinition
      */
     public function setId(?string $id = null): self
     {

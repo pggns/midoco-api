@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetFibuExportSettingsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFibuExportSettingsResponse extends AbstractStructBase
 {
     /**
@@ -44,6 +45,11 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
      */
     protected ?bool $hasExportCodes = null;
     /**
+     * The hasAllowManualExportCode
+     * @var bool|null
+     */
+    protected ?bool $hasAllowManualExportCode = null;
+    /**
      * Constructor method for GetFibuExportSettingsResponse
      * @uses GetFibuExportSettingsResponse::setExportFormat()
      * @uses GetFibuExportSettingsResponse::setMode()
@@ -51,14 +57,16 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
      * @uses GetFibuExportSettingsResponse::setHasDebitorExport()
      * @uses GetFibuExportSettingsResponse::setHasCreditorExport()
      * @uses GetFibuExportSettingsResponse::setHasExportCodes()
+     * @uses GetFibuExportSettingsResponse::setHasAllowManualExportCode()
      * @param string $exportFormat
      * @param string $mode
      * @param bool $hasJournalExport
      * @param bool $hasDebitorExport
      * @param bool $hasCreditorExport
      * @param bool $hasExportCodes
+     * @param bool $hasAllowManualExportCode
      */
-    public function __construct(?string $exportFormat = null, ?string $mode = null, ?bool $hasJournalExport = null, ?bool $hasDebitorExport = null, ?bool $hasCreditorExport = null, ?bool $hasExportCodes = null)
+    public function __construct(?string $exportFormat = null, ?string $mode = null, ?bool $hasJournalExport = null, ?bool $hasDebitorExport = null, ?bool $hasCreditorExport = null, ?bool $hasExportCodes = null, ?bool $hasAllowManualExportCode = null)
     {
         $this
             ->setExportFormat($exportFormat)
@@ -66,7 +74,8 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
             ->setHasJournalExport($hasJournalExport)
             ->setHasDebitorExport($hasDebitorExport)
             ->setHasCreditorExport($hasCreditorExport)
-            ->setHasExportCodes($hasExportCodes);
+            ->setHasExportCodes($hasExportCodes)
+            ->setHasAllowManualExportCode($hasAllowManualExportCode);
     }
     /**
      * Get exportFormat value
@@ -203,6 +212,29 @@ class GetFibuExportSettingsResponse extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($hasExportCodes, true), gettype($hasExportCodes)), __LINE__);
         }
         $this->hasExportCodes = $hasExportCodes;
+        
+        return $this;
+    }
+    /**
+     * Get hasAllowManualExportCode value
+     * @return bool|null
+     */
+    public function getHasAllowManualExportCode(): ?bool
+    {
+        return $this->hasAllowManualExportCode;
+    }
+    /**
+     * Set hasAllowManualExportCode value
+     * @param bool $hasAllowManualExportCode
+     * @return \Pggns\MidocoApi\Order\StructType\GetFibuExportSettingsResponse
+     */
+    public function setHasAllowManualExportCode(?bool $hasAllowManualExportCode = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($hasAllowManualExportCode) && !is_bool($hasAllowManualExportCode)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($hasAllowManualExportCode, true), gettype($hasAllowManualExportCode)), __LINE__);
+        }
+        $this->hasAllowManualExportCode = $hasAllowManualExportCode;
         
         return $this;
     }

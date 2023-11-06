@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCcReport StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCcReport extends AbstractStructBase
 {
     /**
@@ -81,12 +82,13 @@ class MidocoCcReport extends AbstractStructBase
         return $this->MidocoCcReportRecord;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCcReportRecord method
+     * This method is responsible for validating the value(s) passed to the setMidocoCcReportRecord method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCcReportRecord method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCcReportRecordForArrayConstraintsFromSetMidocoCcReportRecord(?array $values = []): string
+    public static function validateMidocoCcReportRecordForArrayConstraintFromSetMidocoCcReportRecord(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -115,7 +117,7 @@ class MidocoCcReport extends AbstractStructBase
     public function setMidocoCcReportRecord(?array $midocoCcReportRecord = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCcReportRecordArrayErrorMessage = self::validateMidocoCcReportRecordForArrayConstraintsFromSetMidocoCcReportRecord($midocoCcReportRecord))) {
+        if ('' !== ($midocoCcReportRecordArrayErrorMessage = self::validateMidocoCcReportRecordForArrayConstraintFromSetMidocoCcReportRecord($midocoCcReportRecord))) {
             throw new InvalidArgumentException($midocoCcReportRecordArrayErrorMessage, __LINE__);
         }
         $this->MidocoCcReportRecord = $midocoCcReportRecord;

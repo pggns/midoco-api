@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteMidocoSettlMDocOrgUnitRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMidocoSettlMDocOrgUnitRequest extends AbstractStructBase
 {
     /**
@@ -61,7 +62,7 @@ class DeleteMidocoSettlMDocOrgUnitRequest extends AbstractStructBase
     /**
      * Set settlMdocId value
      * @param int $settlMdocId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoSettlMDocOrgUnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoSettlMDocOrgUnitRequest
      */
     public function setSettlMdocId(int $settlMdocId): self
     {
@@ -84,7 +85,7 @@ class DeleteMidocoSettlMDocOrgUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoSettlMDocOrgUnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoSettlMDocOrgUnitRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -107,7 +108,7 @@ class DeleteMidocoSettlMDocOrgUnitRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoSettlMDocOrgUnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoSettlMDocOrgUnitRequest
      */
     public function setCustomerId(int $customerId): self
     {

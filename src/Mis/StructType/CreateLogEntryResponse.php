@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: createLogEntry --- adds a new entry to the log. The entry consists of a message, a timestamp, a severity, an application and the source/destination database names
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateLogEntryResponse extends AbstractStructBase
 {
 }

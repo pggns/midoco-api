@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TravelNumberDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TravelNumberDTO extends AbstractStructBase
 {
     /**
@@ -79,6 +80,11 @@ class TravelNumberDTO extends AbstractStructBase
      */
     protected ?float $b2cPercent = null;
     /**
+     * The calculatedRevenuePercent
+     * @var float|null
+     */
+    protected ?float $calculatedRevenuePercent = null;
+    /**
      * The creationDate
      * @var string|null
      */
@@ -129,6 +135,11 @@ class TravelNumberDTO extends AbstractStructBase
      */
     protected ?bool $notTakeDates = null;
     /**
+     * The regularVat
+     * @var bool|null
+     */
+    protected ?bool $regularVat = null;
+    /**
      * The supplierId
      * @var string|null
      */
@@ -163,6 +174,7 @@ class TravelNumberDTO extends AbstractStructBase
      * @uses TravelNumberDTO::setAccountSupplierInkasso()
      * @uses TravelNumberDTO::setActive()
      * @uses TravelNumberDTO::setB2cPercent()
+     * @uses TravelNumberDTO::setCalculatedRevenuePercent()
      * @uses TravelNumberDTO::setCreationDate()
      * @uses TravelNumberDTO::setCreationUser()
      * @uses TravelNumberDTO::setDebitorNo()
@@ -173,6 +185,7 @@ class TravelNumberDTO extends AbstractStructBase
      * @uses TravelNumberDTO::setModifyDate()
      * @uses TravelNumberDTO::setModifyUser()
      * @uses TravelNumberDTO::setNotTakeDates()
+     * @uses TravelNumberDTO::setRegularVat()
      * @uses TravelNumberDTO::setSupplierId()
      * @uses TravelNumberDTO::setTravelDate()
      * @uses TravelNumberDTO::setTravelEnd()
@@ -190,6 +203,7 @@ class TravelNumberDTO extends AbstractStructBase
      * @param string $accountSupplierInkasso
      * @param bool $active
      * @param float $b2cPercent
+     * @param float $calculatedRevenuePercent
      * @param string $creationDate
      * @param int $creationUser
      * @param string $debitorNo
@@ -200,12 +214,13 @@ class TravelNumberDTO extends AbstractStructBase
      * @param string $modifyDate
      * @param int $modifyUser
      * @param bool $notTakeDates
+     * @param bool $regularVat
      * @param string $supplierId
      * @param string $travelDate
      * @param string $travelEnd
      * @param string $travelNo
      */
-    public function __construct(?string $accountBuyAcc = null, ?string $accountBuyBus = null, ?string $accountBuyCar = null, ?string $accountBuyDb = null, ?string $accountBuyDiverse = null, ?string $accountBuyFlightBsp = null, ?string $accountBuyFlightDiverse = null, ?string $accountBuyShip = null, ?string $accountBuyTouristic = null, ?string $accountSell = null, ?string $accountSupplierInkasso = null, ?bool $active = null, ?float $b2cPercent = null, ?string $creationDate = null, ?int $creationUser = null, ?string $debitorNo = null, ?string $descrLong = null, ?string $descrShort = null, ?string $destination = null, ?bool $enableCommission = null, ?string $modifyDate = null, ?int $modifyUser = null, ?bool $notTakeDates = null, ?string $supplierId = null, ?string $travelDate = null, ?string $travelEnd = null, ?string $travelNo = null)
+    public function __construct(?string $accountBuyAcc = null, ?string $accountBuyBus = null, ?string $accountBuyCar = null, ?string $accountBuyDb = null, ?string $accountBuyDiverse = null, ?string $accountBuyFlightBsp = null, ?string $accountBuyFlightDiverse = null, ?string $accountBuyShip = null, ?string $accountBuyTouristic = null, ?string $accountSell = null, ?string $accountSupplierInkasso = null, ?bool $active = null, ?float $b2cPercent = null, ?float $calculatedRevenuePercent = null, ?string $creationDate = null, ?int $creationUser = null, ?string $debitorNo = null, ?string $descrLong = null, ?string $descrShort = null, ?string $destination = null, ?bool $enableCommission = null, ?string $modifyDate = null, ?int $modifyUser = null, ?bool $notTakeDates = null, ?bool $regularVat = null, ?string $supplierId = null, ?string $travelDate = null, ?string $travelEnd = null, ?string $travelNo = null)
     {
         $this
             ->setAccountBuyAcc($accountBuyAcc)
@@ -221,6 +236,7 @@ class TravelNumberDTO extends AbstractStructBase
             ->setAccountSupplierInkasso($accountSupplierInkasso)
             ->setActive($active)
             ->setB2cPercent($b2cPercent)
+            ->setCalculatedRevenuePercent($calculatedRevenuePercent)
             ->setCreationDate($creationDate)
             ->setCreationUser($creationUser)
             ->setDebitorNo($debitorNo)
@@ -231,6 +247,7 @@ class TravelNumberDTO extends AbstractStructBase
             ->setModifyDate($modifyDate)
             ->setModifyUser($modifyUser)
             ->setNotTakeDates($notTakeDates)
+            ->setRegularVat($regularVat)
             ->setSupplierId($supplierId)
             ->setTravelDate($travelDate)
             ->setTravelEnd($travelEnd)
@@ -536,6 +553,29 @@ class TravelNumberDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get calculatedRevenuePercent value
+     * @return float|null
+     */
+    public function getCalculatedRevenuePercent(): ?float
+    {
+        return $this->calculatedRevenuePercent;
+    }
+    /**
+     * Set calculatedRevenuePercent value
+     * @param float $calculatedRevenuePercent
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TravelNumberDTO
+     */
+    public function setCalculatedRevenuePercent(?float $calculatedRevenuePercent = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($calculatedRevenuePercent) && !(is_float($calculatedRevenuePercent) || is_numeric($calculatedRevenuePercent))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedRevenuePercent, true), gettype($calculatedRevenuePercent)), __LINE__);
+        }
+        $this->calculatedRevenuePercent = $calculatedRevenuePercent;
+        
+        return $this;
+    }
+    /**
      * Get creationDate value
      * @return string|null
      */
@@ -762,6 +802,29 @@ class TravelNumberDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($notTakeDates, true), gettype($notTakeDates)), __LINE__);
         }
         $this->notTakeDates = $notTakeDates;
+        
+        return $this;
+    }
+    /**
+     * Get regularVat value
+     * @return bool|null
+     */
+    public function getRegularVat(): ?bool
+    {
+        return $this->regularVat;
+    }
+    /**
+     * Set regularVat value
+     * @param bool $regularVat
+     * @return \Pggns\MidocoApi\OrderSD\StructType\TravelNumberDTO
+     */
+    public function setRegularVat(?bool $regularVat = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($regularVat) && !is_bool($regularVat)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($regularVat, true), gettype($regularVat)), __LINE__);
+        }
+        $this->regularVat = $regularVat;
         
         return $this;
     }

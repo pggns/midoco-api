@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getDueMidocoCharges --- get the charges to be included in the next settlement
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDueMidocoChargesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetDueMidocoChargesResponse extends AbstractStructBase
         return $this->MidocoCrmMidocoChargeInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoChargeInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoChargeInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoChargeInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoChargeInfoForArrayConstraintsFromSetMidocoCrmMidocoChargeInfo(?array $values = []): string
+    public static function validateMidocoCrmMidocoChargeInfoForArrayConstraintFromSetMidocoCrmMidocoChargeInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetDueMidocoChargesResponse extends AbstractStructBase
     public function setMidocoCrmMidocoChargeInfo(?array $midocoCrmMidocoChargeInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoChargeInfoArrayErrorMessage = self::validateMidocoCrmMidocoChargeInfoForArrayConstraintsFromSetMidocoCrmMidocoChargeInfo($midocoCrmMidocoChargeInfo))) {
+        if ('' !== ($midocoCrmMidocoChargeInfoArrayErrorMessage = self::validateMidocoCrmMidocoChargeInfoForArrayConstraintFromSetMidocoCrmMidocoChargeInfo($midocoCrmMidocoChargeInfo))) {
             throw new InvalidArgumentException($midocoCrmMidocoChargeInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoChargeInfo = $midocoCrmMidocoChargeInfo;

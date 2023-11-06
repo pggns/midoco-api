@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrepareAdviceInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrepareAdviceInfoResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PrepareAdviceInfoResponse extends AbstractStructBase
         return $this->MidocoAdviceSettlement;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAdviceSettlement method
+     * This method is responsible for validating the value(s) passed to the setMidocoAdviceSettlement method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAdviceSettlement method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAdviceSettlementForArrayConstraintsFromSetMidocoAdviceSettlement(?array $values = []): string
+    public static function validateMidocoAdviceSettlementForArrayConstraintFromSetMidocoAdviceSettlement(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PrepareAdviceInfoResponse extends AbstractStructBase
     public function setMidocoAdviceSettlement(?array $midocoAdviceSettlement = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAdviceSettlementArrayErrorMessage = self::validateMidocoAdviceSettlementForArrayConstraintsFromSetMidocoAdviceSettlement($midocoAdviceSettlement))) {
+        if ('' !== ($midocoAdviceSettlementArrayErrorMessage = self::validateMidocoAdviceSettlementForArrayConstraintFromSetMidocoAdviceSettlement($midocoAdviceSettlement))) {
             throw new InvalidArgumentException($midocoAdviceSettlementArrayErrorMessage, __LINE__);
         }
         $this->MidocoAdviceSettlement = $midocoAdviceSettlement;

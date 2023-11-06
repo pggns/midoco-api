@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getTemplates --- get a list of templates languages
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTemplateLanguagesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetTemplateLanguagesResponse extends AbstractStructBase
         return $this->MidocoCrmTemplateLanguage;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmTemplateLanguage method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmTemplateLanguage method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmTemplateLanguage method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmTemplateLanguageForArrayConstraintsFromSetMidocoCrmTemplateLanguage(?array $values = []): string
+    public static function validateMidocoCrmTemplateLanguageForArrayConstraintFromSetMidocoCrmTemplateLanguage(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetTemplateLanguagesResponse extends AbstractStructBase
     public function setMidocoCrmTemplateLanguage(?array $midocoCrmTemplateLanguage = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmTemplateLanguageArrayErrorMessage = self::validateMidocoCrmTemplateLanguageForArrayConstraintsFromSetMidocoCrmTemplateLanguage($midocoCrmTemplateLanguage))) {
+        if ('' !== ($midocoCrmTemplateLanguageArrayErrorMessage = self::validateMidocoCrmTemplateLanguageForArrayConstraintFromSetMidocoCrmTemplateLanguage($midocoCrmTemplateLanguage))) {
             throw new InvalidArgumentException($midocoCrmTemplateLanguageArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmTemplateLanguage = $midocoCrmTemplateLanguage;

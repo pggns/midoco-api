@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCustomerInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustomerInfoResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetCustomerInfoResponse extends AbstractStructBase
     /**
      * Set responseString value
      * @param string $responseString
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerInfoResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerInfoResponse
      */
     public function setResponseString(?string $responseString = null): self
     {

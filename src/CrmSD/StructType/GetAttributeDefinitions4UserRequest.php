@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAttributeDefinitions4UserRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAttributeDefinitions4UserRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetAttributeDefinitions4UserRequest extends AbstractStructBase
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAttributeDefinitions4UserRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAttributeDefinitions4UserRequest
      */
     public function setUserLogin(?string $userLogin = null): self
     {
@@ -70,7 +71,7 @@ class GetAttributeDefinitions4UserRequest extends AbstractStructBase
     /**
      * Set contextId value
      * @param string $contextId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAttributeDefinitions4UserRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAttributeDefinitions4UserRequest
      */
     public function setContextId(?string $contextId = null): self
     {

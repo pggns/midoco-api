@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for InvoiceDataListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class InvoiceDataListResponse extends AbstractStructBase
 {
     /**
@@ -61,12 +62,13 @@ class InvoiceDataListResponse extends AbstractStructBase
         return $this->MidocoInvoiceDataList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoiceDataList method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoiceDataList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoiceDataList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoiceDataListForArrayConstraintsFromSetMidocoInvoiceDataList(?array $values = []): string
+    public static function validateMidocoInvoiceDataListForArrayConstraintFromSetMidocoInvoiceDataList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -95,7 +97,7 @@ class InvoiceDataListResponse extends AbstractStructBase
     public function setMidocoInvoiceDataList(?array $midocoInvoiceDataList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoiceDataListArrayErrorMessage = self::validateMidocoInvoiceDataListForArrayConstraintsFromSetMidocoInvoiceDataList($midocoInvoiceDataList))) {
+        if ('' !== ($midocoInvoiceDataListArrayErrorMessage = self::validateMidocoInvoiceDataListForArrayConstraintFromSetMidocoInvoiceDataList($midocoInvoiceDataList))) {
             throw new InvalidArgumentException($midocoInvoiceDataListArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoiceDataList = $midocoInvoiceDataList;
@@ -127,12 +129,13 @@ class InvoiceDataListResponse extends AbstractStructBase
         return $this->MidocoInvoiceDataListSums;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoiceDataListSums method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoiceDataListSums method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoiceDataListSums method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoiceDataListSumsForArrayConstraintsFromSetMidocoInvoiceDataListSums(?array $values = []): string
+    public static function validateMidocoInvoiceDataListSumsForArrayConstraintFromSetMidocoInvoiceDataListSums(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -161,7 +164,7 @@ class InvoiceDataListResponse extends AbstractStructBase
     public function setMidocoInvoiceDataListSums(?array $midocoInvoiceDataListSums = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoiceDataListSumsArrayErrorMessage = self::validateMidocoInvoiceDataListSumsForArrayConstraintsFromSetMidocoInvoiceDataListSums($midocoInvoiceDataListSums))) {
+        if ('' !== ($midocoInvoiceDataListSumsArrayErrorMessage = self::validateMidocoInvoiceDataListSumsForArrayConstraintFromSetMidocoInvoiceDataListSums($midocoInvoiceDataListSums))) {
             throw new InvalidArgumentException($midocoInvoiceDataListSumsArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoiceDataListSums = $midocoInvoiceDataListSums;

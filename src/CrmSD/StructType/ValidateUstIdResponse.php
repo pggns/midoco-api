@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ValidateUstIdResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidateUstIdResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class ValidateUstIdResponse extends AbstractStructBase
     /**
      * Set isValid value
      * @param bool $isValid
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateUstIdResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateUstIdResponse
      */
     public function setIsValid(?bool $isValid = null): self
     {

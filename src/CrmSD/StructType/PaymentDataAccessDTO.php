@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PaymentDataAccessDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PaymentDataAccessDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set accessId value
      * @param int $accessId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PaymentDataAccessDTO
      */
     public function setAccessId(?int $accessId = null): self
     {
@@ -94,7 +95,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set accessTimestamp value
      * @param string $accessTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PaymentDataAccessDTO
      */
     public function setAccessTimestamp(?string $accessTimestamp = null): self
     {
@@ -117,7 +118,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PaymentDataAccessDTO
      */
     public function setData(?string $data = null): self
     {
@@ -140,7 +141,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set ipAddress value
      * @param string $ipAddress
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PaymentDataAccessDTO
      */
     public function setIpAddress(?string $ipAddress = null): self
     {
@@ -163,7 +164,7 @@ class PaymentDataAccessDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PaymentDataAccessDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PaymentDataAccessDTO
      */
     public function setUserId(?int $userId = null): self
     {

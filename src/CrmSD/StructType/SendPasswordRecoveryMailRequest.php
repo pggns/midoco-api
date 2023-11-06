@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SendPasswordRecoveryMailRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SendPasswordRecoveryMailRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class SendPasswordRecoveryMailRequest extends AbstractStructBase
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendPasswordRecoveryMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendPasswordRecoveryMailRequest
      */
     public function setUserLogin(?string $userLogin = null): self
     {

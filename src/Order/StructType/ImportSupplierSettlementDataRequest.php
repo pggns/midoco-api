@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ImportSupplierSettlementDataRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ImportSupplierSettlementDataRequest extends AbstractStructBase
 {
     /**
@@ -19,10 +20,22 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
      */
     protected ?string $Data = null;
     /**
+     * The bytes
+     * Meta information extracted from the WSDL
+     * - documentation: To get byte from the file that imported by source system to determine and check Standard Charsets of the file
+     * @var string|null
+     */
+    protected ?string $bytes = null;
+    /**
      * The sourceSystem
      * @var string|null
      */
     protected ?string $sourceSystem = null;
+    /**
+     * The invokeCheckProcess
+     * @var bool|null
+     */
+    protected ?bool $invokeCheckProcess = null;
     /**
      * The delimiter
      * @var string|null
@@ -54,35 +67,59 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
      */
     protected ?string $settlementDate = null;
     /**
+     * The settlementType
+     * @var string|null
+     */
+    protected ?string $settlementType = null;
+    /**
+     * The supplierId
+     * Meta information extracted from the WSDL
+     * - documentation: SupplierId - to get settings from supplier for helping the import
+     * @var string|null
+     */
+    protected ?string $supplierId = null;
+    /**
      * Constructor method for ImportSupplierSettlementDataRequest
      * @uses ImportSupplierSettlementDataRequest::setData()
+     * @uses ImportSupplierSettlementDataRequest::setBytes()
      * @uses ImportSupplierSettlementDataRequest::setSourceSystem()
+     * @uses ImportSupplierSettlementDataRequest::setInvokeCheckProcess()
      * @uses ImportSupplierSettlementDataRequest::setDelimiter()
      * @uses ImportSupplierSettlementDataRequest::setDateFormat()
      * @uses ImportSupplierSettlementDataRequest::setDecimalDelimiter()
      * @uses ImportSupplierSettlementDataRequest::setSupplierDataFormat()
      * @uses ImportSupplierSettlementDataRequest::setTextInQuotes()
      * @uses ImportSupplierSettlementDataRequest::setSettlementDate()
+     * @uses ImportSupplierSettlementDataRequest::setSettlementType()
+     * @uses ImportSupplierSettlementDataRequest::setSupplierId()
      * @param string $data
+     * @param string $bytes
      * @param string $sourceSystem
+     * @param bool $invokeCheckProcess
      * @param string $delimiter
      * @param string $dateFormat
      * @param string $decimalDelimiter
      * @param string $supplierDataFormat
      * @param bool $textInQuotes
      * @param string $settlementDate
+     * @param string $settlementType
+     * @param string $supplierId
      */
-    public function __construct(?string $data = null, ?string $sourceSystem = null, ?string $delimiter = null, ?string $dateFormat = null, ?string $decimalDelimiter = null, ?string $supplierDataFormat = null, ?bool $textInQuotes = null, ?string $settlementDate = null)
+    public function __construct(?string $data = null, ?string $bytes = null, ?string $sourceSystem = null, ?bool $invokeCheckProcess = null, ?string $delimiter = null, ?string $dateFormat = null, ?string $decimalDelimiter = null, ?string $supplierDataFormat = null, ?bool $textInQuotes = null, ?string $settlementDate = null, ?string $settlementType = null, ?string $supplierId = null)
     {
         $this
             ->setData($data)
+            ->setBytes($bytes)
             ->setSourceSystem($sourceSystem)
+            ->setInvokeCheckProcess($invokeCheckProcess)
             ->setDelimiter($delimiter)
             ->setDateFormat($dateFormat)
             ->setDecimalDelimiter($decimalDelimiter)
             ->setSupplierDataFormat($supplierDataFormat)
             ->setTextInQuotes($textInQuotes)
-            ->setSettlementDate($settlementDate);
+            ->setSettlementDate($settlementDate)
+            ->setSettlementType($settlementType)
+            ->setSupplierId($supplierId);
     }
     /**
      * Get Data value
@@ -108,6 +145,29 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
         return $this;
     }
     /**
+     * Get bytes value
+     * @return string|null
+     */
+    public function getBytes(): ?string
+    {
+        return $this->bytes;
+    }
+    /**
+     * Set bytes value
+     * @param string $bytes
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
+     */
+    public function setBytes(?string $bytes = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($bytes) && !is_string($bytes)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bytes, true), gettype($bytes)), __LINE__);
+        }
+        $this->bytes = $bytes;
+        
+        return $this;
+    }
+    /**
      * Get sourceSystem value
      * @return string|null
      */
@@ -127,6 +187,29 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sourceSystem, true), gettype($sourceSystem)), __LINE__);
         }
         $this->sourceSystem = $sourceSystem;
+        
+        return $this;
+    }
+    /**
+     * Get invokeCheckProcess value
+     * @return bool|null
+     */
+    public function getInvokeCheckProcess(): ?bool
+    {
+        return $this->invokeCheckProcess;
+    }
+    /**
+     * Set invokeCheckProcess value
+     * @param bool $invokeCheckProcess
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
+     */
+    public function setInvokeCheckProcess(?bool $invokeCheckProcess = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($invokeCheckProcess) && !is_bool($invokeCheckProcess)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($invokeCheckProcess, true), gettype($invokeCheckProcess)), __LINE__);
+        }
+        $this->invokeCheckProcess = $invokeCheckProcess;
         
         return $this;
     }
@@ -265,6 +348,52 @@ class ImportSupplierSettlementDataRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementDate, true), gettype($settlementDate)), __LINE__);
         }
         $this->settlementDate = $settlementDate;
+        
+        return $this;
+    }
+    /**
+     * Get settlementType value
+     * @return string|null
+     */
+    public function getSettlementType(): ?string
+    {
+        return $this->settlementType;
+    }
+    /**
+     * Set settlementType value
+     * @param string $settlementType
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
+     */
+    public function setSettlementType(?string $settlementType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementType) && !is_string($settlementType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementType, true), gettype($settlementType)), __LINE__);
+        }
+        $this->settlementType = $settlementType;
+        
+        return $this;
+    }
+    /**
+     * Get supplierId value
+     * @return string|null
+     */
+    public function getSupplierId(): ?string
+    {
+        return $this->supplierId;
+    }
+    /**
+     * Set supplierId value
+     * @param string $supplierId
+     * @return \Pggns\MidocoApi\Order\StructType\ImportSupplierSettlementDataRequest
+     */
+    public function setSupplierId(?string $supplierId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($supplierId) && !is_string($supplierId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplierId, true), gettype($supplierId)), __LINE__);
+        }
+        $this->supplierId = $supplierId;
         
         return $this;
     }

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: a price in this section is subject of reference in all price-ref attributes of services and other price-information
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Booking_price extends AbstractStructBase
 {
     /**
@@ -86,9 +87,7 @@ class Booking_price extends AbstractStructBase
     /**
      * The extPaymentType
      * Meta information extracted from the WSDL
-     * - base: xs:string
      * - minOccurs: 0
-     * - pattern: | CASH | DEBIT | CC | FULL_CREDIT
      * @var string|null
      */
     protected ?string $extPaymentType = null;
@@ -235,6 +234,14 @@ class Booking_price extends AbstractStructBase
      */
     protected ?float $commission_percent = null;
     /**
+     * The commission_currency
+     * Meta information extracted from the WSDL
+     * - documentation: the commission currency - use only for foreign currency agency settlement
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $commission_currency = null;
+    /**
      * The mode_revenue_calculation
      * Meta information extracted from the WSDL
      * - minOccurs: 0
@@ -274,6 +281,22 @@ class Booking_price extends AbstractStructBase
      */
     protected ?float $calculated_mediator_amount = null;
     /**
+     * The mediator_commission_percent
+     * Meta information extracted from the WSDL
+     * - documentation: The mediator commission amount
+     * - minOccurs: 0
+     * @var float|null
+     */
+    protected ?float $mediator_commission_percent = null;
+    /**
+     * The mediator_commission_currency
+     * Meta information extracted from the WSDL
+     * - documentation: The mediator commission currency - use only for foreign currency mediator settlement
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $mediator_commission_currency = null;
+    /**
      * Constructor method for booking-price
      * @uses Booking_price::setPosition()
      * @uses Booking_price::setSupplier()
@@ -302,11 +325,14 @@ class Booking_price extends AbstractStructBase
      * @uses Booking_price::setVat_division()
      * @uses Booking_price::setCommission_value()
      * @uses Booking_price::setCommission_percent()
+     * @uses Booking_price::setCommission_currency()
      * @uses Booking_price::setMode_revenue_calculation()
      * @uses Booking_price::setValue_revenue_calculation()
      * @uses Booking_price::setBuy_currency_rate()
      * @uses Booking_price::setFee_amount()
      * @uses Booking_price::setCalculated_mediator_amount()
+     * @uses Booking_price::setMediator_commission_percent()
+     * @uses Booking_price::setMediator_commission_currency()
      * @param int $position
      * @param string $supplier
      * @param string $catalog
@@ -334,13 +360,16 @@ class Booking_price extends AbstractStructBase
      * @param \Pggns\MidocoApi\Booking\StructType\Vat_division[] $vat_division
      * @param float $commission_value
      * @param float $commission_percent
+     * @param string $commission_currency
      * @param string $mode_revenue_calculation
      * @param float $value_revenue_calculation
      * @param float $buy_currency_rate
      * @param float $fee_amount
      * @param float $calculated_mediator_amount
+     * @param float $mediator_commission_percent
+     * @param string $mediator_commission_currency
      */
-    public function __construct(int $position, ?string $supplier = null, ?string $catalog = null, ?string $booking_id = null, ?float $deposit = null, ?string $deposit_payment_type = null, ?float $total_price = null, ?bool $hide_service_prices = false, ?string $payment_type = null, ?string $extPaymentType = null, ?string $currency = null, ?bool $vat_included = null, ?float $sale_price = null, ?float $original_price = null, ?string $original_currency = null, ?float $customer_selling_price = null, ?float $revenue_amount = null, ?float $reduced_vat_fraction = null, ?string $deposit_date = null, ?string $final_payment_date = null, ?float $supplier_deposit_amount = null, ?string $supplier_deposit_date = null, ?string $supplier_final_payment_date = null, ?float $supplier_commission_amount = null, ?array $vat_division = null, ?float $commission_value = null, ?float $commission_percent = null, ?string $mode_revenue_calculation = null, ?float $value_revenue_calculation = null, ?float $buy_currency_rate = null, ?float $fee_amount = null, ?float $calculated_mediator_amount = null)
+    public function __construct(int $position, ?string $supplier = null, ?string $catalog = null, ?string $booking_id = null, ?float $deposit = null, ?string $deposit_payment_type = null, ?float $total_price = null, ?bool $hide_service_prices = false, ?string $payment_type = null, ?string $extPaymentType = null, ?string $currency = null, ?bool $vat_included = null, ?float $sale_price = null, ?float $original_price = null, ?string $original_currency = null, ?float $customer_selling_price = null, ?float $revenue_amount = null, ?float $reduced_vat_fraction = null, ?string $deposit_date = null, ?string $final_payment_date = null, ?float $supplier_deposit_amount = null, ?string $supplier_deposit_date = null, ?string $supplier_final_payment_date = null, ?float $supplier_commission_amount = null, ?array $vat_division = null, ?float $commission_value = null, ?float $commission_percent = null, ?string $commission_currency = null, ?string $mode_revenue_calculation = null, ?float $value_revenue_calculation = null, ?float $buy_currency_rate = null, ?float $fee_amount = null, ?float $calculated_mediator_amount = null, ?float $mediator_commission_percent = null, ?string $mediator_commission_currency = null)
     {
         $this
             ->setPosition($position)
@@ -370,11 +399,14 @@ class Booking_price extends AbstractStructBase
             ->setVat_division($vat_division)
             ->setCommission_value($commission_value)
             ->setCommission_percent($commission_percent)
+            ->setCommission_currency($commission_currency)
             ->setMode_revenue_calculation($mode_revenue_calculation)
             ->setValue_revenue_calculation($value_revenue_calculation)
             ->setBuy_currency_rate($buy_currency_rate)
             ->setFee_amount($fee_amount)
-            ->setCalculated_mediator_amount($calculated_mediator_amount);
+            ->setCalculated_mediator_amount($calculated_mediator_amount)
+            ->setMediator_commission_percent($mediator_commission_percent)
+            ->setMediator_commission_currency($mediator_commission_currency);
     }
     /**
      * Get position value
@@ -599,18 +631,17 @@ class Booking_price extends AbstractStructBase
     }
     /**
      * Set extPaymentType value
+     * @uses \Pggns\MidocoApi\Booking\EnumType\ExtPaymentType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\ExtPaymentType::getValidValues()
+     * @throws InvalidArgumentException
      * @param string $extPaymentType
      * @return \Pggns\MidocoApi\Booking\StructType\Booking_price
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
-        // validation for constraint: string
-        if (!is_null($extPaymentType) && !is_string($extPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($extPaymentType, true), gettype($extPaymentType)), __LINE__);
-        }
-        // validation for constraint: pattern(, CASH, DEBIT, CC, FULL_CREDIT)
-        if (!is_null($extPaymentType) && !preg_match('/^$|CASH|DEBIT|CC|FULL_CREDIT/', $extPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /^$|CASH|DEBIT|CC|FULL_CREDIT/', var_export($extPaymentType, true)), __LINE__);
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Booking\EnumType\ExtPaymentType::valueIsValid($extPaymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\ExtPaymentType', is_array($extPaymentType) ? implode(', ', $extPaymentType) : var_export($extPaymentType, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\ExtPaymentType::getValidValues())), __LINE__);
         }
         $this->extPaymentType = $extPaymentType;
         
@@ -820,7 +851,7 @@ class Booking_price extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($deposit_date, true), gettype($deposit_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($deposit_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $deposit_date)) {
+        if (!is_null($deposit_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $deposit_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($deposit_date, true)), __LINE__);
         }
         $this->deposit_date = $this->{'deposit-date'} = $deposit_date;
@@ -847,7 +878,7 @@ class Booking_price extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($final_payment_date, true), gettype($final_payment_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($final_payment_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $final_payment_date)) {
+        if (!is_null($final_payment_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $final_payment_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($final_payment_date, true)), __LINE__);
         }
         $this->final_payment_date = $this->{'final-payment-date'} = $final_payment_date;
@@ -897,7 +928,7 @@ class Booking_price extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplier_deposit_date, true), gettype($supplier_deposit_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($supplier_deposit_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $supplier_deposit_date)) {
+        if (!is_null($supplier_deposit_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $supplier_deposit_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($supplier_deposit_date, true)), __LINE__);
         }
         $this->supplier_deposit_date = $supplier_deposit_date;
@@ -924,7 +955,7 @@ class Booking_price extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplier_final_payment_date, true), gettype($supplier_final_payment_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($supplier_final_payment_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $supplier_final_payment_date)) {
+        if (!is_null($supplier_final_payment_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $supplier_final_payment_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($supplier_final_payment_date, true)), __LINE__);
         }
         $this->supplier_final_payment_date = $supplier_final_payment_date;
@@ -963,12 +994,13 @@ class Booking_price extends AbstractStructBase
         return $this->vat_division;
     }
     /**
-     * This method is responsible for validating the values passed to the setVat_division method
+     * This method is responsible for validating the value(s) passed to the setVat_division method
      * This method is willingly generated in order to preserve the one-line inline validation within the setVat_division method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVat_divisionForArrayConstraintsFromSetVat_division(?array $values = []): string
+    public static function validateVat_divisionForArrayConstraintFromSetVat_division(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -997,7 +1029,7 @@ class Booking_price extends AbstractStructBase
     public function setVat_division(?array $vat_division = null): self
     {
         // validation for constraint: array
-        if ('' !== ($vat_divisionArrayErrorMessage = self::validateVat_divisionForArrayConstraintsFromSetVat_division($vat_division))) {
+        if ('' !== ($vat_divisionArrayErrorMessage = self::validateVat_divisionForArrayConstraintFromSetVat_division($vat_division))) {
             throw new InvalidArgumentException($vat_divisionArrayErrorMessage, __LINE__);
         }
         $this->vat_division = $vat_division;
@@ -1026,7 +1058,7 @@ class Booking_price extends AbstractStructBase
      */
     public function getCommission_value(): ?float
     {
-        return $this->commission_value;
+        return $this->{'commission-value'};
     }
     /**
      * Set commission_value value
@@ -1039,7 +1071,7 @@ class Booking_price extends AbstractStructBase
         if (!is_null($commission_value) && !(is_float($commission_value) || is_numeric($commission_value))) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commission_value, true), gettype($commission_value)), __LINE__);
         }
-        $this->commission_value = $commission_value;
+        $this->commission_value = $this->{'commission-value'} = $commission_value;
         
         return $this;
     }
@@ -1049,7 +1081,7 @@ class Booking_price extends AbstractStructBase
      */
     public function getCommission_percent(): ?float
     {
-        return $this->commission_percent;
+        return $this->{'commission-percent'};
     }
     /**
      * Set commission_percent value
@@ -1062,7 +1094,30 @@ class Booking_price extends AbstractStructBase
         if (!is_null($commission_percent) && !(is_float($commission_percent) || is_numeric($commission_percent))) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commission_percent, true), gettype($commission_percent)), __LINE__);
         }
-        $this->commission_percent = $commission_percent;
+        $this->commission_percent = $this->{'commission-percent'} = $commission_percent;
+        
+        return $this;
+    }
+    /**
+     * Get commission_currency value
+     * @return string|null
+     */
+    public function getCommission_currency(): ?string
+    {
+        return $this->{'commission-currency'};
+    }
+    /**
+     * Set commission_currency value
+     * @param string $commission_currency
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking_price
+     */
+    public function setCommission_currency(?string $commission_currency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($commission_currency) && !is_string($commission_currency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($commission_currency, true), gettype($commission_currency)), __LINE__);
+        }
+        $this->commission_currency = $this->{'commission-currency'} = $commission_currency;
         
         return $this;
     }
@@ -1181,6 +1236,52 @@ class Booking_price extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculated_mediator_amount, true), gettype($calculated_mediator_amount)), __LINE__);
         }
         $this->calculated_mediator_amount = $this->{'calculated-mediator-amount'} = $calculated_mediator_amount;
+        
+        return $this;
+    }
+    /**
+     * Get mediator_commission_percent value
+     * @return float|null
+     */
+    public function getMediator_commission_percent(): ?float
+    {
+        return $this->{'mediator-commission-percent'};
+    }
+    /**
+     * Set mediator_commission_percent value
+     * @param float $mediator_commission_percent
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking_price
+     */
+    public function setMediator_commission_percent(?float $mediator_commission_percent = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($mediator_commission_percent) && !(is_float($mediator_commission_percent) || is_numeric($mediator_commission_percent))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($mediator_commission_percent, true), gettype($mediator_commission_percent)), __LINE__);
+        }
+        $this->mediator_commission_percent = $this->{'mediator-commission-percent'} = $mediator_commission_percent;
+        
+        return $this;
+    }
+    /**
+     * Get mediator_commission_currency value
+     * @return string|null
+     */
+    public function getMediator_commission_currency(): ?string
+    {
+        return $this->{'mediator-commission-currency'};
+    }
+    /**
+     * Set mediator_commission_currency value
+     * @param string $mediator_commission_currency
+     * @return \Pggns\MidocoApi\Booking\StructType\Booking_price
+     */
+    public function setMediator_commission_currency(?string $mediator_commission_currency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($mediator_commission_currency) && !is_string($mediator_commission_currency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mediator_commission_currency, true), gettype($mediator_commission_currency)), __LINE__);
+        }
+        $this->mediator_commission_currency = $this->{'mediator-commission-currency'} = $mediator_commission_currency;
         
         return $this;
     }

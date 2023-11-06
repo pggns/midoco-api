@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfClassNameRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfClassNameRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetMfClassNameRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfClassNameRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfClassNameRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +71,7 @@ class GetMfClassNameRequest extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfClassNameRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfClassNameRequest
      */
     public function setBean(?string $bean = null): self
     {

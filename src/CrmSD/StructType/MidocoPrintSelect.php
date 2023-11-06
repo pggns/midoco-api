@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoPrintSelect StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoPrintSelect extends AbstractStructBase
 {
     /**
@@ -122,7 +123,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {
@@ -145,7 +146,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set desciption value
      * @param string $desciption
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setDesciption(?string $desciption = null): self
     {
@@ -168,7 +169,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set selected value
      * @param bool $selected
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setSelected(?bool $selected = null): self
     {
@@ -191,7 +192,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set handler value
      * @param string $handler
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setHandler(?string $handler = null): self
     {
@@ -214,7 +215,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setPosition(?int $position = null): self
     {
@@ -235,12 +236,13 @@ class MidocoPrintSelect extends AbstractStructBase
         return $this->itemId;
     }
     /**
-     * This method is responsible for validating the values passed to the setItemId method
+     * This method is responsible for validating the value(s) passed to the setItemId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setItemId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateItemIdForArrayConstraintsFromSetItemId(?array $values = []): string
+    public static function validateItemIdForArrayConstraintFromSetItemId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -264,12 +266,12 @@ class MidocoPrintSelect extends AbstractStructBase
      * Set itemId value
      * @throws InvalidArgumentException
      * @param int[] $itemId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setItemId(?array $itemId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($itemIdArrayErrorMessage = self::validateItemIdForArrayConstraintsFromSetItemId($itemId))) {
+        if ('' !== ($itemIdArrayErrorMessage = self::validateItemIdForArrayConstraintFromSetItemId($itemId))) {
             throw new InvalidArgumentException($itemIdArrayErrorMessage, __LINE__);
         }
         $this->itemId = $itemId;
@@ -280,7 +282,7 @@ class MidocoPrintSelect extends AbstractStructBase
      * Add item to itemId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function addToItemId(int $item): self
     {
@@ -303,7 +305,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set channel value
      * @param int $channel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setChannel(?int $channel = null): self
     {
@@ -326,7 +328,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set orderHistoryRefId value
      * @param string $orderHistoryRefId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setOrderHistoryRefId(?string $orderHistoryRefId = null): self
     {
@@ -349,7 +351,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set selectOwnResponsibility value
      * @param bool $selectOwnResponsibility
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setSelectOwnResponsibility(?bool $selectOwnResponsibility = null): self
     {
@@ -372,7 +374,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set selectNoInsurance value
      * @param bool $selectNoInsurance
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setSelectNoInsurance(?bool $selectNoInsurance = null): self
     {
@@ -395,7 +397,7 @@ class MidocoPrintSelect extends AbstractStructBase
     /**
      * Set isItemSelectionSupported value
      * @param bool $isItemSelectionSupported
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintSelect
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintSelect
      */
     public function setIsItemSelectionSupported(?bool $isItemSelectionSupported = null): self
     {

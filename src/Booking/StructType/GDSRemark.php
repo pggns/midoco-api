@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GDSRemark StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GDSRemark extends AbstractStructBase
 {
     /**
@@ -81,12 +82,13 @@ class GDSRemark extends AbstractStructBase
         return $this->TravelerRefId;
     }
     /**
-     * This method is responsible for validating the values passed to the setTravelerRefId method
+     * This method is responsible for validating the value(s) passed to the setTravelerRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTravelerRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTravelerRefIdForArrayConstraintsFromSetTravelerRefId(?array $values = []): string
+    public static function validateTravelerRefIdForArrayConstraintFromSetTravelerRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -115,7 +117,7 @@ class GDSRemark extends AbstractStructBase
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($travelerRefIdArrayErrorMessage = self::validateTravelerRefIdForArrayConstraintsFromSetTravelerRefId($travelerRefId))) {
+        if ('' !== ($travelerRefIdArrayErrorMessage = self::validateTravelerRefIdForArrayConstraintFromSetTravelerRefId($travelerRefId))) {
             throw new InvalidArgumentException($travelerRefIdArrayErrorMessage, __LINE__);
         }
         $this->TravelerRefId = $travelerRefId;
@@ -147,12 +149,13 @@ class GDSRemark extends AbstractStructBase
         return $this->BookingPositionRefId;
     }
     /**
-     * This method is responsible for validating the values passed to the setBookingPositionRefId method
+     * This method is responsible for validating the value(s) passed to the setBookingPositionRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBookingPositionRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBookingPositionRefIdForArrayConstraintsFromSetBookingPositionRefId(?array $values = []): string
+    public static function validateBookingPositionRefIdForArrayConstraintFromSetBookingPositionRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -181,7 +184,7 @@ class GDSRemark extends AbstractStructBase
     public function setBookingPositionRefId(?array $bookingPositionRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bookingPositionRefIdArrayErrorMessage = self::validateBookingPositionRefIdForArrayConstraintsFromSetBookingPositionRefId($bookingPositionRefId))) {
+        if ('' !== ($bookingPositionRefIdArrayErrorMessage = self::validateBookingPositionRefIdForArrayConstraintFromSetBookingPositionRefId($bookingPositionRefId))) {
             throw new InvalidArgumentException($bookingPositionRefIdArrayErrorMessage, __LINE__);
         }
         $this->BookingPositionRefId = $bookingPositionRefId;
@@ -213,12 +216,13 @@ class GDSRemark extends AbstractStructBase
         return $this->BookingDetailRefId;
     }
     /**
-     * This method is responsible for validating the values passed to the setBookingDetailRefId method
+     * This method is responsible for validating the value(s) passed to the setBookingDetailRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBookingDetailRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBookingDetailRefIdForArrayConstraintsFromSetBookingDetailRefId(?array $values = []): string
+    public static function validateBookingDetailRefIdForArrayConstraintFromSetBookingDetailRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -247,7 +251,7 @@ class GDSRemark extends AbstractStructBase
     public function setBookingDetailRefId(?array $bookingDetailRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bookingDetailRefIdArrayErrorMessage = self::validateBookingDetailRefIdForArrayConstraintsFromSetBookingDetailRefId($bookingDetailRefId))) {
+        if ('' !== ($bookingDetailRefIdArrayErrorMessage = self::validateBookingDetailRefIdForArrayConstraintFromSetBookingDetailRefId($bookingDetailRefId))) {
             throw new InvalidArgumentException($bookingDetailRefIdArrayErrorMessage, __LINE__);
         }
         $this->BookingDetailRefId = $bookingDetailRefId;

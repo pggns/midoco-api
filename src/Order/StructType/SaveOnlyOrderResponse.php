@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveOnlyOrderResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveOnlyOrderResponse extends AbstractStructBase
 {
     /**
@@ -48,12 +49,13 @@ class SaveOnlyOrderResponse extends AbstractStructBase
         return $this->ToBeProcessedOrderId;
     }
     /**
-     * This method is responsible for validating the values passed to the setToBeProcessedOrderId method
+     * This method is responsible for validating the value(s) passed to the setToBeProcessedOrderId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setToBeProcessedOrderId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateToBeProcessedOrderIdForArrayConstraintsFromSetToBeProcessedOrderId(?array $values = []): string
+    public static function validateToBeProcessedOrderIdForArrayConstraintFromSetToBeProcessedOrderId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -82,7 +84,7 @@ class SaveOnlyOrderResponse extends AbstractStructBase
     public function setToBeProcessedOrderId(?array $toBeProcessedOrderId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($toBeProcessedOrderIdArrayErrorMessage = self::validateToBeProcessedOrderIdForArrayConstraintsFromSetToBeProcessedOrderId($toBeProcessedOrderId))) {
+        if ('' !== ($toBeProcessedOrderIdArrayErrorMessage = self::validateToBeProcessedOrderIdForArrayConstraintFromSetToBeProcessedOrderId($toBeProcessedOrderId))) {
             throw new InvalidArgumentException($toBeProcessedOrderIdArrayErrorMessage, __LINE__);
         }
         $this->ToBeProcessedOrderId = $toBeProcessedOrderId;

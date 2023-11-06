@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetJasperParameterRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetJasperParameterRequest extends AbstractStructBase
 {
     /**

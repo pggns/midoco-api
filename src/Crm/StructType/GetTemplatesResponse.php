@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getTemplates --- get a list of templates
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTemplatesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetTemplatesResponse extends AbstractStructBase
         return $this->MidocoCrmTemplate;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmTemplate method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmTemplate method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmTemplate method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmTemplateForArrayConstraintsFromSetMidocoCrmTemplate(?array $values = []): string
+    public static function validateMidocoCrmTemplateForArrayConstraintFromSetMidocoCrmTemplate(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetTemplatesResponse extends AbstractStructBase
     public function setMidocoCrmTemplate(?array $midocoCrmTemplate = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmTemplateArrayErrorMessage = self::validateMidocoCrmTemplateForArrayConstraintsFromSetMidocoCrmTemplate($midocoCrmTemplate))) {
+        if ('' !== ($midocoCrmTemplateArrayErrorMessage = self::validateMidocoCrmTemplateForArrayConstraintFromSetMidocoCrmTemplate($midocoCrmTemplate))) {
             throw new InvalidArgumentException($midocoCrmTemplateArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmTemplate = $midocoCrmTemplate;

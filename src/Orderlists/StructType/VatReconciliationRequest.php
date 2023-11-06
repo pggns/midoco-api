@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VatReconciliationRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VatReconciliationRequest extends AbstractStructBase
 {
     /**

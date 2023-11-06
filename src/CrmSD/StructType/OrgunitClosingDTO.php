@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgunitClosingDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgunitClosingDTO extends AbstractStructBase
 {
     /**
@@ -111,7 +112,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set closureDate value
      * @param string $closureDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setClosureDate(?string $closureDate = null): self
     {
@@ -134,7 +135,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set closureId value
      * @param int $closureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setClosureId(?int $closureId = null): self
     {
@@ -157,7 +158,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set codeForClosure value
      * @param string $codeForClosure
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setCodeForClosure(?string $codeForClosure = null): self
     {
@@ -180,7 +181,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set crmExportRequired value
      * @param bool $crmExportRequired
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setCrmExportRequired(?bool $crmExportRequired = null): self
     {
@@ -203,7 +204,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set duplicateFeeSettings value
      * @param bool $duplicateFeeSettings
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setDuplicateFeeSettings(?bool $duplicateFeeSettings = null): self
     {
@@ -226,7 +227,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set onlyOrdersAfterDate value
      * @param bool $onlyOrdersAfterDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setOnlyOrdersAfterDate(?bool $onlyOrdersAfterDate = null): self
     {
@@ -249,7 +250,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set preExecution value
      * @param bool $preExecution
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setPreExecution(?bool $preExecution = null): self
     {
@@ -272,7 +273,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -295,7 +296,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set unitnameFrom value
      * @param string $unitnameFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setUnitnameFrom(?string $unitnameFrom = null): self
     {
@@ -318,7 +319,7 @@ class OrgunitClosingDTO extends AbstractStructBase
     /**
      * Set unitnameTo value
      * @param string $unitnameTo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
      */
     public function setUnitnameTo(?string $unitnameTo = null): self
     {

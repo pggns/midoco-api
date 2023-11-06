@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoPriceDetailType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoPriceDetailType extends PriceDetailDTO
 {
     /**
@@ -41,12 +42,13 @@ class MidocoPriceDetailType extends PriceDetailDTO
         return $this->MidocoDocumentItem;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDocumentItem method
+     * This method is responsible for validating the value(s) passed to the setMidocoDocumentItem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDocumentItem method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDocumentItemForArrayConstraintsFromSetMidocoDocumentItem(?array $values = []): string
+    public static function validateMidocoDocumentItemForArrayConstraintFromSetMidocoDocumentItem(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class MidocoPriceDetailType extends PriceDetailDTO
     public function setMidocoDocumentItem(?array $midocoDocumentItem = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDocumentItemArrayErrorMessage = self::validateMidocoDocumentItemForArrayConstraintsFromSetMidocoDocumentItem($midocoDocumentItem))) {
+        if ('' !== ($midocoDocumentItemArrayErrorMessage = self::validateMidocoDocumentItemForArrayConstraintFromSetMidocoDocumentItem($midocoDocumentItem))) {
             throw new InvalidArgumentException($midocoDocumentItemArrayErrorMessage, __LINE__);
         }
         $this->MidocoDocumentItem = $midocoDocumentItem;

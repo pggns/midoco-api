@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoFeeTypeAssign StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoFeeTypeAssign extends FeeTypeDTO
 {
     /**
@@ -111,6 +112,11 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
      */
     protected ?bool $statusMatched = null;
     /**
+     * The attribMatched
+     * @var bool|null
+     */
+    protected ?bool $attribMatched = null;
+    /**
      * Constructor method for MidocoFeeTypeAssign
      * @uses MidocoFeeTypeAssign::setIsUseCustomerCurrency()
      * @uses MidocoFeeTypeAssign::setIsExplicit()
@@ -131,6 +137,7 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
      * @uses MidocoFeeTypeAssign::setOneFeeRelatedTicketsImport()
      * @uses MidocoFeeTypeAssign::setFeePriority()
      * @uses MidocoFeeTypeAssign::setStatusMatched()
+     * @uses MidocoFeeTypeAssign::setAttribMatched()
      * @param bool $isUseCustomerCurrency
      * @param bool $isExplicit
      * @param bool $segmentMultiply
@@ -150,8 +157,9 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
      * @param bool $oneFeeRelatedTicketsImport
      * @param int $feePriority
      * @param bool $statusMatched
+     * @param bool $attribMatched
      */
-    public function __construct(?bool $isUseCustomerCurrency = false, ?bool $isExplicit = null, ?bool $segmentMultiply = null, ?bool $travellerMultiply = null, ?string $feeCategory = null, ?bool $assumeTicketTaxPercent = null, ?bool $dbUsePerMatch = null, ?bool $reverseTrip = null, ?string $ticketDesignator = null, ?bool $isNettoFeeValue = null, ?int $segmentValueSet = null, ?bool $noFeeSameDay = null, ?string $noFeeSameDayCategory = null, ?bool $noFeePrevDay = null, ?string $noFeePrevDayCategory = null, ?int $feeAssignId = null, ?bool $oneFeeRelatedTicketsImport = null, ?int $feePriority = null, ?bool $statusMatched = null)
+    public function __construct(?bool $isUseCustomerCurrency = false, ?bool $isExplicit = null, ?bool $segmentMultiply = null, ?bool $travellerMultiply = null, ?string $feeCategory = null, ?bool $assumeTicketTaxPercent = null, ?bool $dbUsePerMatch = null, ?bool $reverseTrip = null, ?string $ticketDesignator = null, ?bool $isNettoFeeValue = null, ?int $segmentValueSet = null, ?bool $noFeeSameDay = null, ?string $noFeeSameDayCategory = null, ?bool $noFeePrevDay = null, ?string $noFeePrevDayCategory = null, ?int $feeAssignId = null, ?bool $oneFeeRelatedTicketsImport = null, ?int $feePriority = null, ?bool $statusMatched = null, ?bool $attribMatched = null)
     {
         $this
             ->setIsUseCustomerCurrency($isUseCustomerCurrency)
@@ -172,7 +180,8 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
             ->setFeeAssignId($feeAssignId)
             ->setOneFeeRelatedTicketsImport($oneFeeRelatedTicketsImport)
             ->setFeePriority($feePriority)
-            ->setStatusMatched($statusMatched);
+            ->setStatusMatched($statusMatched)
+            ->setAttribMatched($attribMatched);
     }
     /**
      * Get isUseCustomerCurrency value
@@ -608,6 +617,29 @@ class MidocoFeeTypeAssign extends FeeTypeDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($statusMatched, true), gettype($statusMatched)), __LINE__);
         }
         $this->statusMatched = $statusMatched;
+        
+        return $this;
+    }
+    /**
+     * Get attribMatched value
+     * @return bool|null
+     */
+    public function getAttribMatched(): ?bool
+    {
+        return $this->attribMatched;
+    }
+    /**
+     * Set attribMatched value
+     * @param bool $attribMatched
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoFeeTypeAssign
+     */
+    public function setAttribMatched(?bool $attribMatched = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($attribMatched) && !is_bool($attribMatched)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($attribMatched, true), gettype($attribMatched)), __LINE__);
+        }
+        $this->attribMatched = $attribMatched;
         
         return $this;
     }

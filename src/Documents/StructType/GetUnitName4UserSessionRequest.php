@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUnitName4UserSessionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUnitName4UserSessionRequest extends AbstractStructBase
 {
 }

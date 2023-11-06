@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BillingPositionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BillingPositionDTO extends AbstractStructBase
 {
     /**
@@ -133,6 +134,11 @@ class BillingPositionDTO extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $isDeposit = null;
+    /**
+     * The isNettoSinglePrice
+     * @var bool|null
+     */
+    protected ?bool $isNettoSinglePrice = null;
     /**
      * The isPackage
      * @var bool|null
@@ -379,6 +385,7 @@ class BillingPositionDTO extends AbstractStructBase
      * @uses BillingPositionDTO::setIsBackgroundPosition()
      * @uses BillingPositionDTO::setIsCommission()
      * @uses BillingPositionDTO::setIsDeposit()
+     * @uses BillingPositionDTO::setIsNettoSinglePrice()
      * @uses BillingPositionDTO::setIsPackage()
      * @uses BillingPositionDTO::setIsPackageManual()
      * @uses BillingPositionDTO::setIsPayment()
@@ -447,6 +454,7 @@ class BillingPositionDTO extends AbstractStructBase
      * @param bool $isBackgroundPosition
      * @param bool $isCommission
      * @param bool $isDeposit
+     * @param bool $isNettoSinglePrice
      * @param bool $isPackage
      * @param bool $isPackageManual
      * @param bool $isPayment
@@ -492,7 +500,7 @@ class BillingPositionDTO extends AbstractStructBase
      * @param int $voidPositionId
      * @param bool $voided
      */
-    public function __construct(?bool $acceptCc = null, ?bool $acceptDebit = null, ?string $accountId = null, ?string $calculatedPrintDate = null, ?float $commissionPercent = null, ?string $costCentre = null, ?string $costUnit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $currency = null, ?int $dbiInfosStatus = null, ?int $degussaPositionId = null, ?string $description = null, ?string $destinationCode = null, ?int $detailPosition = null, ?string $documentCode = null, ?int $documentId = null, ?string $dueDate = null, ?float $exchangeRate = null, ?bool $forAgency = null, ?bool $imported = null, ?bool $isBackgroundPosition = null, ?bool $isCommission = null, ?bool $isDeposit = null, ?bool $isPackage = null, ?bool $isPackageManual = null, ?bool $isPayment = null, ?bool $isRevenue = null, ?bool $isReverseCharge = null, ?int $itemId = null, ?int $noOfItems = null, ?int $orderId = null, ?string $originalCurrency = null, ?float $originalPrice = null, ?string $packageCode = null, ?string $paidDate = null, ?string $paymentPosition = null, ?int $paymentPositionId = null, ?string $paymentType = null, ?string $planId = null, ?int $position = null, ?int $positionId = null, ?float $price = null, ?string $printDescription = null, ?string $printPackageCode = null, ?string $referenceNo = null, ?float $revenuePercent = null, ?int $settlementPositionId = null, ?float $singlePrice = null, ?int $splitPositionId = null, ?bool $tokenChecked = null, ?float $totalTax = null, ?int $transactionId = null, ?string $travelNoHandling = null, ?float $vat2Amount = null, ?float $vat2AmountExtern = null, ?float $vat2Base = null, ?float $vat2BaseExtern = null, ?float $vat2Percent = null, ?float $vat2PercentExtern = null, ?float $vatAmount = null, ?float $vatAmountExtern = null, ?float $vatBase = null, ?float $vatBaseExtern = null, ?float $vatPercent = null, ?float $vatPercentExtern = null, ?int $voidPositionId = null, ?bool $voided = null)
+    public function __construct(?bool $acceptCc = null, ?bool $acceptDebit = null, ?string $accountId = null, ?string $calculatedPrintDate = null, ?float $commissionPercent = null, ?string $costCentre = null, ?string $costUnit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $currency = null, ?int $dbiInfosStatus = null, ?int $degussaPositionId = null, ?string $description = null, ?string $destinationCode = null, ?int $detailPosition = null, ?string $documentCode = null, ?int $documentId = null, ?string $dueDate = null, ?float $exchangeRate = null, ?bool $forAgency = null, ?bool $imported = null, ?bool $isBackgroundPosition = null, ?bool $isCommission = null, ?bool $isDeposit = null, ?bool $isNettoSinglePrice = null, ?bool $isPackage = null, ?bool $isPackageManual = null, ?bool $isPayment = null, ?bool $isRevenue = null, ?bool $isReverseCharge = null, ?int $itemId = null, ?int $noOfItems = null, ?int $orderId = null, ?string $originalCurrency = null, ?float $originalPrice = null, ?string $packageCode = null, ?string $paidDate = null, ?string $paymentPosition = null, ?int $paymentPositionId = null, ?string $paymentType = null, ?string $planId = null, ?int $position = null, ?int $positionId = null, ?float $price = null, ?string $printDescription = null, ?string $printPackageCode = null, ?string $referenceNo = null, ?float $revenuePercent = null, ?int $settlementPositionId = null, ?float $singlePrice = null, ?int $splitPositionId = null, ?bool $tokenChecked = null, ?float $totalTax = null, ?int $transactionId = null, ?string $travelNoHandling = null, ?float $vat2Amount = null, ?float $vat2AmountExtern = null, ?float $vat2Base = null, ?float $vat2BaseExtern = null, ?float $vat2Percent = null, ?float $vat2PercentExtern = null, ?float $vatAmount = null, ?float $vatAmountExtern = null, ?float $vatBase = null, ?float $vatBaseExtern = null, ?float $vatPercent = null, ?float $vatPercentExtern = null, ?int $voidPositionId = null, ?bool $voided = null)
     {
         $this
             ->setAcceptCc($acceptCc)
@@ -519,6 +527,7 @@ class BillingPositionDTO extends AbstractStructBase
             ->setIsBackgroundPosition($isBackgroundPosition)
             ->setIsCommission($isCommission)
             ->setIsDeposit($isDeposit)
+            ->setIsNettoSinglePrice($isNettoSinglePrice)
             ->setIsPackage($isPackage)
             ->setIsPackageManual($isPackageManual)
             ->setIsPayment($isPayment)
@@ -1113,6 +1122,29 @@ class BillingPositionDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isDeposit, true), gettype($isDeposit)), __LINE__);
         }
         $this->isDeposit = $isDeposit;
+        
+        return $this;
+    }
+    /**
+     * Get isNettoSinglePrice value
+     * @return bool|null
+     */
+    public function getIsNettoSinglePrice(): ?bool
+    {
+        return $this->isNettoSinglePrice;
+    }
+    /**
+     * Set isNettoSinglePrice value
+     * @param bool $isNettoSinglePrice
+     * @return \Pggns\MidocoApi\Documents\StructType\BillingPositionDTO
+     */
+    public function setIsNettoSinglePrice(?bool $isNettoSinglePrice = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isNettoSinglePrice) && !is_bool($isNettoSinglePrice)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isNettoSinglePrice, true), gettype($isNettoSinglePrice)), __LINE__);
+        }
+        $this->isNettoSinglePrice = $isNettoSinglePrice;
         
         return $this;
     }

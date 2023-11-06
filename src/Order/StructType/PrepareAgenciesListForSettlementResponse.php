@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrepareAgenciesListForSettlementResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrepareAgenciesListForSettlementResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class PrepareAgenciesListForSettlementResponse extends AbstractStructBase
         return $this->AgencyId;
     }
     /**
-     * This method is responsible for validating the values passed to the setAgencyId method
+     * This method is responsible for validating the value(s) passed to the setAgencyId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAgencyId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAgencyIdForArrayConstraintsFromSetAgencyId(?array $values = []): string
+    public static function validateAgencyIdForArrayConstraintFromSetAgencyId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class PrepareAgenciesListForSettlementResponse extends AbstractStructBase
     public function setAgencyId(?array $agencyId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($agencyIdArrayErrorMessage = self::validateAgencyIdForArrayConstraintsFromSetAgencyId($agencyId))) {
+        if ('' !== ($agencyIdArrayErrorMessage = self::validateAgencyIdForArrayConstraintFromSetAgencyId($agencyId))) {
             throw new InvalidArgumentException($agencyIdArrayErrorMessage, __LINE__);
         }
         $this->AgencyId = $agencyId;

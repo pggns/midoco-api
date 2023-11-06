@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveInsurerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveInsurerRequest extends AbstractStructBase
 {
     /**

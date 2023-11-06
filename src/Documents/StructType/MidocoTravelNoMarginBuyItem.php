@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTravelNoMarginBuyItem StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTravelNoMarginBuyItem extends AbstractStructBase
 {
     /**
@@ -64,6 +65,11 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
      */
     protected ?string $settlementType = null;
     /**
+     * The colorStatus
+     * @var int|null
+     */
+    protected ?int $colorStatus = null;
+    /**
      * Constructor method for MidocoTravelNoMarginBuyItem
      * @uses MidocoTravelNoMarginBuyItem::setItemId()
      * @uses MidocoTravelNoMarginBuyItem::setOrderNo()
@@ -75,6 +81,7 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
      * @uses MidocoTravelNoMarginBuyItem::setOpenSupplierInvoiceAmount()
      * @uses MidocoTravelNoMarginBuyItem::setRevenueAmount()
      * @uses MidocoTravelNoMarginBuyItem::setSettlementType()
+     * @uses MidocoTravelNoMarginBuyItem::setColorStatus()
      * @param int $itemId
      * @param int $orderNo
      * @param string $supplierId
@@ -85,8 +92,9 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
      * @param float $openSupplierInvoiceAmount
      * @param float $revenueAmount
      * @param string $settlementType
+     * @param int $colorStatus
      */
-    public function __construct(?int $itemId = null, ?int $orderNo = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $status = null, ?float $itemPrice = null, ?float $openSupplierInvoiceAmount = null, ?float $revenueAmount = null, ?string $settlementType = null)
+    public function __construct(?int $itemId = null, ?int $orderNo = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $status = null, ?float $itemPrice = null, ?float $openSupplierInvoiceAmount = null, ?float $revenueAmount = null, ?string $settlementType = null, ?int $colorStatus = null)
     {
         $this
             ->setItemId($itemId)
@@ -98,7 +106,8 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
             ->setItemPrice($itemPrice)
             ->setOpenSupplierInvoiceAmount($openSupplierInvoiceAmount)
             ->setRevenueAmount($revenueAmount)
-            ->setSettlementType($settlementType);
+            ->setSettlementType($settlementType)
+            ->setColorStatus($colorStatus);
     }
     /**
      * Get itemId value
@@ -327,6 +336,29 @@ class MidocoTravelNoMarginBuyItem extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementType, true), gettype($settlementType)), __LINE__);
         }
         $this->settlementType = $settlementType;
+        
+        return $this;
+    }
+    /**
+     * Get colorStatus value
+     * @return int|null
+     */
+    public function getColorStatus(): ?int
+    {
+        return $this->colorStatus;
+    }
+    /**
+     * Set colorStatus value
+     * @param int $colorStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelNoMarginBuyItem
+     */
+    public function setColorStatus(?int $colorStatus = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($colorStatus) && !(is_int($colorStatus) || ctype_digit($colorStatus))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($colorStatus, true), gettype($colorStatus)), __LINE__);
+        }
+        $this->colorStatus = $colorStatus;
         
         return $this;
     }

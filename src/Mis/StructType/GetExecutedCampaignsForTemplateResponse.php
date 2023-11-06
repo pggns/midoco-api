@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetExecutedCampaignsForTemplateResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
         return $this->MidocoCampaignExecutedFromTemplate;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCampaignExecutedFromTemplate method
+     * This method is responsible for validating the value(s) passed to the setMidocoCampaignExecutedFromTemplate method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCampaignExecutedFromTemplate method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCampaignExecutedFromTemplateForArrayConstraintsFromSetMidocoCampaignExecutedFromTemplate(?array $values = []): string
+    public static function validateMidocoCampaignExecutedFromTemplateForArrayConstraintFromSetMidocoCampaignExecutedFromTemplate(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetExecutedCampaignsForTemplateResponse extends AbstractStructBase
     public function setMidocoCampaignExecutedFromTemplate(?array $midocoCampaignExecutedFromTemplate = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCampaignExecutedFromTemplateArrayErrorMessage = self::validateMidocoCampaignExecutedFromTemplateForArrayConstraintsFromSetMidocoCampaignExecutedFromTemplate($midocoCampaignExecutedFromTemplate))) {
+        if ('' !== ($midocoCampaignExecutedFromTemplateArrayErrorMessage = self::validateMidocoCampaignExecutedFromTemplateForArrayConstraintFromSetMidocoCampaignExecutedFromTemplate($midocoCampaignExecutedFromTemplate))) {
             throw new InvalidArgumentException($midocoCampaignExecutedFromTemplateArrayErrorMessage, __LINE__);
         }
         $this->MidocoCampaignExecutedFromTemplate = $midocoCampaignExecutedFromTemplate;

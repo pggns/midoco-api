@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoImportDebitor StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoImportDebitor extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportDebitor
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -110,7 +111,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportDebitor
      */
     public function setCountry(?string $country = null): self
     {
@@ -133,7 +134,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportDebitor
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -156,7 +157,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportDebitor
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -179,7 +180,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set useAsDefault value
      * @param string $useAsDefault
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportDebitor
      */
     public function setUseAsDefault(?string $useAsDefault = null): self
     {
@@ -202,7 +203,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set isIban value
      * @param string $isIban
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportDebitor
      */
     public function setIsIban(?string $isIban = null): self
     {
@@ -225,7 +226,7 @@ class MidocoImportDebitor extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportDebitor
      */
     public function setBankName(?string $bankName = null): self
     {

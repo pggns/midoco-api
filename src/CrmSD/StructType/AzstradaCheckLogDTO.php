@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AzstradaCheckLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AzstradaCheckLogDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set checkLogId value
      * @param int $checkLogId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AzstradaCheckLogDTO
      */
     public function setCheckLogId(?int $checkLogId = null): self
     {
@@ -94,7 +95,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set checkTime value
      * @param string $checkTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AzstradaCheckLogDTO
      */
     public function setCheckTime(?string $checkTime = null): self
     {
@@ -117,7 +118,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AzstradaCheckLogDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -140,7 +141,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AzstradaCheckLogDTO
      */
     public function setUrl(?string $url = null): self
     {
@@ -163,7 +164,7 @@ class AzstradaCheckLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AzstradaCheckLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AzstradaCheckLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

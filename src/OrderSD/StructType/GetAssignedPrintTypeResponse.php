@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAssignedPrintTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAssignedPrintTypeResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetAssignedPrintTypeResponse extends AbstractStructBase
         return $this->MidocoPrintTypeAssign;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintTypeAssign method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintTypeAssign method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintTypeAssign method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintTypeAssignForArrayConstraintsFromSetMidocoPrintTypeAssign(?array $values = []): string
+    public static function validateMidocoPrintTypeAssignForArrayConstraintFromSetMidocoPrintTypeAssign(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetAssignedPrintTypeResponse extends AbstractStructBase
     public function setMidocoPrintTypeAssign(?array $midocoPrintTypeAssign = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintTypeAssignArrayErrorMessage = self::validateMidocoPrintTypeAssignForArrayConstraintsFromSetMidocoPrintTypeAssign($midocoPrintTypeAssign))) {
+        if ('' !== ($midocoPrintTypeAssignArrayErrorMessage = self::validateMidocoPrintTypeAssignForArrayConstraintFromSetMidocoPrintTypeAssign($midocoPrintTypeAssign))) {
             throw new InvalidArgumentException($midocoPrintTypeAssignArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintTypeAssign = $midocoPrintTypeAssign;

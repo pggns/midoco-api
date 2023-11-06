@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SendEmailResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SendEmailResponse extends AbstractStructBase
 {
     /**

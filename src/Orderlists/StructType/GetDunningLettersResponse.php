@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDunningLettersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDunningLettersResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDunningLettersResponse extends AbstractStructBase
         return $this->MidocoDunningLetter;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDunningLetter method
+     * This method is responsible for validating the value(s) passed to the setMidocoDunningLetter method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDunningLetter method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDunningLetterForArrayConstraintsFromSetMidocoDunningLetter(?array $values = []): string
+    public static function validateMidocoDunningLetterForArrayConstraintFromSetMidocoDunningLetter(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDunningLettersResponse extends AbstractStructBase
     public function setMidocoDunningLetter(?array $midocoDunningLetter = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDunningLetterArrayErrorMessage = self::validateMidocoDunningLetterForArrayConstraintsFromSetMidocoDunningLetter($midocoDunningLetter))) {
+        if ('' !== ($midocoDunningLetterArrayErrorMessage = self::validateMidocoDunningLetterForArrayConstraintFromSetMidocoDunningLetter($midocoDunningLetter))) {
             throw new InvalidArgumentException($midocoDunningLetterArrayErrorMessage, __LINE__);
         }
         $this->MidocoDunningLetter = $midocoDunningLetter;

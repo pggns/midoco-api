@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CalculateSellItemProvisionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CalculateSellItemProvisionResponse extends AbstractStructBase
 {
     /**
@@ -53,12 +54,13 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
         return $this->SellItemProvision;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellItemProvision method
+     * This method is responsible for validating the value(s) passed to the setSellItemProvision method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellItemProvision method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellItemProvisionForArrayConstraintsFromSetSellItemProvision(?array $values = []): string
+    public static function validateSellItemProvisionForArrayConstraintFromSetSellItemProvision(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -87,7 +89,7 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     public function setSellItemProvision(?array $sellItemProvision = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellItemProvisionArrayErrorMessage = self::validateSellItemProvisionForArrayConstraintsFromSetSellItemProvision($sellItemProvision))) {
+        if ('' !== ($sellItemProvisionArrayErrorMessage = self::validateSellItemProvisionForArrayConstraintFromSetSellItemProvision($sellItemProvision))) {
             throw new InvalidArgumentException($sellItemProvisionArrayErrorMessage, __LINE__);
         }
         $this->SellItemProvision = $sellItemProvision;
@@ -119,12 +121,13 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
         return $this->MidocoAdviceSettlementDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAdviceSettlementDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoAdviceSettlementDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAdviceSettlementDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAdviceSettlementDetailForArrayConstraintsFromSetMidocoAdviceSettlementDetail(?array $values = []): string
+    public static function validateMidocoAdviceSettlementDetailForArrayConstraintFromSetMidocoAdviceSettlementDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,7 +156,7 @@ class CalculateSellItemProvisionResponse extends AbstractStructBase
     public function setMidocoAdviceSettlementDetail(?array $midocoAdviceSettlementDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAdviceSettlementDetailArrayErrorMessage = self::validateMidocoAdviceSettlementDetailForArrayConstraintsFromSetMidocoAdviceSettlementDetail($midocoAdviceSettlementDetail))) {
+        if ('' !== ($midocoAdviceSettlementDetailArrayErrorMessage = self::validateMidocoAdviceSettlementDetailForArrayConstraintFromSetMidocoAdviceSettlementDetail($midocoAdviceSettlementDetail))) {
             throw new InvalidArgumentException($midocoAdviceSettlementDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoAdviceSettlementDetail = $midocoAdviceSettlementDetail;

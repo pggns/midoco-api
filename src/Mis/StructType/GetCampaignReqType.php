@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCampaignReqType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCampaignReqType extends AbstractStructBase
 {
     /**

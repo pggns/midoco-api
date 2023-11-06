@@ -19,39 +19,12 @@ class Process extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Order\ServiceType\Process
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
-    }
-    /**
-     * Method to call the operation originally named processBillingDocs
-     * Meta information extracted from the WSDL
-     * - SOAPHeaderNames: MidocoCredentials
-     * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
-     * - SOAPHeaders: required
-     * @uses AbstractSoapClientBase::getSoapClient()
-     * @uses AbstractSoapClientBase::setResult()
-     * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Order\StructType\ProcessBillingDocsRequest $paramProcessBillingDocsRequest
-     * @return \Pggns\MidocoApi\Order\StructType\ProcessBillingDocsResponse|bool
-     */
-    public function processBillingDocs(\Pggns\MidocoApi\Order\StructType\ProcessBillingDocsRequest $paramProcessBillingDocsRequest)
-    {
-        try {
-            $this->setResult($resultProcessBillingDocs = $this->getSoapClient()->__soapCall('processBillingDocs', [
-                $paramProcessBillingDocsRequest,
-            ], [], [], $this->outputHeaders));
-        
-            return $resultProcessBillingDocs;
-        } catch (SoapFault $soapFault) {
-            $this->saveLastError(__METHOD__, $soapFault);
-        
-            return false;
-        }
     }
     /**
      * Method to call the operation originally named processInvoiceMixedMode
@@ -191,7 +164,7 @@ class Process extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationResponseType|\Pggns\MidocoApi\Order\StructType\ProcessBillingDocsResponse|\Pggns\MidocoApi\Order\StructType\ProcessFairplaneFlightDataResponse|\Pggns\MidocoApi\Order\StructType\ProcessInvoiceMixedModeResponse|\Pggns\MidocoApi\Order\StructType\ProcessReceiptMixedModeResponse|\Pggns\MidocoApi\Order\StructType\ProcessSofortTransactionResponse
+     * @return \Pggns\MidocoApi\Order\StructType\Compensation2GoNotificationResponseType|\Pggns\MidocoApi\Order\StructType\ProcessFairplaneFlightDataResponse|\Pggns\MidocoApi\Order\StructType\ProcessInvoiceMixedModeResponse|\Pggns\MidocoApi\Order\StructType\ProcessReceiptMixedModeResponse|\Pggns\MidocoApi\Order\StructType\ProcessSofortTransactionResponse
      */
     public function getResult()
     {

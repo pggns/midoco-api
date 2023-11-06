@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchReceiptRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchReceiptRequest extends AbstractStructBase
 {
     /**
@@ -66,6 +67,11 @@ class SearchReceiptRequest extends AbstractStructBase
      */
     protected ?int $receiptCounter = null;
     /**
+     * The ignoreCashBookId
+     * @var bool|null
+     */
+    protected ?bool $ignoreCashBookId = null;
+    /**
      * Constructor method for SearchReceiptRequest
      * @uses SearchReceiptRequest::setCashBookId()
      * @uses SearchReceiptRequest::setReceiptNo()
@@ -77,6 +83,7 @@ class SearchReceiptRequest extends AbstractStructBase
      * @uses SearchReceiptRequest::setOrderNo()
      * @uses SearchReceiptRequest::setManuallyAdjustable()
      * @uses SearchReceiptRequest::setReceiptCounter()
+     * @uses SearchReceiptRequest::setIgnoreCashBookId()
      * @param int $cashBookId
      * @param int $receiptNo
      * @param string $receiptDateFrom
@@ -87,8 +94,9 @@ class SearchReceiptRequest extends AbstractStructBase
      * @param int $orderNo
      * @param bool $manuallyAdjustable
      * @param int $receiptCounter
+     * @param bool $ignoreCashBookId
      */
-    public function __construct(int $cashBookId, ?int $receiptNo = null, ?string $receiptDateFrom = null, ?string $receiptDateUntil = null, ?int $creator = null, ?int $customerId = null, ?string $customerName = null, ?int $orderNo = null, ?bool $manuallyAdjustable = null, ?int $receiptCounter = null)
+    public function __construct(int $cashBookId, ?int $receiptNo = null, ?string $receiptDateFrom = null, ?string $receiptDateUntil = null, ?int $creator = null, ?int $customerId = null, ?string $customerName = null, ?int $orderNo = null, ?bool $manuallyAdjustable = null, ?int $receiptCounter = null, ?bool $ignoreCashBookId = null)
     {
         $this
             ->setCashBookId($cashBookId)
@@ -100,7 +108,8 @@ class SearchReceiptRequest extends AbstractStructBase
             ->setCustomerName($customerName)
             ->setOrderNo($orderNo)
             ->setManuallyAdjustable($manuallyAdjustable)
-            ->setReceiptCounter($receiptCounter);
+            ->setReceiptCounter($receiptCounter)
+            ->setIgnoreCashBookId($ignoreCashBookId);
     }
     /**
      * Get cashBookId value
@@ -329,6 +338,29 @@ class SearchReceiptRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($receiptCounter, true), gettype($receiptCounter)), __LINE__);
         }
         $this->receiptCounter = $receiptCounter;
+        
+        return $this;
+    }
+    /**
+     * Get ignoreCashBookId value
+     * @return bool|null
+     */
+    public function getIgnoreCashBookId(): ?bool
+    {
+        return $this->ignoreCashBookId;
+    }
+    /**
+     * Set ignoreCashBookId value
+     * @param bool $ignoreCashBookId
+     * @return \Pggns\MidocoApi\Order\StructType\SearchReceiptRequest
+     */
+    public function setIgnoreCashBookId(?bool $ignoreCashBookId = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($ignoreCashBookId) && !is_bool($ignoreCashBookId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($ignoreCashBookId, true), gettype($ignoreCashBookId)), __LINE__);
+        }
+        $this->ignoreCashBookId = $ignoreCashBookId;
         
         return $this;
     }

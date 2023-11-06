@@ -167,10 +167,10 @@ class TicketSubtype extends AbstractStructEnumBase
      */
     const VALUE_AIRP_SERV = 'AIRP_SERV';
     /**
-     * Constant for value 'MERCHANDISE'
-     * @return string 'MERCHANDISE'
+     * Constant for value 'MERCHAND'
+     * @return string 'MERCHAND'
      */
-    const VALUE_MERCHANDISE = 'MERCHANDISE';
+    const VALUE_MERCHAND = 'MERCHAND';
     /**
      * Return allowed values
      * @uses self::VALUE_PTA
@@ -203,7 +203,7 @@ class TicketSubtype extends AbstractStructEnumBase
      * @uses self::VALUE_INFLI_SERV
      * @uses self::VALUE_FIN_IMP
      * @uses self::VALUE_AIRP_SERV
-     * @uses self::VALUE_MERCHANDISE
+     * @uses self::VALUE_MERCHAND
      * @return string[]
      */
     public static function getValidValues(): array
@@ -239,7 +239,7 @@ class TicketSubtype extends AbstractStructEnumBase
             self::VALUE_INFLI_SERV,
             self::VALUE_FIN_IMP,
             self::VALUE_AIRP_SERV,
-            self::VALUE_MERCHANDISE,
+            self::VALUE_MERCHAND,
         ];
     }
 }

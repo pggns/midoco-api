@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UnitModulesChgLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UnitModulesChgLogDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class UnitModulesChgLogDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesChgLogDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -110,7 +111,7 @@ class UnitModulesChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -133,7 +134,7 @@ class UnitModulesChgLogDTO extends AbstractStructBase
     /**
      * Set inheritable value
      * @param bool $inheritable
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesChgLogDTO
      */
     public function setInheritable(?bool $inheritable = null): self
     {
@@ -156,7 +157,7 @@ class UnitModulesChgLogDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesChgLogDTO
      */
     public function setModulId(?string $modulId = null): self
     {
@@ -179,7 +180,7 @@ class UnitModulesChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -202,7 +203,7 @@ class UnitModulesChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +226,7 @@ class UnitModulesChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

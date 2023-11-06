@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getLockReasons--- returns a list of lock reason for the given lock reason with parent-entries
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableLockReasonsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAvailableLockReasonsResponse extends AbstractStructBase
         return $this->MidocoCrmLockReason;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmLockReason method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmLockReason method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmLockReason method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmLockReasonForArrayConstraintsFromSetMidocoCrmLockReason(?array $values = []): string
+    public static function validateMidocoCrmLockReasonForArrayConstraintFromSetMidocoCrmLockReason(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAvailableLockReasonsResponse extends AbstractStructBase
     public function setMidocoCrmLockReason(?array $midocoCrmLockReason = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmLockReasonArrayErrorMessage = self::validateMidocoCrmLockReasonForArrayConstraintsFromSetMidocoCrmLockReason($midocoCrmLockReason))) {
+        if ('' !== ($midocoCrmLockReasonArrayErrorMessage = self::validateMidocoCrmLockReasonForArrayConstraintFromSetMidocoCrmLockReason($midocoCrmLockReason))) {
             throw new InvalidArgumentException($midocoCrmLockReasonArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmLockReason = $midocoCrmLockReason;

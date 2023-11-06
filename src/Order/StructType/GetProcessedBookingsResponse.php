@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetProcessedBookingsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetProcessedBookingsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetProcessedBookingsResponse extends AbstractStructBase
         return $this->MidocoProcessedBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProcessedBooking method
+     * This method is responsible for validating the value(s) passed to the setMidocoProcessedBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProcessedBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProcessedBookingForArrayConstraintsFromSetMidocoProcessedBooking(?array $values = []): string
+    public static function validateMidocoProcessedBookingForArrayConstraintFromSetMidocoProcessedBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetProcessedBookingsResponse extends AbstractStructBase
     public function setMidocoProcessedBooking(?array $midocoProcessedBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProcessedBookingArrayErrorMessage = self::validateMidocoProcessedBookingForArrayConstraintsFromSetMidocoProcessedBooking($midocoProcessedBooking))) {
+        if ('' !== ($midocoProcessedBookingArrayErrorMessage = self::validateMidocoProcessedBookingForArrayConstraintFromSetMidocoProcessedBooking($midocoProcessedBooking))) {
             throw new InvalidArgumentException($midocoProcessedBookingArrayErrorMessage, __LINE__);
         }
         $this->MidocoProcessedBooking = $midocoProcessedBooking;

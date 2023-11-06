@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteSupplierAgencySettlementRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteSupplierAgencySettlementRequest extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class DeleteSupplierAgencySettlementRequest extends AbstractStructBase
         return $this->settlementIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setSettlementIds method
+     * This method is responsible for validating the value(s) passed to the setSettlementIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSettlementIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSettlementIdsForArrayConstraintsFromSetSettlementIds(?array $values = []): string
+    public static function validateSettlementIdsForArrayConstraintFromSetSettlementIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class DeleteSupplierAgencySettlementRequest extends AbstractStructBase
     public function setSettlementIds(?array $settlementIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($settlementIdsArrayErrorMessage = self::validateSettlementIdsForArrayConstraintsFromSetSettlementIds($settlementIds))) {
+        if ('' !== ($settlementIdsArrayErrorMessage = self::validateSettlementIdsForArrayConstraintFromSetSettlementIds($settlementIds))) {
             throw new InvalidArgumentException($settlementIdsArrayErrorMessage, __LINE__);
         }
         $this->settlementIds = $settlementIds;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemProvisionType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemProvisionType extends SellItemProvisionDTO
 {
     /**
@@ -23,6 +24,15 @@ class SellItemProvisionType extends SellItemProvisionDTO
      */
     protected ?array $MidocoRevenueBookingVatDiv = null;
     /**
+     * The MidocoTravelnoPurchaseAssignment
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoTravelnoPurchaseAssignment
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment[]
+     */
+    protected ?array $MidocoTravelnoPurchaseAssignment = null;
+    /**
      * The needsVatDivision
      * Meta information extracted from the WSDL
      * - default: false
@@ -34,6 +44,11 @@ class SellItemProvisionType extends SellItemProvisionDTO
      * @var string|null
      */
     protected ?string $travelNo = null;
+    /**
+     * The travelNoHandling
+     * @var string|null
+     */
+    protected ?string $travelNoHandling = null;
     /**
      * The travelNoB2cPercent
      * @var float|null
@@ -74,10 +89,27 @@ class SellItemProvisionType extends SellItemProvisionDTO
      */
     protected ?string $stornoDate = null;
     /**
+     * The baseBuyingPrice
+     * @var float|null
+     */
+    protected ?float $baseBuyingPrice = null;
+    /**
+     * The supplierBuyingPrice
+     * @var float|null
+     */
+    protected ?float $supplierBuyingPrice = null;
+    /**
+     * The originalSupplierInvoiceAmount
+     * @var float|null
+     */
+    protected ?float $originalSupplierInvoiceAmount = null;
+    /**
      * Constructor method for SellItemProvisionType
      * @uses SellItemProvisionType::setMidocoRevenueBookingVatDiv()
+     * @uses SellItemProvisionType::setMidocoTravelnoPurchaseAssignment()
      * @uses SellItemProvisionType::setNeedsVatDivision()
      * @uses SellItemProvisionType::setTravelNo()
+     * @uses SellItemProvisionType::setTravelNoHandling()
      * @uses SellItemProvisionType::setTravelNoB2cPercent()
      * @uses SellItemProvisionType::setCommissionVatFreeRc()
      * @uses SellItemProvisionType::setSettlmAccountsSupplier()
@@ -85,9 +117,14 @@ class SellItemProvisionType extends SellItemProvisionDTO
      * @uses SellItemProvisionType::setSupplierInvoiceVatCode()
      * @uses SellItemProvisionType::setIsStorno()
      * @uses SellItemProvisionType::setStornoDate()
+     * @uses SellItemProvisionType::setBaseBuyingPrice()
+     * @uses SellItemProvisionType::setSupplierBuyingPrice()
+     * @uses SellItemProvisionType::setOriginalSupplierInvoiceAmount()
      * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv[] $midocoRevenueBookingVatDiv
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment[] $midocoTravelnoPurchaseAssignment
      * @param bool $needsVatDivision
      * @param string $travelNo
+     * @param string $travelNoHandling
      * @param float $travelNoB2cPercent
      * @param bool $commissionVatFreeRc
      * @param string $settlmAccountsSupplier
@@ -95,20 +132,28 @@ class SellItemProvisionType extends SellItemProvisionDTO
      * @param string $supplierInvoiceVatCode
      * @param bool $isStorno
      * @param string $stornoDate
+     * @param float $baseBuyingPrice
+     * @param float $supplierBuyingPrice
+     * @param float $originalSupplierInvoiceAmount
      */
-    public function __construct(?array $midocoRevenueBookingVatDiv = null, ?bool $needsVatDivision = false, ?string $travelNo = null, ?float $travelNoB2cPercent = null, ?bool $commissionVatFreeRc = null, ?string $settlmAccountsSupplier = null, ?bool $preventPaymentForEntry = false, ?string $supplierInvoiceVatCode = null, ?bool $isStorno = false, ?string $stornoDate = null)
+    public function __construct(?array $midocoRevenueBookingVatDiv = null, ?array $midocoTravelnoPurchaseAssignment = null, ?bool $needsVatDivision = false, ?string $travelNo = null, ?string $travelNoHandling = null, ?float $travelNoB2cPercent = null, ?bool $commissionVatFreeRc = null, ?string $settlmAccountsSupplier = null, ?bool $preventPaymentForEntry = false, ?string $supplierInvoiceVatCode = null, ?bool $isStorno = false, ?string $stornoDate = null, ?float $baseBuyingPrice = null, ?float $supplierBuyingPrice = null, ?float $originalSupplierInvoiceAmount = null)
     {
         $this
             ->setMidocoRevenueBookingVatDiv($midocoRevenueBookingVatDiv)
+            ->setMidocoTravelnoPurchaseAssignment($midocoTravelnoPurchaseAssignment)
             ->setNeedsVatDivision($needsVatDivision)
             ->setTravelNo($travelNo)
+            ->setTravelNoHandling($travelNoHandling)
             ->setTravelNoB2cPercent($travelNoB2cPercent)
             ->setCommissionVatFreeRc($commissionVatFreeRc)
             ->setSettlmAccountsSupplier($settlmAccountsSupplier)
             ->setPreventPaymentForEntry($preventPaymentForEntry)
             ->setSupplierInvoiceVatCode($supplierInvoiceVatCode)
             ->setIsStorno($isStorno)
-            ->setStornoDate($stornoDate);
+            ->setStornoDate($stornoDate)
+            ->setBaseBuyingPrice($baseBuyingPrice)
+            ->setSupplierBuyingPrice($supplierBuyingPrice)
+            ->setOriginalSupplierInvoiceAmount($originalSupplierInvoiceAmount);
     }
     /**
      * Get MidocoRevenueBookingVatDiv value
@@ -119,12 +164,13 @@ class SellItemProvisionType extends SellItemProvisionDTO
         return $this->MidocoRevenueBookingVatDiv;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRevenueBookingVatDiv method
+     * This method is responsible for validating the value(s) passed to the setMidocoRevenueBookingVatDiv method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRevenueBookingVatDiv method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRevenueBookingVatDivForArrayConstraintsFromSetMidocoRevenueBookingVatDiv(?array $values = []): string
+    public static function validateMidocoRevenueBookingVatDivForArrayConstraintFromSetMidocoRevenueBookingVatDiv(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,7 +199,7 @@ class SellItemProvisionType extends SellItemProvisionDTO
     public function setMidocoRevenueBookingVatDiv(?array $midocoRevenueBookingVatDiv = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRevenueBookingVatDivArrayErrorMessage = self::validateMidocoRevenueBookingVatDivForArrayConstraintsFromSetMidocoRevenueBookingVatDiv($midocoRevenueBookingVatDiv))) {
+        if ('' !== ($midocoRevenueBookingVatDivArrayErrorMessage = self::validateMidocoRevenueBookingVatDivForArrayConstraintFromSetMidocoRevenueBookingVatDiv($midocoRevenueBookingVatDiv))) {
             throw new InvalidArgumentException($midocoRevenueBookingVatDivArrayErrorMessage, __LINE__);
         }
         $this->MidocoRevenueBookingVatDiv = $midocoRevenueBookingVatDiv;
@@ -173,6 +219,73 @@ class SellItemProvisionType extends SellItemProvisionDTO
             throw new InvalidArgumentException(sprintf('The MidocoRevenueBookingVatDiv property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoRevenueBookingVatDiv, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoRevenueBookingVatDiv[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoTravelnoPurchaseAssignment value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment[]
+     */
+    public function getMidocoTravelnoPurchaseAssignment(): ?array
+    {
+        return $this->MidocoTravelnoPurchaseAssignment;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelnoPurchaseAssignment method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelnoPurchaseAssignment method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoTravelnoPurchaseAssignmentForArrayConstraintFromSetMidocoTravelnoPurchaseAssignment(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $sellItemProvisionTypeMidocoTravelnoPurchaseAssignmentItem) {
+            // validation for constraint: itemType
+            if (!$sellItemProvisionTypeMidocoTravelnoPurchaseAssignmentItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment) {
+                $invalidValues[] = is_object($sellItemProvisionTypeMidocoTravelnoPurchaseAssignmentItem) ? get_class($sellItemProvisionTypeMidocoTravelnoPurchaseAssignmentItem) : sprintf('%s(%s)', gettype($sellItemProvisionTypeMidocoTravelnoPurchaseAssignmentItem), var_export($sellItemProvisionTypeMidocoTravelnoPurchaseAssignmentItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoTravelnoPurchaseAssignment property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoTravelnoPurchaseAssignment value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment[] $midocoTravelnoPurchaseAssignment
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
+     */
+    public function setMidocoTravelnoPurchaseAssignment(?array $midocoTravelnoPurchaseAssignment = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoTravelnoPurchaseAssignmentArrayErrorMessage = self::validateMidocoTravelnoPurchaseAssignmentForArrayConstraintFromSetMidocoTravelnoPurchaseAssignment($midocoTravelnoPurchaseAssignment))) {
+            throw new InvalidArgumentException($midocoTravelnoPurchaseAssignmentArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoTravelnoPurchaseAssignment = $midocoTravelnoPurchaseAssignment;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoTravelnoPurchaseAssignment value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
+     */
+    public function addToMidocoTravelnoPurchaseAssignment(\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelnoPurchaseAssignment property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoTravelnoPurchaseAssignment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoTravelnoPurchaseAssignment[] = $item;
         
         return $this;
     }
@@ -219,6 +332,29 @@ class SellItemProvisionType extends SellItemProvisionDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelNo, true), gettype($travelNo)), __LINE__);
         }
         $this->travelNo = $travelNo;
+        
+        return $this;
+    }
+    /**
+     * Get travelNoHandling value
+     * @return string|null
+     */
+    public function getTravelNoHandling(): ?string
+    {
+        return $this->travelNoHandling;
+    }
+    /**
+     * Set travelNoHandling value
+     * @param string $travelNoHandling
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
+     */
+    public function setTravelNoHandling(?string $travelNoHandling = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($travelNoHandling) && !is_string($travelNoHandling)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelNoHandling, true), gettype($travelNoHandling)), __LINE__);
+        }
+        $this->travelNoHandling = $travelNoHandling;
         
         return $this;
     }
@@ -380,6 +516,75 @@ class SellItemProvisionType extends SellItemProvisionDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($stornoDate, true), gettype($stornoDate)), __LINE__);
         }
         $this->stornoDate = $stornoDate;
+        
+        return $this;
+    }
+    /**
+     * Get baseBuyingPrice value
+     * @return float|null
+     */
+    public function getBaseBuyingPrice(): ?float
+    {
+        return $this->baseBuyingPrice;
+    }
+    /**
+     * Set baseBuyingPrice value
+     * @param float $baseBuyingPrice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
+     */
+    public function setBaseBuyingPrice(?float $baseBuyingPrice = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($baseBuyingPrice) && !(is_float($baseBuyingPrice) || is_numeric($baseBuyingPrice))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($baseBuyingPrice, true), gettype($baseBuyingPrice)), __LINE__);
+        }
+        $this->baseBuyingPrice = $baseBuyingPrice;
+        
+        return $this;
+    }
+    /**
+     * Get supplierBuyingPrice value
+     * @return float|null
+     */
+    public function getSupplierBuyingPrice(): ?float
+    {
+        return $this->supplierBuyingPrice;
+    }
+    /**
+     * Set supplierBuyingPrice value
+     * @param float $supplierBuyingPrice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
+     */
+    public function setSupplierBuyingPrice(?float $supplierBuyingPrice = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($supplierBuyingPrice) && !(is_float($supplierBuyingPrice) || is_numeric($supplierBuyingPrice))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($supplierBuyingPrice, true), gettype($supplierBuyingPrice)), __LINE__);
+        }
+        $this->supplierBuyingPrice = $supplierBuyingPrice;
+        
+        return $this;
+    }
+    /**
+     * Get originalSupplierInvoiceAmount value
+     * @return float|null
+     */
+    public function getOriginalSupplierInvoiceAmount(): ?float
+    {
+        return $this->originalSupplierInvoiceAmount;
+    }
+    /**
+     * Set originalSupplierInvoiceAmount value
+     * @param float $originalSupplierInvoiceAmount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemProvisionType
+     */
+    public function setOriginalSupplierInvoiceAmount(?float $originalSupplierInvoiceAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($originalSupplierInvoiceAmount) && !(is_float($originalSupplierInvoiceAmount) || is_numeric($originalSupplierInvoiceAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($originalSupplierInvoiceAmount, true), gettype($originalSupplierInvoiceAmount)), __LINE__);
+        }
+        $this->originalSupplierInvoiceAmount = $originalSupplierInvoiceAmount;
         
         return $this;
     }

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetProcessAssignResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetProcessAssignResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetProcessAssignResponse extends AbstractStructBase
         return $this->MidocoProcessAssign;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProcessAssign method
+     * This method is responsible for validating the value(s) passed to the setMidocoProcessAssign method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProcessAssign method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProcessAssignForArrayConstraintsFromSetMidocoProcessAssign(?array $values = []): string
+    public static function validateMidocoProcessAssignForArrayConstraintFromSetMidocoProcessAssign(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetProcessAssignResponse extends AbstractStructBase
     public function setMidocoProcessAssign(?array $midocoProcessAssign = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProcessAssignArrayErrorMessage = self::validateMidocoProcessAssignForArrayConstraintsFromSetMidocoProcessAssign($midocoProcessAssign))) {
+        if ('' !== ($midocoProcessAssignArrayErrorMessage = self::validateMidocoProcessAssignForArrayConstraintFromSetMidocoProcessAssign($midocoProcessAssign))) {
             throw new InvalidArgumentException($midocoProcessAssignArrayErrorMessage, __LINE__);
         }
         $this->MidocoProcessAssign = $midocoProcessAssign;

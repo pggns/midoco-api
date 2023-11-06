@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoInsurerAddress StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoInsurerAddress extends InsurerAddressDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoInsurerAddress extends InsurerAddressDTO
     /**
      * Set insurerName value
      * @param string $insurerName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerAddress
      */
     public function setInsurerName(?string $insurerName = null): self
     {

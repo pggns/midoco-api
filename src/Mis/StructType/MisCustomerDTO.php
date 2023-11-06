@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisCustomerDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisCustomerDTO extends AbstractStructBase
 {
     /**

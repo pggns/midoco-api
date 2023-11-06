@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for InsurerAddressDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class InsurerAddressDTO extends AbstractStructBase
 {
     /**
@@ -127,7 +128,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set additionalInfo value
      * @param string $additionalInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setAdditionalInfo(?string $additionalInfo = null): self
     {
@@ -150,7 +151,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -173,7 +174,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -196,7 +197,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -219,7 +220,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -242,7 +243,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -265,7 +266,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setPhone(?string $phone = null): self
     {
@@ -288,7 +289,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -311,7 +312,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -334,7 +335,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -357,7 +358,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -380,7 +381,7 @@ class InsurerAddressDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerAddressDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

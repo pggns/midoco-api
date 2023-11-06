@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMarginExtListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMarginExtListType extends AbstractStructBase
 {
     /**

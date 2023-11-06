@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteTourOperatorResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteTourOperatorResponse extends AbstractStructBase
 {
 }

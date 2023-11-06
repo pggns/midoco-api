@@ -93,6 +93,11 @@ class CcTokenType extends AbstractStructEnumBase
      */
     const VALUE_L_3_P_TOKEN = 'L3P_TOKEN';
     /**
+     * Constant for value 'GETNET_TOKEN'
+     * @return string 'GETNET_TOKEN'
+     */
+    const VALUE_GETNET_TOKEN = 'GETNET_TOKEN';
+    /**
      * Return allowed values
      * @uses self::VALUE_MIDOCO_TOKEN
      * @uses self::VALUE_BS_TOKEN
@@ -110,6 +115,7 @@ class CcTokenType extends AbstractStructEnumBase
      * @uses self::VALUE_WIRECARD_EE_TOKEN
      * @uses self::VALUE_DATATRANS_TOKEN
      * @uses self::VALUE_L_3_P_TOKEN
+     * @uses self::VALUE_GETNET_TOKEN
      * @return string[]
      */
     public static function getValidValues(): array
@@ -131,6 +137,7 @@ class CcTokenType extends AbstractStructEnumBase
             self::VALUE_WIRECARD_EE_TOKEN,
             self::VALUE_DATATRANS_TOKEN,
             self::VALUE_L_3_P_TOKEN,
+            self::VALUE_GETNET_TOKEN,
         ];
     }
 }

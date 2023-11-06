@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintQueue4UserRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintQueue4UserRequest extends AbstractStructBase
 {
     /**

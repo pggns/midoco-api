@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCampaignForReachableRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCampaignForReachableRequest extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDepositListOverallType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDepositListOverallType extends AbstractStructBase
 {
     /**

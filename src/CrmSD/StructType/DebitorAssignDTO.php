@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DebitorAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DebitorAssignDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class DebitorAssignDTO extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorAssignDTO
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {
@@ -78,7 +79,7 @@ class DebitorAssignDTO extends AbstractStructBase
     /**
      * Set forCompany value
      * @param bool $forCompany
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorAssignDTO
      */
     public function setForCompany(?bool $forCompany = null): self
     {
@@ -101,7 +102,7 @@ class DebitorAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

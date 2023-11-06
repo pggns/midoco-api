@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmCustomerLink4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmCustomerLink4Printing extends CrmCustomerLinkDTO
 {
     /**
@@ -63,7 +64,7 @@ class MidocoCrmCustomerLink4Printing extends CrmCustomerLinkDTO
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerLink4Printing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerLink4Printing
      */
     public function setTitle(?string $title = null): self
     {
@@ -86,7 +87,7 @@ class MidocoCrmCustomerLink4Printing extends CrmCustomerLinkDTO
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerLink4Printing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerLink4Printing
      */
     public function setForename(?string $forename = null): self
     {
@@ -109,7 +110,7 @@ class MidocoCrmCustomerLink4Printing extends CrmCustomerLinkDTO
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerLink4Printing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerLink4Printing
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -132,7 +133,7 @@ class MidocoCrmCustomerLink4Printing extends CrmCustomerLinkDTO
     /**
      * Set typeDesc value
      * @param string $typeDesc
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerLink4Printing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerLink4Printing
      */
     public function setTypeDesc(?string $typeDesc = null): self
     {

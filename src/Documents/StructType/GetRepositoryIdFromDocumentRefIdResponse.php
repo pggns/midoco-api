@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetRepositoryIdFromDocumentRefIdResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetRepositoryIdFromDocumentRefIdResponse extends AbstractStructBase
 {
     /**

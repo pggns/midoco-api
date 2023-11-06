@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAvailableSupplierNamesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableSupplierNamesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAvailableSupplierNamesResponse extends AbstractStructBase
         return $this->MidocoSupplierName;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierName method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierNameForArrayConstraintsFromSetMidocoSupplierName(?array $values = []): string
+    public static function validateMidocoSupplierNameForArrayConstraintFromSetMidocoSupplierName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAvailableSupplierNamesResponse extends AbstractStructBase
     public function setMidocoSupplierName(?array $midocoSupplierName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierNameArrayErrorMessage = self::validateMidocoSupplierNameForArrayConstraintsFromSetMidocoSupplierName($midocoSupplierName))) {
+        if ('' !== ($midocoSupplierNameArrayErrorMessage = self::validateMidocoSupplierNameForArrayConstraintFromSetMidocoSupplierName($midocoSupplierName))) {
             throw new InvalidArgumentException($midocoSupplierNameArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierName = $midocoSupplierName;

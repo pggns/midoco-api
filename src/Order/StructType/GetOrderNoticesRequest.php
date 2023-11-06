@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderNoticesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderNoticesRequest extends AbstractStructBase
 {
     /**
@@ -154,12 +155,13 @@ class GetOrderNoticesRequest extends AbstractStructBase
         return $this->types;
     }
     /**
-     * This method is responsible for validating the values passed to the setTypes method
+     * This method is responsible for validating the value(s) passed to the setTypes method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTypes method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTypesForArrayConstraintsFromSetTypes(?array $values = []): string
+    public static function validateTypesForArrayConstraintFromSetTypes(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -188,7 +190,7 @@ class GetOrderNoticesRequest extends AbstractStructBase
     public function setTypes(?array $types = null): self
     {
         // validation for constraint: array
-        if ('' !== ($typesArrayErrorMessage = self::validateTypesForArrayConstraintsFromSetTypes($types))) {
+        if ('' !== ($typesArrayErrorMessage = self::validateTypesForArrayConstraintFromSetTypes($types))) {
             throw new InvalidArgumentException($typesArrayErrorMessage, __LINE__);
         }
         $this->types = $types;

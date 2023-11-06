@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoBonusCalculationResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoBonusCalculationResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetMidocoBonusCalculationResponse extends AbstractStructBase
         return $this->MidocoBonusCalculation;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBonusCalculation method
+     * This method is responsible for validating the value(s) passed to the setMidocoBonusCalculation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBonusCalculation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBonusCalculationForArrayConstraintsFromSetMidocoBonusCalculation(?array $values = []): string
+    public static function validateMidocoBonusCalculationForArrayConstraintFromSetMidocoBonusCalculation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetMidocoBonusCalculationResponse extends AbstractStructBase
     public function setMidocoBonusCalculation(?array $midocoBonusCalculation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBonusCalculationArrayErrorMessage = self::validateMidocoBonusCalculationForArrayConstraintsFromSetMidocoBonusCalculation($midocoBonusCalculation))) {
+        if ('' !== ($midocoBonusCalculationArrayErrorMessage = self::validateMidocoBonusCalculationForArrayConstraintFromSetMidocoBonusCalculation($midocoBonusCalculation))) {
             throw new InvalidArgumentException($midocoBonusCalculationArrayErrorMessage, __LINE__);
         }
         $this->MidocoBonusCalculation = $midocoBonusCalculation;

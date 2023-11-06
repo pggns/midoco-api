@@ -11,8 +11,17 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OnlinePaymentInfoType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OnlinePaymentInfoType extends AbstractStructBase
 {
+    /**
+     * The CcOnlinePaymentMetadata
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * - ref: CcOnlinePaymentMetadata
+     * @var \Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata|null
+     */
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata $CcOnlinePaymentMetadata = null;
     /**
      * The ccType
      * @var string|null
@@ -114,7 +123,13 @@ class OnlinePaymentInfoType extends AbstractStructBase
      */
     protected ?string $currency = null;
     /**
+     * The settlementDate
+     * @var string|null
+     */
+    protected ?string $settlementDate = null;
+    /**
      * Constructor method for OnlinePaymentInfoType
+     * @uses OnlinePaymentInfoType::setCcOnlinePaymentMetadata()
      * @uses OnlinePaymentInfoType::setCcType()
      * @uses OnlinePaymentInfoType::setCcNo()
      * @uses OnlinePaymentInfoType::setCcCvc()
@@ -135,6 +150,8 @@ class OnlinePaymentInfoType extends AbstractStructBase
      * @uses OnlinePaymentInfoType::setDstid()
      * @uses OnlinePaymentInfoType::setInitialEcomTransactionId()
      * @uses OnlinePaymentInfoType::setCurrency()
+     * @uses OnlinePaymentInfoType::setSettlementDate()
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata $ccOnlinePaymentMetadata
      * @param string $ccType
      * @param string $ccNo
      * @param string $ccCvc
@@ -155,10 +172,12 @@ class OnlinePaymentInfoType extends AbstractStructBase
      * @param string $dstid
      * @param string $initialEcomTransactionId
      * @param string $currency
+     * @param string $settlementDate
      */
-    public function __construct(?string $ccType = null, ?string $ccNo = null, ?string $ccCvc = null, ?string $ccCvcToken = null, ?string $ccExpiry = null, ?string $cardHolder = null, ?string $ccToken = null, ?string $ccTokenType = null, ?bool $isRecurring = null, ?string $ccTokenCreationTimestamp = null, ?string $xid = null, ?string $paymentChannelIndicator = null, ?string $cardholderAuthVerification = null, ?string $electronicCommerceIndicator = null, ?float $authAmount = null, ?float $remainingAuthAmount = null, ?string $v3ds = null, ?string $dstid = null, ?string $initialEcomTransactionId = null, ?string $currency = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata $ccOnlinePaymentMetadata = null, ?string $ccType = null, ?string $ccNo = null, ?string $ccCvc = null, ?string $ccCvcToken = null, ?string $ccExpiry = null, ?string $cardHolder = null, ?string $ccToken = null, ?string $ccTokenType = null, ?bool $isRecurring = null, ?string $ccTokenCreationTimestamp = null, ?string $xid = null, ?string $paymentChannelIndicator = null, ?string $cardholderAuthVerification = null, ?string $electronicCommerceIndicator = null, ?float $authAmount = null, ?float $remainingAuthAmount = null, ?string $v3ds = null, ?string $dstid = null, ?string $initialEcomTransactionId = null, ?string $currency = null, ?string $settlementDate = null)
     {
         $this
+            ->setCcOnlinePaymentMetadata($ccOnlinePaymentMetadata)
             ->setCcType($ccType)
             ->setCcNo($ccNo)
             ->setCcCvc($ccCvc)
@@ -178,7 +197,27 @@ class OnlinePaymentInfoType extends AbstractStructBase
             ->setV3ds($v3ds)
             ->setDstid($dstid)
             ->setInitialEcomTransactionId($initialEcomTransactionId)
-            ->setCurrency($currency);
+            ->setCurrency($currency)
+            ->setSettlementDate($settlementDate);
+    }
+    /**
+     * Get CcOnlinePaymentMetadata value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata|null
+     */
+    public function getCcOnlinePaymentMetadata(): ?\Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata
+    {
+        return $this->CcOnlinePaymentMetadata;
+    }
+    /**
+     * Set CcOnlinePaymentMetadata value
+     * @param \Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata $ccOnlinePaymentMetadata
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentInfoType
+     */
+    public function setCcOnlinePaymentMetadata(?\Pggns\MidocoApi\Orderlists\StructType\CcOnlinePaymentMetadata $ccOnlinePaymentMetadata = null): self
+    {
+        $this->CcOnlinePaymentMetadata = $ccOnlinePaymentMetadata;
+        
+        return $this;
     }
     /**
      * Get ccType value
@@ -637,6 +676,29 @@ class OnlinePaymentInfoType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($currency, true), gettype($currency)), __LINE__);
         }
         $this->currency = $currency;
+        
+        return $this;
+    }
+    /**
+     * Get settlementDate value
+     * @return string|null
+     */
+    public function getSettlementDate(): ?string
+    {
+        return $this->settlementDate;
+    }
+    /**
+     * Set settlementDate value
+     * @param string $settlementDate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentInfoType
+     */
+    public function setSettlementDate(?string $settlementDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementDate) && !is_string($settlementDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementDate, true), gettype($settlementDate)), __LINE__);
+        }
+        $this->settlementDate = $settlementDate;
         
         return $this;
     }

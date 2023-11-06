@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPaymentAccrualForCreditorResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
 {
     /**
@@ -73,12 +74,13 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
         return $this->MidocoCreditorPaymentAccrual;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCreditorPaymentAccrual method
+     * This method is responsible for validating the value(s) passed to the setMidocoCreditorPaymentAccrual method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCreditorPaymentAccrual method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCreditorPaymentAccrualForArrayConstraintsFromSetMidocoCreditorPaymentAccrual(?array $values = []): string
+    public static function validateMidocoCreditorPaymentAccrualForArrayConstraintFromSetMidocoCreditorPaymentAccrual(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -107,7 +109,7 @@ class GetPaymentAccrualForCreditorResponse extends AbstractStructBase
     public function setMidocoCreditorPaymentAccrual(?array $midocoCreditorPaymentAccrual = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCreditorPaymentAccrualArrayErrorMessage = self::validateMidocoCreditorPaymentAccrualForArrayConstraintsFromSetMidocoCreditorPaymentAccrual($midocoCreditorPaymentAccrual))) {
+        if ('' !== ($midocoCreditorPaymentAccrualArrayErrorMessage = self::validateMidocoCreditorPaymentAccrualForArrayConstraintFromSetMidocoCreditorPaymentAccrual($midocoCreditorPaymentAccrual))) {
             throw new InvalidArgumentException($midocoCreditorPaymentAccrualArrayErrorMessage, __LINE__);
         }
         $this->MidocoCreditorPaymentAccrual = $midocoCreditorPaymentAccrual;

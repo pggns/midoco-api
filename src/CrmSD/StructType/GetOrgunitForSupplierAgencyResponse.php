@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrgunitForSupplierAgencyResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
 {
     /**
@@ -50,7 +51,7 @@ class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrgunitForSupplierAgencyResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrgunitForSupplierAgencyResponse
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -71,12 +72,13 @@ class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
         return $this->supplierId;
     }
     /**
-     * This method is responsible for validating the values passed to the setSupplierId method
+     * This method is responsible for validating the value(s) passed to the setSupplierId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSupplierId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSupplierIdForArrayConstraintsFromSetSupplierId(?array $values = []): string
+    public static function validateSupplierIdForArrayConstraintFromSetSupplierId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -100,12 +102,12 @@ class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
      * Set supplierId value
      * @throws InvalidArgumentException
      * @param string[] $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrgunitForSupplierAgencyResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrgunitForSupplierAgencyResponse
      */
     public function setSupplierId(?array $supplierId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($supplierIdArrayErrorMessage = self::validateSupplierIdForArrayConstraintsFromSetSupplierId($supplierId))) {
+        if ('' !== ($supplierIdArrayErrorMessage = self::validateSupplierIdForArrayConstraintFromSetSupplierId($supplierId))) {
             throw new InvalidArgumentException($supplierIdArrayErrorMessage, __LINE__);
         }
         $this->supplierId = $supplierId;
@@ -116,7 +118,7 @@ class GetOrgunitForSupplierAgencyResponse extends AbstractStructBase
      * Add item to supplierId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrgunitForSupplierAgencyResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrgunitForSupplierAgencyResponse
      */
     public function addToSupplierId(string $item): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintjobRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintjobRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetPrintjobRequest extends AbstractStructBase
     /**
      * Set printjob_id value
      * @param int $printjob_id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintjobRequest
      */
     public function setPrintjob_id(?int $printjob_id = null): self
     {

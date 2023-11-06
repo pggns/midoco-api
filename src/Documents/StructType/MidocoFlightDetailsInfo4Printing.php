@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoFlightDetailsInfo4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
 {
     /**
@@ -119,12 +120,13 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
         return $this->MidocoFlightSegmentDetails4Printing;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFlightSegmentDetails4Printing method
+     * This method is responsible for validating the value(s) passed to the setMidocoFlightSegmentDetails4Printing method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFlightSegmentDetails4Printing method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFlightSegmentDetails4PrintingForArrayConstraintsFromSetMidocoFlightSegmentDetails4Printing(?array $values = []): string
+    public static function validateMidocoFlightSegmentDetails4PrintingForArrayConstraintFromSetMidocoFlightSegmentDetails4Printing(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,7 +155,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     public function setMidocoFlightSegmentDetails4Printing(?array $midocoFlightSegmentDetails4Printing = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFlightSegmentDetails4PrintingArrayErrorMessage = self::validateMidocoFlightSegmentDetails4PrintingForArrayConstraintsFromSetMidocoFlightSegmentDetails4Printing($midocoFlightSegmentDetails4Printing))) {
+        if ('' !== ($midocoFlightSegmentDetails4PrintingArrayErrorMessage = self::validateMidocoFlightSegmentDetails4PrintingForArrayConstraintFromSetMidocoFlightSegmentDetails4Printing($midocoFlightSegmentDetails4Printing))) {
             throw new InvalidArgumentException($midocoFlightSegmentDetails4PrintingArrayErrorMessage, __LINE__);
         }
         $this->MidocoFlightSegmentDetails4Printing = $midocoFlightSegmentDetails4Printing;
@@ -204,12 +206,13 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
         return $this->MidocoRemarks;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRemarks method
+     * This method is responsible for validating the value(s) passed to the setMidocoRemarks method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRemarks method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRemarksForArrayConstraintsFromSetMidocoRemarks(?array $values = []): string
+    public static function validateMidocoRemarksForArrayConstraintFromSetMidocoRemarks(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -238,7 +241,7 @@ class MidocoFlightDetailsInfo4Printing extends FlightDetailDTO
     public function setMidocoRemarks(?array $midocoRemarks = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRemarksArrayErrorMessage = self::validateMidocoRemarksForArrayConstraintsFromSetMidocoRemarks($midocoRemarks))) {
+        if ('' !== ($midocoRemarksArrayErrorMessage = self::validateMidocoRemarksForArrayConstraintFromSetMidocoRemarks($midocoRemarks))) {
             throw new InvalidArgumentException($midocoRemarksArrayErrorMessage, __LINE__);
         }
         $this->MidocoRemarks = $midocoRemarks;

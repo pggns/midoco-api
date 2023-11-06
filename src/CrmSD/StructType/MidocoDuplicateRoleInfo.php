@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDuplicateRoleInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDuplicateRoleInfo extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class MidocoDuplicateRoleInfo extends AbstractStructBase
     /**
      * Set srcRoleId value
      * @param int $srcRoleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDuplicateRoleInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDuplicateRoleInfo
      */
     public function setSrcRoleId(?int $srcRoleId = null): self
     {
@@ -86,7 +87,7 @@ class MidocoDuplicateRoleInfo extends AbstractStructBase
     /**
      * Set srcRoleName value
      * @param string $srcRoleName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDuplicateRoleInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDuplicateRoleInfo
      */
     public function setSrcRoleName(?string $srcRoleName = null): self
     {
@@ -109,7 +110,7 @@ class MidocoDuplicateRoleInfo extends AbstractStructBase
     /**
      * Set destRoleId value
      * @param int $destRoleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDuplicateRoleInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDuplicateRoleInfo
      */
     public function setDestRoleId(?int $destRoleId = null): self
     {
@@ -132,7 +133,7 @@ class MidocoDuplicateRoleInfo extends AbstractStructBase
     /**
      * Set destRoleName value
      * @param string $destRoleName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDuplicateRoleInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDuplicateRoleInfo
      */
     public function setDestRoleName(?string $destRoleName = null): self
     {

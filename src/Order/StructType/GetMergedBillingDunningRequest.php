@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMergedBillingDunningRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMergedBillingDunningRequest extends AbstractStructBase
 {
     /**
@@ -34,23 +35,39 @@ class GetMergedBillingDunningRequest extends AbstractStructBase
      */
     protected ?string $orgUnit = null;
     /**
+     * The customerId
+     * @var int|null
+     */
+    protected ?int $customerId = null;
+    /**
+     * The debitorNo
+     * @var string|null
+     */
+    protected ?string $debitorNo = null;
+    /**
      * Constructor method for GetMergedBillingDunningRequest
      * @uses GetMergedBillingDunningRequest::setStartDate()
      * @uses GetMergedBillingDunningRequest::setEndDate()
      * @uses GetMergedBillingDunningRequest::setDunningLevel()
      * @uses GetMergedBillingDunningRequest::setOrgUnit()
+     * @uses GetMergedBillingDunningRequest::setCustomerId()
+     * @uses GetMergedBillingDunningRequest::setDebitorNo()
      * @param string $startDate
      * @param string $endDate
      * @param int $dunningLevel
      * @param string $orgUnit
+     * @param int $customerId
+     * @param string $debitorNo
      */
-    public function __construct(?string $startDate = null, ?string $endDate = null, ?int $dunningLevel = null, ?string $orgUnit = null)
+    public function __construct(?string $startDate = null, ?string $endDate = null, ?int $dunningLevel = null, ?string $orgUnit = null, ?int $customerId = null, ?string $debitorNo = null)
     {
         $this
             ->setStartDate($startDate)
             ->setEndDate($endDate)
             ->setDunningLevel($dunningLevel)
-            ->setOrgUnit($orgUnit);
+            ->setOrgUnit($orgUnit)
+            ->setCustomerId($customerId)
+            ->setDebitorNo($debitorNo);
     }
     /**
      * Get startDate value
@@ -141,6 +158,52 @@ class GetMergedBillingDunningRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($orgUnit, true), gettype($orgUnit)), __LINE__);
         }
         $this->orgUnit = $orgUnit;
+        
+        return $this;
+    }
+    /**
+     * Get customerId value
+     * @return int|null
+     */
+    public function getCustomerId(): ?int
+    {
+        return $this->customerId;
+    }
+    /**
+     * Set customerId value
+     * @param int $customerId
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningRequest
+     */
+    public function setCustomerId(?int $customerId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($customerId) && !(is_int($customerId) || ctype_digit($customerId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($customerId, true), gettype($customerId)), __LINE__);
+        }
+        $this->customerId = $customerId;
+        
+        return $this;
+    }
+    /**
+     * Get debitorNo value
+     * @return string|null
+     */
+    public function getDebitorNo(): ?string
+    {
+        return $this->debitorNo;
+    }
+    /**
+     * Set debitorNo value
+     * @param string $debitorNo
+     * @return \Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningRequest
+     */
+    public function setDebitorNo(?string $debitorNo = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($debitorNo) && !is_string($debitorNo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($debitorNo, true), gettype($debitorNo)), __LINE__);
+        }
+        $this->debitorNo = $debitorNo;
         
         return $this;
     }

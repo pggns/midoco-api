@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListMidocoOrgTemplateTextRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListMidocoOrgTemplateTextRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class ListMidocoOrgTemplateTextRequest extends AbstractStructBase
     /**
      * Set org_unit_name value
      * @param string $org_unit_name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ListMidocoOrgTemplateTextRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ListMidocoOrgTemplateTextRequest
      */
     public function setOrg_unit_name(?string $org_unit_name = null): self
     {

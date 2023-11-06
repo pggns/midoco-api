@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmCustomerPayment4p StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmCustomerPayment4p extends CrmCustomerPaymentDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoCrmCustomerPayment4p extends CrmCustomerPaymentDTO
     /**
      * Set conditionDescription value
      * @param string $conditionDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomerPayment4p
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment4p
      */
     public function setConditionDescription(?string $conditionDescription = null): self
     {

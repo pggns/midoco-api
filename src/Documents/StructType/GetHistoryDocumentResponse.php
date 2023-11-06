@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetHistoryDocumentResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetHistoryDocumentResponse extends AbstractStructBase
 {
     /**

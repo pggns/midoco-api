@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrsExpedientForUserIdRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrsExpedientForUserIdRequest extends AbstractStructBase
 {
     /**

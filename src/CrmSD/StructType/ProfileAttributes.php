@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ProfileAttributes StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ProfileAttributes extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class ProfileAttributes extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProfileAttribute
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute[]
      */
     protected ?array $MidocoProfileAttribute = null;
     /**
      * Constructor method for ProfileAttributes
      * @uses ProfileAttributes::setMidocoProfileAttribute()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
      */
     public function __construct(?array $midocoProfileAttribute = null)
     {
@@ -34,19 +35,20 @@ class ProfileAttributes extends AbstractStructBase
     }
     /**
      * Get MidocoProfileAttribute value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute[]
      */
     public function getMidocoProfileAttribute(): ?array
     {
         return $this->MidocoProfileAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProfileAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoProfileAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProfileAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProfileAttributeForArrayConstraintsFromSetMidocoProfileAttribute(?array $values = []): string
+    public static function validateMidocoProfileAttributeForArrayConstraintFromSetMidocoProfileAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class ProfileAttributes extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $profileAttributesMidocoProfileAttributeItem) {
             // validation for constraint: itemType
-            if (!$profileAttributesMidocoProfileAttributeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute) {
+            if (!$profileAttributesMidocoProfileAttributeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute) {
                 $invalidValues[] = is_object($profileAttributesMidocoProfileAttributeItem) ? get_class($profileAttributesMidocoProfileAttributeItem) : sprintf('%s(%s)', gettype($profileAttributesMidocoProfileAttributeItem), var_export($profileAttributesMidocoProfileAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class ProfileAttributes extends AbstractStructBase
     /**
      * Set MidocoProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProfileAttributes
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute[] $midocoProfileAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProfileAttributes
      */
     public function setMidocoProfileAttribute(?array $midocoProfileAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProfileAttributeArrayErrorMessage = self::validateMidocoProfileAttributeForArrayConstraintsFromSetMidocoProfileAttribute($midocoProfileAttribute))) {
+        if ('' !== ($midocoProfileAttributeArrayErrorMessage = self::validateMidocoProfileAttributeForArrayConstraintFromSetMidocoProfileAttribute($midocoProfileAttribute))) {
             throw new InvalidArgumentException($midocoProfileAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoProfileAttribute = $midocoProfileAttribute;
@@ -85,14 +87,14 @@ class ProfileAttributes extends AbstractStructBase
     /**
      * Add item to MidocoProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProfileAttributes
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProfileAttributes
      */
-    public function addToMidocoProfileAttribute(\Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute $item): self
+    public function addToMidocoProfileAttribute(\Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoProfileAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoProfileAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoProfileAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProfileAttribute[] = $item;
         

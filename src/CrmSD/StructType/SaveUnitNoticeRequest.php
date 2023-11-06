@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,37 +11,38 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveUnitNoticeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveUnitNoticeRequest extends AbstractStructBase
 {
     /**
      * The MidocoOrgunitNotice
-     * @var \Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO $MidocoOrgunitNotice = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO $MidocoOrgunitNotice = null;
     /**
      * Constructor method for SaveUnitNoticeRequest
      * @uses SaveUnitNoticeRequest::setMidocoOrgunitNotice()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO $midocoOrgunitNotice
+     * @param \Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO $midocoOrgunitNotice
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO $midocoOrgunitNotice = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO $midocoOrgunitNotice = null)
     {
         $this
             ->setMidocoOrgunitNotice($midocoOrgunitNotice);
     }
     /**
      * Get MidocoOrgunitNotice value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO|null
      */
-    public function getMidocoOrgunitNotice(): ?\Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO
+    public function getMidocoOrgunitNotice(): ?\Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO
     {
         return $this->MidocoOrgunitNotice;
     }
     /**
      * Set MidocoOrgunitNotice value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO $midocoOrgunitNotice
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveUnitNoticeRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO $midocoOrgunitNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveUnitNoticeRequest
      */
-    public function setMidocoOrgunitNotice(?\Pggns\MidocoApi\CrmSD\StructType\UnitNoticeDTO $midocoOrgunitNotice = null): self
+    public function setMidocoOrgunitNotice(?\Pggns\MidocoApi\Crmsd\StructType\UnitNoticeDTO $midocoOrgunitNotice = null): self
     {
         $this->MidocoOrgunitNotice = $midocoOrgunitNotice;
         

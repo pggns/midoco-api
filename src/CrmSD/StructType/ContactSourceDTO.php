@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ContactSourceDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ContactSourceDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ContactSourceDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactSourceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactSourceDTO
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -78,7 +79,7 @@ class ContactSourceDTO extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactSourceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactSourceDTO
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -101,7 +102,7 @@ class ContactSourceDTO extends AbstractStructBase
     /**
      * Set sourceId value
      * @param string $sourceId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactSourceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactSourceDTO
      */
     public function setSourceId(?string $sourceId = null): self
     {

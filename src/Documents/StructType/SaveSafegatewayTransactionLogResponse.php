@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Contains the requestId
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveSafegatewayTransactionLogResponse extends AbstractStructBase
 {
     /**

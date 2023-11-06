@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmTravelIntentDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmTravelIntentDTO extends AbstractStructBase
 {
     /**
@@ -287,7 +288,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set accomodationCode value
      * @param string $accomodationCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setAccomodationCode(?string $accomodationCode = null): self
     {
@@ -310,7 +311,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set accomodationDescription value
      * @param string $accomodationDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setAccomodationDescription(?string $accomodationDescription = null): self
     {
@@ -333,7 +334,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set areaCode value
      * @param string $areaCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setAreaCode(?string $areaCode = null): self
     {
@@ -356,7 +357,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set areaDescription value
      * @param string $areaDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setAreaDescription(?string $areaDescription = null): self
     {
@@ -379,7 +380,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set arrivalTime value
      * @param string $arrivalTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setArrivalTime(?string $arrivalTime = null): self
     {
@@ -402,7 +403,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set carrier value
      * @param string $carrier
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setCarrier(?string $carrier = null): self
     {
@@ -425,7 +426,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set cateringDescription value
      * @param string $cateringDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setCateringDescription(?string $cateringDescription = null): self
     {
@@ -448,7 +449,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set cruiseDescription value
      * @param string $cruiseDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setCruiseDescription(?string $cruiseDescription = null): self
     {
@@ -471,7 +472,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -494,7 +495,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set departureCode value
      * @param string $departureCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setDepartureCode(?string $departureCode = null): self
     {
@@ -517,7 +518,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set departureDescription value
      * @param string $departureDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setDepartureDescription(?string $departureDescription = null): self
     {
@@ -540,7 +541,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set departureTime value
      * @param string $departureTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setDepartureTime(?string $departureTime = null): self
     {
@@ -563,7 +564,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -586,7 +587,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -609,7 +610,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set destinationDescription value
      * @param string $destinationDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setDestinationDescription(?string $destinationDescription = null): self
     {
@@ -632,7 +633,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set flightNo value
      * @param string $flightNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setFlightNo(?string $flightNo = null): self
     {
@@ -655,7 +656,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set insuranceDescription value
      * @param string $insuranceDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setInsuranceDescription(?string $insuranceDescription = null): self
     {
@@ -678,7 +679,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set intentPosition value
      * @param int $intentPosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setIntentPosition(?int $intentPosition = null): self
     {
@@ -701,7 +702,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set intentTimestamp value
      * @param string $intentTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setIntentTimestamp(?string $intentTimestamp = null): self
     {
@@ -724,7 +725,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set mediatorAffiliate value
      * @param string $mediatorAffiliate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setMediatorAffiliate(?string $mediatorAffiliate = null): self
     {
@@ -747,7 +748,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -770,7 +771,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set processed value
      * @param bool $processed
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setProcessed(?bool $processed = null): self
     {
@@ -793,7 +794,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnArrivalTime value
      * @param string $returnArrivalTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnArrivalTime(?string $returnArrivalTime = null): self
     {
@@ -816,7 +817,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnCarrier value
      * @param string $returnCarrier
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnCarrier(?string $returnCarrier = null): self
     {
@@ -839,7 +840,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnDepartureCode value
      * @param string $returnDepartureCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnDepartureCode(?string $returnDepartureCode = null): self
     {
@@ -862,7 +863,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnDepartureDescription value
      * @param string $returnDepartureDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnDepartureDescription(?string $returnDepartureDescription = null): self
     {
@@ -885,7 +886,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnDepartureTime value
      * @param string $returnDepartureTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnDepartureTime(?string $returnDepartureTime = null): self
     {
@@ -908,7 +909,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnDestinationCode value
      * @param string $returnDestinationCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnDestinationCode(?string $returnDestinationCode = null): self
     {
@@ -931,7 +932,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnDestinationDescription value
      * @param string $returnDestinationDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnDestinationDescription(?string $returnDestinationDescription = null): self
     {
@@ -954,7 +955,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set returnFlightNo value
      * @param string $returnFlightNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setReturnFlightNo(?string $returnFlightNo = null): self
     {
@@ -977,7 +978,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set roomDescription value
      * @param string $roomDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setRoomDescription(?string $roomDescription = null): self
     {
@@ -1000,7 +1001,7 @@ class CrmTravelIntentDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

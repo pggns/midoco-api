@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetConsentResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetConsentResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetConsentResponse extends AbstractStructBase
         return $this->MidocoConsent;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoConsent method
+     * This method is responsible for validating the value(s) passed to the setMidocoConsent method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoConsent method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoConsentForArrayConstraintsFromSetMidocoConsent(?array $values = []): string
+    public static function validateMidocoConsentForArrayConstraintFromSetMidocoConsent(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetConsentResponse extends AbstractStructBase
     public function setMidocoConsent(?array $midocoConsent = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoConsentArrayErrorMessage = self::validateMidocoConsentForArrayConstraintsFromSetMidocoConsent($midocoConsent))) {
+        if ('' !== ($midocoConsentArrayErrorMessage = self::validateMidocoConsentForArrayConstraintFromSetMidocoConsent($midocoConsent))) {
             throw new InvalidArgumentException($midocoConsentArrayErrorMessage, __LINE__);
         }
         $this->MidocoConsent = $midocoConsent;

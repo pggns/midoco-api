@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PreviewCommunicationHistoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PreviewCommunicationHistoryRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PreviewCommunicationHistoryRequest
      */
     public function setTemplateName(?string $templateName = null): self
     {
@@ -86,7 +87,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PreviewCommunicationHistoryRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +110,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set mediator value
      * @param string $mediator
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PreviewCommunicationHistoryRequest
      */
     public function setMediator(?string $mediator = null): self
     {
@@ -132,7 +133,7 @@ class PreviewCommunicationHistoryRequest extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PreviewCommunicationHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PreviewCommunicationHistoryRequest
      */
     public function setTravelNo(?string $travelNo = null): self
     {

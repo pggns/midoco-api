@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSearchOrderCriteriaType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSearchOrderCriteriaType extends AbstractStructBase
 {
     /**
@@ -189,6 +190,13 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
      */
     protected ?bool $groupReservation = null;
     /**
+     * The groupName
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $groupName = null;
+    /**
      * The zeroprice
      * Meta information extracted from the WSDL
      * - minOccurs: 0
@@ -231,6 +239,13 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
      * @var string|null
      */
     protected ?string $travelNo = null;
+    /**
+     * The travelNoHandligType
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $travelNoHandligType = null;
     /**
      * The mandateReference
      * Meta information extracted from the WSDL
@@ -276,6 +291,48 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
      */
     protected ?string $street = null;
     /**
+     * The sellItemAttributeValue
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $sellItemAttributeValue = null;
+    /**
+     * The settlementType
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $settlementType = null;
+    /**
+     * The serviceStatus
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $serviceStatus = null;
+    /**
+     * The baseBuyingPriceFrom
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var float|null
+     */
+    protected ?float $baseBuyingPriceFrom = null;
+    /**
+     * The baseBuyingPriceTo
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var float|null
+     */
+    protected ?float $baseBuyingPriceTo = null;
+    /**
+     * The includeAlreadySettledItems
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var bool|null
+     */
+    protected ?bool $includeAlreadySettledItems = null;
+    /**
      * Constructor method for MidocoSearchOrderCriteriaType
      * @uses MidocoSearchOrderCriteriaType::setCustomerId()
      * @uses MidocoSearchOrderCriteriaType::setSurname()
@@ -302,18 +359,26 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
      * @uses MidocoSearchOrderCriteriaType::setCcReceiptNo()
      * @uses MidocoSearchOrderCriteriaType::setCcApprovalCode()
      * @uses MidocoSearchOrderCriteriaType::setGroupReservation()
+     * @uses MidocoSearchOrderCriteriaType::setGroupName()
      * @uses MidocoSearchOrderCriteriaType::setZeroprice()
      * @uses MidocoSearchOrderCriteriaType::setRailDocumentNo()
      * @uses MidocoSearchOrderCriteriaType::setDebitorNo()
      * @uses MidocoSearchOrderCriteriaType::setIncludePassengers()
      * @uses MidocoSearchOrderCriteriaType::setCustomerType()
      * @uses MidocoSearchOrderCriteriaType::setTravelNo()
+     * @uses MidocoSearchOrderCriteriaType::setTravelNoHandligType()
      * @uses MidocoSearchOrderCriteriaType::setMandateReference()
      * @uses MidocoSearchOrderCriteriaType::setIncludeSuborders()
      * @uses MidocoSearchOrderCriteriaType::setSubordersAllowed()
      * @uses MidocoSearchOrderCriteriaType::setCity()
      * @uses MidocoSearchOrderCriteriaType::setPostalCode()
      * @uses MidocoSearchOrderCriteriaType::setStreet()
+     * @uses MidocoSearchOrderCriteriaType::setSellItemAttributeValue()
+     * @uses MidocoSearchOrderCriteriaType::setSettlementType()
+     * @uses MidocoSearchOrderCriteriaType::setServiceStatus()
+     * @uses MidocoSearchOrderCriteriaType::setBaseBuyingPriceFrom()
+     * @uses MidocoSearchOrderCriteriaType::setBaseBuyingPriceTo()
+     * @uses MidocoSearchOrderCriteriaType::setIncludeAlreadySettledItems()
      * @param int $customerId
      * @param string $surname
      * @param string $forename
@@ -339,20 +404,28 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
      * @param int $ccReceiptNo
      * @param string $ccApprovalCode
      * @param bool $groupReservation
+     * @param string $groupName
      * @param bool $zeroprice
      * @param string $railDocumentNo
      * @param string $debitorNo
      * @param bool $includePassengers
      * @param string $customerType
      * @param string $travelNo
+     * @param string $travelNoHandligType
      * @param string $mandateReference
      * @param bool $includeSuborders
      * @param bool $subordersAllowed
      * @param string $city
      * @param string $postalCode
      * @param string $street
+     * @param string $sellItemAttributeValue
+     * @param string $settlementType
+     * @param string $serviceStatus
+     * @param float $baseBuyingPriceFrom
+     * @param float $baseBuyingPriceTo
+     * @param bool $includeAlreadySettledItems
      */
-    public function __construct(?int $customerId = null, ?string $surname = null, ?string $forename = null, ?string $orderNo = null, ?int $orderId = null, ?int $billingNo = null, ?string $travelStartDate = null, ?string $travelEndDate = null, ?string $creationStartDate = null, ?string $creationEndDate = null, ?int $createdByUserId = null, ?string $orgunitName = null, ?string $crsBookingId = null, ?int $sellItemId = null, ?string $mediatorId = null, ?string $mediatorAffiliate = null, ?string $tourOperatorId = null, ?int $invoiceNo = null, ?string $ticketNo = null, ?string $agencyId = null, ?bool $newOrders = null, ?string $ccNumber = null, ?int $ccReceiptNo = null, ?string $ccApprovalCode = null, ?bool $groupReservation = null, ?bool $zeroprice = null, ?string $railDocumentNo = null, ?string $debitorNo = null, ?bool $includePassengers = false, ?string $customerType = null, ?string $travelNo = null, ?string $mandateReference = null, ?bool $includeSuborders = false, ?bool $subordersAllowed = false, ?string $city = null, ?string $postalCode = null, ?string $street = null)
+    public function __construct(?int $customerId = null, ?string $surname = null, ?string $forename = null, ?string $orderNo = null, ?int $orderId = null, ?int $billingNo = null, ?string $travelStartDate = null, ?string $travelEndDate = null, ?string $creationStartDate = null, ?string $creationEndDate = null, ?int $createdByUserId = null, ?string $orgunitName = null, ?string $crsBookingId = null, ?int $sellItemId = null, ?string $mediatorId = null, ?string $mediatorAffiliate = null, ?string $tourOperatorId = null, ?int $invoiceNo = null, ?string $ticketNo = null, ?string $agencyId = null, ?bool $newOrders = null, ?string $ccNumber = null, ?int $ccReceiptNo = null, ?string $ccApprovalCode = null, ?bool $groupReservation = null, ?string $groupName = null, ?bool $zeroprice = null, ?string $railDocumentNo = null, ?string $debitorNo = null, ?bool $includePassengers = false, ?string $customerType = null, ?string $travelNo = null, ?string $travelNoHandligType = null, ?string $mandateReference = null, ?bool $includeSuborders = false, ?bool $subordersAllowed = false, ?string $city = null, ?string $postalCode = null, ?string $street = null, ?string $sellItemAttributeValue = null, ?string $settlementType = null, ?string $serviceStatus = null, ?float $baseBuyingPriceFrom = null, ?float $baseBuyingPriceTo = null, ?bool $includeAlreadySettledItems = null)
     {
         $this
             ->setCustomerId($customerId)
@@ -380,18 +453,26 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
             ->setCcReceiptNo($ccReceiptNo)
             ->setCcApprovalCode($ccApprovalCode)
             ->setGroupReservation($groupReservation)
+            ->setGroupName($groupName)
             ->setZeroprice($zeroprice)
             ->setRailDocumentNo($railDocumentNo)
             ->setDebitorNo($debitorNo)
             ->setIncludePassengers($includePassengers)
             ->setCustomerType($customerType)
             ->setTravelNo($travelNo)
+            ->setTravelNoHandligType($travelNoHandligType)
             ->setMandateReference($mandateReference)
             ->setIncludeSuborders($includeSuborders)
             ->setSubordersAllowed($subordersAllowed)
             ->setCity($city)
             ->setPostalCode($postalCode)
-            ->setStreet($street);
+            ->setStreet($street)
+            ->setSellItemAttributeValue($sellItemAttributeValue)
+            ->setSettlementType($settlementType)
+            ->setServiceStatus($serviceStatus)
+            ->setBaseBuyingPriceFrom($baseBuyingPriceFrom)
+            ->setBaseBuyingPriceTo($baseBuyingPriceTo)
+            ->setIncludeAlreadySettledItems($includeAlreadySettledItems);
     }
     /**
      * Get customerId value
@@ -969,6 +1050,29 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
         return $this;
     }
     /**
+     * Get groupName value
+     * @return string|null
+     */
+    public function getGroupName(): ?string
+    {
+        return $this->groupName;
+    }
+    /**
+     * Set groupName value
+     * @param string $groupName
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setGroupName(?string $groupName = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($groupName) && !is_string($groupName)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($groupName, true), gettype($groupName)), __LINE__);
+        }
+        $this->groupName = $groupName;
+        
+        return $this;
+    }
+    /**
      * Get zeroprice value
      * @return bool|null
      */
@@ -1107,6 +1211,29 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
         return $this;
     }
     /**
+     * Get travelNoHandligType value
+     * @return string|null
+     */
+    public function getTravelNoHandligType(): ?string
+    {
+        return $this->travelNoHandligType;
+    }
+    /**
+     * Set travelNoHandligType value
+     * @param string $travelNoHandligType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setTravelNoHandligType(?string $travelNoHandligType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($travelNoHandligType) && !is_string($travelNoHandligType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelNoHandligType, true), gettype($travelNoHandligType)), __LINE__);
+        }
+        $this->travelNoHandligType = $travelNoHandligType;
+        
+        return $this;
+    }
+    /**
      * Get mandateReference value
      * @return string|null
      */
@@ -1241,6 +1368,144 @@ class MidocoSearchOrderCriteriaType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($street, true), gettype($street)), __LINE__);
         }
         $this->street = $street;
+        
+        return $this;
+    }
+    /**
+     * Get sellItemAttributeValue value
+     * @return string|null
+     */
+    public function getSellItemAttributeValue(): ?string
+    {
+        return $this->sellItemAttributeValue;
+    }
+    /**
+     * Set sellItemAttributeValue value
+     * @param string $sellItemAttributeValue
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setSellItemAttributeValue(?string $sellItemAttributeValue = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($sellItemAttributeValue) && !is_string($sellItemAttributeValue)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sellItemAttributeValue, true), gettype($sellItemAttributeValue)), __LINE__);
+        }
+        $this->sellItemAttributeValue = $sellItemAttributeValue;
+        
+        return $this;
+    }
+    /**
+     * Get settlementType value
+     * @return string|null
+     */
+    public function getSettlementType(): ?string
+    {
+        return $this->settlementType;
+    }
+    /**
+     * Set settlementType value
+     * @param string $settlementType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setSettlementType(?string $settlementType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementType) && !is_string($settlementType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementType, true), gettype($settlementType)), __LINE__);
+        }
+        $this->settlementType = $settlementType;
+        
+        return $this;
+    }
+    /**
+     * Get serviceStatus value
+     * @return string|null
+     */
+    public function getServiceStatus(): ?string
+    {
+        return $this->serviceStatus;
+    }
+    /**
+     * Set serviceStatus value
+     * @param string $serviceStatus
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setServiceStatus(?string $serviceStatus = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($serviceStatus) && !is_string($serviceStatus)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($serviceStatus, true), gettype($serviceStatus)), __LINE__);
+        }
+        $this->serviceStatus = $serviceStatus;
+        
+        return $this;
+    }
+    /**
+     * Get baseBuyingPriceFrom value
+     * @return float|null
+     */
+    public function getBaseBuyingPriceFrom(): ?float
+    {
+        return $this->baseBuyingPriceFrom;
+    }
+    /**
+     * Set baseBuyingPriceFrom value
+     * @param float $baseBuyingPriceFrom
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setBaseBuyingPriceFrom(?float $baseBuyingPriceFrom = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($baseBuyingPriceFrom) && !(is_float($baseBuyingPriceFrom) || is_numeric($baseBuyingPriceFrom))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($baseBuyingPriceFrom, true), gettype($baseBuyingPriceFrom)), __LINE__);
+        }
+        $this->baseBuyingPriceFrom = $baseBuyingPriceFrom;
+        
+        return $this;
+    }
+    /**
+     * Get baseBuyingPriceTo value
+     * @return float|null
+     */
+    public function getBaseBuyingPriceTo(): ?float
+    {
+        return $this->baseBuyingPriceTo;
+    }
+    /**
+     * Set baseBuyingPriceTo value
+     * @param float $baseBuyingPriceTo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setBaseBuyingPriceTo(?float $baseBuyingPriceTo = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($baseBuyingPriceTo) && !(is_float($baseBuyingPriceTo) || is_numeric($baseBuyingPriceTo))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($baseBuyingPriceTo, true), gettype($baseBuyingPriceTo)), __LINE__);
+        }
+        $this->baseBuyingPriceTo = $baseBuyingPriceTo;
+        
+        return $this;
+    }
+    /**
+     * Get includeAlreadySettledItems value
+     * @return bool|null
+     */
+    public function getIncludeAlreadySettledItems(): ?bool
+    {
+        return $this->includeAlreadySettledItems;
+    }
+    /**
+     * Set includeAlreadySettledItems value
+     * @param bool $includeAlreadySettledItems
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSearchOrderCriteriaType
+     */
+    public function setIncludeAlreadySettledItems(?bool $includeAlreadySettledItems = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($includeAlreadySettledItems) && !is_bool($includeAlreadySettledItems)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($includeAlreadySettledItems, true), gettype($includeAlreadySettledItems)), __LINE__);
+        }
+        $this->includeAlreadySettledItems = $includeAlreadySettledItems;
         
         return $this;
     }

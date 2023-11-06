@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CommissionLevelDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CommissionLevelDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class CommissionLevelDTO extends AbstractStructBase
     /**
      * Set levelId value
      * @param string $levelId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommissionLevelDTO
      */
     public function setLevelId(?string $levelId = null): self
     {

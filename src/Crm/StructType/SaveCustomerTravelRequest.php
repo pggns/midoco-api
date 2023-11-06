@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveCustomerTravel
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCustomerTravelRequest extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class SaveCustomerTravelRequest extends AbstractStructBase
         return $this->MidocoCustomerTravel;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerTravel method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerTravel method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerTravel method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerTravelForArrayConstraintsFromSetMidocoCustomerTravel(?array $values = []): string
+    public static function validateMidocoCustomerTravelForArrayConstraintFromSetMidocoCustomerTravel(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class SaveCustomerTravelRequest extends AbstractStructBase
     public function setMidocoCustomerTravel(?array $midocoCustomerTravel = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerTravelArrayErrorMessage = self::validateMidocoCustomerTravelForArrayConstraintsFromSetMidocoCustomerTravel($midocoCustomerTravel))) {
+        if ('' !== ($midocoCustomerTravelArrayErrorMessage = self::validateMidocoCustomerTravelForArrayConstraintFromSetMidocoCustomerTravel($midocoCustomerTravel))) {
             throw new InvalidArgumentException($midocoCustomerTravelArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerTravel = $midocoCustomerTravel;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeletePrintRecipientRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeletePrintRecipientRequest extends AbstractStructBase
 {
     /**
      * The MidocoPrintRecipient
      * Meta information extracted from the WSDL
      * - ref: MidocoPrintRecipient
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $MidocoPrintRecipient = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient $MidocoPrintRecipient = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +30,10 @@ class DeletePrintRecipientRequest extends AbstractStructBase
      * Constructor method for DeletePrintRecipientRequest
      * @uses DeletePrintRecipientRequest::setMidocoPrintRecipient()
      * @uses DeletePrintRecipientRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient $midocoPrintRecipient
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient $midocoPrintRecipient = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoPrintRecipient($midocoPrintRecipient)
@@ -40,18 +41,18 @@ class DeletePrintRecipientRequest extends AbstractStructBase
     }
     /**
      * Get MidocoPrintRecipient value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient|null
      */
-    public function getMidocoPrintRecipient(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient
+    public function getMidocoPrintRecipient(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient
     {
         return $this->MidocoPrintRecipient;
     }
     /**
      * Set MidocoPrintRecipient value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeletePrintRecipientRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient $midocoPrintRecipient
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeletePrintRecipientRequest
      */
-    public function setMidocoPrintRecipient(?\Pggns\MidocoApi\CrmSD\StructType\MidocoPrintRecipient $midocoPrintRecipient = null): self
+    public function setMidocoPrintRecipient(?\Pggns\MidocoApi\Crmsd\StructType\MidocoPrintRecipient $midocoPrintRecipient = null): self
     {
         $this->MidocoPrintRecipient = $midocoPrintRecipient;
         
@@ -68,7 +69,7 @@ class DeletePrintRecipientRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeletePrintRecipientRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeletePrintRecipientRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

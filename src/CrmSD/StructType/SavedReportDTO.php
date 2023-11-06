@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SavedReportDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavedReportDTO extends AbstractStructBase
 {
     /**
@@ -151,7 +152,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -174,7 +175,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -197,7 +198,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set crtOrgUnit value
      * @param string $crtOrgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setCrtOrgUnit(?string $crtOrgUnit = null): self
     {
@@ -220,7 +221,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -243,7 +244,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set frequency value
      * @param string $frequency
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setFrequency(?string $frequency = null): self
     {
@@ -266,7 +267,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setInherited(?bool $inherited = null): self
     {
@@ -289,7 +290,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set isAutomatic value
      * @param bool $isAutomatic
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setIsAutomatic(?bool $isAutomatic = null): self
     {
@@ -312,7 +313,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set isOriginalReport value
      * @param bool $isOriginalReport
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setIsOriginalReport(?bool $isOriginalReport = null): self
     {
@@ -335,7 +336,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set needsFtp value
      * @param bool $needsFtp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setNeedsFtp(?bool $needsFtp = null): self
     {
@@ -358,7 +359,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set nextDate value
      * @param string $nextDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setNextDate(?string $nextDate = null): self
     {
@@ -381,7 +382,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set outputFormat value
      * @param string $outputFormat
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setOutputFormat(?string $outputFormat = null): self
     {
@@ -404,7 +405,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set reportComment value
      * @param string $reportComment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setReportComment(?string $reportComment = null): self
     {
@@ -427,7 +428,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setReportId(?int $reportId = null): self
     {
@@ -450,7 +451,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -473,7 +474,7 @@ class SavedReportDTO extends AbstractStructBase
     /**
      * Set versionId value
      * @param int $versionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavedReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavedReportDTO
      */
     public function setVersionId(?int $versionId = null): self
     {

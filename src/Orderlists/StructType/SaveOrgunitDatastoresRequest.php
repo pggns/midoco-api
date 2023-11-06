@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveOrgunitDatastoresRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveOrgunitDatastoresRequest extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class SaveOrgunitDatastoresRequest extends AbstractStructBase
         return $this->MidocoOrgunitDatastore;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrgunitDatastore method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrgunitDatastore method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrgunitDatastore method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrgunitDatastoreForArrayConstraintsFromSetMidocoOrgunitDatastore(?array $values = []): string
+    public static function validateMidocoOrgunitDatastoreForArrayConstraintFromSetMidocoOrgunitDatastore(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class SaveOrgunitDatastoresRequest extends AbstractStructBase
     public function setMidocoOrgunitDatastore(?array $midocoOrgunitDatastore = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrgunitDatastoreArrayErrorMessage = self::validateMidocoOrgunitDatastoreForArrayConstraintsFromSetMidocoOrgunitDatastore($midocoOrgunitDatastore))) {
+        if ('' !== ($midocoOrgunitDatastoreArrayErrorMessage = self::validateMidocoOrgunitDatastoreForArrayConstraintFromSetMidocoOrgunitDatastore($midocoOrgunitDatastore))) {
             throw new InvalidArgumentException($midocoOrgunitDatastoreArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrgunitDatastore = $midocoOrgunitDatastore;

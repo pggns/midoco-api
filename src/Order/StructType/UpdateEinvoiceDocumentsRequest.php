@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UpdateEinvoiceDocumentsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UpdateEinvoiceDocumentsRequest extends AbstractStructBase
 {
     /**
@@ -56,12 +57,13 @@ class UpdateEinvoiceDocumentsRequest extends AbstractStructBase
         return $this->einvoiceId;
     }
     /**
-     * This method is responsible for validating the values passed to the setEinvoiceId method
+     * This method is responsible for validating the value(s) passed to the setEinvoiceId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEinvoiceId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEinvoiceIdForArrayConstraintsFromSetEinvoiceId(?array $values = []): string
+    public static function validateEinvoiceIdForArrayConstraintFromSetEinvoiceId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -90,7 +92,7 @@ class UpdateEinvoiceDocumentsRequest extends AbstractStructBase
     public function setEinvoiceId(?array $einvoiceId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($einvoiceIdArrayErrorMessage = self::validateEinvoiceIdForArrayConstraintsFromSetEinvoiceId($einvoiceId))) {
+        if ('' !== ($einvoiceIdArrayErrorMessage = self::validateEinvoiceIdForArrayConstraintFromSetEinvoiceId($einvoiceId))) {
             throw new InvalidArgumentException($einvoiceIdArrayErrorMessage, __LINE__);
         }
         $this->einvoiceId = $einvoiceId;

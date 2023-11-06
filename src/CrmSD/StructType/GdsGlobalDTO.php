@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GdsGlobalDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GdsGlobalDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GdsGlobalDTO extends AbstractStructBase
     /**
      * Set gdsId value
      * @param string $gdsId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsGlobalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsGlobalDTO
      */
     public function setGdsId(?string $gdsId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCurrencyRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCurrencyRequest extends AbstractStructBase
 {
     /**

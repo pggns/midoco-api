@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for flightServiceType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FlightServiceType extends AbstractStructBase
 {
     /**
@@ -549,7 +550,7 @@ class FlightServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($departureDate, true), gettype($departureDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($departureDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $departureDate)) {
+        if (!is_null($departureDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $departureDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($departureDate, true)), __LINE__);
         }
         $this->departureDate = $departureDate;
@@ -576,7 +577,7 @@ class FlightServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($departureTime, true), gettype($departureTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($departureTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $departureTime)) {
+        if (!is_null($departureTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $departureTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($departureTime, true)), __LINE__);
         }
         $this->departureTime = $departureTime;
@@ -603,7 +604,7 @@ class FlightServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($checkinTime, true), gettype($checkinTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($checkinTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $checkinTime)) {
+        if (!is_null($checkinTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $checkinTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($checkinTime, true)), __LINE__);
         }
         $this->checkinTime = $checkinTime;
@@ -630,7 +631,7 @@ class FlightServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($arrivalDate, true), gettype($arrivalDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($arrivalDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $arrivalDate)) {
+        if (!is_null($arrivalDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $arrivalDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($arrivalDate, true)), __LINE__);
         }
         $this->arrivalDate = $arrivalDate;
@@ -657,7 +658,7 @@ class FlightServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($arrivalTime, true), gettype($arrivalTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($arrivalTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $arrivalTime)) {
+        if (!is_null($arrivalTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $arrivalTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($arrivalTime, true)), __LINE__);
         }
         $this->arrivalTime = $arrivalTime;
@@ -880,12 +881,13 @@ class FlightServiceType extends AbstractStructBase
         return $this->meal;
     }
     /**
-     * This method is responsible for validating the values passed to the setMeal method
+     * This method is responsible for validating the value(s) passed to the setMeal method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMeal method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMealForArrayConstraintsFromSetMeal(?array $values = []): string
+    public static function validateMealForArrayConstraintFromSetMeal(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -914,7 +916,7 @@ class FlightServiceType extends AbstractStructBase
     public function setMeal(?array $meal = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mealArrayErrorMessage = self::validateMealForArrayConstraintsFromSetMeal($meal))) {
+        if ('' !== ($mealArrayErrorMessage = self::validateMealForArrayConstraintFromSetMeal($meal))) {
             throw new InvalidArgumentException($mealArrayErrorMessage, __LINE__);
         }
         $this->meal = $meal;
@@ -946,12 +948,13 @@ class FlightServiceType extends AbstractStructBase
         return $this->seat;
     }
     /**
-     * This method is responsible for validating the values passed to the setSeat method
+     * This method is responsible for validating the value(s) passed to the setSeat method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSeat method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSeatForArrayConstraintsFromSetSeat(?array $values = []): string
+    public static function validateSeatForArrayConstraintFromSetSeat(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -980,7 +983,7 @@ class FlightServiceType extends AbstractStructBase
     public function setSeat(?array $seat = null): self
     {
         // validation for constraint: array
-        if ('' !== ($seatArrayErrorMessage = self::validateSeatForArrayConstraintsFromSetSeat($seat))) {
+        if ('' !== ($seatArrayErrorMessage = self::validateSeatForArrayConstraintFromSetSeat($seat))) {
             throw new InvalidArgumentException($seatArrayErrorMessage, __LINE__);
         }
         $this->seat = $seat;
@@ -1150,12 +1153,13 @@ class FlightServiceType extends AbstractStructBase
         return $this->specialServiceRequest;
     }
     /**
-     * This method is responsible for validating the values passed to the setSpecialServiceRequest method
+     * This method is responsible for validating the value(s) passed to the setSpecialServiceRequest method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSpecialServiceRequest method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSpecialServiceRequestForArrayConstraintsFromSetSpecialServiceRequest(?array $values = []): string
+    public static function validateSpecialServiceRequestForArrayConstraintFromSetSpecialServiceRequest(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1184,7 +1188,7 @@ class FlightServiceType extends AbstractStructBase
     public function setSpecialServiceRequest(?array $specialServiceRequest = null): self
     {
         // validation for constraint: array
-        if ('' !== ($specialServiceRequestArrayErrorMessage = self::validateSpecialServiceRequestForArrayConstraintsFromSetSpecialServiceRequest($specialServiceRequest))) {
+        if ('' !== ($specialServiceRequestArrayErrorMessage = self::validateSpecialServiceRequestForArrayConstraintFromSetSpecialServiceRequest($specialServiceRequest))) {
             throw new InvalidArgumentException($specialServiceRequestArrayErrorMessage, __LINE__);
         }
         $this->specialServiceRequest = $specialServiceRequest;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CalculateSubjectRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CalculateSubjectRequest extends AbstractStructBase
 {
     /**
@@ -19,16 +20,16 @@ class CalculateSubjectRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSubjectElement
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement[]
      */
     protected ?array $MidocoSubjectElement = null;
     /**
      * The MidocoCrmPrintType
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmPrintType
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType $MidocoCrmPrintType = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType $MidocoCrmPrintType = null;
     /**
      * The orderNo
      * @var int|null
@@ -69,8 +70,8 @@ class CalculateSubjectRequest extends AbstractStructBase
      * @uses CalculateSubjectRequest::setSubjectText()
      * @uses CalculateSubjectRequest::setId()
      * @uses CalculateSubjectRequest::setDocumentId()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement[] $midocoSubjectElement
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType $midocoCrmPrintType
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement[] $midocoSubjectElement
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType $midocoCrmPrintType
      * @param int $orderNo
      * @param int $customerId
      * @param int $documentNo
@@ -78,7 +79,7 @@ class CalculateSubjectRequest extends AbstractStructBase
      * @param string $id
      * @param int $documentId
      */
-    public function __construct(?array $midocoSubjectElement = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType $midocoCrmPrintType = null, ?int $orderNo = null, ?int $customerId = null, ?int $documentNo = null, ?string $subjectText = null, ?string $id = null, ?int $documentId = null)
+    public function __construct(?array $midocoSubjectElement = null, ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType $midocoCrmPrintType = null, ?int $orderNo = null, ?int $customerId = null, ?int $documentNo = null, ?string $subjectText = null, ?string $id = null, ?int $documentId = null)
     {
         $this
             ->setMidocoSubjectElement($midocoSubjectElement)
@@ -92,19 +93,20 @@ class CalculateSubjectRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSubjectElement value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement[]
      */
     public function getMidocoSubjectElement(): ?array
     {
         return $this->MidocoSubjectElement;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSubjectElement method
+     * This method is responsible for validating the value(s) passed to the setMidocoSubjectElement method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSubjectElement method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSubjectElementForArrayConstraintsFromSetMidocoSubjectElement(?array $values = []): string
+    public static function validateMidocoSubjectElementForArrayConstraintFromSetMidocoSubjectElement(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -113,12 +115,12 @@ class CalculateSubjectRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calculateSubjectRequestMidocoSubjectElementItem) {
             // validation for constraint: itemType
-            if (!$calculateSubjectRequestMidocoSubjectElementItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement) {
+            if (!$calculateSubjectRequestMidocoSubjectElementItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement) {
                 $invalidValues[] = is_object($calculateSubjectRequestMidocoSubjectElementItem) ? get_class($calculateSubjectRequestMidocoSubjectElementItem) : sprintf('%s(%s)', gettype($calculateSubjectRequestMidocoSubjectElementItem), var_export($calculateSubjectRequestMidocoSubjectElementItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -127,13 +129,13 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Set MidocoSubjectElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement[] $midocoSubjectElement
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement[] $midocoSubjectElement
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
     public function setMidocoSubjectElement(?array $midocoSubjectElement = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSubjectElementArrayErrorMessage = self::validateMidocoSubjectElementForArrayConstraintsFromSetMidocoSubjectElement($midocoSubjectElement))) {
+        if ('' !== ($midocoSubjectElementArrayErrorMessage = self::validateMidocoSubjectElementForArrayConstraintFromSetMidocoSubjectElement($midocoSubjectElement))) {
             throw new InvalidArgumentException($midocoSubjectElementArrayErrorMessage, __LINE__);
         }
         $this->MidocoSubjectElement = $midocoSubjectElement;
@@ -143,14 +145,14 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Add item to MidocoSubjectElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
-    public function addToMidocoSubjectElement(\Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement $item): self
+    public function addToMidocoSubjectElement(\Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement) {
-            throw new InvalidArgumentException(sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoSubjectElement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement) {
+            throw new InvalidArgumentException(sprintf('The MidocoSubjectElement property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoSubjectElement, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSubjectElement[] = $item;
         
@@ -158,18 +160,18 @@ class CalculateSubjectRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmPrintType value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType|null
      */
-    public function getMidocoCrmPrintType(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType
+    public function getMidocoCrmPrintType(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType
     {
         return $this->MidocoCrmPrintType;
     }
     /**
      * Set MidocoCrmPrintType value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType $midocoCrmPrintType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType $midocoCrmPrintType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
-    public function setMidocoCrmPrintType(?\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPrintType $midocoCrmPrintType = null): self
+    public function setMidocoCrmPrintType(?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPrintType $midocoCrmPrintType = null): self
     {
         $this->MidocoCrmPrintType = $midocoCrmPrintType;
         
@@ -186,7 +188,7 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
     public function setOrderNo(?int $orderNo = null): self
     {
@@ -209,7 +211,7 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -232,7 +234,7 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Set documentNo value
      * @param int $documentNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
     public function setDocumentNo(?int $documentNo = null): self
     {
@@ -255,7 +257,7 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Set subjectText value
      * @param string $subjectText
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
     public function setSubjectText(?string $subjectText = null): self
     {
@@ -278,7 +280,7 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
     public function setId(?string $id = null): self
     {
@@ -301,7 +303,7 @@ class CalculateSubjectRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

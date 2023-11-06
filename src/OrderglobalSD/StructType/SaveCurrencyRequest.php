@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCurrencyRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCurrencyRequest extends AbstractStructBase
 {
     /**

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: return the fee types localizations that match the criteria
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListMidocoFeeTypesLocalResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class ListMidocoFeeTypesLocalResponse extends AbstractStructBase
         return $this->MidocoFeeTypeLocal;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFeeTypeLocal method
+     * This method is responsible for validating the value(s) passed to the setMidocoFeeTypeLocal method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFeeTypeLocal method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFeeTypeLocalForArrayConstraintsFromSetMidocoFeeTypeLocal(?array $values = []): string
+    public static function validateMidocoFeeTypeLocalForArrayConstraintFromSetMidocoFeeTypeLocal(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class ListMidocoFeeTypesLocalResponse extends AbstractStructBase
     public function setMidocoFeeTypeLocal(?array $midocoFeeTypeLocal = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFeeTypeLocalArrayErrorMessage = self::validateMidocoFeeTypeLocalForArrayConstraintsFromSetMidocoFeeTypeLocal($midocoFeeTypeLocal))) {
+        if ('' !== ($midocoFeeTypeLocalArrayErrorMessage = self::validateMidocoFeeTypeLocalForArrayConstraintFromSetMidocoFeeTypeLocal($midocoFeeTypeLocal))) {
             throw new InvalidArgumentException($midocoFeeTypeLocalArrayErrorMessage, __LINE__);
         }
         $this->MidocoFeeTypeLocal = $midocoFeeTypeLocal;

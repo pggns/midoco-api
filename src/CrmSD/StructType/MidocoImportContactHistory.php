@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoImportContactHistory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoImportContactHistory extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportContactHistory
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -94,7 +95,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set contactTypeId value
      * @param string $contactTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportContactHistory
      */
     public function setContactTypeId(?string $contactTypeId = null): self
     {
@@ -117,7 +118,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set contactDescription value
      * @param string $contactDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportContactHistory
      */
     public function setContactDescription(?string $contactDescription = null): self
     {
@@ -140,7 +141,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set contactDirection value
      * @param string $contactDirection
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportContactHistory
      */
     public function setContactDirection(?string $contactDirection = null): self
     {
@@ -163,7 +164,7 @@ class MidocoImportContactHistory extends AbstractStructBase
     /**
      * Set userId value
      * @param string $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportContactHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportContactHistory
      */
     public function setUserId(?string $userId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDatabasesForOrgunitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDatabasesForOrgunitResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDatabaseType
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType[]
      */
     protected ?array $MidocoDatabaseType = null;
     /**
      * Constructor method for GetDatabasesForOrgunitResponse
      * @uses GetDatabasesForOrgunitResponse::setMidocoDatabaseType()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType[] $midocoDatabaseType
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType[] $midocoDatabaseType
      */
     public function __construct(?array $midocoDatabaseType = null)
     {
@@ -34,19 +35,20 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDatabaseType value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType[]
      */
     public function getMidocoDatabaseType(): ?array
     {
         return $this->MidocoDatabaseType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDatabaseType method
+     * This method is responsible for validating the value(s) passed to the setMidocoDatabaseType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDatabaseType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDatabaseTypeForArrayConstraintsFromSetMidocoDatabaseType(?array $values = []): string
+    public static function validateMidocoDatabaseTypeForArrayConstraintFromSetMidocoDatabaseType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDatabasesForOrgunitResponseMidocoDatabaseTypeItem) {
             // validation for constraint: itemType
-            if (!$getDatabasesForOrgunitResponseMidocoDatabaseTypeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType) {
+            if (!$getDatabasesForOrgunitResponseMidocoDatabaseTypeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType) {
                 $invalidValues[] = is_object($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem) ? get_class($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem) : sprintf('%s(%s)', gettype($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem), var_export($getDatabasesForOrgunitResponseMidocoDatabaseTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
     /**
      * Set MidocoDatabaseType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType[] $midocoDatabaseType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDatabasesForOrgunitResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType[] $midocoDatabaseType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDatabasesForOrgunitResponse
      */
     public function setMidocoDatabaseType(?array $midocoDatabaseType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDatabaseTypeArrayErrorMessage = self::validateMidocoDatabaseTypeForArrayConstraintsFromSetMidocoDatabaseType($midocoDatabaseType))) {
+        if ('' !== ($midocoDatabaseTypeArrayErrorMessage = self::validateMidocoDatabaseTypeForArrayConstraintFromSetMidocoDatabaseType($midocoDatabaseType))) {
             throw new InvalidArgumentException($midocoDatabaseTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoDatabaseType = $midocoDatabaseType;
@@ -85,14 +87,14 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
     /**
      * Add item to MidocoDatabaseType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDatabasesForOrgunitResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDatabasesForOrgunitResponse
      */
-    public function addToMidocoDatabaseType(\Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType $item): self
+    public function addToMidocoDatabaseType(\Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType) {
-            throw new InvalidArgumentException(sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType) {
+            throw new InvalidArgumentException(sprintf('The MidocoDatabaseType property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDatabaseType[] = $item;
         

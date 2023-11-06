@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getDocuments --- returns the list of documents corresponding to a campaign having the id CampaignId
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMisCampaignDocumentsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetMisCampaignDocumentsResponse extends AbstractStructBase
         return $this->MidocoMisCampaignDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisCampaignDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisCampaignDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisCampaignDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisCampaignDocumentForArrayConstraintsFromSetMidocoMisCampaignDocument(?array $values = []): string
+    public static function validateMidocoMisCampaignDocumentForArrayConstraintFromSetMidocoMisCampaignDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetMisCampaignDocumentsResponse extends AbstractStructBase
     public function setMidocoMisCampaignDocument(?array $midocoMisCampaignDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisCampaignDocumentArrayErrorMessage = self::validateMidocoMisCampaignDocumentForArrayConstraintsFromSetMidocoMisCampaignDocument($midocoMisCampaignDocument))) {
+        if ('' !== ($midocoMisCampaignDocumentArrayErrorMessage = self::validateMidocoMisCampaignDocumentForArrayConstraintFromSetMidocoMisCampaignDocument($midocoMisCampaignDocument))) {
             throw new InvalidArgumentException($midocoMisCampaignDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisCampaignDocument = $midocoMisCampaignDocument;

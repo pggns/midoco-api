@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AdapterAttrDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AdapterAttrDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class AdapterAttrDTO extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAttrDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAttrDTO
      */
     public function setAdapterId(?string $adapterId = null): self
     {
@@ -86,7 +87,7 @@ class AdapterAttrDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAttrDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAttrDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -109,7 +110,7 @@ class AdapterAttrDTO extends AbstractStructBase
     /**
      * Set attrValue value
      * @param string $attrValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAttrDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAttrDTO
      */
     public function setAttrValue(?string $attrValue = null): self
     {
@@ -132,7 +133,7 @@ class AdapterAttrDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAttrDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAttrDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

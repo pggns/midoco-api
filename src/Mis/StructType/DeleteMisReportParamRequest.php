@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteMisReportParamRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMisReportParamRequest extends AbstractStructBase
 {
     /**

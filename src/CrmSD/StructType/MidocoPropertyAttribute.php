@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoPropertyAttribute StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoPropertyAttribute extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set attribute value
      * @param string $attribute
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPropertyAttribute
      */
     public function setAttribute(?string $attribute = null): self
     {
@@ -94,7 +95,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPropertyAttribute
      */
     public function setPosition(?int $position = null): self
     {
@@ -117,7 +118,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set visible value
      * @param bool $visible
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPropertyAttribute
      */
     public function setVisible(?bool $visible = null): self
     {
@@ -140,7 +141,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set maxLength value
      * @param int $maxLength
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPropertyAttribute
      */
     public function setMaxLength(?int $maxLength = null): self
     {
@@ -163,7 +164,7 @@ class MidocoPropertyAttribute extends AbstractStructBase
     /**
      * Set preferredWidth value
      * @param int $preferredWidth
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPropertyAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPropertyAttribute
      */
     public function setPreferredWidth(?int $preferredWidth = null): self
     {

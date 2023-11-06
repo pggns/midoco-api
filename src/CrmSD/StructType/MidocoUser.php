@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoUser StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoUser extends UserDTO
 {
     /**
@@ -19,13 +20,13 @@ class MidocoUser extends UserDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrsExpedient
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO[]
      */
     protected ?array $MidocoCrsExpedient = null;
     /**
      * Constructor method for MidocoUser
      * @uses MidocoUser::setMidocoCrsExpedient()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO[] $midocoCrsExpedient
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO[] $midocoCrsExpedient
      */
     public function __construct(?array $midocoCrsExpedient = null)
     {
@@ -34,19 +35,20 @@ class MidocoUser extends UserDTO
     }
     /**
      * Get MidocoCrsExpedient value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO[]
      */
     public function getMidocoCrsExpedient(): ?array
     {
         return $this->MidocoCrsExpedient;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrsExpedient method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrsExpedient method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrsExpedient method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrsExpedientForArrayConstraintsFromSetMidocoCrsExpedient(?array $values = []): string
+    public static function validateMidocoCrsExpedientForArrayConstraintFromSetMidocoCrsExpedient(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class MidocoUser extends UserDTO
         $invalidValues = [];
         foreach ($values as $midocoUserMidocoCrsExpedientItem) {
             // validation for constraint: itemType
-            if (!$midocoUserMidocoCrsExpedientItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO) {
+            if (!$midocoUserMidocoCrsExpedientItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO) {
                 $invalidValues[] = is_object($midocoUserMidocoCrsExpedientItem) ? get_class($midocoUserMidocoCrsExpedientItem) : sprintf('%s(%s)', gettype($midocoUserMidocoCrsExpedientItem), var_export($midocoUserMidocoCrsExpedientItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class MidocoUser extends UserDTO
     /**
      * Set MidocoCrsExpedient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO[] $midocoCrsExpedient
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUser
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO[] $midocoCrsExpedient
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUser
      */
     public function setMidocoCrsExpedient(?array $midocoCrsExpedient = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrsExpedientArrayErrorMessage = self::validateMidocoCrsExpedientForArrayConstraintsFromSetMidocoCrsExpedient($midocoCrsExpedient))) {
+        if ('' !== ($midocoCrsExpedientArrayErrorMessage = self::validateMidocoCrsExpedientForArrayConstraintFromSetMidocoCrsExpedient($midocoCrsExpedient))) {
             throw new InvalidArgumentException($midocoCrsExpedientArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrsExpedient = $midocoCrsExpedient;
@@ -85,14 +87,14 @@ class MidocoUser extends UserDTO
     /**
      * Add item to MidocoCrsExpedient value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUser
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUser
      */
-    public function addToMidocoCrsExpedient(\Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO $item): self
+    public function addToMidocoCrsExpedient(\Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrsExpedient property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrsExpedient[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMidocoAttributeChoiceValueRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
 {
     /**
      * The MidocoSystemAttributeChoiceValue
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemAttributeChoiceValue
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO $MidocoSystemAttributeChoiceValue = null;
     /**
      * The isNew
      * @var bool|null
@@ -29,10 +30,10 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
      * Constructor method for SaveMidocoAttributeChoiceValueRequest
      * @uses SaveMidocoAttributeChoiceValueRequest::setMidocoSystemAttributeChoiceValue()
      * @uses SaveMidocoAttributeChoiceValueRequest::setIsNew()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
      * @param bool $isNew
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null, ?bool $isNew = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null, ?bool $isNew = null)
     {
         $this
             ->setMidocoSystemAttributeChoiceValue($midocoSystemAttributeChoiceValue)
@@ -40,18 +41,18 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeChoiceValue value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO|null
      */
-    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO
+    public function getMidocoSystemAttributeChoiceValue(): ?\Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO
     {
         return $this->MidocoSystemAttributeChoiceValue;
     }
     /**
      * Set MidocoSystemAttributeChoiceValue value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAttributeChoiceValueRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMidocoAttributeChoiceValueRequest
      */
-    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
+    public function setMidocoSystemAttributeChoiceValue(?\Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO $midocoSystemAttributeChoiceValue = null): self
     {
         $this->MidocoSystemAttributeChoiceValue = $midocoSystemAttributeChoiceValue;
         
@@ -68,7 +69,7 @@ class SaveMidocoAttributeChoiceValueRequest extends AbstractStructBase
     /**
      * Set isNew value
      * @param bool $isNew
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoAttributeChoiceValueRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMidocoAttributeChoiceValueRequest
      */
     public function setIsNew(?bool $isNew = null): self
     {

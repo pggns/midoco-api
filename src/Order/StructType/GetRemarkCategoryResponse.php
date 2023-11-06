@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetRemarkCategoryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetRemarkCategoryResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetRemarkCategoryResponse extends AbstractStructBase
         return $this->MidocoRemarkCategory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRemarkCategory method
+     * This method is responsible for validating the value(s) passed to the setMidocoRemarkCategory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRemarkCategory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRemarkCategoryForArrayConstraintsFromSetMidocoRemarkCategory(?array $values = []): string
+    public static function validateMidocoRemarkCategoryForArrayConstraintFromSetMidocoRemarkCategory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetRemarkCategoryResponse extends AbstractStructBase
     public function setMidocoRemarkCategory(?array $midocoRemarkCategory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRemarkCategoryArrayErrorMessage = self::validateMidocoRemarkCategoryForArrayConstraintsFromSetMidocoRemarkCategory($midocoRemarkCategory))) {
+        if ('' !== ($midocoRemarkCategoryArrayErrorMessage = self::validateMidocoRemarkCategoryForArrayConstraintFromSetMidocoRemarkCategory($midocoRemarkCategory))) {
             throw new InvalidArgumentException($midocoRemarkCategoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoRemarkCategory = $midocoRemarkCategory;

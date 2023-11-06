@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoAttributeDefinitionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoAttributeDefinitionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoAttributeDefinitionResponse extends AbstractStructBase
         return $this->MidocoSystemAttributeDefinition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSystemAttributeDefinition method
+     * This method is responsible for validating the value(s) passed to the setMidocoSystemAttributeDefinition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSystemAttributeDefinition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSystemAttributeDefinitionForArrayConstraintsFromSetMidocoSystemAttributeDefinition(?array $values = []): string
+    public static function validateMidocoSystemAttributeDefinitionForArrayConstraintFromSetMidocoSystemAttributeDefinition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoAttributeDefinitionResponse extends AbstractStructBase
     public function setMidocoSystemAttributeDefinition(?array $midocoSystemAttributeDefinition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSystemAttributeDefinitionArrayErrorMessage = self::validateMidocoSystemAttributeDefinitionForArrayConstraintsFromSetMidocoSystemAttributeDefinition($midocoSystemAttributeDefinition))) {
+        if ('' !== ($midocoSystemAttributeDefinitionArrayErrorMessage = self::validateMidocoSystemAttributeDefinitionForArrayConstraintFromSetMidocoSystemAttributeDefinition($midocoSystemAttributeDefinition))) {
             throw new InvalidArgumentException($midocoSystemAttributeDefinitionArrayErrorMessage, __LINE__);
         }
         $this->MidocoSystemAttributeDefinition = $midocoSystemAttributeDefinition;

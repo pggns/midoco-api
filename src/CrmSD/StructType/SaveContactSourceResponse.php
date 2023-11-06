@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveContactSource --- saves a ContactSource. returns void
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveContactSourceResponse extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class SaveContactSourceResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveContactSourceResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveContactSourceResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

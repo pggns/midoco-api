@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExpireCcProxySingleUseTokensResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExpireCcProxySingleUseTokensResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class ExpireCcProxySingleUseTokensResponse extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExpireCcProxySingleUseTokensResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExpireCcProxySingleUseTokensResponse
      */
     public function setCount(?int $count = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoProfileAttribute StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoProfileAttribute extends AbstractStructBase
 {
     /**
@@ -65,12 +66,13 @@ class MidocoProfileAttribute extends AbstractStructBase
         return $this->GdsProfileAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setGdsProfileAttribute method
+     * This method is responsible for validating the value(s) passed to the setGdsProfileAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGdsProfileAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGdsProfileAttributeForArrayConstraintsFromSetGdsProfileAttribute(?array $values = []): string
+    public static function validateGdsProfileAttributeForArrayConstraintFromSetGdsProfileAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,7 +101,7 @@ class MidocoProfileAttribute extends AbstractStructBase
     public function setGdsProfileAttribute(?array $gdsProfileAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($gdsProfileAttributeArrayErrorMessage = self::validateGdsProfileAttributeForArrayConstraintsFromSetGdsProfileAttribute($gdsProfileAttribute))) {
+        if ('' !== ($gdsProfileAttributeArrayErrorMessage = self::validateGdsProfileAttributeForArrayConstraintFromSetGdsProfileAttribute($gdsProfileAttribute))) {
             throw new InvalidArgumentException($gdsProfileAttributeArrayErrorMessage, __LINE__);
         }
         $this->GdsProfileAttribute = $gdsProfileAttribute;

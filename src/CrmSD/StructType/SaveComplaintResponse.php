@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveComplaint --- saves a complaint
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveComplaintResponse extends AbstractStructBase
 {
     /**
@@ -49,7 +50,7 @@ class SaveComplaintResponse extends AbstractStructBase
     /**
      * Set complaintId value
      * @param int $complaintId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveComplaintResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveComplaintResponse
      */
     public function setComplaintId(?int $complaintId = null): self
     {
@@ -72,7 +73,7 @@ class SaveComplaintResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveComplaintResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveComplaintResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPaymentProvidersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPaymentProvidersResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetPaymentProvidersResponse extends AbstractStructBase
         return $this->MidocoPaymentProvider;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPaymentProvider method
+     * This method is responsible for validating the value(s) passed to the setMidocoPaymentProvider method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPaymentProvider method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPaymentProviderForArrayConstraintsFromSetMidocoPaymentProvider(?array $values = []): string
+    public static function validateMidocoPaymentProviderForArrayConstraintFromSetMidocoPaymentProvider(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetPaymentProvidersResponse extends AbstractStructBase
     public function setMidocoPaymentProvider(?array $midocoPaymentProvider = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPaymentProviderArrayErrorMessage = self::validateMidocoPaymentProviderForArrayConstraintsFromSetMidocoPaymentProvider($midocoPaymentProvider))) {
+        if ('' !== ($midocoPaymentProviderArrayErrorMessage = self::validateMidocoPaymentProviderForArrayConstraintFromSetMidocoPaymentProvider($midocoPaymentProvider))) {
             throw new InvalidArgumentException($midocoPaymentProviderArrayErrorMessage, __LINE__);
         }
         $this->MidocoPaymentProvider = $midocoPaymentProvider;

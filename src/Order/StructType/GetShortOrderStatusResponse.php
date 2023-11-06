@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetShortOrderStatusResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetShortOrderStatusResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetShortOrderStatusResponse extends AbstractStructBase
         return $this->bookingStatus;
     }
     /**
-     * This method is responsible for validating the values passed to the setBookingStatus method
+     * This method is responsible for validating the value(s) passed to the setBookingStatus method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBookingStatus method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBookingStatusForArrayConstraintsFromSetBookingStatus(?array $values = []): string
+    public static function validateBookingStatusForArrayConstraintFromSetBookingStatus(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetShortOrderStatusResponse extends AbstractStructBase
     public function setBookingStatus(?array $bookingStatus = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bookingStatusArrayErrorMessage = self::validateBookingStatusForArrayConstraintsFromSetBookingStatus($bookingStatus))) {
+        if ('' !== ($bookingStatusArrayErrorMessage = self::validateBookingStatusForArrayConstraintFromSetBookingStatus($bookingStatus))) {
             throw new InvalidArgumentException($bookingStatusArrayErrorMessage, __LINE__);
         }
         $this->bookingStatus = $bookingStatus;

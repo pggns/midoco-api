@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ActivityTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ActivityTypeDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class ActivityTypeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ActivityTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ActivityTypeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +71,7 @@ class ActivityTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ActivityTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ActivityTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

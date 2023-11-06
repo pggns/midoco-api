@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for EmailDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class EmailDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class EmailDTO extends AbstractStructBase
     /**
      * Set contentType value
      * @param string $contentType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\EmailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\EmailDTO
      */
     public function setContentType(?string $contentType = null): self
     {
@@ -78,7 +79,7 @@ class EmailDTO extends AbstractStructBase
     /**
      * Set emailSender value
      * @param string $emailSender
-     * @return \Pggns\MidocoApi\CrmSD\StructType\EmailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\EmailDTO
      */
     public function setEmailSender(?string $emailSender = null): self
     {
@@ -101,7 +102,7 @@ class EmailDTO extends AbstractStructBase
     /**
      * Set payloadOption value
      * @param string $payloadOption
-     * @return \Pggns\MidocoApi\CrmSD\StructType\EmailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\EmailDTO
      */
     public function setPayloadOption(?string $payloadOption = null): self
     {

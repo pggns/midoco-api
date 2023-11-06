@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierAccountAssignResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierAccountAssignResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSupplierAccountAssignResponse extends AbstractStructBase
         return $this->MidocoSupplierAccountAssign;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierAccountAssign method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierAccountAssign method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierAccountAssign method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierAccountAssignForArrayConstraintsFromSetMidocoSupplierAccountAssign(?array $values = []): string
+    public static function validateMidocoSupplierAccountAssignForArrayConstraintFromSetMidocoSupplierAccountAssign(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSupplierAccountAssignResponse extends AbstractStructBase
     public function setMidocoSupplierAccountAssign(?array $midocoSupplierAccountAssign = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierAccountAssignArrayErrorMessage = self::validateMidocoSupplierAccountAssignForArrayConstraintsFromSetMidocoSupplierAccountAssign($midocoSupplierAccountAssign))) {
+        if ('' !== ($midocoSupplierAccountAssignArrayErrorMessage = self::validateMidocoSupplierAccountAssignForArrayConstraintFromSetMidocoSupplierAccountAssign($midocoSupplierAccountAssign))) {
             throw new InvalidArgumentException($midocoSupplierAccountAssignArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierAccountAssign = $midocoSupplierAccountAssign;

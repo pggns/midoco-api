@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SupplAgencySettlemBookDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SupplAgencySettlemBookDTO extends AbstractStructBase
 {
     /**
@@ -109,6 +110,11 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
      */
     protected ?int $settlementId = null;
     /**
+     * The settlementParty
+     * @var string|null
+     */
+    protected ?string $settlementParty = null;
+    /**
      * The siCalculatedRevenue
      * @var float|null
      */
@@ -199,6 +205,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
      * @uses SupplAgencySettlemBookDTO::setNoOfPersons()
      * @uses SupplAgencySettlemBookDTO::setPrice()
      * @uses SupplAgencySettlemBookDTO::setSettlementId()
+     * @uses SupplAgencySettlemBookDTO::setSettlementParty()
      * @uses SupplAgencySettlemBookDTO::setSiCalculatedRevenue()
      * @uses SupplAgencySettlemBookDTO::setSiNoOfPersons()
      * @uses SupplAgencySettlemBookDTO::setSiPrice()
@@ -232,6 +239,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
      * @param int $noOfPersons
      * @param float $price
      * @param int $settlementId
+     * @param string $settlementParty
      * @param float $siCalculatedRevenue
      * @param int $siNoOfPersons
      * @param float $siPrice
@@ -247,7 +255,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
      * @param string $traveltype
      * @param string $unitName
      */
-    public function __construct(?string $backupData = null, ?bool $booked = null, ?string $bookingId = null, ?int $bookingPosition = null, ?string $bookingType = null, ?float $calculatedRevenue = null, ?bool $checked = null, ?string $currency = null, ?bool $diffManualChecked = null, ?string $documentNo = null, ?string $documentType = null, ?int $errors = null, ?float $exchangeRate = null, ?string $invoiceDate = null, ?int $itemId = null, ?bool $manualJournalBooking = null, ?int $noOfPersons = null, ?float $price = null, ?int $settlementId = null, ?float $siCalculatedRevenue = null, ?int $siNoOfPersons = null, ?float $siPrice = null, ?string $siStatus = null, ?string $siTravelDate = null, ?string $siTravelType = null, ?string $siUnitName = null, ?bool $skipBooking = null, ?string $supplierAgencyNo = null, ?string $supplierId = null, ?string $travelDate = null, ?string $traveller = null, ?string $traveltype = null, ?string $unitName = null)
+    public function __construct(?string $backupData = null, ?bool $booked = null, ?string $bookingId = null, ?int $bookingPosition = null, ?string $bookingType = null, ?float $calculatedRevenue = null, ?bool $checked = null, ?string $currency = null, ?bool $diffManualChecked = null, ?string $documentNo = null, ?string $documentType = null, ?int $errors = null, ?float $exchangeRate = null, ?string $invoiceDate = null, ?int $itemId = null, ?bool $manualJournalBooking = null, ?int $noOfPersons = null, ?float $price = null, ?int $settlementId = null, ?string $settlementParty = null, ?float $siCalculatedRevenue = null, ?int $siNoOfPersons = null, ?float $siPrice = null, ?string $siStatus = null, ?string $siTravelDate = null, ?string $siTravelType = null, ?string $siUnitName = null, ?bool $skipBooking = null, ?string $supplierAgencyNo = null, ?string $supplierId = null, ?string $travelDate = null, ?string $traveller = null, ?string $traveltype = null, ?string $unitName = null)
     {
         $this
             ->setBackupData($backupData)
@@ -269,6 +277,7 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
             ->setNoOfPersons($noOfPersons)
             ->setPrice($price)
             ->setSettlementId($settlementId)
+            ->setSettlementParty($settlementParty)
             ->setSiCalculatedRevenue($siCalculatedRevenue)
             ->setSiNoOfPersons($siNoOfPersons)
             ->setSiPrice($siPrice)
@@ -718,6 +727,29 @@ class SupplAgencySettlemBookDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($settlementId, true), gettype($settlementId)), __LINE__);
         }
         $this->settlementId = $settlementId;
+        
+        return $this;
+    }
+    /**
+     * Get settlementParty value
+     * @return string|null
+     */
+    public function getSettlementParty(): ?string
+    {
+        return $this->settlementParty;
+    }
+    /**
+     * Set settlementParty value
+     * @param string $settlementParty
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplAgencySettlemBookDTO
+     */
+    public function setSettlementParty(?string $settlementParty = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementParty) && !is_string($settlementParty)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementParty, true), gettype($settlementParty)), __LINE__);
+        }
+        $this->settlementParty = $settlementParty;
         
         return $this;
     }

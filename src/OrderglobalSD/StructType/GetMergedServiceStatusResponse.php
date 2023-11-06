@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMergedServiceStatusResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMergedServiceStatusResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMergedServiceStatusResponse extends AbstractStructBase
         return $this->MidocoServiceStatus;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoServiceStatus method
+     * This method is responsible for validating the value(s) passed to the setMidocoServiceStatus method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoServiceStatus method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoServiceStatusForArrayConstraintsFromSetMidocoServiceStatus(?array $values = []): string
+    public static function validateMidocoServiceStatusForArrayConstraintFromSetMidocoServiceStatus(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMergedServiceStatusResponse extends AbstractStructBase
     public function setMidocoServiceStatus(?array $midocoServiceStatus = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoServiceStatusArrayErrorMessage = self::validateMidocoServiceStatusForArrayConstraintsFromSetMidocoServiceStatus($midocoServiceStatus))) {
+        if ('' !== ($midocoServiceStatusArrayErrorMessage = self::validateMidocoServiceStatusForArrayConstraintFromSetMidocoServiceStatus($midocoServiceStatus))) {
             throw new InvalidArgumentException($midocoServiceStatusArrayErrorMessage, __LINE__);
         }
         $this->MidocoServiceStatus = $midocoServiceStatus;

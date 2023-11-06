@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUserWithCrsExpedientRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUserWithCrsExpedientRequest extends AbstractStructBase
 {
     /**
@@ -62,12 +63,13 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
         return $this->MidocoUser;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoUser method
+     * This method is responsible for validating the value(s) passed to the setMidocoUser method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoUser method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoUserForArrayConstraintsFromSetMidocoUser(?array $values = []): string
+    public static function validateMidocoUserForArrayConstraintFromSetMidocoUser(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -96,7 +98,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
     public function setMidocoUser(?array $midocoUser = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoUserArrayErrorMessage = self::validateMidocoUserForArrayConstraintsFromSetMidocoUser($midocoUser))) {
+        if ('' !== ($midocoUserArrayErrorMessage = self::validateMidocoUserForArrayConstraintFromSetMidocoUser($midocoUser))) {
             throw new InvalidArgumentException($midocoUserArrayErrorMessage, __LINE__);
         }
         $this->MidocoUser = $midocoUser;
@@ -128,12 +130,13 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
         return $this->crs;
     }
     /**
-     * This method is responsible for validating the values passed to the setCrs method
+     * This method is responsible for validating the value(s) passed to the setCrs method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCrs method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCrsForArrayConstraintsFromSetCrs(?array $values = []): string
+    public static function validateCrsForArrayConstraintFromSetCrs(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -162,7 +165,7 @@ class GetUserWithCrsExpedientRequest extends AbstractStructBase
     public function setCrs(?array $crs = null): self
     {
         // validation for constraint: array
-        if ('' !== ($crsArrayErrorMessage = self::validateCrsForArrayConstraintsFromSetCrs($crs))) {
+        if ('' !== ($crsArrayErrorMessage = self::validateCrsForArrayConstraintFromSetCrs($crs))) {
             throw new InvalidArgumentException($crsArrayErrorMessage, __LINE__);
         }
         $this->crs = $crs;

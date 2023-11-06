@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoQueryMetadata StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoQueryMetadata extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class MidocoQueryMetadata extends AbstractStructBase
         return $this->MidocoQueryField;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoQueryField method
+     * This method is responsible for validating the value(s) passed to the setMidocoQueryField method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoQueryField method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoQueryFieldForArrayConstraintsFromSetMidocoQueryField(?array $values = []): string
+    public static function validateMidocoQueryFieldForArrayConstraintFromSetMidocoQueryField(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class MidocoQueryMetadata extends AbstractStructBase
     public function setMidocoQueryField(?array $midocoQueryField = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoQueryFieldArrayErrorMessage = self::validateMidocoQueryFieldForArrayConstraintsFromSetMidocoQueryField($midocoQueryField))) {
+        if ('' !== ($midocoQueryFieldArrayErrorMessage = self::validateMidocoQueryFieldForArrayConstraintFromSetMidocoQueryField($midocoQueryField))) {
             throw new InvalidArgumentException($midocoQueryFieldArrayErrorMessage, __LINE__);
         }
         $this->MidocoQueryField = $midocoQueryField;

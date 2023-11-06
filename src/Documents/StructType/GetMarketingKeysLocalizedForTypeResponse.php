@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMarketingKeysLocalizedForTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
         return $this->MidocoMarketingKeyLocalized;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMarketingKeyLocalized method
+     * This method is responsible for validating the value(s) passed to the setMidocoMarketingKeyLocalized method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMarketingKeyLocalized method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMarketingKeyLocalizedForArrayConstraintsFromSetMidocoMarketingKeyLocalized(?array $values = []): string
+    public static function validateMidocoMarketingKeyLocalizedForArrayConstraintFromSetMidocoMarketingKeyLocalized(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMarketingKeysLocalizedForTypeResponse extends AbstractStructBase
     public function setMidocoMarketingKeyLocalized(?array $midocoMarketingKeyLocalized = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMarketingKeyLocalizedArrayErrorMessage = self::validateMidocoMarketingKeyLocalizedForArrayConstraintsFromSetMidocoMarketingKeyLocalized($midocoMarketingKeyLocalized))) {
+        if ('' !== ($midocoMarketingKeyLocalizedArrayErrorMessage = self::validateMidocoMarketingKeyLocalizedForArrayConstraintFromSetMidocoMarketingKeyLocalized($midocoMarketingKeyLocalized))) {
             throw new InvalidArgumentException($midocoMarketingKeyLocalizedArrayErrorMessage, __LINE__);
         }
         $this->MidocoMarketingKeyLocalized = $midocoMarketingKeyLocalized;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteServiceStatusRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteServiceStatusRequest extends AbstractStructBase
 {
     /**

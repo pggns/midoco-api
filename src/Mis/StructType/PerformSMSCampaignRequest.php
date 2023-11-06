@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PerformSMSCampaignRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PerformSMSCampaignRequest extends AbstractStructBase
 {
     /**

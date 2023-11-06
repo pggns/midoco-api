@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: searchMisReport --- returns the list of mis reports that correspond to the given template (a MidocoMisReport)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchMisReportResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class SearchMisReportResponse extends AbstractStructBase
         return $this->MidocoMisReportInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisReportInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisReportInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisReportInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisReportInfoForArrayConstraintsFromSetMidocoMisReportInfo(?array $values = []): string
+    public static function validateMidocoMisReportInfoForArrayConstraintFromSetMidocoMisReportInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class SearchMisReportResponse extends AbstractStructBase
     public function setMidocoMisReportInfo(?array $midocoMisReportInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisReportInfoArrayErrorMessage = self::validateMidocoMisReportInfoForArrayConstraintsFromSetMidocoMisReportInfo($midocoMisReportInfo))) {
+        if ('' !== ($midocoMisReportInfoArrayErrorMessage = self::validateMidocoMisReportInfoForArrayConstraintFromSetMidocoMisReportInfo($midocoMisReportInfo))) {
             throw new InvalidArgumentException($midocoMisReportInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisReportInfo = $midocoMisReportInfo;

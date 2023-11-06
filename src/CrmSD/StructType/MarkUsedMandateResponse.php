@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MarkUsedMandateResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MarkUsedMandateResponse extends AbstractStructBase
 {
     /**
@@ -61,7 +62,7 @@ class MarkUsedMandateResponse extends AbstractStructBase
     /**
      * Set PrintJob value
      * @param string $printJob
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkUsedMandateResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MarkUsedMandateResponse
      */
     public function setPrintJob(string $printJob): self
     {
@@ -84,7 +85,7 @@ class MarkUsedMandateResponse extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkUsedMandateResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MarkUsedMandateResponse
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -107,7 +108,7 @@ class MarkUsedMandateResponse extends AbstractStructBase
     /**
      * Set lastUsed value
      * @param string $lastUsed
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkUsedMandateResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MarkUsedMandateResponse
      */
     public function setLastUsed(?string $lastUsed = null): self
     {

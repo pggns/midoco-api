@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for NovomindNewEmailJSONRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class NovomindNewEmailJSONRequest extends AbstractStructBase
 {
     /**

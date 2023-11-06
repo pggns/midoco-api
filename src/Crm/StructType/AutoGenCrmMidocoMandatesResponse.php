@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AutoGenCrmMidocoMandatesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
         return $this->MidocoMandateGenErrorCrm;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMandateGenErrorCrm method
+     * This method is responsible for validating the value(s) passed to the setMidocoMandateGenErrorCrm method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMandateGenErrorCrm method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMandateGenErrorCrmForArrayConstraintsFromSetMidocoMandateGenErrorCrm(?array $values = []): string
+    public static function validateMidocoMandateGenErrorCrmForArrayConstraintFromSetMidocoMandateGenErrorCrm(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class AutoGenCrmMidocoMandatesResponse extends AbstractStructBase
     public function setMidocoMandateGenErrorCrm(?array $midocoMandateGenErrorCrm = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMandateGenErrorCrmArrayErrorMessage = self::validateMidocoMandateGenErrorCrmForArrayConstraintsFromSetMidocoMandateGenErrorCrm($midocoMandateGenErrorCrm))) {
+        if ('' !== ($midocoMandateGenErrorCrmArrayErrorMessage = self::validateMidocoMandateGenErrorCrmForArrayConstraintFromSetMidocoMandateGenErrorCrm($midocoMandateGenErrorCrm))) {
             throw new InvalidArgumentException($midocoMandateGenErrorCrmArrayErrorMessage, __LINE__);
         }
         $this->MidocoMandateGenErrorCrm = $midocoMandateGenErrorCrm;

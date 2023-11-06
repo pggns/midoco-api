@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoProperty StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoProperty extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class MidocoProperty extends AbstractStructBase
         return $this->MidocoVisibleClass;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVisibleClass method
+     * This method is responsible for validating the value(s) passed to the setMidocoVisibleClass method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVisibleClass method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVisibleClassForArrayConstraintsFromSetMidocoVisibleClass(?array $values = []): string
+    public static function validateMidocoVisibleClassForArrayConstraintFromSetMidocoVisibleClass(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class MidocoProperty extends AbstractStructBase
     public function setMidocoVisibleClass(?array $midocoVisibleClass = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVisibleClassArrayErrorMessage = self::validateMidocoVisibleClassForArrayConstraintsFromSetMidocoVisibleClass($midocoVisibleClass))) {
+        if ('' !== ($midocoVisibleClassArrayErrorMessage = self::validateMidocoVisibleClassForArrayConstraintFromSetMidocoVisibleClass($midocoVisibleClass))) {
             throw new InvalidArgumentException($midocoVisibleClassArrayErrorMessage, __LINE__);
         }
         $this->MidocoVisibleClass = $midocoVisibleClass;

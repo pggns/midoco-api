@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBookingInfo4KickbackResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBookingInfo4KickbackResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetBookingInfo4KickbackResponse extends AbstractStructBase
         return $this->MidocoBookingInfo4Kickback;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBookingInfo4Kickback method
+     * This method is responsible for validating the value(s) passed to the setMidocoBookingInfo4Kickback method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBookingInfo4Kickback method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBookingInfo4KickbackForArrayConstraintsFromSetMidocoBookingInfo4Kickback(?array $values = []): string
+    public static function validateMidocoBookingInfo4KickbackForArrayConstraintFromSetMidocoBookingInfo4Kickback(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetBookingInfo4KickbackResponse extends AbstractStructBase
     public function setMidocoBookingInfo4Kickback(?array $midocoBookingInfo4Kickback = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBookingInfo4KickbackArrayErrorMessage = self::validateMidocoBookingInfo4KickbackForArrayConstraintsFromSetMidocoBookingInfo4Kickback($midocoBookingInfo4Kickback))) {
+        if ('' !== ($midocoBookingInfo4KickbackArrayErrorMessage = self::validateMidocoBookingInfo4KickbackForArrayConstraintFromSetMidocoBookingInfo4Kickback($midocoBookingInfo4Kickback))) {
             throw new InvalidArgumentException($midocoBookingInfo4KickbackArrayErrorMessage, __LINE__);
         }
         $this->MidocoBookingInfo4Kickback = $midocoBookingInfo4Kickback;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDbiCcInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDbiCcInfo extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class MidocoDbiCcInfo extends AbstractStructBase
     /**
      * Set ccToken value
      * @param string $ccToken
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDbiCcInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDbiCcInfo
      */
     public function setCcToken(?string $ccToken = null): self
     {
@@ -110,7 +111,7 @@ class MidocoDbiCcInfo extends AbstractStructBase
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDbiCcInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDbiCcInfo
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {
@@ -133,7 +134,7 @@ class MidocoDbiCcInfo extends AbstractStructBase
     /**
      * Set ccNo value
      * @param string $ccNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDbiCcInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDbiCcInfo
      */
     public function setCcNo(?string $ccNo = null): self
     {
@@ -156,7 +157,7 @@ class MidocoDbiCcInfo extends AbstractStructBase
     /**
      * Set ccType value
      * @param string $ccType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDbiCcInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDbiCcInfo
      */
     public function setCcType(?string $ccType = null): self
     {
@@ -179,7 +180,7 @@ class MidocoDbiCcInfo extends AbstractStructBase
     /**
      * Set ccPublisherId value
      * @param string $ccPublisherId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDbiCcInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDbiCcInfo
      */
     public function setCcPublisherId(?string $ccPublisherId = null): self
     {
@@ -202,7 +203,7 @@ class MidocoDbiCcInfo extends AbstractStructBase
     /**
      * Set ccMaskNo value
      * @param string $ccMaskNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDbiCcInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDbiCcInfo
      */
     public function setCcMaskNo(?string $ccMaskNo = null): self
     {
@@ -225,7 +226,7 @@ class MidocoDbiCcInfo extends AbstractStructBase
     /**
      * Set isRecurring value
      * @param bool $isRecurring
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDbiCcInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDbiCcInfo
      */
     public function setIsRecurring(?bool $isRecurring = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListTourOperatorAddressesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListTourOperatorAddressesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListTourOperatorAddressesResponse extends AbstractStructBase
         return $this->MidocoTourOperatorAddress;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTourOperatorAddress method
+     * This method is responsible for validating the value(s) passed to the setMidocoTourOperatorAddress method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTourOperatorAddress method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTourOperatorAddressForArrayConstraintsFromSetMidocoTourOperatorAddress(?array $values = []): string
+    public static function validateMidocoTourOperatorAddressForArrayConstraintFromSetMidocoTourOperatorAddress(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListTourOperatorAddressesResponse extends AbstractStructBase
     public function setMidocoTourOperatorAddress(?array $midocoTourOperatorAddress = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTourOperatorAddressArrayErrorMessage = self::validateMidocoTourOperatorAddressForArrayConstraintsFromSetMidocoTourOperatorAddress($midocoTourOperatorAddress))) {
+        if ('' !== ($midocoTourOperatorAddressArrayErrorMessage = self::validateMidocoTourOperatorAddressForArrayConstraintFromSetMidocoTourOperatorAddress($midocoTourOperatorAddress))) {
             throw new InvalidArgumentException($midocoTourOperatorAddressArrayErrorMessage, __LINE__);
         }
         $this->MidocoTourOperatorAddress = $midocoTourOperatorAddress;

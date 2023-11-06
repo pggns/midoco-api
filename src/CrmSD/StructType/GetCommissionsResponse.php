@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCommissions --- returns the list of commissions
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCommissionsResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetCommissionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCommissionExt
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO[]
      */
     protected ?array $MidocoCommissionExt = null;
     /**
      * Constructor method for GetCommissionsResponse
      * @uses GetCommissionsResponse::setMidocoCommissionExt()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO[] $midocoCommissionExt
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO[] $midocoCommissionExt
      */
     public function __construct(?array $midocoCommissionExt = null)
     {
@@ -36,19 +37,20 @@ class GetCommissionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCommissionExt value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO[]
      */
     public function getMidocoCommissionExt(): ?array
     {
         return $this->MidocoCommissionExt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCommissionExt method
+     * This method is responsible for validating the value(s) passed to the setMidocoCommissionExt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCommissionExt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCommissionExtForArrayConstraintsFromSetMidocoCommissionExt(?array $values = []): string
+    public static function validateMidocoCommissionExtForArrayConstraintFromSetMidocoCommissionExt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetCommissionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCommissionsResponseMidocoCommissionExtItem) {
             // validation for constraint: itemType
-            if (!$getCommissionsResponseMidocoCommissionExtItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO) {
+            if (!$getCommissionsResponseMidocoCommissionExtItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO) {
                 $invalidValues[] = is_object($getCommissionsResponseMidocoCommissionExtItem) ? get_class($getCommissionsResponseMidocoCommissionExtItem) : sprintf('%s(%s)', gettype($getCommissionsResponseMidocoCommissionExtItem), var_export($getCommissionsResponseMidocoCommissionExtItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCommissionExt property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCommissionExt property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetCommissionsResponse extends AbstractStructBase
     /**
      * Set MidocoCommissionExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO[] $midocoCommissionExt
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommissionsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO[] $midocoCommissionExt
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCommissionsResponse
      */
     public function setMidocoCommissionExt(?array $midocoCommissionExt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCommissionExtArrayErrorMessage = self::validateMidocoCommissionExtForArrayConstraintsFromSetMidocoCommissionExt($midocoCommissionExt))) {
+        if ('' !== ($midocoCommissionExtArrayErrorMessage = self::validateMidocoCommissionExtForArrayConstraintFromSetMidocoCommissionExt($midocoCommissionExt))) {
             throw new InvalidArgumentException($midocoCommissionExtArrayErrorMessage, __LINE__);
         }
         $this->MidocoCommissionExt = $midocoCommissionExt;
@@ -87,14 +89,14 @@ class GetCommissionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCommissionExt value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommissionsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCommissionsResponse
      */
-    public function addToMidocoCommissionExt(\Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO $item): self
+    public function addToMidocoCommissionExt(\Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCommissionExt property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CommissionExtDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCommissionExt property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CommissionExtDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCommissionExt[] = $item;
         

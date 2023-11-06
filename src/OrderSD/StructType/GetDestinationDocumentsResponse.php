@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDestinationDocumentsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDestinationDocumentsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDestinationDocumentsResponse extends AbstractStructBase
         return $this->MidocoDestinationDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDestinationDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoDestinationDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDestinationDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDestinationDocumentForArrayConstraintsFromSetMidocoDestinationDocument(?array $values = []): string
+    public static function validateMidocoDestinationDocumentForArrayConstraintFromSetMidocoDestinationDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDestinationDocumentsResponse extends AbstractStructBase
     public function setMidocoDestinationDocument(?array $midocoDestinationDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDestinationDocumentArrayErrorMessage = self::validateMidocoDestinationDocumentForArrayConstraintsFromSetMidocoDestinationDocument($midocoDestinationDocument))) {
+        if ('' !== ($midocoDestinationDocumentArrayErrorMessage = self::validateMidocoDestinationDocumentForArrayConstraintFromSetMidocoDestinationDocument($midocoDestinationDocument))) {
             throw new InvalidArgumentException($midocoDestinationDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoDestinationDocument = $midocoDestinationDocument;

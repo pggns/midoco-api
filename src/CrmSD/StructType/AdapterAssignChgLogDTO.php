@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AdapterAssignChgLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AdapterAssignChgLogDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAssignChgLogDTO
      */
     public function setAdapterId(?string $adapterId = null): self
     {
@@ -94,7 +95,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAssignChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -117,7 +118,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAssignChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -140,7 +141,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAssignChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -163,7 +164,7 @@ class AdapterAssignChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterAssignChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterAssignChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

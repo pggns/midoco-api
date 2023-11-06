@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTaskView StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTaskView extends TaskViewDTO
 {
     /**
@@ -77,12 +78,13 @@ class MidocoTaskView extends TaskViewDTO
         return $this->MidocoTaskViewDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTaskViewDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoTaskViewDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTaskViewDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTaskViewDescriptionForArrayConstraintsFromSetMidocoTaskViewDescription(?array $values = []): string
+    public static function validateMidocoTaskViewDescriptionForArrayConstraintFromSetMidocoTaskViewDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -111,7 +113,7 @@ class MidocoTaskView extends TaskViewDTO
     public function setMidocoTaskViewDescription(?array $midocoTaskViewDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTaskViewDescriptionArrayErrorMessage = self::validateMidocoTaskViewDescriptionForArrayConstraintsFromSetMidocoTaskViewDescription($midocoTaskViewDescription))) {
+        if ('' !== ($midocoTaskViewDescriptionArrayErrorMessage = self::validateMidocoTaskViewDescriptionForArrayConstraintFromSetMidocoTaskViewDescription($midocoTaskViewDescription))) {
             throw new InvalidArgumentException($midocoTaskViewDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoTaskViewDescription = $midocoTaskViewDescription;
@@ -143,12 +145,13 @@ class MidocoTaskView extends TaskViewDTO
         return $this->MidocoTaskViewUser;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTaskViewUser method
+     * This method is responsible for validating the value(s) passed to the setMidocoTaskViewUser method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTaskViewUser method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTaskViewUserForArrayConstraintsFromSetMidocoTaskViewUser(?array $values = []): string
+    public static function validateMidocoTaskViewUserForArrayConstraintFromSetMidocoTaskViewUser(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -177,7 +180,7 @@ class MidocoTaskView extends TaskViewDTO
     public function setMidocoTaskViewUser(?array $midocoTaskViewUser = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTaskViewUserArrayErrorMessage = self::validateMidocoTaskViewUserForArrayConstraintsFromSetMidocoTaskViewUser($midocoTaskViewUser))) {
+        if ('' !== ($midocoTaskViewUserArrayErrorMessage = self::validateMidocoTaskViewUserForArrayConstraintFromSetMidocoTaskViewUser($midocoTaskViewUser))) {
             throw new InvalidArgumentException($midocoTaskViewUserArrayErrorMessage, __LINE__);
         }
         $this->MidocoTaskViewUser = $midocoTaskViewUser;
@@ -209,12 +212,13 @@ class MidocoTaskView extends TaskViewDTO
         return $this->MidocoTaskViewTimeRestriction;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTaskViewTimeRestriction method
+     * This method is responsible for validating the value(s) passed to the setMidocoTaskViewTimeRestriction method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTaskViewTimeRestriction method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTaskViewTimeRestrictionForArrayConstraintsFromSetMidocoTaskViewTimeRestriction(?array $values = []): string
+    public static function validateMidocoTaskViewTimeRestrictionForArrayConstraintFromSetMidocoTaskViewTimeRestriction(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -243,7 +247,7 @@ class MidocoTaskView extends TaskViewDTO
     public function setMidocoTaskViewTimeRestriction(?array $midocoTaskViewTimeRestriction = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTaskViewTimeRestrictionArrayErrorMessage = self::validateMidocoTaskViewTimeRestrictionForArrayConstraintsFromSetMidocoTaskViewTimeRestriction($midocoTaskViewTimeRestriction))) {
+        if ('' !== ($midocoTaskViewTimeRestrictionArrayErrorMessage = self::validateMidocoTaskViewTimeRestrictionForArrayConstraintFromSetMidocoTaskViewTimeRestriction($midocoTaskViewTimeRestriction))) {
             throw new InvalidArgumentException($midocoTaskViewTimeRestrictionArrayErrorMessage, __LINE__);
         }
         $this->MidocoTaskViewTimeRestriction = $midocoTaskViewTimeRestriction;
@@ -275,12 +279,13 @@ class MidocoTaskView extends TaskViewDTO
         return $this->MidocoTaskViewUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTaskViewUnit method
+     * This method is responsible for validating the value(s) passed to the setMidocoTaskViewUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTaskViewUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTaskViewUnitForArrayConstraintsFromSetMidocoTaskViewUnit(?array $values = []): string
+    public static function validateMidocoTaskViewUnitForArrayConstraintFromSetMidocoTaskViewUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -309,7 +314,7 @@ class MidocoTaskView extends TaskViewDTO
     public function setMidocoTaskViewUnit(?array $midocoTaskViewUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTaskViewUnitArrayErrorMessage = self::validateMidocoTaskViewUnitForArrayConstraintsFromSetMidocoTaskViewUnit($midocoTaskViewUnit))) {
+        if ('' !== ($midocoTaskViewUnitArrayErrorMessage = self::validateMidocoTaskViewUnitForArrayConstraintFromSetMidocoTaskViewUnit($midocoTaskViewUnit))) {
             throw new InvalidArgumentException($midocoTaskViewUnitArrayErrorMessage, __LINE__);
         }
         $this->MidocoTaskViewUnit = $midocoTaskViewUnit;

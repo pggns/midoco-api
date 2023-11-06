@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteCampaign --- deletes the campaign who's id was given as parameter
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCampaignResponse extends AbstractStructBase
 {
 }

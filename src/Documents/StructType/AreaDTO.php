@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AreaDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AreaDTO extends AbstractStructBase
 {
     /**
@@ -19,22 +20,14 @@ class AreaDTO extends AbstractStructBase
      */
     protected ?string $areaCode = null;
     /**
-     * The description
-     * @var string|null
-     */
-    protected ?string $description = null;
-    /**
      * Constructor method for AreaDTO
      * @uses AreaDTO::setAreaCode()
-     * @uses AreaDTO::setDescription()
      * @param string $areaCode
-     * @param string $description
      */
-    public function __construct(?string $areaCode = null, ?string $description = null)
+    public function __construct(?string $areaCode = null)
     {
         $this
-            ->setAreaCode($areaCode)
-            ->setDescription($description);
+            ->setAreaCode($areaCode);
     }
     /**
      * Get areaCode value
@@ -56,29 +49,6 @@ class AreaDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($areaCode, true), gettype($areaCode)), __LINE__);
         }
         $this->areaCode = $areaCode;
-        
-        return $this;
-    }
-    /**
-     * Get description value
-     * @return string|null
-     */
-    public function getDescription(): ?string
-    {
-        return $this->description;
-    }
-    /**
-     * Set description value
-     * @param string $description
-     * @return \Pggns\MidocoApi\Documents\StructType\AreaDTO
-     */
-    public function setDescription(?string $description = null): self
-    {
-        // validation for constraint: string
-        if (!is_null($description) && !is_string($description)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
-        }
-        $this->description = $description;
         
         return $this;
     }

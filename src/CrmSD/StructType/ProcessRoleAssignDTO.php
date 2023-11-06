@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ProcessRoleAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ProcessRoleAssignDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ProcessRoleAssignDTO extends AbstractStructBase
     /**
      * Set processName value
      * @param string $processName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessRoleAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessRoleAssignDTO
      */
     public function setProcessName(?string $processName = null): self
     {
@@ -78,7 +79,7 @@ class ProcessRoleAssignDTO extends AbstractStructBase
     /**
      * Set role value
      * @param string $role
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessRoleAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessRoleAssignDTO
      */
     public function setRole(?string $role = null): self
     {
@@ -101,7 +102,7 @@ class ProcessRoleAssignDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessRoleAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessRoleAssignDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

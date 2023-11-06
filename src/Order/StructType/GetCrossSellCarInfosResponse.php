@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrossSellCarInfosResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrossSellCarInfosResponse extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
         return $this->CrossSellingCarInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setCrossSellingCarInfo method
+     * This method is responsible for validating the value(s) passed to the setCrossSellingCarInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCrossSellingCarInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCrossSellingCarInfoForArrayConstraintsFromSetCrossSellingCarInfo(?array $values = []): string
+    public static function validateCrossSellingCarInfoForArrayConstraintFromSetCrossSellingCarInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class GetCrossSellCarInfosResponse extends AbstractStructBase
     public function setCrossSellingCarInfo(?array $crossSellingCarInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($crossSellingCarInfoArrayErrorMessage = self::validateCrossSellingCarInfoForArrayConstraintsFromSetCrossSellingCarInfo($crossSellingCarInfo))) {
+        if ('' !== ($crossSellingCarInfoArrayErrorMessage = self::validateCrossSellingCarInfoForArrayConstraintFromSetCrossSellingCarInfo($crossSellingCarInfo))) {
             throw new InvalidArgumentException($crossSellingCarInfoArrayErrorMessage, __LINE__);
         }
         $this->CrossSellingCarInfo = $crossSellingCarInfo;

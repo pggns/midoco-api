@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FeeRateDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FeeRateDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class FeeRateDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FeeRateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FeeRateDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +79,7 @@ class FeeRateDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FeeRateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FeeRateDTO
      */
     public function setName(?string $name = null): self
     {
@@ -101,7 +102,7 @@ class FeeRateDTO extends AbstractStructBase
     /**
      * Set pricePerMinute value
      * @param float $pricePerMinute
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FeeRateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FeeRateDTO
      */
     public function setPricePerMinute(?float $pricePerMinute = null): self
     {

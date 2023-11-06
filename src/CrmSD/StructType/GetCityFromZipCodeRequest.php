@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCityFromZipCodeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCityFromZipCodeRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetCityFromZipCodeRequest extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCityFromZipCodeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCityFromZipCodeRequest
      */
     public function setZipCode(?string $zipCode = null): self
     {

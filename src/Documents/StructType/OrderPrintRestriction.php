@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrderPrintRestriction StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrderPrintRestriction extends AbstractStructBase
 {
     /**
@@ -89,12 +90,13 @@ class OrderPrintRestriction extends AbstractStructBase
         return $this->SellItemPrintRestriction;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellItemPrintRestriction method
+     * This method is responsible for validating the value(s) passed to the setSellItemPrintRestriction method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellItemPrintRestriction method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellItemPrintRestrictionForArrayConstraintsFromSetSellItemPrintRestriction(?array $values = []): string
+    public static function validateSellItemPrintRestrictionForArrayConstraintFromSetSellItemPrintRestriction(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -123,7 +125,7 @@ class OrderPrintRestriction extends AbstractStructBase
     public function setSellItemPrintRestriction(?array $sellItemPrintRestriction = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellItemPrintRestrictionArrayErrorMessage = self::validateSellItemPrintRestrictionForArrayConstraintsFromSetSellItemPrintRestriction($sellItemPrintRestriction))) {
+        if ('' !== ($sellItemPrintRestrictionArrayErrorMessage = self::validateSellItemPrintRestrictionForArrayConstraintFromSetSellItemPrintRestriction($sellItemPrintRestriction))) {
             throw new InvalidArgumentException($sellItemPrintRestrictionArrayErrorMessage, __LINE__);
         }
         $this->SellItemPrintRestriction = $sellItemPrintRestriction;

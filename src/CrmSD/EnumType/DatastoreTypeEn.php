@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\EnumType;
+namespace Pggns\MidocoApi\Crmsd\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 

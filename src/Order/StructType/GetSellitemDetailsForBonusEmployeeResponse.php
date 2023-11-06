@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSellitemDetailsForBonusEmployeeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
         return $this->MidocoBonusAssignmentSellitemDetails;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBonusAssignmentSellitemDetails method
+     * This method is responsible for validating the value(s) passed to the setMidocoBonusAssignmentSellitemDetails method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBonusAssignmentSellitemDetails method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBonusAssignmentSellitemDetailsForArrayConstraintsFromSetMidocoBonusAssignmentSellitemDetails(?array $values = []): string
+    public static function validateMidocoBonusAssignmentSellitemDetailsForArrayConstraintFromSetMidocoBonusAssignmentSellitemDetails(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSellitemDetailsForBonusEmployeeResponse extends AbstractStructBase
     public function setMidocoBonusAssignmentSellitemDetails(?array $midocoBonusAssignmentSellitemDetails = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBonusAssignmentSellitemDetailsArrayErrorMessage = self::validateMidocoBonusAssignmentSellitemDetailsForArrayConstraintsFromSetMidocoBonusAssignmentSellitemDetails($midocoBonusAssignmentSellitemDetails))) {
+        if ('' !== ($midocoBonusAssignmentSellitemDetailsArrayErrorMessage = self::validateMidocoBonusAssignmentSellitemDetailsForArrayConstraintFromSetMidocoBonusAssignmentSellitemDetails($midocoBonusAssignmentSellitemDetails))) {
             throw new InvalidArgumentException($midocoBonusAssignmentSellitemDetailsArrayErrorMessage, __LINE__);
         }
         $this->MidocoBonusAssignmentSellitemDetails = $midocoBonusAssignmentSellitemDetails;

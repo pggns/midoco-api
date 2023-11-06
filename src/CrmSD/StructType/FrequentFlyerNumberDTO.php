@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FrequentFlyerNumberDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FrequentFlyerNumberDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set active value
      * @param bool $active
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO
      */
     public function setActive(?bool $active = null): self
     {
@@ -94,7 +95,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -117,7 +118,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set airlineTier value
      * @param string $airlineTier
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO
      */
     public function setAirlineTier(?string $airlineTier = null): self
     {
@@ -140,7 +141,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -163,7 +164,7 @@ class FrequentFlyerNumberDTO extends AbstractStructBase
     /**
      * Set ffnNumber value
      * @param string $ffnNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO
      */
     public function setFfnNumber(?string $ffnNumber = null): self
     {

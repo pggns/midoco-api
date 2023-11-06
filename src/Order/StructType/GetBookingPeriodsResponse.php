@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBookingPeriodsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBookingPeriodsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetBookingPeriodsResponse extends AbstractStructBase
         return $this->MidocoCompleteBookingPeriod;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCompleteBookingPeriod method
+     * This method is responsible for validating the value(s) passed to the setMidocoCompleteBookingPeriod method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCompleteBookingPeriod method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCompleteBookingPeriodForArrayConstraintsFromSetMidocoCompleteBookingPeriod(?array $values = []): string
+    public static function validateMidocoCompleteBookingPeriodForArrayConstraintFromSetMidocoCompleteBookingPeriod(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetBookingPeriodsResponse extends AbstractStructBase
     public function setMidocoCompleteBookingPeriod(?array $midocoCompleteBookingPeriod = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCompleteBookingPeriodArrayErrorMessage = self::validateMidocoCompleteBookingPeriodForArrayConstraintsFromSetMidocoCompleteBookingPeriod($midocoCompleteBookingPeriod))) {
+        if ('' !== ($midocoCompleteBookingPeriodArrayErrorMessage = self::validateMidocoCompleteBookingPeriodForArrayConstraintFromSetMidocoCompleteBookingPeriod($midocoCompleteBookingPeriod))) {
             throw new InvalidArgumentException($midocoCompleteBookingPeriodArrayErrorMessage, __LINE__);
         }
         $this->MidocoCompleteBookingPeriod = $midocoCompleteBookingPeriod;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteDbiUpdateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteDbiUpdateRequest extends AbstractStructBase
 {
     /**

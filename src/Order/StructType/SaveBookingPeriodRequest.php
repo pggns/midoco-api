@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveBookingPeriodRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveBookingPeriodRequest extends AbstractStructBase
 {
     /**
@@ -69,12 +70,13 @@ class SaveBookingPeriodRequest extends AbstractStructBase
         return $this->pastYearsToClose;
     }
     /**
-     * This method is responsible for validating the values passed to the setPastYearsToClose method
+     * This method is responsible for validating the value(s) passed to the setPastYearsToClose method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPastYearsToClose method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePastYearsToCloseForArrayConstraintsFromSetPastYearsToClose(?array $values = []): string
+    public static function validatePastYearsToCloseForArrayConstraintFromSetPastYearsToClose(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -103,7 +105,7 @@ class SaveBookingPeriodRequest extends AbstractStructBase
     public function setPastYearsToClose(?array $pastYearsToClose = null): self
     {
         // validation for constraint: array
-        if ('' !== ($pastYearsToCloseArrayErrorMessage = self::validatePastYearsToCloseForArrayConstraintsFromSetPastYearsToClose($pastYearsToClose))) {
+        if ('' !== ($pastYearsToCloseArrayErrorMessage = self::validatePastYearsToCloseForArrayConstraintFromSetPastYearsToClose($pastYearsToClose))) {
             throw new InvalidArgumentException($pastYearsToCloseArrayErrorMessage, __LINE__);
         }
         $this->pastYearsToClose = $pastYearsToClose;

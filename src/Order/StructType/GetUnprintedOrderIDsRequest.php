@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUnprintedOrderIDsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUnprintedOrderIDsRequest extends AbstractStructBase
 {
     /**
@@ -30,16 +31,22 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     protected ?string $unitName = null;
     /**
      * The group1
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $group1 = null;
     /**
      * The group2
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $group2 = null;
     /**
      * The group3
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $group3 = null;
@@ -52,6 +59,8 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     protected ?string $customers = null;
     /**
      * The supplier
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $supplier = null;
@@ -64,14 +73,32 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
     protected ?string $travelNo = null;
     /**
      * The travelFrom
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $travelFrom = null;
     /**
      * The travelUntil
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $travelUntil = null;
+    /**
+     * The paymentDueDateFrom
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $paymentDueDateFrom = null;
+    /**
+     * The paymentDueDateUntil
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $paymentDueDateUntil = null;
     /**
      * Constructor method for GetUnprintedOrderIDsRequest
      * @uses GetUnprintedOrderIDsRequest::setFrom()
@@ -85,6 +112,8 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
      * @uses GetUnprintedOrderIDsRequest::setTravelNo()
      * @uses GetUnprintedOrderIDsRequest::setTravelFrom()
      * @uses GetUnprintedOrderIDsRequest::setTravelUntil()
+     * @uses GetUnprintedOrderIDsRequest::setPaymentDueDateFrom()
+     * @uses GetUnprintedOrderIDsRequest::setPaymentDueDateUntil()
      * @param string $from
      * @param string $until
      * @param string $unitName
@@ -96,8 +125,10 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
      * @param string $travelNo
      * @param string $travelFrom
      * @param string $travelUntil
+     * @param string $paymentDueDateFrom
+     * @param string $paymentDueDateUntil
      */
-    public function __construct(?string $from = null, ?string $until = null, ?string $unitName = null, ?string $group1 = null, ?string $group2 = null, ?string $group3 = null, ?string $customers = null, ?string $supplier = null, ?string $travelNo = null, ?string $travelFrom = null, ?string $travelUntil = null)
+    public function __construct(?string $from = null, ?string $until = null, ?string $unitName = null, ?string $group1 = null, ?string $group2 = null, ?string $group3 = null, ?string $customers = null, ?string $supplier = null, ?string $travelNo = null, ?string $travelFrom = null, ?string $travelUntil = null, ?string $paymentDueDateFrom = null, ?string $paymentDueDateUntil = null)
     {
         $this
             ->setFrom($from)
@@ -110,7 +141,9 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
             ->setSupplier($supplier)
             ->setTravelNo($travelNo)
             ->setTravelFrom($travelFrom)
-            ->setTravelUntil($travelUntil);
+            ->setTravelUntil($travelUntil)
+            ->setPaymentDueDateFrom($paymentDueDateFrom)
+            ->setPaymentDueDateUntil($paymentDueDateUntil);
     }
     /**
      * Get from value
@@ -362,6 +395,52 @@ class GetUnprintedOrderIDsRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelUntil, true), gettype($travelUntil)), __LINE__);
         }
         $this->travelUntil = $travelUntil;
+        
+        return $this;
+    }
+    /**
+     * Get paymentDueDateFrom value
+     * @return string|null
+     */
+    public function getPaymentDueDateFrom(): ?string
+    {
+        return $this->paymentDueDateFrom;
+    }
+    /**
+     * Set paymentDueDateFrom value
+     * @param string $paymentDueDateFrom
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
+     */
+    public function setPaymentDueDateFrom(?string $paymentDueDateFrom = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($paymentDueDateFrom) && !is_string($paymentDueDateFrom)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($paymentDueDateFrom, true), gettype($paymentDueDateFrom)), __LINE__);
+        }
+        $this->paymentDueDateFrom = $paymentDueDateFrom;
+        
+        return $this;
+    }
+    /**
+     * Get paymentDueDateUntil value
+     * @return string|null
+     */
+    public function getPaymentDueDateUntil(): ?string
+    {
+        return $this->paymentDueDateUntil;
+    }
+    /**
+     * Set paymentDueDateUntil value
+     * @param string $paymentDueDateUntil
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsRequest
+     */
+    public function setPaymentDueDateUntil(?string $paymentDueDateUntil = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($paymentDueDateUntil) && !is_string($paymentDueDateUntil)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($paymentDueDateUntil, true), gettype($paymentDueDateUntil)), __LINE__);
+        }
+        $this->paymentDueDateUntil = $paymentDueDateUntil;
         
         return $this;
     }

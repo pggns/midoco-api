@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * pre-existing document should be deleted. Response is: - a BillingDocumentDTO - zero or more BillingPositionDTO
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MakeBillingDocumentForOrderResponse extends AbstractStructBase
 {
     /**
@@ -73,12 +74,13 @@ class MakeBillingDocumentForOrderResponse extends AbstractStructBase
         return $this->MidocoOnlinePaymentTransaction;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOnlinePaymentTransaction method
+     * This method is responsible for validating the value(s) passed to the setMidocoOnlinePaymentTransaction method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOnlinePaymentTransaction method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOnlinePaymentTransactionForArrayConstraintsFromSetMidocoOnlinePaymentTransaction(?array $values = []): string
+    public static function validateMidocoOnlinePaymentTransactionForArrayConstraintFromSetMidocoOnlinePaymentTransaction(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -107,7 +109,7 @@ class MakeBillingDocumentForOrderResponse extends AbstractStructBase
     public function setMidocoOnlinePaymentTransaction(?array $midocoOnlinePaymentTransaction = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOnlinePaymentTransactionArrayErrorMessage = self::validateMidocoOnlinePaymentTransactionForArrayConstraintsFromSetMidocoOnlinePaymentTransaction($midocoOnlinePaymentTransaction))) {
+        if ('' !== ($midocoOnlinePaymentTransactionArrayErrorMessage = self::validateMidocoOnlinePaymentTransactionForArrayConstraintFromSetMidocoOnlinePaymentTransaction($midocoOnlinePaymentTransaction))) {
             throw new InvalidArgumentException($midocoOnlinePaymentTransactionArrayErrorMessage, __LINE__);
         }
         $this->MidocoOnlinePaymentTransaction = $midocoOnlinePaymentTransaction;

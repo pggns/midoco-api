@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchCustDoubleAddrRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchCustDoubleAddrRequest extends AbstractStructBase
 {
     /**
@@ -199,7 +200,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -222,7 +223,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setName(?string $name = null): self
     {
@@ -245,7 +246,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setForename(?string $forename = null): self
     {
@@ -268,7 +269,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setEmail(?string $email = null): self
     {
@@ -291,7 +292,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setType(?int $type = null): self
     {
@@ -314,7 +315,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setCountry(?string $country = null): self
     {
@@ -337,7 +338,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setCity(?string $city = null): self
     {
@@ -360,7 +361,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -383,7 +384,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setStreet(?string $street = null): self
     {
@@ -406,7 +407,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setPhone(?string $phone = null): self
     {
@@ -429,7 +430,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isNameCriteria value
      * @param bool $isNameCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsNameCriteria(?bool $isNameCriteria = null): self
     {
@@ -452,7 +453,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isForenameCriteria value
      * @param bool $isForenameCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsForenameCriteria(?bool $isForenameCriteria = null): self
     {
@@ -475,7 +476,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isEmailCriteria value
      * @param bool $isEmailCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsEmailCriteria(?bool $isEmailCriteria = null): self
     {
@@ -498,7 +499,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isTypeCriteria value
      * @param bool $isTypeCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsTypeCriteria(?bool $isTypeCriteria = null): self
     {
@@ -521,7 +522,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isCountryCriteria value
      * @param bool $isCountryCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsCountryCriteria(?bool $isCountryCriteria = null): self
     {
@@ -544,7 +545,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isCityCriteria value
      * @param bool $isCityCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsCityCriteria(?bool $isCityCriteria = null): self
     {
@@ -567,7 +568,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isZipCodeCriteria value
      * @param bool $isZipCodeCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsZipCodeCriteria(?bool $isZipCodeCriteria = null): self
     {
@@ -590,7 +591,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isStreetCriteria value
      * @param bool $isStreetCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsStreetCriteria(?bool $isStreetCriteria = null): self
     {
@@ -613,7 +614,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set isPhoneCriteria value
      * @param bool $isPhoneCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setIsPhoneCriteria(?bool $isPhoneCriteria = null): self
     {
@@ -636,7 +637,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set typeOfSearch value
      * @param int $typeOfSearch
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setTypeOfSearch(?int $typeOfSearch = null): self
     {
@@ -659,7 +660,7 @@ class SearchCustDoubleAddrRequest extends AbstractStructBase
     /**
      * Set maxReturned value
      * @param int $maxReturned
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustDoubleAddrRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustDoubleAddrRequest
      */
     public function setMaxReturned(?int $maxReturned = null): self
     {

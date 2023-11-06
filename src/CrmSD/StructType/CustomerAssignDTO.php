@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CustomerAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CustomerAssignDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set assignedCustomer value
      * @param int $assignedCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerAssignDTO
      */
     public function setAssignedCustomer(?int $assignedCustomer = null): self
     {
@@ -94,7 +95,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerAssignDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -117,7 +118,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerAssignDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -140,7 +141,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set originCustomer value
      * @param int $originCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerAssignDTO
      */
     public function setOriginCustomer(?int $originCustomer = null): self
     {
@@ -163,7 +164,7 @@ class CustomerAssignDTO extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerAssignDTO
      */
     public function setType(?int $type = null): self
     {

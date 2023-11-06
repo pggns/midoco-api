@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDistributionMethodDescriptionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDistributionMethodDescriptionResponse extends AbstractStructBase
 {
     /**

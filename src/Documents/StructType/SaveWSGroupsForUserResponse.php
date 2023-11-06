@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveWSGroupsForUserResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveWSGroupsForUserResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class SaveWSGroupsForUserResponse extends AbstractStructBase
         return $this->processedWSGroups;
     }
     /**
-     * This method is responsible for validating the values passed to the setProcessedWSGroups method
+     * This method is responsible for validating the value(s) passed to the setProcessedWSGroups method
      * This method is willingly generated in order to preserve the one-line inline validation within the setProcessedWSGroups method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateProcessedWSGroupsForArrayConstraintsFromSetProcessedWSGroups(?array $values = []): string
+    public static function validateProcessedWSGroupsForArrayConstraintFromSetProcessedWSGroups(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class SaveWSGroupsForUserResponse extends AbstractStructBase
     public function setProcessedWSGroups(?array $processedWSGroups = null): self
     {
         // validation for constraint: array
-        if ('' !== ($processedWSGroupsArrayErrorMessage = self::validateProcessedWSGroupsForArrayConstraintsFromSetProcessedWSGroups($processedWSGroups))) {
+        if ('' !== ($processedWSGroupsArrayErrorMessage = self::validateProcessedWSGroupsForArrayConstraintFromSetProcessedWSGroups($processedWSGroups))) {
             throw new InvalidArgumentException($processedWSGroupsArrayErrorMessage, __LINE__);
         }
         $this->processedWSGroups = $processedWSGroups;

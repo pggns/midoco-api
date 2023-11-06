@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchOrderLayoutResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchOrderLayoutResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchOrderLayoutResponse extends AbstractStructBase
         return $this->MidocoOrderLayout;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderLayout method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderLayout method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderLayout method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderLayoutForArrayConstraintsFromSetMidocoOrderLayout(?array $values = []): string
+    public static function validateMidocoOrderLayoutForArrayConstraintFromSetMidocoOrderLayout(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchOrderLayoutResponse extends AbstractStructBase
     public function setMidocoOrderLayout(?array $midocoOrderLayout = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderLayoutArrayErrorMessage = self::validateMidocoOrderLayoutForArrayConstraintsFromSetMidocoOrderLayout($midocoOrderLayout))) {
+        if ('' !== ($midocoOrderLayoutArrayErrorMessage = self::validateMidocoOrderLayoutForArrayConstraintFromSetMidocoOrderLayout($midocoOrderLayout))) {
             throw new InvalidArgumentException($midocoOrderLayoutArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderLayout = $midocoOrderLayout;

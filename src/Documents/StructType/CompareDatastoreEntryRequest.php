@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CompareDatastoreEntryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CompareDatastoreEntryRequest extends AbstractStructBase
 {
     /**

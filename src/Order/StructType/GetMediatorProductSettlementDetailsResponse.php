@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMediatorProductSettlementDetailsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMediatorProductSettlementDetailsResponse extends AbstractStructBase
 {
     /**
@@ -53,12 +54,13 @@ class GetMediatorProductSettlementDetailsResponse extends AbstractStructBase
         return $this->MidocoMediatorProductSettlementDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediatorProductSettlementDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediatorProductSettlementDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediatorProductSettlementDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediatorProductSettlementDetailForArrayConstraintsFromSetMidocoMediatorProductSettlementDetail(?array $values = []): string
+    public static function validateMidocoMediatorProductSettlementDetailForArrayConstraintFromSetMidocoMediatorProductSettlementDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -87,7 +89,7 @@ class GetMediatorProductSettlementDetailsResponse extends AbstractStructBase
     public function setMidocoMediatorProductSettlementDetail(?array $midocoMediatorProductSettlementDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediatorProductSettlementDetailArrayErrorMessage = self::validateMidocoMediatorProductSettlementDetailForArrayConstraintsFromSetMidocoMediatorProductSettlementDetail($midocoMediatorProductSettlementDetail))) {
+        if ('' !== ($midocoMediatorProductSettlementDetailArrayErrorMessage = self::validateMidocoMediatorProductSettlementDetailForArrayConstraintFromSetMidocoMediatorProductSettlementDetail($midocoMediatorProductSettlementDetail))) {
             throw new InvalidArgumentException($midocoMediatorProductSettlementDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediatorProductSettlementDetail = $midocoMediatorProductSettlementDetail;
@@ -119,12 +121,13 @@ class GetMediatorProductSettlementDetailsResponse extends AbstractStructBase
         return $this->MidocoMediatorCharge;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediatorCharge method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediatorCharge method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediatorCharge method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediatorChargeForArrayConstraintsFromSetMidocoMediatorCharge(?array $values = []): string
+    public static function validateMidocoMediatorChargeForArrayConstraintFromSetMidocoMediatorCharge(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,7 +156,7 @@ class GetMediatorProductSettlementDetailsResponse extends AbstractStructBase
     public function setMidocoMediatorCharge(?array $midocoMediatorCharge = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediatorChargeArrayErrorMessage = self::validateMidocoMediatorChargeForArrayConstraintsFromSetMidocoMediatorCharge($midocoMediatorCharge))) {
+        if ('' !== ($midocoMediatorChargeArrayErrorMessage = self::validateMidocoMediatorChargeForArrayConstraintFromSetMidocoMediatorCharge($midocoMediatorCharge))) {
             throw new InvalidArgumentException($midocoMediatorChargeArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediatorCharge = $midocoMediatorCharge;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgattribDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgattribDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class OrgattribDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgattribDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgattribDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -70,7 +71,7 @@ class OrgattribDTO extends AbstractStructBase
     /**
      * Set isSystem value
      * @param bool $isSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgattribDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgattribDTO
      */
     public function setIsSystem(?bool $isSystem = null): self
     {

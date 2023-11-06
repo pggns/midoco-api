@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SavedEndTravelDateDimDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavedEndTravelDateDimDTO extends AbstractStructBase
 {
     /**

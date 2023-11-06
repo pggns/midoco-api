@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteBonusCardRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteBonusCardRequest extends AbstractStructBase
 {
     /**
      * The MidocoCrmBonusCard
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmBonusCard
-     * @var \Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard|null
      */
-    protected ?\Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO $MidocoCrmBonusCard = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard $MidocoCrmBonusCard = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +30,10 @@ class DeleteBonusCardRequest extends AbstractStructBase
      * Constructor method for DeleteBonusCardRequest
      * @uses DeleteBonusCardRequest::setMidocoCrmBonusCard()
      * @uses DeleteBonusCardRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO $midocoCrmBonusCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard $midocoCrmBonusCard
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO $midocoCrmBonusCard = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard $midocoCrmBonusCard = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCrmBonusCard($midocoCrmBonusCard)
@@ -40,18 +41,18 @@ class DeleteBonusCardRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmBonusCard value
-     * @return \Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard|null
      */
-    public function getMidocoCrmBonusCard(): ?\Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO
+    public function getMidocoCrmBonusCard(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard
     {
         return $this->MidocoCrmBonusCard;
     }
     /**
      * Set MidocoCrmBonusCard value
-     * @param \Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO $midocoCrmBonusCard
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard $midocoCrmBonusCard
      * @return \Pggns\MidocoApi\Crm\StructType\DeleteBonusCardRequest
      */
-    public function setMidocoCrmBonusCard(?\Pggns\MidocoApi\Crm\StructType\CrmBonusCardDTO $midocoCrmBonusCard = null): self
+    public function setMidocoCrmBonusCard(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmBonusCard $midocoCrmBonusCard = null): self
     {
         $this->MidocoCrmBonusCard = $midocoCrmBonusCard;
         

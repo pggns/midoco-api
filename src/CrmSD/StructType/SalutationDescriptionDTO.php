@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalutationDescriptionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalutationDescriptionDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SalutationDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -94,7 +95,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SalutationDescriptionDTO
      */
     public function setLetter(?string $letter = null): self
     {
@@ -117,7 +118,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SalutationDescriptionDTO
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -140,7 +141,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set salutationText value
      * @param string $salutationText
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SalutationDescriptionDTO
      */
     public function setSalutationText(?string $salutationText = null): self
     {
@@ -163,7 +164,7 @@ class SalutationDescriptionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SalutationDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SalutationDescriptionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

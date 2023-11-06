@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerInfo extends AbstractStructBase
 {
     /**
@@ -119,7 +120,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -142,7 +143,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -165,7 +166,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setName(?string $name = null): self
     {
@@ -188,7 +189,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setForename(?string $forename = null): self
     {
@@ -211,7 +212,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setStreet(?string $street = null): self
     {
@@ -234,7 +235,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -257,7 +258,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setCity(?string $city = null): self
     {
@@ -280,7 +281,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setCountry(?string $country = null): self
     {
@@ -303,7 +304,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setEmail(?string $email = null): self
     {
@@ -326,7 +327,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set telephone value
      * @param string $telephone
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setTelephone(?string $telephone = null): self
     {
@@ -349,7 +350,7 @@ class MidocoCustomerInfo extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInfo
      */
     public function setFax(?string $fax = null): self
     {

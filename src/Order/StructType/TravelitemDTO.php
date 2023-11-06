@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TravelitemDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TravelitemDTO extends AbstractStructBase
 {
     /**
@@ -18,6 +19,11 @@ class TravelitemDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $articleType = null;
+    /**
+     * The bookingConfirmationNumber
+     * @var string|null
+     */
+    protected ?string $bookingConfirmationNumber = null;
     /**
      * The bookingDate
      * @var string|null
@@ -123,6 +129,11 @@ class TravelitemDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $mainUnitName = null;
+    /**
+     * The ndcOrderId
+     * @var string|null
+     */
+    protected ?string $ndcOrderId = null;
     /**
      * The noOfPersons
      * @var int|null
@@ -231,6 +242,7 @@ class TravelitemDTO extends AbstractStructBase
     /**
      * Constructor method for TravelitemDTO
      * @uses TravelitemDTO::setArticleType()
+     * @uses TravelitemDTO::setBookingConfirmationNumber()
      * @uses TravelitemDTO::setBookingDate()
      * @uses TravelitemDTO::setBookingId()
      * @uses TravelitemDTO::setBookingReference()
@@ -252,6 +264,7 @@ class TravelitemDTO extends AbstractStructBase
      * @uses TravelitemDTO::setIsStorno()
      * @uses TravelitemDTO::setItemId()
      * @uses TravelitemDTO::setMainUnitName()
+     * @uses TravelitemDTO::setNdcOrderId()
      * @uses TravelitemDTO::setNoOfPersons()
      * @uses TravelitemDTO::setOptionPeriod()
      * @uses TravelitemDTO::setOriginalBookingId()
@@ -274,6 +287,7 @@ class TravelitemDTO extends AbstractStructBase
      * @uses TravelitemDTO::setVoucherSinglePrice()
      * @uses TravelitemDTO::setVoucherTypeId()
      * @param string $articleType
+     * @param string $bookingConfirmationNumber
      * @param string $bookingDate
      * @param string $bookingId
      * @param int $bookingReference
@@ -295,6 +309,7 @@ class TravelitemDTO extends AbstractStructBase
      * @param bool $isStorno
      * @param int $itemId
      * @param string $mainUnitName
+     * @param string $ndcOrderId
      * @param int $noOfPersons
      * @param int $optionPeriod
      * @param string $originalBookingId
@@ -317,10 +332,11 @@ class TravelitemDTO extends AbstractStructBase
      * @param float $voucherSinglePrice
      * @param string $voucherTypeId
      */
-    public function __construct(?string $articleType = null, ?string $bookingDate = null, ?string $bookingId = null, ?int $bookingReference = null, ?string $destination = null, ?string $endTravel = null, ?bool $expired = null, ?string $extChannel = null, ?string $extId = null, ?string $extSystem = null, ?string $extUrl = null, ?string $feeCode = null, ?string $forCustomer = null, ?string $fromCustomer = null, ?bool $groupItemFlag = null, ?string $groupItemName = null, ?bool $isOneWay = null, ?bool $isOption = null, ?bool $isRequest = null, ?bool $isStorno = null, ?int $itemId = null, ?string $mainUnitName = null, ?int $noOfPersons = null, ?int $optionPeriod = null, ?string $originalBookingId = null, ?string $originalStatus = null, ?string $originalSupplierId = null, ?string $sourceExtId = null, ?string $sourceExtSystem = null, ?string $startTravel = null, ?string $status = null, ?string $stornoConfirmationNo = null, ?string $stornoDate = null, ?string $stornoText = null, ?string $supplierId = null, ?int $transferStatus = null, ?string $transferTimestamp = null, ?string $travelNo = null, ?string $travelNoHandling = null, ?string $traveltype = null, ?int $voucherQuantity = null, ?float $voucherSinglePrice = null, ?string $voucherTypeId = null)
+    public function __construct(?string $articleType = null, ?string $bookingConfirmationNumber = null, ?string $bookingDate = null, ?string $bookingId = null, ?int $bookingReference = null, ?string $destination = null, ?string $endTravel = null, ?bool $expired = null, ?string $extChannel = null, ?string $extId = null, ?string $extSystem = null, ?string $extUrl = null, ?string $feeCode = null, ?string $forCustomer = null, ?string $fromCustomer = null, ?bool $groupItemFlag = null, ?string $groupItemName = null, ?bool $isOneWay = null, ?bool $isOption = null, ?bool $isRequest = null, ?bool $isStorno = null, ?int $itemId = null, ?string $mainUnitName = null, ?string $ndcOrderId = null, ?int $noOfPersons = null, ?int $optionPeriod = null, ?string $originalBookingId = null, ?string $originalStatus = null, ?string $originalSupplierId = null, ?string $sourceExtId = null, ?string $sourceExtSystem = null, ?string $startTravel = null, ?string $status = null, ?string $stornoConfirmationNo = null, ?string $stornoDate = null, ?string $stornoText = null, ?string $supplierId = null, ?int $transferStatus = null, ?string $transferTimestamp = null, ?string $travelNo = null, ?string $travelNoHandling = null, ?string $traveltype = null, ?int $voucherQuantity = null, ?float $voucherSinglePrice = null, ?string $voucherTypeId = null)
     {
         $this
             ->setArticleType($articleType)
+            ->setBookingConfirmationNumber($bookingConfirmationNumber)
             ->setBookingDate($bookingDate)
             ->setBookingId($bookingId)
             ->setBookingReference($bookingReference)
@@ -342,6 +358,7 @@ class TravelitemDTO extends AbstractStructBase
             ->setIsStorno($isStorno)
             ->setItemId($itemId)
             ->setMainUnitName($mainUnitName)
+            ->setNdcOrderId($ndcOrderId)
             ->setNoOfPersons($noOfPersons)
             ->setOptionPeriod($optionPeriod)
             ->setOriginalBookingId($originalBookingId)
@@ -384,6 +401,29 @@ class TravelitemDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($articleType, true), gettype($articleType)), __LINE__);
         }
         $this->articleType = $articleType;
+        
+        return $this;
+    }
+    /**
+     * Get bookingConfirmationNumber value
+     * @return string|null
+     */
+    public function getBookingConfirmationNumber(): ?string
+    {
+        return $this->bookingConfirmationNumber;
+    }
+    /**
+     * Set bookingConfirmationNumber value
+     * @param string $bookingConfirmationNumber
+     * @return \Pggns\MidocoApi\Order\StructType\TravelitemDTO
+     */
+    public function setBookingConfirmationNumber(?string $bookingConfirmationNumber = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($bookingConfirmationNumber) && !is_string($bookingConfirmationNumber)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bookingConfirmationNumber, true), gettype($bookingConfirmationNumber)), __LINE__);
+        }
+        $this->bookingConfirmationNumber = $bookingConfirmationNumber;
         
         return $this;
     }
@@ -867,6 +907,29 @@ class TravelitemDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mainUnitName, true), gettype($mainUnitName)), __LINE__);
         }
         $this->mainUnitName = $mainUnitName;
+        
+        return $this;
+    }
+    /**
+     * Get ndcOrderId value
+     * @return string|null
+     */
+    public function getNdcOrderId(): ?string
+    {
+        return $this->ndcOrderId;
+    }
+    /**
+     * Set ndcOrderId value
+     * @param string $ndcOrderId
+     * @return \Pggns\MidocoApi\Order\StructType\TravelitemDTO
+     */
+    public function setNdcOrderId(?string $ndcOrderId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($ndcOrderId) && !is_string($ndcOrderId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ndcOrderId, true), gettype($ndcOrderId)), __LINE__);
+        }
+        $this->ndcOrderId = $ndcOrderId;
         
         return $this;
     }

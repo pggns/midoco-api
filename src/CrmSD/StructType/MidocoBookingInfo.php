@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBookingInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBookingInfo extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoBookingInfo extends AbstractStructBase
     /**
      * Set supplier value
      * @param string $supplier
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoBookingInfo
      */
     public function setSupplier(?string $supplier = null): self
     {
@@ -70,7 +71,7 @@ class MidocoBookingInfo extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoBookingInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoBookingInfo
      */
     public function setBookingId(?string $bookingId = null): self
     {

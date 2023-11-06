@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSavedReport StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSavedReport extends SavedReportDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoSavedReport extends SavedReportDTO
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSavedReport
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoSavedReport
      */
     public function setName(?string $name = null): self
     {

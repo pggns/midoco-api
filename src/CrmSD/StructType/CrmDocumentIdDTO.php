@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmDocumentIdDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmDocumentIdDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class CrmDocumentIdDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmDocumentIdDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmDocumentIdDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MfLocalDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MfLocalDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class MfLocalDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfLocalDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -102,7 +103,7 @@ class MfLocalDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfLocalDTO
      */
     public function setBean(?string $bean = null): self
     {
@@ -125,7 +126,7 @@ class MfLocalDTO extends AbstractStructBase
     /**
      * Set className value
      * @param string $className
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfLocalDTO
      */
     public function setClassName(?string $className = null): self
     {
@@ -148,7 +149,7 @@ class MfLocalDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfLocalDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -171,7 +172,7 @@ class MfLocalDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfLocalDTO
      */
     public function setLocale(?string $locale = null): self
     {
@@ -194,7 +195,7 @@ class MfLocalDTO extends AbstractStructBase
     /**
      * Set localizedName value
      * @param string $localizedName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfLocalDTO
      */
     public function setLocalizedName(?string $localizedName = null): self
     {

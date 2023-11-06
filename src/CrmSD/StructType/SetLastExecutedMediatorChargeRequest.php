@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SetLastExecutedMediatorChargeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SetLastExecutedMediatorChargeRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class SetLastExecutedMediatorChargeRequest extends AbstractStructBase
     /**
      * Set lastExecDate value
      * @param string $lastExecDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SetLastExecutedMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SetLastExecutedMediatorChargeRequest
      */
     public function setLastExecDate(?string $lastExecDate = null): self
     {
@@ -86,7 +87,7 @@ class SetLastExecutedMediatorChargeRequest extends AbstractStructBase
     /**
      * Set lastExecUser value
      * @param int $lastExecUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SetLastExecutedMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SetLastExecutedMediatorChargeRequest
      */
     public function setLastExecUser(?int $lastExecUser = null): self
     {
@@ -109,7 +110,7 @@ class SetLastExecutedMediatorChargeRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SetLastExecutedMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SetLastExecutedMediatorChargeRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -132,7 +133,7 @@ class SetLastExecutedMediatorChargeRequest extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SetLastExecutedMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SetLastExecutedMediatorChargeRequest
      */
     public function setChargeId(?int $chargeId = null): self
     {

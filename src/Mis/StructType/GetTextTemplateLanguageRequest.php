@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTextTemplateLanguageRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTextTemplateLanguageRequest extends AbstractStructBase
 {
     /**

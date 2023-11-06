@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoFlightTimeChangeEmailType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoFlightTimeChangeEmailType extends FlightTimeChangeEmailDTO
 {
     /**
@@ -41,12 +42,13 @@ class MidocoFlightTimeChangeEmailType extends FlightTimeChangeEmailDTO
         return $this->MidocoFlightTimeChangeEmailDet;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFlightTimeChangeEmailDet method
+     * This method is responsible for validating the value(s) passed to the setMidocoFlightTimeChangeEmailDet method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFlightTimeChangeEmailDet method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFlightTimeChangeEmailDetForArrayConstraintsFromSetMidocoFlightTimeChangeEmailDet(?array $values = []): string
+    public static function validateMidocoFlightTimeChangeEmailDetForArrayConstraintFromSetMidocoFlightTimeChangeEmailDet(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class MidocoFlightTimeChangeEmailType extends FlightTimeChangeEmailDTO
     public function setMidocoFlightTimeChangeEmailDet(?array $midocoFlightTimeChangeEmailDet = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFlightTimeChangeEmailDetArrayErrorMessage = self::validateMidocoFlightTimeChangeEmailDetForArrayConstraintsFromSetMidocoFlightTimeChangeEmailDet($midocoFlightTimeChangeEmailDet))) {
+        if ('' !== ($midocoFlightTimeChangeEmailDetArrayErrorMessage = self::validateMidocoFlightTimeChangeEmailDetForArrayConstraintFromSetMidocoFlightTimeChangeEmailDet($midocoFlightTimeChangeEmailDet))) {
             throw new InvalidArgumentException($midocoFlightTimeChangeEmailDetArrayErrorMessage, __LINE__);
         }
         $this->MidocoFlightTimeChangeEmailDet = $midocoFlightTimeChangeEmailDet;

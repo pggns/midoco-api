@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveAddressRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveAddressRequest extends AbstractStructBase
 {
     /**
      * The MidocoSaveAddress
      * Meta information extracted from the WSDL
      * - ref: MidocoSaveAddress
-     * @var \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $MidocoSaveAddress = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO $MidocoSaveAddress = null;
     /**
      * The makeDefault
      * Meta information extracted from the WSDL
@@ -43,12 +44,12 @@ class SaveAddressRequest extends AbstractStructBase
      * @uses SaveAddressRequest::setMakeDefault()
      * @uses SaveAddressRequest::setInternalVersion()
      * @uses SaveAddressRequest::setCustomerId()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress
+     * @param \Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO $midocoSaveAddress
      * @param bool $makeDefault
      * @param int $internalVersion
      * @param int $customerId
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress = null, ?bool $makeDefault = false, ?int $internalVersion = null, ?int $customerId = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO $midocoSaveAddress = null, ?bool $makeDefault = false, ?int $internalVersion = null, ?int $customerId = null)
     {
         $this
             ->setMidocoSaveAddress($midocoSaveAddress)
@@ -58,18 +59,18 @@ class SaveAddressRequest extends AbstractStructBase
     }
     /**
      * Get MidocoSaveAddress value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO|null
      */
-    public function getMidocoSaveAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO
+    public function getMidocoSaveAddress(): ?\Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO
     {
         return $this->MidocoSaveAddress;
     }
     /**
      * Set MidocoSaveAddress value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO $midocoSaveAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveAddressRequest
      */
-    public function setMidocoSaveAddress(?\Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO $midocoSaveAddress = null): self
+    public function setMidocoSaveAddress(?\Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO $midocoSaveAddress = null): self
     {
         $this->MidocoSaveAddress = $midocoSaveAddress;
         
@@ -86,7 +87,7 @@ class SaveAddressRequest extends AbstractStructBase
     /**
      * Set makeDefault value
      * @param bool $makeDefault
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveAddressRequest
      */
     public function setMakeDefault(?bool $makeDefault = false): self
     {
@@ -109,7 +110,7 @@ class SaveAddressRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveAddressRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -132,7 +133,7 @@ class SaveAddressRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveAddressRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AttributeChoiceValueDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AttributeChoiceValueDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -86,7 +87,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set choiceValue value
      * @param string $choiceValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO
      */
     public function setChoiceValue(?string $choiceValue = null): self
     {
@@ -109,7 +110,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set contextId value
      * @param string $contextId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO
      */
     public function setContextId(?string $contextId = null): self
     {
@@ -132,7 +133,7 @@ class AttributeChoiceValueDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeChoiceValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AttributeChoiceValueDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

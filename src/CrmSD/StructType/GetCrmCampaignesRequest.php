@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,15 +13,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: requests the campaign to which a customer participated
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmCampaignesRequest extends AbstractStructBase
 {
     /**
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The beginIndex
      * @var int|null
@@ -37,11 +38,11 @@ class GetCrmCampaignesRequest extends AbstractStructBase
      * @uses GetCrmCampaignesRequest::setMidocoCustomerId()
      * @uses GetCrmCampaignesRequest::setBeginIndex()
      * @uses GetCrmCampaignesRequest::setEndIndex()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
      * @param int $beginIndex
      * @param int $endIndex
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $beginIndex = null, ?int $endIndex = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $beginIndex = null, ?int $endIndex = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -50,18 +51,18 @@ class GetCrmCampaignesRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmCampaignesRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmCampaignesRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -78,7 +79,7 @@ class GetCrmCampaignesRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmCampaignesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmCampaignesRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -101,7 +102,7 @@ class GetCrmCampaignesRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmCampaignesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmCampaignesRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {

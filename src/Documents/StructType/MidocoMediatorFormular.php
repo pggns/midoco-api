@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMediatorFormular StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMediatorFormular extends AbstractStructBase
 {
     /**
@@ -345,12 +346,13 @@ class MidocoMediatorFormular extends AbstractStructBase
         return $this->sellPassengerName;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellPassengerName method
+     * This method is responsible for validating the value(s) passed to the setSellPassengerName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellPassengerName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellPassengerNameForArrayConstraintsFromSetSellPassengerName(?array $values = []): string
+    public static function validateSellPassengerNameForArrayConstraintFromSetSellPassengerName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -379,7 +381,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     public function setSellPassengerName(?array $sellPassengerName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellPassengerNameArrayErrorMessage = self::validateSellPassengerNameForArrayConstraintsFromSetSellPassengerName($sellPassengerName))) {
+        if ('' !== ($sellPassengerNameArrayErrorMessage = self::validateSellPassengerNameForArrayConstraintFromSetSellPassengerName($sellPassengerName))) {
             throw new InvalidArgumentException($sellPassengerNameArrayErrorMessage, __LINE__);
         }
         $this->sellPassengerName = $sellPassengerName;
@@ -411,12 +413,13 @@ class MidocoMediatorFormular extends AbstractStructBase
         return $this->sellPassengerFirstName;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellPassengerFirstName method
+     * This method is responsible for validating the value(s) passed to the setSellPassengerFirstName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellPassengerFirstName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellPassengerFirstNameForArrayConstraintsFromSetSellPassengerFirstName(?array $values = []): string
+    public static function validateSellPassengerFirstNameForArrayConstraintFromSetSellPassengerFirstName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -445,7 +448,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     public function setSellPassengerFirstName(?array $sellPassengerFirstName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellPassengerFirstNameArrayErrorMessage = self::validateSellPassengerFirstNameForArrayConstraintsFromSetSellPassengerFirstName($sellPassengerFirstName))) {
+        if ('' !== ($sellPassengerFirstNameArrayErrorMessage = self::validateSellPassengerFirstNameForArrayConstraintFromSetSellPassengerFirstName($sellPassengerFirstName))) {
             throw new InvalidArgumentException($sellPassengerFirstNameArrayErrorMessage, __LINE__);
         }
         $this->sellPassengerFirstName = $sellPassengerFirstName;
@@ -477,12 +480,13 @@ class MidocoMediatorFormular extends AbstractStructBase
         return $this->sellPassengerSalutation;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellPassengerSalutation method
+     * This method is responsible for validating the value(s) passed to the setSellPassengerSalutation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellPassengerSalutation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellPassengerSalutationForArrayConstraintsFromSetSellPassengerSalutation(?array $values = []): string
+    public static function validateSellPassengerSalutationForArrayConstraintFromSetSellPassengerSalutation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -511,7 +515,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     public function setSellPassengerSalutation(?array $sellPassengerSalutation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellPassengerSalutationArrayErrorMessage = self::validateSellPassengerSalutationForArrayConstraintsFromSetSellPassengerSalutation($sellPassengerSalutation))) {
+        if ('' !== ($sellPassengerSalutationArrayErrorMessage = self::validateSellPassengerSalutationForArrayConstraintFromSetSellPassengerSalutation($sellPassengerSalutation))) {
             throw new InvalidArgumentException($sellPassengerSalutationArrayErrorMessage, __LINE__);
         }
         $this->sellPassengerSalutation = $sellPassengerSalutation;
@@ -543,12 +547,13 @@ class MidocoMediatorFormular extends AbstractStructBase
         return $this->sellPassengerTitle;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellPassengerTitle method
+     * This method is responsible for validating the value(s) passed to the setSellPassengerTitle method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellPassengerTitle method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellPassengerTitleForArrayConstraintsFromSetSellPassengerTitle(?array $values = []): string
+    public static function validateSellPassengerTitleForArrayConstraintFromSetSellPassengerTitle(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -577,7 +582,7 @@ class MidocoMediatorFormular extends AbstractStructBase
     public function setSellPassengerTitle(?array $sellPassengerTitle = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellPassengerTitleArrayErrorMessage = self::validateSellPassengerTitleForArrayConstraintsFromSetSellPassengerTitle($sellPassengerTitle))) {
+        if ('' !== ($sellPassengerTitleArrayErrorMessage = self::validateSellPassengerTitleForArrayConstraintFromSetSellPassengerTitle($sellPassengerTitle))) {
             throw new InvalidArgumentException($sellPassengerTitleArrayErrorMessage, __LINE__);
         }
         $this->sellPassengerTitle = $sellPassengerTitle;

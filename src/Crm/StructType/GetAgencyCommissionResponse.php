@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgencyCommissionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgencyCommissionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAgencyCommissionResponse extends AbstractStructBase
         return $this->MidocoAgencyCommission;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAgencyCommission method
+     * This method is responsible for validating the value(s) passed to the setMidocoAgencyCommission method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAgencyCommission method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAgencyCommissionForArrayConstraintsFromSetMidocoAgencyCommission(?array $values = []): string
+    public static function validateMidocoAgencyCommissionForArrayConstraintFromSetMidocoAgencyCommission(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAgencyCommissionResponse extends AbstractStructBase
     public function setMidocoAgencyCommission(?array $midocoAgencyCommission = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAgencyCommissionArrayErrorMessage = self::validateMidocoAgencyCommissionForArrayConstraintsFromSetMidocoAgencyCommission($midocoAgencyCommission))) {
+        if ('' !== ($midocoAgencyCommissionArrayErrorMessage = self::validateMidocoAgencyCommissionForArrayConstraintFromSetMidocoAgencyCommission($midocoAgencyCommission))) {
             throw new InvalidArgumentException($midocoAgencyCommissionArrayErrorMessage, __LINE__);
         }
         $this->MidocoAgencyCommission = $midocoAgencyCommission;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchCampaignReqType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchCampaignReqType extends AbstractStructBase
 {
     /**

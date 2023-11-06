@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPaymentProviderSettlementBookingsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
 {
     /**
@@ -57,12 +58,13 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
         return $this->MidocoPaymentProviderSettlBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPaymentProviderSettlBooking method
+     * This method is responsible for validating the value(s) passed to the setMidocoPaymentProviderSettlBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPaymentProviderSettlBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPaymentProviderSettlBookingForArrayConstraintsFromSetMidocoPaymentProviderSettlBooking(?array $values = []): string
+    public static function validateMidocoPaymentProviderSettlBookingForArrayConstraintFromSetMidocoPaymentProviderSettlBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class GetPaymentProviderSettlementBookingsResponse extends AbstractStructBase
     public function setMidocoPaymentProviderSettlBooking(?array $midocoPaymentProviderSettlBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPaymentProviderSettlBookingArrayErrorMessage = self::validateMidocoPaymentProviderSettlBookingForArrayConstraintsFromSetMidocoPaymentProviderSettlBooking($midocoPaymentProviderSettlBooking))) {
+        if ('' !== ($midocoPaymentProviderSettlBookingArrayErrorMessage = self::validateMidocoPaymentProviderSettlBookingForArrayConstraintFromSetMidocoPaymentProviderSettlBooking($midocoPaymentProviderSettlBooking))) {
             throw new InvalidArgumentException($midocoPaymentProviderSettlBookingArrayErrorMessage, __LINE__);
         }
         $this->MidocoPaymentProviderSettlBooking = $midocoPaymentProviderSettlBooking;

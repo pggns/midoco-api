@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MfDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MfDTO extends AbstractStructBase
 {
     /**
@@ -95,7 +96,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set attrName value
      * @param string $attrName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setAttrName(?string $attrName = null): self
     {
@@ -118,7 +119,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setBean(?string $bean = null): self
     {
@@ -141,7 +142,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set className value
      * @param string $className
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setClassName(?string $className = null): self
     {
@@ -164,7 +165,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set emptyFieldAction value
      * @param int $emptyFieldAction
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setEmptyFieldAction(?int $emptyFieldAction = null): self
     {
@@ -187,7 +188,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set handler value
      * @param int $handler
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setHandler(?int $handler = null): self
     {
@@ -210,7 +211,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set listener value
      * @param string $listener
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setListener(?string $listener = null): self
     {
@@ -233,7 +234,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set mandatory value
      * @param int $mandatory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setMandatory(?int $mandatory = null): self
     {
@@ -256,7 +257,7 @@ class MfDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

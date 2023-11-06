@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SystemRulesetDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SystemRulesetDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class SystemRulesetDTO extends AbstractStructBase
     /**
      * Set byteCode value
      * @param string $byteCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetDTO
      */
     public function setByteCode(?string $byteCode = null): self
     {
@@ -110,7 +111,7 @@ class SystemRulesetDTO extends AbstractStructBase
     /**
      * Set codeType value
      * @param string $codeType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetDTO
      */
     public function setCodeType(?string $codeType = null): self
     {
@@ -133,7 +134,7 @@ class SystemRulesetDTO extends AbstractStructBase
     /**
      * Set content value
      * @param string $content
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetDTO
      */
     public function setContent(?string $content = null): self
     {
@@ -156,7 +157,7 @@ class SystemRulesetDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -179,7 +180,7 @@ class SystemRulesetDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -202,7 +203,7 @@ class SystemRulesetDTO extends AbstractStructBase
     /**
      * Set rulesetId value
      * @param int $rulesetId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetDTO
      */
     public function setRulesetId(?int $rulesetId = null): self
     {
@@ -225,7 +226,7 @@ class SystemRulesetDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

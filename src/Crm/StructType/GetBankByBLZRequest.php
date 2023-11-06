@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBankByBLZRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBankByBLZRequest extends AbstractStructBase
 {
     /**
@@ -19,14 +20,24 @@ class GetBankByBLZRequest extends AbstractStructBase
      */
     protected ?string $blz = null;
     /**
+     * The countryId
+     * Meta information extracted from the WSDL
+     * - default: DE
+     * @var string|null
+     */
+    protected ?string $countryId = null;
+    /**
      * Constructor method for GetBankByBLZRequest
      * @uses GetBankByBLZRequest::setBlz()
+     * @uses GetBankByBLZRequest::setCountryId()
      * @param string $blz
+     * @param string $countryId
      */
-    public function __construct(?string $blz = null)
+    public function __construct(?string $blz = null, ?string $countryId = 'DE')
     {
         $this
-            ->setBlz($blz);
+            ->setBlz($blz)
+            ->setCountryId($countryId);
     }
     /**
      * Get blz value
@@ -48,6 +59,29 @@ class GetBankByBLZRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($blz, true), gettype($blz)), __LINE__);
         }
         $this->blz = $blz;
+        
+        return $this;
+    }
+    /**
+     * Get countryId value
+     * @return string|null
+     */
+    public function getCountryId(): ?string
+    {
+        return $this->countryId;
+    }
+    /**
+     * Set countryId value
+     * @param string $countryId
+     * @return \Pggns\MidocoApi\Crm\StructType\GetBankByBLZRequest
+     */
+    public function setCountryId(?string $countryId = 'DE'): self
+    {
+        // validation for constraint: string
+        if (!is_null($countryId) && !is_string($countryId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($countryId, true), gettype($countryId)), __LINE__);
+        }
+        $this->countryId = $countryId;
         
         return $this;
     }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VisaProcessByCountryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VisaProcessByCountryDTO extends AbstractStructBase
 {
     /**
@@ -95,7 +96,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -118,7 +119,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set countryNeedsVisa value
      * @param bool $countryNeedsVisa
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setCountryNeedsVisa(?bool $countryNeedsVisa = null): self
     {
@@ -141,7 +142,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set daysToDueDate value
      * @param int $daysToDueDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setDaysToDueDate(?int $daysToDueDate = null): self
     {
@@ -164,7 +165,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set destination value
      * @param string $destination
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setDestination(?string $destination = null): self
     {
@@ -187,7 +188,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setId(?int $id = null): self
     {
@@ -210,7 +211,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set nextTaskType value
      * @param string $nextTaskType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setNextTaskType(?string $nextTaskType = null): self
     {
@@ -233,7 +234,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set passDataTo value
      * @param string $passDataTo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setPassDataTo(?string $passDataTo = null): self
     {
@@ -256,7 +257,7 @@ class VisaProcessByCountryDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VisaProcessByCountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VisaProcessByCountryDTO
      */
     public function setTaskType(?string $taskType = null): self
     {

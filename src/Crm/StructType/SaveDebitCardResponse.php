@@ -13,8 +13,17 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveDebitCard --- saves a debit card given as parameter
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveDebitCardResponse extends AbstractStructBase
 {
+    /**
+     * The MidocoCrmDebitCard
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * - ref: MidocoCrmDebitCard
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard|null
+     */
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $MidocoCrmDebitCard = null;
     /**
      * The internalVersion
      * @var int|null
@@ -22,13 +31,35 @@ class SaveDebitCardResponse extends AbstractStructBase
     protected ?int $internalVersion = null;
     /**
      * Constructor method for SaveDebitCardResponse
+     * @uses SaveDebitCardResponse::setMidocoCrmDebitCard()
      * @uses SaveDebitCardResponse::setInternalVersion()
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
      * @param int $internalVersion
      */
-    public function __construct(?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null, ?int $internalVersion = null)
     {
         $this
+            ->setMidocoCrmDebitCard($midocoCrmDebitCard)
             ->setInternalVersion($internalVersion);
+    }
+    /**
+     * Get MidocoCrmDebitCard value
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard|null
+     */
+    public function getMidocoCrmDebitCard(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard
+    {
+        return $this->MidocoCrmDebitCard;
+    }
+    /**
+     * Set MidocoCrmDebitCard value
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDebitCardResponse
+     */
+    public function setMidocoCrmDebitCard(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmDebitCard $midocoCrmDebitCard = null): self
+    {
+        $this->MidocoCrmDebitCard = $midocoCrmDebitCard;
+        
+        return $this;
     }
     /**
      * Get internalVersion value

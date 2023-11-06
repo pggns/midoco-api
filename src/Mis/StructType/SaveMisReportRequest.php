@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMisReportRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMisReportRequest extends AbstractStructBase
 {
     /**

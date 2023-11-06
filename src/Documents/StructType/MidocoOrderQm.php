@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrderQm StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrderQm extends OrderQmDTO
 {
     /**
@@ -69,12 +70,13 @@ class MidocoOrderQm extends OrderQmDTO
         return $this->MidocoOrderQmAnswerDTO;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderQmAnswerDTO method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderQmAnswerDTO method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderQmAnswerDTO method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderQmAnswerDTOForArrayConstraintsFromSetMidocoOrderQmAnswerDTO(?array $values = []): string
+    public static function validateMidocoOrderQmAnswerDTOForArrayConstraintFromSetMidocoOrderQmAnswerDTO(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -103,7 +105,7 @@ class MidocoOrderQm extends OrderQmDTO
     public function setMidocoOrderQmAnswerDTO(?array $midocoOrderQmAnswerDTO = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderQmAnswerDTOArrayErrorMessage = self::validateMidocoOrderQmAnswerDTOForArrayConstraintsFromSetMidocoOrderQmAnswerDTO($midocoOrderQmAnswerDTO))) {
+        if ('' !== ($midocoOrderQmAnswerDTOArrayErrorMessage = self::validateMidocoOrderQmAnswerDTOForArrayConstraintFromSetMidocoOrderQmAnswerDTO($midocoOrderQmAnswerDTO))) {
             throw new InvalidArgumentException($midocoOrderQmAnswerDTOArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderQmAnswerDTO = $midocoOrderQmAnswerDTO;

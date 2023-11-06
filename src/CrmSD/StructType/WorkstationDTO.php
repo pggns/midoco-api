@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for WorkstationDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class WorkstationDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class WorkstationDTO extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\WorkstationDTO
      */
     public function setId(?string $id = null): self
     {
@@ -78,7 +79,7 @@ class WorkstationDTO extends AbstractStructBase
     /**
      * Set lastLogin value
      * @param string $lastLogin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\WorkstationDTO
      */
     public function setLastLogin(?string $lastLogin = null): self
     {
@@ -101,7 +102,7 @@ class WorkstationDTO extends AbstractStructBase
     /**
      * Set lastUser value
      * @param int $lastUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\WorkstationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\WorkstationDTO
      */
     public function setLastUser(?int $lastUser = null): self
     {

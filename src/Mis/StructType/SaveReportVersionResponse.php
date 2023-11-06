@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveReportVersionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveReportVersionResponse extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSellItemInfo4SearchOrderResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
         return $this->MidocoSellItemInfo4SearchOrder;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemInfo4SearchOrder method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemInfo4SearchOrder method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemInfo4SearchOrder method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemInfo4SearchOrderForArrayConstraintsFromSetMidocoSellItemInfo4SearchOrder(?array $values = []): string
+    public static function validateMidocoSellItemInfo4SearchOrderForArrayConstraintFromSetMidocoSellItemInfo4SearchOrder(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSellItemInfo4SearchOrderResponse extends AbstractStructBase
     public function setMidocoSellItemInfo4SearchOrder(?array $midocoSellItemInfo4SearchOrder = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemInfo4SearchOrderArrayErrorMessage = self::validateMidocoSellItemInfo4SearchOrderForArrayConstraintsFromSetMidocoSellItemInfo4SearchOrder($midocoSellItemInfo4SearchOrder))) {
+        if ('' !== ($midocoSellItemInfo4SearchOrderArrayErrorMessage = self::validateMidocoSellItemInfo4SearchOrderForArrayConstraintFromSetMidocoSellItemInfo4SearchOrder($midocoSellItemInfo4SearchOrder))) {
             throw new InvalidArgumentException($midocoSellItemInfo4SearchOrderArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemInfo4SearchOrder = $midocoSellItemInfo4SearchOrder;

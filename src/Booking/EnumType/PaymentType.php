@@ -26,30 +26,30 @@ class PaymentType extends AbstractStructEnumBase
      * Constant for value 'CC'
      * @return string 'CC'
      */
-    const VALUE_CC = 'CC';
+    const VALUE_CC_1 = 'CC';
     /**
      * Constant for value 'DEBIT'
      * @return string 'DEBIT'
      */
-    const VALUE_DEBIT = 'DEBIT';
+    const VALUE_DEBIT_2 = 'DEBIT';
     /**
      * Constant for value 'CASH'
      * @return string 'CASH'
      */
-    const VALUE_CASH = 'CASH';
+    const VALUE_CASH_2 = 'CASH';
     /**
      * Constant for value 'PP'
      * @return string 'PP'
      */
-    const VALUE_PP = 'PP';
+    const VALUE_PP_1 = 'PP';
     /**
      * Return allowed values
      * @uses self::VALUE_AGENCY
      * @uses self::VALUE_SUPPLIER
-     * @uses self::VALUE_CC
-     * @uses self::VALUE_DEBIT
-     * @uses self::VALUE_CASH
-     * @uses self::VALUE_PP
+     * @uses self::VALUE_CC_1
+     * @uses self::VALUE_DEBIT_2
+     * @uses self::VALUE_CASH_2
+     * @uses self::VALUE_PP_1
      * @return string[]
      */
     public static function getValidValues(): array
@@ -57,10 +57,10 @@ class PaymentType extends AbstractStructEnumBase
         return [
             self::VALUE_AGENCY,
             self::VALUE_SUPPLIER,
-            self::VALUE_CC,
-            self::VALUE_DEBIT,
-            self::VALUE_CASH,
-            self::VALUE_PP,
+            self::VALUE_CC_1,
+            self::VALUE_DEBIT_2,
+            self::VALUE_CASH_2,
+            self::VALUE_PP_1,
         ];
     }
 }

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSignatureLocationsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSignatureLocationsRequest extends AbstractStructBase
 {
     /**

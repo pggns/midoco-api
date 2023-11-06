@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAccountEntriesForDebitorBalanceRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAccountEntriesForDebitorBalanceRequest extends AbstractStructBase
 {
     /**
@@ -94,12 +95,13 @@ class GetAccountEntriesForDebitorBalanceRequest extends AbstractStructBase
         return $this->MidocoOrderByInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderByInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderByInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderByInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderByInfoForArrayConstraintsFromSetMidocoOrderByInfo(?array $values = []): string
+    public static function validateMidocoOrderByInfoForArrayConstraintFromSetMidocoOrderByInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -128,7 +130,7 @@ class GetAccountEntriesForDebitorBalanceRequest extends AbstractStructBase
     public function setMidocoOrderByInfo(?array $midocoOrderByInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderByInfoArrayErrorMessage = self::validateMidocoOrderByInfoForArrayConstraintsFromSetMidocoOrderByInfo($midocoOrderByInfo))) {
+        if ('' !== ($midocoOrderByInfoArrayErrorMessage = self::validateMidocoOrderByInfoForArrayConstraintFromSetMidocoOrderByInfo($midocoOrderByInfo))) {
             throw new InvalidArgumentException($midocoOrderByInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderByInfo = $midocoOrderByInfo;

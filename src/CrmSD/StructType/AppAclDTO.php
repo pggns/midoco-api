@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AppAclDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AppAclDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppAclDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +79,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set ipAddr value
      * @param string $ipAddr
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppAclDTO
      */
     public function setIpAddr(?string $ipAddr = null): self
     {
@@ -101,7 +102,7 @@ class AppAclDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppAclDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppAclDTO
      */
     public function setModulId(?string $modulId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCampaignFieldExt StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCampaignFieldExt extends CampaignFieldType
 {
     /**

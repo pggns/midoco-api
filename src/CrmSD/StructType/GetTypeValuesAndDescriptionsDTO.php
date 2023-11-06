@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTypeValuesAndDescriptionsDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
 {
     /**
@@ -64,12 +65,13 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
         return $this->value;
     }
     /**
-     * This method is responsible for validating the values passed to the setValue method
+     * This method is responsible for validating the value(s) passed to the setValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateValueForArrayConstraintsFromSetValue(?array $values = []): string
+    public static function validateValueForArrayConstraintFromSetValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,12 +95,12 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
      * Set value value
      * @throws InvalidArgumentException
      * @param string[] $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setValue(?array $value = null): self
     {
         // validation for constraint: array
-        if ('' !== ($valueArrayErrorMessage = self::validateValueForArrayConstraintsFromSetValue($value))) {
+        if ('' !== ($valueArrayErrorMessage = self::validateValueForArrayConstraintFromSetValue($value))) {
             throw new InvalidArgumentException($valueArrayErrorMessage, __LINE__);
         }
         $this->value = $value;
@@ -109,7 +111,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
      * Add item to value value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function addToValue(string $item): self
     {
@@ -132,7 +134,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set key value
      * @param string $key
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setKey(?string $key = null): self
     {
@@ -155,7 +157,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -178,7 +180,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
     /**
      * Set defaultValue value
      * @param string $defaultValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTypeValuesAndDescriptionsDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTypeValuesAndDescriptionsDTO
      */
     public function setDefaultValue(?string $defaultValue = null): self
     {

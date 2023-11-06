@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCcTokenRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCcTokenRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetCcTokenRequest extends AbstractStructBase
     /**
      * Set ccTokenReferenceId value
      * @param int $ccTokenReferenceId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCcTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCcTokenRequest
      */
     public function setCcTokenReferenceId(?int $ccTokenReferenceId = null): self
     {
@@ -70,7 +71,7 @@ class GetCcTokenRequest extends AbstractStructBase
     /**
      * Set ccTokenType value
      * @param string $ccTokenType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCcTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCcTokenRequest
      */
     public function setCcTokenType(?string $ccTokenType = null): self
     {

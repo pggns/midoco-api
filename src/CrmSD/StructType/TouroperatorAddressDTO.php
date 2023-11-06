@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TouroperatorAddressDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TouroperatorAddressDTO extends AbstractStructBase
 {
     /**
@@ -127,7 +128,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set additionalInfo value
      * @param string $additionalInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setAdditionalInfo(?string $additionalInfo = null): self
     {
@@ -150,7 +151,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -173,7 +174,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -196,7 +197,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -219,7 +220,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -242,7 +243,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setPhone(?string $phone = null): self
     {
@@ -265,7 +266,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -288,7 +289,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -311,7 +312,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -334,7 +335,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -357,7 +358,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -380,7 +381,7 @@ class TouroperatorAddressDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorAddressDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

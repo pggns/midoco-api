@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: validateDebitCard --- validate the debit card information
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidateDebitCardResponse extends AbstractStructBase
 {
     /**
@@ -43,7 +44,7 @@ class ValidateDebitCardResponse extends AbstractStructBase
     /**
      * Set isValid value
      * @param bool $isValid
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateDebitCardResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateDebitCardResponse
      */
     public function setIsValid(bool $isValid): self
     {

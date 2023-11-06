@@ -19,7 +19,7 @@ class Create extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Order\ServiceType\Create
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -271,9 +271,90 @@ class Create extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named createTamaraEnrichment
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\GetBillingDocumentRequest $paramGetBillingDocumentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentResponse|bool
+     */
+    public function createTamaraEnrichment(\Pggns\MidocoApi\Order\StructType\GetBillingDocumentRequest $paramGetBillingDocumentRequest)
+    {
+        try {
+            $this->setResult($resultCreateTamaraEnrichment = $this->getSoapClient()->__soapCall('createTamaraEnrichment', [
+                $paramGetBillingDocumentRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultCreateTamaraEnrichment;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named createEmptyOrder
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\CreateEmptyOrderRequest $paramCreateEmptyOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateEmptyOrderResponse|bool
+     */
+    public function createEmptyOrder(\Pggns\MidocoApi\Order\StructType\CreateEmptyOrderRequest $paramCreateEmptyOrderRequest)
+    {
+        try {
+            $this->setResult($resultCreateEmptyOrder = $this->getSoapClient()->__soapCall('createEmptyOrder', [
+                $paramCreateEmptyOrderRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultCreateEmptyOrder;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named createCollectiveCustomerInvoice
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\CreateCollectiveCustomerInvoiceRequest $paramCreateCollectiveCustomerInvoiceRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CreateCollectiveCustomerInvoiceResponse|bool
+     */
+    public function createCollectiveCustomerInvoice(\Pggns\MidocoApi\Order\StructType\CreateCollectiveCustomerInvoiceRequest $paramCreateCollectiveCustomerInvoiceRequest)
+    {
+        try {
+            $this->setResult($resultCreateCollectiveCustomerInvoice = $this->getSoapClient()->__soapCall('createCollectiveCustomerInvoice', [
+                $paramCreateCollectiveCustomerInvoiceRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultCreateCollectiveCustomerInvoice;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Order\StructType\CreateAcconLinkResponse|\Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeResponse|\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse|\Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse|\Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\CreateSupplierMessageResponse|\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobResponse|\Pggns\MidocoApi\Order\StructType\CreateVatCorrectionBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\CreateVermiLinkResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CreateAcconLinkResponse|\Pggns\MidocoApi\Order\StructType\CreateAutomaticOrderNoticeResponse|\Pggns\MidocoApi\Order\StructType\CreateBillingPrintjobResponse|\Pggns\MidocoApi\Order\StructType\CreateCollectiveCustomerInvoiceResponse|\Pggns\MidocoApi\Order\StructType\CreateDSFinVKExportResponse|\Pggns\MidocoApi\Order\StructType\CreateEmptyOrderResponse|\Pggns\MidocoApi\Order\StructType\CreateExternDocument4BillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\CreateSupplierMessageResponse|\Pggns\MidocoApi\Order\StructType\CreateTravelPlanPrintjobResponse|\Pggns\MidocoApi\Order\StructType\CreateVatCorrectionBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\CreateVermiLinkResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentResponse
      */
     public function getResult()
     {

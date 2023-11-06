@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalesListByPaymentTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalesListByPaymentTypeResponse extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
         return $this->MidocoSalesListByPaymentType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSalesListByPaymentType method
+     * This method is responsible for validating the value(s) passed to the setMidocoSalesListByPaymentType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSalesListByPaymentType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSalesListByPaymentTypeForArrayConstraintsFromSetMidocoSalesListByPaymentType(?array $values = []): string
+    public static function validateMidocoSalesListByPaymentTypeForArrayConstraintFromSetMidocoSalesListByPaymentType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class SalesListByPaymentTypeResponse extends AbstractStructBase
     public function setMidocoSalesListByPaymentType(?array $midocoSalesListByPaymentType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSalesListByPaymentTypeArrayErrorMessage = self::validateMidocoSalesListByPaymentTypeForArrayConstraintsFromSetMidocoSalesListByPaymentType($midocoSalesListByPaymentType))) {
+        if ('' !== ($midocoSalesListByPaymentTypeArrayErrorMessage = self::validateMidocoSalesListByPaymentTypeForArrayConstraintFromSetMidocoSalesListByPaymentType($midocoSalesListByPaymentType))) {
             throw new InvalidArgumentException($midocoSalesListByPaymentTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoSalesListByPaymentType = $midocoSalesListByPaymentType;

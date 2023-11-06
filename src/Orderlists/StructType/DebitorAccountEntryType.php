@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DebitorAccountEntryType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DebitorAccountEntryType extends AbstractStructBase
 {
     /**
@@ -129,6 +130,26 @@ class DebitorAccountEntryType extends AbstractStructBase
      */
     protected ?bool $processingLock = null;
     /**
+     * The creditLimit
+     * @var float|null
+     */
+    protected ?float $creditLimit = null;
+    /**
+     * The paymentConditionDescr
+     * @var string|null
+     */
+    protected ?string $paymentConditionDescr = null;
+    /**
+     * The invoiceDate
+     * @var string|null
+     */
+    protected ?string $invoiceDate = null;
+    /**
+     * The customerId
+     * @var int|null
+     */
+    protected ?int $customerId = null;
+    /**
      * Constructor method for DebitorAccountEntryType
      * @uses DebitorAccountEntryType::setAccountId()
      * @uses DebitorAccountEntryType::setDueDate()
@@ -153,6 +174,10 @@ class DebitorAccountEntryType extends AbstractStructBase
      * @uses DebitorAccountEntryType::setCommentDatetime()
      * @uses DebitorAccountEntryType::setHasTask()
      * @uses DebitorAccountEntryType::setProcessingLock()
+     * @uses DebitorAccountEntryType::setCreditLimit()
+     * @uses DebitorAccountEntryType::setPaymentConditionDescr()
+     * @uses DebitorAccountEntryType::setInvoiceDate()
+     * @uses DebitorAccountEntryType::setCustomerId()
      * @param string $accountId
      * @param string $dueDate
      * @param string $creationDate
@@ -176,8 +201,12 @@ class DebitorAccountEntryType extends AbstractStructBase
      * @param string $commentDatetime
      * @param bool $hasTask
      * @param bool $processingLock
+     * @param float $creditLimit
+     * @param string $paymentConditionDescr
+     * @param string $invoiceDate
+     * @param int $customerId
      */
-    public function __construct(?string $accountId = null, ?string $dueDate = null, ?string $creationDate = null, ?float $dueAmount = null, ?string $company = null, ?string $customer = null, ?string $entryId = null, ?float $paidAmount = null, ?float $invoicedAmount = null, ?string $planId = null, ?string $accountName = null, ?string $accountType = null, ?float $originalPaidAmount = null, ?float $originalInvoicedAmount = null, ?float $originalDueAmount = null, ?string $currency = null, ?string $originalCurrency = null, ?string $oppositeAccountId = null, ?string $comment = null, ?int $commentUser = null, ?string $commentDatetime = null, ?bool $hasTask = null, ?bool $processingLock = null)
+    public function __construct(?string $accountId = null, ?string $dueDate = null, ?string $creationDate = null, ?float $dueAmount = null, ?string $company = null, ?string $customer = null, ?string $entryId = null, ?float $paidAmount = null, ?float $invoicedAmount = null, ?string $planId = null, ?string $accountName = null, ?string $accountType = null, ?float $originalPaidAmount = null, ?float $originalInvoicedAmount = null, ?float $originalDueAmount = null, ?string $currency = null, ?string $originalCurrency = null, ?string $oppositeAccountId = null, ?string $comment = null, ?int $commentUser = null, ?string $commentDatetime = null, ?bool $hasTask = null, ?bool $processingLock = null, ?float $creditLimit = null, ?string $paymentConditionDescr = null, ?string $invoiceDate = null, ?int $customerId = null)
     {
         $this
             ->setAccountId($accountId)
@@ -202,7 +231,11 @@ class DebitorAccountEntryType extends AbstractStructBase
             ->setCommentUser($commentUser)
             ->setCommentDatetime($commentDatetime)
             ->setHasTask($hasTask)
-            ->setProcessingLock($processingLock);
+            ->setProcessingLock($processingLock)
+            ->setCreditLimit($creditLimit)
+            ->setPaymentConditionDescr($paymentConditionDescr)
+            ->setInvoiceDate($invoiceDate)
+            ->setCustomerId($customerId);
     }
     /**
      * Get accountId value
@@ -730,6 +763,98 @@ class DebitorAccountEntryType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($processingLock, true), gettype($processingLock)), __LINE__);
         }
         $this->processingLock = $processingLock;
+        
+        return $this;
+    }
+    /**
+     * Get creditLimit value
+     * @return float|null
+     */
+    public function getCreditLimit(): ?float
+    {
+        return $this->creditLimit;
+    }
+    /**
+     * Set creditLimit value
+     * @param float $creditLimit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorAccountEntryType
+     */
+    public function setCreditLimit(?float $creditLimit = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($creditLimit) && !(is_float($creditLimit) || is_numeric($creditLimit))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($creditLimit, true), gettype($creditLimit)), __LINE__);
+        }
+        $this->creditLimit = $creditLimit;
+        
+        return $this;
+    }
+    /**
+     * Get paymentConditionDescr value
+     * @return string|null
+     */
+    public function getPaymentConditionDescr(): ?string
+    {
+        return $this->paymentConditionDescr;
+    }
+    /**
+     * Set paymentConditionDescr value
+     * @param string $paymentConditionDescr
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorAccountEntryType
+     */
+    public function setPaymentConditionDescr(?string $paymentConditionDescr = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($paymentConditionDescr) && !is_string($paymentConditionDescr)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($paymentConditionDescr, true), gettype($paymentConditionDescr)), __LINE__);
+        }
+        $this->paymentConditionDescr = $paymentConditionDescr;
+        
+        return $this;
+    }
+    /**
+     * Get invoiceDate value
+     * @return string|null
+     */
+    public function getInvoiceDate(): ?string
+    {
+        return $this->invoiceDate;
+    }
+    /**
+     * Set invoiceDate value
+     * @param string $invoiceDate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorAccountEntryType
+     */
+    public function setInvoiceDate(?string $invoiceDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($invoiceDate) && !is_string($invoiceDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($invoiceDate, true), gettype($invoiceDate)), __LINE__);
+        }
+        $this->invoiceDate = $invoiceDate;
+        
+        return $this;
+    }
+    /**
+     * Get customerId value
+     * @return int|null
+     */
+    public function getCustomerId(): ?int
+    {
+        return $this->customerId;
+    }
+    /**
+     * Set customerId value
+     * @param int $customerId
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DebitorAccountEntryType
+     */
+    public function setCustomerId(?int $customerId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($customerId) && !(is_int($customerId) || ctype_digit($customerId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($customerId, true), gettype($customerId)), __LINE__);
+        }
+        $this->customerId = $customerId;
         
         return $this;
     }

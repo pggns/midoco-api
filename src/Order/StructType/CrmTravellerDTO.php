@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmTravellerDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmTravellerDTO extends AbstractStructBase
 {
     /**
@@ -108,6 +109,11 @@ class CrmTravellerDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $forename = null;
+    /**
+     * The gender
+     * @var int|null
+     */
+    protected ?int $gender = null;
     /**
      * The idCardNo
      * @var string|null
@@ -224,6 +230,7 @@ class CrmTravellerDTO extends AbstractStructBase
      * @uses CrmTravellerDTO::setExpiryDate()
      * @uses CrmTravellerDTO::setFacesId()
      * @uses CrmTravellerDTO::setForename()
+     * @uses CrmTravellerDTO::setGender()
      * @uses CrmTravellerDTO::setIdCardNo()
      * @uses CrmTravellerDTO::setIdCardType()
      * @uses CrmTravellerDTO::setIssueDate()
@@ -262,6 +269,7 @@ class CrmTravellerDTO extends AbstractStructBase
      * @param string $expiryDate
      * @param string $facesId
      * @param string $forename
+     * @param int $gender
      * @param string $idCardNo
      * @param string $idCardType
      * @param string $issueDate
@@ -282,7 +290,7 @@ class CrmTravellerDTO extends AbstractStructBase
      * @param int $travellerId
      * @param int $typeId
      */
-    public function __construct(?int $birthDay = null, ?int $birthMonth = null, ?string $birthName = null, ?int $birthYear = null, ?string $birthday_1 = null, ?bool $birthdayNotProvided = null, ?string $businessPhone = null, ?string $ccNo = null, ?string $ccOwner = null, ?string $ccTyp = null, ?int $ccValidMonth = null, ?int $ccValidYear = null, ?string $customerCostCentre = null, ?int $customerId = null, ?string $department = null, ?string $email = null, ?string $expiryDate = null, ?string $facesId = null, ?string $forename = null, ?string $idCardNo = null, ?string $idCardType = null, ?string $issueDate = null, ?string $issuePlace = null, ?string $middlename = null, ?string $mobilePhone = null, ?string $name = null, ?string $nationality = null, ?string $passportExpiryDate = null, ?string $passportIssueDate = null, ?string $passportIssuePlace = null, ?string $passportNo = null, ?string $personalNo = null, ?string $placeOfBirth = null, ?string $privatePhone = null, ?string $salutationId = null, ?string $title = null, ?int $travellerId = null, ?int $typeId = null)
+    public function __construct(?int $birthDay = null, ?int $birthMonth = null, ?string $birthName = null, ?int $birthYear = null, ?string $birthday_1 = null, ?bool $birthdayNotProvided = null, ?string $businessPhone = null, ?string $ccNo = null, ?string $ccOwner = null, ?string $ccTyp = null, ?int $ccValidMonth = null, ?int $ccValidYear = null, ?string $customerCostCentre = null, ?int $customerId = null, ?string $department = null, ?string $email = null, ?string $expiryDate = null, ?string $facesId = null, ?string $forename = null, ?int $gender = null, ?string $idCardNo = null, ?string $idCardType = null, ?string $issueDate = null, ?string $issuePlace = null, ?string $middlename = null, ?string $mobilePhone = null, ?string $name = null, ?string $nationality = null, ?string $passportExpiryDate = null, ?string $passportIssueDate = null, ?string $passportIssuePlace = null, ?string $passportNo = null, ?string $personalNo = null, ?string $placeOfBirth = null, ?string $privatePhone = null, ?string $salutationId = null, ?string $title = null, ?int $travellerId = null, ?int $typeId = null)
     {
         $this
             ->setBirthDay($birthDay)
@@ -304,6 +312,7 @@ class CrmTravellerDTO extends AbstractStructBase
             ->setExpiryDate($expiryDate)
             ->setFacesId($facesId)
             ->setForename($forename)
+            ->setGender($gender)
             ->setIdCardNo($idCardNo)
             ->setIdCardType($idCardType)
             ->setIssueDate($issueDate)
@@ -758,6 +767,29 @@ class CrmTravellerDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($forename, true), gettype($forename)), __LINE__);
         }
         $this->forename = $forename;
+        
+        return $this;
+    }
+    /**
+     * Get gender value
+     * @return int|null
+     */
+    public function getGender(): ?int
+    {
+        return $this->gender;
+    }
+    /**
+     * Set gender value
+     * @param int $gender
+     * @return \Pggns\MidocoApi\Order\StructType\CrmTravellerDTO
+     */
+    public function setGender(?int $gender = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($gender) && !(is_int($gender) || ctype_digit($gender))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($gender, true), gettype($gender)), __LINE__);
+        }
+        $this->gender = $gender;
         
         return $this;
     }

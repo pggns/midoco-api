@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AccessReportDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AccessReportDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class AccessReportDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AccessReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AccessReportDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -78,7 +79,7 @@ class AccessReportDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AccessReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AccessReportDTO
      */
     public function setReportId(?int $reportId = null): self
     {
@@ -101,7 +102,7 @@ class AccessReportDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AccessReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AccessReportDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getDueMediatorCharges --- get the charges to be included in the next settlement
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDueMediatorChargesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetDueMediatorChargesResponse extends AbstractStructBase
         return $this->MidocoCrmMediatorChargeInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMediatorChargeInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMediatorChargeInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMediatorChargeInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMediatorChargeInfoForArrayConstraintsFromSetMidocoCrmMediatorChargeInfo(?array $values = []): string
+    public static function validateMidocoCrmMediatorChargeInfoForArrayConstraintFromSetMidocoCrmMediatorChargeInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetDueMediatorChargesResponse extends AbstractStructBase
     public function setMidocoCrmMediatorChargeInfo(?array $midocoCrmMediatorChargeInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMediatorChargeInfoArrayErrorMessage = self::validateMidocoCrmMediatorChargeInfoForArrayConstraintsFromSetMidocoCrmMediatorChargeInfo($midocoCrmMediatorChargeInfo))) {
+        if ('' !== ($midocoCrmMediatorChargeInfoArrayErrorMessage = self::validateMidocoCrmMediatorChargeInfoForArrayConstraintFromSetMidocoCrmMediatorChargeInfo($midocoCrmMediatorChargeInfo))) {
             throw new InvalidArgumentException($midocoCrmMediatorChargeInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMediatorChargeInfo = $midocoCrmMediatorChargeInfo;

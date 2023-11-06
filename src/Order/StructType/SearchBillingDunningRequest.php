@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchBillingDunningRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchBillingDunningRequest extends AbstractStructBase
 {
     /**
@@ -44,6 +45,16 @@ class SearchBillingDunningRequest extends AbstractStructBase
      */
     protected ?string $searchCriteria = null;
     /**
+     * The customerId
+     * @var int|null
+     */
+    protected ?int $customerId = null;
+    /**
+     * The debitorNo
+     * @var string|null
+     */
+    protected ?string $debitorNo = null;
+    /**
      * Constructor method for SearchBillingDunningRequest
      * @uses SearchBillingDunningRequest::setStartDate()
      * @uses SearchBillingDunningRequest::setEndDate()
@@ -51,14 +62,18 @@ class SearchBillingDunningRequest extends AbstractStructBase
      * @uses SearchBillingDunningRequest::setOrgUnit()
      * @uses SearchBillingDunningRequest::setToDunningLevel()
      * @uses SearchBillingDunningRequest::setSearchCriteria()
+     * @uses SearchBillingDunningRequest::setCustomerId()
+     * @uses SearchBillingDunningRequest::setDebitorNo()
      * @param string $startDate
      * @param string $endDate
      * @param int $fromDunningLevel
      * @param string $orgUnit
      * @param int $toDunningLevel
      * @param string $searchCriteria
+     * @param int $customerId
+     * @param string $debitorNo
      */
-    public function __construct(?string $startDate = null, ?string $endDate = null, ?int $fromDunningLevel = null, ?string $orgUnit = null, ?int $toDunningLevel = null, ?string $searchCriteria = null)
+    public function __construct(?string $startDate = null, ?string $endDate = null, ?int $fromDunningLevel = null, ?string $orgUnit = null, ?int $toDunningLevel = null, ?string $searchCriteria = null, ?int $customerId = null, ?string $debitorNo = null)
     {
         $this
             ->setStartDate($startDate)
@@ -66,7 +81,9 @@ class SearchBillingDunningRequest extends AbstractStructBase
             ->setFromDunningLevel($fromDunningLevel)
             ->setOrgUnit($orgUnit)
             ->setToDunningLevel($toDunningLevel)
-            ->setSearchCriteria($searchCriteria);
+            ->setSearchCriteria($searchCriteria)
+            ->setCustomerId($customerId)
+            ->setDebitorNo($debitorNo);
     }
     /**
      * Get startDate value
@@ -203,6 +220,52 @@ class SearchBillingDunningRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($searchCriteria, true), gettype($searchCriteria)), __LINE__);
         }
         $this->searchCriteria = $searchCriteria;
+        
+        return $this;
+    }
+    /**
+     * Get customerId value
+     * @return int|null
+     */
+    public function getCustomerId(): ?int
+    {
+        return $this->customerId;
+    }
+    /**
+     * Set customerId value
+     * @param int $customerId
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
+     */
+    public function setCustomerId(?int $customerId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($customerId) && !(is_int($customerId) || ctype_digit($customerId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($customerId, true), gettype($customerId)), __LINE__);
+        }
+        $this->customerId = $customerId;
+        
+        return $this;
+    }
+    /**
+     * Get debitorNo value
+     * @return string|null
+     */
+    public function getDebitorNo(): ?string
+    {
+        return $this->debitorNo;
+    }
+    /**
+     * Set debitorNo value
+     * @param string $debitorNo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchBillingDunningRequest
+     */
+    public function setDebitorNo(?string $debitorNo = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($debitorNo) && !is_string($debitorNo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($debitorNo, true), gettype($debitorNo)), __LINE__);
+        }
+        $this->debitorNo = $debitorNo;
         
         return $this;
     }

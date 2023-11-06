@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: move signed document --- moves a signed document to the specified order,customer or billing document from the input order, customer or billing document
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MoveSignedDocumentResponse extends AbstractStructBase
 {
     /**

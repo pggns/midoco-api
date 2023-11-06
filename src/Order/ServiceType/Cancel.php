@@ -19,7 +19,7 @@ class Cancel extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Order\ServiceType\Cancel
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -81,9 +81,36 @@ class Cancel extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named cancelSubscription
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\CancelSubscriptionRequest $paramCancelSubscriptionRequest
+     * @return \Pggns\MidocoApi\Order\StructType\CancelSubscriptionResponse|bool
+     */
+    public function cancelSubscription(\Pggns\MidocoApi\Order\StructType\CancelSubscriptionRequest $paramCancelSubscriptionRequest)
+    {
+        try {
+            $this->setResult($resultCancelSubscription = $this->getSoapClient()->__soapCall('cancelSubscription', [
+                $paramCancelSubscriptionRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultCancelSubscription;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Order\StructType\CancelFlightResponse|\Pggns\MidocoApi\Order\StructType\CancelPackageResponse
+     * @return \Pggns\MidocoApi\Order\StructType\CancelFlightResponse|\Pggns\MidocoApi\Order\StructType\CancelPackageResponse|\Pggns\MidocoApi\Order\StructType\CancelSubscriptionResponse
      */
     public function getResult()
     {

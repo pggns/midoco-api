@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteNamePrefixRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteNamePrefixRequest extends AbstractStructBase
 {
     /**
      * The MidocoNamePrefix
      * Meta information extracted from the WSDL
      * - ref: MidocoNamePrefix
-     * @var \Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO $MidocoNamePrefix = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO $MidocoNamePrefix = null;
     /**
      * Constructor method for DeleteNamePrefixRequest
      * @uses DeleteNamePrefixRequest::setMidocoNamePrefix()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO $midocoNamePrefix
+     * @param \Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO $midocoNamePrefix
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO $midocoNamePrefix = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO $midocoNamePrefix = null)
     {
         $this
             ->setMidocoNamePrefix($midocoNamePrefix);
     }
     /**
      * Get MidocoNamePrefix value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO|null
      */
-    public function getMidocoNamePrefix(): ?\Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO
+    public function getMidocoNamePrefix(): ?\Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO
     {
         return $this->MidocoNamePrefix;
     }
     /**
      * Set MidocoNamePrefix value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO $midocoNamePrefix
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteNamePrefixRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO $midocoNamePrefix
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteNamePrefixRequest
      */
-    public function setMidocoNamePrefix(?\Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO $midocoNamePrefix = null): self
+    public function setMidocoNamePrefix(?\Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO $midocoNamePrefix = null): self
     {
         $this->MidocoNamePrefix = $midocoNamePrefix;
         

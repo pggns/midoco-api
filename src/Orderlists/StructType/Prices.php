@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: The price section, giving prices for all the bookings mentioned above, referenced by the price_ref attribute
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Prices extends AbstractStructBase
 {
     /**
@@ -106,12 +107,13 @@ class Prices extends AbstractStructBase
         return $this->{'booking-price'};
     }
     /**
-     * This method is responsible for validating the values passed to the setBooking_price method
+     * This method is responsible for validating the value(s) passed to the setBooking_price method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBooking_price method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBooking_priceForArrayConstraintsFromSetBooking_price(?array $values = []): string
+    public static function validateBooking_priceForArrayConstraintFromSetBooking_price(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -140,7 +142,7 @@ class Prices extends AbstractStructBase
     public function setBooking_price(?array $booking_price = null): self
     {
         // validation for constraint: array
-        if ('' !== ($booking_priceArrayErrorMessage = self::validateBooking_priceForArrayConstraintsFromSetBooking_price($booking_price))) {
+        if ('' !== ($booking_priceArrayErrorMessage = self::validateBooking_priceForArrayConstraintFromSetBooking_price($booking_price))) {
             throw new InvalidArgumentException($booking_priceArrayErrorMessage, __LINE__);
         }
         $this->booking_price = $this->{'booking-price'} = $booking_price;
@@ -172,12 +174,13 @@ class Prices extends AbstractStructBase
         return $this->{'flight-price'};
     }
     /**
-     * This method is responsible for validating the values passed to the setFlight_price method
+     * This method is responsible for validating the value(s) passed to the setFlight_price method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFlight_price method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFlight_priceForArrayConstraintsFromSetFlight_price(?array $values = []): string
+    public static function validateFlight_priceForArrayConstraintFromSetFlight_price(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -206,7 +209,7 @@ class Prices extends AbstractStructBase
     public function setFlight_price(?array $flight_price = null): self
     {
         // validation for constraint: array
-        if ('' !== ($flight_priceArrayErrorMessage = self::validateFlight_priceForArrayConstraintsFromSetFlight_price($flight_price))) {
+        if ('' !== ($flight_priceArrayErrorMessage = self::validateFlight_priceForArrayConstraintFromSetFlight_price($flight_price))) {
             throw new InvalidArgumentException($flight_priceArrayErrorMessage, __LINE__);
         }
         $this->flight_price = $this->{'flight-price'} = $flight_price;
@@ -238,12 +241,13 @@ class Prices extends AbstractStructBase
         return $this->fee;
     }
     /**
-     * This method is responsible for validating the values passed to the setFee method
+     * This method is responsible for validating the value(s) passed to the setFee method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFee method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFeeForArrayConstraintsFromSetFee(?array $values = []): string
+    public static function validateFeeForArrayConstraintFromSetFee(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -272,7 +276,7 @@ class Prices extends AbstractStructBase
     public function setFee(?array $fee = null): self
     {
         // validation for constraint: array
-        if ('' !== ($feeArrayErrorMessage = self::validateFeeForArrayConstraintsFromSetFee($fee))) {
+        if ('' !== ($feeArrayErrorMessage = self::validateFeeForArrayConstraintFromSetFee($fee))) {
             throw new InvalidArgumentException($feeArrayErrorMessage, __LINE__);
         }
         $this->fee = $fee;
@@ -304,12 +308,13 @@ class Prices extends AbstractStructBase
         return $this->{'details-price'};
     }
     /**
-     * This method is responsible for validating the values passed to the setDetails_price method
+     * This method is responsible for validating the value(s) passed to the setDetails_price method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDetails_price method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDetails_priceForArrayConstraintsFromSetDetails_price(?array $values = []): string
+    public static function validateDetails_priceForArrayConstraintFromSetDetails_price(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -338,7 +343,7 @@ class Prices extends AbstractStructBase
     public function setDetails_price(?array $details_price = null): self
     {
         // validation for constraint: array
-        if ('' !== ($details_priceArrayErrorMessage = self::validateDetails_priceForArrayConstraintsFromSetDetails_price($details_price))) {
+        if ('' !== ($details_priceArrayErrorMessage = self::validateDetails_priceForArrayConstraintFromSetDetails_price($details_price))) {
             throw new InvalidArgumentException($details_priceArrayErrorMessage, __LINE__);
         }
         $this->details_price = $this->{'details-price'} = $details_price;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDocumentRepository StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDocumentRepository extends AbstractStructBase
 {
     /**

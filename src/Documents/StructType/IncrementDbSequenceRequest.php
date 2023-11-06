@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for IncrementDbSequenceRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class IncrementDbSequenceRequest extends AbstractStructBase
 {
     /**

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCollectiveInvoiceSettings --- returns the collective invoice settings for a customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
         return $this->MidocoCollectiveInvoiceSetting;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCollectiveInvoiceSetting method
+     * This method is responsible for validating the value(s) passed to the setMidocoCollectiveInvoiceSetting method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCollectiveInvoiceSetting method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCollectiveInvoiceSettingForArrayConstraintsFromSetMidocoCollectiveInvoiceSetting(?array $values = []): string
+    public static function validateMidocoCollectiveInvoiceSettingForArrayConstraintFromSetMidocoCollectiveInvoiceSetting(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetCollectiveInvoiceSettingsResponse extends AbstractStructBase
     public function setMidocoCollectiveInvoiceSetting(?array $midocoCollectiveInvoiceSetting = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCollectiveInvoiceSettingArrayErrorMessage = self::validateMidocoCollectiveInvoiceSettingForArrayConstraintsFromSetMidocoCollectiveInvoiceSetting($midocoCollectiveInvoiceSetting))) {
+        if ('' !== ($midocoCollectiveInvoiceSettingArrayErrorMessage = self::validateMidocoCollectiveInvoiceSettingForArrayConstraintFromSetMidocoCollectiveInvoiceSetting($midocoCollectiveInvoiceSetting))) {
             throw new InvalidArgumentException($midocoCollectiveInvoiceSettingArrayErrorMessage, __LINE__);
         }
         $this->MidocoCollectiveInvoiceSetting = $midocoCollectiveInvoiceSetting;

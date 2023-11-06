@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UnitCriteria StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UnitCriteria extends AbstractStructBase
 {
     /**
@@ -61,12 +62,13 @@ class UnitCriteria extends AbstractStructBase
         return $this->creationOrgunit;
     }
     /**
-     * This method is responsible for validating the values passed to the setCreationOrgunit method
+     * This method is responsible for validating the value(s) passed to the setCreationOrgunit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCreationOrgunit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCreationOrgunitForArrayConstraintsFromSetCreationOrgunit(?array $values = []): string
+    public static function validateCreationOrgunitForArrayConstraintFromSetCreationOrgunit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -95,7 +97,7 @@ class UnitCriteria extends AbstractStructBase
     public function setCreationOrgunit(?array $creationOrgunit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($creationOrgunitArrayErrorMessage = self::validateCreationOrgunitForArrayConstraintsFromSetCreationOrgunit($creationOrgunit))) {
+        if ('' !== ($creationOrgunitArrayErrorMessage = self::validateCreationOrgunitForArrayConstraintFromSetCreationOrgunit($creationOrgunit))) {
             throw new InvalidArgumentException($creationOrgunitArrayErrorMessage, __LINE__);
         }
         $this->creationOrgunit = $creationOrgunit;
@@ -127,12 +129,13 @@ class UnitCriteria extends AbstractStructBase
         return $this->delegateOrgunit;
     }
     /**
-     * This method is responsible for validating the values passed to the setDelegateOrgunit method
+     * This method is responsible for validating the value(s) passed to the setDelegateOrgunit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDelegateOrgunit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDelegateOrgunitForArrayConstraintsFromSetDelegateOrgunit(?array $values = []): string
+    public static function validateDelegateOrgunitForArrayConstraintFromSetDelegateOrgunit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -161,7 +164,7 @@ class UnitCriteria extends AbstractStructBase
     public function setDelegateOrgunit(?array $delegateOrgunit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($delegateOrgunitArrayErrorMessage = self::validateDelegateOrgunitForArrayConstraintsFromSetDelegateOrgunit($delegateOrgunit))) {
+        if ('' !== ($delegateOrgunitArrayErrorMessage = self::validateDelegateOrgunitForArrayConstraintFromSetDelegateOrgunit($delegateOrgunit))) {
             throw new InvalidArgumentException($delegateOrgunitArrayErrorMessage, __LINE__);
         }
         $this->delegateOrgunit = $delegateOrgunit;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBookingInfoType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBookingInfoType extends AbstractStructBase
 {
     /**
@@ -164,6 +165,31 @@ class MidocoBookingInfoType extends AbstractStructBase
      */
     protected ?string $handlingType = null;
     /**
+     * The itemPrice
+     * @var float|null
+     */
+    protected ?float $itemPrice = null;
+    /**
+     * The settlementType
+     * @var string|null
+     */
+    protected ?string $settlementType = null;
+    /**
+     * The finalPaymentType
+     * @var string|null
+     */
+    protected ?string $finalPaymentType = null;
+    /**
+     * The buyPriceBaseCurrency
+     * @var float|null
+     */
+    protected ?float $buyPriceBaseCurrency = null;
+    /**
+     * The buyPriceFxCurrency
+     * @var float|null
+     */
+    protected ?float $buyPriceFxCurrency = null;
+    /**
      * Constructor method for MidocoBookingInfoType
      * @uses MidocoBookingInfoType::setSellItemId()
      * @uses MidocoBookingInfoType::setTourOperator()
@@ -195,6 +221,11 @@ class MidocoBookingInfoType extends AbstractStructBase
      * @uses MidocoBookingInfoType::setIsSpecialCustomer()
      * @uses MidocoBookingInfoType::setCreationDate()
      * @uses MidocoBookingInfoType::setHandlingType()
+     * @uses MidocoBookingInfoType::setItemPrice()
+     * @uses MidocoBookingInfoType::setSettlementType()
+     * @uses MidocoBookingInfoType::setFinalPaymentType()
+     * @uses MidocoBookingInfoType::setBuyPriceBaseCurrency()
+     * @uses MidocoBookingInfoType::setBuyPriceFxCurrency()
      * @param int $sellItemId
      * @param string $tourOperator
      * @param string $travelType
@@ -225,8 +256,13 @@ class MidocoBookingInfoType extends AbstractStructBase
      * @param bool $isSpecialCustomer
      * @param string $creationDate
      * @param string $handlingType
+     * @param float $itemPrice
+     * @param string $settlementType
+     * @param string $finalPaymentType
+     * @param float $buyPriceBaseCurrency
+     * @param float $buyPriceFxCurrency
      */
-    public function __construct(?int $sellItemId = null, ?string $tourOperator = null, ?string $travelType = null, ?string $firstService = null, ?string $firstTraveller = null, ?string $startTravel = null, ?string $endTravel = null, ?int $noOfPassengers = null, ?float $totalPrice = null, ?float $displayedTotalPrice = null, ?string $displayedCurrency = null, ?string $status = null, ?int $workingUser = null, ?string $workingTimestamp = null, ?string $bookingId = null, ?string $bookingReference = null, ?string $orgUnit = null, ?string $externalSystem = null, ?int $orderId = null, ?int $orderNo = null, ?string $invoiceCustomer = null, ?string $unitAlias = null, ?string $mediatorId = null, ?string $mediatorAffiliate = null, ?bool $isNew = null, ?int $creationUser = null, ?string $debitor = null, ?bool $isSpecialCustomer = null, ?string $creationDate = null, ?string $handlingType = null)
+    public function __construct(?int $sellItemId = null, ?string $tourOperator = null, ?string $travelType = null, ?string $firstService = null, ?string $firstTraveller = null, ?string $startTravel = null, ?string $endTravel = null, ?int $noOfPassengers = null, ?float $totalPrice = null, ?float $displayedTotalPrice = null, ?string $displayedCurrency = null, ?string $status = null, ?int $workingUser = null, ?string $workingTimestamp = null, ?string $bookingId = null, ?string $bookingReference = null, ?string $orgUnit = null, ?string $externalSystem = null, ?int $orderId = null, ?int $orderNo = null, ?string $invoiceCustomer = null, ?string $unitAlias = null, ?string $mediatorId = null, ?string $mediatorAffiliate = null, ?bool $isNew = null, ?int $creationUser = null, ?string $debitor = null, ?bool $isSpecialCustomer = null, ?string $creationDate = null, ?string $handlingType = null, ?float $itemPrice = null, ?string $settlementType = null, ?string $finalPaymentType = null, ?float $buyPriceBaseCurrency = null, ?float $buyPriceFxCurrency = null)
     {
         $this
             ->setSellItemId($sellItemId)
@@ -258,7 +294,12 @@ class MidocoBookingInfoType extends AbstractStructBase
             ->setDebitor($debitor)
             ->setIsSpecialCustomer($isSpecialCustomer)
             ->setCreationDate($creationDate)
-            ->setHandlingType($handlingType);
+            ->setHandlingType($handlingType)
+            ->setItemPrice($itemPrice)
+            ->setSettlementType($settlementType)
+            ->setFinalPaymentType($finalPaymentType)
+            ->setBuyPriceBaseCurrency($buyPriceBaseCurrency)
+            ->setBuyPriceFxCurrency($buyPriceFxCurrency);
     }
     /**
      * Get sellItemId value
@@ -947,6 +988,121 @@ class MidocoBookingInfoType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($handlingType, true), gettype($handlingType)), __LINE__);
         }
         $this->handlingType = $handlingType;
+        
+        return $this;
+    }
+    /**
+     * Get itemPrice value
+     * @return float|null
+     */
+    public function getItemPrice(): ?float
+    {
+        return $this->itemPrice;
+    }
+    /**
+     * Set itemPrice value
+     * @param float $itemPrice
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingInfoType
+     */
+    public function setItemPrice(?float $itemPrice = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($itemPrice) && !(is_float($itemPrice) || is_numeric($itemPrice))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($itemPrice, true), gettype($itemPrice)), __LINE__);
+        }
+        $this->itemPrice = $itemPrice;
+        
+        return $this;
+    }
+    /**
+     * Get settlementType value
+     * @return string|null
+     */
+    public function getSettlementType(): ?string
+    {
+        return $this->settlementType;
+    }
+    /**
+     * Set settlementType value
+     * @param string $settlementType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingInfoType
+     */
+    public function setSettlementType(?string $settlementType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementType) && !is_string($settlementType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementType, true), gettype($settlementType)), __LINE__);
+        }
+        $this->settlementType = $settlementType;
+        
+        return $this;
+    }
+    /**
+     * Get finalPaymentType value
+     * @return string|null
+     */
+    public function getFinalPaymentType(): ?string
+    {
+        return $this->finalPaymentType;
+    }
+    /**
+     * Set finalPaymentType value
+     * @param string $finalPaymentType
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingInfoType
+     */
+    public function setFinalPaymentType(?string $finalPaymentType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($finalPaymentType) && !is_string($finalPaymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($finalPaymentType, true), gettype($finalPaymentType)), __LINE__);
+        }
+        $this->finalPaymentType = $finalPaymentType;
+        
+        return $this;
+    }
+    /**
+     * Get buyPriceBaseCurrency value
+     * @return float|null
+     */
+    public function getBuyPriceBaseCurrency(): ?float
+    {
+        return $this->buyPriceBaseCurrency;
+    }
+    /**
+     * Set buyPriceBaseCurrency value
+     * @param float $buyPriceBaseCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingInfoType
+     */
+    public function setBuyPriceBaseCurrency(?float $buyPriceBaseCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($buyPriceBaseCurrency) && !(is_float($buyPriceBaseCurrency) || is_numeric($buyPriceBaseCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($buyPriceBaseCurrency, true), gettype($buyPriceBaseCurrency)), __LINE__);
+        }
+        $this->buyPriceBaseCurrency = $buyPriceBaseCurrency;
+        
+        return $this;
+    }
+    /**
+     * Get buyPriceFxCurrency value
+     * @return float|null
+     */
+    public function getBuyPriceFxCurrency(): ?float
+    {
+        return $this->buyPriceFxCurrency;
+    }
+    /**
+     * Set buyPriceFxCurrency value
+     * @param float $buyPriceFxCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoBookingInfoType
+     */
+    public function setBuyPriceFxCurrency(?float $buyPriceFxCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($buyPriceFxCurrency) && !(is_float($buyPriceFxCurrency) || is_numeric($buyPriceFxCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($buyPriceFxCurrency, true), gettype($buyPriceFxCurrency)), __LINE__);
+        }
+        $this->buyPriceFxCurrency = $buyPriceFxCurrency;
         
         return $this;
     }

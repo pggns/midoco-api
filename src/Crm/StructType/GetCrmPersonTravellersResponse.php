@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrmPersonTravellersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmPersonTravellersResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCrmPersonTravellersResponse extends AbstractStructBase
         return $this->MidocoCrmPersonTraveller;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmPersonTraveller method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmPersonTraveller method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmPersonTraveller method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmPersonTravellerForArrayConstraintsFromSetMidocoCrmPersonTraveller(?array $values = []): string
+    public static function validateMidocoCrmPersonTravellerForArrayConstraintFromSetMidocoCrmPersonTraveller(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCrmPersonTravellersResponse extends AbstractStructBase
     public function setMidocoCrmPersonTraveller(?array $midocoCrmPersonTraveller = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmPersonTravellerArrayErrorMessage = self::validateMidocoCrmPersonTravellerForArrayConstraintsFromSetMidocoCrmPersonTraveller($midocoCrmPersonTraveller))) {
+        if ('' !== ($midocoCrmPersonTravellerArrayErrorMessage = self::validateMidocoCrmPersonTravellerForArrayConstraintFromSetMidocoCrmPersonTraveller($midocoCrmPersonTraveller))) {
             throw new InvalidArgumentException($midocoCrmPersonTravellerArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmPersonTraveller = $midocoCrmPersonTraveller;

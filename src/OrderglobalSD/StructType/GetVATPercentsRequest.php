@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetVATPercentsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetVATPercentsRequest extends AbstractStructBase
 {
     /**

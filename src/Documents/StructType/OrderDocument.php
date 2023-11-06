@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrderDocument StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrderDocument extends StandardDocument
 {
     /**

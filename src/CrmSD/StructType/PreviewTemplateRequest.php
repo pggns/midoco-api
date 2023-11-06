@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PreviewTemplateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PreviewTemplateRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class PreviewTemplateRequest extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PreviewTemplateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PreviewTemplateRequest
      */
     public function setTemplateName(?string $templateName = null): self
     {

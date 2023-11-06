@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCcProxySingleUseTokenValueRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCcProxySingleUseTokenValueRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetCcProxySingleUseTokenValueRequest extends AbstractStructBase
     /**
      * Set singleUseToken value
      * @param string $singleUseToken
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCcProxySingleUseTokenValueRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCcProxySingleUseTokenValueRequest
      */
     public function setSingleUseToken(?string $singleUseToken = null): self
     {

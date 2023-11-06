@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoEmailInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoEmailInfo extends AbstractStructBase
 {
     /**
@@ -95,7 +96,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set senderEmail value
      * @param string $senderEmail
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setSenderEmail(?string $senderEmail = null): self
     {
@@ -118,7 +119,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set senderName value
      * @param string $senderName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setSenderName(?string $senderName = null): self
     {
@@ -141,7 +142,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set recipientEmail value
      * @param string $recipientEmail
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setRecipientEmail(?string $recipientEmail = null): self
     {
@@ -164,7 +165,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set recipientName value
      * @param string $recipientName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setRecipientName(?string $recipientName = null): self
     {
@@ -187,7 +188,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setSubject(?string $subject = null): self
     {
@@ -210,7 +211,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set receiveTime value
      * @param string $receiveTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setReceiveTime(?string $receiveTime = null): self
     {
@@ -233,7 +234,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set mailId value
      * @param string $mailId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setMailId(?string $mailId = null): self
     {
@@ -256,7 +257,7 @@ class MidocoEmailInfo extends AbstractStructBase
     /**
      * Set displayURL value
      * @param string $displayURL
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmailInfo
      */
     public function setDisplayURL(?string $displayURL = null): self
     {

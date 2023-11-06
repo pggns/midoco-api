@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrsAgencyDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrsAgencyDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CrsAgencyDTO extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrsAgencyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrsAgencyDTO
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -78,7 +79,7 @@ class CrsAgencyDTO extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrsAgencyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrsAgencyDTO
      */
     public function setCrsName(?string $crsName = null): self
     {
@@ -101,7 +102,7 @@ class CrsAgencyDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrsAgencyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrsAgencyDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

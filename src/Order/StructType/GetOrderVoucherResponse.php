@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderVoucherResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderVoucherResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrderVoucherResponse extends AbstractStructBase
         return $this->MidocoOrderVoucher;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderVoucher method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderVoucher method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderVoucher method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderVoucherForArrayConstraintsFromSetMidocoOrderVoucher(?array $values = []): string
+    public static function validateMidocoOrderVoucherForArrayConstraintFromSetMidocoOrderVoucher(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrderVoucherResponse extends AbstractStructBase
     public function setMidocoOrderVoucher(?array $midocoOrderVoucher = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderVoucherArrayErrorMessage = self::validateMidocoOrderVoucherForArrayConstraintsFromSetMidocoOrderVoucher($midocoOrderVoucher))) {
+        if ('' !== ($midocoOrderVoucherArrayErrorMessage = self::validateMidocoOrderVoucherForArrayConstraintFromSetMidocoOrderVoucher($midocoOrderVoucher))) {
             throw new InvalidArgumentException($midocoOrderVoucherArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderVoucher = $midocoOrderVoucher;

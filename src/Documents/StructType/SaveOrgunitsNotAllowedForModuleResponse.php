@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveOrgunitsNotAllowedForModuleResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveOrgunitsNotAllowedForModuleResponse extends AbstractStructBase
 {
 }

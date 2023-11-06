@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CustomerChangeLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CustomerChangeLogDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class CustomerChangeLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerChangeLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerChangeLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -110,7 +111,7 @@ class CustomerChangeLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerChangeLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerChangeLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -133,7 +134,7 @@ class CustomerChangeLogDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerChangeLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerChangeLogDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -156,7 +157,7 @@ class CustomerChangeLogDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerChangeLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerChangeLogDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -179,7 +180,7 @@ class CustomerChangeLogDTO extends AbstractStructBase
     /**
      * Set oldUnitName value
      * @param string $oldUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerChangeLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerChangeLogDTO
      */
     public function setOldUnitName(?string $oldUnitName = null): self
     {
@@ -202,7 +203,7 @@ class CustomerChangeLogDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerChangeLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerChangeLogDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -225,7 +226,7 @@ class CustomerChangeLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerChangeLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerChangeLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {

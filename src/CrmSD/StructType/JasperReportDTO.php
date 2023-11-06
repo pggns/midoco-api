@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for JasperReportDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class JasperReportDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class JasperReportDTO extends AbstractStructBase
     /**
      * Set datastoreType value
      * @param string $datastoreType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportDTO
      */
     public function setDatastoreType(?string $datastoreType = null): self
     {
@@ -86,7 +87,7 @@ class JasperReportDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -109,7 +110,7 @@ class JasperReportDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportDTO
      */
     public function setName(?string $name = null): self
     {
@@ -132,7 +133,7 @@ class JasperReportDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportDTO
      */
     public function setReportId(?int $reportId = null): self
     {

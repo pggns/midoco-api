@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfLocalResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfLocalResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMfLocalResponse extends AbstractStructBase
         return $this->MidocoMfLocal;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMfLocal method
+     * This method is responsible for validating the value(s) passed to the setMidocoMfLocal method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMfLocal method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMfLocalForArrayConstraintsFromSetMidocoMfLocal(?array $values = []): string
+    public static function validateMidocoMfLocalForArrayConstraintFromSetMidocoMfLocal(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMfLocalResponse extends AbstractStructBase
     public function setMidocoMfLocal(?array $midocoMfLocal = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMfLocalArrayErrorMessage = self::validateMidocoMfLocalForArrayConstraintsFromSetMidocoMfLocal($midocoMfLocal))) {
+        if ('' !== ($midocoMfLocalArrayErrorMessage = self::validateMidocoMfLocalForArrayConstraintFromSetMidocoMfLocal($midocoMfLocal))) {
             throw new InvalidArgumentException($midocoMfLocalArrayErrorMessage, __LINE__);
         }
         $this->MidocoMfLocal = $midocoMfLocal;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getTravelersForDocumentId --- returns the travelers corresponding to a document id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTravelersForDocumentIdResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetTravelersForDocumentIdResponse extends AbstractStructBase
         return $this->MidocoSellPassengerInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellPassengerInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellPassengerInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellPassengerInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellPassengerInfoForArrayConstraintsFromSetMidocoSellPassengerInfo(?array $values = []): string
+    public static function validateMidocoSellPassengerInfoForArrayConstraintFromSetMidocoSellPassengerInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetTravelersForDocumentIdResponse extends AbstractStructBase
     public function setMidocoSellPassengerInfo(?array $midocoSellPassengerInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellPassengerInfoArrayErrorMessage = self::validateMidocoSellPassengerInfoForArrayConstraintsFromSetMidocoSellPassengerInfo($midocoSellPassengerInfo))) {
+        if ('' !== ($midocoSellPassengerInfoArrayErrorMessage = self::validateMidocoSellPassengerInfoForArrayConstraintFromSetMidocoSellPassengerInfo($midocoSellPassengerInfo))) {
             throw new InvalidArgumentException($midocoSellPassengerInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellPassengerInfo = $midocoSellPassengerInfo;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: performOtherCampaign --- initiate a messaging campaign, text template (maybe modified) and campaign_id is provided.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PerformOtherCampaignResponse extends AbstractStructBase
 {
 }

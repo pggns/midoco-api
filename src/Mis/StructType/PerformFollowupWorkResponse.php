@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: performFollowupWork --- initiate a workflow for each customer in the campaign, given is the workflow name, a delegation-comment, a start_time (may be empty), an end_time, a delegate (User/Pseudo user
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PerformFollowupWorkResponse extends AbstractStructBase
 {
 }

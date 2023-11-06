@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTypeValuesAndDescriptionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTypeValuesAndDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -65,12 +66,13 @@ class GetTypeValuesAndDescriptionsResponse extends AbstractStructBase
         return $this->MidocoCriteriaType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCriteriaType method
+     * This method is responsible for validating the value(s) passed to the setMidocoCriteriaType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCriteriaType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCriteriaTypeForArrayConstraintsFromSetMidocoCriteriaType(?array $values = []): string
+    public static function validateMidocoCriteriaTypeForArrayConstraintFromSetMidocoCriteriaType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,7 +101,7 @@ class GetTypeValuesAndDescriptionsResponse extends AbstractStructBase
     public function setMidocoCriteriaType(?array $midocoCriteriaType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCriteriaTypeArrayErrorMessage = self::validateMidocoCriteriaTypeForArrayConstraintsFromSetMidocoCriteriaType($midocoCriteriaType))) {
+        if ('' !== ($midocoCriteriaTypeArrayErrorMessage = self::validateMidocoCriteriaTypeForArrayConstraintFromSetMidocoCriteriaType($midocoCriteriaType))) {
             throw new InvalidArgumentException($midocoCriteriaTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCriteriaType = $midocoCriteriaType;
@@ -131,12 +133,13 @@ class GetTypeValuesAndDescriptionsResponse extends AbstractStructBase
         return $this->MidocoCriteriaDescriptionCategory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCriteriaDescriptionCategory method
+     * This method is responsible for validating the value(s) passed to the setMidocoCriteriaDescriptionCategory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCriteriaDescriptionCategory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCriteriaDescriptionCategoryForArrayConstraintsFromSetMidocoCriteriaDescriptionCategory(?array $values = []): string
+    public static function validateMidocoCriteriaDescriptionCategoryForArrayConstraintFromSetMidocoCriteriaDescriptionCategory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -165,7 +168,7 @@ class GetTypeValuesAndDescriptionsResponse extends AbstractStructBase
     public function setMidocoCriteriaDescriptionCategory(?array $midocoCriteriaDescriptionCategory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCriteriaDescriptionCategoryArrayErrorMessage = self::validateMidocoCriteriaDescriptionCategoryForArrayConstraintsFromSetMidocoCriteriaDescriptionCategory($midocoCriteriaDescriptionCategory))) {
+        if ('' !== ($midocoCriteriaDescriptionCategoryArrayErrorMessage = self::validateMidocoCriteriaDescriptionCategoryForArrayConstraintFromSetMidocoCriteriaDescriptionCategory($midocoCriteriaDescriptionCategory))) {
             throw new InvalidArgumentException($midocoCriteriaDescriptionCategoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoCriteriaDescriptionCategory = $midocoCriteriaDescriptionCategory;
@@ -197,12 +200,13 @@ class GetTypeValuesAndDescriptionsResponse extends AbstractStructBase
         return $this->GetTypeValuesAndDescriptionsDTO;
     }
     /**
-     * This method is responsible for validating the values passed to the setGetTypeValuesAndDescriptionsDTO method
+     * This method is responsible for validating the value(s) passed to the setGetTypeValuesAndDescriptionsDTO method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGetTypeValuesAndDescriptionsDTO method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGetTypeValuesAndDescriptionsDTOForArrayConstraintsFromSetGetTypeValuesAndDescriptionsDTO(?array $values = []): string
+    public static function validateGetTypeValuesAndDescriptionsDTOForArrayConstraintFromSetGetTypeValuesAndDescriptionsDTO(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -231,7 +235,7 @@ class GetTypeValuesAndDescriptionsResponse extends AbstractStructBase
     public function setGetTypeValuesAndDescriptionsDTO(?array $getTypeValuesAndDescriptionsDTO = null): self
     {
         // validation for constraint: array
-        if ('' !== ($getTypeValuesAndDescriptionsDTOArrayErrorMessage = self::validateGetTypeValuesAndDescriptionsDTOForArrayConstraintsFromSetGetTypeValuesAndDescriptionsDTO($getTypeValuesAndDescriptionsDTO))) {
+        if ('' !== ($getTypeValuesAndDescriptionsDTOArrayErrorMessage = self::validateGetTypeValuesAndDescriptionsDTOForArrayConstraintFromSetGetTypeValuesAndDescriptionsDTO($getTypeValuesAndDescriptionsDTO))) {
             throw new InvalidArgumentException($getTypeValuesAndDescriptionsDTOArrayErrorMessage, __LINE__);
         }
         $this->GetTypeValuesAndDescriptionsDTO = $getTypeValuesAndDescriptionsDTO;

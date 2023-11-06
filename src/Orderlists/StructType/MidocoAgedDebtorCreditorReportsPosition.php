@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoAgedDebtorCreditorReportsPosition StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoAgedDebtorCreditorReportsPosition extends AbstractStructBase
 {
     /**

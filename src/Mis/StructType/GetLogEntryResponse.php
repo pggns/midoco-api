@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getLogEntries --- returns a list of log entries having the search criteria given as parameter in the request
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetLogEntryResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetLogEntryResponse extends AbstractStructBase
         return $this->MidocoLogEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoLogEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoLogEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoLogEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoLogEntryForArrayConstraintsFromSetMidocoLogEntry(?array $values = []): string
+    public static function validateMidocoLogEntryForArrayConstraintFromSetMidocoLogEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetLogEntryResponse extends AbstractStructBase
     public function setMidocoLogEntry(?array $midocoLogEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoLogEntryArrayErrorMessage = self::validateMidocoLogEntryForArrayConstraintsFromSetMidocoLogEntry($midocoLogEntry))) {
+        if ('' !== ($midocoLogEntryArrayErrorMessage = self::validateMidocoLogEntryForArrayConstraintFromSetMidocoLogEntry($midocoLogEntry))) {
             throw new InvalidArgumentException($midocoLogEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoLogEntry = $midocoLogEntry;

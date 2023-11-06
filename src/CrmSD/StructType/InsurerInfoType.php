@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for InsurerInfoType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class InsurerInfoType extends InsurerDTO
 {
     /**
@@ -119,7 +120,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set additionalInfo value
      * @param string $additionalInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setAdditionalInfo(?string $additionalInfo = null): self
     {
@@ -142,7 +143,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -165,7 +166,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setCity(?string $city = null): self
     {
@@ -188,7 +189,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -211,7 +212,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setEmail(?string $email = null): self
     {
@@ -234,7 +235,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set phone value
      * @param string $phone
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setPhone(?string $phone = null): self
     {
@@ -257,7 +258,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -280,7 +281,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setStreet(?string $street = null): self
     {
@@ -303,7 +304,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -326,7 +327,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -349,7 +350,7 @@ class InsurerInfoType extends InsurerDTO
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerInfoType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerInfoType
      */
     public function setValidTo(?string $validTo = null): self
     {

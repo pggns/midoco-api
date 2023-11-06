@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisCampaignWSType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisCampaignWSType extends MisCampaignDTO
 {
     /**

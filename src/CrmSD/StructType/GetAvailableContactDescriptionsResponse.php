@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getContactDescriptions --- returns the list of contact descriptions
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableContactDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetAvailableContactDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactDescription
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription[]
      */
     protected ?array $MidocoContactDescription = null;
     /**
      * Constructor method for GetAvailableContactDescriptionsResponse
      * @uses GetAvailableContactDescriptionsResponse::setMidocoContactDescription()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription[] $midocoContactDescription
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription[] $midocoContactDescription
      */
     public function __construct(?array $midocoContactDescription = null)
     {
@@ -36,19 +37,20 @@ class GetAvailableContactDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoContactDescription value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription[]
      */
     public function getMidocoContactDescription(): ?array
     {
         return $this->MidocoContactDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactDescriptionForArrayConstraintsFromSetMidocoContactDescription(?array $values = []): string
+    public static function validateMidocoContactDescriptionForArrayConstraintFromSetMidocoContactDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetAvailableContactDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableContactDescriptionsResponseMidocoContactDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAvailableContactDescriptionsResponseMidocoContactDescriptionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription) {
+            if (!$getAvailableContactDescriptionsResponseMidocoContactDescriptionItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription) {
                 $invalidValues[] = is_object($getAvailableContactDescriptionsResponseMidocoContactDescriptionItem) ? get_class($getAvailableContactDescriptionsResponseMidocoContactDescriptionItem) : sprintf('%s(%s)', gettype($getAvailableContactDescriptionsResponseMidocoContactDescriptionItem), var_export($getAvailableContactDescriptionsResponseMidocoContactDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetAvailableContactDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoContactDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription[] $midocoContactDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableContactDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription[] $midocoContactDescription
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAvailableContactDescriptionsResponse
      */
     public function setMidocoContactDescription(?array $midocoContactDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactDescriptionArrayErrorMessage = self::validateMidocoContactDescriptionForArrayConstraintsFromSetMidocoContactDescription($midocoContactDescription))) {
+        if ('' !== ($midocoContactDescriptionArrayErrorMessage = self::validateMidocoContactDescriptionForArrayConstraintFromSetMidocoContactDescription($midocoContactDescription))) {
             throw new InvalidArgumentException($midocoContactDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactDescription = $midocoContactDescription;
@@ -87,14 +89,14 @@ class GetAvailableContactDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoContactDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableContactDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAvailableContactDescriptionsResponse
      */
-    public function addToMidocoContactDescription(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription $item): self
+    public function addToMidocoContactDescription(\Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactDescription[] = $item;
         

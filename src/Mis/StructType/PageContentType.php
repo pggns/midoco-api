@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PageContentType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PageContentType extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PageContentType extends AbstractStructBase
         return $this->MidocoCampaignRow;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCampaignRow method
+     * This method is responsible for validating the value(s) passed to the setMidocoCampaignRow method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCampaignRow method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCampaignRowForArrayConstraintsFromSetMidocoCampaignRow(?array $values = []): string
+    public static function validateMidocoCampaignRowForArrayConstraintFromSetMidocoCampaignRow(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PageContentType extends AbstractStructBase
     public function setMidocoCampaignRow(?array $midocoCampaignRow = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCampaignRowArrayErrorMessage = self::validateMidocoCampaignRowForArrayConstraintsFromSetMidocoCampaignRow($midocoCampaignRow))) {
+        if ('' !== ($midocoCampaignRowArrayErrorMessage = self::validateMidocoCampaignRowForArrayConstraintFromSetMidocoCampaignRow($midocoCampaignRow))) {
             throw new InvalidArgumentException($midocoCampaignRowArrayErrorMessage, __LINE__);
         }
         $this->MidocoCampaignRow = $midocoCampaignRow;

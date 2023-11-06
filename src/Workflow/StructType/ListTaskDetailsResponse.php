@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListTaskDetailsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListTaskDetailsResponse extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class ListTaskDetailsResponse extends AbstractStructBase
         return $this->TaskDetails;
     }
     /**
-     * This method is responsible for validating the values passed to the setTaskDetails method
+     * This method is responsible for validating the value(s) passed to the setTaskDetails method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTaskDetails method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTaskDetailsForArrayConstraintsFromSetTaskDetails(?array $values = []): string
+    public static function validateTaskDetailsForArrayConstraintFromSetTaskDetails(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class ListTaskDetailsResponse extends AbstractStructBase
     public function setTaskDetails(?array $taskDetails = null): self
     {
         // validation for constraint: array
-        if ('' !== ($taskDetailsArrayErrorMessage = self::validateTaskDetailsForArrayConstraintsFromSetTaskDetails($taskDetails))) {
+        if ('' !== ($taskDetailsArrayErrorMessage = self::validateTaskDetailsForArrayConstraintFromSetTaskDetails($taskDetails))) {
             throw new InvalidArgumentException($taskDetailsArrayErrorMessage, __LINE__);
         }
         $this->TaskDetails = $taskDetails;

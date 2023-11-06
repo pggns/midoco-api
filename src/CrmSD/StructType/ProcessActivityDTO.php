@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ProcessActivityDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ProcessActivityDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class ProcessActivityDTO extends AbstractStructBase
     /**
      * Set activity value
      * @param string $activity
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessActivityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessActivityDTO
      */
     public function setActivity(?string $activity = null): self
     {
@@ -70,7 +71,7 @@ class ProcessActivityDTO extends AbstractStructBase
     /**
      * Set processName value
      * @param string $processName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessActivityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessActivityDTO
      */
     public function setProcessName(?string $processName = null): self
     {

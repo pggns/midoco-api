@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AssignedMidocoChargeOuDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AssignedMidocoChargeOuDTO extends AbstractStructBase
 {
     /**
@@ -103,7 +104,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set assignedMidocoChargeOuId value
      * @param int $assignedMidocoChargeOuId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setAssignedMidocoChargeOuId(?int $assignedMidocoChargeOuId = null): self
     {
@@ -126,7 +127,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setChargeId(?int $chargeId = null): self
     {
@@ -149,7 +150,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set contractEndDate value
      * @param string $contractEndDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setContractEndDate(?string $contractEndDate = null): self
     {
@@ -172,7 +173,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set contractStartDate value
      * @param string $contractStartDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setContractStartDate(?string $contractStartDate = null): self
     {
@@ -195,7 +196,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set crmChargeId value
      * @param int $crmChargeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setCrmChargeId(?int $crmChargeId = null): self
     {
@@ -218,7 +219,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -241,7 +242,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set isActivated value
      * @param bool $isActivated
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setIsActivated(?bool $isActivated = null): self
     {
@@ -264,7 +265,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -287,7 +288,7 @@ class AssignedMidocoChargeOuDTO extends AbstractStructBase
     /**
      * Set useAllSubUnits value
      * @param bool $useAllSubUnits
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
      */
     public function setUseAllSubUnits(?bool $useAllSubUnits = null): self
     {

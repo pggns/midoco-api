@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GdsAttribCategoryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GdsAttribCategoryDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GdsAttribCategoryDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param string $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsAttribCategoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsAttribCategoryDTO
      */
     public function setCategoryId(?string $categoryId = null): self
     {
@@ -70,7 +71,7 @@ class GdsAttribCategoryDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsAttribCategoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsAttribCategoryDTO
      */
     public function setPosition(?int $position = null): self
     {

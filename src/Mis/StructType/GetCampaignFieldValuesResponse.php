@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCampaignField --- returns the list of (value field key, value field to be displayed) for the values of the criteria in campaigns
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCampaignFieldValuesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetCampaignFieldValuesResponse extends AbstractStructBase
         return $this->MidocoCriteriaValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCriteriaValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoCriteriaValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCriteriaValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCriteriaValueForArrayConstraintsFromSetMidocoCriteriaValue(?array $values = []): string
+    public static function validateMidocoCriteriaValueForArrayConstraintFromSetMidocoCriteriaValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetCampaignFieldValuesResponse extends AbstractStructBase
     public function setMidocoCriteriaValue(?array $midocoCriteriaValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCriteriaValueArrayErrorMessage = self::validateMidocoCriteriaValueForArrayConstraintsFromSetMidocoCriteriaValue($midocoCriteriaValue))) {
+        if ('' !== ($midocoCriteriaValueArrayErrorMessage = self::validateMidocoCriteriaValueForArrayConstraintFromSetMidocoCriteriaValue($midocoCriteriaValue))) {
             throw new InvalidArgumentException($midocoCriteriaValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoCriteriaValue = $midocoCriteriaValue;

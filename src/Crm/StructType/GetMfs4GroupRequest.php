@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfs4GroupRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfs4GroupRequest extends AbstractStructBase
 {
     /**
@@ -132,12 +133,13 @@ class GetMfs4GroupRequest extends AbstractStructBase
         return $this->className;
     }
     /**
-     * This method is responsible for validating the values passed to the setClassName method
+     * This method is responsible for validating the value(s) passed to the setClassName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setClassName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateClassNameForArrayConstraintsFromSetClassName(?array $values = []): string
+    public static function validateClassNameForArrayConstraintFromSetClassName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -166,7 +168,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
     public function setClassName(?array $className = null): self
     {
         // validation for constraint: array
-        if ('' !== ($classNameArrayErrorMessage = self::validateClassNameForArrayConstraintsFromSetClassName($className))) {
+        if ('' !== ($classNameArrayErrorMessage = self::validateClassNameForArrayConstraintFromSetClassName($className))) {
             throw new InvalidArgumentException($classNameArrayErrorMessage, __LINE__);
         }
         $this->className = $className;

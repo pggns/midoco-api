@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ConsentUnitDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ConsentUnitDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ConsentUnitDTO extends AbstractStructBase
     /**
      * Set consentId value
      * @param string $consentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentUnitDTO
      */
     public function setConsentId(?string $consentId = null): self
     {
@@ -78,7 +79,7 @@ class ConsentUnitDTO extends AbstractStructBase
     /**
      * Set isGroup value
      * @param bool $isGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentUnitDTO
      */
     public function setIsGroup(?bool $isGroup = null): self
     {
@@ -101,7 +102,7 @@ class ConsentUnitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentUnitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

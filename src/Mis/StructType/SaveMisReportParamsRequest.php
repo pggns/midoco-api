@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMisReportParamsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMisReportParamsRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SaveMisReportParamsRequest extends AbstractStructBase
         return $this->MidocoMisReportParam;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisReportParam method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisReportParam method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisReportParam method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisReportParamForArrayConstraintsFromSetMidocoMisReportParam(?array $values = []): string
+    public static function validateMidocoMisReportParamForArrayConstraintFromSetMidocoMisReportParam(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SaveMisReportParamsRequest extends AbstractStructBase
     public function setMidocoMisReportParam(?array $midocoMisReportParam = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisReportParamArrayErrorMessage = self::validateMidocoMisReportParamForArrayConstraintsFromSetMidocoMisReportParam($midocoMisReportParam))) {
+        if ('' !== ($midocoMisReportParamArrayErrorMessage = self::validateMidocoMisReportParamForArrayConstraintFromSetMidocoMisReportParam($midocoMisReportParam))) {
             throw new InvalidArgumentException($midocoMisReportParamArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisReportParam = $midocoMisReportParam;

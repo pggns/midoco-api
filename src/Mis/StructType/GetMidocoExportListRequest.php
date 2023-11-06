@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoExportListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoExportListRequest extends AbstractStructBase
 {
     /**
@@ -46,26 +47,42 @@ class GetMidocoExportListRequest extends AbstractStructBase
      */
     protected ?string $format = null;
     /**
+     * The emailFile
+     * @var bool|null
+     */
+    protected ?bool $emailFile = null;
+    /**
+     * The accountId4Email
+     * @var string|null
+     */
+    protected ?string $accountId4Email = null;
+    /**
      * Constructor method for GetMidocoExportListRequest
      * @uses GetMidocoExportListRequest::setDtos()
      * @uses GetMidocoExportListRequest::setKeyValue()
      * @uses GetMidocoExportListRequest::setDtoClassName()
      * @uses GetMidocoExportListRequest::setReportName()
      * @uses GetMidocoExportListRequest::setFormat()
+     * @uses GetMidocoExportListRequest::setEmailFile()
+     * @uses GetMidocoExportListRequest::setAccountId4Email()
      * @param string[] $dtos
      * @param \Pggns\MidocoApi\Mis\StructType\KeyValue[] $keyValue
      * @param string $dtoClassName
      * @param string $reportName
      * @param string $format
+     * @param bool $emailFile
+     * @param string $accountId4Email
      */
-    public function __construct(?array $dtos = null, ?array $keyValue = null, ?string $dtoClassName = null, ?string $reportName = null, ?string $format = null)
+    public function __construct(?array $dtos = null, ?array $keyValue = null, ?string $dtoClassName = null, ?string $reportName = null, ?string $format = null, ?bool $emailFile = null, ?string $accountId4Email = null)
     {
         $this
             ->setDtos($dtos)
             ->setKeyValue($keyValue)
             ->setDtoClassName($dtoClassName)
             ->setReportName($reportName)
-            ->setFormat($format);
+            ->setFormat($format)
+            ->setEmailFile($emailFile)
+            ->setAccountId4Email($accountId4Email);
     }
     /**
      * Get dtos value
@@ -76,12 +93,13 @@ class GetMidocoExportListRequest extends AbstractStructBase
         return $this->dtos;
     }
     /**
-     * This method is responsible for validating the values passed to the setDtos method
+     * This method is responsible for validating the value(s) passed to the setDtos method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDtos method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDtosForArrayConstraintsFromSetDtos(?array $values = []): string
+    public static function validateDtosForArrayConstraintFromSetDtos(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -110,7 +128,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
     public function setDtos(?array $dtos = null): self
     {
         // validation for constraint: array
-        if ('' !== ($dtosArrayErrorMessage = self::validateDtosForArrayConstraintsFromSetDtos($dtos))) {
+        if ('' !== ($dtosArrayErrorMessage = self::validateDtosForArrayConstraintFromSetDtos($dtos))) {
             throw new InvalidArgumentException($dtosArrayErrorMessage, __LINE__);
         }
         $this->dtos = $dtos;
@@ -142,12 +160,13 @@ class GetMidocoExportListRequest extends AbstractStructBase
         return $this->KeyValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setKeyValue method
+     * This method is responsible for validating the value(s) passed to the setKeyValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setKeyValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateKeyValueForArrayConstraintsFromSetKeyValue(?array $values = []): string
+    public static function validateKeyValueForArrayConstraintFromSetKeyValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -176,7 +195,7 @@ class GetMidocoExportListRequest extends AbstractStructBase
     public function setKeyValue(?array $keyValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($keyValueArrayErrorMessage = self::validateKeyValueForArrayConstraintsFromSetKeyValue($keyValue))) {
+        if ('' !== ($keyValueArrayErrorMessage = self::validateKeyValueForArrayConstraintFromSetKeyValue($keyValue))) {
             throw new InvalidArgumentException($keyValueArrayErrorMessage, __LINE__);
         }
         $this->KeyValue = $keyValue;
@@ -265,6 +284,52 @@ class GetMidocoExportListRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($format, true), gettype($format)), __LINE__);
         }
         $this->format = $format;
+        
+        return $this;
+    }
+    /**
+     * Get emailFile value
+     * @return bool|null
+     */
+    public function getEmailFile(): ?bool
+    {
+        return $this->emailFile;
+    }
+    /**
+     * Set emailFile value
+     * @param bool $emailFile
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
+     */
+    public function setEmailFile(?bool $emailFile = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($emailFile) && !is_bool($emailFile)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($emailFile, true), gettype($emailFile)), __LINE__);
+        }
+        $this->emailFile = $emailFile;
+        
+        return $this;
+    }
+    /**
+     * Get accountId4Email value
+     * @return string|null
+     */
+    public function getAccountId4Email(): ?string
+    {
+        return $this->accountId4Email;
+    }
+    /**
+     * Set accountId4Email value
+     * @param string $accountId4Email
+     * @return \Pggns\MidocoApi\Mis\StructType\GetMidocoExportListRequest
+     */
+    public function setAccountId4Email(?string $accountId4Email = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($accountId4Email) && !is_string($accountId4Email)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($accountId4Email, true), gettype($accountId4Email)), __LINE__);
+        }
+        $this->accountId4Email = $accountId4Email;
         
         return $this;
     }

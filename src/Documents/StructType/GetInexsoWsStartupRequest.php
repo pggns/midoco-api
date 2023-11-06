@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetInexsoWsStartupRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetInexsoWsStartupRequest extends AbstractStructBase
 {
 }

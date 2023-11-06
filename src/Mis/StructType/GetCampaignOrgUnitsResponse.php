@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCampaignOrgUnitsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCampaignOrgUnitsResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetCampaignOrgUnitsResponse extends AbstractStructBase
         return $this->unit_name;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnit_name method
+     * This method is responsible for validating the value(s) passed to the setUnit_name method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnit_name method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnit_nameForArrayConstraintsFromSetUnit_name(?array $values = []): string
+    public static function validateUnit_nameForArrayConstraintFromSetUnit_name(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetCampaignOrgUnitsResponse extends AbstractStructBase
     public function setUnit_name(?array $unit_name = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unit_nameArrayErrorMessage = self::validateUnit_nameForArrayConstraintsFromSetUnit_name($unit_name))) {
+        if ('' !== ($unit_nameArrayErrorMessage = self::validateUnit_nameForArrayConstraintFromSetUnit_name($unit_name))) {
             throw new InvalidArgumentException($unit_nameArrayErrorMessage, __LINE__);
         }
         $this->unit_name = $unit_name;

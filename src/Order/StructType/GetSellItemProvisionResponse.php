@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSellItemProvisionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSellItemProvisionResponse extends AbstractStructBase
 {
     /**
@@ -63,12 +64,13 @@ class GetSellItemProvisionResponse extends AbstractStructBase
         return $this->SellItemProvision;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellItemProvision method
+     * This method is responsible for validating the value(s) passed to the setSellItemProvision method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellItemProvision method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellItemProvisionForArrayConstraintsFromSetSellItemProvision(?array $values = []): string
+    public static function validateSellItemProvisionForArrayConstraintFromSetSellItemProvision(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -97,7 +99,7 @@ class GetSellItemProvisionResponse extends AbstractStructBase
     public function setSellItemProvision(?array $sellItemProvision = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellItemProvisionArrayErrorMessage = self::validateSellItemProvisionForArrayConstraintsFromSetSellItemProvision($sellItemProvision))) {
+        if ('' !== ($sellItemProvisionArrayErrorMessage = self::validateSellItemProvisionForArrayConstraintFromSetSellItemProvision($sellItemProvision))) {
             throw new InvalidArgumentException($sellItemProvisionArrayErrorMessage, __LINE__);
         }
         $this->SellItemProvision = $sellItemProvision;
@@ -148,12 +150,13 @@ class GetSellItemProvisionResponse extends AbstractStructBase
         return $this->AdviceSettlementDescriptionsForSellItem;
     }
     /**
-     * This method is responsible for validating the values passed to the setAdviceSettlementDescriptionsForSellItem method
+     * This method is responsible for validating the value(s) passed to the setAdviceSettlementDescriptionsForSellItem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAdviceSettlementDescriptionsForSellItem method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAdviceSettlementDescriptionsForSellItemForArrayConstraintsFromSetAdviceSettlementDescriptionsForSellItem(?array $values = []): string
+    public static function validateAdviceSettlementDescriptionsForSellItemForArrayConstraintFromSetAdviceSettlementDescriptionsForSellItem(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -182,7 +185,7 @@ class GetSellItemProvisionResponse extends AbstractStructBase
     public function setAdviceSettlementDescriptionsForSellItem(?array $adviceSettlementDescriptionsForSellItem = null): self
     {
         // validation for constraint: array
-        if ('' !== ($adviceSettlementDescriptionsForSellItemArrayErrorMessage = self::validateAdviceSettlementDescriptionsForSellItemForArrayConstraintsFromSetAdviceSettlementDescriptionsForSellItem($adviceSettlementDescriptionsForSellItem))) {
+        if ('' !== ($adviceSettlementDescriptionsForSellItemArrayErrorMessage = self::validateAdviceSettlementDescriptionsForSellItemForArrayConstraintFromSetAdviceSettlementDescriptionsForSellItem($adviceSettlementDescriptionsForSellItem))) {
             throw new InvalidArgumentException($adviceSettlementDescriptionsForSellItemArrayErrorMessage, __LINE__);
         }
         $this->AdviceSettlementDescriptionsForSellItem = $adviceSettlementDescriptionsForSellItem;

@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * printing_date - total price
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchBillingDocumentResponse extends AbstractStructBase
 {
     /**
@@ -52,12 +53,13 @@ class SearchBillingDocumentResponse extends AbstractStructBase
         return $this->MidocoBillingSearchInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingSearchInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingSearchInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingSearchInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingSearchInfoForArrayConstraintsFromSetMidocoBillingSearchInfo(?array $values = []): string
+    public static function validateMidocoBillingSearchInfoForArrayConstraintFromSetMidocoBillingSearchInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -86,7 +88,7 @@ class SearchBillingDocumentResponse extends AbstractStructBase
     public function setMidocoBillingSearchInfo(?array $midocoBillingSearchInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingSearchInfoArrayErrorMessage = self::validateMidocoBillingSearchInfoForArrayConstraintsFromSetMidocoBillingSearchInfo($midocoBillingSearchInfo))) {
+        if ('' !== ($midocoBillingSearchInfoArrayErrorMessage = self::validateMidocoBillingSearchInfoForArrayConstraintFromSetMidocoBillingSearchInfo($midocoBillingSearchInfo))) {
             throw new InvalidArgumentException($midocoBillingSearchInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingSearchInfo = $midocoBillingSearchInfo;

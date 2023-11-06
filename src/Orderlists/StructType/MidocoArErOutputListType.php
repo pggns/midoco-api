@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoArErOutputListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoArErOutputListType extends AbstractStructBase
 {
     /**

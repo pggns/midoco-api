@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchFilteredBillingDocumentForCustomerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchFilteredBillingDocumentForCustomerRequest extends AbstractStructBase
 {
     /**

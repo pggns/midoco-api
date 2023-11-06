@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetGroupAdvisorRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetGroupAdvisorRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetGroupAdvisorRequest extends AbstractStructBase
     /**
      * Set customer_id value
      * @param int $customer_id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGroupAdvisorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetGroupAdvisorRequest
      */
     public function setCustomer_id(?int $customer_id = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoAirportFullDescriptionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoAirportFullDescriptionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class MidocoAirportFullDescriptionResponse extends AbstractStructBase
         return $this->MidocoAirportFullDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAirportFullDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoAirportFullDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAirportFullDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAirportFullDescriptionForArrayConstraintsFromSetMidocoAirportFullDescription(?array $values = []): string
+    public static function validateMidocoAirportFullDescriptionForArrayConstraintFromSetMidocoAirportFullDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class MidocoAirportFullDescriptionResponse extends AbstractStructBase
     public function setMidocoAirportFullDescription(?array $midocoAirportFullDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAirportFullDescriptionArrayErrorMessage = self::validateMidocoAirportFullDescriptionForArrayConstraintsFromSetMidocoAirportFullDescription($midocoAirportFullDescription))) {
+        if ('' !== ($midocoAirportFullDescriptionArrayErrorMessage = self::validateMidocoAirportFullDescriptionForArrayConstraintFromSetMidocoAirportFullDescription($midocoAirportFullDescription))) {
             throw new InvalidArgumentException($midocoAirportFullDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoAirportFullDescription = $midocoAirportFullDescription;

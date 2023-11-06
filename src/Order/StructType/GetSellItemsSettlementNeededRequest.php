@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSellItemsSettlementNeededRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSellItemsSettlementNeededRequest extends AbstractStructBase
 {
     /**
@@ -108,6 +109,13 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
      */
     protected ?int $settlementPosition = null;
     /**
+     * The bookingType
+     * Meta information extracted from the WSDL
+     * - use: optional
+     * @var string|null
+     */
+    protected ?string $bookingType = null;
+    /**
      * Constructor method for GetSellItemsSettlementNeededRequest
      * @uses GetSellItemsSettlementNeededRequest::setSupplierId()
      * @uses GetSellItemsSettlementNeededRequest::setSupplierSettlementGroup()
@@ -127,6 +135,7 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
      * @uses GetSellItemsSettlementNeededRequest::setShowSkippedBookings()
      * @uses GetSellItemsSettlementNeededRequest::setTicketNo()
      * @uses GetSellItemsSettlementNeededRequest::setSettlementPosition()
+     * @uses GetSellItemsSettlementNeededRequest::setBookingType()
      * @param string $supplierId
      * @param string $supplierSettlementGroup
      * @param string $travelType
@@ -145,8 +154,9 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
      * @param bool $showSkippedBookings
      * @param string $ticketNo
      * @param int $settlementPosition
+     * @param string $bookingType
      */
-    public function __construct(?string $supplierId = null, ?string $supplierSettlementGroup = null, ?string $travelType = null, ?string $orgUnit = null, ?int $settlementId = null, ?int $sellItemId = null, ?string $creationDateFrom = null, ?string $creationDateTo = null, ?string $travelDateFrom = null, ?string $travelDateTo = null, ?bool $booked = null, ?bool $checked = null, ?bool $errors = null, ?bool $diff = null, ?bool $noSettlementsYet = null, ?bool $showSkippedBookings = null, ?string $ticketNo = null, ?int $settlementPosition = null)
+    public function __construct(?string $supplierId = null, ?string $supplierSettlementGroup = null, ?string $travelType = null, ?string $orgUnit = null, ?int $settlementId = null, ?int $sellItemId = null, ?string $creationDateFrom = null, ?string $creationDateTo = null, ?string $travelDateFrom = null, ?string $travelDateTo = null, ?bool $booked = null, ?bool $checked = null, ?bool $errors = null, ?bool $diff = null, ?bool $noSettlementsYet = null, ?bool $showSkippedBookings = null, ?string $ticketNo = null, ?int $settlementPosition = null, ?string $bookingType = null)
     {
         $this
             ->setSupplierId($supplierId)
@@ -166,7 +176,8 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
             ->setNoSettlementsYet($noSettlementsYet)
             ->setShowSkippedBookings($showSkippedBookings)
             ->setTicketNo($ticketNo)
-            ->setSettlementPosition($settlementPosition);
+            ->setSettlementPosition($settlementPosition)
+            ->setBookingType($bookingType);
     }
     /**
      * Get supplierId value
@@ -579,6 +590,29 @@ class GetSellItemsSettlementNeededRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($settlementPosition, true), gettype($settlementPosition)), __LINE__);
         }
         $this->settlementPosition = $settlementPosition;
+        
+        return $this;
+    }
+    /**
+     * Get bookingType value
+     * @return string|null
+     */
+    public function getBookingType(): ?string
+    {
+        return $this->bookingType;
+    }
+    /**
+     * Set bookingType value
+     * @param string $bookingType
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededRequest
+     */
+    public function setBookingType(?string $bookingType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($bookingType) && !is_string($bookingType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bookingType, true), gettype($bookingType)), __LINE__);
+        }
+        $this->bookingType = $bookingType;
         
         return $this;
     }

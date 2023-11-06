@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoContactDescription StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoContactDescription extends ContactDescriptionDTO
 {
     /**
@@ -41,7 +42,7 @@ class MidocoContactDescription extends ContactDescriptionDTO
     /**
      * Set contactGroup value
      * @param int $contactGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactDescription
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactDescription
      */
     public function setContactGroup(?int $contactGroup = 0): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SendTssPukMailRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SendTssPukMailRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class SendTssPukMailRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssPukMailRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +71,7 @@ class SendTssPukMailRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssPukMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssPukMailRequest
      */
     public function setTssId(?string $tssId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UserHistoryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UserHistoryDTO extends AbstractStructBase
 {
     /**
@@ -111,7 +112,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -134,7 +135,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {
@@ -157,7 +158,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set historyRefId value
      * @param string $historyRefId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setHistoryRefId(?string $historyRefId = null): self
     {
@@ -180,7 +181,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set isImported value
      * @param bool $isImported
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setIsImported(?bool $isImported = null): self
     {
@@ -203,7 +204,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -226,7 +227,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -249,7 +250,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -272,7 +273,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setSubType(?string $subType = null): self
     {
@@ -295,7 +296,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setType(?string $type = null): self
     {
@@ -318,7 +319,7 @@ class UserHistoryDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserHistoryDTO
      */
     public function setUserId(?int $userId = null): self
     {

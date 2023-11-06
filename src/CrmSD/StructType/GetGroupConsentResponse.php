@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetGroupConsentResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetGroupConsentResponse extends AbstractStructBase
 {
     /**
@@ -18,33 +19,33 @@ class GetGroupConsentResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoGroupConsent
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent $MidocoGroupConsent = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent $MidocoGroupConsent = null;
     /**
      * Constructor method for GetGroupConsentResponse
      * @uses GetGroupConsentResponse::setMidocoGroupConsent()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent $midocoGroupConsent
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent $midocoGroupConsent
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent $midocoGroupConsent = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent $midocoGroupConsent = null)
     {
         $this
             ->setMidocoGroupConsent($midocoGroupConsent);
     }
     /**
      * Get MidocoGroupConsent value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent|null
      */
-    public function getMidocoGroupConsent(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent
+    public function getMidocoGroupConsent(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent
     {
         return $this->MidocoGroupConsent;
     }
     /**
      * Set MidocoGroupConsent value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent $midocoGroupConsent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGroupConsentResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent $midocoGroupConsent
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetGroupConsentResponse
      */
-    public function setMidocoGroupConsent(?\Pggns\MidocoApi\CrmSD\StructType\MidocoGroupConsent $midocoGroupConsent = null): self
+    public function setMidocoGroupConsent(?\Pggns\MidocoApi\Crmsd\StructType\MidocoGroupConsent $midocoGroupConsent = null): self
     {
         $this->MidocoGroupConsent = $midocoGroupConsent;
         

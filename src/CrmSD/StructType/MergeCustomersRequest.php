@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MergeCustomersRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MergeCustomersRequest extends AbstractStructBase
 {
     /**
@@ -33,7 +34,7 @@ class MergeCustomersRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmAddressID
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO[]
      */
     protected ?array $MidocoCrmAddressID = null;
     /**
@@ -42,7 +43,7 @@ class MergeCustomersRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDebitorNo
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO[]
      */
     protected ?array $MidocoDebitorNo = null;
     /**
@@ -120,8 +121,8 @@ class MergeCustomersRequest extends AbstractStructBase
      * @uses MergeCustomersRequest::setLockReasonId()
      * @param int $custIdSave
      * @param int $custIdDel
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO[] $midocoCrmAddressID
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO[] $midocoDebitorNo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO[] $midocoCrmAddressID
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO[] $midocoDebitorNo
      * @param string[] $mergeCreditCardNo
      * @param string[] $mergeBonusCardNo
      * @param int[] $mergeContactEntryId
@@ -158,7 +159,7 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Set custIdSave value
      * @param int $custIdSave
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setCustIdSave(int $custIdSave): self
     {
@@ -181,7 +182,7 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Set custIdDel value
      * @param int $custIdDel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setCustIdDel(int $custIdDel): self
     {
@@ -195,19 +196,20 @@ class MergeCustomersRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmAddressID value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO[]
      */
     public function getMidocoCrmAddressID(): ?array
     {
         return $this->MidocoCrmAddressID;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmAddressID method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmAddressID method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmAddressID method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmAddressIDForArrayConstraintsFromSetMidocoCrmAddressID(?array $values = []): string
+    public static function validateMidocoCrmAddressIDForArrayConstraintFromSetMidocoCrmAddressID(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -216,12 +218,12 @@ class MergeCustomersRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $mergeCustomersRequestMidocoCrmAddressIDItem) {
             // validation for constraint: itemType
-            if (!$mergeCustomersRequestMidocoCrmAddressIDItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO) {
+            if (!$mergeCustomersRequestMidocoCrmAddressIDItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO) {
                 $invalidValues[] = is_object($mergeCustomersRequestMidocoCrmAddressIDItem) ? get_class($mergeCustomersRequestMidocoCrmAddressIDItem) : sprintf('%s(%s)', gettype($mergeCustomersRequestMidocoCrmAddressIDItem), var_export($mergeCustomersRequestMidocoCrmAddressIDItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmAddressID property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmAddressID property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -230,13 +232,13 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Set MidocoCrmAddressID value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO[] $midocoCrmAddressID
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO[] $midocoCrmAddressID
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setMidocoCrmAddressID(?array $midocoCrmAddressID = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmAddressIDArrayErrorMessage = self::validateMidocoCrmAddressIDForArrayConstraintsFromSetMidocoCrmAddressID($midocoCrmAddressID))) {
+        if ('' !== ($midocoCrmAddressIDArrayErrorMessage = self::validateMidocoCrmAddressIDForArrayConstraintFromSetMidocoCrmAddressID($midocoCrmAddressID))) {
             throw new InvalidArgumentException($midocoCrmAddressIDArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmAddressID = $midocoCrmAddressID;
@@ -246,14 +248,14 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Add item to MidocoCrmAddressID value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
-    public function addToMidocoCrmAddressID(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO $item): self
+    public function addToMidocoCrmAddressID(\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmAddressID property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddressIDDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmAddressID property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddressIDDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmAddressID[] = $item;
         
@@ -261,19 +263,20 @@ class MergeCustomersRequest extends AbstractStructBase
     }
     /**
      * Get MidocoDebitorNo value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO[]
      */
     public function getMidocoDebitorNo(): ?array
     {
         return $this->MidocoDebitorNo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDebitorNo method
+     * This method is responsible for validating the value(s) passed to the setMidocoDebitorNo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDebitorNo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDebitorNoForArrayConstraintsFromSetMidocoDebitorNo(?array $values = []): string
+    public static function validateMidocoDebitorNoForArrayConstraintFromSetMidocoDebitorNo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -282,12 +285,12 @@ class MergeCustomersRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $mergeCustomersRequestMidocoDebitorNoItem) {
             // validation for constraint: itemType
-            if (!$mergeCustomersRequestMidocoDebitorNoItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO) {
+            if (!$mergeCustomersRequestMidocoDebitorNoItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO) {
                 $invalidValues[] = is_object($mergeCustomersRequestMidocoDebitorNoItem) ? get_class($mergeCustomersRequestMidocoDebitorNoItem) : sprintf('%s(%s)', gettype($mergeCustomersRequestMidocoDebitorNoItem), var_export($mergeCustomersRequestMidocoDebitorNoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDebitorNo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDebitorNo property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -296,13 +299,13 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Set MidocoDebitorNo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO[] $midocoDebitorNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO[] $midocoDebitorNo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setMidocoDebitorNo(?array $midocoDebitorNo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDebitorNoArrayErrorMessage = self::validateMidocoDebitorNoForArrayConstraintsFromSetMidocoDebitorNo($midocoDebitorNo))) {
+        if ('' !== ($midocoDebitorNoArrayErrorMessage = self::validateMidocoDebitorNoForArrayConstraintFromSetMidocoDebitorNo($midocoDebitorNo))) {
             throw new InvalidArgumentException($midocoDebitorNoArrayErrorMessage, __LINE__);
         }
         $this->MidocoDebitorNo = $midocoDebitorNo;
@@ -312,14 +315,14 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Add item to MidocoDebitorNo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
-    public function addToMidocoDebitorNo(\Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO $item): self
+    public function addToMidocoDebitorNo(\Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDebitorNo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoDebitorNoDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDebitorNo property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoDebitorNoDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDebitorNo[] = $item;
         
@@ -334,12 +337,13 @@ class MergeCustomersRequest extends AbstractStructBase
         return $this->MergeCreditCardNo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMergeCreditCardNo method
+     * This method is responsible for validating the value(s) passed to the setMergeCreditCardNo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMergeCreditCardNo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMergeCreditCardNoForArrayConstraintsFromSetMergeCreditCardNo(?array $values = []): string
+    public static function validateMergeCreditCardNoForArrayConstraintFromSetMergeCreditCardNo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -363,12 +367,12 @@ class MergeCustomersRequest extends AbstractStructBase
      * Set MergeCreditCardNo value
      * @throws InvalidArgumentException
      * @param string[] $mergeCreditCardNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setMergeCreditCardNo(?array $mergeCreditCardNo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mergeCreditCardNoArrayErrorMessage = self::validateMergeCreditCardNoForArrayConstraintsFromSetMergeCreditCardNo($mergeCreditCardNo))) {
+        if ('' !== ($mergeCreditCardNoArrayErrorMessage = self::validateMergeCreditCardNoForArrayConstraintFromSetMergeCreditCardNo($mergeCreditCardNo))) {
             throw new InvalidArgumentException($mergeCreditCardNoArrayErrorMessage, __LINE__);
         }
         $this->MergeCreditCardNo = $mergeCreditCardNo;
@@ -379,7 +383,7 @@ class MergeCustomersRequest extends AbstractStructBase
      * Add item to MergeCreditCardNo value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function addToMergeCreditCardNo(string $item): self
     {
@@ -400,12 +404,13 @@ class MergeCustomersRequest extends AbstractStructBase
         return $this->MergeBonusCardNo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMergeBonusCardNo method
+     * This method is responsible for validating the value(s) passed to the setMergeBonusCardNo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMergeBonusCardNo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMergeBonusCardNoForArrayConstraintsFromSetMergeBonusCardNo(?array $values = []): string
+    public static function validateMergeBonusCardNoForArrayConstraintFromSetMergeBonusCardNo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -429,12 +434,12 @@ class MergeCustomersRequest extends AbstractStructBase
      * Set MergeBonusCardNo value
      * @throws InvalidArgumentException
      * @param string[] $mergeBonusCardNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setMergeBonusCardNo(?array $mergeBonusCardNo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mergeBonusCardNoArrayErrorMessage = self::validateMergeBonusCardNoForArrayConstraintsFromSetMergeBonusCardNo($mergeBonusCardNo))) {
+        if ('' !== ($mergeBonusCardNoArrayErrorMessage = self::validateMergeBonusCardNoForArrayConstraintFromSetMergeBonusCardNo($mergeBonusCardNo))) {
             throw new InvalidArgumentException($mergeBonusCardNoArrayErrorMessage, __LINE__);
         }
         $this->MergeBonusCardNo = $mergeBonusCardNo;
@@ -445,7 +450,7 @@ class MergeCustomersRequest extends AbstractStructBase
      * Add item to MergeBonusCardNo value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function addToMergeBonusCardNo(string $item): self
     {
@@ -466,12 +471,13 @@ class MergeCustomersRequest extends AbstractStructBase
         return $this->MergeContactEntryId;
     }
     /**
-     * This method is responsible for validating the values passed to the setMergeContactEntryId method
+     * This method is responsible for validating the value(s) passed to the setMergeContactEntryId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMergeContactEntryId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMergeContactEntryIdForArrayConstraintsFromSetMergeContactEntryId(?array $values = []): string
+    public static function validateMergeContactEntryIdForArrayConstraintFromSetMergeContactEntryId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -495,12 +501,12 @@ class MergeCustomersRequest extends AbstractStructBase
      * Set MergeContactEntryId value
      * @throws InvalidArgumentException
      * @param int[] $mergeContactEntryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setMergeContactEntryId(?array $mergeContactEntryId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mergeContactEntryIdArrayErrorMessage = self::validateMergeContactEntryIdForArrayConstraintsFromSetMergeContactEntryId($mergeContactEntryId))) {
+        if ('' !== ($mergeContactEntryIdArrayErrorMessage = self::validateMergeContactEntryIdForArrayConstraintFromSetMergeContactEntryId($mergeContactEntryId))) {
             throw new InvalidArgumentException($mergeContactEntryIdArrayErrorMessage, __LINE__);
         }
         $this->MergeContactEntryId = $mergeContactEntryId;
@@ -511,7 +517,7 @@ class MergeCustomersRequest extends AbstractStructBase
      * Add item to MergeContactEntryId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function addToMergeContactEntryId(int $item): self
     {
@@ -532,12 +538,13 @@ class MergeCustomersRequest extends AbstractStructBase
         return $this->MergeDebitCardId;
     }
     /**
-     * This method is responsible for validating the values passed to the setMergeDebitCardId method
+     * This method is responsible for validating the value(s) passed to the setMergeDebitCardId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMergeDebitCardId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMergeDebitCardIdForArrayConstraintsFromSetMergeDebitCardId(?array $values = []): string
+    public static function validateMergeDebitCardIdForArrayConstraintFromSetMergeDebitCardId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -561,12 +568,12 @@ class MergeCustomersRequest extends AbstractStructBase
      * Set MergeDebitCardId value
      * @throws InvalidArgumentException
      * @param int[] $mergeDebitCardId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setMergeDebitCardId(?array $mergeDebitCardId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mergeDebitCardIdArrayErrorMessage = self::validateMergeDebitCardIdForArrayConstraintsFromSetMergeDebitCardId($mergeDebitCardId))) {
+        if ('' !== ($mergeDebitCardIdArrayErrorMessage = self::validateMergeDebitCardIdForArrayConstraintFromSetMergeDebitCardId($mergeDebitCardId))) {
             throw new InvalidArgumentException($mergeDebitCardIdArrayErrorMessage, __LINE__);
         }
         $this->MergeDebitCardId = $mergeDebitCardId;
@@ -577,7 +584,7 @@ class MergeCustomersRequest extends AbstractStructBase
      * Add item to MergeDebitCardId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function addToMergeDebitCardId(int $item): self
     {
@@ -598,12 +605,13 @@ class MergeCustomersRequest extends AbstractStructBase
         return $this->MergeCrmCriteriaId;
     }
     /**
-     * This method is responsible for validating the values passed to the setMergeCrmCriteriaId method
+     * This method is responsible for validating the value(s) passed to the setMergeCrmCriteriaId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMergeCrmCriteriaId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMergeCrmCriteriaIdForArrayConstraintsFromSetMergeCrmCriteriaId(?array $values = []): string
+    public static function validateMergeCrmCriteriaIdForArrayConstraintFromSetMergeCrmCriteriaId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -627,12 +635,12 @@ class MergeCustomersRequest extends AbstractStructBase
      * Set MergeCrmCriteriaId value
      * @throws InvalidArgumentException
      * @param int[] $mergeCrmCriteriaId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setMergeCrmCriteriaId(?array $mergeCrmCriteriaId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mergeCrmCriteriaIdArrayErrorMessage = self::validateMergeCrmCriteriaIdForArrayConstraintsFromSetMergeCrmCriteriaId($mergeCrmCriteriaId))) {
+        if ('' !== ($mergeCrmCriteriaIdArrayErrorMessage = self::validateMergeCrmCriteriaIdForArrayConstraintFromSetMergeCrmCriteriaId($mergeCrmCriteriaId))) {
             throw new InvalidArgumentException($mergeCrmCriteriaIdArrayErrorMessage, __LINE__);
         }
         $this->MergeCrmCriteriaId = $mergeCrmCriteriaId;
@@ -643,7 +651,7 @@ class MergeCustomersRequest extends AbstractStructBase
      * Add item to MergeCrmCriteriaId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function addToMergeCrmCriteriaId(int $item): self
     {
@@ -666,7 +674,7 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Set custIdPayment value
      * @param int $custIdPayment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setCustIdPayment(?int $custIdPayment = null): self
     {
@@ -689,7 +697,7 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setLocked(?bool $locked = null): self
     {
@@ -712,7 +720,7 @@ class MergeCustomersRequest extends AbstractStructBase
     /**
      * Set lockReasonId value
      * @param string $lockReasonId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersRequest
      */
     public function setLockReasonId(?string $lockReasonId = null): self
     {

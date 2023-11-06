@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBillingBookingJournalsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingBookingJournalsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetBillingBookingJournalsResponse extends AbstractStructBase
         return $this->MidocoJournalPosition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoJournalPosition method
+     * This method is responsible for validating the value(s) passed to the setMidocoJournalPosition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoJournalPosition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoJournalPositionForArrayConstraintsFromSetMidocoJournalPosition(?array $values = []): string
+    public static function validateMidocoJournalPositionForArrayConstraintFromSetMidocoJournalPosition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetBillingBookingJournalsResponse extends AbstractStructBase
     public function setMidocoJournalPosition(?array $midocoJournalPosition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoJournalPositionArrayErrorMessage = self::validateMidocoJournalPositionForArrayConstraintsFromSetMidocoJournalPosition($midocoJournalPosition))) {
+        if ('' !== ($midocoJournalPositionArrayErrorMessage = self::validateMidocoJournalPositionForArrayConstraintFromSetMidocoJournalPosition($midocoJournalPosition))) {
             throw new InvalidArgumentException($midocoJournalPositionArrayErrorMessage, __LINE__);
         }
         $this->MidocoJournalPosition = $midocoJournalPosition;

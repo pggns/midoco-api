@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateSequenceRangeFromPoolRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateSequenceRangeFromPoolRequest extends AbstractStructBase
 {
     /**

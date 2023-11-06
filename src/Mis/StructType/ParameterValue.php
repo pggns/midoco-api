@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ParameterValue StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ParameterValue extends AbstractStructBase
 {
     /**

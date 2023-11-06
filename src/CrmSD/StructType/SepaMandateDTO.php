@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SepaMandateDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SepaMandateDTO extends AbstractStructBase
 {
     /**
@@ -239,7 +240,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set bic value
      * @param string $bic
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setBic(?string $bic = null): self
     {
@@ -262,7 +263,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -285,7 +286,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set createdBy value
      * @param int $createdBy
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setCreatedBy(?int $createdBy = null): self
     {
@@ -308,7 +309,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -331,7 +332,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -354,7 +355,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set debteeId value
      * @param string $debteeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setDebteeId(?string $debteeId = null): self
     {
@@ -377,7 +378,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set documentExportDate value
      * @param string $documentExportDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setDocumentExportDate(?string $documentExportDate = null): self
     {
@@ -400,7 +401,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -423,7 +424,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -446,7 +447,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setIban(?string $iban = null): self
     {
@@ -469,7 +470,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -492,7 +493,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set isDocumentExported value
      * @param bool $isDocumentExported
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setIsDocumentExported(?bool $isDocumentExported = null): self
     {
@@ -515,7 +516,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setLanguage(?string $language = null): self
     {
@@ -538,7 +539,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set lastUsed value
      * @param string $lastUsed
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setLastUsed(?string $lastUsed = null): self
     {
@@ -561,7 +562,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -584,7 +585,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set mandateReference value
      * @param string $mandateReference
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setMandateReference(?string $mandateReference = null): self
     {
@@ -607,7 +608,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set mandateType value
      * @param string $mandateType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setMandateType(?string $mandateType = null): self
     {
@@ -630,7 +631,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setName(?string $name = null): self
     {
@@ -653,7 +654,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -676,7 +677,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set placeOfIssue value
      * @param string $placeOfIssue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setPlaceOfIssue(?string $placeOfIssue = null): self
     {
@@ -699,7 +700,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set receiptId value
      * @param int $receiptId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setReceiptId(?int $receiptId = null): self
     {
@@ -722,7 +723,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {
@@ -745,7 +746,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -768,7 +769,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set usedCount value
      * @param int $usedCount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setUsedCount(?int $usedCount = null): self
     {
@@ -791,7 +792,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -814,7 +815,7 @@ class SepaMandateDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

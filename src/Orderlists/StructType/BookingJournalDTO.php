@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BookingJournalDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BookingJournalDTO extends AbstractStructBase
 {
     /**
@@ -28,6 +29,11 @@ class BookingJournalDTO extends AbstractStructBase
      * @var int|null
      */
     protected ?int $bookingPeriod = null;
+    /**
+     * The bookingPeriodManuallyChanged
+     * @var bool|null
+     */
+    protected ?bool $bookingPeriodManuallyChanged = null;
     /**
      * The bookingReversal
      * @var bool|null
@@ -63,6 +69,11 @@ class BookingJournalDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $creationDate = null;
+    /**
+     * The creationTimestamp
+     * @var string|null
+     */
+    protected ?string $creationTimestamp = null;
     /**
      * The creationUser
      * @var int|null
@@ -228,6 +239,7 @@ class BookingJournalDTO extends AbstractStructBase
      * @uses BookingJournalDTO::setAutomaticVat()
      * @uses BookingJournalDTO::setBookingAmount()
      * @uses BookingJournalDTO::setBookingPeriod()
+     * @uses BookingJournalDTO::setBookingPeriodManuallyChanged()
      * @uses BookingJournalDTO::setBookingReversal()
      * @uses BookingJournalDTO::setBookingSource()
      * @uses BookingJournalDTO::setBookingText()
@@ -235,6 +247,7 @@ class BookingJournalDTO extends AbstractStructBase
      * @uses BookingJournalDTO::setCostCentre()
      * @uses BookingJournalDTO::setCostUnit()
      * @uses BookingJournalDTO::setCreationDate()
+     * @uses BookingJournalDTO::setCreationTimestamp()
      * @uses BookingJournalDTO::setCreationUser()
      * @uses BookingJournalDTO::setCreditAccount()
      * @uses BookingJournalDTO::setCreditEntry()
@@ -270,6 +283,7 @@ class BookingJournalDTO extends AbstractStructBase
      * @param bool $automaticVat
      * @param float $bookingAmount
      * @param int $bookingPeriod
+     * @param bool $bookingPeriodManuallyChanged
      * @param bool $bookingReversal
      * @param int $bookingSource
      * @param string $bookingText
@@ -277,6 +291,7 @@ class BookingJournalDTO extends AbstractStructBase
      * @param string $costCentre
      * @param string $costUnit
      * @param string $creationDate
+     * @param string $creationTimestamp
      * @param int $creationUser
      * @param string $creditAccount
      * @param string $creditEntry
@@ -310,12 +325,13 @@ class BookingJournalDTO extends AbstractStructBase
      * @param string $vatId
      * @param float $vatPercent
      */
-    public function __construct(?bool $automaticVat = null, ?float $bookingAmount = null, ?int $bookingPeriod = null, ?bool $bookingReversal = null, ?int $bookingSource = null, ?string $bookingText = null, ?int $bookingYear = null, ?string $costCentre = null, ?string $costUnit = null, ?string $creationDate = null, ?int $creationUser = null, ?string $creditAccount = null, ?string $creditEntry = null, ?string $currency = null, ?string $debitAccount = null, ?string $debitEntry = null, ?int $deferralPositionId = null, ?int $documentId = null, ?string $dueDate = null, ?float $exchangeRate = null, ?string $exportCode = null, ?string $exportDate = null, ?int $exportId = null, ?bool $isExported = null, ?bool $isInvoice = null, ?int $itemId = null, ?int $journalId = null, ?int $masterJournalId = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?string $planId = null, ?string $receiptDate = null, ?string $receiptNo = null, ?int $revenueId = null, ?string $reverseChargeCountry = null, ?float $skontoAmount = null, ?float $skontoVatAmount = null, ?string $travelDate = null, ?float $vatAmount = null, ?string $vatCode = null, ?string $vatId = null, ?float $vatPercent = null)
+    public function __construct(?bool $automaticVat = null, ?float $bookingAmount = null, ?int $bookingPeriod = null, ?bool $bookingPeriodManuallyChanged = null, ?bool $bookingReversal = null, ?int $bookingSource = null, ?string $bookingText = null, ?int $bookingYear = null, ?string $costCentre = null, ?string $costUnit = null, ?string $creationDate = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $creditAccount = null, ?string $creditEntry = null, ?string $currency = null, ?string $debitAccount = null, ?string $debitEntry = null, ?int $deferralPositionId = null, ?int $documentId = null, ?string $dueDate = null, ?float $exchangeRate = null, ?string $exportCode = null, ?string $exportDate = null, ?int $exportId = null, ?bool $isExported = null, ?bool $isInvoice = null, ?int $itemId = null, ?int $journalId = null, ?int $masterJournalId = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?string $planId = null, ?string $receiptDate = null, ?string $receiptNo = null, ?int $revenueId = null, ?string $reverseChargeCountry = null, ?float $skontoAmount = null, ?float $skontoVatAmount = null, ?string $travelDate = null, ?float $vatAmount = null, ?string $vatCode = null, ?string $vatId = null, ?float $vatPercent = null)
     {
         $this
             ->setAutomaticVat($automaticVat)
             ->setBookingAmount($bookingAmount)
             ->setBookingPeriod($bookingPeriod)
+            ->setBookingPeriodManuallyChanged($bookingPeriodManuallyChanged)
             ->setBookingReversal($bookingReversal)
             ->setBookingSource($bookingSource)
             ->setBookingText($bookingText)
@@ -323,6 +339,7 @@ class BookingJournalDTO extends AbstractStructBase
             ->setCostCentre($costCentre)
             ->setCostUnit($costUnit)
             ->setCreationDate($creationDate)
+            ->setCreationTimestamp($creationTimestamp)
             ->setCreationUser($creationUser)
             ->setCreditAccount($creditAccount)
             ->setCreditEntry($creditEntry)
@@ -422,6 +439,29 @@ class BookingJournalDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bookingPeriod, true), gettype($bookingPeriod)), __LINE__);
         }
         $this->bookingPeriod = $bookingPeriod;
+        
+        return $this;
+    }
+    /**
+     * Get bookingPeriodManuallyChanged value
+     * @return bool|null
+     */
+    public function getBookingPeriodManuallyChanged(): ?bool
+    {
+        return $this->bookingPeriodManuallyChanged;
+    }
+    /**
+     * Set bookingPeriodManuallyChanged value
+     * @param bool $bookingPeriodManuallyChanged
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingJournalDTO
+     */
+    public function setBookingPeriodManuallyChanged(?bool $bookingPeriodManuallyChanged = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($bookingPeriodManuallyChanged) && !is_bool($bookingPeriodManuallyChanged)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($bookingPeriodManuallyChanged, true), gettype($bookingPeriodManuallyChanged)), __LINE__);
+        }
+        $this->bookingPeriodManuallyChanged = $bookingPeriodManuallyChanged;
         
         return $this;
     }
@@ -583,6 +623,29 @@ class BookingJournalDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationDate, true), gettype($creationDate)), __LINE__);
         }
         $this->creationDate = $creationDate;
+        
+        return $this;
+    }
+    /**
+     * Get creationTimestamp value
+     * @return string|null
+     */
+    public function getCreationTimestamp(): ?string
+    {
+        return $this->creationTimestamp;
+    }
+    /**
+     * Set creationTimestamp value
+     * @param string $creationTimestamp
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BookingJournalDTO
+     */
+    public function setCreationTimestamp(?string $creationTimestamp = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($creationTimestamp) && !is_string($creationTimestamp)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationTimestamp, true), gettype($creationTimestamp)), __LINE__);
+        }
+        $this->creationTimestamp = $creationTimestamp;
         
         return $this;
     }

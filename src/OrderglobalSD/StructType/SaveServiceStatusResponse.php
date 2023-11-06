@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveServiceStatusResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveServiceStatusResponse extends AbstractStructBase
 {
 }

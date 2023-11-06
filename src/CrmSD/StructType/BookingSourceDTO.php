@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BookingSourceDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BookingSourceDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class BookingSourceDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BookingSourceDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +79,7 @@ class BookingSourceDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BookingSourceDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +102,7 @@ class BookingSourceDTO extends AbstractStructBase
     /**
      * Set sourceId value
      * @param string $sourceId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BookingSourceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BookingSourceDTO
      */
     public function setSourceId(?string $sourceId = null): self
     {

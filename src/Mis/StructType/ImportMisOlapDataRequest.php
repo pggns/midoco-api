@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ImportMisOlapDataRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ImportMisOlapDataRequest extends AbstractStructBase
 {
     /**

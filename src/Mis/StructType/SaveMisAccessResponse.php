@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveMisAccess --- save the access to the mis reports and mis dimensions in access_report and access_dimension tables
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMisAccessResponse extends AbstractStructBase
 {
 }

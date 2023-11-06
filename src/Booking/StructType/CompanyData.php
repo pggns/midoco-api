@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Special data in case of a company customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CompanyData extends AbstractStructBase
 {
     /**
@@ -47,23 +48,34 @@ class CompanyData extends AbstractStructBase
      */
     protected ?string $vatId = null;
     /**
+     * The vatType
+     * Meta information extracted from the WSDL
+     * - documentation: vat type of the company
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $vatType = null;
+    /**
      * Constructor method for companyData
      * @uses CompanyData::setSalutation()
      * @uses CompanyData::setContactPerson()
      * @uses CompanyData::setOrganisationName()
      * @uses CompanyData::setVatId()
+     * @uses CompanyData::setVatType()
      * @param string $salutation
      * @param string $contactPerson
      * @param string $organisationName
      * @param string $vatId
+     * @param string $vatType
      */
-    public function __construct(?string $salutation = null, ?string $contactPerson = null, ?string $organisationName = null, ?string $vatId = null)
+    public function __construct(?string $salutation = null, ?string $contactPerson = null, ?string $organisationName = null, ?string $vatId = null, ?string $vatType = null)
     {
         $this
             ->setSalutation($salutation)
             ->setContactPerson($contactPerson)
             ->setOrganisationName($organisationName)
-            ->setVatId($vatId);
+            ->setVatId($vatId)
+            ->setVatType($vatType);
     }
     /**
      * Get salutation value
@@ -154,6 +166,32 @@ class CompanyData extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($vatId, true), gettype($vatId)), __LINE__);
         }
         $this->vatId = $vatId;
+        
+        return $this;
+    }
+    /**
+     * Get vatType value
+     * @return string|null
+     */
+    public function getVatType(): ?string
+    {
+        return $this->vatType;
+    }
+    /**
+     * Set vatType value
+     * @uses \Pggns\MidocoApi\Booking\EnumType\VatTypeType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\VatTypeType::getValidValues()
+     * @throws InvalidArgumentException
+     * @param string $vatType
+     * @return \Pggns\MidocoApi\Booking\StructType\CompanyData
+     */
+    public function setVatType(?string $vatType = null): self
+    {
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Booking\EnumType\VatTypeType::valueIsValid($vatType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\VatTypeType', is_array($vatType) ? implode(', ', $vatType) : var_export($vatType, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\VatTypeType::getValidValues())), __LINE__);
+        }
+        $this->vatType = $vatType;
         
         return $this;
     }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgencyCooperationHistoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgencyCooperationHistoryRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetAgencyCooperationHistoryRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyCooperationHistoryRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -70,7 +71,7 @@ class GetAgencyCooperationHistoryRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyCooperationHistoryRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

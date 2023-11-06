@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCrmPersonTravellerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCrmPersonTravellerRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class DeleteCrmPersonTravellerRequest extends AbstractStructBase
     /**
      * Set travellerId value
      * @param int $travellerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCrmPersonTravellerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCrmPersonTravellerRequest
      */
     public function setTravellerId(?int $travellerId = null): self
     {

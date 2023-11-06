@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmMidocoSettlMdocLevelDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -94,7 +95,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set maxLimit value
      * @param int $maxLimit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setMaxLimit(?int $maxLimit = null): self
     {
@@ -117,7 +118,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set minLimit value
      * @param int $minLimit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setMinLimit(?int $minLimit = null): self
     {
@@ -140,7 +141,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set settlMdocId value
      * @param int $settlMdocId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setSettlMdocId(?int $settlMdocId = null): self
     {
@@ -163,7 +164,7 @@ class CrmMidocoSettlMdocLevelDTO extends AbstractStructBase
     /**
      * Set settlMdocLevelId value
      * @param int $settlMdocLevelId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO
      */
     public function setSettlMdocLevelId(?int $settlMdocLevelId = null): self
     {

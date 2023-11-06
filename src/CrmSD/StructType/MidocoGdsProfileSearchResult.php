@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoGdsProfileSearchResult StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoGdsProfileSearchResult extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class MidocoGdsProfileSearchResult extends AbstractStructBase
     /**
      * Set profileNumber value
      * @param string $profileNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfileSearchResult
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfileSearchResult
      */
     public function setProfileNumber(?string $profileNumber = null): self
     {
@@ -86,7 +87,7 @@ class MidocoGdsProfileSearchResult extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfileSearchResult
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfileSearchResult
      */
     public function setName(?string $name = null): self
     {
@@ -109,7 +110,7 @@ class MidocoGdsProfileSearchResult extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfileSearchResult
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfileSearchResult
      */
     public function setForename(?string $forename = null): self
     {
@@ -132,7 +133,7 @@ class MidocoGdsProfileSearchResult extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfileSearchResult
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfileSearchResult
      */
     public function setType(?string $type = null): self
     {

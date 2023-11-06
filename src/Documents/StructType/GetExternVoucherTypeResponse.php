@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetExternVoucherTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExternVoucherTypeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetExternVoucherTypeResponse extends AbstractStructBase
         return $this->MidocoExternVoucherType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoExternVoucherType method
+     * This method is responsible for validating the value(s) passed to the setMidocoExternVoucherType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoExternVoucherType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoExternVoucherTypeForArrayConstraintsFromSetMidocoExternVoucherType(?array $values = []): string
+    public static function validateMidocoExternVoucherTypeForArrayConstraintFromSetMidocoExternVoucherType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetExternVoucherTypeResponse extends AbstractStructBase
     public function setMidocoExternVoucherType(?array $midocoExternVoucherType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoExternVoucherTypeArrayErrorMessage = self::validateMidocoExternVoucherTypeForArrayConstraintsFromSetMidocoExternVoucherType($midocoExternVoucherType))) {
+        if ('' !== ($midocoExternVoucherTypeArrayErrorMessage = self::validateMidocoExternVoucherTypeForArrayConstraintFromSetMidocoExternVoucherType($midocoExternVoucherType))) {
             throw new InvalidArgumentException($midocoExternVoucherTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoExternVoucherType = $midocoExternVoucherType;

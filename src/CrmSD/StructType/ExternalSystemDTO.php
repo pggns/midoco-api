@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExternalSystemDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExternalSystemDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class ExternalSystemDTO extends AbstractStructBase
     /**
      * Set systemName value
      * @param string $systemName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO
      */
     public function setSystemName(?string $systemName = null): self
     {
@@ -70,7 +71,7 @@ class ExternalSystemDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO
      */
     public function setType(?string $type = null): self
     {

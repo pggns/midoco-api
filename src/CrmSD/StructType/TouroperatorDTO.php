@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TouroperatorDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TouroperatorDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class TouroperatorDTO extends AbstractStructBase
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDTO
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -110,7 +111,7 @@ class TouroperatorDTO extends AbstractStructBase
     /**
      * Set externalId value
      * @param string $externalId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDTO
      */
     public function setExternalId(?string $externalId = null): self
     {
@@ -133,7 +134,7 @@ class TouroperatorDTO extends AbstractStructBase
     /**
      * Set hashCode value
      * @param string $hashCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDTO
      */
     public function setHashCode(?string $hashCode = null): self
     {
@@ -156,7 +157,7 @@ class TouroperatorDTO extends AbstractStructBase
     /**
      * Set isOwn value
      * @param bool $isOwn
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDTO
      */
     public function setIsOwn(?bool $isOwn = null): self
     {
@@ -179,7 +180,7 @@ class TouroperatorDTO extends AbstractStructBase
     /**
      * Set metaData value
      * @param string $metaData
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDTO
      */
     public function setMetaData(?string $metaData = null): self
     {
@@ -202,7 +203,7 @@ class TouroperatorDTO extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDTO
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {
@@ -225,7 +226,7 @@ class TouroperatorDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

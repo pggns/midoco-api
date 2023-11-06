@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAutoMailInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAutoMailInfoResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetAutoMailInfoResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAutoMailInfo
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO[]
      */
     protected ?array $MidocoAutoMailInfo = null;
     /**
      * Constructor method for GetAutoMailInfoResponse
      * @uses GetAutoMailInfoResponse::setMidocoAutoMailInfo()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO[] $midocoAutoMailInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO[] $midocoAutoMailInfo
      */
     public function __construct(?array $midocoAutoMailInfo = null)
     {
@@ -34,19 +35,20 @@ class GetAutoMailInfoResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAutoMailInfo value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO[]
      */
     public function getMidocoAutoMailInfo(): ?array
     {
         return $this->MidocoAutoMailInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAutoMailInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoAutoMailInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAutoMailInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAutoMailInfoForArrayConstraintsFromSetMidocoAutoMailInfo(?array $values = []): string
+    public static function validateMidocoAutoMailInfoForArrayConstraintFromSetMidocoAutoMailInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetAutoMailInfoResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAutoMailInfoResponseMidocoAutoMailInfoItem) {
             // validation for constraint: itemType
-            if (!$getAutoMailInfoResponseMidocoAutoMailInfoItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO) {
+            if (!$getAutoMailInfoResponseMidocoAutoMailInfoItem instanceof \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO) {
                 $invalidValues[] = is_object($getAutoMailInfoResponseMidocoAutoMailInfoItem) ? get_class($getAutoMailInfoResponseMidocoAutoMailInfoItem) : sprintf('%s(%s)', gettype($getAutoMailInfoResponseMidocoAutoMailInfoItem), var_export($getAutoMailInfoResponseMidocoAutoMailInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetAutoMailInfoResponse extends AbstractStructBase
     /**
      * Set MidocoAutoMailInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO[] $midocoAutoMailInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAutoMailInfoResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO[] $midocoAutoMailInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAutoMailInfoResponse
      */
     public function setMidocoAutoMailInfo(?array $midocoAutoMailInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAutoMailInfoArrayErrorMessage = self::validateMidocoAutoMailInfoForArrayConstraintsFromSetMidocoAutoMailInfo($midocoAutoMailInfo))) {
+        if ('' !== ($midocoAutoMailInfoArrayErrorMessage = self::validateMidocoAutoMailInfoForArrayConstraintFromSetMidocoAutoMailInfo($midocoAutoMailInfo))) {
             throw new InvalidArgumentException($midocoAutoMailInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoAutoMailInfo = $midocoAutoMailInfo;
@@ -85,14 +87,14 @@ class GetAutoMailInfoResponse extends AbstractStructBase
     /**
      * Add item to MidocoAutoMailInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAutoMailInfoResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAutoMailInfoResponse
      */
-    public function addToMidocoAutoMailInfo(\Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO $item): self
+    public function addToMidocoAutoMailInfo(\Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AutoMailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAutoMailInfo property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AutoMailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAutoMailInfo[] = $item;
         

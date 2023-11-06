@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MoveDocumentsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MoveDocumentsRequest extends AbstractStructBase
 {
     /**
@@ -56,12 +57,13 @@ class MoveDocumentsRequest extends AbstractStructBase
         return $this->MidocoSellItemId;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemId method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemIdForArrayConstraintsFromSetMidocoSellItemId(?array $values = []): string
+    public static function validateMidocoSellItemIdForArrayConstraintFromSetMidocoSellItemId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -90,7 +92,7 @@ class MoveDocumentsRequest extends AbstractStructBase
     public function setMidocoSellItemId(?array $midocoSellItemId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemIdArrayErrorMessage = self::validateMidocoSellItemIdForArrayConstraintsFromSetMidocoSellItemId($midocoSellItemId))) {
+        if ('' !== ($midocoSellItemIdArrayErrorMessage = self::validateMidocoSellItemIdForArrayConstraintFromSetMidocoSellItemId($midocoSellItemId))) {
             throw new InvalidArgumentException($midocoSellItemIdArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemId = $midocoSellItemId;

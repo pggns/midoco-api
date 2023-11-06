@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllUserattribTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllUserattribTypesResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetAllUserattribTypesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoUserattribType
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType[]
      */
     protected ?array $MidocoUserattribType = null;
     /**
      * Constructor method for GetAllUserattribTypesResponse
      * @uses GetAllUserattribTypesResponse::setMidocoUserattribType()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType[] $midocoUserattribType
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType[] $midocoUserattribType
      */
     public function __construct(?array $midocoUserattribType = null)
     {
@@ -34,19 +35,20 @@ class GetAllUserattribTypesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoUserattribType value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType[]
      */
     public function getMidocoUserattribType(): ?array
     {
         return $this->MidocoUserattribType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoUserattribType method
+     * This method is responsible for validating the value(s) passed to the setMidocoUserattribType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoUserattribType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoUserattribTypeForArrayConstraintsFromSetMidocoUserattribType(?array $values = []): string
+    public static function validateMidocoUserattribTypeForArrayConstraintFromSetMidocoUserattribType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetAllUserattribTypesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllUserattribTypesResponseMidocoUserattribTypeItem) {
             // validation for constraint: itemType
-            if (!$getAllUserattribTypesResponseMidocoUserattribTypeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType) {
+            if (!$getAllUserattribTypesResponseMidocoUserattribTypeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType) {
                 $invalidValues[] = is_object($getAllUserattribTypesResponseMidocoUserattribTypeItem) ? get_class($getAllUserattribTypesResponseMidocoUserattribTypeItem) : sprintf('%s(%s)', gettype($getAllUserattribTypesResponseMidocoUserattribTypeItem), var_export($getAllUserattribTypesResponseMidocoUserattribTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoUserattribType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoUserattribType property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetAllUserattribTypesResponse extends AbstractStructBase
     /**
      * Set MidocoUserattribType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType[] $midocoUserattribType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllUserattribTypesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType[] $midocoUserattribType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllUserattribTypesResponse
      */
     public function setMidocoUserattribType(?array $midocoUserattribType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoUserattribTypeArrayErrorMessage = self::validateMidocoUserattribTypeForArrayConstraintsFromSetMidocoUserattribType($midocoUserattribType))) {
+        if ('' !== ($midocoUserattribTypeArrayErrorMessage = self::validateMidocoUserattribTypeForArrayConstraintFromSetMidocoUserattribType($midocoUserattribType))) {
             throw new InvalidArgumentException($midocoUserattribTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoUserattribType = $midocoUserattribType;
@@ -85,14 +87,14 @@ class GetAllUserattribTypesResponse extends AbstractStructBase
     /**
      * Add item to MidocoUserattribType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllUserattribTypesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllUserattribTypesResponse
      */
-    public function addToMidocoUserattribType(\Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType $item): self
+    public function addToMidocoUserattribType(\Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType) {
-            throw new InvalidArgumentException(sprintf('The MidocoUserattribType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType) {
+            throw new InvalidArgumentException(sprintf('The MidocoUserattribType property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUserattribType[] = $item;
         

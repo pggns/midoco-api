@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoUserIdForExternCredentialsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extAgencyNo value
      * @param string $extAgencyNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtAgencyNo(?string $extAgencyNo = null): self
     {
@@ -86,7 +87,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extExpCode value
      * @param string $extExpCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtExpCode(?string $extExpCode = null): self
     {
@@ -109,7 +110,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extAgencyNoAttrName value
      * @param string $extAgencyNoAttrName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtAgencyNoAttrName(?string $extAgencyNoAttrName = null): self
     {
@@ -132,7 +133,7 @@ class GetMidocoUserIdForExternCredentialsRequest extends AbstractStructBase
     /**
      * Set extExpCodeAttrName value
      * @param string $extExpCodeAttrName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoUserIdForExternCredentialsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoUserIdForExternCredentialsRequest
      */
     public function setExtExpCodeAttrName(?string $extExpCodeAttrName = null): self
     {

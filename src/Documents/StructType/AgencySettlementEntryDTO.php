@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AgencySettlementEntryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AgencySettlementEntryDTO extends AbstractStructBase
 {
+    /**
+     * The agencyCurrency
+     * @var string|null
+     */
+    protected ?string $agencyCurrency = null;
     /**
      * The agencyId
      * @var string|null
@@ -24,15 +30,30 @@ class AgencySettlementEntryDTO extends AbstractStructBase
      */
     protected ?bool $collectiveInvoice = null;
     /**
+     * The commissionAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $commissionAgencyCurrency = null;
+    /**
      * The commissionAmount
      * @var float|null
      */
     protected ?float $commissionAmount = null;
     /**
+     * The commissionInsuranceAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $commissionInsuranceAgencyCurrency = null;
+    /**
      * The commissionInsuranceAmount
      * @var float|null
      */
     protected ?float $commissionInsuranceAmount = null;
+    /**
+     * The commissionVatAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $commissionVatAgencyCurrency = null;
     /**
      * The commissionVatAmount
      * @var float|null
@@ -54,6 +75,11 @@ class AgencySettlementEntryDTO extends AbstractStructBase
      */
     protected ?float $invoiceAmount = null;
     /**
+     * The invoiceAmountAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $invoiceAmountAgencyCurrency = null;
+    /**
      * The invoiceId
      * @var int|null
      */
@@ -69,44 +95,90 @@ class AgencySettlementEntryDTO extends AbstractStructBase
      */
     protected ?float $totalAmount = null;
     /**
+     * The totalAmountAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $totalAmountAgencyCurrency = null;
+    /**
      * Constructor method for AgencySettlementEntryDTO
+     * @uses AgencySettlementEntryDTO::setAgencyCurrency()
      * @uses AgencySettlementEntryDTO::setAgencyId()
      * @uses AgencySettlementEntryDTO::setCollectiveInvoice()
+     * @uses AgencySettlementEntryDTO::setCommissionAgencyCurrency()
      * @uses AgencySettlementEntryDTO::setCommissionAmount()
+     * @uses AgencySettlementEntryDTO::setCommissionInsuranceAgencyCurrency()
      * @uses AgencySettlementEntryDTO::setCommissionInsuranceAmount()
+     * @uses AgencySettlementEntryDTO::setCommissionVatAgencyCurrency()
      * @uses AgencySettlementEntryDTO::setCommissionVatAmount()
      * @uses AgencySettlementEntryDTO::setContainsStorno()
      * @uses AgencySettlementEntryDTO::setDocumentId()
      * @uses AgencySettlementEntryDTO::setInvoiceAmount()
+     * @uses AgencySettlementEntryDTO::setInvoiceAmountAgencyCurrency()
      * @uses AgencySettlementEntryDTO::setInvoiceId()
      * @uses AgencySettlementEntryDTO::setSettlementId()
      * @uses AgencySettlementEntryDTO::setTotalAmount()
+     * @uses AgencySettlementEntryDTO::setTotalAmountAgencyCurrency()
+     * @param string $agencyCurrency
      * @param string $agencyId
      * @param bool $collectiveInvoice
+     * @param float $commissionAgencyCurrency
      * @param float $commissionAmount
+     * @param float $commissionInsuranceAgencyCurrency
      * @param float $commissionInsuranceAmount
+     * @param float $commissionVatAgencyCurrency
      * @param float $commissionVatAmount
      * @param bool $containsStorno
      * @param int $documentId
      * @param float $invoiceAmount
+     * @param float $invoiceAmountAgencyCurrency
      * @param int $invoiceId
      * @param int $settlementId
      * @param float $totalAmount
+     * @param float $totalAmountAgencyCurrency
      */
-    public function __construct(?string $agencyId = null, ?bool $collectiveInvoice = null, ?float $commissionAmount = null, ?float $commissionInsuranceAmount = null, ?float $commissionVatAmount = null, ?bool $containsStorno = null, ?int $documentId = null, ?float $invoiceAmount = null, ?int $invoiceId = null, ?int $settlementId = null, ?float $totalAmount = null)
+    public function __construct(?string $agencyCurrency = null, ?string $agencyId = null, ?bool $collectiveInvoice = null, ?float $commissionAgencyCurrency = null, ?float $commissionAmount = null, ?float $commissionInsuranceAgencyCurrency = null, ?float $commissionInsuranceAmount = null, ?float $commissionVatAgencyCurrency = null, ?float $commissionVatAmount = null, ?bool $containsStorno = null, ?int $documentId = null, ?float $invoiceAmount = null, ?float $invoiceAmountAgencyCurrency = null, ?int $invoiceId = null, ?int $settlementId = null, ?float $totalAmount = null, ?float $totalAmountAgencyCurrency = null)
     {
         $this
+            ->setAgencyCurrency($agencyCurrency)
             ->setAgencyId($agencyId)
             ->setCollectiveInvoice($collectiveInvoice)
+            ->setCommissionAgencyCurrency($commissionAgencyCurrency)
             ->setCommissionAmount($commissionAmount)
+            ->setCommissionInsuranceAgencyCurrency($commissionInsuranceAgencyCurrency)
             ->setCommissionInsuranceAmount($commissionInsuranceAmount)
+            ->setCommissionVatAgencyCurrency($commissionVatAgencyCurrency)
             ->setCommissionVatAmount($commissionVatAmount)
             ->setContainsStorno($containsStorno)
             ->setDocumentId($documentId)
             ->setInvoiceAmount($invoiceAmount)
+            ->setInvoiceAmountAgencyCurrency($invoiceAmountAgencyCurrency)
             ->setInvoiceId($invoiceId)
             ->setSettlementId($settlementId)
-            ->setTotalAmount($totalAmount);
+            ->setTotalAmount($totalAmount)
+            ->setTotalAmountAgencyCurrency($totalAmountAgencyCurrency);
+    }
+    /**
+     * Get agencyCurrency value
+     * @return string|null
+     */
+    public function getAgencyCurrency(): ?string
+    {
+        return $this->agencyCurrency;
+    }
+    /**
+     * Set agencyCurrency value
+     * @param string $agencyCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\AgencySettlementEntryDTO
+     */
+    public function setAgencyCurrency(?string $agencyCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($agencyCurrency) && !is_string($agencyCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($agencyCurrency, true), gettype($agencyCurrency)), __LINE__);
+        }
+        $this->agencyCurrency = $agencyCurrency;
+        
+        return $this;
     }
     /**
      * Get agencyId value
@@ -155,6 +227,29 @@ class AgencySettlementEntryDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get commissionAgencyCurrency value
+     * @return float|null
+     */
+    public function getCommissionAgencyCurrency(): ?float
+    {
+        return $this->commissionAgencyCurrency;
+    }
+    /**
+     * Set commissionAgencyCurrency value
+     * @param float $commissionAgencyCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\AgencySettlementEntryDTO
+     */
+    public function setCommissionAgencyCurrency(?float $commissionAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($commissionAgencyCurrency) && !(is_float($commissionAgencyCurrency) || is_numeric($commissionAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionAgencyCurrency, true), gettype($commissionAgencyCurrency)), __LINE__);
+        }
+        $this->commissionAgencyCurrency = $commissionAgencyCurrency;
+        
+        return $this;
+    }
+    /**
      * Get commissionAmount value
      * @return float|null
      */
@@ -178,6 +273,29 @@ class AgencySettlementEntryDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get commissionInsuranceAgencyCurrency value
+     * @return float|null
+     */
+    public function getCommissionInsuranceAgencyCurrency(): ?float
+    {
+        return $this->commissionInsuranceAgencyCurrency;
+    }
+    /**
+     * Set commissionInsuranceAgencyCurrency value
+     * @param float $commissionInsuranceAgencyCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\AgencySettlementEntryDTO
+     */
+    public function setCommissionInsuranceAgencyCurrency(?float $commissionInsuranceAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($commissionInsuranceAgencyCurrency) && !(is_float($commissionInsuranceAgencyCurrency) || is_numeric($commissionInsuranceAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionInsuranceAgencyCurrency, true), gettype($commissionInsuranceAgencyCurrency)), __LINE__);
+        }
+        $this->commissionInsuranceAgencyCurrency = $commissionInsuranceAgencyCurrency;
+        
+        return $this;
+    }
+    /**
      * Get commissionInsuranceAmount value
      * @return float|null
      */
@@ -197,6 +315,29 @@ class AgencySettlementEntryDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionInsuranceAmount, true), gettype($commissionInsuranceAmount)), __LINE__);
         }
         $this->commissionInsuranceAmount = $commissionInsuranceAmount;
+        
+        return $this;
+    }
+    /**
+     * Get commissionVatAgencyCurrency value
+     * @return float|null
+     */
+    public function getCommissionVatAgencyCurrency(): ?float
+    {
+        return $this->commissionVatAgencyCurrency;
+    }
+    /**
+     * Set commissionVatAgencyCurrency value
+     * @param float $commissionVatAgencyCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\AgencySettlementEntryDTO
+     */
+    public function setCommissionVatAgencyCurrency(?float $commissionVatAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($commissionVatAgencyCurrency) && !(is_float($commissionVatAgencyCurrency) || is_numeric($commissionVatAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionVatAgencyCurrency, true), gettype($commissionVatAgencyCurrency)), __LINE__);
+        }
+        $this->commissionVatAgencyCurrency = $commissionVatAgencyCurrency;
         
         return $this;
     }
@@ -293,6 +434,29 @@ class AgencySettlementEntryDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get invoiceAmountAgencyCurrency value
+     * @return float|null
+     */
+    public function getInvoiceAmountAgencyCurrency(): ?float
+    {
+        return $this->invoiceAmountAgencyCurrency;
+    }
+    /**
+     * Set invoiceAmountAgencyCurrency value
+     * @param float $invoiceAmountAgencyCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\AgencySettlementEntryDTO
+     */
+    public function setInvoiceAmountAgencyCurrency(?float $invoiceAmountAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($invoiceAmountAgencyCurrency) && !(is_float($invoiceAmountAgencyCurrency) || is_numeric($invoiceAmountAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($invoiceAmountAgencyCurrency, true), gettype($invoiceAmountAgencyCurrency)), __LINE__);
+        }
+        $this->invoiceAmountAgencyCurrency = $invoiceAmountAgencyCurrency;
+        
+        return $this;
+    }
+    /**
      * Get invoiceId value
      * @return int|null
      */
@@ -358,6 +522,29 @@ class AgencySettlementEntryDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalAmount, true), gettype($totalAmount)), __LINE__);
         }
         $this->totalAmount = $totalAmount;
+        
+        return $this;
+    }
+    /**
+     * Get totalAmountAgencyCurrency value
+     * @return float|null
+     */
+    public function getTotalAmountAgencyCurrency(): ?float
+    {
+        return $this->totalAmountAgencyCurrency;
+    }
+    /**
+     * Set totalAmountAgencyCurrency value
+     * @param float $totalAmountAgencyCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\AgencySettlementEntryDTO
+     */
+    public function setTotalAmountAgencyCurrency(?float $totalAmountAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($totalAmountAgencyCurrency) && !(is_float($totalAmountAgencyCurrency) || is_numeric($totalAmountAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalAmountAgencyCurrency, true), gettype($totalAmountAgencyCurrency)), __LINE__);
+        }
+        $this->totalAmountAgencyCurrency = $totalAmountAgencyCurrency;
         
         return $this;
     }

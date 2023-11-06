@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgencyCooperationHistoryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgencyCooperationHistoryResponse extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
         return $this->MidocoAgencyCooperationHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAgencyCooperationHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoAgencyCooperationHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAgencyCooperationHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAgencyCooperationHistoryForArrayConstraintsFromSetMidocoAgencyCooperationHistory(?array $values = []): string
+    public static function validateMidocoAgencyCooperationHistoryForArrayConstraintFromSetMidocoAgencyCooperationHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     public function setMidocoAgencyCooperationHistory(?array $midocoAgencyCooperationHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAgencyCooperationHistoryArrayErrorMessage = self::validateMidocoAgencyCooperationHistoryForArrayConstraintsFromSetMidocoAgencyCooperationHistory($midocoAgencyCooperationHistory))) {
+        if ('' !== ($midocoAgencyCooperationHistoryArrayErrorMessage = self::validateMidocoAgencyCooperationHistoryForArrayConstraintFromSetMidocoAgencyCooperationHistory($midocoAgencyCooperationHistory))) {
             throw new InvalidArgumentException($midocoAgencyCooperationHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoAgencyCooperationHistory = $midocoAgencyCooperationHistory;

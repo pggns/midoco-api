@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoGDSBooking StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoGDSBooking extends AbstractStructBase
 {
     /**
@@ -92,6 +93,15 @@ class MidocoGDSBooking extends AbstractStructBase
      */
     protected ?array $AdditionalService = null;
     /**
+     * The OriginalBookingMessageBase64
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * - ref: booking_message:OriginalBookingMessageBase64
+     * @var string|null
+     */
+    protected ?string $OriginalBookingMessageBase64 = null;
+    /**
      * Constructor method for MidocoGDSBooking
      * @uses MidocoGDSBooking::setGDSBookingIdentification()
      * @uses MidocoGDSBooking::setCustomer()
@@ -102,6 +112,7 @@ class MidocoGDSBooking extends AbstractStructBase
      * @uses MidocoGDSBooking::setGDSRemark()
      * @uses MidocoGDSBooking::setBillingInfo()
      * @uses MidocoGDSBooking::setAdditionalService()
+     * @uses MidocoGDSBooking::setOriginalBookingMessageBase64()
      * @param \Pggns\MidocoApi\Order\StructType\GDSBookingIdentification $gDSBookingIdentification
      * @param \Pggns\MidocoApi\Order\StructType\Customer_1[] $customer
      * @param \Pggns\MidocoApi\Order\StructType\Traveler[] $traveler
@@ -111,8 +122,9 @@ class MidocoGDSBooking extends AbstractStructBase
      * @param \Pggns\MidocoApi\Order\StructType\GDSRemark[] $gDSRemark
      * @param \Pggns\MidocoApi\Order\StructType\BillingInfo $billingInfo
      * @param \Pggns\MidocoApi\Order\StructType\AdditionalServiceType[] $additionalService
+     * @param string $originalBookingMessageBase64
      */
-    public function __construct(\Pggns\MidocoApi\Order\StructType\GDSBookingIdentification $gDSBookingIdentification, ?array $customer = null, ?array $traveler = null, ?array $flightBooking = null, ?array $carBooking = null, ?array $hotelBooking = null, ?array $gDSRemark = null, ?\Pggns\MidocoApi\Order\StructType\BillingInfo $billingInfo = null, ?array $additionalService = null)
+    public function __construct(\Pggns\MidocoApi\Order\StructType\GDSBookingIdentification $gDSBookingIdentification, ?array $customer = null, ?array $traveler = null, ?array $flightBooking = null, ?array $carBooking = null, ?array $hotelBooking = null, ?array $gDSRemark = null, ?\Pggns\MidocoApi\Order\StructType\BillingInfo $billingInfo = null, ?array $additionalService = null, ?string $originalBookingMessageBase64 = null)
     {
         $this
             ->setGDSBookingIdentification($gDSBookingIdentification)
@@ -123,7 +135,8 @@ class MidocoGDSBooking extends AbstractStructBase
             ->setHotelBooking($hotelBooking)
             ->setGDSRemark($gDSRemark)
             ->setBillingInfo($billingInfo)
-            ->setAdditionalService($additionalService);
+            ->setAdditionalService($additionalService)
+            ->setOriginalBookingMessageBase64($originalBookingMessageBase64);
     }
     /**
      * Get GDSBookingIdentification value
@@ -153,12 +166,13 @@ class MidocoGDSBooking extends AbstractStructBase
         return $this->Customer;
     }
     /**
-     * This method is responsible for validating the values passed to the setCustomer method
+     * This method is responsible for validating the value(s) passed to the setCustomer method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCustomer method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCustomerForArrayConstraintsFromSetCustomer(?array $values = []): string
+    public static function validateCustomerForArrayConstraintFromSetCustomer(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -187,7 +201,7 @@ class MidocoGDSBooking extends AbstractStructBase
     public function setCustomer(?array $customer = null): self
     {
         // validation for constraint: array
-        if ('' !== ($customerArrayErrorMessage = self::validateCustomerForArrayConstraintsFromSetCustomer($customer))) {
+        if ('' !== ($customerArrayErrorMessage = self::validateCustomerForArrayConstraintFromSetCustomer($customer))) {
             throw new InvalidArgumentException($customerArrayErrorMessage, __LINE__);
         }
         // validation for constraint: maxOccurs(2)
@@ -227,12 +241,13 @@ class MidocoGDSBooking extends AbstractStructBase
         return $this->Traveler;
     }
     /**
-     * This method is responsible for validating the values passed to the setTraveler method
+     * This method is responsible for validating the value(s) passed to the setTraveler method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTraveler method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTravelerForArrayConstraintsFromSetTraveler(?array $values = []): string
+    public static function validateTravelerForArrayConstraintFromSetTraveler(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -261,7 +276,7 @@ class MidocoGDSBooking extends AbstractStructBase
     public function setTraveler(?array $traveler = null): self
     {
         // validation for constraint: array
-        if ('' !== ($travelerArrayErrorMessage = self::validateTravelerForArrayConstraintsFromSetTraveler($traveler))) {
+        if ('' !== ($travelerArrayErrorMessage = self::validateTravelerForArrayConstraintFromSetTraveler($traveler))) {
             throw new InvalidArgumentException($travelerArrayErrorMessage, __LINE__);
         }
         $this->Traveler = $traveler;
@@ -293,12 +308,13 @@ class MidocoGDSBooking extends AbstractStructBase
         return $this->FlightBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setFlightBooking method
+     * This method is responsible for validating the value(s) passed to the setFlightBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFlightBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFlightBookingForArrayConstraintsFromSetFlightBooking(?array $values = []): string
+    public static function validateFlightBookingForArrayConstraintFromSetFlightBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -327,7 +343,7 @@ class MidocoGDSBooking extends AbstractStructBase
     public function setFlightBooking(?array $flightBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($flightBookingArrayErrorMessage = self::validateFlightBookingForArrayConstraintsFromSetFlightBooking($flightBooking))) {
+        if ('' !== ($flightBookingArrayErrorMessage = self::validateFlightBookingForArrayConstraintFromSetFlightBooking($flightBooking))) {
             throw new InvalidArgumentException($flightBookingArrayErrorMessage, __LINE__);
         }
         $this->FlightBooking = $flightBooking;
@@ -359,12 +375,13 @@ class MidocoGDSBooking extends AbstractStructBase
         return $this->CarBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setCarBooking method
+     * This method is responsible for validating the value(s) passed to the setCarBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCarBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCarBookingForArrayConstraintsFromSetCarBooking(?array $values = []): string
+    public static function validateCarBookingForArrayConstraintFromSetCarBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -393,7 +410,7 @@ class MidocoGDSBooking extends AbstractStructBase
     public function setCarBooking(?array $carBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($carBookingArrayErrorMessage = self::validateCarBookingForArrayConstraintsFromSetCarBooking($carBooking))) {
+        if ('' !== ($carBookingArrayErrorMessage = self::validateCarBookingForArrayConstraintFromSetCarBooking($carBooking))) {
             throw new InvalidArgumentException($carBookingArrayErrorMessage, __LINE__);
         }
         $this->CarBooking = $carBooking;
@@ -425,12 +442,13 @@ class MidocoGDSBooking extends AbstractStructBase
         return $this->HotelBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setHotelBooking method
+     * This method is responsible for validating the value(s) passed to the setHotelBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setHotelBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateHotelBookingForArrayConstraintsFromSetHotelBooking(?array $values = []): string
+    public static function validateHotelBookingForArrayConstraintFromSetHotelBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -459,7 +477,7 @@ class MidocoGDSBooking extends AbstractStructBase
     public function setHotelBooking(?array $hotelBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($hotelBookingArrayErrorMessage = self::validateHotelBookingForArrayConstraintsFromSetHotelBooking($hotelBooking))) {
+        if ('' !== ($hotelBookingArrayErrorMessage = self::validateHotelBookingForArrayConstraintFromSetHotelBooking($hotelBooking))) {
             throw new InvalidArgumentException($hotelBookingArrayErrorMessage, __LINE__);
         }
         $this->HotelBooking = $hotelBooking;
@@ -491,12 +509,13 @@ class MidocoGDSBooking extends AbstractStructBase
         return $this->GDSRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setGDSRemark method
+     * This method is responsible for validating the value(s) passed to the setGDSRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGDSRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGDSRemarkForArrayConstraintsFromSetGDSRemark(?array $values = []): string
+    public static function validateGDSRemarkForArrayConstraintFromSetGDSRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -525,7 +544,7 @@ class MidocoGDSBooking extends AbstractStructBase
     public function setGDSRemark(?array $gDSRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($gDSRemarkArrayErrorMessage = self::validateGDSRemarkForArrayConstraintsFromSetGDSRemark($gDSRemark))) {
+        if ('' !== ($gDSRemarkArrayErrorMessage = self::validateGDSRemarkForArrayConstraintFromSetGDSRemark($gDSRemark))) {
             throw new InvalidArgumentException($gDSRemarkArrayErrorMessage, __LINE__);
         }
         $this->GDSRemark = $gDSRemark;
@@ -576,12 +595,13 @@ class MidocoGDSBooking extends AbstractStructBase
         return $this->AdditionalService;
     }
     /**
-     * This method is responsible for validating the values passed to the setAdditionalService method
+     * This method is responsible for validating the value(s) passed to the setAdditionalService method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAdditionalService method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAdditionalServiceForArrayConstraintsFromSetAdditionalService(?array $values = []): string
+    public static function validateAdditionalServiceForArrayConstraintFromSetAdditionalService(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -610,7 +630,7 @@ class MidocoGDSBooking extends AbstractStructBase
     public function setAdditionalService(?array $additionalService = null): self
     {
         // validation for constraint: array
-        if ('' !== ($additionalServiceArrayErrorMessage = self::validateAdditionalServiceForArrayConstraintsFromSetAdditionalService($additionalService))) {
+        if ('' !== ($additionalServiceArrayErrorMessage = self::validateAdditionalServiceForArrayConstraintFromSetAdditionalService($additionalService))) {
             throw new InvalidArgumentException($additionalServiceArrayErrorMessage, __LINE__);
         }
         $this->AdditionalService = $additionalService;
@@ -630,6 +650,29 @@ class MidocoGDSBooking extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('The AdditionalService property can only contain items of type \Pggns\MidocoApi\Order\StructType\AdditionalServiceType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalService[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get OriginalBookingMessageBase64 value
+     * @return string|null
+     */
+    public function getOriginalBookingMessageBase64(): ?string
+    {
+        return $this->OriginalBookingMessageBase64;
+    }
+    /**
+     * Set OriginalBookingMessageBase64 value
+     * @param string $originalBookingMessageBase64
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoGDSBooking
+     */
+    public function setOriginalBookingMessageBase64(?string $originalBookingMessageBase64 = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($originalBookingMessageBase64) && !is_string($originalBookingMessageBase64)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($originalBookingMessageBase64, true), gettype($originalBookingMessageBase64)), __LINE__);
+        }
+        $this->OriginalBookingMessageBase64 = $originalBookingMessageBase64;
         
         return $this;
     }

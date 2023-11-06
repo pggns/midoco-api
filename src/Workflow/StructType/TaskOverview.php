@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TaskOverview StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TaskOverview extends AbstractStructBase
 {
     /**
@@ -59,6 +60,11 @@ class TaskOverview extends AbstractStructBase
      */
     protected ?int $userId = null;
     /**
+     * The manuallyCreatedTask
+     * @var bool|null
+     */
+    protected ?bool $manuallyCreatedTask = null;
+    /**
      * Constructor method for TaskOverview
      * @uses TaskOverview::setTaskType()
      * @uses TaskOverview::setSize()
@@ -69,6 +75,7 @@ class TaskOverview extends AbstractStructBase
      * @uses TaskOverview::setDelegationUser()
      * @uses TaskOverview::setCreationUser()
      * @uses TaskOverview::setUserId()
+     * @uses TaskOverview::setManuallyCreatedTask()
      * @param string $taskType
      * @param int $size
      * @param string $delegateQueue
@@ -78,8 +85,9 @@ class TaskOverview extends AbstractStructBase
      * @param int $delegationUser
      * @param int $creationUser
      * @param int $userId
+     * @param bool $manuallyCreatedTask
      */
-    public function __construct(?string $taskType = null, ?int $size = null, ?string $delegateQueue = null, ?string $unitName = null, ?int $priority = null, ?string $description = null, ?int $delegationUser = null, ?int $creationUser = null, ?int $userId = null)
+    public function __construct(?string $taskType = null, ?int $size = null, ?string $delegateQueue = null, ?string $unitName = null, ?int $priority = null, ?string $description = null, ?int $delegationUser = null, ?int $creationUser = null, ?int $userId = null, ?bool $manuallyCreatedTask = null)
     {
         $this
             ->setTaskType($taskType)
@@ -90,7 +98,8 @@ class TaskOverview extends AbstractStructBase
             ->setDescription($description)
             ->setDelegationUser($delegationUser)
             ->setCreationUser($creationUser)
-            ->setUserId($userId);
+            ->setUserId($userId)
+            ->setManuallyCreatedTask($manuallyCreatedTask);
     }
     /**
      * Get taskType value
@@ -296,6 +305,29 @@ class TaskOverview extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($userId, true), gettype($userId)), __LINE__);
         }
         $this->userId = $userId;
+        
+        return $this;
+    }
+    /**
+     * Get manuallyCreatedTask value
+     * @return bool|null
+     */
+    public function getManuallyCreatedTask(): ?bool
+    {
+        return $this->manuallyCreatedTask;
+    }
+    /**
+     * Set manuallyCreatedTask value
+     * @param bool $manuallyCreatedTask
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskOverview
+     */
+    public function setManuallyCreatedTask(?bool $manuallyCreatedTask = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($manuallyCreatedTask) && !is_bool($manuallyCreatedTask)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($manuallyCreatedTask, true), gettype($manuallyCreatedTask)), __LINE__);
+        }
+        $this->manuallyCreatedTask = $manuallyCreatedTask;
         
         return $this;
     }

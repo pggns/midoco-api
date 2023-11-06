@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgUnitClosureDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgUnitClosureDTO extends AbstractStructBase
 {
     /**

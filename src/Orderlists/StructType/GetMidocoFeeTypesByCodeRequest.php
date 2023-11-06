@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoFeeTypesByCodeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoFeeTypesByCodeRequest extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetMidocoFeeTypesByCodeRequest extends AbstractStructBase
         return $this->code;
     }
     /**
-     * This method is responsible for validating the values passed to the setCode method
+     * This method is responsible for validating the value(s) passed to the setCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCodeForArrayConstraintsFromSetCode(?array $values = []): string
+    public static function validateCodeForArrayConstraintFromSetCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetMidocoFeeTypesByCodeRequest extends AbstractStructBase
     public function setCode(?array $code = null): self
     {
         // validation for constraint: array
-        if ('' !== ($codeArrayErrorMessage = self::validateCodeForArrayConstraintsFromSetCode($code))) {
+        if ('' !== ($codeArrayErrorMessage = self::validateCodeForArrayConstraintFromSetCode($code))) {
             throw new InvalidArgumentException($codeArrayErrorMessage, __LINE__);
         }
         $this->code = $code;

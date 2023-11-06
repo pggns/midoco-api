@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteTextTemplateTypeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteTextTemplateTypeRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class DeleteTextTemplateTypeRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param string $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteTextTemplateTypeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteTextTemplateTypeRequest
      */
     public function setTemplateId(?string $templateId = null): self
     {

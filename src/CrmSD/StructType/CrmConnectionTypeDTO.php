@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmConnectionTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmConnectionTypeDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class CrmConnectionTypeDTO extends AbstractStructBase
     /**
      * Set connectionTypeCode value
      * @param string $connectionTypeCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmConnectionTypeDTO
      */
     public function setConnectionTypeCode(?string $connectionTypeCode = null): self
     {
@@ -86,7 +87,7 @@ class CrmConnectionTypeDTO extends AbstractStructBase
     /**
      * Set connectionTypeId value
      * @param int $connectionTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmConnectionTypeDTO
      */
     public function setConnectionTypeId(?int $connectionTypeId = null): self
     {
@@ -109,7 +110,7 @@ class CrmConnectionTypeDTO extends AbstractStructBase
     /**
      * Set gender value
      * @param int $gender
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmConnectionTypeDTO
      */
     public function setGender(?int $gender = null): self
     {
@@ -132,7 +133,7 @@ class CrmConnectionTypeDTO extends AbstractStructBase
     /**
      * Set reverseConTypeId value
      * @param int $reverseConTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmConnectionTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmConnectionTypeDTO
      */
     public function setReverseConTypeId(?int $reverseConTypeId = null): self
     {

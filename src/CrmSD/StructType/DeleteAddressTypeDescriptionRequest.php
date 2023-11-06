@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteAddressTypeDescriptionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteAddressTypeDescriptionRequest extends AbstractStructBase
 {
     /**
@@ -51,7 +52,7 @@ class DeleteAddressTypeDescriptionRequest extends AbstractStructBase
     /**
      * Set addressTypeId value
      * @param int $addressTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteAddressTypeDescriptionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteAddressTypeDescriptionRequest
      */
     public function setAddressTypeId(int $addressTypeId): self
     {
@@ -74,7 +75,7 @@ class DeleteAddressTypeDescriptionRequest extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteAddressTypeDescriptionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteAddressTypeDescriptionRequest
      */
     public function setLocale(string $locale): self
     {

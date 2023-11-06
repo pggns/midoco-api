@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDocumentNatureType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDocumentNatureType extends DocumentNatureDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoDocumentNatureType extends DocumentNatureDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType
      */
     public function setInherited(?bool $inherited = null): self
     {

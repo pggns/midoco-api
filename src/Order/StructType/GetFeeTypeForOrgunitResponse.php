@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetFeeTypeForOrgunitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFeeTypeForOrgunitResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetFeeTypeForOrgunitResponse extends AbstractStructBase
         return $this->MidocoFeeTypeOrgUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFeeTypeOrgUnit method
+     * This method is responsible for validating the value(s) passed to the setMidocoFeeTypeOrgUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFeeTypeOrgUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFeeTypeOrgUnitForArrayConstraintsFromSetMidocoFeeTypeOrgUnit(?array $values = []): string
+    public static function validateMidocoFeeTypeOrgUnitForArrayConstraintFromSetMidocoFeeTypeOrgUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetFeeTypeForOrgunitResponse extends AbstractStructBase
     public function setMidocoFeeTypeOrgUnit(?array $midocoFeeTypeOrgUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFeeTypeOrgUnitArrayErrorMessage = self::validateMidocoFeeTypeOrgUnitForArrayConstraintsFromSetMidocoFeeTypeOrgUnit($midocoFeeTypeOrgUnit))) {
+        if ('' !== ($midocoFeeTypeOrgUnitArrayErrorMessage = self::validateMidocoFeeTypeOrgUnitForArrayConstraintFromSetMidocoFeeTypeOrgUnit($midocoFeeTypeOrgUnit))) {
             throw new InvalidArgumentException($midocoFeeTypeOrgUnitArrayErrorMessage, __LINE__);
         }
         $this->MidocoFeeTypeOrgUnit = $midocoFeeTypeOrgUnit;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAddressTypeDescriptionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAddressTypeDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAddressTypeDescriptionsResponse extends AbstractStructBase
         return $this->MidocoAddressTypeDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAddressTypeDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoAddressTypeDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAddressTypeDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAddressTypeDescriptionForArrayConstraintsFromSetMidocoAddressTypeDescription(?array $values = []): string
+    public static function validateMidocoAddressTypeDescriptionForArrayConstraintFromSetMidocoAddressTypeDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAddressTypeDescriptionsResponse extends AbstractStructBase
     public function setMidocoAddressTypeDescription(?array $midocoAddressTypeDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAddressTypeDescriptionArrayErrorMessage = self::validateMidocoAddressTypeDescriptionForArrayConstraintsFromSetMidocoAddressTypeDescription($midocoAddressTypeDescription))) {
+        if ('' !== ($midocoAddressTypeDescriptionArrayErrorMessage = self::validateMidocoAddressTypeDescriptionForArrayConstraintFromSetMidocoAddressTypeDescription($midocoAddressTypeDescription))) {
             throw new InvalidArgumentException($midocoAddressTypeDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoAddressTypeDescription = $midocoAddressTypeDescription;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ContactEntryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ContactEntryDTO extends AbstractStructBase
 {
     /**
@@ -207,7 +208,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set comment value
      * @param string $comment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setComment(?string $comment = null): self
     {
@@ -230,7 +231,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set consentTimestamp value
      * @param string $consentTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setConsentTimestamp(?string $consentTimestamp = null): self
     {
@@ -253,7 +254,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set contactData value
      * @param string $contactData
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setContactData(?string $contactData = null): self
     {
@@ -276,7 +277,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -299,7 +300,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set contactUrl value
      * @param string $contactUrl
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setContactUrl(?string $contactUrl = null): self
     {
@@ -322,7 +323,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -345,7 +346,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -368,7 +369,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -391,7 +392,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set emailChecked value
      * @param int $emailChecked
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setEmailChecked(?int $emailChecked = null): self
     {
@@ -414,7 +415,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set externalConsentId value
      * @param string $externalConsentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setExternalConsentId(?string $externalConsentId = null): self
     {
@@ -437,7 +438,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -460,7 +461,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set mailingStatusModifyDate value
      * @param string $mailingStatusModifyDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setMailingStatusModifyDate(?string $mailingStatusModifyDate = null): self
     {
@@ -483,7 +484,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set mailingStatusModifyUser value
      * @param int $mailingStatusModifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setMailingStatusModifyUser(?int $mailingStatusModifyUser = null): self
     {
@@ -506,7 +507,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set mediaId value
      * @param string $mediaId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setMediaId(?string $mediaId = null): self
     {
@@ -529,7 +530,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setModifyDate(?string $modifyDate = null): self
     {
@@ -552,7 +553,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -575,7 +576,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set notAvailable value
      * @param bool $notAvailable
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setNotAvailable(?bool $notAvailable = null): self
     {
@@ -598,7 +599,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set notProvided value
      * @param bool $notProvided
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setNotProvided(?bool $notProvided = null): self
     {
@@ -621,7 +622,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set phoneNrBackward value
      * @param string $phoneNrBackward
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setPhoneNrBackward(?string $phoneNrBackward = null): self
     {
@@ -644,7 +645,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set phoneNrNormalized value
      * @param string $phoneNrNormalized
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setPhoneNrNormalized(?string $phoneNrNormalized = null): self
     {
@@ -667,7 +668,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set useAsDefault value
      * @param bool $useAsDefault
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setUseAsDefault(?bool $useAsDefault = null): self
     {
@@ -690,7 +691,7 @@ class ContactEntryDTO extends AbstractStructBase
     /**
      * Set useForMailing value
      * @param bool $useForMailing
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactEntryDTO
      */
     public function setUseForMailing(?bool $useForMailing = null): self
     {

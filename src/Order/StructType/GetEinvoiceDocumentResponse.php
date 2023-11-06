@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetEinvoiceDocumentResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetEinvoiceDocumentResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetEinvoiceDocumentResponse extends AbstractStructBase
         return $this->MidocoEinvoiceDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoEinvoiceDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoEinvoiceDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEinvoiceDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoEinvoiceDocumentForArrayConstraintsFromSetMidocoEinvoiceDocument(?array $values = []): string
+    public static function validateMidocoEinvoiceDocumentForArrayConstraintFromSetMidocoEinvoiceDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetEinvoiceDocumentResponse extends AbstractStructBase
     public function setMidocoEinvoiceDocument(?array $midocoEinvoiceDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoEinvoiceDocumentArrayErrorMessage = self::validateMidocoEinvoiceDocumentForArrayConstraintsFromSetMidocoEinvoiceDocument($midocoEinvoiceDocument))) {
+        if ('' !== ($midocoEinvoiceDocumentArrayErrorMessage = self::validateMidocoEinvoiceDocumentForArrayConstraintFromSetMidocoEinvoiceDocument($midocoEinvoiceDocument))) {
             throw new InvalidArgumentException($midocoEinvoiceDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoEinvoiceDocument = $midocoEinvoiceDocument;

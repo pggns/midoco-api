@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoQueryPage StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoQueryPage extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class MidocoQueryPage extends AbstractStructBase
         return $this->MidocoQueryPageLine;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoQueryPageLine method
+     * This method is responsible for validating the value(s) passed to the setMidocoQueryPageLine method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoQueryPageLine method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoQueryPageLineForArrayConstraintsFromSetMidocoQueryPageLine(?array $values = []): string
+    public static function validateMidocoQueryPageLineForArrayConstraintFromSetMidocoQueryPageLine(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class MidocoQueryPage extends AbstractStructBase
     public function setMidocoQueryPageLine(?array $midocoQueryPageLine = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoQueryPageLineArrayErrorMessage = self::validateMidocoQueryPageLineForArrayConstraintsFromSetMidocoQueryPageLine($midocoQueryPageLine))) {
+        if ('' !== ($midocoQueryPageLineArrayErrorMessage = self::validateMidocoQueryPageLineForArrayConstraintFromSetMidocoQueryPageLine($midocoQueryPageLine))) {
             throw new InvalidArgumentException($midocoQueryPageLineArrayErrorMessage, __LINE__);
         }
         $this->MidocoQueryPageLine = $midocoQueryPageLine;

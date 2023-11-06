@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchTravelNoMarginsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchTravelNoMarginsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchTravelNoMarginsResponse extends AbstractStructBase
         return $this->MidocoTravelNoMargin;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravelNoMargin method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelNoMargin method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelNoMargin method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravelNoMarginForArrayConstraintsFromSetMidocoTravelNoMargin(?array $values = []): string
+    public static function validateMidocoTravelNoMarginForArrayConstraintFromSetMidocoTravelNoMargin(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchTravelNoMarginsResponse extends AbstractStructBase
     public function setMidocoTravelNoMargin(?array $midocoTravelNoMargin = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravelNoMarginArrayErrorMessage = self::validateMidocoTravelNoMarginForArrayConstraintsFromSetMidocoTravelNoMargin($midocoTravelNoMargin))) {
+        if ('' !== ($midocoTravelNoMarginArrayErrorMessage = self::validateMidocoTravelNoMarginForArrayConstraintFromSetMidocoTravelNoMargin($midocoTravelNoMargin))) {
             throw new InvalidArgumentException($midocoTravelNoMarginArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravelNoMargin = $midocoTravelNoMargin;

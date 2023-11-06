@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteDocumentRepository --- deletes the document repository record with the given id, but only if it is not a billing document record
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteDocumentRepositoryResponse extends AbstractStructBase
 {
 }

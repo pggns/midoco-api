@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VerkDataPrintDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VerkDataPrintDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class VerkDataPrintDTO extends AbstractStructBase
     /**
      * Set dbiKey value
      * @param string $dbiKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VerkDataPrintDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VerkDataPrintDTO
      */
     public function setDbiKey(?string $dbiKey = null): self
     {
@@ -78,7 +79,7 @@ class VerkDataPrintDTO extends AbstractStructBase
     /**
      * Set hideInPrint value
      * @param bool $hideInPrint
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VerkDataPrintDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VerkDataPrintDTO
      */
     public function setHideInPrint(?bool $hideInPrint = null): self
     {
@@ -101,7 +102,7 @@ class VerkDataPrintDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VerkDataPrintDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VerkDataPrintDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

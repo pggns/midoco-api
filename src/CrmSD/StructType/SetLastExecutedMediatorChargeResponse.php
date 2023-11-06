@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: setLastExecutedMediatorCharge --- set the last exec date and last exec user for a mediator charge, after the settlement
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SetLastExecutedMediatorChargeResponse extends AbstractStructBase
 {
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAssignedPrintTypeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAssignedPrintTypeRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetAssignedPrintTypeRequest extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAssignedPrintTypeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAssignedPrintTypeRequest
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {
@@ -70,7 +71,7 @@ class GetAssignedPrintTypeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAssignedPrintTypeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAssignedPrintTypeRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

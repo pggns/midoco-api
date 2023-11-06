@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UserQueryPageDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UserQueryPageDTO extends AbstractStructBase
 {
     /**

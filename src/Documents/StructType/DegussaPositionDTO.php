@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DegussaPositionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DegussaPositionDTO extends AbstractStructBase
 {
     /**

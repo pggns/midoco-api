@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoContactEntryMailingProhibited StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoContactEntryMailingProhibited extends MidocoContactEntryType
 {
     /**
@@ -39,7 +40,7 @@ class MidocoContactEntryMailingProhibited extends MidocoContactEntryType
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryMailingProhibited
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryMailingProhibited
      */
     public function setCategoryId(?int $categoryId = null): self
     {

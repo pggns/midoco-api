@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: prepared Recipient for BillingDocument | prepared payment for BillingDocument | prepared BillingPositions to create a BillingDocument
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MakeBillingDocumentForOrderRequest extends AbstractStructBase
 {
     /**
@@ -74,6 +75,11 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $deleteExistingDocument = null;
+    /**
+     * The addToBulkMatchingCCSeetings
+     * @var bool|null
+     */
+    protected ?bool $addToBulkMatchingCCSeetings = null;
     /**
      * The orderId
      * @var int|null
@@ -165,6 +171,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * @uses MakeBillingDocumentForOrderRequest::setDocumentId()
      * @uses MakeBillingDocumentForOrderRequest::setCreateNewDocument()
      * @uses MakeBillingDocumentForOrderRequest::setDeleteExistingDocument()
+     * @uses MakeBillingDocumentForOrderRequest::setAddToBulkMatchingCCSeetings()
      * @uses MakeBillingDocumentForOrderRequest::setOrderId()
      * @uses MakeBillingDocumentForOrderRequest::setCashBookId()
      * @uses MakeBillingDocumentForOrderRequest::setOrderInternalVersion()
@@ -188,6 +195,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * @param int $documentId
      * @param bool $createNewDocument
      * @param bool $deleteExistingDocument
+     * @param bool $addToBulkMatchingCCSeetings
      * @param int $orderId
      * @param int $cashBookId
      * @param int $orderInternalVersion
@@ -203,7 +211,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
      * @param bool $createITInvoice
      * @param bool $createNormalInvoice
      */
-    public function __construct(?array $midocoSellPassenger = null, ?array $midocoDetailedBillingPositionInfo = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null, ?\Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo = null, ?string $confirmationGroup = null, ?int $documentInternalVersion = null, ?int $documentId = null, ?bool $createNewDocument = null, ?bool $deleteExistingDocument = null, ?int $orderId = null, ?int $cashBookId = null, ?int $orderInternalVersion = null, ?string $calculatedPrintDate = null, ?bool $partialPayment = null, ?float $partialAmount = null, ?string $preferredType = null, ?string $paymentType = null, ?string $documentType = null, ?bool $collectiveInvoice = null, ?bool $printGroupName = false, ?bool $printAllTravellersNames = false, ?bool $createITInvoice = false, ?bool $createNormalInvoice = false)
+    public function __construct(?array $midocoSellPassenger = null, ?array $midocoDetailedBillingPositionInfo = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOnlinePaymentHelper $midocoOnlinePaymentHelper = null, ?\Pggns\MidocoApi\Order\StructType\MidocoCustomerInfo $midocoCustomerInfo = null, ?string $confirmationGroup = null, ?int $documentInternalVersion = null, ?int $documentId = null, ?bool $createNewDocument = null, ?bool $deleteExistingDocument = null, ?bool $addToBulkMatchingCCSeetings = null, ?int $orderId = null, ?int $cashBookId = null, ?int $orderInternalVersion = null, ?string $calculatedPrintDate = null, ?bool $partialPayment = null, ?float $partialAmount = null, ?string $preferredType = null, ?string $paymentType = null, ?string $documentType = null, ?bool $collectiveInvoice = null, ?bool $printGroupName = false, ?bool $printAllTravellersNames = false, ?bool $createITInvoice = false, ?bool $createNormalInvoice = false)
     {
         $this
             ->setMidocoSellPassenger($midocoSellPassenger)
@@ -215,6 +223,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
             ->setDocumentId($documentId)
             ->setCreateNewDocument($createNewDocument)
             ->setDeleteExistingDocument($deleteExistingDocument)
+            ->setAddToBulkMatchingCCSeetings($addToBulkMatchingCCSeetings)
             ->setOrderId($orderId)
             ->setCashBookId($cashBookId)
             ->setOrderInternalVersion($orderInternalVersion)
@@ -239,12 +248,13 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
         return $this->MidocoSellPassenger;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellPassenger method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellPassenger method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellPassenger method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellPassengerForArrayConstraintsFromSetMidocoSellPassenger(?array $values = []): string
+    public static function validateMidocoSellPassengerForArrayConstraintFromSetMidocoSellPassenger(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -273,7 +283,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellPassengerArrayErrorMessage = self::validateMidocoSellPassengerForArrayConstraintsFromSetMidocoSellPassenger($midocoSellPassenger))) {
+        if ('' !== ($midocoSellPassengerArrayErrorMessage = self::validateMidocoSellPassengerForArrayConstraintFromSetMidocoSellPassenger($midocoSellPassenger))) {
             throw new InvalidArgumentException($midocoSellPassengerArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellPassenger = $midocoSellPassenger;
@@ -305,12 +315,13 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
         return $this->MidocoDetailedBillingPositionInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDetailedBillingPositionInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoDetailedBillingPositionInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDetailedBillingPositionInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDetailedBillingPositionInfoForArrayConstraintsFromSetMidocoDetailedBillingPositionInfo(?array $values = []): string
+    public static function validateMidocoDetailedBillingPositionInfoForArrayConstraintFromSetMidocoDetailedBillingPositionInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -339,7 +350,7 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
     public function setMidocoDetailedBillingPositionInfo(?array $midocoDetailedBillingPositionInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDetailedBillingPositionInfoArrayErrorMessage = self::validateMidocoDetailedBillingPositionInfoForArrayConstraintsFromSetMidocoDetailedBillingPositionInfo($midocoDetailedBillingPositionInfo))) {
+        if ('' !== ($midocoDetailedBillingPositionInfoArrayErrorMessage = self::validateMidocoDetailedBillingPositionInfoForArrayConstraintFromSetMidocoDetailedBillingPositionInfo($midocoDetailedBillingPositionInfo))) {
             throw new InvalidArgumentException($midocoDetailedBillingPositionInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoDetailedBillingPositionInfo = $midocoDetailedBillingPositionInfo;
@@ -512,6 +523,29 @@ class MakeBillingDocumentForOrderRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($deleteExistingDocument, true), gettype($deleteExistingDocument)), __LINE__);
         }
         $this->deleteExistingDocument = $deleteExistingDocument;
+        
+        return $this;
+    }
+    /**
+     * Get addToBulkMatchingCCSeetings value
+     * @return bool|null
+     */
+    public function getAddToBulkMatchingCCSeetings(): ?bool
+    {
+        return $this->addToBulkMatchingCCSeetings;
+    }
+    /**
+     * Set addToBulkMatchingCCSeetings value
+     * @param bool $addToBulkMatchingCCSeetings
+     * @return \Pggns\MidocoApi\Order\StructType\MakeBillingDocumentForOrderRequest
+     */
+    public function setAddToBulkMatchingCCSeetings(?bool $addToBulkMatchingCCSeetings = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($addToBulkMatchingCCSeetings) && !is_bool($addToBulkMatchingCCSeetings)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($addToBulkMatchingCCSeetings, true), gettype($addToBulkMatchingCCSeetings)), __LINE__);
+        }
+        $this->addToBulkMatchingCCSeetings = $addToBulkMatchingCCSeetings;
         
         return $this;
     }

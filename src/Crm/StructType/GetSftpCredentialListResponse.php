@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSftpCredentialListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSftpCredentialListResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSftpCredentialListResponse extends AbstractStructBase
         return $this->MidocoSftpCredential;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSftpCredential method
+     * This method is responsible for validating the value(s) passed to the setMidocoSftpCredential method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSftpCredential method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSftpCredentialForArrayConstraintsFromSetMidocoSftpCredential(?array $values = []): string
+    public static function validateMidocoSftpCredentialForArrayConstraintFromSetMidocoSftpCredential(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSftpCredentialListResponse extends AbstractStructBase
     public function setMidocoSftpCredential(?array $midocoSftpCredential = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSftpCredentialArrayErrorMessage = self::validateMidocoSftpCredentialForArrayConstraintsFromSetMidocoSftpCredential($midocoSftpCredential))) {
+        if ('' !== ($midocoSftpCredentialArrayErrorMessage = self::validateMidocoSftpCredentialForArrayConstraintFromSetMidocoSftpCredential($midocoSftpCredential))) {
             throw new InvalidArgumentException($midocoSftpCredentialArrayErrorMessage, __LINE__);
         }
         $this->MidocoSftpCredential = $midocoSftpCredential;

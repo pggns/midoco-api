@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAvailableSupplierGroupValuesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableSupplierGroupValuesResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetAvailableSupplierGroupValuesResponse extends AbstractStructBase
         return $this->groupValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroupValue method
+     * This method is responsible for validating the value(s) passed to the setGroupValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroupValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroupValueForArrayConstraintsFromSetGroupValue(?array $values = []): string
+    public static function validateGroupValueForArrayConstraintFromSetGroupValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetAvailableSupplierGroupValuesResponse extends AbstractStructBase
     public function setGroupValue(?array $groupValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($groupValueArrayErrorMessage = self::validateGroupValueForArrayConstraintsFromSetGroupValue($groupValue))) {
+        if ('' !== ($groupValueArrayErrorMessage = self::validateGroupValueForArrayConstraintFromSetGroupValue($groupValue))) {
             throw new InvalidArgumentException($groupValueArrayErrorMessage, __LINE__);
         }
         $this->groupValue = $groupValue;

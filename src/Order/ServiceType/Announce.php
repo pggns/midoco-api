@@ -19,7 +19,7 @@ class Announce extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Order\ServiceType\Announce
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -297,33 +297,6 @@ class Announce extends AbstractSoapClientBase
         }
     }
     /**
-     * Method to call the operation originally named announceStadisMessage
-     * Meta information extracted from the WSDL
-     * - SOAPHeaderNames: MidocoCredentials
-     * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
-     * - SOAPHeaders: required
-     * @uses AbstractSoapClientBase::getSoapClient()
-     * @uses AbstractSoapClientBase::setResult()
-     * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageRequest $paramAnnounceStadisMessageRequest
-     * @return \Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageResponse|bool
-     */
-    public function announceStadisMessage(\Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageRequest $paramAnnounceStadisMessageRequest)
-    {
-        try {
-            $this->setResult($resultAnnounceStadisMessage = $this->getSoapClient()->__soapCall('announceStadisMessage', [
-                $paramAnnounceStadisMessageRequest,
-            ], [], [], $this->outputHeaders));
-        
-            return $resultAnnounceStadisMessage;
-        } catch (SoapFault $soapFault) {
-            $this->saveLastError(__METHOD__, $soapFault);
-        
-            return false;
-        }
-    }
-    /**
      * Method to call the operation originally named announceFlightTimeChanges
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
@@ -461,7 +434,7 @@ class Announce extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnounceAgencySaleMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnounceAmwayFilekeyResponse|\Pggns\MidocoApi\Order\StructType\AnnounceAmwayTicketResponse|\Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageNormResponse|\Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnounceExternalPaymentResponse|\Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesResponse|\Pggns\MidocoApi\Order\StructType\AnnounceGdsMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnouncePaymentResponse|\Pggns\MidocoApi\Order\StructType\AnnounceStadisMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnounceSunnyCarsMessageResponse|\Pggns\MidocoApi\Order\StructType\ImportHandlerResponseType
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceA3MMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnounceAgencySaleMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnounceAmwayFilekeyResponse|\Pggns\MidocoApi\Order\StructType\AnnounceAmwayTicketResponse|\Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageNormResponse|\Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnounceExternalPaymentResponse|\Pggns\MidocoApi\Order\StructType\AnnounceFlightTimeChangesResponse|\Pggns\MidocoApi\Order\StructType\AnnounceGdsMessageResponse|\Pggns\MidocoApi\Order\StructType\AnnouncePaymentResponse|\Pggns\MidocoApi\Order\StructType\AnnounceSunnyCarsMessageResponse|\Pggns\MidocoApi\Order\StructType\ImportHandlerResponseType
      */
     public function getResult()
     {

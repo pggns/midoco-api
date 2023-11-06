@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for InvoiceDataListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class InvoiceDataListRequest extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgedDebtorCreditorReportRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
 {
     /**
@@ -57,12 +58,13 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
         return $this->KeyValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setKeyValue method
+     * This method is responsible for validating the value(s) passed to the setKeyValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setKeyValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateKeyValueForArrayConstraintsFromSetKeyValue(?array $values = []): string
+    public static function validateKeyValueForArrayConstraintFromSetKeyValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class GetAgedDebtorCreditorReportRequest extends AbstractStructBase
     public function setKeyValue(?array $keyValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($keyValueArrayErrorMessage = self::validateKeyValueForArrayConstraintsFromSetKeyValue($keyValue))) {
+        if ('' !== ($keyValueArrayErrorMessage = self::validateKeyValueForArrayConstraintFromSetKeyValue($keyValue))) {
             throw new InvalidArgumentException($keyValueArrayErrorMessage, __LINE__);
         }
         $this->KeyValue = $keyValue;

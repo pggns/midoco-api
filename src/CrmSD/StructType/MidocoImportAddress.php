@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoImportAddress StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoImportAddress extends AbstractStructBase
 {
     /**
@@ -127,7 +128,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -150,7 +151,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setStreet(?string $street = null): self
     {
@@ -173,7 +174,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -196,7 +197,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set endorsement value
      * @param string $endorsement
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setEndorsement(?string $endorsement = null): self
     {
@@ -219,7 +220,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set postOfficeBox value
      * @param string $postOfficeBox
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -242,7 +243,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -265,7 +266,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setCity(?string $city = null): self
     {
@@ -288,7 +289,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -311,7 +312,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -334,7 +335,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set validated value
      * @param bool $validated
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setValidated(?bool $validated = null): self
     {
@@ -357,7 +358,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set addressTypeId value
      * @param string $addressTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setAddressTypeId(?string $addressTypeId = null): self
     {
@@ -380,7 +381,7 @@ class MidocoImportAddress extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAddress
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {

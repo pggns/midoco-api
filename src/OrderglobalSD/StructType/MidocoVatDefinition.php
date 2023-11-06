@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoVatDefinition StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoVatDefinition extends VatDefinitionDTO
 {
     /**

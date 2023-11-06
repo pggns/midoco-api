@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: information about the type of lock set on the order
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Lock extends AbstractStructBase
 {
     /**
@@ -36,23 +37,31 @@ class Lock extends AbstractStructBase
      */
     protected ?bool $payment = null;
     /**
+     * The preventAutoInvoice
+     * @var bool|null
+     */
+    protected ?bool $preventAutoInvoice = null;
+    /**
      * Constructor method for lock
      * @uses Lock::setDunning()
      * @uses Lock::setDocuments()
      * @uses Lock::setFibu()
      * @uses Lock::setPayment()
+     * @uses Lock::setPreventAutoInvoice()
      * @param bool $dunning
      * @param bool $documents
      * @param bool $fibu
      * @param bool $payment
+     * @param bool $preventAutoInvoice
      */
-    public function __construct(?bool $dunning = null, ?bool $documents = null, ?bool $fibu = null, ?bool $payment = null)
+    public function __construct(?bool $dunning = null, ?bool $documents = null, ?bool $fibu = null, ?bool $payment = null, ?bool $preventAutoInvoice = null)
     {
         $this
             ->setDunning($dunning)
             ->setDocuments($documents)
             ->setFibu($fibu)
-            ->setPayment($payment);
+            ->setPayment($payment)
+            ->setPreventAutoInvoice($preventAutoInvoice);
     }
     /**
      * Get dunning value
@@ -143,6 +152,29 @@ class Lock extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($payment, true), gettype($payment)), __LINE__);
         }
         $this->payment = $payment;
+        
+        return $this;
+    }
+    /**
+     * Get preventAutoInvoice value
+     * @return bool|null
+     */
+    public function getPreventAutoInvoice(): ?bool
+    {
+        return $this->preventAutoInvoice;
+    }
+    /**
+     * Set preventAutoInvoice value
+     * @param bool $preventAutoInvoice
+     * @return \Pggns\MidocoApi\Documents\StructType\Lock
+     */
+    public function setPreventAutoInvoice(?bool $preventAutoInvoice = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($preventAutoInvoice) && !is_bool($preventAutoInvoice)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($preventAutoInvoice, true), gettype($preventAutoInvoice)), __LINE__);
+        }
+        $this->preventAutoInvoice = $preventAutoInvoice;
         
         return $this;
     }

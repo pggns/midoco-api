@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MfBeanLocalDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MfBeanLocalDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class MfBeanLocalDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfBeanLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfBeanLocalDTO
      */
     public function setBean(?string $bean = null): self
     {
@@ -78,7 +79,7 @@ class MfBeanLocalDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfBeanLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfBeanLocalDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +102,7 @@ class MfBeanLocalDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfBeanLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfBeanLocalDTO
      */
     public function setLocale(?string $locale = null): self
     {

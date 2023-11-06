@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ConsentDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ConsentDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class ConsentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -110,7 +111,7 @@ class ConsentDTO extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentDTO
      */
     public function setId(?string $id = null): self
     {
@@ -133,7 +134,7 @@ class ConsentDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -156,7 +157,7 @@ class ConsentDTO extends AbstractStructBase
     /**
      * Set isGroup value
      * @param bool $isGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentDTO
      */
     public function setIsGroup(?bool $isGroup = null): self
     {
@@ -179,7 +180,7 @@ class ConsentDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentDTO
      */
     public function setType(?string $type = null): self
     {
@@ -202,7 +203,7 @@ class ConsentDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -225,7 +226,7 @@ class ConsentDTO extends AbstractStructBase
     /**
      * Set validTo value
      * @param string $validTo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConsentDTO
      */
     public function setValidTo(?string $validTo = null): self
     {

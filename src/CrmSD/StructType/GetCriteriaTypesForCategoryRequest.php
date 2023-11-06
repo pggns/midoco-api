@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCriteriaTypesForCategoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCriteriaTypesForCategoryRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class GetCriteriaTypesForCategoryRequest extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCriteriaTypesForCategoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCriteriaTypesForCategoryRequest
      */
     public function setCategoryId(int $categoryId): self
     {

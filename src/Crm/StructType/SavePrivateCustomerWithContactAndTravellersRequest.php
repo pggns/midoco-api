@@ -12,6 +12,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructBase
 {
     /**
@@ -83,12 +84,13 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
         return $this->MidocoContactEntryWithSource;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactEntryWithSource method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactEntryWithSource method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactEntryWithSource method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactEntryWithSourceForArrayConstraintsFromSetMidocoContactEntryWithSource(?array $values = []): string
+    public static function validateMidocoContactEntryWithSourceForArrayConstraintFromSetMidocoContactEntryWithSource(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -117,7 +119,7 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     public function setMidocoContactEntryWithSource(?array $midocoContactEntryWithSource = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactEntryWithSourceArrayErrorMessage = self::validateMidocoContactEntryWithSourceForArrayConstraintsFromSetMidocoContactEntryWithSource($midocoContactEntryWithSource))) {
+        if ('' !== ($midocoContactEntryWithSourceArrayErrorMessage = self::validateMidocoContactEntryWithSourceForArrayConstraintFromSetMidocoContactEntryWithSource($midocoContactEntryWithSource))) {
             throw new InvalidArgumentException($midocoContactEntryWithSourceArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactEntryWithSource = $midocoContactEntryWithSource;
@@ -149,12 +151,13 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
         return $this->MidocoCrmPersonTraveller;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmPersonTraveller method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmPersonTraveller method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmPersonTraveller method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmPersonTravellerForArrayConstraintsFromSetMidocoCrmPersonTraveller(?array $values = []): string
+    public static function validateMidocoCrmPersonTravellerForArrayConstraintFromSetMidocoCrmPersonTraveller(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -183,7 +186,7 @@ class SavePrivateCustomerWithContactAndTravellersRequest extends AbstractStructB
     public function setMidocoCrmPersonTraveller(?array $midocoCrmPersonTraveller = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmPersonTravellerArrayErrorMessage = self::validateMidocoCrmPersonTravellerForArrayConstraintsFromSetMidocoCrmPersonTraveller($midocoCrmPersonTraveller))) {
+        if ('' !== ($midocoCrmPersonTravellerArrayErrorMessage = self::validateMidocoCrmPersonTravellerForArrayConstraintFromSetMidocoCrmPersonTraveller($midocoCrmPersonTraveller))) {
             throw new InvalidArgumentException($midocoCrmPersonTravellerArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmPersonTraveller = $midocoCrmPersonTraveller;

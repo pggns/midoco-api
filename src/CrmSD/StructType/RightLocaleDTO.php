@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RightLocaleDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RightLocaleDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class RightLocaleDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RightLocaleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RightLocaleDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +79,7 @@ class RightLocaleDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RightLocaleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RightLocaleDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +102,7 @@ class RightLocaleDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RightLocaleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RightLocaleDTO
      */
     public function setRightId(?string $rightId = null): self
     {

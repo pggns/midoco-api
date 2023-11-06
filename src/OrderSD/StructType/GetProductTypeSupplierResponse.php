@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetProductTypeSupplierResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetProductTypeSupplierResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetProductTypeSupplierResponse extends AbstractStructBase
         return $this->MidocoProductTypeSupplier;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProductTypeSupplier method
+     * This method is responsible for validating the value(s) passed to the setMidocoProductTypeSupplier method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProductTypeSupplier method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProductTypeSupplierForArrayConstraintsFromSetMidocoProductTypeSupplier(?array $values = []): string
+    public static function validateMidocoProductTypeSupplierForArrayConstraintFromSetMidocoProductTypeSupplier(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetProductTypeSupplierResponse extends AbstractStructBase
     public function setMidocoProductTypeSupplier(?array $midocoProductTypeSupplier = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProductTypeSupplierArrayErrorMessage = self::validateMidocoProductTypeSupplierForArrayConstraintsFromSetMidocoProductTypeSupplier($midocoProductTypeSupplier))) {
+        if ('' !== ($midocoProductTypeSupplierArrayErrorMessage = self::validateMidocoProductTypeSupplierForArrayConstraintFromSetMidocoProductTypeSupplier($midocoProductTypeSupplier))) {
             throw new InvalidArgumentException($midocoProductTypeSupplierArrayErrorMessage, __LINE__);
         }
         $this->MidocoProductTypeSupplier = $midocoProductTypeSupplier;

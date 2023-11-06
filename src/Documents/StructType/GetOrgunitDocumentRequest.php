@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrgunitDocumentRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrgunitDocumentRequest extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCostCentresResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCostCentresResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCostCentresResponse extends AbstractStructBase
         return $this->MidocoCostCentre;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCostCentre method
+     * This method is responsible for validating the value(s) passed to the setMidocoCostCentre method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCostCentre method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCostCentreForArrayConstraintsFromSetMidocoCostCentre(?array $values = []): string
+    public static function validateMidocoCostCentreForArrayConstraintFromSetMidocoCostCentre(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCostCentresResponse extends AbstractStructBase
     public function setMidocoCostCentre(?array $midocoCostCentre = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCostCentreArrayErrorMessage = self::validateMidocoCostCentreForArrayConstraintsFromSetMidocoCostCentre($midocoCostCentre))) {
+        if ('' !== ($midocoCostCentreArrayErrorMessage = self::validateMidocoCostCentreForArrayConstraintFromSetMidocoCostCentre($midocoCostCentre))) {
             throw new InvalidArgumentException($midocoCostCentreArrayErrorMessage, __LINE__);
         }
         $this->MidocoCostCentre = $midocoCostCentre;

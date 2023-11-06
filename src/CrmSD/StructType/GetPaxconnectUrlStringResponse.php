@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,10 +11,13 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPaxconnectUrlStringResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPaxconnectUrlStringResponse extends AbstractStructBase
 {
     /**
      * The responseString
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $responseString = null;
@@ -39,7 +42,7 @@ class GetPaxconnectUrlStringResponse extends AbstractStructBase
     /**
      * Set responseString value
      * @param string $responseString
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPaxconnectUrlStringResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPaxconnectUrlStringResponse
      */
     public function setResponseString(?string $responseString = null): self
     {

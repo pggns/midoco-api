@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveComplaintReasonRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveComplaintReasonRequest extends AbstractStructBase
 {
     /**
      * The MidocoComplaintReason
      * Meta information extracted from the WSDL
      * - ref: MidocoComplaintReason
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO $MidocoComplaintReason = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO $MidocoComplaintReason = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +30,10 @@ class SaveComplaintReasonRequest extends AbstractStructBase
      * Constructor method for SaveComplaintReasonRequest
      * @uses SaveComplaintReasonRequest::setMidocoComplaintReason()
      * @uses SaveComplaintReasonRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO $midocoComplaintReason
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO $midocoComplaintReason
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO $midocoComplaintReason = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO $midocoComplaintReason = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoComplaintReason($midocoComplaintReason)
@@ -40,18 +41,18 @@ class SaveComplaintReasonRequest extends AbstractStructBase
     }
     /**
      * Get MidocoComplaintReason value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO|null
      */
-    public function getMidocoComplaintReason(): ?\Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO
+    public function getMidocoComplaintReason(): ?\Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO
     {
         return $this->MidocoComplaintReason;
     }
     /**
      * Set MidocoComplaintReason value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO $midocoComplaintReason
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveComplaintReasonRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO $midocoComplaintReason
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveComplaintReasonRequest
      */
-    public function setMidocoComplaintReason(?\Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDTO $midocoComplaintReason = null): self
+    public function setMidocoComplaintReason(?\Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDTO $midocoComplaintReason = null): self
     {
         $this->MidocoComplaintReason = $midocoComplaintReason;
         
@@ -68,7 +69,7 @@ class SaveComplaintReasonRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveComplaintReasonRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveComplaintReasonRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MarkCampaignAsExecutedRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MarkCampaignAsExecutedRequest extends AbstractStructBase
 {
     /**

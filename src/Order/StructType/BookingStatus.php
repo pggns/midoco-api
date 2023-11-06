@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for bookingStatus StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BookingStatus extends AbstractStructBase
 {
     /**
@@ -104,12 +105,13 @@ class BookingStatus extends AbstractStructBase
         return $this->subitemStatus;
     }
     /**
-     * This method is responsible for validating the values passed to the setSubitemStatus method
+     * This method is responsible for validating the value(s) passed to the setSubitemStatus method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSubitemStatus method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSubitemStatusForArrayConstraintsFromSetSubitemStatus(?array $values = []): string
+    public static function validateSubitemStatusForArrayConstraintFromSetSubitemStatus(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -138,7 +140,7 @@ class BookingStatus extends AbstractStructBase
     public function setSubitemStatus(?array $subitemStatus = null): self
     {
         // validation for constraint: array
-        if ('' !== ($subitemStatusArrayErrorMessage = self::validateSubitemStatusForArrayConstraintsFromSetSubitemStatus($subitemStatus))) {
+        if ('' !== ($subitemStatusArrayErrorMessage = self::validateSubitemStatusForArrayConstraintFromSetSubitemStatus($subitemStatus))) {
             throw new InvalidArgumentException($subitemStatusArrayErrorMessage, __LINE__);
         }
         $this->subitemStatus = $subitemStatus;

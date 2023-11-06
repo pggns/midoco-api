@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GenerateMidocoMandateResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GenerateMidocoMandateResponse extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class GenerateMidocoMandateResponse extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GenerateMidocoMandateResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GenerateMidocoMandateResponse
      */
     public function setMandateId(?int $mandateId = null): self
     {

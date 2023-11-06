@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: searchBank --- searches a bank according to the BankSearch parameter. returns a list of BankSearchResults
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchBankResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class SearchBankResponse extends AbstractStructBase
         return $this->MidocoBankSearcResult;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBankSearcResult method
+     * This method is responsible for validating the value(s) passed to the setMidocoBankSearcResult method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBankSearcResult method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBankSearcResultForArrayConstraintsFromSetMidocoBankSearcResult(?array $values = []): string
+    public static function validateMidocoBankSearcResultForArrayConstraintFromSetMidocoBankSearcResult(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class SearchBankResponse extends AbstractStructBase
     public function setMidocoBankSearcResult(?array $midocoBankSearcResult = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBankSearcResultArrayErrorMessage = self::validateMidocoBankSearcResultForArrayConstraintsFromSetMidocoBankSearcResult($midocoBankSearcResult))) {
+        if ('' !== ($midocoBankSearcResultArrayErrorMessage = self::validateMidocoBankSearcResultForArrayConstraintFromSetMidocoBankSearcResult($midocoBankSearcResult))) {
             throw new InvalidArgumentException($midocoBankSearcResultArrayErrorMessage, __LINE__);
         }
         $this->MidocoBankSearcResult = $midocoBankSearcResult;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SystemRulesetCompiledResult StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SystemRulesetCompiledResult extends SystemRulesetDTO
 {
     /**
@@ -39,7 +40,7 @@ class SystemRulesetCompiledResult extends SystemRulesetDTO
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRulesetCompiledResult
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRulesetCompiledResult
      */
     public function setErrorText(?string $errorText = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgunitSupplierAgencyDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgunitSupplierAgencyDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class OrgunitSupplierAgencyDTO extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitSupplierAgencyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitSupplierAgencyDTO
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -78,7 +79,7 @@ class OrgunitSupplierAgencyDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitSupplierAgencyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitSupplierAgencyDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -101,7 +102,7 @@ class OrgunitSupplierAgencyDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitSupplierAgencyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitSupplierAgencyDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

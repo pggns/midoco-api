@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveOrderDocumentRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveOrderDocumentRequest extends AbstractStructBase
 {
     /**
@@ -26,17 +27,25 @@ class SaveOrderDocumentRequest extends AbstractStructBase
      */
     protected ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $MidocoOrderDocument = null;
     /**
+     * The documentContent
+     * @var string|null
+     */
+    protected ?string $documentContent = null;
+    /**
      * Constructor method for SaveOrderDocumentRequest
      * @uses SaveOrderDocumentRequest::setExecuteOrderWorkflow()
      * @uses SaveOrderDocumentRequest::setMidocoOrderDocument()
+     * @uses SaveOrderDocumentRequest::setDocumentContent()
      * @param bool $executeOrderWorkflow
      * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument
+     * @param string $documentContent
      */
-    public function __construct(?bool $executeOrderWorkflow = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null)
+    public function __construct(?bool $executeOrderWorkflow = null, ?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null, ?string $documentContent = null)
     {
         $this
             ->setExecuteOrderWorkflow($executeOrderWorkflow)
-            ->setMidocoOrderDocument($midocoOrderDocument);
+            ->setMidocoOrderDocument($midocoOrderDocument)
+            ->setDocumentContent($documentContent);
     }
     /**
      * Get executeOrderWorkflow value
@@ -77,6 +86,29 @@ class SaveOrderDocumentRequest extends AbstractStructBase
     public function setMidocoOrderDocument(?\Pggns\MidocoApi\Order\StructType\MidocoOrderDocument $midocoOrderDocument = null): self
     {
         $this->MidocoOrderDocument = $midocoOrderDocument;
+        
+        return $this;
+    }
+    /**
+     * Get documentContent value
+     * @return string|null
+     */
+    public function getDocumentContent(): ?string
+    {
+        return $this->documentContent;
+    }
+    /**
+     * Set documentContent value
+     * @param string $documentContent
+     * @return \Pggns\MidocoApi\Order\StructType\SaveOrderDocumentRequest
+     */
+    public function setDocumentContent(?string $documentContent = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($documentContent) && !is_string($documentContent)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($documentContent, true), gettype($documentContent)), __LINE__);
+        }
+        $this->documentContent = $documentContent;
         
         return $this;
     }

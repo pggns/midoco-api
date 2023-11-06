@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetWorkstationRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetWorkstationRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetWorkstationRequest extends AbstractStructBase
     /**
      * Set workstation_id value
      * @param string $workstation_id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetWorkstationRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetWorkstationRequest
      */
     public function setWorkstation_id(?string $workstation_id = null): self
     {

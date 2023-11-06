@@ -9,8 +9,11 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for GetExistingVoucherNumberRequest StructType
+ * Meta information extracted from the WSDL
+ * - documentation: Searches for voucher by a its voucherNo. If there is no voucherNo in request, it searches for all vouchers. (voucherlisting)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExistingVoucherNumberRequest extends AbstractStructBase
 {
     /**
@@ -18,6 +21,13 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
      * @var string|null
      */
     protected ?string $voucherNo = null;
+    /**
+     * The voucherType
+     * Meta information extracted from the WSDL
+     * - documentation: VoucherType is required if the orgunit uses multiple voucher implementations (Midoco Voucher, Incert,etc). This attribute shall always be used to recognized the actual implementation!
+     * @var string|null
+     */
+    protected ?string $voucherType = null;
     /**
      * The dateFrom
      * @var string|null
@@ -29,15 +39,10 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
      */
     protected ?string $dateUntil = null;
     /**
-     * The showWithZeroPrice
-     * @var bool|null
+     * The securityCode
+     * @var string|null
      */
-    protected ?bool $showWithZeroPrice = null;
-    /**
-     * The extendedInfo
-     * @var bool|null
-     */
-    protected ?bool $extendedInfo = null;
+    protected ?string $securityCode = null;
     /**
      * The sellitemId
      * @var int|null
@@ -49,51 +54,64 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
      */
     protected ?string $unitName = null;
     /**
-     * The voucherType
+     * The showWithZeroPrice
      * Meta information extracted from the WSDL
+     * - documentation: Gets also voucher with zero prices for voucherlisting. (MidocoVoucher only)
+     * @var bool|null
+     */
+    protected ?bool $showWithZeroPrice = null;
+    /**
+     * The extendedInfo
+     * Meta information extracted from the WSDL
+     * - documentation: Gets additional information (sell_item_id,etc) about the vouchers for voucherlisting. Flag is used to reduce db load. (MidocoVoucher only)
+     * @var bool|null
+     */
+    protected ?bool $extendedInfo = null;
+    /**
+     * The voucherTypeId
+     * Meta information extracted from the WSDL
+     * - documentation: Shows vouchers with specific voucherTypes for voucherlisting (MidocoVoucher only)
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * @var string[]
      */
-    protected ?array $voucherType = null;
-    /**
-     * The securityCode
-     * @var string|null
-     */
-    protected ?string $securityCode = null;
+    protected ?array $voucherTypeId = null;
     /**
      * Constructor method for GetExistingVoucherNumberRequest
      * @uses GetExistingVoucherNumberRequest::setVoucherNo()
+     * @uses GetExistingVoucherNumberRequest::setVoucherType()
      * @uses GetExistingVoucherNumberRequest::setDateFrom()
      * @uses GetExistingVoucherNumberRequest::setDateUntil()
-     * @uses GetExistingVoucherNumberRequest::setShowWithZeroPrice()
-     * @uses GetExistingVoucherNumberRequest::setExtendedInfo()
+     * @uses GetExistingVoucherNumberRequest::setSecurityCode()
      * @uses GetExistingVoucherNumberRequest::setSellitemId()
      * @uses GetExistingVoucherNumberRequest::setUnitName()
-     * @uses GetExistingVoucherNumberRequest::setVoucherType()
-     * @uses GetExistingVoucherNumberRequest::setSecurityCode()
+     * @uses GetExistingVoucherNumberRequest::setShowWithZeroPrice()
+     * @uses GetExistingVoucherNumberRequest::setExtendedInfo()
+     * @uses GetExistingVoucherNumberRequest::setVoucherTypeId()
      * @param string $voucherNo
+     * @param string $voucherType
      * @param string $dateFrom
      * @param string $dateUntil
-     * @param bool $showWithZeroPrice
-     * @param bool $extendedInfo
+     * @param string $securityCode
      * @param int $sellitemId
      * @param string $unitName
-     * @param string[] $voucherType
-     * @param string $securityCode
+     * @param bool $showWithZeroPrice
+     * @param bool $extendedInfo
+     * @param string[] $voucherTypeId
      */
-    public function __construct(?string $voucherNo = null, ?string $dateFrom = null, ?string $dateUntil = null, ?bool $showWithZeroPrice = null, ?bool $extendedInfo = null, ?int $sellitemId = null, ?string $unitName = null, ?array $voucherType = null, ?string $securityCode = null)
+    public function __construct(?string $voucherNo = null, ?string $voucherType = null, ?string $dateFrom = null, ?string $dateUntil = null, ?string $securityCode = null, ?int $sellitemId = null, ?string $unitName = null, ?bool $showWithZeroPrice = null, ?bool $extendedInfo = null, ?array $voucherTypeId = null)
     {
         $this
             ->setVoucherNo($voucherNo)
+            ->setVoucherType($voucherType)
             ->setDateFrom($dateFrom)
             ->setDateUntil($dateUntil)
-            ->setShowWithZeroPrice($showWithZeroPrice)
-            ->setExtendedInfo($extendedInfo)
+            ->setSecurityCode($securityCode)
             ->setSellitemId($sellitemId)
             ->setUnitName($unitName)
-            ->setVoucherType($voucherType)
-            ->setSecurityCode($securityCode);
+            ->setShowWithZeroPrice($showWithZeroPrice)
+            ->setExtendedInfo($extendedInfo)
+            ->setVoucherTypeId($voucherTypeId);
     }
     /**
      * Get voucherNo value
@@ -115,6 +133,29 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($voucherNo, true), gettype($voucherNo)), __LINE__);
         }
         $this->voucherNo = $voucherNo;
+        
+        return $this;
+    }
+    /**
+     * Get voucherType value
+     * @return string|null
+     */
+    public function getVoucherType(): ?string
+    {
+        return $this->voucherType;
+    }
+    /**
+     * Set voucherType value
+     * @param string $voucherType
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
+     */
+    public function setVoucherType(?string $voucherType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($voucherType) && !is_string($voucherType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($voucherType, true), gettype($voucherType)), __LINE__);
+        }
+        $this->voucherType = $voucherType;
         
         return $this;
     }
@@ -165,48 +206,25 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
         return $this;
     }
     /**
-     * Get showWithZeroPrice value
-     * @return bool|null
+     * Get securityCode value
+     * @return string|null
      */
-    public function getShowWithZeroPrice(): ?bool
+    public function getSecurityCode(): ?string
     {
-        return $this->showWithZeroPrice;
+        return $this->securityCode;
     }
     /**
-     * Set showWithZeroPrice value
-     * @param bool $showWithZeroPrice
+     * Set securityCode value
+     * @param string $securityCode
      * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
-    public function setShowWithZeroPrice(?bool $showWithZeroPrice = null): self
+    public function setSecurityCode(?string $securityCode = null): self
     {
-        // validation for constraint: boolean
-        if (!is_null($showWithZeroPrice) && !is_bool($showWithZeroPrice)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($showWithZeroPrice, true), gettype($showWithZeroPrice)), __LINE__);
+        // validation for constraint: string
+        if (!is_null($securityCode) && !is_string($securityCode)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($securityCode, true), gettype($securityCode)), __LINE__);
         }
-        $this->showWithZeroPrice = $showWithZeroPrice;
-        
-        return $this;
-    }
-    /**
-     * Get extendedInfo value
-     * @return bool|null
-     */
-    public function getExtendedInfo(): ?bool
-    {
-        return $this->extendedInfo;
-    }
-    /**
-     * Set extendedInfo value
-     * @param bool $extendedInfo
-     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
-     */
-    public function setExtendedInfo(?bool $extendedInfo = null): self
-    {
-        // validation for constraint: boolean
-        if (!is_null($extendedInfo) && !is_bool($extendedInfo)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($extendedInfo, true), gettype($extendedInfo)), __LINE__);
-        }
-        $this->extendedInfo = $extendedInfo;
+        $this->securityCode = $securityCode;
         
         return $this;
     }
@@ -257,91 +275,115 @@ class GetExistingVoucherNumberRequest extends AbstractStructBase
         return $this;
     }
     /**
-     * Get voucherType value
-     * @return string[]
+     * Get showWithZeroPrice value
+     * @return bool|null
      */
-    public function getVoucherType(): ?array
+    public function getShowWithZeroPrice(): ?bool
     {
-        return $this->voucherType;
+        return $this->showWithZeroPrice;
     }
     /**
-     * This method is responsible for validating the values passed to the setVoucherType method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setVoucherType method
+     * Set showWithZeroPrice value
+     * @param bool $showWithZeroPrice
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
+     */
+    public function setShowWithZeroPrice(?bool $showWithZeroPrice = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($showWithZeroPrice) && !is_bool($showWithZeroPrice)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($showWithZeroPrice, true), gettype($showWithZeroPrice)), __LINE__);
+        }
+        $this->showWithZeroPrice = $showWithZeroPrice;
+        
+        return $this;
+    }
+    /**
+     * Get extendedInfo value
+     * @return bool|null
+     */
+    public function getExtendedInfo(): ?bool
+    {
+        return $this->extendedInfo;
+    }
+    /**
+     * Set extendedInfo value
+     * @param bool $extendedInfo
+     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
+     */
+    public function setExtendedInfo(?bool $extendedInfo = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($extendedInfo) && !is_bool($extendedInfo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($extendedInfo, true), gettype($extendedInfo)), __LINE__);
+        }
+        $this->extendedInfo = $extendedInfo;
+        
+        return $this;
+    }
+    /**
+     * Get voucherTypeId value
+     * @return string[]
+     */
+    public function getVoucherTypeId(): ?array
+    {
+        return $this->voucherTypeId;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setVoucherTypeId method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setVoucherTypeId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVoucherTypeForArrayConstraintsFromSetVoucherType(?array $values = []): string
+    public static function validateVoucherTypeIdForArrayConstraintFromSetVoucherTypeId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
         }
         $message = '';
         $invalidValues = [];
-        foreach ($values as $getExistingVoucherNumberRequestVoucherTypeItem) {
+        foreach ($values as $getExistingVoucherNumberRequestVoucherTypeIdItem) {
             // validation for constraint: itemType
-            if (!is_string($getExistingVoucherNumberRequestVoucherTypeItem)) {
-                $invalidValues[] = is_object($getExistingVoucherNumberRequestVoucherTypeItem) ? get_class($getExistingVoucherNumberRequestVoucherTypeItem) : sprintf('%s(%s)', gettype($getExistingVoucherNumberRequestVoucherTypeItem), var_export($getExistingVoucherNumberRequestVoucherTypeItem, true));
+            if (!is_string($getExistingVoucherNumberRequestVoucherTypeIdItem)) {
+                $invalidValues[] = is_object($getExistingVoucherNumberRequestVoucherTypeIdItem) ? get_class($getExistingVoucherNumberRequestVoucherTypeIdItem) : sprintf('%s(%s)', gettype($getExistingVoucherNumberRequestVoucherTypeIdItem), var_export($getExistingVoucherNumberRequestVoucherTypeIdItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The voucherType property can only contain items of type string, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The voucherTypeId property can only contain items of type string, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
         return $message;
     }
     /**
-     * Set voucherType value
+     * Set voucherTypeId value
      * @throws InvalidArgumentException
-     * @param string[] $voucherType
+     * @param string[] $voucherTypeId
      * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
-    public function setVoucherType(?array $voucherType = null): self
+    public function setVoucherTypeId(?array $voucherTypeId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($voucherTypeArrayErrorMessage = self::validateVoucherTypeForArrayConstraintsFromSetVoucherType($voucherType))) {
-            throw new InvalidArgumentException($voucherTypeArrayErrorMessage, __LINE__);
+        if ('' !== ($voucherTypeIdArrayErrorMessage = self::validateVoucherTypeIdForArrayConstraintFromSetVoucherTypeId($voucherTypeId))) {
+            throw new InvalidArgumentException($voucherTypeIdArrayErrorMessage, __LINE__);
         }
-        $this->voucherType = $voucherType;
+        $this->voucherTypeId = $voucherTypeId;
         
         return $this;
     }
     /**
-     * Add item to voucherType value
+     * Add item to voucherTypeId value
      * @throws InvalidArgumentException
      * @param string $item
      * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
      */
-    public function addToVoucherType(string $item): self
+    public function addToVoucherTypeId(string $item): self
     {
         // validation for constraint: itemType
         if (!is_string($item)) {
-            throw new InvalidArgumentException(sprintf('The voucherType property can only contain items of type string, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+            throw new InvalidArgumentException(sprintf('The voucherTypeId property can only contain items of type string, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
-        $this->voucherType[] = $item;
-        
-        return $this;
-    }
-    /**
-     * Get securityCode value
-     * @return string|null
-     */
-    public function getSecurityCode(): ?string
-    {
-        return $this->securityCode;
-    }
-    /**
-     * Set securityCode value
-     * @param string $securityCode
-     * @return \Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberRequest
-     */
-    public function setSecurityCode(?string $securityCode = null): self
-    {
-        // validation for constraint: string
-        if (!is_null($securityCode) && !is_string($securityCode)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($securityCode, true), gettype($securityCode)), __LINE__);
-        }
-        $this->securityCode = $securityCode;
+        $this->voucherTypeId[] = $item;
         
         return $this;
     }

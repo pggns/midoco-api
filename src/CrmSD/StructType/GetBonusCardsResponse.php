@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getBonusCards --- returns the list of bonus cards corresponding to a customer id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBonusCardsResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetBonusCardsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmBonusCard
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard[]
      */
     protected ?array $MidocoCrmBonusCard = null;
     /**
      * Constructor method for GetBonusCardsResponse
      * @uses GetBonusCardsResponse::setMidocoCrmBonusCard()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard[] $midocoCrmBonusCard
      */
     public function __construct(?array $midocoCrmBonusCard = null)
     {
@@ -36,19 +37,20 @@ class GetBonusCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmBonusCard value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard[]
      */
     public function getMidocoCrmBonusCard(): ?array
     {
         return $this->MidocoCrmBonusCard;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmBonusCard method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmBonusCard method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmBonusCard method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmBonusCardForArrayConstraintsFromSetMidocoCrmBonusCard(?array $values = []): string
+    public static function validateMidocoCrmBonusCardForArrayConstraintFromSetMidocoCrmBonusCard(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetBonusCardsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getBonusCardsResponseMidocoCrmBonusCardItem) {
             // validation for constraint: itemType
-            if (!$getBonusCardsResponseMidocoCrmBonusCardItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO) {
+            if (!$getBonusCardsResponseMidocoCrmBonusCardItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard) {
                 $invalidValues[] = is_object($getBonusCardsResponseMidocoCrmBonusCardItem) ? get_class($getBonusCardsResponseMidocoCrmBonusCardItem) : sprintf('%s(%s)', gettype($getBonusCardsResponseMidocoCrmBonusCardItem), var_export($getBonusCardsResponseMidocoCrmBonusCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetBonusCardsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmBonusCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO[] $midocoCrmBonusCard
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBonusCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard[] $midocoCrmBonusCard
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetBonusCardsResponse
      */
     public function setMidocoCrmBonusCard(?array $midocoCrmBonusCard = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmBonusCardArrayErrorMessage = self::validateMidocoCrmBonusCardForArrayConstraintsFromSetMidocoCrmBonusCard($midocoCrmBonusCard))) {
+        if ('' !== ($midocoCrmBonusCardArrayErrorMessage = self::validateMidocoCrmBonusCardForArrayConstraintFromSetMidocoCrmBonusCard($midocoCrmBonusCard))) {
             throw new InvalidArgumentException($midocoCrmBonusCardArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmBonusCard = $midocoCrmBonusCard;
@@ -87,14 +89,14 @@ class GetBonusCardsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmBonusCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBonusCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetBonusCardsResponse
      */
-    public function addToMidocoCrmBonusCard(\Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO $item): self
+    public function addToMidocoCrmBonusCard(\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmBonusCardDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmBonusCard property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmBonusCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmBonusCard[] = $item;
         

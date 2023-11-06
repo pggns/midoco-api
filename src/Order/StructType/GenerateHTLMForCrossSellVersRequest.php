@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GenerateHTLMForCrossSellVersRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GenerateHTLMForCrossSellVersRequest extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class GenerateHTLMForCrossSellVersRequest extends AbstractStructBase
         return $this->CrossSellingVersInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setCrossSellingVersInfo method
+     * This method is responsible for validating the value(s) passed to the setCrossSellingVersInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCrossSellingVersInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCrossSellingVersInfoForArrayConstraintsFromSetCrossSellingVersInfo(?array $values = []): string
+    public static function validateCrossSellingVersInfoForArrayConstraintFromSetCrossSellingVersInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class GenerateHTLMForCrossSellVersRequest extends AbstractStructBase
     public function setCrossSellingVersInfo(?array $crossSellingVersInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($crossSellingVersInfoArrayErrorMessage = self::validateCrossSellingVersInfoForArrayConstraintsFromSetCrossSellingVersInfo($crossSellingVersInfo))) {
+        if ('' !== ($crossSellingVersInfoArrayErrorMessage = self::validateCrossSellingVersInfoForArrayConstraintFromSetCrossSellingVersInfo($crossSellingVersInfo))) {
             throw new InvalidArgumentException($crossSellingVersInfoArrayErrorMessage, __LINE__);
         }
         $this->CrossSellingVersInfo = $crossSellingVersInfo;

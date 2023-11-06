@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintTypeDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set channel value
      * @param int $channel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeDTO
      */
     public function setChannel(?int $channel = null): self
     {
@@ -86,7 +87,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set handler value
      * @param string $handler
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeDTO
      */
     public function setHandler(?string $handler = null): self
     {
@@ -109,7 +110,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeDTO
      */
     public function setName(?string $name = null): self
     {
@@ -132,7 +133,7 @@ class PrintTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteHistoryDocumentRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteHistoryDocumentRequest extends AbstractStructBase
 {
 }

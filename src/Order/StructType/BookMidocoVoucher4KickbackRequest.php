@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BookMidocoVoucher4KickbackRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BookMidocoVoucher4KickbackRequest extends AbstractStructBase
 {
     /**
@@ -24,17 +25,33 @@ class BookMidocoVoucher4KickbackRequest extends AbstractStructBase
      */
     protected ?string $operationNumber = null;
     /**
+     * The supplierId
+     * @var string|null
+     */
+    protected ?string $supplierId = null;
+    /**
+     * The amount
+     * @var float|null
+     */
+    protected ?float $amount = null;
+    /**
      * Constructor method for BookMidocoVoucher4KickbackRequest
      * @uses BookMidocoVoucher4KickbackRequest::setVoucherCode()
      * @uses BookMidocoVoucher4KickbackRequest::setOperationNumber()
+     * @uses BookMidocoVoucher4KickbackRequest::setSupplierId()
+     * @uses BookMidocoVoucher4KickbackRequest::setAmount()
      * @param string $voucherCode
      * @param string $operationNumber
+     * @param string $supplierId
+     * @param float $amount
      */
-    public function __construct(?string $voucherCode = null, ?string $operationNumber = null)
+    public function __construct(?string $voucherCode = null, ?string $operationNumber = null, ?string $supplierId = null, ?float $amount = null)
     {
         $this
             ->setVoucherCode($voucherCode)
-            ->setOperationNumber($operationNumber);
+            ->setOperationNumber($operationNumber)
+            ->setSupplierId($supplierId)
+            ->setAmount($amount);
     }
     /**
      * Get voucherCode value
@@ -79,6 +96,52 @@ class BookMidocoVoucher4KickbackRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($operationNumber, true), gettype($operationNumber)), __LINE__);
         }
         $this->operationNumber = $operationNumber;
+        
+        return $this;
+    }
+    /**
+     * Get supplierId value
+     * @return string|null
+     */
+    public function getSupplierId(): ?string
+    {
+        return $this->supplierId;
+    }
+    /**
+     * Set supplierId value
+     * @param string $supplierId
+     * @return \Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackRequest
+     */
+    public function setSupplierId(?string $supplierId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($supplierId) && !is_string($supplierId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplierId, true), gettype($supplierId)), __LINE__);
+        }
+        $this->supplierId = $supplierId;
+        
+        return $this;
+    }
+    /**
+     * Get amount value
+     * @return float|null
+     */
+    public function getAmount(): ?float
+    {
+        return $this->amount;
+    }
+    /**
+     * Set amount value
+     * @param float $amount
+     * @return \Pggns\MidocoApi\Order\StructType\BookMidocoVoucher4KickbackRequest
+     */
+    public function setAmount(?float $amount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($amount) && !(is_float($amount) || is_numeric($amount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($amount, true), gettype($amount)), __LINE__);
+        }
+        $this->amount = $amount;
         
         return $this;
     }

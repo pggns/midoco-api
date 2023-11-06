@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PushBackSequenceValueResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PushBackSequenceValueResponse extends AbstractStructBase
 {
 }

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBillingDocumentForOrderRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingDocumentForOrderRequest extends AbstractStructBase
 {
     /**
@@ -24,17 +25,25 @@ class GetBillingDocumentForOrderRequest extends AbstractStructBase
      */
     protected ?bool $onlyAutomaticCreated = null;
     /**
+     * The includeCollectiveInvoiceDocs
+     * @var bool|null
+     */
+    protected ?bool $includeCollectiveInvoiceDocs = null;
+    /**
      * Constructor method for GetBillingDocumentForOrderRequest
      * @uses GetBillingDocumentForOrderRequest::setOrderId()
      * @uses GetBillingDocumentForOrderRequest::setOnlyAutomaticCreated()
+     * @uses GetBillingDocumentForOrderRequest::setIncludeCollectiveInvoiceDocs()
      * @param int $orderId
      * @param bool $onlyAutomaticCreated
+     * @param bool $includeCollectiveInvoiceDocs
      */
-    public function __construct(?int $orderId = null, ?bool $onlyAutomaticCreated = null)
+    public function __construct(?int $orderId = null, ?bool $onlyAutomaticCreated = null, ?bool $includeCollectiveInvoiceDocs = null)
     {
         $this
             ->setOrderId($orderId)
-            ->setOnlyAutomaticCreated($onlyAutomaticCreated);
+            ->setOnlyAutomaticCreated($onlyAutomaticCreated)
+            ->setIncludeCollectiveInvoiceDocs($includeCollectiveInvoiceDocs);
     }
     /**
      * Get orderId value
@@ -79,6 +88,29 @@ class GetBillingDocumentForOrderRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($onlyAutomaticCreated, true), gettype($onlyAutomaticCreated)), __LINE__);
         }
         $this->onlyAutomaticCreated = $onlyAutomaticCreated;
+        
+        return $this;
+    }
+    /**
+     * Get includeCollectiveInvoiceDocs value
+     * @return bool|null
+     */
+    public function getIncludeCollectiveInvoiceDocs(): ?bool
+    {
+        return $this->includeCollectiveInvoiceDocs;
+    }
+    /**
+     * Set includeCollectiveInvoiceDocs value
+     * @param bool $includeCollectiveInvoiceDocs
+     * @return \Pggns\MidocoApi\Order\StructType\GetBillingDocumentForOrderRequest
+     */
+    public function setIncludeCollectiveInvoiceDocs(?bool $includeCollectiveInvoiceDocs = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($includeCollectiveInvoiceDocs) && !is_bool($includeCollectiveInvoiceDocs)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($includeCollectiveInvoiceDocs, true), gettype($includeCollectiveInvoiceDocs)), __LINE__);
+        }
+        $this->includeCollectiveInvoiceDocs = $includeCollectiveInvoiceDocs;
         
         return $this;
     }

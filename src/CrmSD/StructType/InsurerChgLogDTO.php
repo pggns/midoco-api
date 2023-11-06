@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for InsurerChgLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class InsurerChgLogDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class InsurerChgLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerChgLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -110,7 +111,7 @@ class InsurerChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -133,7 +134,7 @@ class InsurerChgLogDTO extends AbstractStructBase
     /**
      * Set insurerId value
      * @param int $insurerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerChgLogDTO
      */
     public function setInsurerId(?int $insurerId = null): self
     {
@@ -156,7 +157,7 @@ class InsurerChgLogDTO extends AbstractStructBase
     /**
      * Set insurerName value
      * @param string $insurerName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerChgLogDTO
      */
     public function setInsurerName(?string $insurerName = null): self
     {
@@ -179,7 +180,7 @@ class InsurerChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -202,7 +203,7 @@ class InsurerChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +226,7 @@ class InsurerChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InsurerChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InsurerChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

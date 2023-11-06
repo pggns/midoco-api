@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAssignedSystemRulesToOrgunitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
         return $this->MidocoUnitRuleset;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoUnitRuleset method
+     * This method is responsible for validating the value(s) passed to the setMidocoUnitRuleset method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoUnitRuleset method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoUnitRulesetForArrayConstraintsFromSetMidocoUnitRuleset(?array $values = []): string
+    public static function validateMidocoUnitRulesetForArrayConstraintFromSetMidocoUnitRuleset(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAssignedSystemRulesToOrgunitResponse extends AbstractStructBase
     public function setMidocoUnitRuleset(?array $midocoUnitRuleset = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoUnitRulesetArrayErrorMessage = self::validateMidocoUnitRulesetForArrayConstraintsFromSetMidocoUnitRuleset($midocoUnitRuleset))) {
+        if ('' !== ($midocoUnitRulesetArrayErrorMessage = self::validateMidocoUnitRulesetForArrayConstraintFromSetMidocoUnitRuleset($midocoUnitRuleset))) {
             throw new InvalidArgumentException($midocoUnitRulesetArrayErrorMessage, __LINE__);
         }
         $this->MidocoUnitRuleset = $midocoUnitRuleset;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveDbiDefsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveDbiDefsRequest extends AbstractStructBase
 {
     /**

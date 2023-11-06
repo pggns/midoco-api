@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteMidocoChargeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMidocoChargeRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class DeleteMidocoChargeRequest extends AbstractStructBase
     /**
      * Set crmChargeId value
      * @param int $crmChargeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoChargeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoChargeRequest
      */
     public function setCrmChargeId(int $crmChargeId): self
     {

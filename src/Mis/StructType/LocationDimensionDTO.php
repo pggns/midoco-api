@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for LocationDimensionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class LocationDimensionDTO extends AbstractStructBase
 {
     /**

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UpdateTssAdminPinRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UpdateTssAdminPinRequest extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class UpdateTssAdminPinRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateTssAdminPinRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateTssAdminPinRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -102,7 +103,7 @@ class UpdateTssAdminPinRequest extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateTssAdminPinRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateTssAdminPinRequest
      */
     public function setTssSystem(?string $tssSystem = 'FISKALY'): self
     {
@@ -125,7 +126,7 @@ class UpdateTssAdminPinRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateTssAdminPinRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateTssAdminPinRequest
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -148,7 +149,7 @@ class UpdateTssAdminPinRequest extends AbstractStructBase
     /**
      * Set adminPuk value
      * @param string $adminPuk
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateTssAdminPinRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateTssAdminPinRequest
      */
     public function setAdminPuk(?string $adminPuk = null): self
     {
@@ -171,7 +172,7 @@ class UpdateTssAdminPinRequest extends AbstractStructBase
     /**
      * Set adminPin value
      * @param string $adminPin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateTssAdminPinRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateTssAdminPinRequest
      */
     public function setAdminPin(?string $adminPin = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllowedRolesForCurrentUserResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
         return $this->MidocoRole;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRole method
+     * This method is responsible for validating the value(s) passed to the setMidocoRole method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRole method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRoleForArrayConstraintsFromSetMidocoRole(?array $values = []): string
+    public static function validateMidocoRoleForArrayConstraintFromSetMidocoRole(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAllowedRolesForCurrentUserResponse extends AbstractStructBase
     public function setMidocoRole(?array $midocoRole = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRoleArrayErrorMessage = self::validateMidocoRoleForArrayConstraintsFromSetMidocoRole($midocoRole))) {
+        if ('' !== ($midocoRoleArrayErrorMessage = self::validateMidocoRoleForArrayConstraintFromSetMidocoRole($midocoRole))) {
             throw new InvalidArgumentException($midocoRoleArrayErrorMessage, __LINE__);
         }
         $this->MidocoRole = $midocoRole;

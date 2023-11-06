@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoQuestion StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoQuestion extends QuestionDTO
 {
     /**
@@ -40,12 +41,13 @@ class MidocoQuestion extends QuestionDTO
         return $this->MidocoQmPrint;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoQmPrint method
+     * This method is responsible for validating the value(s) passed to the setMidocoQmPrint method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoQmPrint method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoQmPrintForArrayConstraintsFromSetMidocoQmPrint(?array $values = []): string
+    public static function validateMidocoQmPrintForArrayConstraintFromSetMidocoQmPrint(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class MidocoQuestion extends QuestionDTO
     public function setMidocoQmPrint(?array $midocoQmPrint = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoQmPrintArrayErrorMessage = self::validateMidocoQmPrintForArrayConstraintsFromSetMidocoQmPrint($midocoQmPrint))) {
+        if ('' !== ($midocoQmPrintArrayErrorMessage = self::validateMidocoQmPrintForArrayConstraintFromSetMidocoQmPrint($midocoQmPrint))) {
             throw new InvalidArgumentException($midocoQmPrintArrayErrorMessage, __LINE__);
         }
         $this->MidocoQmPrint = $midocoQmPrint;

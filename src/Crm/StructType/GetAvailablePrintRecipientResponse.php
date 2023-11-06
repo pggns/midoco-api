@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAvailablePrintRecipientResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailablePrintRecipientResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetAvailablePrintRecipientResponse extends AbstractStructBase
         return $this->MidocoPrintRecipient;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintRecipient method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintRecipient method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintRecipient method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintRecipientForArrayConstraintsFromSetMidocoPrintRecipient(?array $values = []): string
+    public static function validateMidocoPrintRecipientForArrayConstraintFromSetMidocoPrintRecipient(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetAvailablePrintRecipientResponse extends AbstractStructBase
     public function setMidocoPrintRecipient(?array $midocoPrintRecipient = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintRecipientArrayErrorMessage = self::validateMidocoPrintRecipientForArrayConstraintsFromSetMidocoPrintRecipient($midocoPrintRecipient))) {
+        if ('' !== ($midocoPrintRecipientArrayErrorMessage = self::validateMidocoPrintRecipientForArrayConstraintFromSetMidocoPrintRecipient($midocoPrintRecipient))) {
             throw new InvalidArgumentException($midocoPrintRecipientArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintRecipient = $midocoPrintRecipient;

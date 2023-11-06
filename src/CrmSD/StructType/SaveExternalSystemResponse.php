@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveExternalSystemResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveExternalSystemResponse extends AbstractStructBase
 {
     /**
      * The MidocoExternalSystem
      * Meta information extracted from the WSDL
      * - ref: MidocoExternalSystem
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO $MidocoExternalSystem = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO $MidocoExternalSystem = null;
     /**
      * Constructor method for SaveExternalSystemResponse
      * @uses SaveExternalSystemResponse::setMidocoExternalSystem()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO $midocoExternalSystem
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO $midocoExternalSystem
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO $midocoExternalSystem = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO $midocoExternalSystem = null)
     {
         $this
             ->setMidocoExternalSystem($midocoExternalSystem);
     }
     /**
      * Get MidocoExternalSystem value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO|null
      */
-    public function getMidocoExternalSystem(): ?\Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO
+    public function getMidocoExternalSystem(): ?\Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO
     {
         return $this->MidocoExternalSystem;
     }
     /**
      * Set MidocoExternalSystem value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO $midocoExternalSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveExternalSystemResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO $midocoExternalSystem
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveExternalSystemResponse
      */
-    public function setMidocoExternalSystem(?\Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO $midocoExternalSystem = null): self
+    public function setMidocoExternalSystem(?\Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO $midocoExternalSystem = null): self
     {
         $this->MidocoExternalSystem = $midocoExternalSystem;
         

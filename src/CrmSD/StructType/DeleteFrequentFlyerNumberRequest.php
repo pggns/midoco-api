@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteFrequentFlyerNumberRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +87,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set airlineCode value
      * @param string $airlineCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setAirlineCode(?string $airlineCode = null): self
     {
@@ -109,7 +110,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setNumber(?string $number = null): self
     {
@@ -132,7 +133,7 @@ class DeleteFrequentFlyerNumberRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteFrequentFlyerNumberRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteFrequentFlyerNumberRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

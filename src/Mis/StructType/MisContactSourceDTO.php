@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisContactSourceDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisContactSourceDTO extends AbstractStructBase
 {
     /**

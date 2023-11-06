@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: markCampaignAsExecuted --- mark a campaign as executed
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MarkCampaignAsExecutedResponse extends AbstractStructBase
 {
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckMediatorAccessRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckMediatorAccessRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class CheckMediatorAccessRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckMediatorAccessRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CheckMediatorAccessRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -70,7 +71,7 @@ class CheckMediatorAccessRequest extends AbstractStructBase
     /**
      * Set passwd value
      * @param string $passwd
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckMediatorAccessRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CheckMediatorAccessRequest
      */
     public function setPasswd(?string $passwd = null): self
     {

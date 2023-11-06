@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DocumentTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DocumentTypeDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class DocumentTypeDTO extends AbstractStructBase
     /**
      * Set extension value
      * @param string $extension
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentTypeDTO
      */
     public function setExtension(?string $extension = null): self
     {
@@ -70,7 +71,7 @@ class DocumentTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteLetterTemplateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteLetterTemplateRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class DeleteLetterTemplateRequest extends AbstractStructBase
         return $this->MidocoLetterTemplate;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoLetterTemplate method
+     * This method is responsible for validating the value(s) passed to the setMidocoLetterTemplate method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoLetterTemplate method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoLetterTemplateForArrayConstraintsFromSetMidocoLetterTemplate(?array $values = []): string
+    public static function validateMidocoLetterTemplateForArrayConstraintFromSetMidocoLetterTemplate(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class DeleteLetterTemplateRequest extends AbstractStructBase
     public function setMidocoLetterTemplate(?array $midocoLetterTemplate = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoLetterTemplateArrayErrorMessage = self::validateMidocoLetterTemplateForArrayConstraintsFromSetMidocoLetterTemplate($midocoLetterTemplate))) {
+        if ('' !== ($midocoLetterTemplateArrayErrorMessage = self::validateMidocoLetterTemplateForArrayConstraintFromSetMidocoLetterTemplate($midocoLetterTemplate))) {
             throw new InvalidArgumentException($midocoLetterTemplateArrayErrorMessage, __LINE__);
         }
         $this->MidocoLetterTemplate = $midocoLetterTemplate;

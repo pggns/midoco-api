@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoJasperReportParamForExec StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoJasperReportParamForExec extends AbstractStructBase
 {
     /**
@@ -18,24 +19,24 @@ class MidocoJasperReportParamForExec extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoJasperReportParam
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam $MidocoJasperReportParam = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam $MidocoJasperReportParam = null;
     /**
      * The MidocoJasperParameter
      * Meta information extracted from the WSDL
      * - ref: MidocoJasperParameter
-     * @var \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO $MidocoJasperParameter = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO $MidocoJasperParameter = null;
     /**
      * Constructor method for MidocoJasperReportParamForExec
      * @uses MidocoJasperReportParamForExec::setMidocoJasperReportParam()
      * @uses MidocoJasperReportParamForExec::setMidocoJasperParameter()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam $midocoJasperReportParam
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO $midocoJasperParameter
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam $midocoJasperReportParam
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO $midocoJasperParameter
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam $midocoJasperReportParam = null, ?\Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO $midocoJasperParameter = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam $midocoJasperReportParam = null, ?\Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO $midocoJasperParameter = null)
     {
         $this
             ->setMidocoJasperReportParam($midocoJasperReportParam)
@@ -43,18 +44,18 @@ class MidocoJasperReportParamForExec extends AbstractStructBase
     }
     /**
      * Get MidocoJasperReportParam value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam|null
      */
-    public function getMidocoJasperReportParam(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam
+    public function getMidocoJasperReportParam(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam
     {
         return $this->MidocoJasperReportParam;
     }
     /**
      * Set MidocoJasperReportParam value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam $midocoJasperReportParam
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParamForExec
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam $midocoJasperReportParam
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParamForExec
      */
-    public function setMidocoJasperReportParam(?\Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParam $midocoJasperReportParam = null): self
+    public function setMidocoJasperReportParam(?\Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParam $midocoJasperReportParam = null): self
     {
         $this->MidocoJasperReportParam = $midocoJasperReportParam;
         
@@ -62,18 +63,18 @@ class MidocoJasperReportParamForExec extends AbstractStructBase
     }
     /**
      * Get MidocoJasperParameter value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO|null
      */
-    public function getMidocoJasperParameter(): ?\Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+    public function getMidocoJasperParameter(): ?\Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
     {
         return $this->MidocoJasperParameter;
     }
     /**
      * Set MidocoJasperParameter value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO $midocoJasperParameter
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoJasperReportParamForExec
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO $midocoJasperParameter
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoJasperReportParamForExec
      */
-    public function setMidocoJasperParameter(?\Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO $midocoJasperParameter = null): self
+    public function setMidocoJasperParameter(?\Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO $midocoJasperParameter = null): self
     {
         $this->MidocoJasperParameter = $midocoJasperParameter;
         

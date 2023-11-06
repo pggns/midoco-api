@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgencyCooperationHistoryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgencyCooperationHistoryResponse extends AbstractStructBase
 {
     /**
@@ -19,7 +20,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyCooperationHistory
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory[]
      */
     protected ?array $MidocoAgencyCooperationHistory = null;
     /**
@@ -31,7 +32,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
      * Constructor method for GetAgencyCooperationHistoryResponse
      * @uses GetAgencyCooperationHistoryResponse::setMidocoAgencyCooperationHistory()
      * @uses GetAgencyCooperationHistoryResponse::setCurrentCooperationId()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
      * @param string $currentCooperationId
      */
     public function __construct(?array $midocoAgencyCooperationHistory = null, ?string $currentCooperationId = null)
@@ -42,19 +43,20 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyCooperationHistory value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory[]
      */
     public function getMidocoAgencyCooperationHistory(): ?array
     {
         return $this->MidocoAgencyCooperationHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAgencyCooperationHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoAgencyCooperationHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAgencyCooperationHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAgencyCooperationHistoryForArrayConstraintsFromSetMidocoAgencyCooperationHistory(?array $values = []): string
+    public static function validateMidocoAgencyCooperationHistoryForArrayConstraintFromSetMidocoAgencyCooperationHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -63,12 +65,12 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem) {
             // validation for constraint: itemType
-            if (!$getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory) {
+            if (!$getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory) {
                 $invalidValues[] = is_object($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem) ? get_class($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem) : sprintf('%s(%s)', gettype($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem), var_export($getAgencyCooperationHistoryResponseMidocoAgencyCooperationHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,13 +79,13 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     /**
      * Set MidocoAgencyCooperationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory[] $midocoAgencyCooperationHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyCooperationHistoryResponse
      */
     public function setMidocoAgencyCooperationHistory(?array $midocoAgencyCooperationHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAgencyCooperationHistoryArrayErrorMessage = self::validateMidocoAgencyCooperationHistoryForArrayConstraintsFromSetMidocoAgencyCooperationHistory($midocoAgencyCooperationHistory))) {
+        if ('' !== ($midocoAgencyCooperationHistoryArrayErrorMessage = self::validateMidocoAgencyCooperationHistoryForArrayConstraintFromSetMidocoAgencyCooperationHistory($midocoAgencyCooperationHistory))) {
             throw new InvalidArgumentException($midocoAgencyCooperationHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoAgencyCooperationHistory = $midocoAgencyCooperationHistory;
@@ -93,14 +95,14 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoAgencyCooperationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyCooperationHistoryResponse
      */
-    public function addToMidocoAgencyCooperationHistory(\Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory $item): self
+    public function addToMidocoAgencyCooperationHistory(\Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoAgencyCooperationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyCooperationHistory property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoAgencyCooperationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyCooperationHistory[] = $item;
         
@@ -117,7 +119,7 @@ class GetAgencyCooperationHistoryResponse extends AbstractStructBase
     /**
      * Set currentCooperationId value
      * @param string $currentCooperationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyCooperationHistoryResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyCooperationHistoryResponse
      */
     public function setCurrentCooperationId(?string $currentCooperationId = null): self
     {

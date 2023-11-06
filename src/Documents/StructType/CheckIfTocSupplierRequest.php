@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckIfTocSupplierRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckIfTocSupplierRequest extends AbstractStructBase
 {
     /**

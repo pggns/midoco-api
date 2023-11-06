@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UnitModulesNotAssignedDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UnitModulesNotAssignedDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesNotAssignedDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -86,7 +87,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set modulId value
      * @param string $modulId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesNotAssignedDTO
      */
     public function setModulId(?string $modulId = null): self
     {
@@ -109,7 +110,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set notAssignedUnitName value
      * @param string $notAssignedUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesNotAssignedDTO
      */
     public function setNotAssignedUnitName(?string $notAssignedUnitName = null): self
     {
@@ -132,7 +133,7 @@ class UnitModulesNotAssignedDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitModulesNotAssignedDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitModulesNotAssignedDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

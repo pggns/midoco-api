@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DocumentDescription StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DocumentDescription extends AbstractStructBase
 {
     /**
@@ -78,16 +79,16 @@ class DocumentDescription extends AbstractStructBase
      */
     public function getOrderDocument(): ?\Pggns\MidocoApi\Documents\StructType\OrderDocument
     {
-        return isset($this->OrderDocument) ? $this->OrderDocument : null;
+        return $this->OrderDocument ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setOrderDocument method
+     * This method is responsible for validating the value(s) passed to the setOrderDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrderDocument method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateOrderDocumentForChoiceConstraintsFromSetOrderDocument($value): string
+    public function validateOrderDocumentForChoiceConstraintFromSetOrderDocument($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -122,7 +123,7 @@ class DocumentDescription extends AbstractStructBase
     public function setOrderDocument(?\Pggns\MidocoApi\Documents\StructType\OrderDocument $orderDocument = null): self
     {
         // validation for constraint: choice(OrderDocument, CrmDocument, FinancialDocument, DiversDocument)
-        if ('' !== ($orderDocumentChoiceErrorMessage = self::validateOrderDocumentForChoiceConstraintsFromSetOrderDocument($orderDocument))) {
+        if ('' !== ($orderDocumentChoiceErrorMessage = self::validateOrderDocumentForChoiceConstraintFromSetOrderDocument($orderDocument))) {
             throw new InvalidArgumentException($orderDocumentChoiceErrorMessage, __LINE__);
         }
         if (is_null($orderDocument) || (is_array($orderDocument) && empty($orderDocument))) {
@@ -139,16 +140,16 @@ class DocumentDescription extends AbstractStructBase
      */
     public function getCrmDocument(): ?\Pggns\MidocoApi\Documents\StructType\CrmDocument
     {
-        return isset($this->CrmDocument) ? $this->CrmDocument : null;
+        return $this->CrmDocument ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setCrmDocument method
+     * This method is responsible for validating the value(s) passed to the setCrmDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCrmDocument method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateCrmDocumentForChoiceConstraintsFromSetCrmDocument($value): string
+    public function validateCrmDocumentForChoiceConstraintFromSetCrmDocument($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -183,7 +184,7 @@ class DocumentDescription extends AbstractStructBase
     public function setCrmDocument(?\Pggns\MidocoApi\Documents\StructType\CrmDocument $crmDocument = null): self
     {
         // validation for constraint: choice(OrderDocument, CrmDocument, FinancialDocument, DiversDocument)
-        if ('' !== ($crmDocumentChoiceErrorMessage = self::validateCrmDocumentForChoiceConstraintsFromSetCrmDocument($crmDocument))) {
+        if ('' !== ($crmDocumentChoiceErrorMessage = self::validateCrmDocumentForChoiceConstraintFromSetCrmDocument($crmDocument))) {
             throw new InvalidArgumentException($crmDocumentChoiceErrorMessage, __LINE__);
         }
         if (is_null($crmDocument) || (is_array($crmDocument) && empty($crmDocument))) {
@@ -200,16 +201,16 @@ class DocumentDescription extends AbstractStructBase
      */
     public function getFinancialDocument(): ?\Pggns\MidocoApi\Documents\StructType\FinancialDocument
     {
-        return isset($this->FinancialDocument) ? $this->FinancialDocument : null;
+        return $this->FinancialDocument ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setFinancialDocument method
+     * This method is responsible for validating the value(s) passed to the setFinancialDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFinancialDocument method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateFinancialDocumentForChoiceConstraintsFromSetFinancialDocument($value): string
+    public function validateFinancialDocumentForChoiceConstraintFromSetFinancialDocument($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -244,7 +245,7 @@ class DocumentDescription extends AbstractStructBase
     public function setFinancialDocument(?\Pggns\MidocoApi\Documents\StructType\FinancialDocument $financialDocument = null): self
     {
         // validation for constraint: choice(OrderDocument, CrmDocument, FinancialDocument, DiversDocument)
-        if ('' !== ($financialDocumentChoiceErrorMessage = self::validateFinancialDocumentForChoiceConstraintsFromSetFinancialDocument($financialDocument))) {
+        if ('' !== ($financialDocumentChoiceErrorMessage = self::validateFinancialDocumentForChoiceConstraintFromSetFinancialDocument($financialDocument))) {
             throw new InvalidArgumentException($financialDocumentChoiceErrorMessage, __LINE__);
         }
         if (is_null($financialDocument) || (is_array($financialDocument) && empty($financialDocument))) {
@@ -261,16 +262,16 @@ class DocumentDescription extends AbstractStructBase
      */
     public function getDiversDocument(): ?\Pggns\MidocoApi\Documents\StructType\DiversDocument
     {
-        return isset($this->DiversDocument) ? $this->DiversDocument : null;
+        return $this->DiversDocument ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setDiversDocument method
+     * This method is responsible for validating the value(s) passed to the setDiversDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDiversDocument method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateDiversDocumentForChoiceConstraintsFromSetDiversDocument($value): string
+    public function validateDiversDocumentForChoiceConstraintFromSetDiversDocument($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -305,7 +306,7 @@ class DocumentDescription extends AbstractStructBase
     public function setDiversDocument(?\Pggns\MidocoApi\Documents\StructType\DiversDocument $diversDocument = null): self
     {
         // validation for constraint: choice(OrderDocument, CrmDocument, FinancialDocument, DiversDocument)
-        if ('' !== ($diversDocumentChoiceErrorMessage = self::validateDiversDocumentForChoiceConstraintsFromSetDiversDocument($diversDocument))) {
+        if ('' !== ($diversDocumentChoiceErrorMessage = self::validateDiversDocumentForChoiceConstraintFromSetDiversDocument($diversDocument))) {
             throw new InvalidArgumentException($diversDocumentChoiceErrorMessage, __LINE__);
         }
         if (is_null($diversDocument) || (is_array($diversDocument) && empty($diversDocument))) {

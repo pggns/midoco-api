@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GlobalNoticeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GlobalNoticeDTO extends AbstractStructBase
 {
     /**
@@ -89,6 +90,11 @@ class GlobalNoticeDTO extends AbstractStructBase
      */
     protected ?int $noticeId = null;
     /**
+     * The origin
+     * @var int|null
+     */
+    protected ?int $origin = null;
+    /**
      * The priority
      * @var int|null
      */
@@ -120,6 +126,7 @@ class GlobalNoticeDTO extends AbstractStructBase
      * @uses GlobalNoticeDTO::setModifyUser()
      * @uses GlobalNoticeDTO::setNotice()
      * @uses GlobalNoticeDTO::setNoticeId()
+     * @uses GlobalNoticeDTO::setOrigin()
      * @uses GlobalNoticeDTO::setPriority()
      * @uses GlobalNoticeDTO::setStartTime()
      * @uses GlobalNoticeDTO::setTaskType()
@@ -138,11 +145,12 @@ class GlobalNoticeDTO extends AbstractStructBase
      * @param int $modifyUser
      * @param string $notice
      * @param int $noticeId
+     * @param int $origin
      * @param int $priority
      * @param string $startTime
      * @param string $taskType
      */
-    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationUser = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $noticeId = null, ?int $priority = null, ?string $startTime = null, ?string $taskType = null)
+    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationUser = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $noticeId = null, ?int $origin = null, ?int $priority = null, ?string $startTime = null, ?string $taskType = null)
     {
         $this
             ->setAsTask($asTask)
@@ -160,6 +168,7 @@ class GlobalNoticeDTO extends AbstractStructBase
             ->setModifyUser($modifyUser)
             ->setNotice($notice)
             ->setNoticeId($noticeId)
+            ->setOrigin($origin)
             ->setPriority($priority)
             ->setStartTime($startTime)
             ->setTaskType($taskType);
@@ -506,6 +515,29 @@ class GlobalNoticeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($noticeId, true), gettype($noticeId)), __LINE__);
         }
         $this->noticeId = $noticeId;
+        
+        return $this;
+    }
+    /**
+     * Get origin value
+     * @return int|null
+     */
+    public function getOrigin(): ?int
+    {
+        return $this->origin;
+    }
+    /**
+     * Set origin value
+     * @param int $origin
+     * @return \Pggns\MidocoApi\Workflow\StructType\GlobalNoticeDTO
+     */
+    public function setOrigin(?int $origin = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($origin) && !(is_int($origin) || ctype_digit($origin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($origin, true), gettype($origin)), __LINE__);
+        }
+        $this->origin = $origin;
         
         return $this;
     }

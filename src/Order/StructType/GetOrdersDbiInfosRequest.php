@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrdersDbiInfosRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrdersDbiInfosRequest extends AbstractStructBase
 {
     /**
@@ -44,6 +45,21 @@ class GetOrdersDbiInfosRequest extends AbstractStructBase
      */
     protected ?string $dbiArea = null;
     /**
+     * The returnEmptyMandatoryFields
+     * @var bool|null
+     */
+    protected ?bool $returnEmptyMandatoryFields = null;
+    /**
+     * The returnOnlyCustomerAssigned
+     * @var bool|null
+     */
+    protected ?bool $returnOnlyCustomerAssigned = null;
+    /**
+     * The validDate
+     * @var string|null
+     */
+    protected ?string $validDate = null;
+    /**
      * Constructor method for GetOrdersDbiInfosRequest
      * @uses GetOrdersDbiInfosRequest::setDbiInfoType()
      * @uses GetOrdersDbiInfosRequest::setOrderId()
@@ -51,14 +67,20 @@ class GetOrdersDbiInfosRequest extends AbstractStructBase
      * @uses GetOrdersDbiInfosRequest::setPassengerAssignment()
      * @uses GetOrdersDbiInfosRequest::setDbiKey()
      * @uses GetOrdersDbiInfosRequest::setDbiArea()
+     * @uses GetOrdersDbiInfosRequest::setReturnEmptyMandatoryFields()
+     * @uses GetOrdersDbiInfosRequest::setReturnOnlyCustomerAssigned()
+     * @uses GetOrdersDbiInfosRequest::setValidDate()
      * @param string $dbiInfoType
      * @param int $orderId
      * @param int $itemId
      * @param int $passengerAssignment
      * @param string $dbiKey
      * @param string $dbiArea
+     * @param bool $returnEmptyMandatoryFields
+     * @param bool $returnOnlyCustomerAssigned
+     * @param string $validDate
      */
-    public function __construct(?string $dbiInfoType = null, ?int $orderId = null, ?int $itemId = null, ?int $passengerAssignment = null, ?string $dbiKey = null, ?string $dbiArea = null)
+    public function __construct(?string $dbiInfoType = null, ?int $orderId = null, ?int $itemId = null, ?int $passengerAssignment = null, ?string $dbiKey = null, ?string $dbiArea = null, ?bool $returnEmptyMandatoryFields = null, ?bool $returnOnlyCustomerAssigned = null, ?string $validDate = null)
     {
         $this
             ->setDbiInfoType($dbiInfoType)
@@ -66,7 +88,10 @@ class GetOrdersDbiInfosRequest extends AbstractStructBase
             ->setItemId($itemId)
             ->setPassengerAssignment($passengerAssignment)
             ->setDbiKey($dbiKey)
-            ->setDbiArea($dbiArea);
+            ->setDbiArea($dbiArea)
+            ->setReturnEmptyMandatoryFields($returnEmptyMandatoryFields)
+            ->setReturnOnlyCustomerAssigned($returnOnlyCustomerAssigned)
+            ->setValidDate($validDate);
     }
     /**
      * Get dbiInfoType value
@@ -203,6 +228,75 @@ class GetOrdersDbiInfosRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dbiArea, true), gettype($dbiArea)), __LINE__);
         }
         $this->dbiArea = $dbiArea;
+        
+        return $this;
+    }
+    /**
+     * Get returnEmptyMandatoryFields value
+     * @return bool|null
+     */
+    public function getReturnEmptyMandatoryFields(): ?bool
+    {
+        return $this->returnEmptyMandatoryFields;
+    }
+    /**
+     * Set returnEmptyMandatoryFields value
+     * @param bool $returnEmptyMandatoryFields
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersDbiInfosRequest
+     */
+    public function setReturnEmptyMandatoryFields(?bool $returnEmptyMandatoryFields = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($returnEmptyMandatoryFields) && !is_bool($returnEmptyMandatoryFields)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($returnEmptyMandatoryFields, true), gettype($returnEmptyMandatoryFields)), __LINE__);
+        }
+        $this->returnEmptyMandatoryFields = $returnEmptyMandatoryFields;
+        
+        return $this;
+    }
+    /**
+     * Get returnOnlyCustomerAssigned value
+     * @return bool|null
+     */
+    public function getReturnOnlyCustomerAssigned(): ?bool
+    {
+        return $this->returnOnlyCustomerAssigned;
+    }
+    /**
+     * Set returnOnlyCustomerAssigned value
+     * @param bool $returnOnlyCustomerAssigned
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersDbiInfosRequest
+     */
+    public function setReturnOnlyCustomerAssigned(?bool $returnOnlyCustomerAssigned = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($returnOnlyCustomerAssigned) && !is_bool($returnOnlyCustomerAssigned)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($returnOnlyCustomerAssigned, true), gettype($returnOnlyCustomerAssigned)), __LINE__);
+        }
+        $this->returnOnlyCustomerAssigned = $returnOnlyCustomerAssigned;
+        
+        return $this;
+    }
+    /**
+     * Get validDate value
+     * @return string|null
+     */
+    public function getValidDate(): ?string
+    {
+        return $this->validDate;
+    }
+    /**
+     * Set validDate value
+     * @param string $validDate
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrdersDbiInfosRequest
+     */
+    public function setValidDate(?string $validDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($validDate) && !is_string($validDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validDate, true), gettype($validDate)), __LINE__);
+        }
+        $this->validDate = $validDate;
         
         return $this;
     }

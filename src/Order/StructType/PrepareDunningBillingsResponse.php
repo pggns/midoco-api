@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrepareDunningBillingsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrepareDunningBillingsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PrepareDunningBillingsResponse extends AbstractStructBase
         return $this->MidocoBillingDunning;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingDunning method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingDunning method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingDunning method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingDunningForArrayConstraintsFromSetMidocoBillingDunning(?array $values = []): string
+    public static function validateMidocoBillingDunningForArrayConstraintFromSetMidocoBillingDunning(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PrepareDunningBillingsResponse extends AbstractStructBase
     public function setMidocoBillingDunning(?array $midocoBillingDunning = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingDunningArrayErrorMessage = self::validateMidocoBillingDunningForArrayConstraintsFromSetMidocoBillingDunning($midocoBillingDunning))) {
+        if ('' !== ($midocoBillingDunningArrayErrorMessage = self::validateMidocoBillingDunningForArrayConstraintFromSetMidocoBillingDunning($midocoBillingDunning))) {
             throw new InvalidArgumentException($midocoBillingDunningArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingDunning = $midocoBillingDunning;

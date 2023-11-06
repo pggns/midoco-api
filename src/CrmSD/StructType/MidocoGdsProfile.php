@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,22 +11,23 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoGdsProfile StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoGdsProfile extends CustomerProfileDTO
 {
     /**
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
      * The MidocoCustomerProfileAttribute
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCustomerProfileAttribute
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO[]
      */
     protected ?array $MidocoCustomerProfileAttribute = null;
     /**
@@ -35,7 +36,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCustomerLink
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO[]
      */
     protected ?array $MidocoCrmCustomerLink = null;
     /**
@@ -44,7 +45,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFrequentFlyerNumber
-     * @var \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[]
      */
     protected ?array $MidocoFrequentFlyerNumber = null;
     /**
@@ -53,7 +54,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[]
      */
     protected ?array $MidocoCrmAddress = null;
     /**
@@ -62,7 +63,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     protected ?array $MidocoContactEntry = null;
     /**
@@ -73,14 +74,14 @@ class MidocoGdsProfile extends CustomerProfileDTO
      * @uses MidocoGdsProfile::setMidocoFrequentFlyerNumber()
      * @uses MidocoGdsProfile::setMidocoCrmAddress()
      * @uses MidocoGdsProfile::setMidocoContactEntry()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO[] $midocoCustomerProfileAttribute
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
-     * @param \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO[] $midocoCustomerProfileAttribute
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
+     * @param \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoCustomerProfileAttribute = null, ?array $midocoCrmCustomerLink = null, ?array $midocoFrequentFlyerNumber = null, ?array $midocoCrmAddress = null, ?array $midocoContactEntry = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?array $midocoCustomerProfileAttribute = null, ?array $midocoCrmCustomerLink = null, ?array $midocoFrequentFlyerNumber = null, ?array $midocoCrmAddress = null, ?array $midocoContactEntry = null)
     {
         $this
             ->setMidocoCrmCustomer($midocoCrmCustomer)
@@ -92,18 +93,18 @@ class MidocoGdsProfile extends CustomerProfileDTO
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
@@ -111,19 +112,20 @@ class MidocoGdsProfile extends CustomerProfileDTO
     }
     /**
      * Get MidocoCustomerProfileAttribute value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO[]
      */
     public function getMidocoCustomerProfileAttribute(): ?array
     {
         return $this->MidocoCustomerProfileAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerProfileAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerProfileAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerProfileAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerProfileAttributeForArrayConstraintsFromSetMidocoCustomerProfileAttribute(?array $values = []): string
+    public static function validateMidocoCustomerProfileAttributeForArrayConstraintFromSetMidocoCustomerProfileAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -132,12 +134,12 @@ class MidocoGdsProfile extends CustomerProfileDTO
         $invalidValues = [];
         foreach ($values as $midocoGdsProfileMidocoCustomerProfileAttributeItem) {
             // validation for constraint: itemType
-            if (!$midocoGdsProfileMidocoCustomerProfileAttributeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO) {
+            if (!$midocoGdsProfileMidocoCustomerProfileAttributeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO) {
                 $invalidValues[] = is_object($midocoGdsProfileMidocoCustomerProfileAttributeItem) ? get_class($midocoGdsProfileMidocoCustomerProfileAttributeItem) : sprintf('%s(%s)', gettype($midocoGdsProfileMidocoCustomerProfileAttributeItem), var_export($midocoGdsProfileMidocoCustomerProfileAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCustomerProfileAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCustomerProfileAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -146,13 +148,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Set MidocoCustomerProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO[] $midocoCustomerProfileAttribute
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO[] $midocoCustomerProfileAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
     public function setMidocoCustomerProfileAttribute(?array $midocoCustomerProfileAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerProfileAttributeArrayErrorMessage = self::validateMidocoCustomerProfileAttributeForArrayConstraintsFromSetMidocoCustomerProfileAttribute($midocoCustomerProfileAttribute))) {
+        if ('' !== ($midocoCustomerProfileAttributeArrayErrorMessage = self::validateMidocoCustomerProfileAttributeForArrayConstraintFromSetMidocoCustomerProfileAttribute($midocoCustomerProfileAttribute))) {
             throw new InvalidArgumentException($midocoCustomerProfileAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerProfileAttribute = $midocoCustomerProfileAttribute;
@@ -162,14 +164,14 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Add item to MidocoCustomerProfileAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
-    public function addToMidocoCustomerProfileAttribute(\Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO $item): self
+    public function addToMidocoCustomerProfileAttribute(\Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCustomerProfileAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CustProfileAttrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCustomerProfileAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CustProfileAttrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCustomerProfileAttribute[] = $item;
         
@@ -177,19 +179,20 @@ class MidocoGdsProfile extends CustomerProfileDTO
     }
     /**
      * Get MidocoCrmCustomerLink value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO[]
      */
     public function getMidocoCrmCustomerLink(): ?array
     {
         return $this->MidocoCrmCustomerLink;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmCustomerLink method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmCustomerLink method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmCustomerLink method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmCustomerLinkForArrayConstraintsFromSetMidocoCrmCustomerLink(?array $values = []): string
+    public static function validateMidocoCrmCustomerLinkForArrayConstraintFromSetMidocoCrmCustomerLink(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -198,12 +201,12 @@ class MidocoGdsProfile extends CustomerProfileDTO
         $invalidValues = [];
         foreach ($values as $midocoGdsProfileMidocoCrmCustomerLinkItem) {
             // validation for constraint: itemType
-            if (!$midocoGdsProfileMidocoCrmCustomerLinkItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO) {
+            if (!$midocoGdsProfileMidocoCrmCustomerLinkItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO) {
                 $invalidValues[] = is_object($midocoGdsProfileMidocoCrmCustomerLinkItem) ? get_class($midocoGdsProfileMidocoCrmCustomerLinkItem) : sprintf('%s(%s)', gettype($midocoGdsProfileMidocoCrmCustomerLinkItem), var_export($midocoGdsProfileMidocoCrmCustomerLinkItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -212,13 +215,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Set MidocoCrmCustomerLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO[] $midocoCrmCustomerLink
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
     public function setMidocoCrmCustomerLink(?array $midocoCrmCustomerLink = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmCustomerLinkArrayErrorMessage = self::validateMidocoCrmCustomerLinkForArrayConstraintsFromSetMidocoCrmCustomerLink($midocoCrmCustomerLink))) {
+        if ('' !== ($midocoCrmCustomerLinkArrayErrorMessage = self::validateMidocoCrmCustomerLinkForArrayConstraintFromSetMidocoCrmCustomerLink($midocoCrmCustomerLink))) {
             throw new InvalidArgumentException($midocoCrmCustomerLinkArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmCustomerLink = $midocoCrmCustomerLink;
@@ -228,14 +231,14 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Add item to MidocoCrmCustomerLink value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
-    public function addToMidocoCrmCustomerLink(\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO $item): self
+    public function addToMidocoCrmCustomerLink(\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerLinkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCustomerLink property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerLinkDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCustomerLink[] = $item;
         
@@ -243,19 +246,20 @@ class MidocoGdsProfile extends CustomerProfileDTO
     }
     /**
      * Get MidocoFrequentFlyerNumber value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[]
      */
     public function getMidocoFrequentFlyerNumber(): ?array
     {
         return $this->MidocoFrequentFlyerNumber;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFrequentFlyerNumber method
+     * This method is responsible for validating the value(s) passed to the setMidocoFrequentFlyerNumber method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFrequentFlyerNumber method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFrequentFlyerNumberForArrayConstraintsFromSetMidocoFrequentFlyerNumber(?array $values = []): string
+    public static function validateMidocoFrequentFlyerNumberForArrayConstraintFromSetMidocoFrequentFlyerNumber(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -264,12 +268,12 @@ class MidocoGdsProfile extends CustomerProfileDTO
         $invalidValues = [];
         foreach ($values as $midocoGdsProfileMidocoFrequentFlyerNumberItem) {
             // validation for constraint: itemType
-            if (!$midocoGdsProfileMidocoFrequentFlyerNumberItem instanceof \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO) {
+            if (!$midocoGdsProfileMidocoFrequentFlyerNumberItem instanceof \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO) {
                 $invalidValues[] = is_object($midocoGdsProfileMidocoFrequentFlyerNumberItem) ? get_class($midocoGdsProfileMidocoFrequentFlyerNumberItem) : sprintf('%s(%s)', gettype($midocoGdsProfileMidocoFrequentFlyerNumberItem), var_export($midocoGdsProfileMidocoFrequentFlyerNumberItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -278,13 +282,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Set MidocoFrequentFlyerNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
     public function setMidocoFrequentFlyerNumber(?array $midocoFrequentFlyerNumber = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFrequentFlyerNumberArrayErrorMessage = self::validateMidocoFrequentFlyerNumberForArrayConstraintsFromSetMidocoFrequentFlyerNumber($midocoFrequentFlyerNumber))) {
+        if ('' !== ($midocoFrequentFlyerNumberArrayErrorMessage = self::validateMidocoFrequentFlyerNumberForArrayConstraintFromSetMidocoFrequentFlyerNumber($midocoFrequentFlyerNumber))) {
             throw new InvalidArgumentException($midocoFrequentFlyerNumberArrayErrorMessage, __LINE__);
         }
         $this->MidocoFrequentFlyerNumber = $midocoFrequentFlyerNumber;
@@ -294,14 +298,14 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Add item to MidocoFrequentFlyerNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
-    public function addToMidocoFrequentFlyerNumber(\Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO $item): self
+    public function addToMidocoFrequentFlyerNumber(\Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFrequentFlyerNumber[] = $item;
         
@@ -309,19 +313,20 @@ class MidocoGdsProfile extends CustomerProfileDTO
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[]
      */
     public function getMidocoCrmAddress(): ?array
     {
         return $this->MidocoCrmAddress;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmAddress method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmAddress method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmAddress method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmAddressForArrayConstraintsFromSetMidocoCrmAddress(?array $values = []): string
+    public static function validateMidocoCrmAddressForArrayConstraintFromSetMidocoCrmAddress(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -330,12 +335,12 @@ class MidocoGdsProfile extends CustomerProfileDTO
         $invalidValues = [];
         foreach ($values as $midocoGdsProfileMidocoCrmAddressItem) {
             // validation for constraint: itemType
-            if (!$midocoGdsProfileMidocoCrmAddressItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress) {
+            if (!$midocoGdsProfileMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress) {
                 $invalidValues[] = is_object($midocoGdsProfileMidocoCrmAddressItem) ? get_class($midocoGdsProfileMidocoCrmAddressItem) : sprintf('%s(%s)', gettype($midocoGdsProfileMidocoCrmAddressItem), var_export($midocoGdsProfileMidocoCrmAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -344,13 +349,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Set MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
     public function setMidocoCrmAddress(?array $midocoCrmAddress = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmAddressArrayErrorMessage = self::validateMidocoCrmAddressForArrayConstraintsFromSetMidocoCrmAddress($midocoCrmAddress))) {
+        if ('' !== ($midocoCrmAddressArrayErrorMessage = self::validateMidocoCrmAddressForArrayConstraintFromSetMidocoCrmAddress($midocoCrmAddress))) {
             throw new InvalidArgumentException($midocoCrmAddressArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmAddress = $midocoCrmAddress;
@@ -360,14 +365,14 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Add item to MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
-    public function addToMidocoCrmAddress(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $item): self
+    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmAddress[] = $item;
         
@@ -375,19 +380,20 @@ class MidocoGdsProfile extends CustomerProfileDTO
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     public function getMidocoContactEntry(): ?array
     {
         return $this->MidocoContactEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry(?array $values = []): string
+    public static function validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -396,12 +402,12 @@ class MidocoGdsProfile extends CustomerProfileDTO
         $invalidValues = [];
         foreach ($values as $midocoGdsProfileMidocoContactEntryItem) {
             // validation for constraint: itemType
-            if (!$midocoGdsProfileMidocoContactEntryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
+            if (!$midocoGdsProfileMidocoContactEntryItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
                 $invalidValues[] = is_object($midocoGdsProfileMidocoContactEntryItem) ? get_class($midocoGdsProfileMidocoContactEntryItem) : sprintf('%s(%s)', gettype($midocoGdsProfileMidocoContactEntryItem), var_export($midocoGdsProfileMidocoContactEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -410,13 +416,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Set MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry($midocoContactEntry))) {
+        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry($midocoContactEntry))) {
             throw new InvalidArgumentException($midocoContactEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactEntry = $midocoContactEntry;
@@ -426,14 +432,14 @@ class MidocoGdsProfile extends CustomerProfileDTO
     /**
      * Add item to MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGdsProfile
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGdsProfile
      */
-    public function addToMidocoContactEntry(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item): self
+    public function addToMidocoContactEntry(\Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntry[] = $item;
         

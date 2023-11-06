@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExecuteAgencySettlementResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExecuteAgencySettlementResponse extends AbstractStructBase
 {
     /**
@@ -87,12 +88,13 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
         return $this->Error;
     }
     /**
-     * This method is responsible for validating the values passed to the setError method
+     * This method is responsible for validating the value(s) passed to the setError method
      * This method is willingly generated in order to preserve the one-line inline validation within the setError method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateErrorForArrayConstraintsFromSetError(?array $values = []): string
+    public static function validateErrorForArrayConstraintFromSetError(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -121,7 +123,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     public function setError(?array $error = null): self
     {
         // validation for constraint: array
-        if ('' !== ($errorArrayErrorMessage = self::validateErrorForArrayConstraintsFromSetError($error))) {
+        if ('' !== ($errorArrayErrorMessage = self::validateErrorForArrayConstraintFromSetError($error))) {
             throw new InvalidArgumentException($errorArrayErrorMessage, __LINE__);
         }
         $this->Error = $error;
@@ -153,12 +155,13 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
         return $this->tempRepositoryIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setTempRepositoryIds method
+     * This method is responsible for validating the value(s) passed to the setTempRepositoryIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTempRepositoryIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTempRepositoryIdsForArrayConstraintsFromSetTempRepositoryIds(?array $values = []): string
+    public static function validateTempRepositoryIdsForArrayConstraintFromSetTempRepositoryIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -187,7 +190,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     public function setTempRepositoryIds(?array $tempRepositoryIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($tempRepositoryIdsArrayErrorMessage = self::validateTempRepositoryIdsForArrayConstraintsFromSetTempRepositoryIds($tempRepositoryIds))) {
+        if ('' !== ($tempRepositoryIdsArrayErrorMessage = self::validateTempRepositoryIdsForArrayConstraintFromSetTempRepositoryIds($tempRepositoryIds))) {
             throw new InvalidArgumentException($tempRepositoryIdsArrayErrorMessage, __LINE__);
         }
         $this->tempRepositoryIds = $tempRepositoryIds;
@@ -219,12 +222,13 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
         return $this->printJobIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintJobIds method
+     * This method is responsible for validating the value(s) passed to the setPrintJobIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintJobIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintJobIdsForArrayConstraintsFromSetPrintJobIds(?array $values = []): string
+    public static function validatePrintJobIdsForArrayConstraintFromSetPrintJobIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -253,7 +257,7 @@ class ExecuteAgencySettlementResponse extends AbstractStructBase
     public function setPrintJobIds(?array $printJobIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printJobIdsArrayErrorMessage = self::validatePrintJobIdsForArrayConstraintsFromSetPrintJobIds($printJobIds))) {
+        if ('' !== ($printJobIdsArrayErrorMessage = self::validatePrintJobIdsForArrayConstraintFromSetPrintJobIds($printJobIds))) {
             throw new InvalidArgumentException($printJobIdsArrayErrorMessage, __LINE__);
         }
         $this->printJobIds = $printJobIds;

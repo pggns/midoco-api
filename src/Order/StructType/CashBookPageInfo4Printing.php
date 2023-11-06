@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CashBookPageInfo4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CashBookPageInfo4Printing extends AbstractStructBase
 {
     /**
@@ -260,12 +261,13 @@ class CashBookPageInfo4Printing extends AbstractStructBase
         return $this->CashBookLineInfo4Printing;
     }
     /**
-     * This method is responsible for validating the values passed to the setCashBookLineInfo4Printing method
+     * This method is responsible for validating the value(s) passed to the setCashBookLineInfo4Printing method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCashBookLineInfo4Printing method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCashBookLineInfo4PrintingForArrayConstraintsFromSetCashBookLineInfo4Printing(?array $values = []): string
+    public static function validateCashBookLineInfo4PrintingForArrayConstraintFromSetCashBookLineInfo4Printing(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -294,7 +296,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     public function setCashBookLineInfo4Printing(?array $cashBookLineInfo4Printing = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cashBookLineInfo4PrintingArrayErrorMessage = self::validateCashBookLineInfo4PrintingForArrayConstraintsFromSetCashBookLineInfo4Printing($cashBookLineInfo4Printing))) {
+        if ('' !== ($cashBookLineInfo4PrintingArrayErrorMessage = self::validateCashBookLineInfo4PrintingForArrayConstraintFromSetCashBookLineInfo4Printing($cashBookLineInfo4Printing))) {
             throw new InvalidArgumentException($cashBookLineInfo4PrintingArrayErrorMessage, __LINE__);
         }
         $this->CashBookLineInfo4Printing = $cashBookLineInfo4Printing;
@@ -326,12 +328,13 @@ class CashBookPageInfo4Printing extends AbstractStructBase
         return $this->CashBookReceiptPosition4Printing;
     }
     /**
-     * This method is responsible for validating the values passed to the setCashBookReceiptPosition4Printing method
+     * This method is responsible for validating the value(s) passed to the setCashBookReceiptPosition4Printing method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCashBookReceiptPosition4Printing method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCashBookReceiptPosition4PrintingForArrayConstraintsFromSetCashBookReceiptPosition4Printing(?array $values = []): string
+    public static function validateCashBookReceiptPosition4PrintingForArrayConstraintFromSetCashBookReceiptPosition4Printing(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -360,7 +363,7 @@ class CashBookPageInfo4Printing extends AbstractStructBase
     public function setCashBookReceiptPosition4Printing(?array $cashBookReceiptPosition4Printing = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cashBookReceiptPosition4PrintingArrayErrorMessage = self::validateCashBookReceiptPosition4PrintingForArrayConstraintsFromSetCashBookReceiptPosition4Printing($cashBookReceiptPosition4Printing))) {
+        if ('' !== ($cashBookReceiptPosition4PrintingArrayErrorMessage = self::validateCashBookReceiptPosition4PrintingForArrayConstraintFromSetCashBookReceiptPosition4Printing($cashBookReceiptPosition4Printing))) {
             throw new InvalidArgumentException($cashBookReceiptPosition4PrintingArrayErrorMessage, __LINE__);
         }
         $this->CashBookReceiptPosition4Printing = $cashBookReceiptPosition4Printing;

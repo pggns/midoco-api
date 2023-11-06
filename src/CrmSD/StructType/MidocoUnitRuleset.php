@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoUnitRuleset StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoUnitRuleset extends UnitRulesetDTO
 {
     /**
@@ -63,7 +64,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset
      */
     public function setInherited(?bool $inherited = null): self
     {
@@ -86,7 +87,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -109,7 +110,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset
      */
     public function setDescription(?string $description = null): self
     {
@@ -132,7 +133,7 @@ class MidocoUnitRuleset extends UnitRulesetDTO
     /**
      * Set modifyDate value
      * @param string $modifyDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset
      */
     public function setModifyDate(?string $modifyDate = null): self
     {

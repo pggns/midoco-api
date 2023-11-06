@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisReportDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisReportDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set cubeId value
      * @param int $cubeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisReportDTO
      */
     public function setCubeId(?int $cubeId = null): self
     {
@@ -110,7 +111,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set definition value
      * @param string $definition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisReportDTO
      */
     public function setDefinition(?string $definition = null): self
     {
@@ -133,7 +134,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisReportDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -156,7 +157,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisReportDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -179,7 +180,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisReportDTO
      */
     public function setReportId(?int $reportId = null): self
     {
@@ -202,7 +203,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set reportName value
      * @param string $reportName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisReportDTO
      */
     public function setReportName(?string $reportName = null): self
     {
@@ -225,7 +226,7 @@ class MisReportDTO extends AbstractStructBase
     /**
      * Set visibility value
      * @param int $visibility
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisReportDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisReportDTO
      */
     public function setVisibility(?int $visibility = null): self
     {

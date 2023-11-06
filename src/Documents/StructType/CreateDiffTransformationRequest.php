@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateDiffTransformationRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateDiffTransformationRequest extends AbstractStructBase
 {
     /**

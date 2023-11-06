@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CalculateSubjectResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CalculateSubjectResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class CalculateSubjectResponse extends AbstractStructBase
     /**
      * Set berechnetesSubject value
      * @param string $berechnetesSubject
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CalculateSubjectResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CalculateSubjectResponse
      */
     public function setBerechnetesSubject(?string $berechnetesSubject = null): self
     {

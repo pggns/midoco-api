@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,39 +13,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: lists the complaint states
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetComplaintStatesRequest extends AbstractStructBase
 {
     /**
      * The MidocoComplaintId
      * Meta information extracted from the WSDL
      * - ref: MidocoComplaintId
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO $MidocoComplaintId = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO $MidocoComplaintId = null;
     /**
      * Constructor method for GetComplaintStatesRequest
      * @uses GetComplaintStatesRequest::setMidocoComplaintId()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO $midocoComplaintId
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO $midocoComplaintId
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO $midocoComplaintId = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO $midocoComplaintId = null)
     {
         $this
             ->setMidocoComplaintId($midocoComplaintId);
     }
     /**
      * Get MidocoComplaintId value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO|null
      */
-    public function getMidocoComplaintId(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO
+    public function getMidocoComplaintId(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO
     {
         return $this->MidocoComplaintId;
     }
     /**
      * Set MidocoComplaintId value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO $midocoComplaintId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetComplaintStatesRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO $midocoComplaintId
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetComplaintStatesRequest
      */
-    public function setMidocoComplaintId(?\Pggns\MidocoApi\CrmSD\StructType\MidocoComplaintIdDTO $midocoComplaintId = null): self
+    public function setMidocoComplaintId(?\Pggns\MidocoApi\Crmsd\StructType\MidocoComplaintIdDTO $midocoComplaintId = null): self
     {
         $this->MidocoComplaintId = $midocoComplaintId;
         

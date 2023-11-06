@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveAndAssignSignatureDocRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveAndAssignSignatureDocRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SaveAndAssignSignatureDocRequest extends AbstractStructBase
         return $this->MidocoSignatureDoc;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSignatureDoc method
+     * This method is responsible for validating the value(s) passed to the setMidocoSignatureDoc method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSignatureDoc method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSignatureDocForArrayConstraintsFromSetMidocoSignatureDoc(?array $values = []): string
+    public static function validateMidocoSignatureDocForArrayConstraintFromSetMidocoSignatureDoc(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SaveAndAssignSignatureDocRequest extends AbstractStructBase
     public function setMidocoSignatureDoc(?array $midocoSignatureDoc = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSignatureDocArrayErrorMessage = self::validateMidocoSignatureDocForArrayConstraintsFromSetMidocoSignatureDoc($midocoSignatureDoc))) {
+        if ('' !== ($midocoSignatureDocArrayErrorMessage = self::validateMidocoSignatureDocForArrayConstraintFromSetMidocoSignatureDoc($midocoSignatureDoc))) {
             throw new InvalidArgumentException($midocoSignatureDocArrayErrorMessage, __LINE__);
         }
         $this->MidocoSignatureDoc = $midocoSignatureDoc;

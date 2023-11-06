@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteMidocoMandateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMidocoMandateRequest extends AbstractStructBase
 {
     /**
@@ -61,7 +62,7 @@ class DeleteMidocoMandateRequest extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoMandateRequest
      */
     public function setMandateId(?int $mandateId = null): self
     {
@@ -84,7 +85,7 @@ class DeleteMidocoMandateRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoMandateRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -107,7 +108,7 @@ class DeleteMidocoMandateRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoMandateRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

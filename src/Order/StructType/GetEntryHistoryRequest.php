@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetEntryHistoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetEntryHistoryRequest extends AbstractStructBase
 {
     /**
@@ -65,12 +66,13 @@ class GetEntryHistoryRequest extends AbstractStructBase
         return $this->EntryCriteria;
     }
     /**
-     * This method is responsible for validating the values passed to the setEntryCriteria method
+     * This method is responsible for validating the value(s) passed to the setEntryCriteria method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEntryCriteria method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEntryCriteriaForArrayConstraintsFromSetEntryCriteria(?array $values = []): string
+    public static function validateEntryCriteriaForArrayConstraintFromSetEntryCriteria(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,7 +101,7 @@ class GetEntryHistoryRequest extends AbstractStructBase
     public function setEntryCriteria(?array $entryCriteria = null): self
     {
         // validation for constraint: array
-        if ('' !== ($entryCriteriaArrayErrorMessage = self::validateEntryCriteriaForArrayConstraintsFromSetEntryCriteria($entryCriteria))) {
+        if ('' !== ($entryCriteriaArrayErrorMessage = self::validateEntryCriteriaForArrayConstraintFromSetEntryCriteria($entryCriteria))) {
             throw new InvalidArgumentException($entryCriteriaArrayErrorMessage, __LINE__);
         }
         $this->EntryCriteria = $entryCriteria;

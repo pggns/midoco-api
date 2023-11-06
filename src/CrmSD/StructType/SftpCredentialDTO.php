@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SftpCredentialDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SftpCredentialDTO extends AbstractStructBase
 {
     /**
@@ -95,7 +96,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -118,7 +119,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set emailText value
      * @param string $emailText
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setEmailText(?string $emailText = null): self
     {
@@ -141,7 +142,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set folder value
      * @param string $folder
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setFolder(?string $folder = null): self
     {
@@ -164,7 +165,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setLogin(?string $login = null): self
     {
@@ -187,7 +188,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setPassword(?string $password = null): self
     {
@@ -210,7 +211,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set sftpCredentialName value
      * @param string $sftpCredentialName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setSftpCredentialName(?string $sftpCredentialName = null): self
     {
@@ -233,7 +234,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -256,7 +257,7 @@ class SftpCredentialDTO extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SftpCredentialDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SftpCredentialDTO
      */
     public function setUrl(?string $url = null): self
     {

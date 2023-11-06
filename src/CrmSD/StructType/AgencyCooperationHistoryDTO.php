@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AgencyCooperationHistoryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AgencyCooperationHistoryDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCooperationHistoryDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -102,7 +103,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set creatingUser value
      * @param int $creatingUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCooperationHistoryDTO
      */
     public function setCreatingUser(?int $creatingUser = null): self
     {
@@ -125,7 +126,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCooperationHistoryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -148,7 +149,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set dateCreated value
      * @param string $dateCreated
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCooperationHistoryDTO
      */
     public function setDateCreated(?string $dateCreated = null): self
     {
@@ -171,7 +172,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCooperationHistoryDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -194,7 +195,7 @@ class AgencyCooperationHistoryDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCooperationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCooperationHistoryDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

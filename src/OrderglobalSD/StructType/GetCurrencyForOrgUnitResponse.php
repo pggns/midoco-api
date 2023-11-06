@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCurrencyForOrgUnit --- returns the currency for the given org unit name
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCurrencyForOrgUnitResponse extends AbstractStructBase
 {
     /**

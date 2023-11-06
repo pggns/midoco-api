@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteSalutationType --- deletes a salutation type. returns void
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteSalutationTypeResponse extends AbstractStructBase
 {
 }

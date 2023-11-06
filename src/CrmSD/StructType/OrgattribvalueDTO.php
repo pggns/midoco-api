@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgattribvalueDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgattribvalueDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class OrgattribvalueDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgattribvalueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgattribvalueDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +79,7 @@ class OrgattribvalueDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgattribvalueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgattribvalueDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -101,7 +102,7 @@ class OrgattribvalueDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgattribvalueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgattribvalueDTO
      */
     public function setValue(?string $value = null): self
     {

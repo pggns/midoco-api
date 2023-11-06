@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for genericServiceType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GenericServiceType extends AbstractStructBase
 {
     /**
@@ -43,6 +44,14 @@ class GenericServiceType extends AbstractStructBase
      */
     protected ?string $accomodation = null;
     /**
+     * The accomodationDescription
+     * Meta information extracted from the WSDL
+     * - documentation: Description of the accomodation in case of an accomodation (e.g. double room, shower, balcony etc.)
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $accomodationDescription = null;
+    /**
      * The catering
      * Meta information extracted from the WSDL
      * - documentation: special catering field used by some tour operators in the STADIS format
@@ -50,6 +59,14 @@ class GenericServiceType extends AbstractStructBase
      * @var string|null
      */
     protected ?string $catering = null;
+    /**
+     * The cateringDescription
+     * Meta information extracted from the WSDL
+     * - documentation: Description of the catering (e.g. breakfast, half board, all inclusiv, etc.)
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $cateringDescription = null;
     /**
      * The personsPerService
      * Meta information extracted from the WSDL
@@ -160,7 +177,9 @@ class GenericServiceType extends AbstractStructBase
      * @uses GenericServiceType::setServiceCode()
      * @uses GenericServiceType::setServiceName()
      * @uses GenericServiceType::setAccomodation()
+     * @uses GenericServiceType::setAccomodationDescription()
      * @uses GenericServiceType::setCatering()
+     * @uses GenericServiceType::setCateringDescription()
      * @uses GenericServiceType::setPersonsPerService()
      * @uses GenericServiceType::setNoOfServices()
      * @uses GenericServiceType::setStartDate()
@@ -178,7 +197,9 @@ class GenericServiceType extends AbstractStructBase
      * @param string $serviceCode
      * @param string $serviceName
      * @param string $accomodation
+     * @param string $accomodationDescription
      * @param string $catering
+     * @param string $cateringDescription
      * @param string $personsPerService
      * @param string $noOfServices
      * @param string $startDate
@@ -193,14 +214,16 @@ class GenericServiceType extends AbstractStructBase
      * @param string $arrivalTime
      * @param bool $simpleService
      */
-    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $accomodation = null, ?string $catering = null, ?string $personsPerService = null, ?string $noOfServices = null, ?string $startDate = null, ?string $endDate = null, ?string $personAssignment = null, ?string $serviceStatus = null, ?float $servicePrice = null, ?string $serviceCurrency = 'EUR', ?string $serviceDescription = null, ?string $locationDescription = null, ?string $departureTime = null, ?string $arrivalTime = null, ?bool $simpleService = false)
+    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $accomodation = null, ?string $accomodationDescription = null, ?string $catering = null, ?string $cateringDescription = null, ?string $personsPerService = null, ?string $noOfServices = null, ?string $startDate = null, ?string $endDate = null, ?string $personAssignment = null, ?string $serviceStatus = null, ?float $servicePrice = null, ?string $serviceCurrency = 'EUR', ?string $serviceDescription = null, ?string $locationDescription = null, ?string $departureTime = null, ?string $arrivalTime = null, ?bool $simpleService = false)
     {
         $this
             ->setPosition($position)
             ->setServiceCode($serviceCode)
             ->setServiceName($serviceName)
             ->setAccomodation($accomodation)
+            ->setAccomodationDescription($accomodationDescription)
             ->setCatering($catering)
+            ->setCateringDescription($cateringDescription)
             ->setPersonsPerService($personsPerService)
             ->setNoOfServices($noOfServices)
             ->setStartDate($startDate)
@@ -308,6 +331,29 @@ class GenericServiceType extends AbstractStructBase
         return $this;
     }
     /**
+     * Get accomodationDescription value
+     * @return string|null
+     */
+    public function getAccomodationDescription(): ?string
+    {
+        return $this->accomodationDescription;
+    }
+    /**
+     * Set accomodationDescription value
+     * @param string $accomodationDescription
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
+     */
+    public function setAccomodationDescription(?string $accomodationDescription = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($accomodationDescription) && !is_string($accomodationDescription)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($accomodationDescription, true), gettype($accomodationDescription)), __LINE__);
+        }
+        $this->accomodationDescription = $accomodationDescription;
+        
+        return $this;
+    }
+    /**
      * Get catering value
      * @return string|null
      */
@@ -327,6 +373,29 @@ class GenericServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($catering, true), gettype($catering)), __LINE__);
         }
         $this->catering = $catering;
+        
+        return $this;
+    }
+    /**
+     * Get cateringDescription value
+     * @return string|null
+     */
+    public function getCateringDescription(): ?string
+    {
+        return $this->cateringDescription;
+    }
+    /**
+     * Set cateringDescription value
+     * @param string $cateringDescription
+     * @return \Pggns\MidocoApi\Booking\StructType\GenericServiceType
+     */
+    public function setCateringDescription(?string $cateringDescription = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($cateringDescription) && !is_string($cateringDescription)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cateringDescription, true), gettype($cateringDescription)), __LINE__);
+        }
+        $this->cateringDescription = $cateringDescription;
         
         return $this;
     }
@@ -396,7 +465,7 @@ class GenericServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($startDate, true), gettype($startDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($startDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $startDate)) {
+        if (!is_null($startDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $startDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($startDate, true)), __LINE__);
         }
         $this->startDate = $startDate;
@@ -423,7 +492,7 @@ class GenericServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($endDate, true), gettype($endDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($endDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $endDate)) {
+        if (!is_null($endDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $endDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($endDate, true)), __LINE__);
         }
         $this->endDate = $endDate;
@@ -588,7 +657,7 @@ class GenericServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($departureTime, true), gettype($departureTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($departureTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $departureTime)) {
+        if (!is_null($departureTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $departureTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($departureTime, true)), __LINE__);
         }
         $this->departureTime = $departureTime;
@@ -615,7 +684,7 @@ class GenericServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($arrivalTime, true), gettype($arrivalTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($arrivalTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $arrivalTime)) {
+        if (!is_null($arrivalTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $arrivalTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($arrivalTime, true)), __LINE__);
         }
         $this->arrivalTime = $arrivalTime;

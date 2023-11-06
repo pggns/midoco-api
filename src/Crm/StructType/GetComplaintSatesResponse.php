@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetComplaintSatesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetComplaintSatesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetComplaintSatesResponse extends AbstractStructBase
         return $this->MidocoComplaintState;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoComplaintState method
+     * This method is responsible for validating the value(s) passed to the setMidocoComplaintState method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoComplaintState method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoComplaintStateForArrayConstraintsFromSetMidocoComplaintState(?array $values = []): string
+    public static function validateMidocoComplaintStateForArrayConstraintFromSetMidocoComplaintState(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetComplaintSatesResponse extends AbstractStructBase
     public function setMidocoComplaintState(?array $midocoComplaintState = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoComplaintStateArrayErrorMessage = self::validateMidocoComplaintStateForArrayConstraintsFromSetMidocoComplaintState($midocoComplaintState))) {
+        if ('' !== ($midocoComplaintStateArrayErrorMessage = self::validateMidocoComplaintStateForArrayConstraintFromSetMidocoComplaintState($midocoComplaintState))) {
             throw new InvalidArgumentException($midocoComplaintStateArrayErrorMessage, __LINE__);
         }
         $this->MidocoComplaintState = $midocoComplaintState;

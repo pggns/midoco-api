@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,39 +13,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: GetCrmMidocoSettlLevel --- returns the Midoco settlement levels defined for the given level id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmMidocoSettlLevelResponse extends AbstractStructBase
 {
     /**
      * The MidocoCrmMidocoSettlLevel
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmMidocoSettlLevel
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO $MidocoCrmMidocoSettlLevel = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO $MidocoCrmMidocoSettlLevel = null;
     /**
      * Constructor method for GetCrmMidocoSettlLevelResponse
      * @uses GetCrmMidocoSettlLevelResponse::setMidocoCrmMidocoSettlLevel()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel = null)
     {
         $this
             ->setMidocoCrmMidocoSettlLevel($midocoCrmMidocoSettlLevel);
     }
     /**
      * Get MidocoCrmMidocoSettlLevel value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO|null
      */
-    public function getMidocoCrmMidocoSettlLevel(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO
+    public function getMidocoCrmMidocoSettlLevel(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO
     {
         return $this->MidocoCrmMidocoSettlLevel;
     }
     /**
      * Set MidocoCrmMidocoSettlLevel value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmMidocoSettlLevelResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmMidocoSettlLevelResponse
      */
-    public function setMidocoCrmMidocoSettlLevel(?\Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel = null): self
+    public function setMidocoCrmMidocoSettlLevel(?\Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO $midocoCrmMidocoSettlLevel = null): self
     {
         $this->MidocoCrmMidocoSettlLevel = $midocoCrmMidocoSettlLevel;
         

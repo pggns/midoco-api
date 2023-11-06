@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrgTemplateTextFooterResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrgTemplateTextFooterResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetOrgTemplateTextFooterResponse extends AbstractStructBase
     /**
      * Set textFooter value
      * @param string $textFooter
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrgTemplateTextFooterResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrgTemplateTextFooterResponse
      */
     public function setTextFooter(?string $textFooter = null): self
     {

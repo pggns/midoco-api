@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoQueryCriteria StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoQueryCriteria extends AbstractStructBase
 {
     /**
@@ -27,6 +28,11 @@ class MidocoQueryCriteria extends AbstractStructBase
      */
     protected ?string $fieldName = null;
     /**
+     * The compareWithField
+     * @var bool|null
+     */
+    protected ?bool $compareWithField = null;
+    /**
      * The opName
      * @var string|null
      */
@@ -37,23 +43,34 @@ class MidocoQueryCriteria extends AbstractStructBase
      */
     protected ?bool $visible = null;
     /**
+     * The isCaseInsensitive
+     * @var bool|null
+     */
+    protected ?bool $isCaseInsensitive = null;
+    /**
      * Constructor method for MidocoQueryCriteria
      * @uses MidocoQueryCriteria::setValue()
      * @uses MidocoQueryCriteria::setFieldName()
+     * @uses MidocoQueryCriteria::setCompareWithField()
      * @uses MidocoQueryCriteria::setOpName()
      * @uses MidocoQueryCriteria::setVisible()
+     * @uses MidocoQueryCriteria::setIsCaseInsensitive()
      * @param string[] $value
      * @param string $fieldName
+     * @param bool $compareWithField
      * @param string $opName
      * @param bool $visible
+     * @param bool $isCaseInsensitive
      */
-    public function __construct(?array $value = null, ?string $fieldName = null, ?string $opName = null, ?bool $visible = null)
+    public function __construct(?array $value = null, ?string $fieldName = null, ?bool $compareWithField = null, ?string $opName = null, ?bool $visible = null, ?bool $isCaseInsensitive = null)
     {
         $this
             ->setValue($value)
             ->setFieldName($fieldName)
+            ->setCompareWithField($compareWithField)
             ->setOpName($opName)
-            ->setVisible($visible);
+            ->setVisible($visible)
+            ->setIsCaseInsensitive($isCaseInsensitive);
     }
     /**
      * Get value value
@@ -64,12 +81,13 @@ class MidocoQueryCriteria extends AbstractStructBase
         return $this->value;
     }
     /**
-     * This method is responsible for validating the values passed to the setValue method
+     * This method is responsible for validating the value(s) passed to the setValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateValueForArrayConstraintsFromSetValue(?array $values = []): string
+    public static function validateValueForArrayConstraintFromSetValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -98,7 +116,7 @@ class MidocoQueryCriteria extends AbstractStructBase
     public function setValue(?array $value = null): self
     {
         // validation for constraint: array
-        if ('' !== ($valueArrayErrorMessage = self::validateValueForArrayConstraintsFromSetValue($value))) {
+        if ('' !== ($valueArrayErrorMessage = self::validateValueForArrayConstraintFromSetValue($value))) {
             throw new InvalidArgumentException($valueArrayErrorMessage, __LINE__);
         }
         $this->value = $value;
@@ -145,6 +163,29 @@ class MidocoQueryCriteria extends AbstractStructBase
         return $this;
     }
     /**
+     * Get compareWithField value
+     * @return bool|null
+     */
+    public function getCompareWithField(): ?bool
+    {
+        return $this->compareWithField;
+    }
+    /**
+     * Set compareWithField value
+     * @param bool $compareWithField
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteria
+     */
+    public function setCompareWithField(?bool $compareWithField = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($compareWithField) && !is_bool($compareWithField)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($compareWithField, true), gettype($compareWithField)), __LINE__);
+        }
+        $this->compareWithField = $compareWithField;
+        
+        return $this;
+    }
+    /**
      * Get opName value
      * @return string|null
      */
@@ -187,6 +228,29 @@ class MidocoQueryCriteria extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($visible, true), gettype($visible)), __LINE__);
         }
         $this->visible = $visible;
+        
+        return $this;
+    }
+    /**
+     * Get isCaseInsensitive value
+     * @return bool|null
+     */
+    public function getIsCaseInsensitive(): ?bool
+    {
+        return $this->isCaseInsensitive;
+    }
+    /**
+     * Set isCaseInsensitive value
+     * @param bool $isCaseInsensitive
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoQueryCriteria
+     */
+    public function setIsCaseInsensitive(?bool $isCaseInsensitive = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isCaseInsensitive) && !is_bool($isCaseInsensitive)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isCaseInsensitive, true), gettype($isCaseInsensitive)), __LINE__);
+        }
+        $this->isCaseInsensitive = $isCaseInsensitive;
         
         return $this;
     }

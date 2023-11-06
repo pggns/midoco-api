@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for StatistikAtDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class StatistikAtDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class StatistikAtDTO extends AbstractStructBase
     /**
      * Set fileIndex value
      * @param int $fileIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtDTO
      */
     public function setFileIndex(?int $fileIndex = null): self
     {
@@ -86,7 +87,7 @@ class StatistikAtDTO extends AbstractStructBase
     /**
      * Set importDate value
      * @param string $importDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtDTO
      */
     public function setImportDate(?string $importDate = null): self
     {
@@ -109,7 +110,7 @@ class StatistikAtDTO extends AbstractStructBase
     /**
      * Set importId value
      * @param int $importId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtDTO
      */
     public function setImportId(?int $importId = null): self
     {
@@ -132,7 +133,7 @@ class StatistikAtDTO extends AbstractStructBase
     /**
      * Set importIndex value
      * @param int $importIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtDTO
      */
     public function setImportIndex(?int $importIndex = null): self
     {

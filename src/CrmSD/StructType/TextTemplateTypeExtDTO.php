@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TextTemplateTypeExtDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TextTemplateTypeExtDTO extends TextTemplateTypeDTO
 {
     /**
@@ -39,7 +40,7 @@ class TextTemplateTypeExtDTO extends TextTemplateTypeDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

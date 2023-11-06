@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoImportAttribute StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoImportAttribute extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class MidocoImportAttribute extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAttribute
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -78,7 +79,7 @@ class MidocoImportAttribute extends AbstractStructBase
     /**
      * Set attributeTyp value
      * @param string $attributeTyp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAttribute
      */
     public function setAttributeTyp(?string $attributeTyp = null): self
     {
@@ -101,7 +102,7 @@ class MidocoImportAttribute extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportAttribute
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetYearlyTurnoverResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetYearlyTurnoverResponse extends AbstractStructBase
 {
     /**
@@ -24,7 +25,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoYearlyTurnover
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover[]
      */
     protected ?array $MidocoYearlyTurnover = null;
     /**
@@ -44,7 +45,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
      * @uses GetYearlyTurnoverResponse::setLastTravelDate()
      * @uses GetYearlyTurnoverResponse::setLastSalesAmount()
      * @param int $customerId
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
      * @param string $lastTravelDate
      * @param float $lastSalesAmount
      */
@@ -67,7 +68,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetYearlyTurnoverResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetYearlyTurnoverResponse
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -81,19 +82,20 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     }
     /**
      * Get MidocoYearlyTurnover value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover[]
      */
     public function getMidocoYearlyTurnover(): ?array
     {
         return $this->MidocoYearlyTurnover;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoYearlyTurnover method
+     * This method is responsible for validating the value(s) passed to the setMidocoYearlyTurnover method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoYearlyTurnover method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoYearlyTurnoverForArrayConstraintsFromSetMidocoYearlyTurnover(?array $values = []): string
+    public static function validateMidocoYearlyTurnoverForArrayConstraintFromSetMidocoYearlyTurnover(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -102,12 +104,12 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getYearlyTurnoverResponseMidocoYearlyTurnoverItem) {
             // validation for constraint: itemType
-            if (!$getYearlyTurnoverResponseMidocoYearlyTurnoverItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover) {
+            if (!$getYearlyTurnoverResponseMidocoYearlyTurnoverItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover) {
                 $invalidValues[] = is_object($getYearlyTurnoverResponseMidocoYearlyTurnoverItem) ? get_class($getYearlyTurnoverResponseMidocoYearlyTurnoverItem) : sprintf('%s(%s)', gettype($getYearlyTurnoverResponseMidocoYearlyTurnoverItem), var_export($getYearlyTurnoverResponseMidocoYearlyTurnoverItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -116,13 +118,13 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set MidocoYearlyTurnover value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetYearlyTurnoverResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover[] $midocoYearlyTurnover
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetYearlyTurnoverResponse
      */
     public function setMidocoYearlyTurnover(?array $midocoYearlyTurnover = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoYearlyTurnoverArrayErrorMessage = self::validateMidocoYearlyTurnoverForArrayConstraintsFromSetMidocoYearlyTurnover($midocoYearlyTurnover))) {
+        if ('' !== ($midocoYearlyTurnoverArrayErrorMessage = self::validateMidocoYearlyTurnoverForArrayConstraintFromSetMidocoYearlyTurnover($midocoYearlyTurnover))) {
             throw new InvalidArgumentException($midocoYearlyTurnoverArrayErrorMessage, __LINE__);
         }
         $this->MidocoYearlyTurnover = $midocoYearlyTurnover;
@@ -132,14 +134,14 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Add item to MidocoYearlyTurnover value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetYearlyTurnoverResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetYearlyTurnoverResponse
      */
-    public function addToMidocoYearlyTurnover(\Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover $item): self
+    public function addToMidocoYearlyTurnover(\Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover) {
-            throw new InvalidArgumentException(sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoYearlyTurnover, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover) {
+            throw new InvalidArgumentException(sprintf('The MidocoYearlyTurnover property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoYearlyTurnover, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoYearlyTurnover[] = $item;
         
@@ -156,7 +158,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set lastTravelDate value
      * @param string $lastTravelDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetYearlyTurnoverResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetYearlyTurnoverResponse
      */
     public function setLastTravelDate(?string $lastTravelDate = null): self
     {
@@ -179,7 +181,7 @@ class GetYearlyTurnoverResponse extends AbstractStructBase
     /**
      * Set lastSalesAmount value
      * @param float $lastSalesAmount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetYearlyTurnoverResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetYearlyTurnoverResponse
      */
     public function setLastSalesAmount(?float $lastSalesAmount = null): self
     {

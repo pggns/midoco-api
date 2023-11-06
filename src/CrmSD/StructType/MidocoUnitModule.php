@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoUnitModule StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoUnitModule extends UnitModuleDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoUnitModule extends UnitModuleDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitModule
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitModule
      */
     public function setInherited(?bool $inherited = null): self
     {

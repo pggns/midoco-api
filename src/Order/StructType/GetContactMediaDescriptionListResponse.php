@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetContactMediaDescriptionListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetContactMediaDescriptionListResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetContactMediaDescriptionListResponse extends AbstractStructBase
         return $this->MidocoContactMediaDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactMediaDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactMediaDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactMediaDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactMediaDescriptionForArrayConstraintsFromSetMidocoContactMediaDescription(?array $values = []): string
+    public static function validateMidocoContactMediaDescriptionForArrayConstraintFromSetMidocoContactMediaDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetContactMediaDescriptionListResponse extends AbstractStructBase
     public function setMidocoContactMediaDescription(?array $midocoContactMediaDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactMediaDescriptionArrayErrorMessage = self::validateMidocoContactMediaDescriptionForArrayConstraintsFromSetMidocoContactMediaDescription($midocoContactMediaDescription))) {
+        if ('' !== ($midocoContactMediaDescriptionArrayErrorMessage = self::validateMidocoContactMediaDescriptionForArrayConstraintFromSetMidocoContactMediaDescription($midocoContactMediaDescription))) {
             throw new InvalidArgumentException($midocoContactMediaDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactMediaDescription = $midocoContactMediaDescription;

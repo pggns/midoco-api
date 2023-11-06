@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUsedVolumeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUsedVolumeRequest extends AbstractStructBase
 {
     /**

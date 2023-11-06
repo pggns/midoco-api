@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExecuteMidocoSettlementResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExecuteMidocoSettlementResponse extends AbstractStructBase
 {
     /**
@@ -64,12 +65,13 @@ class ExecuteMidocoSettlementResponse extends AbstractStructBase
         return $this->MidocoMdcSettlementBillingExt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMdcSettlementBillingExt method
+     * This method is responsible for validating the value(s) passed to the setMidocoMdcSettlementBillingExt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMdcSettlementBillingExt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMdcSettlementBillingExtForArrayConstraintsFromSetMidocoMdcSettlementBillingExt(?array $values = []): string
+    public static function validateMidocoMdcSettlementBillingExtForArrayConstraintFromSetMidocoMdcSettlementBillingExt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -98,7 +100,7 @@ class ExecuteMidocoSettlementResponse extends AbstractStructBase
     public function setMidocoMdcSettlementBillingExt(?array $midocoMdcSettlementBillingExt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMdcSettlementBillingExtArrayErrorMessage = self::validateMidocoMdcSettlementBillingExtForArrayConstraintsFromSetMidocoMdcSettlementBillingExt($midocoMdcSettlementBillingExt))) {
+        if ('' !== ($midocoMdcSettlementBillingExtArrayErrorMessage = self::validateMidocoMdcSettlementBillingExtForArrayConstraintFromSetMidocoMdcSettlementBillingExt($midocoMdcSettlementBillingExt))) {
             throw new InvalidArgumentException($midocoMdcSettlementBillingExtArrayErrorMessage, __LINE__);
         }
         $this->MidocoMdcSettlementBillingExt = $midocoMdcSettlementBillingExt;
@@ -130,12 +132,13 @@ class ExecuteMidocoSettlementResponse extends AbstractStructBase
         return $this->CompanyErrorExt;
     }
     /**
-     * This method is responsible for validating the values passed to the setCompanyErrorExt method
+     * This method is responsible for validating the value(s) passed to the setCompanyErrorExt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCompanyErrorExt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCompanyErrorExtForArrayConstraintsFromSetCompanyErrorExt(?array $values = []): string
+    public static function validateCompanyErrorExtForArrayConstraintFromSetCompanyErrorExt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -164,7 +167,7 @@ class ExecuteMidocoSettlementResponse extends AbstractStructBase
     public function setCompanyErrorExt(?array $companyErrorExt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($companyErrorExtArrayErrorMessage = self::validateCompanyErrorExtForArrayConstraintsFromSetCompanyErrorExt($companyErrorExt))) {
+        if ('' !== ($companyErrorExtArrayErrorMessage = self::validateCompanyErrorExtForArrayConstraintFromSetCompanyErrorExt($companyErrorExt))) {
             throw new InvalidArgumentException($companyErrorExtArrayErrorMessage, __LINE__);
         }
         $this->CompanyErrorExt = $companyErrorExt;
@@ -196,12 +199,13 @@ class ExecuteMidocoSettlementResponse extends AbstractStructBase
         return $this->printjobContent;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintjobContent method
+     * This method is responsible for validating the value(s) passed to the setPrintjobContent method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintjobContent method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintjobContentForArrayConstraintsFromSetPrintjobContent(?array $values = []): string
+    public static function validatePrintjobContentForArrayConstraintFromSetPrintjobContent(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -230,7 +234,7 @@ class ExecuteMidocoSettlementResponse extends AbstractStructBase
     public function setPrintjobContent(?array $printjobContent = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printjobContentArrayErrorMessage = self::validatePrintjobContentForArrayConstraintsFromSetPrintjobContent($printjobContent))) {
+        if ('' !== ($printjobContentArrayErrorMessage = self::validatePrintjobContentForArrayConstraintFromSetPrintjobContent($printjobContent))) {
             throw new InvalidArgumentException($printjobContentArrayErrorMessage, __LINE__);
         }
         $this->printjobContent = $printjobContent;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMediatorChargeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMediatorChargeRequest extends AbstractStructBase
 {
     /**
@@ -51,7 +52,7 @@ class GetMediatorChargeRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorChargeRequest
      */
     public function setCustomerId(int $customerId): self
     {
@@ -74,7 +75,7 @@ class GetMediatorChargeRequest extends AbstractStructBase
     /**
      * Set chargeId value
      * @param int $chargeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorChargeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorChargeRequest
      */
     public function setChargeId(int $chargeId): self
     {

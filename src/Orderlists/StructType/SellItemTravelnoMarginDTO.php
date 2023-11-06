@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemTravelnoMarginDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemTravelnoMarginDTO extends AbstractStructBase
 {
+    /**
+     * The isNegativeMargin
+     * @var bool|null
+     */
+    protected ?bool $isNegativeMargin = null;
     /**
      * The isStorno
      * @var bool|null
@@ -35,22 +41,48 @@ class SellItemTravelnoMarginDTO extends AbstractStructBase
     protected ?string $travelNo = null;
     /**
      * Constructor method for SellItemTravelnoMarginDTO
+     * @uses SellItemTravelnoMarginDTO::setIsNegativeMargin()
      * @uses SellItemTravelnoMarginDTO::setIsStorno()
      * @uses SellItemTravelnoMarginDTO::setItemId()
      * @uses SellItemTravelnoMarginDTO::setSettlementDate()
      * @uses SellItemTravelnoMarginDTO::setTravelNo()
+     * @param bool $isNegativeMargin
      * @param bool $isStorno
      * @param int $itemId
      * @param string $settlementDate
      * @param string $travelNo
      */
-    public function __construct(?bool $isStorno = null, ?int $itemId = null, ?string $settlementDate = null, ?string $travelNo = null)
+    public function __construct(?bool $isNegativeMargin = null, ?bool $isStorno = null, ?int $itemId = null, ?string $settlementDate = null, ?string $travelNo = null)
     {
         $this
+            ->setIsNegativeMargin($isNegativeMargin)
             ->setIsStorno($isStorno)
             ->setItemId($itemId)
             ->setSettlementDate($settlementDate)
             ->setTravelNo($travelNo);
+    }
+    /**
+     * Get isNegativeMargin value
+     * @return bool|null
+     */
+    public function getIsNegativeMargin(): ?bool
+    {
+        return $this->isNegativeMargin;
+    }
+    /**
+     * Set isNegativeMargin value
+     * @param bool $isNegativeMargin
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemTravelnoMarginDTO
+     */
+    public function setIsNegativeMargin(?bool $isNegativeMargin = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isNegativeMargin) && !is_bool($isNegativeMargin)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isNegativeMargin, true), gettype($isNegativeMargin)), __LINE__);
+        }
+        $this->isNegativeMargin = $isNegativeMargin;
+        
+        return $this;
     }
     /**
      * Get isStorno value

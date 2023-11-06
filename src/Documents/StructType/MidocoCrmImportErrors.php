@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmImportErrors StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmImportErrors extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class MidocoCrmImportErrors extends AbstractStructBase
         return $this->MidocoCrmDetailErrors;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmDetailErrors method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmDetailErrors method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmDetailErrors method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmDetailErrorsForArrayConstraintsFromSetMidocoCrmDetailErrors(?array $values = []): string
+    public static function validateMidocoCrmDetailErrorsForArrayConstraintFromSetMidocoCrmDetailErrors(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class MidocoCrmImportErrors extends AbstractStructBase
     public function setMidocoCrmDetailErrors(?array $midocoCrmDetailErrors = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmDetailErrorsArrayErrorMessage = self::validateMidocoCrmDetailErrorsForArrayConstraintsFromSetMidocoCrmDetailErrors($midocoCrmDetailErrors))) {
+        if ('' !== ($midocoCrmDetailErrorsArrayErrorMessage = self::validateMidocoCrmDetailErrorsForArrayConstraintFromSetMidocoCrmDetailErrors($midocoCrmDetailErrors))) {
             throw new InvalidArgumentException($midocoCrmDetailErrorsArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmDetailErrors = $midocoCrmDetailErrors;

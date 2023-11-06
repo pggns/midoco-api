@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllUsersWithAccessToDatastoreOfUnitRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllUsersWithAccessToDatastoreOfUnitRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetAllUsersWithAccessToDatastoreOfUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +71,7 @@ class GetAllUsersWithAccessToDatastoreOfUnitRequest extends AbstractStructBase
     /**
      * Set datastoreType value
      * @param string $datastoreType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllUsersWithAccessToDatastoreOfUnitRequest
      */
     public function setDatastoreType(?string $datastoreType = null): self
     {

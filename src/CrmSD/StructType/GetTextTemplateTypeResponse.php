@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTextTemplateTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTextTemplateTypeResponse extends AbstractStructBase
 {
     /**
@@ -19,33 +20,33 @@ class GetTextTemplateTypeResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTextTemplateTypeExt
-     * @var \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO $MidocoTextTemplateTypeExt = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO $MidocoTextTemplateTypeExt = null;
     /**
      * Constructor method for GetTextTemplateTypeResponse
      * @uses GetTextTemplateTypeResponse::setMidocoTextTemplateTypeExt()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt
+     * @param \Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt = null)
     {
         $this
             ->setMidocoTextTemplateTypeExt($midocoTextTemplateTypeExt);
     }
     /**
      * Get MidocoTextTemplateTypeExt value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO|null
      */
-    public function getMidocoTextTemplateTypeExt(): ?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO
+    public function getMidocoTextTemplateTypeExt(): ?\Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO
     {
         return $this->MidocoTextTemplateTypeExt;
     }
     /**
      * Set MidocoTextTemplateTypeExt value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTextTemplateTypeResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTextTemplateTypeResponse
      */
-    public function setMidocoTextTemplateTypeExt(?\Pggns\MidocoApi\CrmSD\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt = null): self
+    public function setMidocoTextTemplateTypeExt(?\Pggns\MidocoApi\Crmsd\StructType\TextTemplateTypeExtDTO $midocoTextTemplateTypeExt = null): self
     {
         $this->MidocoTextTemplateTypeExt = $midocoTextTemplateTypeExt;
         

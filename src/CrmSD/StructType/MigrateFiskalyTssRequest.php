@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MigrateFiskalyTssRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MigrateFiskalyTssRequest extends AbstractStructBase
 {
     /**
@@ -20,7 +21,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $UnitName = [];
+    protected array $UnitName;
     /**
      * The send_puk_mail
      * Meta information extracted from the WSDL
@@ -70,12 +71,13 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
         return $this->UnitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitName method
+     * This method is responsible for validating the value(s) passed to the setUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitNameForArrayConstraintsFromSetUnitName(?array $values = []): string
+    public static function validateUnitNameForArrayConstraintFromSetUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,12 +101,12 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
      * Set UnitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MigrateFiskalyTssRequest
      */
     public function setUnitName(array $unitName): self
     {
         // validation for constraint: array
-        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintsFromSetUnitName($unitName))) {
+        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintFromSetUnitName($unitName))) {
             throw new InvalidArgumentException($unitNameArrayErrorMessage, __LINE__);
         }
         $this->UnitName = $unitName;
@@ -115,7 +117,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
      * Add item to UnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MigrateFiskalyTssRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -138,7 +140,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
     /**
      * Set send_puk_mail value
      * @param bool $send_puk_mail
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MigrateFiskalyTssRequest
      */
     public function setSend_puk_mail(?bool $send_puk_mail = false): self
     {
@@ -161,7 +163,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
     /**
      * Set stop_on_first_error value
      * @param bool $stop_on_first_error
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MigrateFiskalyTssRequest
      */
     public function setStop_on_first_error(?bool $stop_on_first_error = true): self
     {
@@ -184,7 +186,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
     /**
      * Set cancel_reason value
      * @param string $cancel_reason
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MigrateFiskalyTssRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MigrateFiskalyTssRequest
      */
     public function setCancel_reason(?string $cancel_reason = 'Migration to Fiskaly Version 2'): self
     {

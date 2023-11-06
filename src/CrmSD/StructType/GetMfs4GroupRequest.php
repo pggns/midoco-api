@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfs4GroupRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfs4GroupRequest extends AbstractStructBase
 {
     /**
@@ -65,7 +66,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfs4GroupRequest
      */
     public function setBean(?string $bean = null): self
     {
@@ -88,7 +89,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfs4GroupRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -111,7 +112,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
     /**
      * Set groupName value
      * @param string $groupName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfs4GroupRequest
      */
     public function setGroupName(?string $groupName = null): self
     {
@@ -132,12 +133,13 @@ class GetMfs4GroupRequest extends AbstractStructBase
         return $this->className;
     }
     /**
-     * This method is responsible for validating the values passed to the setClassName method
+     * This method is responsible for validating the value(s) passed to the setClassName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setClassName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateClassNameForArrayConstraintsFromSetClassName(?array $values = []): string
+    public static function validateClassNameForArrayConstraintFromSetClassName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -161,12 +163,12 @@ class GetMfs4GroupRequest extends AbstractStructBase
      * Set className value
      * @throws InvalidArgumentException
      * @param string[] $className
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfs4GroupRequest
      */
     public function setClassName(?array $className = null): self
     {
         // validation for constraint: array
-        if ('' !== ($classNameArrayErrorMessage = self::validateClassNameForArrayConstraintsFromSetClassName($className))) {
+        if ('' !== ($classNameArrayErrorMessage = self::validateClassNameForArrayConstraintFromSetClassName($className))) {
             throw new InvalidArgumentException($classNameArrayErrorMessage, __LINE__);
         }
         $this->className = $className;
@@ -177,7 +179,7 @@ class GetMfs4GroupRequest extends AbstractStructBase
      * Add item to className value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfs4GroupRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfs4GroupRequest
      */
     public function addToClassName(string $item): self
     {

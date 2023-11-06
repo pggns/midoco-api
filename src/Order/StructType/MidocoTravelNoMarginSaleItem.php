@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTravelNoMarginSaleItem StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTravelNoMarginSaleItem extends AbstractStructBase
 {
     /**
@@ -59,6 +60,11 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
      */
     protected ?float $diAmount = null;
     /**
+     * The margin
+     * @var float|null
+     */
+    protected ?float $margin = null;
+    /**
      * The paid
      * @var bool|null
      */
@@ -74,6 +80,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
      * @uses MidocoTravelNoMarginSaleItem::setInkassoPrice()
      * @uses MidocoTravelNoMarginSaleItem::setOpenInkassoPrice()
      * @uses MidocoTravelNoMarginSaleItem::setDiAmount()
+     * @uses MidocoTravelNoMarginSaleItem::setMargin()
      * @uses MidocoTravelNoMarginSaleItem::setPaid()
      * @param int $itemId
      * @param int $orderNo
@@ -84,9 +91,10 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
      * @param float $inkassoPrice
      * @param float $openInkassoPrice
      * @param float $diAmount
+     * @param float $margin
      * @param bool $paid
      */
-    public function __construct(?int $itemId = null, ?int $orderNo = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $status = null, ?float $inkassoPrice = null, ?float $openInkassoPrice = null, ?float $diAmount = null, ?bool $paid = null)
+    public function __construct(?int $itemId = null, ?int $orderNo = null, ?string $supplierId = null, ?string $bookingId = null, ?string $startTravel = null, ?string $status = null, ?float $inkassoPrice = null, ?float $openInkassoPrice = null, ?float $diAmount = null, ?float $margin = null, ?bool $paid = null)
     {
         $this
             ->setItemId($itemId)
@@ -98,6 +106,7 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
             ->setInkassoPrice($inkassoPrice)
             ->setOpenInkassoPrice($openInkassoPrice)
             ->setDiAmount($diAmount)
+            ->setMargin($margin)
             ->setPaid($paid);
     }
     /**
@@ -304,6 +313,29 @@ class MidocoTravelNoMarginSaleItem extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($diAmount, true), gettype($diAmount)), __LINE__);
         }
         $this->diAmount = $diAmount;
+        
+        return $this;
+    }
+    /**
+     * Get margin value
+     * @return float|null
+     */
+    public function getMargin(): ?float
+    {
+        return $this->margin;
+    }
+    /**
+     * Set margin value
+     * @param float $margin
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMarginSaleItem
+     */
+    public function setMargin(?float $margin = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($margin) && !(is_float($margin) || is_numeric($margin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($margin, true), gettype($margin)), __LINE__);
+        }
+        $this->margin = $margin;
         
         return $this;
     }

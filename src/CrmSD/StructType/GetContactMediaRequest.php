@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetContactMediaRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetContactMediaRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetContactMediaRequest extends AbstractStructBase
     /**
      * Set mediaId value
      * @param string $mediaId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetContactMediaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetContactMediaRequest
      */
     public function setMediaId(?string $mediaId = null): self
     {
@@ -70,7 +71,7 @@ class GetContactMediaRequest extends AbstractStructBase
     /**
      * Set visibleAlsoForOrder value
      * @param bool $visibleAlsoForOrder
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetContactMediaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetContactMediaRequest
      */
     public function setVisibleAlsoForOrder(?bool $visibleAlsoForOrder = null): self
     {

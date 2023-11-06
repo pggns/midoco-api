@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMediatorRevenuesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMediatorRevenuesResponse extends AbstractStructBase
 {
     /**
@@ -52,12 +53,13 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
         return $this->ErrorInfoAgencyMissingInDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setErrorInfoAgencyMissingInDocument method
+     * This method is responsible for validating the value(s) passed to the setErrorInfoAgencyMissingInDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setErrorInfoAgencyMissingInDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateErrorInfoAgencyMissingInDocumentForArrayConstraintsFromSetErrorInfoAgencyMissingInDocument(?array $values = []): string
+    public static function validateErrorInfoAgencyMissingInDocumentForArrayConstraintFromSetErrorInfoAgencyMissingInDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -86,7 +88,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     public function setErrorInfoAgencyMissingInDocument(?array $errorInfoAgencyMissingInDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($errorInfoAgencyMissingInDocumentArrayErrorMessage = self::validateErrorInfoAgencyMissingInDocumentForArrayConstraintsFromSetErrorInfoAgencyMissingInDocument($errorInfoAgencyMissingInDocument))) {
+        if ('' !== ($errorInfoAgencyMissingInDocumentArrayErrorMessage = self::validateErrorInfoAgencyMissingInDocumentForArrayConstraintFromSetErrorInfoAgencyMissingInDocument($errorInfoAgencyMissingInDocument))) {
             throw new InvalidArgumentException($errorInfoAgencyMissingInDocumentArrayErrorMessage, __LINE__);
         }
         $this->ErrorInfoAgencyMissingInDocument = $errorInfoAgencyMissingInDocument;
@@ -118,12 +120,13 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
         return $this->excelRows;
     }
     /**
-     * This method is responsible for validating the values passed to the setExcelRows method
+     * This method is responsible for validating the value(s) passed to the setExcelRows method
      * This method is willingly generated in order to preserve the one-line inline validation within the setExcelRows method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateExcelRowsForArrayConstraintsFromSetExcelRows(?array $values = []): string
+    public static function validateExcelRowsForArrayConstraintFromSetExcelRows(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -152,7 +155,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     public function setExcelRows(?array $excelRows = null): self
     {
         // validation for constraint: array
-        if ('' !== ($excelRowsArrayErrorMessage = self::validateExcelRowsForArrayConstraintsFromSetExcelRows($excelRows))) {
+        if ('' !== ($excelRowsArrayErrorMessage = self::validateExcelRowsForArrayConstraintFromSetExcelRows($excelRows))) {
             throw new InvalidArgumentException($excelRowsArrayErrorMessage, __LINE__);
         }
         $this->excelRows = $excelRows;

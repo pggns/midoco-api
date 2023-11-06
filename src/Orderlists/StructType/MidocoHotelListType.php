@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoHotelListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoHotelListType extends AbstractStructBase
 {
     /**

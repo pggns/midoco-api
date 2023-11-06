@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoInsurer StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoInsurer extends InsurerDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoInsurer extends InsurerDTO
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInsurer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInsurer
      */
     public function setInherited(?bool $inherited = null): self
     {

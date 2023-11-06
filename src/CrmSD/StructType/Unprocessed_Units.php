@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Unprocessed-Units StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Unprocessed_Units extends AbstractStructBase
 {
     /**
@@ -20,7 +21,7 @@ class Unprocessed_Units extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $UnitName = [];
+    protected array $UnitName;
     /**
      * Constructor method for Unprocessed-Units
      * @uses Unprocessed_Units::setUnitName()
@@ -40,12 +41,13 @@ class Unprocessed_Units extends AbstractStructBase
         return $this->UnitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitName method
+     * This method is responsible for validating the value(s) passed to the setUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitNameForArrayConstraintsFromSetUnitName(?array $values = []): string
+    public static function validateUnitNameForArrayConstraintFromSetUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -69,12 +71,12 @@ class Unprocessed_Units extends AbstractStructBase
      * Set UnitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Unprocessed_Units
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Unprocessed_Units
      */
     public function setUnitName(array $unitName): self
     {
         // validation for constraint: array
-        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintsFromSetUnitName($unitName))) {
+        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintFromSetUnitName($unitName))) {
             throw new InvalidArgumentException($unitNameArrayErrorMessage, __LINE__);
         }
         $this->UnitName = $unitName;
@@ -85,7 +87,7 @@ class Unprocessed_Units extends AbstractStructBase
      * Add item to UnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Unprocessed_Units
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Unprocessed_Units
      */
     public function addToUnitName(string $item): self
     {

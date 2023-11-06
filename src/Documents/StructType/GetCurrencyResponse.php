@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCurrencyResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCurrencyResponse extends AbstractStructBase
 {
     /**

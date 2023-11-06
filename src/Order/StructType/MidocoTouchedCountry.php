@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTouchedCountry StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTouchedCountry extends TouchedCountryDTO
 {
     /**
@@ -40,12 +41,13 @@ class MidocoTouchedCountry extends TouchedCountryDTO
         return $this->usedByItemId;
     }
     /**
-     * This method is responsible for validating the values passed to the setUsedByItemId method
+     * This method is responsible for validating the value(s) passed to the setUsedByItemId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUsedByItemId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUsedByItemIdForArrayConstraintsFromSetUsedByItemId(?array $values = []): string
+    public static function validateUsedByItemIdForArrayConstraintFromSetUsedByItemId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class MidocoTouchedCountry extends TouchedCountryDTO
     public function setUsedByItemId(?array $usedByItemId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($usedByItemIdArrayErrorMessage = self::validateUsedByItemIdForArrayConstraintsFromSetUsedByItemId($usedByItemId))) {
+        if ('' !== ($usedByItemIdArrayErrorMessage = self::validateUsedByItemIdForArrayConstraintFromSetUsedByItemId($usedByItemId))) {
             throw new InvalidArgumentException($usedByItemIdArrayErrorMessage, __LINE__);
         }
         $this->usedByItemId = $usedByItemId;

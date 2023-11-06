@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for EditEntryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class EditEntryRequest extends AbstractStructBase
 {
     /**
@@ -61,12 +62,13 @@ class EditEntryRequest extends AbstractStructBase
         return $this->MidocoEntryDetails;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoEntryDetails method
+     * This method is responsible for validating the value(s) passed to the setMidocoEntryDetails method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEntryDetails method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoEntryDetailsForArrayConstraintsFromSetMidocoEntryDetails(?array $values = []): string
+    public static function validateMidocoEntryDetailsForArrayConstraintFromSetMidocoEntryDetails(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -95,7 +97,7 @@ class EditEntryRequest extends AbstractStructBase
     public function setMidocoEntryDetails(?array $midocoEntryDetails = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoEntryDetailsArrayErrorMessage = self::validateMidocoEntryDetailsForArrayConstraintsFromSetMidocoEntryDetails($midocoEntryDetails))) {
+        if ('' !== ($midocoEntryDetailsArrayErrorMessage = self::validateMidocoEntryDetailsForArrayConstraintFromSetMidocoEntryDetails($midocoEntryDetails))) {
             throw new InvalidArgumentException($midocoEntryDetailsArrayErrorMessage, __LINE__);
         }
         $this->MidocoEntryDetails = $midocoEntryDetails;
@@ -127,12 +129,13 @@ class EditEntryRequest extends AbstractStructBase
         return $this->MidocoEntryHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoEntryHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoEntryHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEntryHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoEntryHistoryForArrayConstraintsFromSetMidocoEntryHistory(?array $values = []): string
+    public static function validateMidocoEntryHistoryForArrayConstraintFromSetMidocoEntryHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -161,7 +164,7 @@ class EditEntryRequest extends AbstractStructBase
     public function setMidocoEntryHistory(?array $midocoEntryHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoEntryHistoryArrayErrorMessage = self::validateMidocoEntryHistoryForArrayConstraintsFromSetMidocoEntryHistory($midocoEntryHistory))) {
+        if ('' !== ($midocoEntryHistoryArrayErrorMessage = self::validateMidocoEntryHistoryForArrayConstraintFromSetMidocoEntryHistory($midocoEntryHistory))) {
             throw new InvalidArgumentException($midocoEntryHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoEntryHistory = $midocoEntryHistory;

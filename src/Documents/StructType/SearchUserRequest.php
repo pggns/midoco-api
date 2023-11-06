@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchUserRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchUserRequest extends AbstractStructBase
 {
     /**
@@ -112,12 +113,13 @@ class SearchUserRequest extends AbstractStructBase
         return $this->unitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitName method
+     * This method is responsible for validating the value(s) passed to the setUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitNameForArrayConstraintsFromSetUnitName(?array $values = []): string
+    public static function validateUnitNameForArrayConstraintFromSetUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -146,7 +148,7 @@ class SearchUserRequest extends AbstractStructBase
     public function setUnitName(?array $unitName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintsFromSetUnitName($unitName))) {
+        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintFromSetUnitName($unitName))) {
             throw new InvalidArgumentException($unitNameArrayErrorMessage, __LINE__);
         }
         $this->unitName = $unitName;
@@ -178,12 +180,13 @@ class SearchUserRequest extends AbstractStructBase
         return $this->roleId;
     }
     /**
-     * This method is responsible for validating the values passed to the setRoleId method
+     * This method is responsible for validating the value(s) passed to the setRoleId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRoleId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRoleIdForArrayConstraintsFromSetRoleId(?array $values = []): string
+    public static function validateRoleIdForArrayConstraintFromSetRoleId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -212,7 +215,7 @@ class SearchUserRequest extends AbstractStructBase
     public function setRoleId(?array $roleId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($roleIdArrayErrorMessage = self::validateRoleIdForArrayConstraintsFromSetRoleId($roleId))) {
+        if ('' !== ($roleIdArrayErrorMessage = self::validateRoleIdForArrayConstraintFromSetRoleId($roleId))) {
             throw new InvalidArgumentException($roleIdArrayErrorMessage, __LINE__);
         }
         $this->roleId = $roleId;
@@ -244,12 +247,13 @@ class SearchUserRequest extends AbstractStructBase
         return $this->crsExpedient;
     }
     /**
-     * This method is responsible for validating the values passed to the setCrsExpedient method
+     * This method is responsible for validating the value(s) passed to the setCrsExpedient method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCrsExpedient method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCrsExpedientForArrayConstraintsFromSetCrsExpedient(?array $values = []): string
+    public static function validateCrsExpedientForArrayConstraintFromSetCrsExpedient(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -278,7 +282,7 @@ class SearchUserRequest extends AbstractStructBase
     public function setCrsExpedient(?array $crsExpedient = null): self
     {
         // validation for constraint: array
-        if ('' !== ($crsExpedientArrayErrorMessage = self::validateCrsExpedientForArrayConstraintsFromSetCrsExpedient($crsExpedient))) {
+        if ('' !== ($crsExpedientArrayErrorMessage = self::validateCrsExpedientForArrayConstraintFromSetCrsExpedient($crsExpedient))) {
             throw new InvalidArgumentException($crsExpedientArrayErrorMessage, __LINE__);
         }
         $this->crsExpedient = $crsExpedient;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBillingSearchInfoType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBillingSearchInfoType extends AbstractStructBase
 {
     /**
@@ -39,10 +40,20 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
      */
     protected ?string $documentNo = null;
     /**
+     * The collectInvReferenceNo
+     * @var int|null
+     */
+    protected ?int $collectInvReferenceNo = null;
+    /**
      * The creationDate
      * @var string|null
      */
     protected ?string $creationDate = null;
+    /**
+     * The creationUser
+     * @var int|null
+     */
+    protected ?int $creationUser = null;
     /**
      * The printingDate
      * @var string|null
@@ -90,7 +101,9 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
      * @uses MidocoBillingSearchInfoType::setForename()
      * @uses MidocoBillingSearchInfoType::setTravelDate()
      * @uses MidocoBillingSearchInfoType::setDocumentNo()
+     * @uses MidocoBillingSearchInfoType::setCollectInvReferenceNo()
      * @uses MidocoBillingSearchInfoType::setCreationDate()
+     * @uses MidocoBillingSearchInfoType::setCreationUser()
      * @uses MidocoBillingSearchInfoType::setPrintingDate()
      * @uses MidocoBillingSearchInfoType::setTotalPrice()
      * @uses MidocoBillingSearchInfoType::setInvoicedAmount()
@@ -104,7 +117,9 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
      * @param string $forename
      * @param string $travelDate
      * @param string $documentNo
+     * @param int $collectInvReferenceNo
      * @param string $creationDate
+     * @param int $creationUser
      * @param string $printingDate
      * @param float $totalPrice
      * @param float $invoicedAmount
@@ -114,7 +129,7 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
      * @param string $invoiceToEmail
      * @param int $customerId
      */
-    public function __construct(?int $documentId = null, ?string $name = null, ?string $forename = null, ?string $travelDate = null, ?string $documentNo = null, ?string $creationDate = null, ?string $printingDate = null, ?float $totalPrice = null, ?float $invoicedAmount = null, ?string $travellerName = null, ?string $debitorNo = null, ?bool $isSpecialCustomer = null, ?string $invoiceToEmail = null, ?int $customerId = null)
+    public function __construct(?int $documentId = null, ?string $name = null, ?string $forename = null, ?string $travelDate = null, ?string $documentNo = null, ?int $collectInvReferenceNo = null, ?string $creationDate = null, ?int $creationUser = null, ?string $printingDate = null, ?float $totalPrice = null, ?float $invoicedAmount = null, ?string $travellerName = null, ?string $debitorNo = null, ?bool $isSpecialCustomer = null, ?string $invoiceToEmail = null, ?int $customerId = null)
     {
         $this
             ->setDocumentId($documentId)
@@ -122,7 +137,9 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
             ->setForename($forename)
             ->setTravelDate($travelDate)
             ->setDocumentNo($documentNo)
+            ->setCollectInvReferenceNo($collectInvReferenceNo)
             ->setCreationDate($creationDate)
+            ->setCreationUser($creationUser)
             ->setPrintingDate($printingDate)
             ->setTotalPrice($totalPrice)
             ->setInvoicedAmount($invoicedAmount)
@@ -248,6 +265,29 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
         return $this;
     }
     /**
+     * Get collectInvReferenceNo value
+     * @return int|null
+     */
+    public function getCollectInvReferenceNo(): ?int
+    {
+        return $this->collectInvReferenceNo;
+    }
+    /**
+     * Set collectInvReferenceNo value
+     * @param int $collectInvReferenceNo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
+     */
+    public function setCollectInvReferenceNo(?int $collectInvReferenceNo = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($collectInvReferenceNo) && !(is_int($collectInvReferenceNo) || ctype_digit($collectInvReferenceNo))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($collectInvReferenceNo, true), gettype($collectInvReferenceNo)), __LINE__);
+        }
+        $this->collectInvReferenceNo = $collectInvReferenceNo;
+        
+        return $this;
+    }
+    /**
      * Get creationDate value
      * @return string|null
      */
@@ -267,6 +307,29 @@ class MidocoBillingSearchInfoType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationDate, true), gettype($creationDate)), __LINE__);
         }
         $this->creationDate = $creationDate;
+        
+        return $this;
+    }
+    /**
+     * Get creationUser value
+     * @return int|null
+     */
+    public function getCreationUser(): ?int
+    {
+        return $this->creationUser;
+    }
+    /**
+     * Set creationUser value
+     * @param int $creationUser
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingSearchInfoType
+     */
+    public function setCreationUser(?int $creationUser = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($creationUser) && !(is_int($creationUser) || ctype_digit($creationUser))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($creationUser, true), gettype($creationUser)), __LINE__);
+        }
+        $this->creationUser = $creationUser;
         
         return $this;
     }

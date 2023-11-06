@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MakeOrderDiffInvoiceRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MakeOrderDiffInvoiceRequest extends AbstractStructBase
 {
     /**
@@ -72,12 +73,13 @@ class MakeOrderDiffInvoiceRequest extends AbstractStructBase
         return $this->itemIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setItemIds method
+     * This method is responsible for validating the value(s) passed to the setItemIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setItemIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateItemIdsForArrayConstraintsFromSetItemIds(?array $values = []): string
+    public static function validateItemIdsForArrayConstraintFromSetItemIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -106,7 +108,7 @@ class MakeOrderDiffInvoiceRequest extends AbstractStructBase
     public function setItemIds(?array $itemIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($itemIdsArrayErrorMessage = self::validateItemIdsForArrayConstraintsFromSetItemIds($itemIds))) {
+        if ('' !== ($itemIdsArrayErrorMessage = self::validateItemIdsForArrayConstraintFromSetItemIds($itemIds))) {
             throw new InvalidArgumentException($itemIdsArrayErrorMessage, __LINE__);
         }
         $this->itemIds = $itemIds;

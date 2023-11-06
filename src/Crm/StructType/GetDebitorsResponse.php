@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getDebitors --- returns the list of debitors
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDebitorsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetDebitorsResponse extends AbstractStructBase
         return $this->MidocoDebitor;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDebitor method
+     * This method is responsible for validating the value(s) passed to the setMidocoDebitor method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDebitor method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDebitorForArrayConstraintsFromSetMidocoDebitor(?array $values = []): string
+    public static function validateMidocoDebitorForArrayConstraintFromSetMidocoDebitor(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetDebitorsResponse extends AbstractStructBase
     public function setMidocoDebitor(?array $midocoDebitor = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDebitorArrayErrorMessage = self::validateMidocoDebitorForArrayConstraintsFromSetMidocoDebitor($midocoDebitor))) {
+        if ('' !== ($midocoDebitorArrayErrorMessage = self::validateMidocoDebitorForArrayConstraintFromSetMidocoDebitor($midocoDebitor))) {
             throw new InvalidArgumentException($midocoDebitorArrayErrorMessage, __LINE__);
         }
         $this->MidocoDebitor = $midocoDebitor;

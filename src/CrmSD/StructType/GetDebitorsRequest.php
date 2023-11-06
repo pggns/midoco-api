@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDebitorsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDebitorsRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetDebitorsRequest extends AbstractStructBase
     /**
      * Set custId value
      * @param int $custId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitorsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitorsRequest
      */
     public function setCustId(?int $custId = null): self
     {
@@ -70,7 +71,7 @@ class GetDebitorsRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitorsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitorsRequest
      */
     public function setDebitorNo(?string $debitorNo = null): self
     {

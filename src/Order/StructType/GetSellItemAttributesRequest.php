@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSellItemAttributesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSellItemAttributesRequest extends AbstractStructBase
 {
     /**
@@ -18,6 +19,13 @@ class GetSellItemAttributesRequest extends AbstractStructBase
      * @var int|null
      */
     protected ?int $itemId = null;
+    /**
+     * The orderId
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var int|null
+     */
+    protected ?int $orderId = null;
     /**
      * The attributeName
      * @var string|null
@@ -31,16 +39,19 @@ class GetSellItemAttributesRequest extends AbstractStructBase
     /**
      * Constructor method for GetSellItemAttributesRequest
      * @uses GetSellItemAttributesRequest::setItemId()
+     * @uses GetSellItemAttributesRequest::setOrderId()
      * @uses GetSellItemAttributesRequest::setAttributeName()
      * @uses GetSellItemAttributesRequest::setUnitName()
      * @param int $itemId
+     * @param int $orderId
      * @param string $attributeName
      * @param string $unitName
      */
-    public function __construct(?int $itemId = null, ?string $attributeName = null, ?string $unitName = null)
+    public function __construct(?int $itemId = null, ?int $orderId = null, ?string $attributeName = null, ?string $unitName = null)
     {
         $this
             ->setItemId($itemId)
+            ->setOrderId($orderId)
             ->setAttributeName($attributeName)
             ->setUnitName($unitName);
     }
@@ -64,6 +75,29 @@ class GetSellItemAttributesRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($itemId, true), gettype($itemId)), __LINE__);
         }
         $this->itemId = $itemId;
+        
+        return $this;
+    }
+    /**
+     * Get orderId value
+     * @return int|null
+     */
+    public function getOrderId(): ?int
+    {
+        return $this->orderId;
+    }
+    /**
+     * Set orderId value
+     * @param int $orderId
+     * @return \Pggns\MidocoApi\Order\StructType\GetSellItemAttributesRequest
+     */
+    public function setOrderId(?int $orderId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($orderId) && !(is_int($orderId) || ctype_digit($orderId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orderId, true), gettype($orderId)), __LINE__);
+        }
+        $this->orderId = $orderId;
         
         return $this;
     }

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCmsHotelDataRequestType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCmsHotelDataRequestType extends AbstractStructBase
 {
     /**
@@ -64,12 +65,13 @@ class GetCmsHotelDataRequestType extends AbstractStructBase
         return $this->hotelCodes;
     }
     /**
-     * This method is responsible for validating the values passed to the setHotelCodes method
+     * This method is responsible for validating the value(s) passed to the setHotelCodes method
      * This method is willingly generated in order to preserve the one-line inline validation within the setHotelCodes method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateHotelCodesForArrayConstraintsFromSetHotelCodes(?array $values = []): string
+    public static function validateHotelCodesForArrayConstraintFromSetHotelCodes(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -98,7 +100,7 @@ class GetCmsHotelDataRequestType extends AbstractStructBase
     public function setHotelCodes(?array $hotelCodes = null): self
     {
         // validation for constraint: array
-        if ('' !== ($hotelCodesArrayErrorMessage = self::validateHotelCodesForArrayConstraintsFromSetHotelCodes($hotelCodes))) {
+        if ('' !== ($hotelCodesArrayErrorMessage = self::validateHotelCodesForArrayConstraintFromSetHotelCodes($hotelCodes))) {
             throw new InvalidArgumentException($hotelCodesArrayErrorMessage, __LINE__);
         }
         $this->hotelCodes = $hotelCodes;

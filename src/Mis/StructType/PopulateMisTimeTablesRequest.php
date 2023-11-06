@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PopulateMisTimeTablesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PopulateMisTimeTablesRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PopulateMisTimeTablesRequest extends AbstractStructBase
         return $this->MisYear;
     }
     /**
-     * This method is responsible for validating the values passed to the setMisYear method
+     * This method is responsible for validating the value(s) passed to the setMisYear method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMisYear method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMisYearForArrayConstraintsFromSetMisYear(?array $values = []): string
+    public static function validateMisYearForArrayConstraintFromSetMisYear(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PopulateMisTimeTablesRequest extends AbstractStructBase
     public function setMisYear(?array $misYear = null): self
     {
         // validation for constraint: array
-        if ('' !== ($misYearArrayErrorMessage = self::validateMisYearForArrayConstraintsFromSetMisYear($misYear))) {
+        if ('' !== ($misYearArrayErrorMessage = self::validateMisYearForArrayConstraintFromSetMisYear($misYear))) {
             throw new InvalidArgumentException($misYearArrayErrorMessage, __LINE__);
         }
         $this->MisYear = $misYear;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrmNoticeCommentsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmNoticeCommentsRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetCrmNoticeCommentsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticeCommentsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticeCommentsRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +71,7 @@ class GetCrmNoticeCommentsRequest extends AbstractStructBase
     /**
      * Set noticePosition value
      * @param int $noticePosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticeCommentsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticeCommentsRequest
      */
     public function setNoticePosition(?int $noticePosition = null): self
     {

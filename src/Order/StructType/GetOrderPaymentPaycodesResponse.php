@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderPaymentPaycodesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderPaymentPaycodesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrderPaymentPaycodesResponse extends AbstractStructBase
         return $this->MidocoOrderPaymentPaycode;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderPaymentPaycode method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderPaymentPaycode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderPaymentPaycode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderPaymentPaycodeForArrayConstraintsFromSetMidocoOrderPaymentPaycode(?array $values = []): string
+    public static function validateMidocoOrderPaymentPaycodeForArrayConstraintFromSetMidocoOrderPaymentPaycode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrderPaymentPaycodesResponse extends AbstractStructBase
     public function setMidocoOrderPaymentPaycode(?array $midocoOrderPaymentPaycode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderPaymentPaycodeArrayErrorMessage = self::validateMidocoOrderPaymentPaycodeForArrayConstraintsFromSetMidocoOrderPaymentPaycode($midocoOrderPaymentPaycode))) {
+        if ('' !== ($midocoOrderPaymentPaycodeArrayErrorMessage = self::validateMidocoOrderPaymentPaycodeForArrayConstraintFromSetMidocoOrderPaymentPaycode($midocoOrderPaymentPaycode))) {
             throw new InvalidArgumentException($midocoOrderPaymentPaycodeArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderPaymentPaycode = $midocoOrderPaymentPaycode;

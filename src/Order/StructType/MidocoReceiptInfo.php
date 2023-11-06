@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoReceiptInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoReceiptInfo extends AbstractStructBase
 {
     /**
@@ -221,12 +222,13 @@ class MidocoReceiptInfo extends AbstractStructBase
         return $this->ReceiptPositioninfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setReceiptPositioninfo method
+     * This method is responsible for validating the value(s) passed to the setReceiptPositioninfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setReceiptPositioninfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateReceiptPositioninfoForArrayConstraintsFromSetReceiptPositioninfo(?array $values = []): string
+    public static function validateReceiptPositioninfoForArrayConstraintFromSetReceiptPositioninfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -255,7 +257,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     public function setReceiptPositioninfo(?array $receiptPositioninfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($receiptPositioninfoArrayErrorMessage = self::validateReceiptPositioninfoForArrayConstraintsFromSetReceiptPositioninfo($receiptPositioninfo))) {
+        if ('' !== ($receiptPositioninfoArrayErrorMessage = self::validateReceiptPositioninfoForArrayConstraintFromSetReceiptPositioninfo($receiptPositioninfo))) {
             throw new InvalidArgumentException($receiptPositioninfoArrayErrorMessage, __LINE__);
         }
         $this->ReceiptPositioninfo = $receiptPositioninfo;
@@ -325,12 +327,13 @@ class MidocoReceiptInfo extends AbstractStructBase
         return $this->MidocoAdditionalInfoForReceipt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAdditionalInfoForReceipt method
+     * This method is responsible for validating the value(s) passed to the setMidocoAdditionalInfoForReceipt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAdditionalInfoForReceipt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAdditionalInfoForReceiptForArrayConstraintsFromSetMidocoAdditionalInfoForReceipt(?array $values = []): string
+    public static function validateMidocoAdditionalInfoForReceiptForArrayConstraintFromSetMidocoAdditionalInfoForReceipt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -359,7 +362,7 @@ class MidocoReceiptInfo extends AbstractStructBase
     public function setMidocoAdditionalInfoForReceipt(?array $midocoAdditionalInfoForReceipt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAdditionalInfoForReceiptArrayErrorMessage = self::validateMidocoAdditionalInfoForReceiptForArrayConstraintsFromSetMidocoAdditionalInfoForReceipt($midocoAdditionalInfoForReceipt))) {
+        if ('' !== ($midocoAdditionalInfoForReceiptArrayErrorMessage = self::validateMidocoAdditionalInfoForReceiptForArrayConstraintFromSetMidocoAdditionalInfoForReceipt($midocoAdditionalInfoForReceipt))) {
             throw new InvalidArgumentException($midocoAdditionalInfoForReceiptArrayErrorMessage, __LINE__);
         }
         $this->MidocoAdditionalInfoForReceipt = $midocoAdditionalInfoForReceipt;

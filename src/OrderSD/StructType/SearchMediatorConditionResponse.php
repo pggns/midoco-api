@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchMediatorConditionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchMediatorConditionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchMediatorConditionResponse extends AbstractStructBase
         return $this->MediatorConditionInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMediatorConditionInfo method
+     * This method is responsible for validating the value(s) passed to the setMediatorConditionInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMediatorConditionInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMediatorConditionInfoForArrayConstraintsFromSetMediatorConditionInfo(?array $values = []): string
+    public static function validateMediatorConditionInfoForArrayConstraintFromSetMediatorConditionInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchMediatorConditionResponse extends AbstractStructBase
     public function setMediatorConditionInfo(?array $mediatorConditionInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mediatorConditionInfoArrayErrorMessage = self::validateMediatorConditionInfoForArrayConstraintsFromSetMediatorConditionInfo($mediatorConditionInfo))) {
+        if ('' !== ($mediatorConditionInfoArrayErrorMessage = self::validateMediatorConditionInfoForArrayConstraintFromSetMediatorConditionInfo($mediatorConditionInfo))) {
             throw new InvalidArgumentException($mediatorConditionInfoArrayErrorMessage, __LINE__);
         }
         $this->MediatorConditionInfo = $mediatorConditionInfo;

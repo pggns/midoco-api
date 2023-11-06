@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetInexsoUrlResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetInexsoUrlResponse extends AbstractStructBase
 {
     /**

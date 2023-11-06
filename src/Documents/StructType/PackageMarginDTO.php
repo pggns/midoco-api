@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PackageMarginDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PackageMarginDTO extends AbstractStructBase
 {
     /**
@@ -73,11 +74,6 @@ class PackageMarginDTO extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $incomingInvoiceComplete = null;
-    /**
-     * The journalId
-     * @var int|null
-     */
-    protected ?int $journalId = null;
     /**
      * The marginAccount
      * @var string|null
@@ -157,7 +153,6 @@ class PackageMarginDTO extends AbstractStructBase
      * @uses PackageMarginDTO::setCurrency()
      * @uses PackageMarginDTO::setDestination()
      * @uses PackageMarginDTO::setIncomingInvoiceComplete()
-     * @uses PackageMarginDTO::setJournalId()
      * @uses PackageMarginDTO::setMarginAccount()
      * @uses PackageMarginDTO::setMarginPercent()
      * @uses PackageMarginDTO::setNeedsMarginBooking()
@@ -183,7 +178,6 @@ class PackageMarginDTO extends AbstractStructBase
      * @param string $currency
      * @param string $destination
      * @param bool $incomingInvoiceComplete
-     * @param int $journalId
      * @param string $marginAccount
      * @param float $marginPercent
      * @param bool $needsMarginBooking
@@ -198,7 +192,7 @@ class PackageMarginDTO extends AbstractStructBase
      * @param float $sumSale
      * @param string $supplierId
      */
-    public function __construct(?float $agencyCommission = null, ?float $bookedMargin = null, ?float $bookedVat = null, ?string $bookingId = null, ?float $calculatedMargin = null, ?float $calculatedVat = null, ?string $costCentre = null, ?string $creationTime = null, ?int $creationUser = null, ?string $currency = null, ?string $destination = null, ?bool $incomingInvoiceComplete = null, ?int $journalId = null, ?string $marginAccount = null, ?float $marginPercent = null, ?bool $needsMarginBooking = null, ?int $orderId = null, ?string $orgunitName = null, ?bool $outgoingInvoiceComplete = null, ?string $packageAccount = null, ?int $packageMarginId = null, ?bool $preventMarginBooking = null, ?string $startTravel = null, ?float $sumBuy = null, ?float $sumSale = null, ?string $supplierId = null)
+    public function __construct(?float $agencyCommission = null, ?float $bookedMargin = null, ?float $bookedVat = null, ?string $bookingId = null, ?float $calculatedMargin = null, ?float $calculatedVat = null, ?string $costCentre = null, ?string $creationTime = null, ?int $creationUser = null, ?string $currency = null, ?string $destination = null, ?bool $incomingInvoiceComplete = null, ?string $marginAccount = null, ?float $marginPercent = null, ?bool $needsMarginBooking = null, ?int $orderId = null, ?string $orgunitName = null, ?bool $outgoingInvoiceComplete = null, ?string $packageAccount = null, ?int $packageMarginId = null, ?bool $preventMarginBooking = null, ?string $startTravel = null, ?float $sumBuy = null, ?float $sumSale = null, ?string $supplierId = null)
     {
         $this
             ->setAgencyCommission($agencyCommission)
@@ -213,7 +207,6 @@ class PackageMarginDTO extends AbstractStructBase
             ->setCurrency($currency)
             ->setDestination($destination)
             ->setIncomingInvoiceComplete($incomingInvoiceComplete)
-            ->setJournalId($journalId)
             ->setMarginAccount($marginAccount)
             ->setMarginPercent($marginPercent)
             ->setNeedsMarginBooking($needsMarginBooking)
@@ -501,29 +494,6 @@ class PackageMarginDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($incomingInvoiceComplete, true), gettype($incomingInvoiceComplete)), __LINE__);
         }
         $this->incomingInvoiceComplete = $incomingInvoiceComplete;
-        
-        return $this;
-    }
-    /**
-     * Get journalId value
-     * @return int|null
-     */
-    public function getJournalId(): ?int
-    {
-        return $this->journalId;
-    }
-    /**
-     * Set journalId value
-     * @param int $journalId
-     * @return \Pggns\MidocoApi\Documents\StructType\PackageMarginDTO
-     */
-    public function setJournalId(?int $journalId = null): self
-    {
-        // validation for constraint: int
-        if (!is_null($journalId) && !(is_int($journalId) || ctype_digit($journalId))) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($journalId, true), gettype($journalId)), __LINE__);
-        }
-        $this->journalId = $journalId;
         
         return $this;
     }

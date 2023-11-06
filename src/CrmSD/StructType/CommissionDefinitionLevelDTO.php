@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CommissionDefinitionLevelDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CommissionDefinitionLevelDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionLevelDTO
      */
     public function setCommissionId(?int $commissionId = null): self
     {
@@ -86,7 +87,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set leftMargin value
      * @param float $leftMargin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionLevelDTO
      */
     public function setLeftMargin(?float $leftMargin = null): self
     {
@@ -109,7 +110,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set percent value
      * @param float $percent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionLevelDTO
      */
     public function setPercent(?float $percent = null): self
     {
@@ -132,7 +133,7 @@ class CommissionDefinitionLevelDTO extends AbstractStructBase
     /**
      * Set rightMargin value
      * @param float $rightMargin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionLevelDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionLevelDTO
      */
     public function setRightMargin(?float $rightMargin = null): self
     {

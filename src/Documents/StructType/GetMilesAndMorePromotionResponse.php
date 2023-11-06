@@ -1,0 +1,103 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pggns\MidocoApi\Documents\StructType;
+
+use InvalidArgumentException;
+use WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for GetMilesAndMorePromotionResponse StructType
+ * @subpackage Structs
+ */
+#[\AllowDynamicProperties]
+class GetMilesAndMorePromotionResponse extends AbstractStructBase
+{
+    /**
+     * The MidocoMilesAndMorePromotion
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoMilesAndMorePromotion
+     * @var \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO[]
+     */
+    protected ?array $MidocoMilesAndMorePromotion = null;
+    /**
+     * Constructor method for GetMilesAndMorePromotionResponse
+     * @uses GetMilesAndMorePromotionResponse::setMidocoMilesAndMorePromotion()
+     * @param \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO[] $midocoMilesAndMorePromotion
+     */
+    public function __construct(?array $midocoMilesAndMorePromotion = null)
+    {
+        $this
+            ->setMidocoMilesAndMorePromotion($midocoMilesAndMorePromotion);
+    }
+    /**
+     * Get MidocoMilesAndMorePromotion value
+     * @return \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO[]
+     */
+    public function getMidocoMilesAndMorePromotion(): ?array
+    {
+        return $this->MidocoMilesAndMorePromotion;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setMidocoMilesAndMorePromotion method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMilesAndMorePromotion method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoMilesAndMorePromotionForArrayConstraintFromSetMidocoMilesAndMorePromotion(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $getMilesAndMorePromotionResponseMidocoMilesAndMorePromotionItem) {
+            // validation for constraint: itemType
+            if (!$getMilesAndMorePromotionResponseMidocoMilesAndMorePromotionItem instanceof \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO) {
+                $invalidValues[] = is_object($getMilesAndMorePromotionResponseMidocoMilesAndMorePromotionItem) ? get_class($getMilesAndMorePromotionResponseMidocoMilesAndMorePromotionItem) : sprintf('%s(%s)', gettype($getMilesAndMorePromotionResponseMidocoMilesAndMorePromotionItem), var_export($getMilesAndMorePromotionResponseMidocoMilesAndMorePromotionItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoMilesAndMorePromotion property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoMilesAndMorePromotion value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO[] $midocoMilesAndMorePromotion
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMilesAndMorePromotionResponse
+     */
+    public function setMidocoMilesAndMorePromotion(?array $midocoMilesAndMorePromotion = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoMilesAndMorePromotionArrayErrorMessage = self::validateMidocoMilesAndMorePromotionForArrayConstraintFromSetMidocoMilesAndMorePromotion($midocoMilesAndMorePromotion))) {
+            throw new InvalidArgumentException($midocoMilesAndMorePromotionArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoMilesAndMorePromotion = $midocoMilesAndMorePromotion;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoMilesAndMorePromotion value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetMilesAndMorePromotionResponse
+     */
+    public function addToMidocoMilesAndMorePromotion(\Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMilesAndMorePromotion property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MilesAndMorePromotionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoMilesAndMorePromotion[] = $item;
+        
+        return $this;
+    }
+}

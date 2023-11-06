@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAccountEntriesForOrderResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAccountEntriesForOrderResponse extends AbstractStructBase
 {
     /**
@@ -65,12 +66,13 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
         return $this->MidocoOrderAccountEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderAccountEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderAccountEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderAccountEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderAccountEntryForArrayConstraintsFromSetMidocoOrderAccountEntry(?array $values = []): string
+    public static function validateMidocoOrderAccountEntryForArrayConstraintFromSetMidocoOrderAccountEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,7 +101,7 @@ class GetAccountEntriesForOrderResponse extends AbstractStructBase
     public function setMidocoOrderAccountEntry(?array $midocoOrderAccountEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderAccountEntryArrayErrorMessage = self::validateMidocoOrderAccountEntryForArrayConstraintsFromSetMidocoOrderAccountEntry($midocoOrderAccountEntry))) {
+        if ('' !== ($midocoOrderAccountEntryArrayErrorMessage = self::validateMidocoOrderAccountEntryForArrayConstraintFromSetMidocoOrderAccountEntry($midocoOrderAccountEntry))) {
             throw new InvalidArgumentException($midocoOrderAccountEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderAccountEntry = $midocoOrderAccountEntry;

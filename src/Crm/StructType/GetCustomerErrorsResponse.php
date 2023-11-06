@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCustomerErrorsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustomerErrorsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCustomerErrorsResponse extends AbstractStructBase
         return $this->MidocoCustomerError;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerError method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerError method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerError method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerErrorForArrayConstraintsFromSetMidocoCustomerError(?array $values = []): string
+    public static function validateMidocoCustomerErrorForArrayConstraintFromSetMidocoCustomerError(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCustomerErrorsResponse extends AbstractStructBase
     public function setMidocoCustomerError(?array $midocoCustomerError = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerErrorArrayErrorMessage = self::validateMidocoCustomerErrorForArrayConstraintsFromSetMidocoCustomerError($midocoCustomerError))) {
+        if ('' !== ($midocoCustomerErrorArrayErrorMessage = self::validateMidocoCustomerErrorForArrayConstraintFromSetMidocoCustomerError($midocoCustomerError))) {
             throw new InvalidArgumentException($midocoCustomerErrorArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerError = $midocoCustomerError;

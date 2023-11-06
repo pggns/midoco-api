@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgunitGuiAttributeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgunitGuiAttributeDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class OrgunitGuiAttributeDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitGuiAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitGuiAttributeDTO
      */
     public function setAttributeId(?int $attributeId = null): self
     {
@@ -94,7 +95,7 @@ class OrgunitGuiAttributeDTO extends AbstractStructBase
     /**
      * Set isVisible value
      * @param bool $isVisible
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitGuiAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitGuiAttributeDTO
      */
     public function setIsVisible(?bool $isVisible = null): self
     {
@@ -117,7 +118,7 @@ class OrgunitGuiAttributeDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitGuiAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitGuiAttributeDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -140,7 +141,7 @@ class OrgunitGuiAttributeDTO extends AbstractStructBase
     /**
      * Set preferredWidth value
      * @param int $preferredWidth
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitGuiAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitGuiAttributeDTO
      */
     public function setPreferredWidth(?int $preferredWidth = null): self
     {
@@ -163,7 +164,7 @@ class OrgunitGuiAttributeDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitGuiAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitGuiAttributeDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

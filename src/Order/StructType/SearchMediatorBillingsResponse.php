@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchMediatorBillingsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchMediatorBillingsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchMediatorBillingsResponse extends AbstractStructBase
         return $this->MidocoMediatorBilling;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediatorBilling method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediatorBilling method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediatorBilling method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediatorBillingForArrayConstraintsFromSetMidocoMediatorBilling(?array $values = []): string
+    public static function validateMidocoMediatorBillingForArrayConstraintFromSetMidocoMediatorBilling(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchMediatorBillingsResponse extends AbstractStructBase
     public function setMidocoMediatorBilling(?array $midocoMediatorBilling = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediatorBillingArrayErrorMessage = self::validateMidocoMediatorBillingForArrayConstraintsFromSetMidocoMediatorBilling($midocoMediatorBilling))) {
+        if ('' !== ($midocoMediatorBillingArrayErrorMessage = self::validateMidocoMediatorBillingForArrayConstraintFromSetMidocoMediatorBilling($midocoMediatorBilling))) {
             throw new InvalidArgumentException($midocoMediatorBillingArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediatorBilling = $midocoMediatorBilling;

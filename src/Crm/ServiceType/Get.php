@@ -19,7 +19,7 @@ class Get extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Crm\ServiceType\Get
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -805,6 +805,33 @@ class Get extends AbstractSoapClientBase
             ], [], [], $this->outputHeaders));
         
             return $resultGetCustomerTravels;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getExtendedCustomerTravels
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Crm\StructType\GetExtendedCustomerTravelsRequest $paramGetExtendedCustomerTravelsRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetExtendedCustomerTravelsResponse|bool
+     */
+    public function getExtendedCustomerTravels(\Pggns\MidocoApi\Crm\StructType\GetExtendedCustomerTravelsRequest $paramGetExtendedCustomerTravelsRequest)
+    {
+        try {
+            $this->setResult($resultGetExtendedCustomerTravels = $this->getSoapClient()->__soapCall('getExtendedCustomerTravels', [
+                $paramGetExtendedCustomerTravelsRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetExtendedCustomerTravels;
         } catch (SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
         
@@ -2891,9 +2918,90 @@ class Get extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named getNeoExportString
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Crm\StructType\GetNeoExportStringRequest $paramGetNeoExportStringRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetNeoExportStringResponse|bool
+     */
+    public function getNeoExportString(\Pggns\MidocoApi\Crm\StructType\GetNeoExportStringRequest $paramGetNeoExportStringRequest)
+    {
+        try {
+            $this->setResult($resultGetNeoExportString = $this->getSoapClient()->__soapCall('getNeoExportString', [
+                $paramGetNeoExportStringRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetNeoExportString;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getSabreVacationsExportString
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Crm\StructType\GetSabreVacationsExportStringRequest $paramGetSabreVacationsExportStringRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetSabreVacationsExportStringResponse|bool
+     */
+    public function getSabreVacationsExportString(\Pggns\MidocoApi\Crm\StructType\GetSabreVacationsExportStringRequest $paramGetSabreVacationsExportStringRequest)
+    {
+        try {
+            $this->setResult($resultGetSabreVacationsExportString = $this->getSoapClient()->__soapCall('getSabreVacationsExportString', [
+                $paramGetSabreVacationsExportStringRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetSabreVacationsExportString;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getCrmExternalOffer
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Crm\StructType\GetCrmExternalOfferRequest $paramGetCrmExternalOfferRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\GetCrmExternalOfferResponse|bool
+     */
+    public function getCrmExternalOffer(\Pggns\MidocoApi\Crm\StructType\GetCrmExternalOfferRequest $paramGetCrmExternalOfferRequest)
+    {
+        try {
+            $this->setResult($resultGetCrmExternalOffer = $this->getSoapClient()->__soapCall('getCrmExternalOffer', [
+                $paramGetCrmExternalOfferRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetCrmExternalOffer;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Crm\StructType\GetAddressResponse|\Pggns\MidocoApi\Crm\StructType\GetAgenciesWithCollectiveInvoiceResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyByCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyCommissionResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyCooperationHistoryResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyDetailsResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyExternalSystemAttributesResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyNumbersResponse|\Pggns\MidocoApi\Crm\StructType\GetAllCompanyCustomersResponse|\Pggns\MidocoApi\Crm\StructType\GetAmadeusExportStringResponse|\Pggns\MidocoApi\Crm\StructType\GetAutoBillingMatrixResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableBonusDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableCardDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableComplaintReasonDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableComplaintTypeDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableContactDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableCountriesResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableDocumentTypesResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableLockReasonDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableLockReasonsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableMediatorsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailablePrintRecipientResponse|\Pggns\MidocoApi\Crm\StructType\GetBonusCardsResponse|\Pggns\MidocoApi\Crm\StructType\GetCcCardsResponse|\Pggns\MidocoApi\Crm\StructType\GetCcTokenResponse|\Pggns\MidocoApi\Crm\StructType\GetCollectiveInvoiceSettingsResponse|\Pggns\MidocoApi\Crm\StructType\GetCommunicationHistoriesResponse|\Pggns\MidocoApi\Crm\StructType\GetComplaintDocumentsResponse|\Pggns\MidocoApi\Crm\StructType\GetComplaintReasonsResponse|\Pggns\MidocoApi\Crm\StructType\GetComplaintsResponse|\Pggns\MidocoApi\Crm\StructType\GetContactEntriesResponse|\Pggns\MidocoApi\Crm\StructType\GetContactMediaResponse|\Pggns\MidocoApi\Crm\StructType\GetCooperationsResponse|\Pggns\MidocoApi\Crm\StructType\GetCreditorResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmCampaignesResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmContextResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmCustomerPaymentGroupFeeResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmHistoryResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmNoticeCommentsResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmNoticesResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmPersonTravellersResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmPrintTypeNoOfCopiesResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmPrintTypesResponse|\Pggns\MidocoApi\Crm\StructType\GetCustInfoIfDifferentResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerAddressesResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerAssignableDebitorsResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerByMediatorIdResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerCommissionDefinitionsResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerCompanyResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerErrorsResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerInfoResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerInternalVersionResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerLinksResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerMandateResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerMfResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerOrdersResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerStatisticDataResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerTravelsResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitCardsResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitorInfoResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitorResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitorsResponse|\Pggns\MidocoApi\Crm\StructType\GetDirectDebitorContactsResponse|\Pggns\MidocoApi\Crm\StructType\GetDocumentResponse|\Pggns\MidocoApi\Crm\StructType\GetDocumentsResponse|\Pggns\MidocoApi\Crm\StructType\GetDueMediatorChargesResponse|\Pggns\MidocoApi\Crm\StructType\GetDueMidocoChargesResponse|\Pggns\MidocoApi\Crm\StructType\GetDuplicateAddressResponse|\Pggns\MidocoApi\Crm\StructType\GetEmailsResponse|\Pggns\MidocoApi\Crm\StructType\GetErmMailInfoResponse|\Pggns\MidocoApi\Crm\StructType\GetExportChangedCustomersResponse|\Pggns\MidocoApi\Crm\StructType\GetFrequentFlyerNumbersResponse|\Pggns\MidocoApi\Crm\StructType\GetGroupAdvisorResponse|\Pggns\MidocoApi\Crm\StructType\GetGroupConsentResponse|\Pggns\MidocoApi\Crm\StructType\GetHistoryResponse|\Pggns\MidocoApi\Crm\StructType\GetIsDiversDebitorsResponse|\Pggns\MidocoApi\Crm\StructType\GetLinkedCrmCompaniesToSupplierResponse|\Pggns\MidocoApi\Crm\StructType\GetMailForDocumentIdResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorByCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorChargeResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorChargesListResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorContactsResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorSettlementLevelResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorTextTemplatesResponse|\Pggns\MidocoApi\Crm\StructType\GetMerlinExportStringResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoAgencyResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoChargeResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoChargesListResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoCrmCustomerPaymentResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoMediatorResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoSupplierFormatResponse|\Pggns\MidocoApi\Crm\StructType\GetModifiedCustomersResponse|\Pggns\MidocoApi\Crm\StructType\GetPrintRecipientResponse|\Pggns\MidocoApi\Crm\StructType\GetPrintSelectsForCustomerResponse|\Pggns\MidocoApi\Crm\StructType\GetSalutationForCultureResponse|\Pggns\MidocoApi\Crm\StructType\GetSalutationTypesResponse|\Pggns\MidocoApi\Crm\StructType\GetSimilarAddressResponse|\Pggns\MidocoApi\Crm\StructType\GetSupplierReportForMediatorResponse|\Pggns\MidocoApi\Crm\StructType\GetSupplierReportForSupplierResponse|\Pggns\MidocoApi\Crm\StructType\GetTravellerResponse|\Pggns\MidocoApi\Crm\StructType\GetUnitDebitorResponse|\Pggns\MidocoApi\Crm\StructType\GetUnprintedCustomerInvoicesResponse|\Pggns\MidocoApi\Crm\StructType\GetYearlyTurnoverResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\GetAddressResponse|\Pggns\MidocoApi\Crm\StructType\GetAgenciesWithCollectiveInvoiceResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyByCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyCommissionResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyCooperationHistoryResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyDetailsResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyExternalSystemAttributesResponse|\Pggns\MidocoApi\Crm\StructType\GetAgencyNumbersResponse|\Pggns\MidocoApi\Crm\StructType\GetAllCompanyCustomersResponse|\Pggns\MidocoApi\Crm\StructType\GetAmadeusExportStringResponse|\Pggns\MidocoApi\Crm\StructType\GetAutoBillingMatrixResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableBonusDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableCardDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableComplaintReasonDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableComplaintTypeDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableContactDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableCountriesResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableDocumentTypesResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableLockReasonDescriptionsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableLockReasonsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailableMediatorsResponse|\Pggns\MidocoApi\Crm\StructType\GetAvailablePrintRecipientResponse|\Pggns\MidocoApi\Crm\StructType\GetBonusCardsResponse|\Pggns\MidocoApi\Crm\StructType\GetCcCardsResponse|\Pggns\MidocoApi\Crm\StructType\GetCcTokenResponse|\Pggns\MidocoApi\Crm\StructType\GetCollectiveInvoiceSettingsResponse|\Pggns\MidocoApi\Crm\StructType\GetCommunicationHistoriesResponse|\Pggns\MidocoApi\Crm\StructType\GetComplaintDocumentsResponse|\Pggns\MidocoApi\Crm\StructType\GetComplaintReasonsResponse|\Pggns\MidocoApi\Crm\StructType\GetComplaintsResponse|\Pggns\MidocoApi\Crm\StructType\GetContactEntriesResponse|\Pggns\MidocoApi\Crm\StructType\GetContactMediaResponse|\Pggns\MidocoApi\Crm\StructType\GetCooperationsResponse|\Pggns\MidocoApi\Crm\StructType\GetCreditorResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmCampaignesResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmContextResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmCustomerPaymentGroupFeeResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmExternalOfferResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmHistoryResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmNoticeCommentsResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmNoticesResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmPersonTravellersResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmPrintTypeNoOfCopiesResponse|\Pggns\MidocoApi\Crm\StructType\GetCrmPrintTypesResponse|\Pggns\MidocoApi\Crm\StructType\GetCustInfoIfDifferentResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerAddressesResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerAssignableDebitorsResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerByMediatorIdResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerCommissionDefinitionsResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerCompanyResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerErrorsResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerInfoResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerInternalVersionResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerLinksResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerMandateResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerMfResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerOrdersResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerStatisticDataResponse|\Pggns\MidocoApi\Crm\StructType\GetCustomerTravelsResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitCardsResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitorInfoResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitorResponse|\Pggns\MidocoApi\Crm\StructType\GetDebitorsResponse|\Pggns\MidocoApi\Crm\StructType\GetDirectDebitorContactsResponse|\Pggns\MidocoApi\Crm\StructType\GetDocumentResponse|\Pggns\MidocoApi\Crm\StructType\GetDocumentsResponse|\Pggns\MidocoApi\Crm\StructType\GetDueMediatorChargesResponse|\Pggns\MidocoApi\Crm\StructType\GetDueMidocoChargesResponse|\Pggns\MidocoApi\Crm\StructType\GetDuplicateAddressResponse|\Pggns\MidocoApi\Crm\StructType\GetEmailsResponse|\Pggns\MidocoApi\Crm\StructType\GetErmMailInfoResponse|\Pggns\MidocoApi\Crm\StructType\GetExportChangedCustomersResponse|\Pggns\MidocoApi\Crm\StructType\GetExtendedCustomerTravelsResponse|\Pggns\MidocoApi\Crm\StructType\GetFrequentFlyerNumbersResponse|\Pggns\MidocoApi\Crm\StructType\GetGroupAdvisorResponse|\Pggns\MidocoApi\Crm\StructType\GetGroupConsentResponse|\Pggns\MidocoApi\Crm\StructType\GetHistoryResponse|\Pggns\MidocoApi\Crm\StructType\GetIsDiversDebitorsResponse|\Pggns\MidocoApi\Crm\StructType\GetLinkedCrmCompaniesToSupplierResponse|\Pggns\MidocoApi\Crm\StructType\GetMailForDocumentIdResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorByCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorChargeResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorChargesListResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorContactsResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorSettlementLevelResponse|\Pggns\MidocoApi\Crm\StructType\GetMediatorTextTemplatesResponse|\Pggns\MidocoApi\Crm\StructType\GetMerlinExportStringResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoAgencyResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoChargeResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoChargesListResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoCrmCustomerPaymentResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoMediatorResponse|\Pggns\MidocoApi\Crm\StructType\GetMidocoSupplierFormatResponse|\Pggns\MidocoApi\Crm\StructType\GetModifiedCustomersResponse|\Pggns\MidocoApi\Crm\StructType\GetNeoExportStringResponse|\Pggns\MidocoApi\Crm\StructType\GetPrintRecipientResponse|\Pggns\MidocoApi\Crm\StructType\GetPrintSelectsForCustomerResponse|\Pggns\MidocoApi\Crm\StructType\GetSabreVacationsExportStringResponse|\Pggns\MidocoApi\Crm\StructType\GetSalutationForCultureResponse|\Pggns\MidocoApi\Crm\StructType\GetSalutationTypesResponse|\Pggns\MidocoApi\Crm\StructType\GetSimilarAddressResponse|\Pggns\MidocoApi\Crm\StructType\GetSupplierReportForMediatorResponse|\Pggns\MidocoApi\Crm\StructType\GetSupplierReportForSupplierResponse|\Pggns\MidocoApi\Crm\StructType\GetTravellerResponse|\Pggns\MidocoApi\Crm\StructType\GetUnitDebitorResponse|\Pggns\MidocoApi\Crm\StructType\GetUnprintedCustomerInvoicesResponse|\Pggns\MidocoApi\Crm\StructType\GetYearlyTurnoverResponse
      */
     public function getResult()
     {

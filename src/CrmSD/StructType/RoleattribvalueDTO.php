@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RoleattribvalueDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RoleattribvalueDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class RoleattribvalueDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleattribvalueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleattribvalueDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -78,7 +79,7 @@ class RoleattribvalueDTO extends AbstractStructBase
     /**
      * Set attribValue value
      * @param string $attribValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleattribvalueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleattribvalueDTO
      */
     public function setAttribValue(?string $attribValue = null): self
     {
@@ -101,7 +102,7 @@ class RoleattribvalueDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleattribvalueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleattribvalueDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

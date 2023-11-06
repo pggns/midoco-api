@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgLicensDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgLicensDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class OrgLicensDTO extends AbstractStructBase
     /**
      * Set licenseKey value
      * @param string $licenseKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgLicensDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgLicensDTO
      */
     public function setLicenseKey(?string $licenseKey = null): self
     {
@@ -70,7 +71,7 @@ class OrgLicensDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgLicensDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgLicensDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

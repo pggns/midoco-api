@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TransferListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TransferListRequest extends AbstractStructBase
 {
     /**

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCrmNotices --- returns the list of order Notices for a customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmNoticesResponse extends AbstractStructBase
 {
     /**
@@ -21,7 +22,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmNotice
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice[]
      */
     protected ?array $MidocoCrmNotice = null;
     /**
@@ -93,7 +94,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
      * @uses GetCrmNoticesResponse::setNotice()
      * @uses GetCrmNoticesResponse::setTaskType()
      * @uses GetCrmNoticesResponse::setFinishUser()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[] $midocoCrmNotice
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice[] $midocoCrmNotice
      * @param string $sortOrder
      * @param string $orgunitName
      * @param string $selection
@@ -124,19 +125,20 @@ class GetCrmNoticesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmNotice value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice[]
      */
     public function getMidocoCrmNotice(): ?array
     {
         return $this->MidocoCrmNotice;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmNotice method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmNotice method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmNotice method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmNoticeForArrayConstraintsFromSetMidocoCrmNotice(?array $values = []): string
+    public static function validateMidocoCrmNoticeForArrayConstraintFromSetMidocoCrmNotice(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -145,12 +147,12 @@ class GetCrmNoticesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmNoticesResponseMidocoCrmNoticeItem) {
             // validation for constraint: itemType
-            if (!$getCrmNoticesResponseMidocoCrmNoticeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice) {
+            if (!$getCrmNoticesResponseMidocoCrmNoticeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice) {
                 $invalidValues[] = is_object($getCrmNoticesResponseMidocoCrmNoticeItem) ? get_class($getCrmNoticesResponseMidocoCrmNoticeItem) : sprintf('%s(%s)', gettype($getCrmNoticesResponseMidocoCrmNoticeItem), var_export($getCrmNoticesResponseMidocoCrmNoticeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -159,13 +161,13 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set MidocoCrmNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice[] $midocoCrmNotice
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice[] $midocoCrmNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setMidocoCrmNotice(?array $midocoCrmNotice = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmNoticeArrayErrorMessage = self::validateMidocoCrmNoticeForArrayConstraintsFromSetMidocoCrmNotice($midocoCrmNotice))) {
+        if ('' !== ($midocoCrmNoticeArrayErrorMessage = self::validateMidocoCrmNoticeForArrayConstraintFromSetMidocoCrmNotice($midocoCrmNotice))) {
             throw new InvalidArgumentException($midocoCrmNoticeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmNotice = $midocoCrmNotice;
@@ -175,14 +177,14 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmNotice value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
-    public function addToMidocoCrmNotice(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice $item): self
+    public function addToMidocoCrmNotice(\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmNotice property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmNotice[] = $item;
         
@@ -199,7 +201,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set sortOrder value
      * @param string $sortOrder
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setSortOrder(?string $sortOrder = null): self
     {
@@ -222,7 +224,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {
@@ -245,7 +247,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set selection value
      * @param string $selection
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setSelection(?string $selection = null): self
     {
@@ -268,7 +270,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set fromFinishTimestamp value
      * @param string $fromFinishTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setFromFinishTimestamp(?string $fromFinishTimestamp = null): self
     {
@@ -291,7 +293,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set untilFinishTimestamp value
      * @param string $untilFinishTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setUntilFinishTimestamp(?string $untilFinishTimestamp = null): self
     {
@@ -314,7 +316,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set fromCreationTimestamp value
      * @param string $fromCreationTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setFromCreationTimestamp(?string $fromCreationTimestamp = null): self
     {
@@ -337,7 +339,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set untilCreationTimestamp value
      * @param string $untilCreationTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setUntilCreationTimestamp(?string $untilCreationTimestamp = null): self
     {
@@ -360,7 +362,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set delegationRole value
      * @param string $delegationRole
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setDelegationRole(?string $delegationRole = null): self
     {
@@ -383,7 +385,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setNotice(?string $notice = null): self
     {
@@ -406,7 +408,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -429,7 +431,7 @@ class GetCrmNoticesResponse extends AbstractStructBase
     /**
      * Set finishUser value
      * @param int $finishUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmNoticesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmNoticesResponse
      */
     public function setFinishUser(?int $finishUser = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisBonusCardDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisBonusCardDTO extends AbstractStructBase
 {
     /**

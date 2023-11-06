@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoContactEntryType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoContactEntryType extends ContactEntryDTO
 {
     /**
@@ -49,12 +50,13 @@ class MidocoContactEntryType extends ContactEntryDTO
         return $this->MidocoContactSource;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactSource method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactSource method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactSource method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactSourceForArrayConstraintsFromSetMidocoContactSource(?array $values = []): string
+    public static function validateMidocoContactSourceForArrayConstraintFromSetMidocoContactSource(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class MidocoContactEntryType extends ContactEntryDTO
     public function setMidocoContactSource(?array $midocoContactSource = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactSourceArrayErrorMessage = self::validateMidocoContactSourceForArrayConstraintsFromSetMidocoContactSource($midocoContactSource))) {
+        if ('' !== ($midocoContactSourceArrayErrorMessage = self::validateMidocoContactSourceForArrayConstraintFromSetMidocoContactSource($midocoContactSource))) {
             throw new InvalidArgumentException($midocoContactSourceArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactSource = $midocoContactSource;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CityDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CityDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class CityDTO extends AbstractStructBase
     /**
      * Set cityName value
      * @param string $cityName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityDTO
      */
     public function setCityName(?string $cityName = null): self
     {
@@ -94,7 +95,7 @@ class CityDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -117,7 +118,7 @@ class CityDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityDTO
      */
     public function setState(?string $state = null): self
     {
@@ -140,7 +141,7 @@ class CityDTO extends AbstractStructBase
     /**
      * Set telPrefix value
      * @param string $telPrefix
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityDTO
      */
     public function setTelPrefix(?string $telPrefix = null): self
     {
@@ -163,7 +164,7 @@ class CityDTO extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityDTO
      */
     public function setZipCode(?string $zipCode = null): self
     {

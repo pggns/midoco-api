@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for carServiceType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CarServiceType extends AbstractStructBase
 {
     /**
@@ -571,7 +572,7 @@ class CarServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pickupDate, true), gettype($pickupDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($pickupDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $pickupDate)) {
+        if (!is_null($pickupDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $pickupDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($pickupDate, true)), __LINE__);
         }
         $this->pickupDate = $pickupDate;
@@ -598,7 +599,7 @@ class CarServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pickupTime, true), gettype($pickupTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($pickupTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $pickupTime)) {
+        if (!is_null($pickupTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $pickupTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($pickupTime, true)), __LINE__);
         }
         $this->pickupTime = $pickupTime;
@@ -671,7 +672,7 @@ class CarServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($returnDate, true), gettype($returnDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($returnDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $returnDate)) {
+        if (!is_null($returnDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $returnDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($returnDate, true)), __LINE__);
         }
         $this->returnDate = $returnDate;
@@ -698,7 +699,7 @@ class CarServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($returnTime, true), gettype($returnTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($returnTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $returnTime)) {
+        if (!is_null($returnTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $returnTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($returnTime, true)), __LINE__);
         }
         $this->returnTime = $returnTime;
@@ -1059,12 +1060,13 @@ class CarServiceType extends AbstractStructBase
         return $this->travelerRefId;
     }
     /**
-     * This method is responsible for validating the values passed to the setTravelerRefId method
+     * This method is responsible for validating the value(s) passed to the setTravelerRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTravelerRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTravelerRefIdForArrayConstraintsFromSetTravelerRefId(?array $values = []): string
+    public static function validateTravelerRefIdForArrayConstraintFromSetTravelerRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1093,7 +1095,7 @@ class CarServiceType extends AbstractStructBase
     public function setTravelerRefId(?array $travelerRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($travelerRefIdArrayErrorMessage = self::validateTravelerRefIdForArrayConstraintsFromSetTravelerRefId($travelerRefId))) {
+        if ('' !== ($travelerRefIdArrayErrorMessage = self::validateTravelerRefIdForArrayConstraintFromSetTravelerRefId($travelerRefId))) {
             throw new InvalidArgumentException($travelerRefIdArrayErrorMessage, __LINE__);
         }
         $this->travelerRefId = $travelerRefId;

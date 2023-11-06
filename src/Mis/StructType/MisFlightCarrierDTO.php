@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisFlightCarrierDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisFlightCarrierDTO extends AbstractStructBase
 {
     /**

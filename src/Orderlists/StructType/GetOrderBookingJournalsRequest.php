@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderBookingJournalsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderBookingJournalsRequest extends AbstractStructBase
 {
     /**

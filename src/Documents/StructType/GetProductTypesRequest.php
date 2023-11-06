@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetProductTypesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetProductTypesRequest extends AbstractStructBase
 {
+    /**
+     * The productType
+     * @var string|null
+     */
+    protected ?string $productType = null;
     /**
      * The forPerson
      * @var bool|null
@@ -25,16 +31,42 @@ class GetProductTypesRequest extends AbstractStructBase
     protected ?bool $forCompany = null;
     /**
      * Constructor method for GetProductTypesRequest
+     * @uses GetProductTypesRequest::setProductType()
      * @uses GetProductTypesRequest::setForPerson()
      * @uses GetProductTypesRequest::setForCompany()
+     * @param string $productType
      * @param bool $forPerson
      * @param bool $forCompany
      */
-    public function __construct(?bool $forPerson = null, ?bool $forCompany = null)
+    public function __construct(?string $productType = null, ?bool $forPerson = null, ?bool $forCompany = null)
     {
         $this
+            ->setProductType($productType)
             ->setForPerson($forPerson)
             ->setForCompany($forCompany);
+    }
+    /**
+     * Get productType value
+     * @return string|null
+     */
+    public function getProductType(): ?string
+    {
+        return $this->productType;
+    }
+    /**
+     * Set productType value
+     * @param string $productType
+     * @return \Pggns\MidocoApi\Documents\StructType\GetProductTypesRequest
+     */
+    public function setProductType(?string $productType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($productType) && !is_string($productType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($productType, true), gettype($productType)), __LINE__);
+        }
+        $this->productType = $productType;
+        
+        return $this;
     }
     /**
      * Get forPerson value

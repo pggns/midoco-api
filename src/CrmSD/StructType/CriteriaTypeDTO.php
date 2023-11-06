@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CriteriaTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CriteriaTypeDTO extends AbstractStructBase
 {
     /**
@@ -127,7 +128,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -150,7 +151,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set editValue value
      * @param bool $editValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setEditValue(?bool $editValue = null): self
     {
@@ -173,7 +174,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set exportToReporting value
      * @param bool $exportToReporting
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setExportToReporting(?bool $exportToReporting = null): self
     {
@@ -196,7 +197,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set forceUpshift value
      * @param bool $forceUpshift
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setForceUpshift(?bool $forceUpshift = null): self
     {
@@ -219,7 +220,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set guiCategoryPosition value
      * @param int $guiCategoryPosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setGuiCategoryPosition(?int $guiCategoryPosition = null): self
     {
@@ -242,7 +243,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set isPasswordType value
      * @param bool $isPasswordType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setIsPasswordType(?bool $isPasswordType = null): self
     {
@@ -265,7 +266,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set printDataProtection value
      * @param bool $printDataProtection
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setPrintDataProtection(?bool $printDataProtection = null): self
     {
@@ -288,7 +289,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set readonly value
      * @param bool $readonly
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setReadonly(?bool $readonly = null): self
     {
@@ -311,7 +312,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set required value
      * @param bool $required
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setRequired(?bool $required = null): self
     {
@@ -334,7 +335,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set requiresUpdateRight value
      * @param bool $requiresUpdateRight
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setRequiresUpdateRight(?bool $requiresUpdateRight = null): self
     {
@@ -357,7 +358,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -380,7 +381,7 @@ class CriteriaTypeDTO extends AbstractStructBase
     /**
      * Set valueTakeover value
      * @param bool $valueTakeover
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaTypeDTO
      */
     public function setValueTakeover(?bool $valueTakeover = null): self
     {

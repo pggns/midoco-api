@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllCitiesFromZipCodeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllCitiesFromZipCodeResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetAllCitiesFromZipCodeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCity
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CityDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CityDTO[]
      */
     protected ?array $MidocoCity = null;
     /**
      * Constructor method for GetAllCitiesFromZipCodeResponse
      * @uses GetAllCitiesFromZipCodeResponse::setMidocoCity()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CityDTO[] $midocoCity
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CityDTO[] $midocoCity
      */
     public function __construct(?array $midocoCity = null)
     {
@@ -34,19 +35,20 @@ class GetAllCitiesFromZipCodeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCity value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityDTO[]
      */
     public function getMidocoCity(): ?array
     {
         return $this->MidocoCity;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCity method
+     * This method is responsible for validating the value(s) passed to the setMidocoCity method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCity method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCityForArrayConstraintsFromSetMidocoCity(?array $values = []): string
+    public static function validateMidocoCityForArrayConstraintFromSetMidocoCity(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetAllCitiesFromZipCodeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllCitiesFromZipCodeResponseMidocoCityItem) {
             // validation for constraint: itemType
-            if (!$getAllCitiesFromZipCodeResponseMidocoCityItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CityDTO) {
+            if (!$getAllCitiesFromZipCodeResponseMidocoCityItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CityDTO) {
                 $invalidValues[] = is_object($getAllCitiesFromZipCodeResponseMidocoCityItem) ? get_class($getAllCitiesFromZipCodeResponseMidocoCityItem) : sprintf('%s(%s)', gettype($getAllCitiesFromZipCodeResponseMidocoCityItem), var_export($getAllCitiesFromZipCodeResponseMidocoCityItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCity property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CityDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCity property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CityDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetAllCitiesFromZipCodeResponse extends AbstractStructBase
     /**
      * Set MidocoCity value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CityDTO[] $midocoCity
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCitiesFromZipCodeResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CityDTO[] $midocoCity
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllCitiesFromZipCodeResponse
      */
     public function setMidocoCity(?array $midocoCity = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCityArrayErrorMessage = self::validateMidocoCityForArrayConstraintsFromSetMidocoCity($midocoCity))) {
+        if ('' !== ($midocoCityArrayErrorMessage = self::validateMidocoCityForArrayConstraintFromSetMidocoCity($midocoCity))) {
             throw new InvalidArgumentException($midocoCityArrayErrorMessage, __LINE__);
         }
         $this->MidocoCity = $midocoCity;
@@ -85,14 +87,14 @@ class GetAllCitiesFromZipCodeResponse extends AbstractStructBase
     /**
      * Add item to MidocoCity value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CityDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCitiesFromZipCodeResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CityDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllCitiesFromZipCodeResponse
      */
-    public function addToMidocoCity(\Pggns\MidocoApi\CrmSD\StructType\CityDTO $item): self
+    public function addToMidocoCity(\Pggns\MidocoApi\Crmsd\StructType\CityDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CityDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCity property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CityDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CityDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCity property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CityDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCity[] = $item;
         

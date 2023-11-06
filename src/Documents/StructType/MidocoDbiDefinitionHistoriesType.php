@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDbiDefinitionHistoriesType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDbiDefinitionHistoriesType extends AbstractStructBase
 {
     /**
@@ -72,12 +73,13 @@ class MidocoDbiDefinitionHistoriesType extends AbstractStructBase
         return $this->MidocoDbiDefinitionHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDbiDefinitionHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoDbiDefinitionHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDbiDefinitionHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDbiDefinitionHistoryForArrayConstraintsFromSetMidocoDbiDefinitionHistory(?array $values = []): string
+    public static function validateMidocoDbiDefinitionHistoryForArrayConstraintFromSetMidocoDbiDefinitionHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -106,7 +108,7 @@ class MidocoDbiDefinitionHistoriesType extends AbstractStructBase
     public function setMidocoDbiDefinitionHistory(?array $midocoDbiDefinitionHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDbiDefinitionHistoryArrayErrorMessage = self::validateMidocoDbiDefinitionHistoryForArrayConstraintsFromSetMidocoDbiDefinitionHistory($midocoDbiDefinitionHistory))) {
+        if ('' !== ($midocoDbiDefinitionHistoryArrayErrorMessage = self::validateMidocoDbiDefinitionHistoryForArrayConstraintFromSetMidocoDbiDefinitionHistory($midocoDbiDefinitionHistory))) {
             throw new InvalidArgumentException($midocoDbiDefinitionHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoDbiDefinitionHistory = $midocoDbiDefinitionHistory;

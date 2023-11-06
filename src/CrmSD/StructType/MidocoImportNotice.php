@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoImportNotice StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoImportNotice extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class MidocoImportNotice extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportNotice
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -110,7 +111,7 @@ class MidocoImportNotice extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportNotice
      */
     public function setNotice(?string $notice = null): self
     {
@@ -133,7 +134,7 @@ class MidocoImportNotice extends AbstractStructBase
     /**
      * Set crationUser value
      * @param string $crationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportNotice
      */
     public function setCrationUser(?string $crationUser = null): self
     {
@@ -156,7 +157,7 @@ class MidocoImportNotice extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportNotice
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -179,7 +180,7 @@ class MidocoImportNotice extends AbstractStructBase
     /**
      * Set asTask value
      * @param bool $asTask
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportNotice
      */
     public function setAsTask(?bool $asTask = null): self
     {
@@ -202,7 +203,7 @@ class MidocoImportNotice extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportNotice
      */
     public function setTaskType(?string $taskType = null): self
     {
@@ -225,7 +226,7 @@ class MidocoImportNotice extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportNotice
      */
     public function setDueDate(?string $dueDate = null): self
     {

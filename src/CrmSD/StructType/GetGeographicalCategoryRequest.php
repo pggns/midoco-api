@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetGeographicalCategoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetGeographicalCategoryRequest extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class GetGeographicalCategoryRequest extends AbstractStructBase
         return $this->countryCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setCountryCode method
+     * This method is responsible for validating the value(s) passed to the setCountryCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCountryCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCountryCodeForArrayConstraintsFromSetCountryCode(?array $values = []): string
+    public static function validateCountryCodeForArrayConstraintFromSetCountryCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -80,12 +82,12 @@ class GetGeographicalCategoryRequest extends AbstractStructBase
      * Set countryCode value
      * @throws InvalidArgumentException
      * @param string[] $countryCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGeographicalCategoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetGeographicalCategoryRequest
      */
     public function setCountryCode(?array $countryCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($countryCodeArrayErrorMessage = self::validateCountryCodeForArrayConstraintsFromSetCountryCode($countryCode))) {
+        if ('' !== ($countryCodeArrayErrorMessage = self::validateCountryCodeForArrayConstraintFromSetCountryCode($countryCode))) {
             throw new InvalidArgumentException($countryCodeArrayErrorMessage, __LINE__);
         }
         $this->countryCode = $countryCode;
@@ -96,7 +98,7 @@ class GetGeographicalCategoryRequest extends AbstractStructBase
      * Add item to countryCode value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGeographicalCategoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetGeographicalCategoryRequest
      */
     public function addToCountryCode(string $item): self
     {
@@ -119,7 +121,7 @@ class GetGeographicalCategoryRequest extends AbstractStructBase
     /**
      * Set travelDate value
      * @param string $travelDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetGeographicalCategoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetGeographicalCategoryRequest
      */
     public function setTravelDate(?string $travelDate = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoTaskDefinitionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoTaskDefinitionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoTaskDefinitionResponse extends AbstractStructBase
         return $this->MidocoTaskDefinition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTaskDefinition method
+     * This method is responsible for validating the value(s) passed to the setMidocoTaskDefinition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTaskDefinition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTaskDefinitionForArrayConstraintsFromSetMidocoTaskDefinition(?array $values = []): string
+    public static function validateMidocoTaskDefinitionForArrayConstraintFromSetMidocoTaskDefinition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoTaskDefinitionResponse extends AbstractStructBase
     public function setMidocoTaskDefinition(?array $midocoTaskDefinition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTaskDefinitionArrayErrorMessage = self::validateMidocoTaskDefinitionForArrayConstraintsFromSetMidocoTaskDefinition($midocoTaskDefinition))) {
+        if ('' !== ($midocoTaskDefinitionArrayErrorMessage = self::validateMidocoTaskDefinitionForArrayConstraintFromSetMidocoTaskDefinition($midocoTaskDefinition))) {
             throw new InvalidArgumentException($midocoTaskDefinitionArrayErrorMessage, __LINE__);
         }
         $this->MidocoTaskDefinition = $midocoTaskDefinition;

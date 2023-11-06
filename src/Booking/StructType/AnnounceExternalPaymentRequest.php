@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Service to send a payment referenced to an existing order.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AnnounceExternalPaymentRequest extends AbstractStructBase
 {
     /**
@@ -23,7 +24,7 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
      * - ref: mbm:ExternalPayment
      * @var \Pggns\MidocoApi\Booking\StructType\ExternalPayment[]
      */
-    protected array $ExternalPayment = [];
+    protected array $ExternalPayment;
     /**
      * The orderId
      * Meta information extracted from the WSDL
@@ -53,12 +54,13 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
         return $this->ExternalPayment;
     }
     /**
-     * This method is responsible for validating the values passed to the setExternalPayment method
+     * This method is responsible for validating the value(s) passed to the setExternalPayment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setExternalPayment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateExternalPaymentForArrayConstraintsFromSetExternalPayment(?array $values = []): string
+    public static function validateExternalPaymentForArrayConstraintFromSetExternalPayment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -87,7 +89,7 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
     public function setExternalPayment(array $externalPayment): self
     {
         // validation for constraint: array
-        if ('' !== ($externalPaymentArrayErrorMessage = self::validateExternalPaymentForArrayConstraintsFromSetExternalPayment($externalPayment))) {
+        if ('' !== ($externalPaymentArrayErrorMessage = self::validateExternalPaymentForArrayConstraintFromSetExternalPayment($externalPayment))) {
             throw new InvalidArgumentException($externalPaymentArrayErrorMessage, __LINE__);
         }
         $this->ExternalPayment = $externalPayment;

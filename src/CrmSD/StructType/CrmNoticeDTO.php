@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmNoticeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmNoticeDTO extends AbstractStructBase
 {
     /**
@@ -104,6 +105,11 @@ class CrmNoticeDTO extends AbstractStructBase
      */
     protected ?string $notice = null;
     /**
+     * The origin
+     * @var int|null
+     */
+    protected ?int $origin = null;
+    /**
      * The position
      * @var int|null
      */
@@ -148,6 +154,7 @@ class CrmNoticeDTO extends AbstractStructBase
      * @uses CrmNoticeDTO::setModifyTimestamp()
      * @uses CrmNoticeDTO::setModifyUser()
      * @uses CrmNoticeDTO::setNotice()
+     * @uses CrmNoticeDTO::setOrigin()
      * @uses CrmNoticeDTO::setPosition()
      * @uses CrmNoticeDTO::setPriority()
      * @uses CrmNoticeDTO::setRuleDefinitionId()
@@ -171,13 +178,14 @@ class CrmNoticeDTO extends AbstractStructBase
      * @param string $modifyTimestamp
      * @param int $modifyUser
      * @param string $notice
+     * @param int $origin
      * @param int $position
      * @param int $priority
      * @param int $ruleDefinitionId
      * @param string $startTime
      * @param string $taskType
      */
-    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?int $customerId = null, ?string $deadlineDate = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationRole = null, ?int $delegationUser = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?bool $isSpecialCustomer = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $position = null, ?int $priority = null, ?int $ruleDefinitionId = null, ?string $startTime = null, ?string $taskType = null)
+    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?int $customerId = null, ?string $deadlineDate = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationRole = null, ?int $delegationUser = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?bool $isSpecialCustomer = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $origin = null, ?int $position = null, ?int $priority = null, ?int $ruleDefinitionId = null, ?string $startTime = null, ?string $taskType = null)
     {
         $this
             ->setAsTask($asTask)
@@ -198,6 +206,7 @@ class CrmNoticeDTO extends AbstractStructBase
             ->setModifyTimestamp($modifyTimestamp)
             ->setModifyUser($modifyUser)
             ->setNotice($notice)
+            ->setOrigin($origin)
             ->setPosition($position)
             ->setPriority($priority)
             ->setRuleDefinitionId($ruleDefinitionId)
@@ -215,7 +224,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set asTask value
      * @param bool $asTask
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setAsTask(?bool $asTask = null): self
     {
@@ -238,7 +247,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set creationOrgunit value
      * @param string $creationOrgunit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setCreationOrgunit(?string $creationOrgunit = null): self
     {
@@ -261,7 +270,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -284,7 +293,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -307,7 +316,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -330,7 +339,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set deadlineDate value
      * @param string $deadlineDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setDeadlineDate(?string $deadlineDate = null): self
     {
@@ -353,7 +362,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set delegationOrgunit value
      * @param string $delegationOrgunit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setDelegationOrgunit(?string $delegationOrgunit = null): self
     {
@@ -376,7 +385,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set delegationQueue value
      * @param string $delegationQueue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setDelegationQueue(?string $delegationQueue = null): self
     {
@@ -399,7 +408,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set delegationRole value
      * @param int $delegationRole
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setDelegationRole(?int $delegationRole = null): self
     {
@@ -422,7 +431,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set delegationUser value
      * @param int $delegationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setDelegationUser(?int $delegationUser = null): self
     {
@@ -445,7 +454,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set dueDate value
      * @param string $dueDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setDueDate(?string $dueDate = null): self
     {
@@ -468,7 +477,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set finishTimestamp value
      * @param string $finishTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setFinishTimestamp(?string $finishTimestamp = null): self
     {
@@ -491,7 +500,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set finishUser value
      * @param int $finishUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setFinishUser(?int $finishUser = null): self
     {
@@ -514,7 +523,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set finished value
      * @param bool $finished
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setFinished(?bool $finished = null): self
     {
@@ -537,7 +546,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -560,7 +569,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -583,7 +592,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -606,7 +615,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set notice value
      * @param string $notice
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setNotice(?string $notice = null): self
     {
@@ -615,6 +624,29 @@ class CrmNoticeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($notice, true), gettype($notice)), __LINE__);
         }
         $this->notice = $notice;
+        
+        return $this;
+    }
+    /**
+     * Get origin value
+     * @return int|null
+     */
+    public function getOrigin(): ?int
+    {
+        return $this->origin;
+    }
+    /**
+     * Set origin value
+     * @param int $origin
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
+     */
+    public function setOrigin(?int $origin = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($origin) && !(is_int($origin) || ctype_digit($origin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($origin, true), gettype($origin)), __LINE__);
+        }
+        $this->origin = $origin;
         
         return $this;
     }
@@ -629,7 +661,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -652,7 +684,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setPriority(?int $priority = null): self
     {
@@ -675,7 +707,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set ruleDefinitionId value
      * @param int $ruleDefinitionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setRuleDefinitionId(?int $ruleDefinitionId = null): self
     {
@@ -698,7 +730,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -721,7 +753,7 @@ class CrmNoticeDTO extends AbstractStructBase
     /**
      * Set taskType value
      * @param string $taskType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeDTO
      */
     public function setTaskType(?string $taskType = null): self
     {

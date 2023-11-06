@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteTemplate --- delete a template for all its associated languages
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteTemplateRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class DeleteTemplateRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteTemplateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteTemplateRequest
      */
     public function setTemplateId(?int $templateId = null): self
     {

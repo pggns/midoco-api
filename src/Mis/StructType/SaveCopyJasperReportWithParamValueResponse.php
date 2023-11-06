@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCopyJasperReportWithParamValueResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCopyJasperReportWithParamValueResponse extends AbstractStructBase
 {
     /**

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Persons for a booking or package
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Person extends AbstractStructBase
 {
     /**
@@ -65,6 +66,14 @@ class Person extends AbstractStructBase
      * @var string|null
      */
     protected ?string $birthday = null;
+    /**
+     * The gender
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $gender = null;
     /**
      * The age
      * Meta information extracted from the WSDL
@@ -150,6 +159,7 @@ class Person extends AbstractStructBase
      * @uses Person::setMiddleName()
      * @uses Person::setName()
      * @uses Person::setBirthday()
+     * @uses Person::setGender()
      * @uses Person::setAge()
      * @uses Person::setPerson_price()
      * @uses Person::setAdditionalFlightPassengerInfos()
@@ -167,6 +177,7 @@ class Person extends AbstractStructBase
      * @param string $middleName
      * @param string $name
      * @param string $birthday
+     * @param string $gender
      * @param int $age
      * @param float $person_price
      * @param \Pggns\MidocoApi\Booking\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos
@@ -178,7 +189,7 @@ class Person extends AbstractStructBase
      * @param string $crsSalutation
      * @param string $crsName
      */
-    public function __construct(int $position, ?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $middleName = null, ?string $name = null, ?string $birthday = null, ?int $age = null, ?float $person_price = null, ?\Pggns\MidocoApi\Booking\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos = null, ?\Pggns\MidocoApi\Booking\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos = null, ?string $crs_salutation = null, ?string $crs_name = null, ?string $nationality = null, ?float $personPrice = null, ?string $crsSalutation = null, ?string $crsName = null)
+    public function __construct(int $position, ?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $middleName = null, ?string $name = null, ?string $birthday = null, ?string $gender = null, ?int $age = null, ?float $person_price = null, ?\Pggns\MidocoApi\Booking\StructType\AdditionalFlightPassengerInfos $additionalFlightPassengerInfos = null, ?\Pggns\MidocoApi\Booking\StructType\AdditionalRailPassengerInfos $additionalRailPassengerInfos = null, ?string $crs_salutation = null, ?string $crs_name = null, ?string $nationality = null, ?float $personPrice = null, ?string $crsSalutation = null, ?string $crsName = null)
     {
         $this
             ->setPosition($position)
@@ -188,6 +199,7 @@ class Person extends AbstractStructBase
             ->setMiddleName($middleName)
             ->setName($name)
             ->setBirthday($birthday)
+            ->setGender($gender)
             ->setAge($age)
             ->setPerson_price($person_price)
             ->setAdditionalFlightPassengerInfos($additionalFlightPassengerInfos)
@@ -357,10 +369,36 @@ class Person extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthday, true), gettype($birthday)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($birthday) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $birthday)) {
+        if (!is_null($birthday) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $birthday)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($birthday, true)), __LINE__);
         }
         $this->birthday = $birthday;
+        
+        return $this;
+    }
+    /**
+     * Get gender value
+     * @return string|null
+     */
+    public function getGender(): ?string
+    {
+        return $this->gender;
+    }
+    /**
+     * Set gender value
+     * @uses \Pggns\MidocoApi\Booking\EnumType\GenderType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Booking\EnumType\GenderType::getValidValues()
+     * @throws InvalidArgumentException
+     * @param string $gender
+     * @return \Pggns\MidocoApi\Booking\StructType\Person
+     */
+    public function setGender(?string $gender = null): self
+    {
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Booking\EnumType\GenderType::valueIsValid($gender)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Booking\EnumType\GenderType', is_array($gender) ? implode(', ', $gender) : var_export($gender, true), implode(', ', \Pggns\MidocoApi\Booking\EnumType\GenderType::getValidValues())), __LINE__);
+        }
+        $this->gender = $gender;
         
         return $this;
     }

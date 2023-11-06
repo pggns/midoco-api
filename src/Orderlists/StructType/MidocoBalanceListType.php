@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBalanceListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBalanceListType extends AbstractStructBase
 {
     /**
@@ -49,6 +50,11 @@ class MidocoBalanceListType extends AbstractStructBase
      */
     protected ?float $balance = null;
     /**
+     * The costUnit
+     * @var string|null
+     */
+    protected ?string $costUnit = null;
+    /**
      * Constructor method for MidocoBalanceListType
      * @uses MidocoBalanceListType::setBookingPeriod()
      * @uses MidocoBalanceListType::setBalanceSheetPosition()
@@ -57,6 +63,7 @@ class MidocoBalanceListType extends AbstractStructBase
      * @uses MidocoBalanceListType::setDebitAmount()
      * @uses MidocoBalanceListType::setCreditAmount()
      * @uses MidocoBalanceListType::setBalance()
+     * @uses MidocoBalanceListType::setCostUnit()
      * @param int $bookingPeriod
      * @param string $balanceSheetPosition
      * @param string $accountId
@@ -64,8 +71,9 @@ class MidocoBalanceListType extends AbstractStructBase
      * @param float $debitAmount
      * @param float $creditAmount
      * @param float $balance
+     * @param string $costUnit
      */
-    public function __construct(?int $bookingPeriod = null, ?string $balanceSheetPosition = null, ?string $accountId = null, ?string $accountName = null, ?float $debitAmount = null, ?float $creditAmount = null, ?float $balance = null)
+    public function __construct(?int $bookingPeriod = null, ?string $balanceSheetPosition = null, ?string $accountId = null, ?string $accountName = null, ?float $debitAmount = null, ?float $creditAmount = null, ?float $balance = null, ?string $costUnit = null)
     {
         $this
             ->setBookingPeriod($bookingPeriod)
@@ -74,7 +82,8 @@ class MidocoBalanceListType extends AbstractStructBase
             ->setAccountName($accountName)
             ->setDebitAmount($debitAmount)
             ->setCreditAmount($creditAmount)
-            ->setBalance($balance);
+            ->setBalance($balance)
+            ->setCostUnit($costUnit);
     }
     /**
      * Get bookingPeriod value
@@ -234,6 +243,29 @@ class MidocoBalanceListType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($balance, true), gettype($balance)), __LINE__);
         }
         $this->balance = $balance;
+        
+        return $this;
+    }
+    /**
+     * Get costUnit value
+     * @return string|null
+     */
+    public function getCostUnit(): ?string
+    {
+        return $this->costUnit;
+    }
+    /**
+     * Set costUnit value
+     * @param string $costUnit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListType
+     */
+    public function setCostUnit(?string $costUnit = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($costUnit) && !is_string($costUnit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($costUnit, true), gettype($costUnit)), __LINE__);
+        }
+        $this->costUnit = $costUnit;
         
         return $this;
     }

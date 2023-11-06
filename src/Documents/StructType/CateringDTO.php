@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CateringDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CateringDTO extends AbstractStructBase
 {
     /**
@@ -19,22 +20,14 @@ class CateringDTO extends AbstractStructBase
      */
     protected ?string $cateringCode = null;
     /**
-     * The description
-     * @var string|null
-     */
-    protected ?string $description = null;
-    /**
      * Constructor method for CateringDTO
      * @uses CateringDTO::setCateringCode()
-     * @uses CateringDTO::setDescription()
      * @param string $cateringCode
-     * @param string $description
      */
-    public function __construct(?string $cateringCode = null, ?string $description = null)
+    public function __construct(?string $cateringCode = null)
     {
         $this
-            ->setCateringCode($cateringCode)
-            ->setDescription($description);
+            ->setCateringCode($cateringCode);
     }
     /**
      * Get cateringCode value
@@ -56,29 +49,6 @@ class CateringDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cateringCode, true), gettype($cateringCode)), __LINE__);
         }
         $this->cateringCode = $cateringCode;
-        
-        return $this;
-    }
-    /**
-     * Get description value
-     * @return string|null
-     */
-    public function getDescription(): ?string
-    {
-        return $this->description;
-    }
-    /**
-     * Set description value
-     * @param string $description
-     * @return \Pggns\MidocoApi\Documents\StructType\CateringDTO
-     */
-    public function setDescription(?string $description = null): self
-    {
-        // validation for constraint: string
-        if (!is_null($description) && !is_string($description)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
-        }
-        $this->description = $description;
         
         return $this;
     }

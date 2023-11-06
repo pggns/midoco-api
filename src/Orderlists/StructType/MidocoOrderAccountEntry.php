@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrderAccountEntry StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrderAccountEntry extends AbstractStructBase
 {
     /**
@@ -84,6 +85,11 @@ class MidocoOrderAccountEntry extends AbstractStructBase
      */
     protected ?string $delegationComment = null;
     /**
+     * The displayedCurrency
+     * @var string|null
+     */
+    protected ?string $displayedCurrency = null;
+    /**
      * Constructor method for MidocoOrderAccountEntry
      * @uses MidocoOrderAccountEntry::setForename()
      * @uses MidocoOrderAccountEntry::setSurname()
@@ -99,6 +105,7 @@ class MidocoOrderAccountEntry extends AbstractStructBase
      * @uses MidocoOrderAccountEntry::setDunning_block()
      * @uses MidocoOrderAccountEntry::setTotal_payment()
      * @uses MidocoOrderAccountEntry::setDelegationComment()
+     * @uses MidocoOrderAccountEntry::setDisplayedCurrency()
      * @param string $forename
      * @param string $surname
      * @param int $orderNo
@@ -113,8 +120,9 @@ class MidocoOrderAccountEntry extends AbstractStructBase
      * @param bool $dunning_block
      * @param float $total_payment
      * @param string $delegationComment
+     * @param string $displayedCurrency
      */
-    public function __construct(?string $forename = null, ?string $surname = null, ?int $orderNo = null, ?string $startTravel = null, ?string $duePaymentDate = null, ?float $dueAmount = null, ?float $inkassoPrice = null, ?string $unitName = null, ?bool $isDepositPayment = null, ?string $paymentType = null, ?int $dunning_level = null, ?bool $dunning_block = null, ?float $total_payment = null, ?string $delegationComment = null)
+    public function __construct(?string $forename = null, ?string $surname = null, ?int $orderNo = null, ?string $startTravel = null, ?string $duePaymentDate = null, ?float $dueAmount = null, ?float $inkassoPrice = null, ?string $unitName = null, ?bool $isDepositPayment = null, ?string $paymentType = null, ?int $dunning_level = null, ?bool $dunning_block = null, ?float $total_payment = null, ?string $delegationComment = null, ?string $displayedCurrency = null)
     {
         $this
             ->setForename($forename)
@@ -130,7 +138,8 @@ class MidocoOrderAccountEntry extends AbstractStructBase
             ->setDunning_level($dunning_level)
             ->setDunning_block($dunning_block)
             ->setTotal_payment($total_payment)
-            ->setDelegationComment($delegationComment);
+            ->setDelegationComment($delegationComment)
+            ->setDisplayedCurrency($displayedCurrency);
     }
     /**
      * Get forename value
@@ -451,6 +460,29 @@ class MidocoOrderAccountEntry extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($delegationComment, true), gettype($delegationComment)), __LINE__);
         }
         $this->delegationComment = $delegationComment;
+        
+        return $this;
+    }
+    /**
+     * Get displayedCurrency value
+     * @return string|null
+     */
+    public function getDisplayedCurrency(): ?string
+    {
+        return $this->displayedCurrency;
+    }
+    /**
+     * Set displayedCurrency value
+     * @param string $displayedCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderAccountEntry
+     */
+    public function setDisplayedCurrency(?string $displayedCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($displayedCurrency) && !is_string($displayedCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displayedCurrency, true), gettype($displayedCurrency)), __LINE__);
+        }
+        $this->displayedCurrency = $displayedCurrency;
         
         return $this;
     }

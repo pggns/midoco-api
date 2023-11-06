@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CcproxySingleUseTokenDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CcproxySingleUseTokenDTO extends AbstractStructBase
 {
     /**
@@ -18,6 +19,11 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $createdAt = null;
+    /**
+     * The email
+     * @var string|null
+     */
+    protected ?string $email = null;
     /**
      * The expireAt
      * @var string|null
@@ -66,6 +72,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Constructor method for CcproxySingleUseTokenDTO
      * @uses CcproxySingleUseTokenDTO::setCreatedAt()
+     * @uses CcproxySingleUseTokenDTO::setEmail()
      * @uses CcproxySingleUseTokenDTO::setExpireAt()
      * @uses CcproxySingleUseTokenDTO::setModifiedAt()
      * @uses CcproxySingleUseTokenDTO::setOrgUnit()
@@ -76,6 +83,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
      * @uses CcproxySingleUseTokenDTO::setTokenValue()
      * @uses CcproxySingleUseTokenDTO::setUserId()
      * @param string $createdAt
+     * @param string $email
      * @param string $expireAt
      * @param string $modifiedAt
      * @param string $orgUnit
@@ -86,10 +94,11 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
      * @param string $tokenValue
      * @param int $userId
      */
-    public function __construct(?string $createdAt = null, ?string $expireAt = null, ?string $modifiedAt = null, ?string $orgUnit = null, ?string $sensitiveid = null, ?string $status = null, ?string $token = null, ?int $tokenId = null, ?string $tokenValue = null, ?int $userId = null)
+    public function __construct(?string $createdAt = null, ?string $email = null, ?string $expireAt = null, ?string $modifiedAt = null, ?string $orgUnit = null, ?string $sensitiveid = null, ?string $status = null, ?string $token = null, ?int $tokenId = null, ?string $tokenValue = null, ?int $userId = null)
     {
         $this
             ->setCreatedAt($createdAt)
+            ->setEmail($email)
             ->setExpireAt($expireAt)
             ->setModifiedAt($modifiedAt)
             ->setOrgUnit($orgUnit)
@@ -120,6 +129,29 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($createdAt, true), gettype($createdAt)), __LINE__);
         }
         $this->createdAt = $createdAt;
+        
+        return $this;
+    }
+    /**
+     * Get email value
+     * @return string|null
+     */
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+    /**
+     * Set email value
+     * @param string $email
+     * @return \Pggns\MidocoApi\Booking\StructType\CcproxySingleUseTokenDTO
+     */
+    public function setEmail(?string $email = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($email) && !is_string($email)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
+        }
+        $this->email = $email;
         
         return $this;
     }

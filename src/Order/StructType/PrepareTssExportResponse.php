@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrepareTssExportResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrepareTssExportResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PrepareTssExportResponse extends AbstractStructBase
         return $this->MidocoCashTurnoverJournal;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCashTurnoverJournal method
+     * This method is responsible for validating the value(s) passed to the setMidocoCashTurnoverJournal method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCashTurnoverJournal method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCashTurnoverJournalForArrayConstraintsFromSetMidocoCashTurnoverJournal(?array $values = []): string
+    public static function validateMidocoCashTurnoverJournalForArrayConstraintFromSetMidocoCashTurnoverJournal(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PrepareTssExportResponse extends AbstractStructBase
     public function setMidocoCashTurnoverJournal(?array $midocoCashTurnoverJournal = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCashTurnoverJournalArrayErrorMessage = self::validateMidocoCashTurnoverJournalForArrayConstraintsFromSetMidocoCashTurnoverJournal($midocoCashTurnoverJournal))) {
+        if ('' !== ($midocoCashTurnoverJournalArrayErrorMessage = self::validateMidocoCashTurnoverJournalForArrayConstraintFromSetMidocoCashTurnoverJournal($midocoCashTurnoverJournal))) {
             throw new InvalidArgumentException($midocoCashTurnoverJournalArrayErrorMessage, __LINE__);
         }
         $this->MidocoCashTurnoverJournal = $midocoCashTurnoverJournal;

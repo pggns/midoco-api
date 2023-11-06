@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAssignedAdaptersRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAssignedAdaptersRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetAssignedAdaptersRequest extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAssignedAdaptersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAssignedAdaptersRequest
      */
     public function setOrgunit(?string $orgunit = null): self
     {
@@ -70,7 +71,7 @@ class GetAssignedAdaptersRequest extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAssignedAdaptersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAssignedAdaptersRequest
      */
     public function setAdapterId(?string $adapterId = null): self
     {

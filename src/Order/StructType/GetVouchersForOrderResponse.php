@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetVouchersForOrderResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetVouchersForOrderResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetVouchersForOrderResponse extends AbstractStructBase
         return $this->VoucherInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setVoucherInfo method
+     * This method is responsible for validating the value(s) passed to the setVoucherInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setVoucherInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVoucherInfoForArrayConstraintsFromSetVoucherInfo(?array $values = []): string
+    public static function validateVoucherInfoForArrayConstraintFromSetVoucherInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetVouchersForOrderResponse extends AbstractStructBase
     public function setVoucherInfo(?array $voucherInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($voucherInfoArrayErrorMessage = self::validateVoucherInfoForArrayConstraintsFromSetVoucherInfo($voucherInfo))) {
+        if ('' !== ($voucherInfoArrayErrorMessage = self::validateVoucherInfoForArrayConstraintFromSetVoucherInfo($voucherInfo))) {
             throw new InvalidArgumentException($voucherInfoArrayErrorMessage, __LINE__);
         }
         $this->VoucherInfo = $voucherInfo;

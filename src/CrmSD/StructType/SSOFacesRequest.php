@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: relayState: travellers/faces-firmen-id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SSOFacesRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class SSOFacesRequest extends AbstractStructBase
     /**
      * Set relayState value
      * @param string $relayState
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SSOFacesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SSOFacesRequest
      */
     public function setRelayState(?string $relayState = null): self
     {

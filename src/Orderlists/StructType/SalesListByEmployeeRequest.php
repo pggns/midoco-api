@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalesListByEmployeeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalesListByEmployeeRequest extends AbstractStructBase
 {
     /**

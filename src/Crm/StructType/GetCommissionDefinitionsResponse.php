@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCommissionDefinitionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCommissionDefinitionsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCommissionDefinitionsResponse extends AbstractStructBase
         return $this->MidocoCommissionDefinition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCommissionDefinition method
+     * This method is responsible for validating the value(s) passed to the setMidocoCommissionDefinition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCommissionDefinition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCommissionDefinitionForArrayConstraintsFromSetMidocoCommissionDefinition(?array $values = []): string
+    public static function validateMidocoCommissionDefinitionForArrayConstraintFromSetMidocoCommissionDefinition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCommissionDefinitionsResponse extends AbstractStructBase
     public function setMidocoCommissionDefinition(?array $midocoCommissionDefinition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCommissionDefinitionArrayErrorMessage = self::validateMidocoCommissionDefinitionForArrayConstraintsFromSetMidocoCommissionDefinition($midocoCommissionDefinition))) {
+        if ('' !== ($midocoCommissionDefinitionArrayErrorMessage = self::validateMidocoCommissionDefinitionForArrayConstraintFromSetMidocoCommissionDefinition($midocoCommissionDefinition))) {
             throw new InvalidArgumentException($midocoCommissionDefinitionArrayErrorMessage, __LINE__);
         }
         $this->MidocoCommissionDefinition = $midocoCommissionDefinition;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateBillingPrintjobResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateBillingPrintjobResponse extends AbstractStructBase
 {
     /**
@@ -126,12 +127,13 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
         return $this->insets;
     }
     /**
-     * This method is responsible for validating the values passed to the setInsets method
+     * This method is responsible for validating the value(s) passed to the setInsets method
      * This method is willingly generated in order to preserve the one-line inline validation within the setInsets method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateInsetsForArrayConstraintsFromSetInsets(?array $values = []): string
+    public static function validateInsetsForArrayConstraintFromSetInsets(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -160,7 +162,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     public function setInsets(?array $insets = null): self
     {
         // validation for constraint: array
-        if ('' !== ($insetsArrayErrorMessage = self::validateInsetsForArrayConstraintsFromSetInsets($insets))) {
+        if ('' !== ($insetsArrayErrorMessage = self::validateInsetsForArrayConstraintFromSetInsets($insets))) {
             throw new InvalidArgumentException($insetsArrayErrorMessage, __LINE__);
         }
         $this->insets = $insets;
@@ -211,12 +213,13 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
         return $this->MidocoMailDescription4Inexso;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMailDescription4Inexso method
+     * This method is responsible for validating the value(s) passed to the setMidocoMailDescription4Inexso method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMailDescription4Inexso method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMailDescription4InexsoForArrayConstraintsFromSetMidocoMailDescription4Inexso(?array $values = []): string
+    public static function validateMidocoMailDescription4InexsoForArrayConstraintFromSetMidocoMailDescription4Inexso(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -245,7 +248,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     public function setMidocoMailDescription4Inexso(?array $midocoMailDescription4Inexso = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMailDescription4InexsoArrayErrorMessage = self::validateMidocoMailDescription4InexsoForArrayConstraintsFromSetMidocoMailDescription4Inexso($midocoMailDescription4Inexso))) {
+        if ('' !== ($midocoMailDescription4InexsoArrayErrorMessage = self::validateMidocoMailDescription4InexsoForArrayConstraintFromSetMidocoMailDescription4Inexso($midocoMailDescription4Inexso))) {
             throw new InvalidArgumentException($midocoMailDescription4InexsoArrayErrorMessage, __LINE__);
         }
         $this->MidocoMailDescription4Inexso = $midocoMailDescription4Inexso;
@@ -277,12 +280,13 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
         return $this->PrintJobContentOfPrintCopies;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintJobContentOfPrintCopies method
+     * This method is responsible for validating the value(s) passed to the setPrintJobContentOfPrintCopies method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintJobContentOfPrintCopies method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintJobContentOfPrintCopiesForArrayConstraintsFromSetPrintJobContentOfPrintCopies(?array $values = []): string
+    public static function validatePrintJobContentOfPrintCopiesForArrayConstraintFromSetPrintJobContentOfPrintCopies(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -311,7 +315,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     public function setPrintJobContentOfPrintCopies(?array $printJobContentOfPrintCopies = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printJobContentOfPrintCopiesArrayErrorMessage = self::validatePrintJobContentOfPrintCopiesForArrayConstraintsFromSetPrintJobContentOfPrintCopies($printJobContentOfPrintCopies))) {
+        if ('' !== ($printJobContentOfPrintCopiesArrayErrorMessage = self::validatePrintJobContentOfPrintCopiesForArrayConstraintFromSetPrintJobContentOfPrintCopies($printJobContentOfPrintCopies))) {
             throw new InvalidArgumentException($printJobContentOfPrintCopiesArrayErrorMessage, __LINE__);
         }
         $this->PrintJobContentOfPrintCopies = $printJobContentOfPrintCopies;
@@ -343,12 +347,13 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
         return $this->insetsPrintJobIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setInsetsPrintJobIds method
+     * This method is responsible for validating the value(s) passed to the setInsetsPrintJobIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setInsetsPrintJobIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateInsetsPrintJobIdsForArrayConstraintsFromSetInsetsPrintJobIds(?array $values = []): string
+    public static function validateInsetsPrintJobIdsForArrayConstraintFromSetInsetsPrintJobIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -377,7 +382,7 @@ class CreateBillingPrintjobResponse extends AbstractStructBase
     public function setInsetsPrintJobIds(?array $insetsPrintJobIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($insetsPrintJobIdsArrayErrorMessage = self::validateInsetsPrintJobIdsForArrayConstraintsFromSetInsetsPrintJobIds($insetsPrintJobIds))) {
+        if ('' !== ($insetsPrintJobIdsArrayErrorMessage = self::validateInsetsPrintJobIdsForArrayConstraintFromSetInsetsPrintJobIds($insetsPrintJobIds))) {
             throw new InvalidArgumentException($insetsPrintJobIdsArrayErrorMessage, __LINE__);
         }
         $this->insetsPrintJobIds = $insetsPrintJobIds;

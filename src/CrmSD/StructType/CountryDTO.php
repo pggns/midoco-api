@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CountryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CountryDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class CountryDTO extends AbstractStructBase
     /**
      * Set bankAdapterId value
      * @param string $bankAdapterId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryDTO
      */
     public function setBankAdapterId(?string $bankAdapterId = null): self
     {
@@ -110,7 +111,7 @@ class CountryDTO extends AbstractStructBase
     /**
      * Set checkZip value
      * @param bool $checkZip
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryDTO
      */
     public function setCheckZip(?bool $checkZip = null): self
     {
@@ -133,7 +134,7 @@ class CountryDTO extends AbstractStructBase
     /**
      * Set continent value
      * @param string $continent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryDTO
      */
     public function setContinent(?string $continent = null): self
     {
@@ -156,7 +157,7 @@ class CountryDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -179,7 +180,7 @@ class CountryDTO extends AbstractStructBase
     /**
      * Set countryIso3 value
      * @param string $countryIso3
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryDTO
      */
     public function setCountryIso3(?string $countryIso3 = null): self
     {
@@ -202,7 +203,7 @@ class CountryDTO extends AbstractStructBase
     /**
      * Set fakeCountry value
      * @param bool $fakeCountry
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryDTO
      */
     public function setFakeCountry(?bool $fakeCountry = null): self
     {
@@ -225,7 +226,7 @@ class CountryDTO extends AbstractStructBase
     /**
      * Set telephonePrefix value
      * @param string $telephonePrefix
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CountryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CountryDTO
      */
     public function setTelephonePrefix(?string $telephonePrefix = null): self
     {

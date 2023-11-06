@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintDestinationDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintDestinationDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class PrintDestinationDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintDestinationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintDestinationDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +79,7 @@ class PrintDestinationDTO extends AbstractStructBase
     /**
      * Set printDestId value
      * @param string $printDestId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintDestinationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintDestinationDTO
      */
     public function setPrintDestId(?string $printDestId = null): self
     {
@@ -101,7 +102,7 @@ class PrintDestinationDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintDestinationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintDestinationDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: returns the available bonus card descriptions
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
         return $this->MidocoBonusDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBonusDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoBonusDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBonusDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBonusDescriptionForArrayConstraintsFromSetMidocoBonusDescription(?array $values = []): string
+    public static function validateMidocoBonusDescriptionForArrayConstraintFromSetMidocoBonusDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAvailableBonusDescriptionsResponse extends AbstractStructBase
     public function setMidocoBonusDescription(?array $midocoBonusDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBonusDescriptionArrayErrorMessage = self::validateMidocoBonusDescriptionForArrayConstraintsFromSetMidocoBonusDescription($midocoBonusDescription))) {
+        if ('' !== ($midocoBonusDescriptionArrayErrorMessage = self::validateMidocoBonusDescriptionForArrayConstraintFromSetMidocoBonusDescription($midocoBonusDescription))) {
             throw new InvalidArgumentException($midocoBonusDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoBonusDescription = $midocoBonusDescription;

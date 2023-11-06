@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DbsessionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DbsessionDTO extends AbstractStructBase
 {
     /**
@@ -103,7 +104,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -126,7 +127,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set lastUsed value
      * @param string $lastUsed
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setLastUsed(?string $lastUsed = null): self
     {
@@ -149,7 +150,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -172,7 +173,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set sessionId value
      * @param string $sessionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setSessionId(?string $sessionId = null): self
     {
@@ -195,7 +196,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setStatus(?int $status = null): self
     {
@@ -218,7 +219,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set timetolive value
      * @param int $timetolive
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setTimetolive(?int $timetolive = null): self
     {
@@ -241,7 +242,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -264,7 +265,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setUserId(?int $userId = null): self
     {
@@ -287,7 +288,7 @@ class DbsessionDTO extends AbstractStructBase
     /**
      * Set workstationId value
      * @param string $workstationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DbsessionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DbsessionDTO
      */
     public function setWorkstationId(?string $workstationId = null): self
     {

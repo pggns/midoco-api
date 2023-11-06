@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: returns a list of travel start dates from an agency
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTravelStartDatesFromAgencyResponse extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class GetTravelStartDatesFromAgencyResponse extends AbstractStructBase
         return $this->startTravelDate;
     }
     /**
-     * This method is responsible for validating the values passed to the setStartTravelDate method
+     * This method is responsible for validating the value(s) passed to the setStartTravelDate method
      * This method is willingly generated in order to preserve the one-line inline validation within the setStartTravelDate method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateStartTravelDateForArrayConstraintsFromSetStartTravelDate(?array $values = []): string
+    public static function validateStartTravelDateForArrayConstraintFromSetStartTravelDate(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class GetTravelStartDatesFromAgencyResponse extends AbstractStructBase
     public function setStartTravelDate(?array $startTravelDate = null): self
     {
         // validation for constraint: array
-        if ('' !== ($startTravelDateArrayErrorMessage = self::validateStartTravelDateForArrayConstraintsFromSetStartTravelDate($startTravelDate))) {
+        if ('' !== ($startTravelDateArrayErrorMessage = self::validateStartTravelDateForArrayConstraintFromSetStartTravelDate($startTravelDate))) {
             throw new InvalidArgumentException($startTravelDateArrayErrorMessage, __LINE__);
         }
         $this->startTravelDate = $startTravelDate;

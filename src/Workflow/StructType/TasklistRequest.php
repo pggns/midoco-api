@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TasklistRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TasklistRequest extends AbstractStructBase
 {
     /**
@@ -107,12 +108,13 @@ class TasklistRequest extends AbstractStructBase
         return $this->user_value;
     }
     /**
-     * This method is responsible for validating the values passed to the setUser_value method
+     * This method is responsible for validating the value(s) passed to the setUser_value method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUser_value method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUser_valueForArrayConstraintsFromSetUser_value(?array $values = []): string
+    public static function validateUser_valueForArrayConstraintFromSetUser_value(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -141,7 +143,7 @@ class TasklistRequest extends AbstractStructBase
     public function setUser_value(?array $user_value = null): self
     {
         // validation for constraint: array
-        if ('' !== ($user_valueArrayErrorMessage = self::validateUser_valueForArrayConstraintsFromSetUser_value($user_value))) {
+        if ('' !== ($user_valueArrayErrorMessage = self::validateUser_valueForArrayConstraintFromSetUser_value($user_value))) {
             throw new InvalidArgumentException($user_valueArrayErrorMessage, __LINE__);
         }
         $this->user_value = $user_value;
@@ -173,12 +175,13 @@ class TasklistRequest extends AbstractStructBase
         return $this->unit_name;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnit_name method
+     * This method is responsible for validating the value(s) passed to the setUnit_name method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnit_name method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnit_nameForArrayConstraintsFromSetUnit_name(?array $values = []): string
+    public static function validateUnit_nameForArrayConstraintFromSetUnit_name(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -207,7 +210,7 @@ class TasklistRequest extends AbstractStructBase
     public function setUnit_name(?array $unit_name = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unit_nameArrayErrorMessage = self::validateUnit_nameForArrayConstraintsFromSetUnit_name($unit_name))) {
+        if ('' !== ($unit_nameArrayErrorMessage = self::validateUnit_nameForArrayConstraintFromSetUnit_name($unit_name))) {
             throw new InvalidArgumentException($unit_nameArrayErrorMessage, __LINE__);
         }
         $this->unit_name = $unit_name;

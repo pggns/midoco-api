@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TicketListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TicketListRequest extends AbstractStructBase
 {
     /**

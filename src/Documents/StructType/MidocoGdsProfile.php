@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoGdsProfile StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoGdsProfile extends CustomerProfileDTO
 {
     /**
@@ -118,12 +119,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
         return $this->MidocoCustomerProfileAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerProfileAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerProfileAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerProfileAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerProfileAttributeForArrayConstraintsFromSetMidocoCustomerProfileAttribute(?array $values = []): string
+    public static function validateMidocoCustomerProfileAttributeForArrayConstraintFromSetMidocoCustomerProfileAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -152,7 +154,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
     public function setMidocoCustomerProfileAttribute(?array $midocoCustomerProfileAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerProfileAttributeArrayErrorMessage = self::validateMidocoCustomerProfileAttributeForArrayConstraintsFromSetMidocoCustomerProfileAttribute($midocoCustomerProfileAttribute))) {
+        if ('' !== ($midocoCustomerProfileAttributeArrayErrorMessage = self::validateMidocoCustomerProfileAttributeForArrayConstraintFromSetMidocoCustomerProfileAttribute($midocoCustomerProfileAttribute))) {
             throw new InvalidArgumentException($midocoCustomerProfileAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerProfileAttribute = $midocoCustomerProfileAttribute;
@@ -184,12 +186,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
         return $this->MidocoCrmCustomerLink;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmCustomerLink method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmCustomerLink method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmCustomerLink method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmCustomerLinkForArrayConstraintsFromSetMidocoCrmCustomerLink(?array $values = []): string
+    public static function validateMidocoCrmCustomerLinkForArrayConstraintFromSetMidocoCrmCustomerLink(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -218,7 +221,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
     public function setMidocoCrmCustomerLink(?array $midocoCrmCustomerLink = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmCustomerLinkArrayErrorMessage = self::validateMidocoCrmCustomerLinkForArrayConstraintsFromSetMidocoCrmCustomerLink($midocoCrmCustomerLink))) {
+        if ('' !== ($midocoCrmCustomerLinkArrayErrorMessage = self::validateMidocoCrmCustomerLinkForArrayConstraintFromSetMidocoCrmCustomerLink($midocoCrmCustomerLink))) {
             throw new InvalidArgumentException($midocoCrmCustomerLinkArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmCustomerLink = $midocoCrmCustomerLink;
@@ -250,12 +253,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
         return $this->MidocoFrequentFlyerNumber;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFrequentFlyerNumber method
+     * This method is responsible for validating the value(s) passed to the setMidocoFrequentFlyerNumber method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFrequentFlyerNumber method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFrequentFlyerNumberForArrayConstraintsFromSetMidocoFrequentFlyerNumber(?array $values = []): string
+    public static function validateMidocoFrequentFlyerNumberForArrayConstraintFromSetMidocoFrequentFlyerNumber(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -284,7 +288,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
     public function setMidocoFrequentFlyerNumber(?array $midocoFrequentFlyerNumber = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFrequentFlyerNumberArrayErrorMessage = self::validateMidocoFrequentFlyerNumberForArrayConstraintsFromSetMidocoFrequentFlyerNumber($midocoFrequentFlyerNumber))) {
+        if ('' !== ($midocoFrequentFlyerNumberArrayErrorMessage = self::validateMidocoFrequentFlyerNumberForArrayConstraintFromSetMidocoFrequentFlyerNumber($midocoFrequentFlyerNumber))) {
             throw new InvalidArgumentException($midocoFrequentFlyerNumberArrayErrorMessage, __LINE__);
         }
         $this->MidocoFrequentFlyerNumber = $midocoFrequentFlyerNumber;
@@ -316,12 +320,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
         return $this->MidocoCrmAddress;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmAddress method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmAddress method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmAddress method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmAddressForArrayConstraintsFromSetMidocoCrmAddress(?array $values = []): string
+    public static function validateMidocoCrmAddressForArrayConstraintFromSetMidocoCrmAddress(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -350,7 +355,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
     public function setMidocoCrmAddress(?array $midocoCrmAddress = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmAddressArrayErrorMessage = self::validateMidocoCrmAddressForArrayConstraintsFromSetMidocoCrmAddress($midocoCrmAddress))) {
+        if ('' !== ($midocoCrmAddressArrayErrorMessage = self::validateMidocoCrmAddressForArrayConstraintFromSetMidocoCrmAddress($midocoCrmAddress))) {
             throw new InvalidArgumentException($midocoCrmAddressArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmAddress = $midocoCrmAddress;
@@ -382,12 +387,13 @@ class MidocoGdsProfile extends CustomerProfileDTO
         return $this->MidocoContactEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry(?array $values = []): string
+    public static function validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -416,7 +422,7 @@ class MidocoGdsProfile extends CustomerProfileDTO
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry($midocoContactEntry))) {
+        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry($midocoContactEntry))) {
             throw new InvalidArgumentException($midocoContactEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactEntry = $midocoContactEntry;

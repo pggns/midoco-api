@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoProperty StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoProperty extends AbstractStructBase
 {
     /**
@@ -19,7 +20,7 @@ class MidocoProperty extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoVisibleClass
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass[]
      */
     protected ?array $MidocoVisibleClass = null;
     /**
@@ -31,7 +32,7 @@ class MidocoProperty extends AbstractStructBase
      * Constructor method for MidocoProperty
      * @uses MidocoProperty::setMidocoVisibleClass()
      * @uses MidocoProperty::setUnitName()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass[] $midocoVisibleClass
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass[] $midocoVisibleClass
      * @param string $unitName
      */
     public function __construct(?array $midocoVisibleClass = null, ?string $unitName = null)
@@ -42,19 +43,20 @@ class MidocoProperty extends AbstractStructBase
     }
     /**
      * Get MidocoVisibleClass value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass[]
      */
     public function getMidocoVisibleClass(): ?array
     {
         return $this->MidocoVisibleClass;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVisibleClass method
+     * This method is responsible for validating the value(s) passed to the setMidocoVisibleClass method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVisibleClass method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVisibleClassForArrayConstraintsFromSetMidocoVisibleClass(?array $values = []): string
+    public static function validateMidocoVisibleClassForArrayConstraintFromSetMidocoVisibleClass(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -63,12 +65,12 @@ class MidocoProperty extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoPropertyMidocoVisibleClassItem) {
             // validation for constraint: itemType
-            if (!$midocoPropertyMidocoVisibleClassItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass) {
+            if (!$midocoPropertyMidocoVisibleClassItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass) {
                 $invalidValues[] = is_object($midocoPropertyMidocoVisibleClassItem) ? get_class($midocoPropertyMidocoVisibleClassItem) : sprintf('%s(%s)', gettype($midocoPropertyMidocoVisibleClassItem), var_export($midocoPropertyMidocoVisibleClassItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,13 +79,13 @@ class MidocoProperty extends AbstractStructBase
     /**
      * Set MidocoVisibleClass value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass[] $midocoVisibleClass
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass[] $midocoVisibleClass
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty
      */
     public function setMidocoVisibleClass(?array $midocoVisibleClass = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVisibleClassArrayErrorMessage = self::validateMidocoVisibleClassForArrayConstraintsFromSetMidocoVisibleClass($midocoVisibleClass))) {
+        if ('' !== ($midocoVisibleClassArrayErrorMessage = self::validateMidocoVisibleClassForArrayConstraintFromSetMidocoVisibleClass($midocoVisibleClass))) {
             throw new InvalidArgumentException($midocoVisibleClassArrayErrorMessage, __LINE__);
         }
         $this->MidocoVisibleClass = $midocoVisibleClass;
@@ -93,14 +95,14 @@ class MidocoProperty extends AbstractStructBase
     /**
      * Add item to MidocoVisibleClass value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty
      */
-    public function addToMidocoVisibleClass(\Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass $item): self
+    public function addToMidocoVisibleClass(\Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass) {
-            throw new InvalidArgumentException(sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoVisibleClass, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass) {
+            throw new InvalidArgumentException(sprintf('The MidocoVisibleClass property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoVisibleClass, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoVisibleClass[] = $item;
         
@@ -117,7 +119,7 @@ class MidocoProperty extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProperty
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProperty
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTicketListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTicketListType extends AbstractStructBase
 {
     /**
@@ -114,6 +115,16 @@ class MidocoTicketListType extends AbstractStructBase
      */
     protected ?string $startDate = null;
     /**
+     * The reportIndicator
+     * @var string|null
+     */
+    protected ?string $reportIndicator = null;
+    /**
+     * The ndcOrderId
+     * @var string|null
+     */
+    protected ?string $ndcOrderId = null;
+    /**
      * Constructor method for MidocoTicketListType
      * @uses MidocoTicketListType::setTicketNo()
      * @uses MidocoTicketListType::setTicketType()
@@ -135,6 +146,8 @@ class MidocoTicketListType extends AbstractStructBase
      * @uses MidocoTicketListType::setSupplierId()
      * @uses MidocoTicketListType::setBookingDate()
      * @uses MidocoTicketListType::setStartDate()
+     * @uses MidocoTicketListType::setReportIndicator()
+     * @uses MidocoTicketListType::setNdcOrderId()
      * @param string $ticketNo
      * @param string $ticketType
      * @param string $filekey
@@ -155,8 +168,10 @@ class MidocoTicketListType extends AbstractStructBase
      * @param string $supplierId
      * @param string $bookingDate
      * @param string $startDate
+     * @param string $reportIndicator
+     * @param string $ndcOrderId
      */
-    public function __construct(?string $ticketNo = null, ?string $ticketType = null, ?string $filekey = null, ?string $issueDate = null, ?string $ticketValidator = null, ?float $farePrice = null, ?float $tax = null, ?float $ticketPrice = null, ?string $ticketInkasso = null, ?string $fareType = null, ?int $orderNo = null, ?float $hiddenFee = null, ?float $explicitFee = null, ?string $debitorNo = null, ?string $route = null, ?string $carrier = null, ?string $flightNo = null, ?string $supplierId = null, ?string $bookingDate = null, ?string $startDate = null)
+    public function __construct(?string $ticketNo = null, ?string $ticketType = null, ?string $filekey = null, ?string $issueDate = null, ?string $ticketValidator = null, ?float $farePrice = null, ?float $tax = null, ?float $ticketPrice = null, ?string $ticketInkasso = null, ?string $fareType = null, ?int $orderNo = null, ?float $hiddenFee = null, ?float $explicitFee = null, ?string $debitorNo = null, ?string $route = null, ?string $carrier = null, ?string $flightNo = null, ?string $supplierId = null, ?string $bookingDate = null, ?string $startDate = null, ?string $reportIndicator = null, ?string $ndcOrderId = null)
     {
         $this
             ->setTicketNo($ticketNo)
@@ -178,7 +193,9 @@ class MidocoTicketListType extends AbstractStructBase
             ->setFlightNo($flightNo)
             ->setSupplierId($supplierId)
             ->setBookingDate($bookingDate)
-            ->setStartDate($startDate);
+            ->setStartDate($startDate)
+            ->setReportIndicator($reportIndicator)
+            ->setNdcOrderId($ndcOrderId);
     }
     /**
      * Get ticketNo value
@@ -637,6 +654,52 @@ class MidocoTicketListType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($startDate, true), gettype($startDate)), __LINE__);
         }
         $this->startDate = $startDate;
+        
+        return $this;
+    }
+    /**
+     * Get reportIndicator value
+     * @return string|null
+     */
+    public function getReportIndicator(): ?string
+    {
+        return $this->reportIndicator;
+    }
+    /**
+     * Set reportIndicator value
+     * @param string $reportIndicator
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
+     */
+    public function setReportIndicator(?string $reportIndicator = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($reportIndicator) && !is_string($reportIndicator)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($reportIndicator, true), gettype($reportIndicator)), __LINE__);
+        }
+        $this->reportIndicator = $reportIndicator;
+        
+        return $this;
+    }
+    /**
+     * Get ndcOrderId value
+     * @return string|null
+     */
+    public function getNdcOrderId(): ?string
+    {
+        return $this->ndcOrderId;
+    }
+    /**
+     * Set ndcOrderId value
+     * @param string $ndcOrderId
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoTicketListType
+     */
+    public function setNdcOrderId(?string $ndcOrderId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($ndcOrderId) && !is_string($ndcOrderId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ndcOrderId, true), gettype($ndcOrderId)), __LINE__);
+        }
+        $this->ndcOrderId = $ndcOrderId;
         
         return $this;
     }

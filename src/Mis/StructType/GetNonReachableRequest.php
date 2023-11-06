@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetNonReachableRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetNonReachableRequest extends AbstractStructBase
 {
     /**

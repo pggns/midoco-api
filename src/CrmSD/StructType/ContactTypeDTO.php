@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ContactTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ContactTypeDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactTypeDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -102,7 +103,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set contactGroup value
      * @param int $contactGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactTypeDTO
      */
     public function setContactGroup(?int $contactGroup = null): self
     {
@@ -125,7 +126,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set isOrderVisible value
      * @param bool $isOrderVisible
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactTypeDTO
      */
     public function setIsOrderVisible(?bool $isOrderVisible = null): self
     {
@@ -148,7 +149,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set isPrivate value
      * @param bool $isPrivate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactTypeDTO
      */
     public function setIsPrivate(?bool $isPrivate = null): self
     {
@@ -171,7 +172,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactTypeDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -194,7 +195,7 @@ class ContactTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

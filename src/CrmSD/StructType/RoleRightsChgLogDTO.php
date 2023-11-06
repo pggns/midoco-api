@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RoleRightsChgLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RoleRightsChgLogDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleRightsChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -94,7 +95,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleRightsChgLogDTO
      */
     public function setRightId(?string $rightId = null): self
     {
@@ -117,7 +118,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleRightsChgLogDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -140,7 +141,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleRightsChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -163,7 +164,7 @@ class RoleRightsChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleRightsChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleRightsChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

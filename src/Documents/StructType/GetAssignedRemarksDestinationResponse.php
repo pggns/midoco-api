@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAssignedRemarksDestinationResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAssignedRemarksDestinationResponse extends AbstractStructBase
 {
     /**
@@ -72,12 +73,13 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
         return $this->MidocoPrintDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintDescriptionForArrayConstraintsFromSetMidocoPrintDescription(?array $values = []): string
+    public static function validateMidocoPrintDescriptionForArrayConstraintFromSetMidocoPrintDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -106,7 +108,7 @@ class GetAssignedRemarksDestinationResponse extends AbstractStructBase
     public function setMidocoPrintDescription(?array $midocoPrintDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintDescriptionArrayErrorMessage = self::validateMidocoPrintDescriptionForArrayConstraintsFromSetMidocoPrintDescription($midocoPrintDescription))) {
+        if ('' !== ($midocoPrintDescriptionArrayErrorMessage = self::validateMidocoPrintDescriptionForArrayConstraintFromSetMidocoPrintDescription($midocoPrintDescription))) {
             throw new InvalidArgumentException($midocoPrintDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintDescription = $midocoPrintDescription;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCashbooksResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCashbooksResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCashbooksResponse extends AbstractStructBase
         return $this->CashBookInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setCashBookInfo method
+     * This method is responsible for validating the value(s) passed to the setCashBookInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCashBookInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCashBookInfoForArrayConstraintsFromSetCashBookInfo(?array $values = []): string
+    public static function validateCashBookInfoForArrayConstraintFromSetCashBookInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCashbooksResponse extends AbstractStructBase
     public function setCashBookInfo(?array $cashBookInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cashBookInfoArrayErrorMessage = self::validateCashBookInfoForArrayConstraintsFromSetCashBookInfo($cashBookInfo))) {
+        if ('' !== ($cashBookInfoArrayErrorMessage = self::validateCashBookInfoForArrayConstraintFromSetCashBookInfo($cashBookInfo))) {
             throw new InvalidArgumentException($cashBookInfoArrayErrorMessage, __LINE__);
         }
         $this->CashBookInfo = $cashBookInfo;

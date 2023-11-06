@@ -11,13 +11,29 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VoucherTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VoucherTypeDTO extends AbstractStructBase
 {
+    /**
+     * The adapterId
+     * @var string|null
+     */
+    protected ?string $adapterId = null;
     /**
      * The allowPartialUse
      * @var bool|null
      */
     protected ?bool $allowPartialUse = null;
+    /**
+     * The allowedUnitsForRedeem
+     * @var string|null
+     */
+    protected ?string $allowedUnitsForRedeem = null;
+    /**
+     * The allowedUnitsForSell
+     * @var string|null
+     */
+    protected ?string $allowedUnitsForSell = null;
     /**
      * The assignNoFromSequence
      * @var bool|null
@@ -120,7 +136,10 @@ class VoucherTypeDTO extends AbstractStructBase
     protected ?string $validTo = null;
     /**
      * Constructor method for VoucherTypeDTO
+     * @uses VoucherTypeDTO::setAdapterId()
      * @uses VoucherTypeDTO::setAllowPartialUse()
+     * @uses VoucherTypeDTO::setAllowedUnitsForRedeem()
+     * @uses VoucherTypeDTO::setAllowedUnitsForSell()
      * @uses VoucherTypeDTO::setAssignNoFromSequence()
      * @uses VoucherTypeDTO::setAssignedAccountNoVat()
      * @uses VoucherTypeDTO::setAssignedAccountNoVatPart()
@@ -141,7 +160,10 @@ class VoucherTypeDTO extends AbstractStructBase
      * @uses VoucherTypeDTO::setValidDays()
      * @uses VoucherTypeDTO::setValidFrom()
      * @uses VoucherTypeDTO::setValidTo()
+     * @param string $adapterId
      * @param bool $allowPartialUse
+     * @param string $allowedUnitsForRedeem
+     * @param string $allowedUnitsForSell
      * @param bool $assignNoFromSequence
      * @param string $assignedAccountNoVat
      * @param float $assignedAccountNoVatPart
@@ -163,10 +185,13 @@ class VoucherTypeDTO extends AbstractStructBase
      * @param string $validFrom
      * @param string $validTo
      */
-    public function __construct(?bool $allowPartialUse = null, ?bool $assignNoFromSequence = null, ?string $assignedAccountNoVat = null, ?float $assignedAccountNoVatPart = null, ?string $assignedAccountVat = null, ?float $assignedAccountVatPart = null, ?string $assignedSupplierIds = null, ?string $creationDate = null, ?int $creationUser = null, ?string $description = null, ?bool $forbidRedeemUnknownVoucher = null, ?bool $forceNumber = null, ?bool $isEnabled = null, ?string $modifyDate = null, ?int $modifyUser = null, ?string $prefixCode = null, ?bool $securityCode = null, ?string $typeId = null, ?int $validDays = null, ?string $validFrom = null, ?string $validTo = null)
+    public function __construct(?string $adapterId = null, ?bool $allowPartialUse = null, ?string $allowedUnitsForRedeem = null, ?string $allowedUnitsForSell = null, ?bool $assignNoFromSequence = null, ?string $assignedAccountNoVat = null, ?float $assignedAccountNoVatPart = null, ?string $assignedAccountVat = null, ?float $assignedAccountVatPart = null, ?string $assignedSupplierIds = null, ?string $creationDate = null, ?int $creationUser = null, ?string $description = null, ?bool $forbidRedeemUnknownVoucher = null, ?bool $forceNumber = null, ?bool $isEnabled = null, ?string $modifyDate = null, ?int $modifyUser = null, ?string $prefixCode = null, ?bool $securityCode = null, ?string $typeId = null, ?int $validDays = null, ?string $validFrom = null, ?string $validTo = null)
     {
         $this
+            ->setAdapterId($adapterId)
             ->setAllowPartialUse($allowPartialUse)
+            ->setAllowedUnitsForRedeem($allowedUnitsForRedeem)
+            ->setAllowedUnitsForSell($allowedUnitsForSell)
             ->setAssignNoFromSequence($assignNoFromSequence)
             ->setAssignedAccountNoVat($assignedAccountNoVat)
             ->setAssignedAccountNoVatPart($assignedAccountNoVatPart)
@@ -189,6 +214,29 @@ class VoucherTypeDTO extends AbstractStructBase
             ->setValidTo($validTo);
     }
     /**
+     * Get adapterId value
+     * @return string|null
+     */
+    public function getAdapterId(): ?string
+    {
+        return $this->adapterId;
+    }
+    /**
+     * Set adapterId value
+     * @param string $adapterId
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
+     */
+    public function setAdapterId(?string $adapterId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($adapterId) && !is_string($adapterId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($adapterId, true), gettype($adapterId)), __LINE__);
+        }
+        $this->adapterId = $adapterId;
+        
+        return $this;
+    }
+    /**
      * Get allowPartialUse value
      * @return bool|null
      */
@@ -208,6 +256,52 @@ class VoucherTypeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($allowPartialUse, true), gettype($allowPartialUse)), __LINE__);
         }
         $this->allowPartialUse = $allowPartialUse;
+        
+        return $this;
+    }
+    /**
+     * Get allowedUnitsForRedeem value
+     * @return string|null
+     */
+    public function getAllowedUnitsForRedeem(): ?string
+    {
+        return $this->allowedUnitsForRedeem;
+    }
+    /**
+     * Set allowedUnitsForRedeem value
+     * @param string $allowedUnitsForRedeem
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
+     */
+    public function setAllowedUnitsForRedeem(?string $allowedUnitsForRedeem = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($allowedUnitsForRedeem) && !is_string($allowedUnitsForRedeem)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($allowedUnitsForRedeem, true), gettype($allowedUnitsForRedeem)), __LINE__);
+        }
+        $this->allowedUnitsForRedeem = $allowedUnitsForRedeem;
+        
+        return $this;
+    }
+    /**
+     * Get allowedUnitsForSell value
+     * @return string|null
+     */
+    public function getAllowedUnitsForSell(): ?string
+    {
+        return $this->allowedUnitsForSell;
+    }
+    /**
+     * Set allowedUnitsForSell value
+     * @param string $allowedUnitsForSell
+     * @return \Pggns\MidocoApi\OrderSD\StructType\VoucherTypeDTO
+     */
+    public function setAllowedUnitsForSell(?string $allowedUnitsForSell = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($allowedUnitsForSell) && !is_string($allowedUnitsForSell)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($allowedUnitsForSell, true), gettype($allowedUnitsForSell)), __LINE__);
+        }
+        $this->allowedUnitsForSell = $allowedUnitsForSell;
         
         return $this;
     }

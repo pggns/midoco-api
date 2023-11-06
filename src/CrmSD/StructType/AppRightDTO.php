@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AppRightDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AppRightDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class AppRightDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppRightDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +79,7 @@ class AppRightDTO extends AbstractStructBase
     /**
      * Set reqPasswordLevel value
      * @param int $reqPasswordLevel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppRightDTO
      */
     public function setReqPasswordLevel(?int $reqPasswordLevel = null): self
     {
@@ -101,7 +102,7 @@ class AppRightDTO extends AbstractStructBase
     /**
      * Set rightName value
      * @param string $rightName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppRightDTO
      */
     public function setRightName(?string $rightName = null): self
     {

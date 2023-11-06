@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for LetterTemplateDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class LetterTemplateDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\LetterTemplateDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -94,7 +95,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\LetterTemplateDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -117,7 +118,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\LetterTemplateDTO
      */
     public function setIsActive(?bool $isActive = null): self
     {
@@ -140,7 +141,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\LetterTemplateDTO
      */
     public function setName(?string $name = null): self
     {
@@ -163,7 +164,7 @@ class LetterTemplateDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\CrmSD\StructType\LetterTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\LetterTemplateDTO
      */
     public function setText(?string $text = null): self
     {

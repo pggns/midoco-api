@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Contains an error code if the customer was not found or if the e-mail address was found for more than one customer.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ModifyPasswordResponse extends AbstractStructBase
 {
     /**
@@ -49,7 +50,7 @@ class ModifyPasswordResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ModifyPasswordResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ModifyPasswordResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -72,7 +73,7 @@ class ModifyPasswordResponse extends AbstractStructBase
     /**
      * Set errorText value
      * @param string $errorText
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ModifyPasswordResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ModifyPasswordResponse
      */
     public function setErrorText(?string $errorText = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for JasperReportParameterDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class JasperReportParameterDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set isHidden value
      * @param bool $isHidden
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportParameterDTO
      */
     public function setIsHidden(?bool $isHidden = null): self
     {
@@ -86,7 +87,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set multipleValues value
      * @param bool $multipleValues
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportParameterDTO
      */
     public function setMultipleValues(?bool $multipleValues = null): self
     {
@@ -109,7 +110,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set paramId value
      * @param int $paramId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportParameterDTO
      */
     public function setParamId(?int $paramId = null): self
     {
@@ -132,7 +133,7 @@ class JasperReportParameterDTO extends AbstractStructBase
     /**
      * Set reportId value
      * @param int $reportId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportParameterDTO
      */
     public function setReportId(?int $reportId = null): self
     {

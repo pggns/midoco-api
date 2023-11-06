@@ -9,7 +9,9 @@ use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 /**
  * This class stands for modeRevenueCalculation EnumType
  * Meta information extracted from the WSDL
- * - documentation: Enum from values in OrderConstants.SELL_ITEM_EK_...
+ * - documentation: Mode for manual revenue/commission calculations based on value in valueRevenueCalculationElement: (naming is case sensitive!) - "Calculated commission" -> set the calculated commission directly by valueRevenueCalculation. -
+ * "Commission|%" -> calculate the commission in percent (valueRevenueCalculation) based on originalPrice (in case of foreign currency) or totalPrice - "Price" -> the commission is the different between totalPrice and valueRevenueCalculation - "Buying
+ * price foreign" -> valueRevenueCalculation is foreign currency and replaces original_price. The commission is the difference between totalPrice and valueRevenueCalculation (by base currency)
  * @subpackage Enumerations
  */
 class ModeRevenueCalculation extends AbstractStructEnumBase

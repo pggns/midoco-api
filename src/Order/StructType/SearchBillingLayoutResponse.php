@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchBillingLayoutResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchBillingLayoutResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchBillingLayoutResponse extends AbstractStructBase
         return $this->MidocoBillingLayout;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingLayout method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingLayout method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingLayout method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingLayoutForArrayConstraintsFromSetMidocoBillingLayout(?array $values = []): string
+    public static function validateMidocoBillingLayoutForArrayConstraintFromSetMidocoBillingLayout(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchBillingLayoutResponse extends AbstractStructBase
     public function setMidocoBillingLayout(?array $midocoBillingLayout = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingLayoutArrayErrorMessage = self::validateMidocoBillingLayoutForArrayConstraintsFromSetMidocoBillingLayout($midocoBillingLayout))) {
+        if ('' !== ($midocoBillingLayoutArrayErrorMessage = self::validateMidocoBillingLayoutForArrayConstraintFromSetMidocoBillingLayout($midocoBillingLayout))) {
             throw new InvalidArgumentException($midocoBillingLayoutArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingLayout = $midocoBillingLayout;

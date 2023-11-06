@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getAllReports --- returns all the reports for a role id and org unit
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllReportsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAllReportsResponse extends AbstractStructBase
         return $this->MidocoMisReport;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisReport method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisReport method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisReport method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisReportForArrayConstraintsFromSetMidocoMisReport(?array $values = []): string
+    public static function validateMidocoMisReportForArrayConstraintFromSetMidocoMisReport(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAllReportsResponse extends AbstractStructBase
     public function setMidocoMisReport(?array $midocoMisReport = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisReportArrayErrorMessage = self::validateMidocoMisReportForArrayConstraintsFromSetMidocoMisReport($midocoMisReport))) {
+        if ('' !== ($midocoMisReportArrayErrorMessage = self::validateMidocoMisReportForArrayConstraintFromSetMidocoMisReport($midocoMisReport))) {
             throw new InvalidArgumentException($midocoMisReportArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisReport = $midocoMisReport;

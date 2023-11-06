@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SwitchCustomerTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SwitchCustomerTypeResponse extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class SwitchCustomerTypeResponse extends AbstractStructBase
     /**
      * Set isSwitched value
      * @param bool $isSwitched
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SwitchCustomerTypeResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SwitchCustomerTypeResponse
      */
     public function setIsSwitched(bool $isSwitched): self
     {

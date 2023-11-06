@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrderMarginDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrderMarginDTO extends AbstractStructBase
 {
     /**
@@ -64,6 +65,11 @@ class OrderMarginDTO extends AbstractStructBase
      */
     protected ?int $orderId = null;
     /**
+     * The percentCalculatedMarginServices
+     * @var float|null
+     */
+    protected ?float $percentCalculatedMarginServices = null;
+    /**
      * The percentCommission
      * @var float|null
      */
@@ -78,6 +84,11 @@ class OrderMarginDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $purchaseExpense = null;
+    /**
+     * The salePriceNet
+     * @var float|null
+     */
+    protected ?float $salePriceNet = null;
     /**
      * The smallerMarginAllowed
      * @var bool|null
@@ -95,9 +106,11 @@ class OrderMarginDTO extends AbstractStructBase
      * @uses OrderMarginDTO::setModifyDate()
      * @uses OrderMarginDTO::setModifyUser()
      * @uses OrderMarginDTO::setOrderId()
+     * @uses OrderMarginDTO::setPercentCalculatedMarginServices()
      * @uses OrderMarginDTO::setPercentCommission()
      * @uses OrderMarginDTO::setPercentMarginServices()
      * @uses OrderMarginDTO::setPurchaseExpense()
+     * @uses OrderMarginDTO::setSalePriceNet()
      * @uses OrderMarginDTO::setSmallerMarginAllowed()
      * @param float $agencyCommission
      * @param float $calculatedMarginServices
@@ -109,12 +122,14 @@ class OrderMarginDTO extends AbstractStructBase
      * @param string $modifyDate
      * @param int $modifyUser
      * @param int $orderId
+     * @param float $percentCalculatedMarginServices
      * @param float $percentCommission
      * @param float $percentMarginServices
      * @param float $purchaseExpense
+     * @param float $salePriceNet
      * @param bool $smallerMarginAllowed
      */
-    public function __construct(?float $agencyCommission = null, ?float $calculatedMarginServices = null, ?int $category = null, ?string $comments = null, ?float $feeAmount = null, ?float $marginServices = null, ?float $mediatorCommission = null, ?string $modifyDate = null, ?int $modifyUser = null, ?int $orderId = null, ?float $percentCommission = null, ?float $percentMarginServices = null, ?float $purchaseExpense = null, ?bool $smallerMarginAllowed = null)
+    public function __construct(?float $agencyCommission = null, ?float $calculatedMarginServices = null, ?int $category = null, ?string $comments = null, ?float $feeAmount = null, ?float $marginServices = null, ?float $mediatorCommission = null, ?string $modifyDate = null, ?int $modifyUser = null, ?int $orderId = null, ?float $percentCalculatedMarginServices = null, ?float $percentCommission = null, ?float $percentMarginServices = null, ?float $purchaseExpense = null, ?float $salePriceNet = null, ?bool $smallerMarginAllowed = null)
     {
         $this
             ->setAgencyCommission($agencyCommission)
@@ -127,9 +142,11 @@ class OrderMarginDTO extends AbstractStructBase
             ->setModifyDate($modifyDate)
             ->setModifyUser($modifyUser)
             ->setOrderId($orderId)
+            ->setPercentCalculatedMarginServices($percentCalculatedMarginServices)
             ->setPercentCommission($percentCommission)
             ->setPercentMarginServices($percentMarginServices)
             ->setPurchaseExpense($purchaseExpense)
+            ->setSalePriceNet($salePriceNet)
             ->setSmallerMarginAllowed($smallerMarginAllowed);
     }
     /**
@@ -363,6 +380,29 @@ class OrderMarginDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get percentCalculatedMarginServices value
+     * @return float|null
+     */
+    public function getPercentCalculatedMarginServices(): ?float
+    {
+        return $this->percentCalculatedMarginServices;
+    }
+    /**
+     * Set percentCalculatedMarginServices value
+     * @param float $percentCalculatedMarginServices
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderMarginDTO
+     */
+    public function setPercentCalculatedMarginServices(?float $percentCalculatedMarginServices = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($percentCalculatedMarginServices) && !(is_float($percentCalculatedMarginServices) || is_numeric($percentCalculatedMarginServices))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($percentCalculatedMarginServices, true), gettype($percentCalculatedMarginServices)), __LINE__);
+        }
+        $this->percentCalculatedMarginServices = $percentCalculatedMarginServices;
+        
+        return $this;
+    }
+    /**
      * Get percentCommission value
      * @return float|null
      */
@@ -428,6 +468,29 @@ class OrderMarginDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($purchaseExpense, true), gettype($purchaseExpense)), __LINE__);
         }
         $this->purchaseExpense = $purchaseExpense;
+        
+        return $this;
+    }
+    /**
+     * Get salePriceNet value
+     * @return float|null
+     */
+    public function getSalePriceNet(): ?float
+    {
+        return $this->salePriceNet;
+    }
+    /**
+     * Set salePriceNet value
+     * @param float $salePriceNet
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderMarginDTO
+     */
+    public function setSalePriceNet(?float $salePriceNet = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($salePriceNet) && !(is_float($salePriceNet) || is_numeric($salePriceNet))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($salePriceNet, true), gettype($salePriceNet)), __LINE__);
+        }
+        $this->salePriceNet = $salePriceNet;
         
         return $this;
     }

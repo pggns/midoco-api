@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getMisReport --- returns a Mis report
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMisReportResponse extends AbstractStructBase
 {
     /**

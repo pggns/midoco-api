@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintJobs4PrintQueueResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
 {
     /**
@@ -57,12 +58,13 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
         return $this->MidocoTempPrintjobInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTempPrintjobInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoTempPrintjobInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTempPrintjobInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTempPrintjobInfoForArrayConstraintsFromSetMidocoTempPrintjobInfo(?array $values = []): string
+    public static function validateMidocoTempPrintjobInfoForArrayConstraintFromSetMidocoTempPrintjobInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class GetPrintJobs4PrintQueueResponse extends AbstractStructBase
     public function setMidocoTempPrintjobInfo(?array $midocoTempPrintjobInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTempPrintjobInfoArrayErrorMessage = self::validateMidocoTempPrintjobInfoForArrayConstraintsFromSetMidocoTempPrintjobInfo($midocoTempPrintjobInfo))) {
+        if ('' !== ($midocoTempPrintjobInfoArrayErrorMessage = self::validateMidocoTempPrintjobInfoForArrayConstraintFromSetMidocoTempPrintjobInfo($midocoTempPrintjobInfo))) {
             throw new InvalidArgumentException($midocoTempPrintjobInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoTempPrintjobInfo = $midocoTempPrintjobInfo;

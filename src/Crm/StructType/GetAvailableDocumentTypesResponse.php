@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAvailableDocumentTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableDocumentTypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAvailableDocumentTypesResponse extends AbstractStructBase
         return $this->MidocoDocumentType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDocumentType method
+     * This method is responsible for validating the value(s) passed to the setMidocoDocumentType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDocumentType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDocumentTypeForArrayConstraintsFromSetMidocoDocumentType(?array $values = []): string
+    public static function validateMidocoDocumentTypeForArrayConstraintFromSetMidocoDocumentType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAvailableDocumentTypesResponse extends AbstractStructBase
     public function setMidocoDocumentType(?array $midocoDocumentType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDocumentTypeArrayErrorMessage = self::validateMidocoDocumentTypeForArrayConstraintsFromSetMidocoDocumentType($midocoDocumentType))) {
+        if ('' !== ($midocoDocumentTypeArrayErrorMessage = self::validateMidocoDocumentTypeForArrayConstraintFromSetMidocoDocumentType($midocoDocumentType))) {
             throw new InvalidArgumentException($midocoDocumentTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoDocumentType = $midocoDocumentType;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getBillingDocumentForSellItem --- used to test if a previously unprinted document already exists. GUI can use this to ask if a new document should be created or the existing document should be extended.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingDocumentForSellItemResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetBillingDocumentForSellItemResponse extends AbstractStructBase
         return $this->MidocoBillingDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingDocumentForArrayConstraintsFromSetMidocoBillingDocument(?array $values = []): string
+    public static function validateMidocoBillingDocumentForArrayConstraintFromSetMidocoBillingDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetBillingDocumentForSellItemResponse extends AbstractStructBase
     public function setMidocoBillingDocument(?array $midocoBillingDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingDocumentArrayErrorMessage = self::validateMidocoBillingDocumentForArrayConstraintsFromSetMidocoBillingDocument($midocoBillingDocument))) {
+        if ('' !== ($midocoBillingDocumentArrayErrorMessage = self::validateMidocoBillingDocumentForArrayConstraintFromSetMidocoBillingDocument($midocoBillingDocument))) {
             throw new InvalidArgumentException($midocoBillingDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingDocument = $midocoBillingDocument;

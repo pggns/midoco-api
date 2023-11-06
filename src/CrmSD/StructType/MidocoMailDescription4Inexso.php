@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMailDescription4Inexso StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMailDescription4Inexso extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoMailDescription4Inexso extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMailDescription4Inexso
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -70,7 +71,7 @@ class MidocoMailDescription4Inexso extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMailDescription4Inexso
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMailDescription4Inexso
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

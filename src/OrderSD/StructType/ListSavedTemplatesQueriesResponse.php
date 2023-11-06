@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListSavedTemplatesQueriesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListSavedTemplatesQueriesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListSavedTemplatesQueriesResponse extends AbstractStructBase
         return $this->MidocoUserQueryInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoUserQueryInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoUserQueryInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoUserQueryInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoUserQueryInfoForArrayConstraintsFromSetMidocoUserQueryInfo(?array $values = []): string
+    public static function validateMidocoUserQueryInfoForArrayConstraintFromSetMidocoUserQueryInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListSavedTemplatesQueriesResponse extends AbstractStructBase
     public function setMidocoUserQueryInfo(?array $midocoUserQueryInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoUserQueryInfoArrayErrorMessage = self::validateMidocoUserQueryInfoForArrayConstraintsFromSetMidocoUserQueryInfo($midocoUserQueryInfo))) {
+        if ('' !== ($midocoUserQueryInfoArrayErrorMessage = self::validateMidocoUserQueryInfoForArrayConstraintFromSetMidocoUserQueryInfo($midocoUserQueryInfo))) {
             throw new InvalidArgumentException($midocoUserQueryInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoUserQueryInfo = $midocoUserQueryInfo;

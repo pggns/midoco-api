@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getLockReasons--- returns a list of lock reason for the given lock reason
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderLockReasonsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetOrderLockReasonsResponse extends AbstractStructBase
         return $this->MidocoOrderLockReason;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderLockReason method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderLockReason method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderLockReason method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderLockReasonForArrayConstraintsFromSetMidocoOrderLockReason(?array $values = []): string
+    public static function validateMidocoOrderLockReasonForArrayConstraintFromSetMidocoOrderLockReason(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetOrderLockReasonsResponse extends AbstractStructBase
     public function setMidocoOrderLockReason(?array $midocoOrderLockReason = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderLockReasonArrayErrorMessage = self::validateMidocoOrderLockReasonForArrayConstraintsFromSetMidocoOrderLockReason($midocoOrderLockReason))) {
+        if ('' !== ($midocoOrderLockReasonArrayErrorMessage = self::validateMidocoOrderLockReasonForArrayConstraintFromSetMidocoOrderLockReason($midocoOrderLockReason))) {
             throw new InvalidArgumentException($midocoOrderLockReasonArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderLockReason = $midocoOrderLockReason;

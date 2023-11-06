@@ -19,7 +19,7 @@ class Get extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Orderlists\ServiceType\Get
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -324,9 +324,63 @@ class Get extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named getBillingStat
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsRequest $paramGetBillingStatsRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsResponse|bool
+     */
+    public function getBillingStat(\Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsRequest $paramGetBillingStatsRequest)
+    {
+        try {
+            $this->setResult($resultGetBillingStat = $this->getSoapClient()->__soapCall('getBillingStat', [
+                $paramGetBillingStatsRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetBillingStat;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getBillingStatCustomer
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Orderlists\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsCustomerRequest $paramGetBillingStatsCustomerRequest
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsCustomerResponse|bool
+     */
+    public function getBillingStatCustomer(\Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsCustomerRequest $paramGetBillingStatsCustomerRequest)
+    {
+        try {
+            $this->setResult($resultGetBillingStatCustomer = $this->getSoapClient()->__soapCall('getBillingStatCustomer', [
+                $paramGetBillingStatsCustomerRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetBillingStatCustomer;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListResponse|\Pggns\MidocoApi\Orderlists\StructType\GetAvailableSupplierGroupValuesResponse|\Pggns\MidocoApi\Orderlists\StructType\GetBillingBookingJournalsResponse|\Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoResponse|\Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerResponse|\Pggns\MidocoApi\Orderlists\StructType\GetMidocoCCSaleListResponse|\Pggns\MidocoApi\Orderlists\StructType\GetOrderBookingJournalsResponse|\Pggns\MidocoApi\Orderlists\StructType\GetSupplierInvoiceListResponse|\Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductResponse|\Pggns\MidocoApi\Orderlists\StructType\OpenErCsvExportResponse|\Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ConnectedCustomerListResponse|\Pggns\MidocoApi\Orderlists\StructType\GetAvailableSupplierGroupValuesResponse|\Pggns\MidocoApi\Orderlists\StructType\GetBillingBookingJournalsResponse|\Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsCustomerResponse|\Pggns\MidocoApi\Orderlists\StructType\GetBillingStatsResponse|\Pggns\MidocoApi\Orderlists\StructType\GetGroupAdvisorInfoResponse|\Pggns\MidocoApi\Orderlists\StructType\GetInfoForCustomerResponse|\Pggns\MidocoApi\Orderlists\StructType\GetMidocoCCSaleListResponse|\Pggns\MidocoApi\Orderlists\StructType\GetOrderBookingJournalsResponse|\Pggns\MidocoApi\Orderlists\StructType\GetSupplierInvoiceListResponse|\Pggns\MidocoApi\Orderlists\StructType\GetTTVByProductResponse|\Pggns\MidocoApi\Orderlists\StructType\OpenErCsvExportResponse|\Pggns\MidocoApi\Orderlists\StructType\OpenErListResponse
      */
     public function getResult()
     {

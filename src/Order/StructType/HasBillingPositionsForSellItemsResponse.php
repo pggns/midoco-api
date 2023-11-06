@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: HasBillingPositionsForSellItems --- checks for each sellItem if the sellItem or one of his children have BillingPositions. return list with SellItemIds and hasPrinted
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
         return $this->SellItemHasPrinted;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellItemHasPrinted method
+     * This method is responsible for validating the value(s) passed to the setSellItemHasPrinted method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellItemHasPrinted method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellItemHasPrintedForArrayConstraintsFromSetSellItemHasPrinted(?array $values = []): string
+    public static function validateSellItemHasPrintedForArrayConstraintFromSetSellItemHasPrinted(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class HasBillingPositionsForSellItemsResponse extends AbstractStructBase
     public function setSellItemHasPrinted(?array $sellItemHasPrinted = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellItemHasPrintedArrayErrorMessage = self::validateSellItemHasPrintedForArrayConstraintsFromSetSellItemHasPrinted($sellItemHasPrinted))) {
+        if ('' !== ($sellItemHasPrintedArrayErrorMessage = self::validateSellItemHasPrintedForArrayConstraintFromSetSellItemHasPrinted($sellItemHasPrinted))) {
             throw new InvalidArgumentException($sellItemHasPrintedArrayErrorMessage, __LINE__);
         }
         $this->SellItemHasPrinted = $sellItemHasPrinted;

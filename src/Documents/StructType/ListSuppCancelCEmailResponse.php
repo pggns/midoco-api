@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListSuppCancelCEmailResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListSuppCancelCEmailResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListSuppCancelCEmailResponse extends AbstractStructBase
         return $this->MidocoSuppCancelCEmail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSuppCancelCEmail method
+     * This method is responsible for validating the value(s) passed to the setMidocoSuppCancelCEmail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSuppCancelCEmail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSuppCancelCEmailForArrayConstraintsFromSetMidocoSuppCancelCEmail(?array $values = []): string
+    public static function validateMidocoSuppCancelCEmailForArrayConstraintFromSetMidocoSuppCancelCEmail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListSuppCancelCEmailResponse extends AbstractStructBase
     public function setMidocoSuppCancelCEmail(?array $midocoSuppCancelCEmail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSuppCancelCEmailArrayErrorMessage = self::validateMidocoSuppCancelCEmailForArrayConstraintsFromSetMidocoSuppCancelCEmail($midocoSuppCancelCEmail))) {
+        if ('' !== ($midocoSuppCancelCEmailArrayErrorMessage = self::validateMidocoSuppCancelCEmailForArrayConstraintFromSetMidocoSuppCancelCEmail($midocoSuppCancelCEmail))) {
             throw new InvalidArgumentException($midocoSuppCancelCEmailArrayErrorMessage, __LINE__);
         }
         $this->MidocoSuppCancelCEmail = $midocoSuppCancelCEmail;

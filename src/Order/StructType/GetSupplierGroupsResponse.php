@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierGroupsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierGroupsResponse extends AbstractStructBase
 {
     /**
@@ -62,12 +63,13 @@ class GetSupplierGroupsResponse extends AbstractStructBase
         return $this->group1;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroup1 method
+     * This method is responsible for validating the value(s) passed to the setGroup1 method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroup1 method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroup1ForArrayConstraintsFromSetGroup1(?array $values = []): string
+    public static function validateGroup1ForArrayConstraintFromSetGroup1(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -96,7 +98,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
     public function setGroup1(?array $group1 = null): self
     {
         // validation for constraint: array
-        if ('' !== ($group1ArrayErrorMessage = self::validateGroup1ForArrayConstraintsFromSetGroup1($group1))) {
+        if ('' !== ($group1ArrayErrorMessage = self::validateGroup1ForArrayConstraintFromSetGroup1($group1))) {
             throw new InvalidArgumentException($group1ArrayErrorMessage, __LINE__);
         }
         $this->group1 = $group1;
@@ -128,12 +130,13 @@ class GetSupplierGroupsResponse extends AbstractStructBase
         return $this->group2;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroup2 method
+     * This method is responsible for validating the value(s) passed to the setGroup2 method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroup2 method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroup2ForArrayConstraintsFromSetGroup2(?array $values = []): string
+    public static function validateGroup2ForArrayConstraintFromSetGroup2(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -162,7 +165,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
     public function setGroup2(?array $group2 = null): self
     {
         // validation for constraint: array
-        if ('' !== ($group2ArrayErrorMessage = self::validateGroup2ForArrayConstraintsFromSetGroup2($group2))) {
+        if ('' !== ($group2ArrayErrorMessage = self::validateGroup2ForArrayConstraintFromSetGroup2($group2))) {
             throw new InvalidArgumentException($group2ArrayErrorMessage, __LINE__);
         }
         $this->group2 = $group2;
@@ -194,12 +197,13 @@ class GetSupplierGroupsResponse extends AbstractStructBase
         return $this->group3;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroup3 method
+     * This method is responsible for validating the value(s) passed to the setGroup3 method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroup3 method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroup3ForArrayConstraintsFromSetGroup3(?array $values = []): string
+    public static function validateGroup3ForArrayConstraintFromSetGroup3(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -228,7 +232,7 @@ class GetSupplierGroupsResponse extends AbstractStructBase
     public function setGroup3(?array $group3 = null): self
     {
         // validation for constraint: array
-        if ('' !== ($group3ArrayErrorMessage = self::validateGroup3ForArrayConstraintsFromSetGroup3($group3))) {
+        if ('' !== ($group3ArrayErrorMessage = self::validateGroup3ForArrayConstraintFromSetGroup3($group3))) {
             throw new InvalidArgumentException($group3ArrayErrorMessage, __LINE__);
         }
         $this->group3 = $group3;

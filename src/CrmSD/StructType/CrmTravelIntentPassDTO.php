@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmTravelIntentPassDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmTravelIntentPassDTO extends AbstractStructBase
 {
     /**
@@ -95,7 +96,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set age value
      * @param int $age
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setAge(?int $age = null): self
     {
@@ -118,7 +119,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -141,7 +142,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -164,7 +165,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set intentPosition value
      * @param int $intentPosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setIntentPosition(?int $intentPosition = null): self
     {
@@ -187,7 +188,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setName(?string $name = null): self
     {
@@ -210,7 +211,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -233,7 +234,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set salutation value
      * @param string $salutation
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setSalutation(?string $salutation = null): self
     {
@@ -256,7 +257,7 @@ class CrmTravelIntentPassDTO extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravelIntentPassDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravelIntentPassDTO
      */
     public function setTitle(?string $title = null): self
     {

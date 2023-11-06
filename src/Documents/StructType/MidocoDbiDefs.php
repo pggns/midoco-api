@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDbiDefs StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDbiDefs extends DbiDefDTO
 {
     /**

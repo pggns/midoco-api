@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListCashBookItemTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListCashBookItemTypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListCashBookItemTypesResponse extends AbstractStructBase
         return $this->MidocoCashBookItemType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCashBookItemType method
+     * This method is responsible for validating the value(s) passed to the setMidocoCashBookItemType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCashBookItemType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCashBookItemTypeForArrayConstraintsFromSetMidocoCashBookItemType(?array $values = []): string
+    public static function validateMidocoCashBookItemTypeForArrayConstraintFromSetMidocoCashBookItemType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListCashBookItemTypesResponse extends AbstractStructBase
     public function setMidocoCashBookItemType(?array $midocoCashBookItemType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCashBookItemTypeArrayErrorMessage = self::validateMidocoCashBookItemTypeForArrayConstraintsFromSetMidocoCashBookItemType($midocoCashBookItemType))) {
+        if ('' !== ($midocoCashBookItemTypeArrayErrorMessage = self::validateMidocoCashBookItemTypeForArrayConstraintFromSetMidocoCashBookItemType($midocoCashBookItemType))) {
             throw new InvalidArgumentException($midocoCashBookItemTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCashBookItemType = $midocoCashBookItemType;

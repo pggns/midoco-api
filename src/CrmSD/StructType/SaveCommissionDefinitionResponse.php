@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCommissionDefinitionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCommissionDefinitionResponse extends AbstractStructBase
 {
     /**
      * The MidocoCommissionDefinition
      * Meta information extracted from the WSDL
      * - ref: MidocoCommissionDefinition
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO $MidocoCommissionDefinition = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO $MidocoCommissionDefinition = null;
     /**
      * Constructor method for SaveCommissionDefinitionResponse
      * @uses SaveCommissionDefinitionResponse::setMidocoCommissionDefinition()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO $midocoCommissionDefinition
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO $midocoCommissionDefinition
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO $midocoCommissionDefinition = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO $midocoCommissionDefinition = null)
     {
         $this
             ->setMidocoCommissionDefinition($midocoCommissionDefinition);
     }
     /**
      * Get MidocoCommissionDefinition value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO|null
      */
-    public function getMidocoCommissionDefinition(): ?\Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO
+    public function getMidocoCommissionDefinition(): ?\Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO
     {
         return $this->MidocoCommissionDefinition;
     }
     /**
      * Set MidocoCommissionDefinition value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO $midocoCommissionDefinition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCommissionDefinitionResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO $midocoCommissionDefinition
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCommissionDefinitionResponse
      */
-    public function setMidocoCommissionDefinition(?\Pggns\MidocoApi\CrmSD\StructType\CommissionDefinitionDTO $midocoCommissionDefinition = null): self
+    public function setMidocoCommissionDefinition(?\Pggns\MidocoApi\Crmsd\StructType\CommissionDefinitionDTO $midocoCommissionDefinition = null): self
     {
         $this->MidocoCommissionDefinition = $midocoCommissionDefinition;
         

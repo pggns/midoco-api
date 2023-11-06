@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Special data for a private customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Private_data extends AbstractStructBase
 {
     /**
@@ -64,6 +65,15 @@ class Private_data extends AbstractStructBase
      */
     protected ?string $birthday = null;
     /**
+     * The gender
+     * Meta information extracted from the WSDL
+     * - documentation: Gender of the customer
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $gender = null;
+    /**
      * Constructor method for private-data
      * @uses Private_data::setSalutation()
      * @uses Private_data::setTitle()
@@ -71,14 +81,16 @@ class Private_data extends AbstractStructBase
      * @uses Private_data::setName()
      * @uses Private_data::setMiddleName()
      * @uses Private_data::setBirthday()
+     * @uses Private_data::setGender()
      * @param string $salutation
      * @param string $title
      * @param string $forename
      * @param string $name
      * @param string $middleName
      * @param string $birthday
+     * @param string $gender
      */
-    public function __construct(?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $name = null, ?string $middleName = null, ?string $birthday = null)
+    public function __construct(?string $salutation = null, ?string $title = null, ?string $forename = null, ?string $name = null, ?string $middleName = null, ?string $birthday = null, ?string $gender = null)
     {
         $this
             ->setSalutation($salutation)
@@ -86,7 +98,8 @@ class Private_data extends AbstractStructBase
             ->setForename($forename)
             ->setName($name)
             ->setMiddleName($middleName)
-            ->setBirthday($birthday);
+            ->setBirthday($birthday)
+            ->setGender($gender);
     }
     /**
      * Get salutation value
@@ -223,10 +236,36 @@ class Private_data extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($birthday, true), gettype($birthday)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($birthday) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $birthday)) {
+        if (!is_null($birthday) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $birthday)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($birthday, true)), __LINE__);
         }
         $this->birthday = $birthday;
+        
+        return $this;
+    }
+    /**
+     * Get gender value
+     * @return string|null
+     */
+    public function getGender(): ?string
+    {
+        return $this->gender;
+    }
+    /**
+     * Set gender value
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\GenderType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Orderlists\EnumType\GenderType::getValidValues()
+     * @throws InvalidArgumentException
+     * @param string $gender
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Private_data
+     */
+    public function setGender(?string $gender = null): self
+    {
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Orderlists\EnumType\GenderType::valueIsValid($gender)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Orderlists\EnumType\GenderType', is_array($gender) ? implode(', ', $gender) : var_export($gender, true), implode(', ', \Pggns\MidocoApi\Orderlists\EnumType\GenderType::getValidValues())), __LINE__);
+        }
+        $this->gender = $gender;
         
         return $this;
     }

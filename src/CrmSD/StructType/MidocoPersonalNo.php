@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoPersonalNo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoPersonalNo extends AbstractStructBase
 {
     /**
@@ -51,7 +52,7 @@ class MidocoPersonalNo extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPersonalNo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPersonalNo
      */
     public function setCustomerId(int $customerId): self
     {
@@ -74,7 +75,7 @@ class MidocoPersonalNo extends AbstractStructBase
     /**
      * Set personalNo value
      * @param string $personalNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoPersonalNo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoPersonalNo
      */
     public function setPersonalNo(string $personalNo): self
     {

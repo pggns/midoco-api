@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: updateReportDimTable --- updates the report_dimension table by parsing the report definition
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UpdateReportDimTableResponse extends AbstractStructBase
 {
 }

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SavePrintRemarkDestinationRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavePrintRemarkDestinationRequest extends AbstractStructBase
 {
     /**

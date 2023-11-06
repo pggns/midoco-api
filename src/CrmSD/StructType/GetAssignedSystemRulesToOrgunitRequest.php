@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAssignedSystemRulesToOrgunitRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAssignedSystemRulesToOrgunitRequest extends AbstractStructBase
 {
     /**
@@ -19,33 +20,33 @@ class GetAssignedSystemRulesToOrgunitRequest extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoUnitRuleset
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset $MidocoUnitRuleset = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset $MidocoUnitRuleset = null;
     /**
      * Constructor method for GetAssignedSystemRulesToOrgunitRequest
      * @uses GetAssignedSystemRulesToOrgunitRequest::setMidocoUnitRuleset()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset $midocoUnitRuleset
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset $midocoUnitRuleset
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset $midocoUnitRuleset = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset $midocoUnitRuleset = null)
     {
         $this
             ->setMidocoUnitRuleset($midocoUnitRuleset);
     }
     /**
      * Get MidocoUnitRuleset value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset|null
      */
-    public function getMidocoUnitRuleset(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset
+    public function getMidocoUnitRuleset(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset
     {
         return $this->MidocoUnitRuleset;
     }
     /**
      * Set MidocoUnitRuleset value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset $midocoUnitRuleset
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAssignedSystemRulesToOrgunitRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset $midocoUnitRuleset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAssignedSystemRulesToOrgunitRequest
      */
-    public function setMidocoUnitRuleset(?\Pggns\MidocoApi\CrmSD\StructType\MidocoUnitRuleset $midocoUnitRuleset = null): self
+    public function setMidocoUnitRuleset(?\Pggns\MidocoApi\Crmsd\StructType\MidocoUnitRuleset $midocoUnitRuleset = null): self
     {
         $this->MidocoUnitRuleset = $midocoUnitRuleset;
         

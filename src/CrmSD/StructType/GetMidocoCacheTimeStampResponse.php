@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoCacheTimeStampResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoCacheTimeStampResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetMidocoCacheTimeStampResponse extends AbstractStructBase
     /**
      * Set timeStamp value
      * @param string $timeStamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoCacheTimeStampResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoCacheTimeStampResponse
      */
     public function setTimeStamp(?string $timeStamp = null): self
     {

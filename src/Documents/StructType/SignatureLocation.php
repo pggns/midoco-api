@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * in points (1/72inch) which is lower left corner
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SignatureLocation extends AbstractStructBase
 {
     /**

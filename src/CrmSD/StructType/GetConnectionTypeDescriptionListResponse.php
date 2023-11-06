@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetConnectionTypeDescriptionListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetConnectionTypeDescriptionListResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetConnectionTypeDescriptionListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoConnectionTypeDescription
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO[]
      */
     protected ?array $MidocoConnectionTypeDescription = null;
     /**
      * Constructor method for GetConnectionTypeDescriptionListResponse
      * @uses GetConnectionTypeDescriptionListResponse::setMidocoConnectionTypeDescription()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO[] $midocoConnectionTypeDescription
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO[] $midocoConnectionTypeDescription
      */
     public function __construct(?array $midocoConnectionTypeDescription = null)
     {
@@ -34,19 +35,20 @@ class GetConnectionTypeDescriptionListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoConnectionTypeDescription value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO[]
      */
     public function getMidocoConnectionTypeDescription(): ?array
     {
         return $this->MidocoConnectionTypeDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoConnectionTypeDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoConnectionTypeDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoConnectionTypeDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoConnectionTypeDescriptionForArrayConstraintsFromSetMidocoConnectionTypeDescription(?array $values = []): string
+    public static function validateMidocoConnectionTypeDescriptionForArrayConstraintFromSetMidocoConnectionTypeDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetConnectionTypeDescriptionListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getConnectionTypeDescriptionListResponseMidocoConnectionTypeDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getConnectionTypeDescriptionListResponseMidocoConnectionTypeDescriptionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO) {
+            if (!$getConnectionTypeDescriptionListResponseMidocoConnectionTypeDescriptionItem instanceof \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO) {
                 $invalidValues[] = is_object($getConnectionTypeDescriptionListResponseMidocoConnectionTypeDescriptionItem) ? get_class($getConnectionTypeDescriptionListResponseMidocoConnectionTypeDescriptionItem) : sprintf('%s(%s)', gettype($getConnectionTypeDescriptionListResponseMidocoConnectionTypeDescriptionItem), var_export($getConnectionTypeDescriptionListResponseMidocoConnectionTypeDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoConnectionTypeDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoConnectionTypeDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetConnectionTypeDescriptionListResponse extends AbstractStructBase
     /**
      * Set MidocoConnectionTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO[] $midocoConnectionTypeDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetConnectionTypeDescriptionListResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO[] $midocoConnectionTypeDescription
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetConnectionTypeDescriptionListResponse
      */
     public function setMidocoConnectionTypeDescription(?array $midocoConnectionTypeDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoConnectionTypeDescriptionArrayErrorMessage = self::validateMidocoConnectionTypeDescriptionForArrayConstraintsFromSetMidocoConnectionTypeDescription($midocoConnectionTypeDescription))) {
+        if ('' !== ($midocoConnectionTypeDescriptionArrayErrorMessage = self::validateMidocoConnectionTypeDescriptionForArrayConstraintFromSetMidocoConnectionTypeDescription($midocoConnectionTypeDescription))) {
             throw new InvalidArgumentException($midocoConnectionTypeDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoConnectionTypeDescription = $midocoConnectionTypeDescription;
@@ -85,14 +87,14 @@ class GetConnectionTypeDescriptionListResponse extends AbstractStructBase
     /**
      * Add item to MidocoConnectionTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetConnectionTypeDescriptionListResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetConnectionTypeDescriptionListResponse
      */
-    public function addToMidocoConnectionTypeDescription(\Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO $item): self
+    public function addToMidocoConnectionTypeDescription(\Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoConnectionTypeDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ConnectionTypeDescDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoConnectionTypeDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ConnectionTypeDescDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoConnectionTypeDescription[] = $item;
         

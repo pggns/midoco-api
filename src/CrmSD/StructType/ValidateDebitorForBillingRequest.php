@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ValidateDebitorForBillingRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidateDebitorForBillingRequest extends AbstractStructBase
 {
     /**
@@ -61,7 +62,7 @@ class ValidateDebitorForBillingRequest extends AbstractStructBase
     /**
      * Set debitorNo value
      * @param string $debitorNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateDebitorForBillingRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateDebitorForBillingRequest
      */
     public function setDebitorNo(string $debitorNo): self
     {
@@ -84,7 +85,7 @@ class ValidateDebitorForBillingRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateDebitorForBillingRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateDebitorForBillingRequest
      */
     public function setOrgUnit(string $orgUnit): self
     {
@@ -107,7 +108,7 @@ class ValidateDebitorForBillingRequest extends AbstractStructBase
     /**
      * Set customerNo value
      * @param int $customerNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateDebitorForBillingRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateDebitorForBillingRequest
      */
     public function setCustomerNo(?int $customerNo = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListTourOperatorsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListTourOperatorsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListTourOperatorsResponse extends AbstractStructBase
         return $this->MidocoTourOperator;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTourOperator method
+     * This method is responsible for validating the value(s) passed to the setMidocoTourOperator method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTourOperator method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTourOperatorForArrayConstraintsFromSetMidocoTourOperator(?array $values = []): string
+    public static function validateMidocoTourOperatorForArrayConstraintFromSetMidocoTourOperator(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListTourOperatorsResponse extends AbstractStructBase
     public function setMidocoTourOperator(?array $midocoTourOperator = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTourOperatorArrayErrorMessage = self::validateMidocoTourOperatorForArrayConstraintsFromSetMidocoTourOperator($midocoTourOperator))) {
+        if ('' !== ($midocoTourOperatorArrayErrorMessage = self::validateMidocoTourOperatorForArrayConstraintFromSetMidocoTourOperator($midocoTourOperator))) {
             throw new InvalidArgumentException($midocoTourOperatorArrayErrorMessage, __LINE__);
         }
         $this->MidocoTourOperator = $midocoTourOperator;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExecuteTravelNoMarginBookingRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExecuteTravelNoMarginBookingRequest extends AbstractStructBase
 {
     /**
@@ -27,17 +28,27 @@ class ExecuteTravelNoMarginBookingRequest extends AbstractStructBase
      */
     protected ?bool $deactivateTravelNo = null;
     /**
+     * The tentative
+     * Meta information extracted from the WSDL
+     * - default: false
+     * @var bool|null
+     */
+    protected ?bool $tentative = null;
+    /**
      * Constructor method for ExecuteTravelNoMarginBookingRequest
      * @uses ExecuteTravelNoMarginBookingRequest::setMidocoTravelNoMargin()
      * @uses ExecuteTravelNoMarginBookingRequest::setDeactivateTravelNo()
+     * @uses ExecuteTravelNoMarginBookingRequest::setTentative()
      * @param \Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin
      * @param bool $deactivateTravelNo
+     * @param bool $tentative
      */
-    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin = null, ?bool $deactivateTravelNo = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoTravelNoMargin $midocoTravelNoMargin = null, ?bool $deactivateTravelNo = null, ?bool $tentative = false)
     {
         $this
             ->setMidocoTravelNoMargin($midocoTravelNoMargin)
-            ->setDeactivateTravelNo($deactivateTravelNo);
+            ->setDeactivateTravelNo($deactivateTravelNo)
+            ->setTentative($tentative);
     }
     /**
      * Get MidocoTravelNoMargin value
@@ -78,6 +89,29 @@ class ExecuteTravelNoMarginBookingRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($deactivateTravelNo, true), gettype($deactivateTravelNo)), __LINE__);
         }
         $this->deactivateTravelNo = $deactivateTravelNo;
+        
+        return $this;
+    }
+    /**
+     * Get tentative value
+     * @return bool|null
+     */
+    public function getTentative(): ?bool
+    {
+        return $this->tentative;
+    }
+    /**
+     * Set tentative value
+     * @param bool $tentative
+     * @return \Pggns\MidocoApi\Order\StructType\ExecuteTravelNoMarginBookingRequest
+     */
+    public function setTentative(?bool $tentative = false): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($tentative) && !is_bool($tentative)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($tentative, true), gettype($tentative)), __LINE__);
+        }
+        $this->tentative = $tentative;
         
         return $this;
     }

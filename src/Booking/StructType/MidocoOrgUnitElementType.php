@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrgUnitElementType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrgUnitElementType extends AbstractStructBase
 {
     /**
@@ -227,12 +228,13 @@ class MidocoOrgUnitElementType extends AbstractStructBase
         return $this->MidocoOrgUnitElement;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrgUnitElement method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrgUnitElement method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrgUnitElement method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrgUnitElementForArrayConstraintsFromSetMidocoOrgUnitElement(?array $values = []): string
+    public static function validateMidocoOrgUnitElementForArrayConstraintFromSetMidocoOrgUnitElement(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -261,7 +263,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     public function setMidocoOrgUnitElement(?array $midocoOrgUnitElement = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrgUnitElementArrayErrorMessage = self::validateMidocoOrgUnitElementForArrayConstraintsFromSetMidocoOrgUnitElement($midocoOrgUnitElement))) {
+        if ('' !== ($midocoOrgUnitElementArrayErrorMessage = self::validateMidocoOrgUnitElementForArrayConstraintFromSetMidocoOrgUnitElement($midocoOrgUnitElement))) {
             throw new InvalidArgumentException($midocoOrgUnitElementArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrgUnitElement = $midocoOrgUnitElement;

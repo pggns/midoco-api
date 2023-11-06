@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrgUnitElementType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrgUnitElementType extends AbstractStructBase
 {
     /**
@@ -49,7 +50,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgUnitElement
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType[]
      */
     protected ?array $MidocoOrgUnitElement = null;
     /**
@@ -67,7 +68,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
      * @param bool $isProductiv
      * @param bool $isTest
      * @param bool $isAvailableByUser
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
      */
     public function __construct(?string $parent = null, ?string $unitName = null, ?string $printName = null, ?bool $isProductiv = null, ?bool $isTest = null, ?bool $isAvailableByUser = null, ?array $midocoOrgUnitElement = null)
     {
@@ -91,7 +92,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set parent value
      * @param string $parent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
     public function setParent(?string $parent = null): self
     {
@@ -114,7 +115,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -137,7 +138,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set printName value
      * @param string $printName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
     public function setPrintName(?string $printName = null): self
     {
@@ -160,7 +161,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set isProductiv value
      * @param bool $isProductiv
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
     public function setIsProductiv(?bool $isProductiv = null): self
     {
@@ -183,7 +184,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set isTest value
      * @param bool $isTest
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
     public function setIsTest(?bool $isTest = null): self
     {
@@ -206,7 +207,7 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set isAvailableByUser value
      * @param bool $isAvailableByUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
     public function setIsAvailableByUser(?bool $isAvailableByUser = null): self
     {
@@ -220,19 +221,20 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     }
     /**
      * Get MidocoOrgUnitElement value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType[]
      */
     public function getMidocoOrgUnitElement(): ?array
     {
         return $this->MidocoOrgUnitElement;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrgUnitElement method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrgUnitElement method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrgUnitElement method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrgUnitElementForArrayConstraintsFromSetMidocoOrgUnitElement(?array $values = []): string
+    public static function validateMidocoOrgUnitElementForArrayConstraintFromSetMidocoOrgUnitElement(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -241,12 +243,12 @@ class MidocoOrgUnitElementType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $midocoOrgUnitElementTypeMidocoOrgUnitElementItem) {
             // validation for constraint: itemType
-            if (!$midocoOrgUnitElementTypeMidocoOrgUnitElementItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType) {
+            if (!$midocoOrgUnitElementTypeMidocoOrgUnitElementItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType) {
                 $invalidValues[] = is_object($midocoOrgUnitElementTypeMidocoOrgUnitElementItem) ? get_class($midocoOrgUnitElementTypeMidocoOrgUnitElementItem) : sprintf('%s(%s)', gettype($midocoOrgUnitElementTypeMidocoOrgUnitElementItem), var_export($midocoOrgUnitElementTypeMidocoOrgUnitElementItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -255,13 +257,13 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Set MidocoOrgUnitElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType[] $midocoOrgUnitElement
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
     public function setMidocoOrgUnitElement(?array $midocoOrgUnitElement = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrgUnitElementArrayErrorMessage = self::validateMidocoOrgUnitElementForArrayConstraintsFromSetMidocoOrgUnitElement($midocoOrgUnitElement))) {
+        if ('' !== ($midocoOrgUnitElementArrayErrorMessage = self::validateMidocoOrgUnitElementForArrayConstraintFromSetMidocoOrgUnitElement($midocoOrgUnitElement))) {
             throw new InvalidArgumentException($midocoOrgUnitElementArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrgUnitElement = $midocoOrgUnitElement;
@@ -271,14 +273,14 @@ class MidocoOrgUnitElementType extends AbstractStructBase
     /**
      * Add item to MidocoOrgUnitElement value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType
      */
-    public function addToMidocoOrgUnitElement(\Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType $item): self
+    public function addToMidocoOrgUnitElement(\Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgUnitElementType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgUnitElement property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgUnitElementType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgUnitElement[] = $item;
         

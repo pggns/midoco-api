@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UserattribDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UserattribDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class UserattribDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserattribDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserattribDTO
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -70,7 +71,7 @@ class UserattribDTO extends AbstractStructBase
     /**
      * Set isSecret value
      * @param bool $isSecret
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserattribDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserattribDTO
      */
     public function setIsSecret(?bool $isSecret = null): self
     {

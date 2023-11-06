@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getBillingDocumentForCustomer --- used to test if a previously unprinted document already exists.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingDocumentForCustomerResponse extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
         return $this->MidocoBillingPositionsDetails;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingPositionsDetails method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingPositionsDetails method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingPositionsDetails method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingPositionsDetailsForArrayConstraintsFromSetMidocoBillingPositionsDetails(?array $values = []): string
+    public static function validateMidocoBillingPositionsDetailsForArrayConstraintFromSetMidocoBillingPositionsDetails(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class GetBillingDocumentForCustomerResponse extends AbstractStructBase
     public function setMidocoBillingPositionsDetails(?array $midocoBillingPositionsDetails = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingPositionsDetailsArrayErrorMessage = self::validateMidocoBillingPositionsDetailsForArrayConstraintsFromSetMidocoBillingPositionsDetails($midocoBillingPositionsDetails))) {
+        if ('' !== ($midocoBillingPositionsDetailsArrayErrorMessage = self::validateMidocoBillingPositionsDetailsForArrayConstraintFromSetMidocoBillingPositionsDetails($midocoBillingPositionsDetails))) {
             throw new InvalidArgumentException($midocoBillingPositionsDetailsArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingPositionsDetails = $midocoBillingPositionsDetails;

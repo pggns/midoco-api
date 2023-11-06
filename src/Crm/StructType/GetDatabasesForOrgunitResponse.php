@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDatabasesForOrgunitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDatabasesForOrgunitResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
         return $this->MidocoDatabaseType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDatabaseType method
+     * This method is responsible for validating the value(s) passed to the setMidocoDatabaseType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDatabaseType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDatabaseTypeForArrayConstraintsFromSetMidocoDatabaseType(?array $values = []): string
+    public static function validateMidocoDatabaseTypeForArrayConstraintFromSetMidocoDatabaseType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDatabasesForOrgunitResponse extends AbstractStructBase
     public function setMidocoDatabaseType(?array $midocoDatabaseType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDatabaseTypeArrayErrorMessage = self::validateMidocoDatabaseTypeForArrayConstraintsFromSetMidocoDatabaseType($midocoDatabaseType))) {
+        if ('' !== ($midocoDatabaseTypeArrayErrorMessage = self::validateMidocoDatabaseTypeForArrayConstraintFromSetMidocoDatabaseType($midocoDatabaseType))) {
             throw new InvalidArgumentException($midocoDatabaseTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoDatabaseType = $midocoDatabaseType;

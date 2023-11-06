@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getOrderNotices --- returns the list of order Notices for an order
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderNoticesResponse extends AbstractStructBase
 {
     /**
@@ -55,12 +56,13 @@ class GetOrderNoticesResponse extends AbstractStructBase
         return $this->MidocoOrderNoticeWithOrderNo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderNoticeWithOrderNo method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderNoticeWithOrderNo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderNoticeWithOrderNo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderNoticeWithOrderNoForArrayConstraintsFromSetMidocoOrderNoticeWithOrderNo(?array $values = []): string
+    public static function validateMidocoOrderNoticeWithOrderNoForArrayConstraintFromSetMidocoOrderNoticeWithOrderNo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -89,7 +91,7 @@ class GetOrderNoticesResponse extends AbstractStructBase
     public function setMidocoOrderNoticeWithOrderNo(?array $midocoOrderNoticeWithOrderNo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderNoticeWithOrderNoArrayErrorMessage = self::validateMidocoOrderNoticeWithOrderNoForArrayConstraintsFromSetMidocoOrderNoticeWithOrderNo($midocoOrderNoticeWithOrderNo))) {
+        if ('' !== ($midocoOrderNoticeWithOrderNoArrayErrorMessage = self::validateMidocoOrderNoticeWithOrderNoForArrayConstraintFromSetMidocoOrderNoticeWithOrderNo($midocoOrderNoticeWithOrderNo))) {
             throw new InvalidArgumentException($midocoOrderNoticeWithOrderNoArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderNoticeWithOrderNo = $midocoOrderNoticeWithOrderNo;
@@ -121,12 +123,13 @@ class GetOrderNoticesResponse extends AbstractStructBase
         return $this->MidocoOrderNotice;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderNotice method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderNotice method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderNotice method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderNoticeForArrayConstraintsFromSetMidocoOrderNotice(?array $values = []): string
+    public static function validateMidocoOrderNoticeForArrayConstraintFromSetMidocoOrderNotice(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -155,7 +158,7 @@ class GetOrderNoticesResponse extends AbstractStructBase
     public function setMidocoOrderNotice(?array $midocoOrderNotice = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderNoticeArrayErrorMessage = self::validateMidocoOrderNoticeForArrayConstraintsFromSetMidocoOrderNotice($midocoOrderNotice))) {
+        if ('' !== ($midocoOrderNoticeArrayErrorMessage = self::validateMidocoOrderNoticeForArrayConstraintFromSetMidocoOrderNotice($midocoOrderNotice))) {
             throw new InvalidArgumentException($midocoOrderNoticeArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderNotice = $midocoOrderNotice;

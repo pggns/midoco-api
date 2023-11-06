@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintAdviceRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintAdviceRequest extends AbstractStructBase
 {
     /**
@@ -46,11 +47,6 @@ class PrintAdviceRequest extends AbstractStructBase
      */
     protected ?bool $isVoid = null;
     /**
-     * The recipientCustomerId
-     * @var int|null
-     */
-    protected ?int $recipientCustomerId = null;
-    /**
      * Constructor method for PrintAdviceRequest
      * @uses PrintAdviceRequest::setSettlementId()
      * @uses PrintAdviceRequest::setTemplateName()
@@ -58,16 +54,14 @@ class PrintAdviceRequest extends AbstractStructBase
      * @uses PrintAdviceRequest::setDocType()
      * @uses PrintAdviceRequest::setIsCollective()
      * @uses PrintAdviceRequest::setIsVoid()
-     * @uses PrintAdviceRequest::setRecipientCustomerId()
      * @param int $settlementId
      * @param string $templateName
      * @param string $printType
      * @param string $docType
      * @param bool $isCollective
      * @param bool $isVoid
-     * @param int $recipientCustomerId
      */
-    public function __construct(?int $settlementId = null, ?string $templateName = null, ?string $printType = null, ?string $docType = null, ?bool $isCollective = null, ?bool $isVoid = false, ?int $recipientCustomerId = null)
+    public function __construct(?int $settlementId = null, ?string $templateName = null, ?string $printType = null, ?string $docType = null, ?bool $isCollective = null, ?bool $isVoid = false)
     {
         $this
             ->setSettlementId($settlementId)
@@ -75,8 +69,7 @@ class PrintAdviceRequest extends AbstractStructBase
             ->setPrintType($printType)
             ->setDocType($docType)
             ->setIsCollective($isCollective)
-            ->setIsVoid($isVoid)
-            ->setRecipientCustomerId($recipientCustomerId);
+            ->setIsVoid($isVoid);
     }
     /**
      * Get settlementId value
@@ -213,29 +206,6 @@ class PrintAdviceRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isVoid, true), gettype($isVoid)), __LINE__);
         }
         $this->isVoid = $isVoid;
-        
-        return $this;
-    }
-    /**
-     * Get recipientCustomerId value
-     * @return int|null
-     */
-    public function getRecipientCustomerId(): ?int
-    {
-        return $this->recipientCustomerId;
-    }
-    /**
-     * Set recipientCustomerId value
-     * @param int $recipientCustomerId
-     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceRequest
-     */
-    public function setRecipientCustomerId(?int $recipientCustomerId = null): self
-    {
-        // validation for constraint: int
-        if (!is_null($recipientCustomerId) && !(is_int($recipientCustomerId) || ctype_digit($recipientCustomerId))) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($recipientCustomerId, true), gettype($recipientCustomerId)), __LINE__);
-        }
-        $this->recipientCustomerId = $recipientCustomerId;
         
         return $this;
     }

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Document information (mostly tickets for scheduled flights, for BSP settlement)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Ticket extends AbstractStructBase
 {
     /**
@@ -74,6 +75,13 @@ class Ticket extends AbstractStructBase
      */
     protected ?string $bsp_validator = null;
     /**
+     * The check_digit
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $check_digit = null;
+    /**
      * The ticket_media
      * @var string|null
      */
@@ -86,9 +94,7 @@ class Ticket extends AbstractStructBase
     /**
      * The extPaymentType
      * Meta information extracted from the WSDL
-     * - base: xs:string
      * - minOccurs: 0
-     * - pattern: CASH | DEBIT | CC
      * @var string|null
      */
     protected ?string $extPaymentType = null;
@@ -350,6 +356,13 @@ class Ticket extends AbstractStructBase
      */
     protected ?string $bspValidator = null;
     /**
+     * The checkDigit
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $checkDigit = null;
+    /**
      * The ticketMedia
      * @var string|null
      */
@@ -566,6 +579,7 @@ class Ticket extends AbstractStructBase
      * @uses Ticket::setTicket_no()
      * @uses Ticket::setTicket_no_conj()
      * @uses Ticket::setBsp_validator()
+     * @uses Ticket::setCheck_digit()
      * @uses Ticket::setTicket_media()
      * @uses Ticket::setPayment_type()
      * @uses Ticket::setExtPaymentType()
@@ -607,6 +621,7 @@ class Ticket extends AbstractStructBase
      * @uses Ticket::setTicketNo()
      * @uses Ticket::setTicketNoConj()
      * @uses Ticket::setBspValidator()
+     * @uses Ticket::setCheckDigit()
      * @uses Ticket::setTicketMedia()
      * @uses Ticket::setPaymentType()
      * @uses Ticket::setBaseFare()
@@ -647,6 +662,7 @@ class Ticket extends AbstractStructBase
      * @param string $ticket_no
      * @param string $ticket_no_conj
      * @param string $bsp_validator
+     * @param string $check_digit
      * @param string $ticket_media
      * @param string $payment_type
      * @param string $extPaymentType
@@ -688,6 +704,7 @@ class Ticket extends AbstractStructBase
      * @param string $ticketNo
      * @param string $ticketNoConj
      * @param string $bspValidator
+     * @param string $checkDigit
      * @param string $ticketMedia
      * @param string $paymentType
      * @param float $baseFare
@@ -720,7 +737,7 @@ class Ticket extends AbstractStructBase
      * @param int $priceRef
      * @param \Pggns\MidocoApi\Order\StructType\Passenger $passenger
      */
-    public function __construct(int $position, ?string $crs = null, ?string $ticket_type = null, ?string $ticket_subtype = null, ?string $ticket_subgroup_emd = null, ?string $ticket_doc_subtype_description = null, ?string $ticket_no = null, ?string $ticket_no_conj = null, ?string $bsp_validator = null, ?string $ticket_media = null, ?string $payment_type = null, ?string $extPaymentType = null, ?float $base_fare = null, ?string $fare_type = null, ?array $tax_information = null, ?float $total_tax = null, ?float $commission_percent = null, ?float $commission_amount = null, ?float $commission_vat_amount = null, ?float $wholesale_price = null, ?float $total_price = null, ?string $currency = null, ?string $ticket_designator = null, ?string $segment_assignment = null, ?string $person_assignment = null, ?string $it_information = null, ?string $ticketing_agent = null, ?string $ticketing_pcc = null, ?string $bsp_agency = null, ?string $travel_date = null, ?string $issue_date = null, ?\Pggns\MidocoApi\Order\StructType\Cc_information $cc_information = null, ?bool $is_domestic = null, ?string $ticketing_city = null, ?string $vat_content = null, ?string $exchange_information = null, ?float $airline_fee = null, ?float $cancellation_fee = null, ?float $original_amount = null, ?string $original_currency = null, ?string $filekey = null, ?array $saving = null, ?int $price_ref = null, ?string $ticketType = null, ?string $ticketSubtype = null, ?string $ticketSubgroupEmd = null, ?string $ticketDocSubtypeDescription = null, ?string $ticketNo = null, ?string $ticketNoConj = null, ?string $bspValidator = null, ?string $ticketMedia = null, ?string $paymentType = null, ?float $baseFare = null, ?string $fareType = null, ?array $taxInformation = null, ?float $totalTax = null, ?float $commissionPercent = null, ?float $commissionAmount = null, ?float $commissionVatAmount = null, ?float $wholesalePrice = null, ?float $totalPrice = null, ?string $ticketDesignator = null, ?string $segmentAssignment = null, ?string $personAssignment = null, ?string $itInformation = null, ?string $ticketingAgent = null, ?string $ticketingPcc = null, ?string $bspAgency = null, ?string $travelDate = null, ?string $issueDate = null, ?\Pggns\MidocoApi\Order\StructType\CcInformation $ccInformation = null, ?bool $isDomestic = null, ?string $ticketingCity = null, ?string $vatContent = null, ?string $exchangeInformation = null, ?float $airlineFee = null, ?float $cancellationFee = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?int $priceRef = null, ?\Pggns\MidocoApi\Order\StructType\Passenger $passenger = null)
+    public function __construct(int $position, ?string $crs = null, ?string $ticket_type = null, ?string $ticket_subtype = null, ?string $ticket_subgroup_emd = null, ?string $ticket_doc_subtype_description = null, ?string $ticket_no = null, ?string $ticket_no_conj = null, ?string $bsp_validator = null, ?string $check_digit = null, ?string $ticket_media = null, ?string $payment_type = null, ?string $extPaymentType = null, ?float $base_fare = null, ?string $fare_type = null, ?array $tax_information = null, ?float $total_tax = null, ?float $commission_percent = null, ?float $commission_amount = null, ?float $commission_vat_amount = null, ?float $wholesale_price = null, ?float $total_price = null, ?string $currency = null, ?string $ticket_designator = null, ?string $segment_assignment = null, ?string $person_assignment = null, ?string $it_information = null, ?string $ticketing_agent = null, ?string $ticketing_pcc = null, ?string $bsp_agency = null, ?string $travel_date = null, ?string $issue_date = null, ?\Pggns\MidocoApi\Order\StructType\Cc_information $cc_information = null, ?bool $is_domestic = null, ?string $ticketing_city = null, ?string $vat_content = null, ?string $exchange_information = null, ?float $airline_fee = null, ?float $cancellation_fee = null, ?float $original_amount = null, ?string $original_currency = null, ?string $filekey = null, ?array $saving = null, ?int $price_ref = null, ?string $ticketType = null, ?string $ticketSubtype = null, ?string $ticketSubgroupEmd = null, ?string $ticketDocSubtypeDescription = null, ?string $ticketNo = null, ?string $ticketNoConj = null, ?string $bspValidator = null, ?string $checkDigit = null, ?string $ticketMedia = null, ?string $paymentType = null, ?float $baseFare = null, ?string $fareType = null, ?array $taxInformation = null, ?float $totalTax = null, ?float $commissionPercent = null, ?float $commissionAmount = null, ?float $commissionVatAmount = null, ?float $wholesalePrice = null, ?float $totalPrice = null, ?string $ticketDesignator = null, ?string $segmentAssignment = null, ?string $personAssignment = null, ?string $itInformation = null, ?string $ticketingAgent = null, ?string $ticketingPcc = null, ?string $bspAgency = null, ?string $travelDate = null, ?string $issueDate = null, ?\Pggns\MidocoApi\Order\StructType\CcInformation $ccInformation = null, ?bool $isDomestic = null, ?string $ticketingCity = null, ?string $vatContent = null, ?string $exchangeInformation = null, ?float $airlineFee = null, ?float $cancellationFee = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?int $priceRef = null, ?\Pggns\MidocoApi\Order\StructType\Passenger $passenger = null)
     {
         $this
             ->setPosition($position)
@@ -732,6 +749,7 @@ class Ticket extends AbstractStructBase
             ->setTicket_no($ticket_no)
             ->setTicket_no_conj($ticket_no_conj)
             ->setBsp_validator($bsp_validator)
+            ->setCheck_digit($check_digit)
             ->setTicket_media($ticket_media)
             ->setPayment_type($payment_type)
             ->setExtPaymentType($extPaymentType)
@@ -773,6 +791,7 @@ class Ticket extends AbstractStructBase
             ->setTicketNo($ticketNo)
             ->setTicketNoConj($ticketNoConj)
             ->setBspValidator($bspValidator)
+            ->setCheckDigit($checkDigit)
             ->setTicketMedia($ticketMedia)
             ->setPaymentType($paymentType)
             ->setBaseFare($baseFare)
@@ -1019,6 +1038,29 @@ class Ticket extends AbstractStructBase
         return $this;
     }
     /**
+     * Get check_digit value
+     * @return string|null
+     */
+    public function getCheck_digit(): ?string
+    {
+        return $this->{'check-digit'};
+    }
+    /**
+     * Set check_digit value
+     * @param string $check_digit
+     * @return \Pggns\MidocoApi\Order\StructType\Ticket
+     */
+    public function setCheck_digit(?string $check_digit = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($check_digit) && !is_string($check_digit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($check_digit, true), gettype($check_digit)), __LINE__);
+        }
+        $this->check_digit = $this->{'check-digit'} = $check_digit;
+        
+        return $this;
+    }
+    /**
      * Get ticket_media value
      * @return string|null
      */
@@ -1080,18 +1122,17 @@ class Ticket extends AbstractStructBase
     }
     /**
      * Set extPaymentType value
+     * @uses \Pggns\MidocoApi\Order\EnumType\ExtPaymentType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\ExtPaymentType::getValidValues()
+     * @throws InvalidArgumentException
      * @param string $extPaymentType
      * @return \Pggns\MidocoApi\Order\StructType\Ticket
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
-        // validation for constraint: string
-        if (!is_null($extPaymentType) && !is_string($extPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($extPaymentType, true), gettype($extPaymentType)), __LINE__);
-        }
-        // validation for constraint: pattern(CASH, DEBIT, CC)
-        if (!is_null($extPaymentType) && !preg_match('/CASH|DEBIT|CC|CASH|DEBIT|CC/', $extPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /CASH|DEBIT|CC|CASH|DEBIT|CC/', var_export($extPaymentType, true)), __LINE__);
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Order\EnumType\ExtPaymentType::valueIsValid($extPaymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\ExtPaymentType', is_array($extPaymentType) ? implode(', ', $extPaymentType) : var_export($extPaymentType, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\ExtPaymentType::getValidValues())), __LINE__);
         }
         $this->extPaymentType = $extPaymentType;
         
@@ -1155,12 +1196,13 @@ class Ticket extends AbstractStructBase
         return $this->{'tax-information'};
     }
     /**
-     * This method is responsible for validating the values passed to the setTax_information method
+     * This method is responsible for validating the value(s) passed to the setTax_information method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTax_information method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTax_informationForArrayConstraintsFromSetTax_information(?array $values = []): string
+    public static function validateTax_informationForArrayConstraintFromSetTax_information(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1189,7 +1231,7 @@ class Ticket extends AbstractStructBase
     public function setTax_information(?array $tax_information = null): self
     {
         // validation for constraint: array
-        if ('' !== ($tax_informationArrayErrorMessage = self::validateTax_informationForArrayConstraintsFromSetTax_information($tax_information))) {
+        if ('' !== ($tax_informationArrayErrorMessage = self::validateTax_informationForArrayConstraintFromSetTax_information($tax_information))) {
             throw new InvalidArgumentException($tax_informationArrayErrorMessage, __LINE__);
         }
         $this->tax_information = $this->{'tax-information'} = $tax_information;
@@ -1554,7 +1596,7 @@ class Ticket extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travel_date, true), gettype($travel_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($travel_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $travel_date)) {
+        if (!is_null($travel_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $travel_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($travel_date, true)), __LINE__);
         }
         $this->travel_date = $this->{'travel-date'} = $travel_date;
@@ -1581,7 +1623,7 @@ class Ticket extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($issue_date, true), gettype($issue_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($issue_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $issue_date)) {
+        if (!is_null($issue_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $issue_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($issue_date, true)), __LINE__);
         }
         $this->issue_date = $this->{'issue-date'} = $issue_date;
@@ -1823,12 +1865,13 @@ class Ticket extends AbstractStructBase
         return $this->saving;
     }
     /**
-     * This method is responsible for validating the values passed to the setSaving method
+     * This method is responsible for validating the value(s) passed to the setSaving method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSaving method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSavingForArrayConstraintsFromSetSaving(?array $values = []): string
+    public static function validateSavingForArrayConstraintFromSetSaving(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1857,7 +1900,7 @@ class Ticket extends AbstractStructBase
     public function setSaving(?array $saving = null): self
     {
         // validation for constraint: array
-        if ('' !== ($savingArrayErrorMessage = self::validateSavingForArrayConstraintsFromSetSaving($saving))) {
+        if ('' !== ($savingArrayErrorMessage = self::validateSavingForArrayConstraintFromSetSaving($saving))) {
             throw new InvalidArgumentException($savingArrayErrorMessage, __LINE__);
         }
         $this->saving = $saving;
@@ -2071,6 +2114,29 @@ class Ticket extends AbstractStructBase
         return $this;
     }
     /**
+     * Get checkDigit value
+     * @return string|null
+     */
+    public function getCheckDigit(): ?string
+    {
+        return $this->checkDigit;
+    }
+    /**
+     * Set checkDigit value
+     * @param string $checkDigit
+     * @return \Pggns\MidocoApi\Order\StructType\Ticket
+     */
+    public function setCheckDigit(?string $checkDigit = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($checkDigit) && !is_string($checkDigit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($checkDigit, true), gettype($checkDigit)), __LINE__);
+        }
+        $this->checkDigit = $checkDigit;
+        
+        return $this;
+    }
+    /**
      * Get ticketMedia value
      * @return string|null
      */
@@ -2180,12 +2246,13 @@ class Ticket extends AbstractStructBase
         return $this->taxInformation;
     }
     /**
-     * This method is responsible for validating the values passed to the setTaxInformation method
+     * This method is responsible for validating the value(s) passed to the setTaxInformation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTaxInformation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTaxInformationForArrayConstraintsFromSetTaxInformation(?array $values = []): string
+    public static function validateTaxInformationForArrayConstraintFromSetTaxInformation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2214,7 +2281,7 @@ class Ticket extends AbstractStructBase
     public function setTaxInformation(?array $taxInformation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($taxInformationArrayErrorMessage = self::validateTaxInformationForArrayConstraintsFromSetTaxInformation($taxInformation))) {
+        if ('' !== ($taxInformationArrayErrorMessage = self::validateTaxInformationForArrayConstraintFromSetTaxInformation($taxInformation))) {
             throw new InvalidArgumentException($taxInformationArrayErrorMessage, __LINE__);
         }
         $this->taxInformation = $taxInformation;
@@ -2556,7 +2623,7 @@ class Ticket extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelDate, true), gettype($travelDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($travelDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $travelDate)) {
+        if (!is_null($travelDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $travelDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($travelDate, true)), __LINE__);
         }
         $this->travelDate = $travelDate;
@@ -2583,7 +2650,7 @@ class Ticket extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($issueDate, true), gettype($issueDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($issueDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $issueDate)) {
+        if (!is_null($issueDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $issueDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($issueDate, true)), __LINE__);
         }
         $this->issueDate = $issueDate;

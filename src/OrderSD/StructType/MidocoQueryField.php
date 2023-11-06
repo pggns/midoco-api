@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoQueryField StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoQueryField extends AbstractStructBase
 {
     /**
@@ -59,6 +60,16 @@ class MidocoQueryField extends AbstractStructBase
      */
     protected ?bool $function = null;
     /**
+     * The compareWithField
+     * @var bool|null
+     */
+    protected ?bool $compareWithField = null;
+    /**
+     * The isUppercase
+     * @var bool|null
+     */
+    protected ?bool $isUppercase = null;
+    /**
      * Constructor method for MidocoQueryField
      * @uses MidocoQueryField::setFieldName()
      * @uses MidocoQueryField::setCategory()
@@ -69,6 +80,8 @@ class MidocoQueryField extends AbstractStructBase
      * @uses MidocoQueryField::setPredefinedValues()
      * @uses MidocoQueryField::setVisible()
      * @uses MidocoQueryField::setFunction()
+     * @uses MidocoQueryField::setCompareWithField()
+     * @uses MidocoQueryField::setIsUppercase()
      * @param string $fieldName
      * @param string $category
      * @param string $localizedCategory
@@ -78,8 +91,10 @@ class MidocoQueryField extends AbstractStructBase
      * @param bool $predefinedValues
      * @param bool $visible
      * @param bool $function
+     * @param bool $compareWithField
+     * @param bool $isUppercase
      */
-    public function __construct(?string $fieldName = null, ?string $category = null, ?string $localizedCategory = null, ?string $dbFieldName = null, ?string $localizedName = null, ?string $type = null, ?bool $predefinedValues = null, ?bool $visible = null, ?bool $function = null)
+    public function __construct(?string $fieldName = null, ?string $category = null, ?string $localizedCategory = null, ?string $dbFieldName = null, ?string $localizedName = null, ?string $type = null, ?bool $predefinedValues = null, ?bool $visible = null, ?bool $function = null, ?bool $compareWithField = null, ?bool $isUppercase = null)
     {
         $this
             ->setFieldName($fieldName)
@@ -90,7 +105,9 @@ class MidocoQueryField extends AbstractStructBase
             ->setType($type)
             ->setPredefinedValues($predefinedValues)
             ->setVisible($visible)
-            ->setFunction($function);
+            ->setFunction($function)
+            ->setCompareWithField($compareWithField)
+            ->setIsUppercase($isUppercase);
     }
     /**
      * Get fieldName value
@@ -296,6 +313,52 @@ class MidocoQueryField extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($function, true), gettype($function)), __LINE__);
         }
         $this->function = $function;
+        
+        return $this;
+    }
+    /**
+     * Get compareWithField value
+     * @return bool|null
+     */
+    public function getCompareWithField(): ?bool
+    {
+        return $this->compareWithField;
+    }
+    /**
+     * Set compareWithField value
+     * @param bool $compareWithField
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField
+     */
+    public function setCompareWithField(?bool $compareWithField = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($compareWithField) && !is_bool($compareWithField)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($compareWithField, true), gettype($compareWithField)), __LINE__);
+        }
+        $this->compareWithField = $compareWithField;
+        
+        return $this;
+    }
+    /**
+     * Get isUppercase value
+     * @return bool|null
+     */
+    public function getIsUppercase(): ?bool
+    {
+        return $this->isUppercase;
+    }
+    /**
+     * Set isUppercase value
+     * @param bool $isUppercase
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoQueryField
+     */
+    public function setIsUppercase(?bool $isUppercase = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isUppercase) && !is_bool($isUppercase)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isUppercase, true), gettype($isUppercase)), __LINE__);
+        }
+        $this->isUppercase = $isUppercase;
         
         return $this;
     }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetProcessAssignResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetProcessAssignResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetProcessAssignResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoProcessAssign
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO[]
      */
     protected ?array $MidocoProcessAssign = null;
     /**
      * Constructor method for GetProcessAssignResponse
      * @uses GetProcessAssignResponse::setMidocoProcessAssign()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO[] $midocoProcessAssign
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO[] $midocoProcessAssign
      */
     public function __construct(?array $midocoProcessAssign = null)
     {
@@ -34,19 +35,20 @@ class GetProcessAssignResponse extends AbstractStructBase
     }
     /**
      * Get MidocoProcessAssign value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO[]
      */
     public function getMidocoProcessAssign(): ?array
     {
         return $this->MidocoProcessAssign;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProcessAssign method
+     * This method is responsible for validating the value(s) passed to the setMidocoProcessAssign method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProcessAssign method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProcessAssignForArrayConstraintsFromSetMidocoProcessAssign(?array $values = []): string
+    public static function validateMidocoProcessAssignForArrayConstraintFromSetMidocoProcessAssign(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetProcessAssignResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getProcessAssignResponseMidocoProcessAssignItem) {
             // validation for constraint: itemType
-            if (!$getProcessAssignResponseMidocoProcessAssignItem instanceof \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO) {
+            if (!$getProcessAssignResponseMidocoProcessAssignItem instanceof \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO) {
                 $invalidValues[] = is_object($getProcessAssignResponseMidocoProcessAssignItem) ? get_class($getProcessAssignResponseMidocoProcessAssignItem) : sprintf('%s(%s)', gettype($getProcessAssignResponseMidocoProcessAssignItem), var_export($getProcessAssignResponseMidocoProcessAssignItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetProcessAssignResponse extends AbstractStructBase
     /**
      * Set MidocoProcessAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO[] $midocoProcessAssign
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetProcessAssignResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO[] $midocoProcessAssign
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetProcessAssignResponse
      */
     public function setMidocoProcessAssign(?array $midocoProcessAssign = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProcessAssignArrayErrorMessage = self::validateMidocoProcessAssignForArrayConstraintsFromSetMidocoProcessAssign($midocoProcessAssign))) {
+        if ('' !== ($midocoProcessAssignArrayErrorMessage = self::validateMidocoProcessAssignForArrayConstraintFromSetMidocoProcessAssign($midocoProcessAssign))) {
             throw new InvalidArgumentException($midocoProcessAssignArrayErrorMessage, __LINE__);
         }
         $this->MidocoProcessAssign = $midocoProcessAssign;
@@ -85,14 +87,14 @@ class GetProcessAssignResponse extends AbstractStructBase
     /**
      * Add item to MidocoProcessAssign value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetProcessAssignResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetProcessAssignResponse
      */
-    public function addToMidocoProcessAssign(\Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO $item): self
+    public function addToMidocoProcessAssign(\Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoProcessAssign property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoProcessAssign[] = $item;
         

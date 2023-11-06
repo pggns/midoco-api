@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTempDocumentRepositoryByIdRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTempDocumentRepositoryByIdRequest extends AbstractStructBase
 {
     /**

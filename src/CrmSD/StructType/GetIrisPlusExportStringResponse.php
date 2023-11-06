@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetIrisPlusExportStringResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetIrisPlusExportStringResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetIrisPlusExportStringResponse extends AbstractStructBase
     /**
      * Set responseString value
      * @param string $responseString
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetIrisPlusExportStringResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetIrisPlusExportStringResponse
      */
     public function setResponseString(?string $responseString = null): self
     {

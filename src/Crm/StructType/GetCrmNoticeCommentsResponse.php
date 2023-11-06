@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrmNoticeCommentsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmNoticeCommentsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCrmNoticeCommentsResponse extends AbstractStructBase
         return $this->MidocoCrmNoticeComment;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmNoticeComment method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmNoticeComment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmNoticeComment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmNoticeCommentForArrayConstraintsFromSetMidocoCrmNoticeComment(?array $values = []): string
+    public static function validateMidocoCrmNoticeCommentForArrayConstraintFromSetMidocoCrmNoticeComment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCrmNoticeCommentsResponse extends AbstractStructBase
     public function setMidocoCrmNoticeComment(?array $midocoCrmNoticeComment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmNoticeCommentArrayErrorMessage = self::validateMidocoCrmNoticeCommentForArrayConstraintsFromSetMidocoCrmNoticeComment($midocoCrmNoticeComment))) {
+        if ('' !== ($midocoCrmNoticeCommentArrayErrorMessage = self::validateMidocoCrmNoticeCommentForArrayConstraintFromSetMidocoCrmNoticeComment($midocoCrmNoticeComment))) {
             throw new InvalidArgumentException($midocoCrmNoticeCommentArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmNoticeComment = $midocoCrmNoticeComment;

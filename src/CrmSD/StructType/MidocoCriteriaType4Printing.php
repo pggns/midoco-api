@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCriteriaType4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCriteriaType4Printing extends CrmCriteriaDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoCriteriaType4Printing extends CrmCriteriaDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaType4Printing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaType4Printing
      */
     public function setDescription(?string $description = null): self
     {

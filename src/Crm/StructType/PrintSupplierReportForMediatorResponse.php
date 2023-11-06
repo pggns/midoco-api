@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintSupplierReportForMediatorResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintSupplierReportForMediatorResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class PrintSupplierReportForMediatorResponse extends AbstractStructBase
         return $this->printJobId;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintJobId method
+     * This method is responsible for validating the value(s) passed to the setPrintJobId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintJobId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintJobIdForArrayConstraintsFromSetPrintJobId(?array $values = []): string
+    public static function validatePrintJobIdForArrayConstraintFromSetPrintJobId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class PrintSupplierReportForMediatorResponse extends AbstractStructBase
     public function setPrintJobId(?array $printJobId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printJobIdArrayErrorMessage = self::validatePrintJobIdForArrayConstraintsFromSetPrintJobId($printJobId))) {
+        if ('' !== ($printJobIdArrayErrorMessage = self::validatePrintJobIdForArrayConstraintFromSetPrintJobId($printJobId))) {
             throw new InvalidArgumentException($printJobIdArrayErrorMessage, __LINE__);
         }
         $this->printJobId = $printJobId;

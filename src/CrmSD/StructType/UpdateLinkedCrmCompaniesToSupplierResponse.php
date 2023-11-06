@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UpdateLinkedCrmCompaniesToSupplierResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UpdateLinkedCrmCompaniesToSupplierResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class UpdateLinkedCrmCompaniesToSupplierResponse extends AbstractStructBase
         return $this->orgUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrgUnit method
+     * This method is responsible for validating the value(s) passed to the setOrgUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrgUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrgUnitForArrayConstraintsFromSetOrgUnit(?array $values = []): string
+    public static function validateOrgUnitForArrayConstraintFromSetOrgUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -69,12 +71,12 @@ class UpdateLinkedCrmCompaniesToSupplierResponse extends AbstractStructBase
      * Set orgUnit value
      * @throws InvalidArgumentException
      * @param string[] $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
      */
     public function setOrgUnit(?array $orgUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orgUnitArrayErrorMessage = self::validateOrgUnitForArrayConstraintsFromSetOrgUnit($orgUnit))) {
+        if ('' !== ($orgUnitArrayErrorMessage = self::validateOrgUnitForArrayConstraintFromSetOrgUnit($orgUnit))) {
             throw new InvalidArgumentException($orgUnitArrayErrorMessage, __LINE__);
         }
         $this->orgUnit = $orgUnit;
@@ -85,7 +87,7 @@ class UpdateLinkedCrmCompaniesToSupplierResponse extends AbstractStructBase
      * Add item to orgUnit value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateLinkedCrmCompaniesToSupplierResponse
      */
     public function addToOrgUnit(string $item): self
     {

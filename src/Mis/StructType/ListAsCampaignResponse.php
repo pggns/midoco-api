@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListAsCampaignResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListAsCampaignResponse extends AbstractStructBase
 {
     /**

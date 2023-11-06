@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalesListBySupplierGroupResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalesListBySupplierGroupResponse extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
         return $this->MidocoSalesListsBySupplierGroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSalesListsBySupplierGroup method
+     * This method is responsible for validating the value(s) passed to the setMidocoSalesListsBySupplierGroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSalesListsBySupplierGroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSalesListsBySupplierGroupForArrayConstraintsFromSetMidocoSalesListsBySupplierGroup(?array $values = []): string
+    public static function validateMidocoSalesListsBySupplierGroupForArrayConstraintFromSetMidocoSalesListsBySupplierGroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class SalesListBySupplierGroupResponse extends AbstractStructBase
     public function setMidocoSalesListsBySupplierGroup(?array $midocoSalesListsBySupplierGroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSalesListsBySupplierGroupArrayErrorMessage = self::validateMidocoSalesListsBySupplierGroupForArrayConstraintsFromSetMidocoSalesListsBySupplierGroup($midocoSalesListsBySupplierGroup))) {
+        if ('' !== ($midocoSalesListsBySupplierGroupArrayErrorMessage = self::validateMidocoSalesListsBySupplierGroupForArrayConstraintFromSetMidocoSalesListsBySupplierGroup($midocoSalesListsBySupplierGroup))) {
             throw new InvalidArgumentException($midocoSalesListsBySupplierGroupArrayErrorMessage, __LINE__);
         }
         $this->MidocoSalesListsBySupplierGroup = $midocoSalesListsBySupplierGroup;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOnlinePaymentTransactionHistory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
 {
     /**
@@ -89,6 +90,11 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
      */
     protected ?string $errorBundle = null;
     /**
+     * The errorDescription
+     * @var string|null
+     */
+    protected ?string $errorDescription = null;
+    /**
      * Constructor method for MidocoOnlinePaymentTransactionHistory
      * @uses MidocoOnlinePaymentTransactionHistory::setTransactionId()
      * @uses MidocoOnlinePaymentTransactionHistory::setCcType()
@@ -105,6 +111,7 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
      * @uses MidocoOnlinePaymentTransactionHistory::setErrorCode()
      * @uses MidocoOnlinePaymentTransactionHistory::setErrorDescriptionCode()
      * @uses MidocoOnlinePaymentTransactionHistory::setErrorBundle()
+     * @uses MidocoOnlinePaymentTransactionHistory::setErrorDescription()
      * @param int $transactionId
      * @param string $ccType
      * @param string $ccNo
@@ -120,8 +127,9 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
      * @param string $errorCode
      * @param string $errorDescriptionCode
      * @param string $errorBundle
+     * @param string $errorDescription
      */
-    public function __construct(?int $transactionId = null, ?string $ccType = null, ?string $ccNo = null, ?int $ccReceiptNo = null, ?int $receiptId = null, ?string $expiryMonthYear = null, ?string $action = null, ?string $approvalCode = null, ?float $amount = null, ?int $user = null, ?string $timestamp = null, ?string $status = null, ?string $errorCode = null, ?string $errorDescriptionCode = null, ?string $errorBundle = null)
+    public function __construct(?int $transactionId = null, ?string $ccType = null, ?string $ccNo = null, ?int $ccReceiptNo = null, ?int $receiptId = null, ?string $expiryMonthYear = null, ?string $action = null, ?string $approvalCode = null, ?float $amount = null, ?int $user = null, ?string $timestamp = null, ?string $status = null, ?string $errorCode = null, ?string $errorDescriptionCode = null, ?string $errorBundle = null, ?string $errorDescription = null)
     {
         $this
             ->setTransactionId($transactionId)
@@ -138,7 +146,8 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
             ->setStatus($status)
             ->setErrorCode($errorCode)
             ->setErrorDescriptionCode($errorDescriptionCode)
-            ->setErrorBundle($errorBundle);
+            ->setErrorBundle($errorBundle)
+            ->setErrorDescription($errorDescription);
     }
     /**
      * Get transactionId value
@@ -482,6 +491,29 @@ class MidocoOnlinePaymentTransactionHistory extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorBundle, true), gettype($errorBundle)), __LINE__);
         }
         $this->errorBundle = $errorBundle;
+        
+        return $this;
+    }
+    /**
+     * Get errorDescription value
+     * @return string|null
+     */
+    public function getErrorDescription(): ?string
+    {
+        return $this->errorDescription;
+    }
+    /**
+     * Set errorDescription value
+     * @param string $errorDescription
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionHistory
+     */
+    public function setErrorDescription(?string $errorDescription = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($errorDescription) && !is_string($errorDescription)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorDescription, true), gettype($errorDescription)), __LINE__);
+        }
+        $this->errorDescription = $errorDescription;
         
         return $this;
     }

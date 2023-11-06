@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCreditorRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCreditorRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class DeleteCreditorRequest extends AbstractStructBase
     /**
      * Set creditorNo value
      * @param string $creditorNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCreditorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCreditorRequest
      */
     public function setCreditorNo(?string $creditorNo = null): self
     {

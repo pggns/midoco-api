@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerInformation StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerInformation extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class MidocoCustomerInformation extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInformation
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInformation
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +87,7 @@ class MidocoCustomerInformation extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInformation
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInformation
      */
     public function setName(?string $name = null): self
     {
@@ -109,7 +110,7 @@ class MidocoCustomerInformation extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInformation
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInformation
      */
     public function setStreet(?string $street = null): self
     {
@@ -132,7 +133,7 @@ class MidocoCustomerInformation extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerInformation
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerInformation
      */
     public function setCity(?string $city = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: ModifyPassword sets a new customer password. The e-mail address is required.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ModifyPasswordRequest extends AbstractStructBase
 {
     /**
@@ -57,7 +58,7 @@ class ModifyPasswordRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ModifyPasswordRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ModifyPasswordRequest
      */
     public function setEmail(?string $email = null): self
     {
@@ -80,7 +81,7 @@ class ModifyPasswordRequest extends AbstractStructBase
     /**
      * Set oldPassword value
      * @param string $oldPassword
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ModifyPasswordRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ModifyPasswordRequest
      */
     public function setOldPassword(?string $oldPassword = null): self
     {
@@ -103,7 +104,7 @@ class ModifyPasswordRequest extends AbstractStructBase
     /**
      * Set newPassword value
      * @param string $newPassword
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ModifyPasswordRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ModifyPasswordRequest
      */
     public function setNewPassword(?string $newPassword = null): self
     {

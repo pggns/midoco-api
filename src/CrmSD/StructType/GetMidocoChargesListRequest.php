@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoChargesListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoChargesListRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class GetMidocoChargesListRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoChargesListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoChargesListRequest
      */
     public function setCustomerId(int $customerId): self
     {

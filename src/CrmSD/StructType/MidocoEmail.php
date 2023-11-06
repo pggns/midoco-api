@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoEmail StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoEmail extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoEmail extends AbstractStructBase
     /**
      * Set fullName value
      * @param string $fullName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmail
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmail
      */
     public function setFullName(?string $fullName = null): self
     {
@@ -70,7 +71,7 @@ class MidocoEmail extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoEmail
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoEmail
      */
     public function setEmail(?string $email = null): self
     {

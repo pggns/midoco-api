@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AddressTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AddressTypeDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class AddressTypeDTO extends AbstractStructBase
     /**
      * Set addressTypeId value
      * @param int $addressTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AddressTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AddressTypeDTO
      */
     public function setAddressTypeId(?int $addressTypeId = null): self
     {

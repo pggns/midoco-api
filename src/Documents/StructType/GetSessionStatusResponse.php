@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSessionStatusResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSessionStatusResponse extends AbstractStructBase
 {
     /**

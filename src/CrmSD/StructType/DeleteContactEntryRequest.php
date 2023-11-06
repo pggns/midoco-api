@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteContactEntry --- all entries should be from the same customer!
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteContactEntryRequest extends AbstractStructBase
 {
     /**
@@ -21,7 +22,7 @@ class DeleteContactEntryRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     protected ?array $MidocoContactEntry = null;
     /**
@@ -33,7 +34,7 @@ class DeleteContactEntryRequest extends AbstractStructBase
      * Constructor method for DeleteContactEntryRequest
      * @uses DeleteContactEntryRequest::setMidocoContactEntry()
      * @uses DeleteContactEntryRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
      * @param int $internalVersion
      */
     public function __construct(?array $midocoContactEntry = null, ?int $internalVersion = null)
@@ -44,19 +45,20 @@ class DeleteContactEntryRequest extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     public function getMidocoContactEntry(): ?array
     {
         return $this->MidocoContactEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry(?array $values = []): string
+    public static function validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -65,12 +67,12 @@ class DeleteContactEntryRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteContactEntryRequestMidocoContactEntryItem) {
             // validation for constraint: itemType
-            if (!$deleteContactEntryRequestMidocoContactEntryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
+            if (!$deleteContactEntryRequestMidocoContactEntryItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
                 $invalidValues[] = is_object($deleteContactEntryRequestMidocoContactEntryItem) ? get_class($deleteContactEntryRequestMidocoContactEntryItem) : sprintf('%s(%s)', gettype($deleteContactEntryRequestMidocoContactEntryItem), var_export($deleteContactEntryRequestMidocoContactEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -79,13 +81,13 @@ class DeleteContactEntryRequest extends AbstractStructBase
     /**
      * Set MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteContactEntryRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteContactEntryRequest
      */
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry($midocoContactEntry))) {
+        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry($midocoContactEntry))) {
             throw new InvalidArgumentException($midocoContactEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactEntry = $midocoContactEntry;
@@ -95,14 +97,14 @@ class DeleteContactEntryRequest extends AbstractStructBase
     /**
      * Add item to MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteContactEntryRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteContactEntryRequest
      */
-    public function addToMidocoContactEntry(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item): self
+    public function addToMidocoContactEntry(\Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntry[] = $item;
         
@@ -119,7 +121,7 @@ class DeleteContactEntryRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteContactEntryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteContactEntryRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoUserattribValue StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoUserattribValue extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set internalAttribValue value
      * @param string $internalAttribValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribValue
      */
     public function setInternalAttribValue(?string $internalAttribValue = null): self
     {
@@ -86,7 +87,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribValue
      */
     public function setUserId(?int $userId = null): self
     {
@@ -109,7 +110,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribValue
      */
     public function setAttribName(?string $attribName = null): self
     {
@@ -132,7 +133,7 @@ class MidocoUserattribValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoUserattribValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoUserattribValue
      */
     public function setValue(?string $value = null): self
     {

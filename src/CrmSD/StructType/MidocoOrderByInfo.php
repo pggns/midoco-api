@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrderByInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrderByInfo extends AbstractStructBase
 {
     /**
@@ -52,7 +53,7 @@ class MidocoOrderByInfo extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderByInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderByInfo
      */
     public function setFieldName(string $fieldName): self
     {
@@ -75,7 +76,7 @@ class MidocoOrderByInfo extends AbstractStructBase
     /**
      * Set sortAscending value
      * @param bool $sortAscending
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderByInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderByInfo
      */
     public function setSortAscending(?bool $sortAscending = true): self
     {

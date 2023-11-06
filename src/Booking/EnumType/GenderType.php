@@ -23,9 +23,15 @@ class GenderType extends AbstractStructEnumBase
      */
     const VALUE_FEMALE = 'FEMALE';
     /**
+     * Constant for value 'DIVERS'
+     * @return string 'DIVERS'
+     */
+    const VALUE_DIVERS = 'DIVERS';
+    /**
      * Return allowed values
      * @uses self::VALUE_MALE
      * @uses self::VALUE_FEMALE
+     * @uses self::VALUE_DIVERS
      * @return string[]
      */
     public static function getValidValues(): array
@@ -33,6 +39,7 @@ class GenderType extends AbstractStructEnumBase
         return [
             self::VALUE_MALE,
             self::VALUE_FEMALE,
+            self::VALUE_DIVERS,
         ];
     }
 }

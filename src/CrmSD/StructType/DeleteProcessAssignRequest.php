@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteProcessAssignRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteProcessAssignRequest extends AbstractStructBase
 {
     /**
      * The MidocoProcessAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoProcessAssign
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO $MidocoProcessAssign = null;
     /**
      * Constructor method for DeleteProcessAssignRequest
      * @uses DeleteProcessAssignRequest::setMidocoProcessAssign()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO $midocoProcessAssign
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO $midocoProcessAssign = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO $midocoProcessAssign = null)
     {
         $this
             ->setMidocoProcessAssign($midocoProcessAssign);
     }
     /**
      * Get MidocoProcessAssign value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO|null
      */
-    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO
+    public function getMidocoProcessAssign(): ?\Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO
     {
         return $this->MidocoProcessAssign;
     }
     /**
      * Set MidocoProcessAssign value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO $midocoProcessAssign
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteProcessAssignRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO $midocoProcessAssign
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteProcessAssignRequest
      */
-    public function setMidocoProcessAssign(?\Pggns\MidocoApi\CrmSD\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
+    public function setMidocoProcessAssign(?\Pggns\MidocoApi\Crmsd\StructType\ProcessAssignDTO $midocoProcessAssign = null): self
     {
         $this->MidocoProcessAssign = $midocoProcessAssign;
         

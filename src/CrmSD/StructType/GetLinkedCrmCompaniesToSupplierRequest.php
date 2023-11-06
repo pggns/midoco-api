@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetLinkedCrmCompaniesToSupplierRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLinkedCrmCompaniesToSupplierRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLinkedCrmCompaniesToSupplierRequest
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -110,7 +111,7 @@ class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLinkedCrmCompaniesToSupplierRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLinkedCrmCompaniesToSupplierRequest
      */
     public function setSupplierName(?string $supplierName = null): self
     {
@@ -133,7 +134,7 @@ class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
     /**
      * Set supplierCity value
      * @param string $supplierCity
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLinkedCrmCompaniesToSupplierRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLinkedCrmCompaniesToSupplierRequest
      */
     public function setSupplierCity(?string $supplierCity = null): self
     {
@@ -156,7 +157,7 @@ class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
     /**
      * Set supplierCountry value
      * @param string $supplierCountry
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLinkedCrmCompaniesToSupplierRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLinkedCrmCompaniesToSupplierRequest
      */
     public function setSupplierCountry(?string $supplierCountry = null): self
     {
@@ -179,7 +180,7 @@ class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
     /**
      * Set supplierStreet value
      * @param string $supplierStreet
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLinkedCrmCompaniesToSupplierRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLinkedCrmCompaniesToSupplierRequest
      */
     public function setSupplierStreet(?string $supplierStreet = null): self
     {
@@ -202,7 +203,7 @@ class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
     /**
      * Set supplierStreetNo value
      * @param string $supplierStreetNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLinkedCrmCompaniesToSupplierRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLinkedCrmCompaniesToSupplierRequest
      */
     public function setSupplierStreetNo(?string $supplierStreetNo = null): self
     {
@@ -225,7 +226,7 @@ class GetLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
     /**
      * Set supplierPostalCode value
      * @param string $supplierPostalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLinkedCrmCompaniesToSupplierRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLinkedCrmCompaniesToSupplierRequest
      */
     public function setSupplierPostalCode(?string $supplierPostalCode = null): self
     {

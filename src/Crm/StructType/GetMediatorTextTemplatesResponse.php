@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMediatorTextTemplatesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMediatorTextTemplatesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMediatorTextTemplatesResponse extends AbstractStructBase
         return $this->MidocoCustomerTextTemplate;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerTextTemplate method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerTextTemplate method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerTextTemplate method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerTextTemplateForArrayConstraintsFromSetMidocoCustomerTextTemplate(?array $values = []): string
+    public static function validateMidocoCustomerTextTemplateForArrayConstraintFromSetMidocoCustomerTextTemplate(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMediatorTextTemplatesResponse extends AbstractStructBase
     public function setMidocoCustomerTextTemplate(?array $midocoCustomerTextTemplate = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerTextTemplateArrayErrorMessage = self::validateMidocoCustomerTextTemplateForArrayConstraintsFromSetMidocoCustomerTextTemplate($midocoCustomerTextTemplate))) {
+        if ('' !== ($midocoCustomerTextTemplateArrayErrorMessage = self::validateMidocoCustomerTextTemplateForArrayConstraintFromSetMidocoCustomerTextTemplate($midocoCustomerTextTemplate))) {
             throw new InvalidArgumentException($midocoCustomerTextTemplateArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerTextTemplate = $midocoCustomerTextTemplate;

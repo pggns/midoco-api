@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RoleAppDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RoleAppDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class RoleAppDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleAppDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleAppDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +79,7 @@ class RoleAppDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleAppDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleAppDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -101,7 +102,7 @@ class RoleAppDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleAppDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleAppDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

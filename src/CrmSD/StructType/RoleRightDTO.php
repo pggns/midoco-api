@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RoleRightDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RoleRightDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class RoleRightDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleRightDTO
      */
     public function setRightId(?string $rightId = null): self
     {
@@ -70,7 +71,7 @@ class RoleRightDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleRightDTO
      */
     public function setRoleId(?int $roleId = null): self
     {

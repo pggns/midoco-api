@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierPaymentConditionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierPaymentConditionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSupplierPaymentConditionResponse extends AbstractStructBase
         return $this->MidocoSupplierPaymentCondition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierPaymentCondition method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierPaymentCondition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierPaymentCondition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierPaymentConditionForArrayConstraintsFromSetMidocoSupplierPaymentCondition(?array $values = []): string
+    public static function validateMidocoSupplierPaymentConditionForArrayConstraintFromSetMidocoSupplierPaymentCondition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSupplierPaymentConditionResponse extends AbstractStructBase
     public function setMidocoSupplierPaymentCondition(?array $midocoSupplierPaymentCondition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierPaymentConditionArrayErrorMessage = self::validateMidocoSupplierPaymentConditionForArrayConstraintsFromSetMidocoSupplierPaymentCondition($midocoSupplierPaymentCondition))) {
+        if ('' !== ($midocoSupplierPaymentConditionArrayErrorMessage = self::validateMidocoSupplierPaymentConditionForArrayConstraintFromSetMidocoSupplierPaymentCondition($midocoSupplierPaymentCondition))) {
             throw new InvalidArgumentException($midocoSupplierPaymentConditionArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierPaymentCondition = $midocoSupplierPaymentCondition;

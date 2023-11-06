@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoConsent StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoConsent extends ConsentDTO
 {
     /**
@@ -59,12 +60,13 @@ class MidocoConsent extends ConsentDTO
         return $this->disabledUnitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setDisabledUnitName method
+     * This method is responsible for validating the value(s) passed to the setDisabledUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDisabledUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDisabledUnitNameForArrayConstraintsFromSetDisabledUnitName(?array $values = []): string
+    public static function validateDisabledUnitNameForArrayConstraintFromSetDisabledUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class MidocoConsent extends ConsentDTO
     public function setDisabledUnitName(?array $disabledUnitName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($disabledUnitNameArrayErrorMessage = self::validateDisabledUnitNameForArrayConstraintsFromSetDisabledUnitName($disabledUnitName))) {
+        if ('' !== ($disabledUnitNameArrayErrorMessage = self::validateDisabledUnitNameForArrayConstraintFromSetDisabledUnitName($disabledUnitName))) {
             throw new InvalidArgumentException($disabledUnitNameArrayErrorMessage, __LINE__);
         }
         $this->disabledUnitName = $disabledUnitName;
@@ -125,12 +127,13 @@ class MidocoConsent extends ConsentDTO
         return $this->enabledUnitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setEnabledUnitName method
+     * This method is responsible for validating the value(s) passed to the setEnabledUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEnabledUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEnabledUnitNameForArrayConstraintsFromSetEnabledUnitName(?array $values = []): string
+    public static function validateEnabledUnitNameForArrayConstraintFromSetEnabledUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -159,7 +162,7 @@ class MidocoConsent extends ConsentDTO
     public function setEnabledUnitName(?array $enabledUnitName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($enabledUnitNameArrayErrorMessage = self::validateEnabledUnitNameForArrayConstraintsFromSetEnabledUnitName($enabledUnitName))) {
+        if ('' !== ($enabledUnitNameArrayErrorMessage = self::validateEnabledUnitNameForArrayConstraintFromSetEnabledUnitName($enabledUnitName))) {
             throw new InvalidArgumentException($enabledUnitNameArrayErrorMessage, __LINE__);
         }
         $this->enabledUnitName = $enabledUnitName;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getDocumentRepositoryById --- retrieves a document repository record by id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDocumentRepositoryByIdResponse extends AbstractStructBase
 {
     /**

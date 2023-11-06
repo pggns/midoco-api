@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBillingPositions4BonusClearingResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingPositions4BonusClearingResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetBillingPositions4BonusClearingResponse extends AbstractStructBase
         return $this->MidocoBonusBillingPosition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBonusBillingPosition method
+     * This method is responsible for validating the value(s) passed to the setMidocoBonusBillingPosition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBonusBillingPosition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBonusBillingPositionForArrayConstraintsFromSetMidocoBonusBillingPosition(?array $values = []): string
+    public static function validateMidocoBonusBillingPositionForArrayConstraintFromSetMidocoBonusBillingPosition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetBillingPositions4BonusClearingResponse extends AbstractStructBase
     public function setMidocoBonusBillingPosition(?array $midocoBonusBillingPosition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBonusBillingPositionArrayErrorMessage = self::validateMidocoBonusBillingPositionForArrayConstraintsFromSetMidocoBonusBillingPosition($midocoBonusBillingPosition))) {
+        if ('' !== ($midocoBonusBillingPositionArrayErrorMessage = self::validateMidocoBonusBillingPositionForArrayConstraintFromSetMidocoBonusBillingPosition($midocoBonusBillingPosition))) {
             throw new InvalidArgumentException($midocoBonusBillingPositionArrayErrorMessage, __LINE__);
         }
         $this->MidocoBonusBillingPosition = $midocoBonusBillingPosition;

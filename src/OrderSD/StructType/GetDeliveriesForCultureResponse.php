@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getDeliveriesForCulture --- returns the delievery types descriptions translated for the given culture
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDeliveriesForCultureResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetDeliveriesForCultureResponse extends AbstractStructBase
         return $this->MidocoDeliveryTypeDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDeliveryTypeDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoDeliveryTypeDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDeliveryTypeDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDeliveryTypeDescriptionForArrayConstraintsFromSetMidocoDeliveryTypeDescription(?array $values = []): string
+    public static function validateMidocoDeliveryTypeDescriptionForArrayConstraintFromSetMidocoDeliveryTypeDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetDeliveriesForCultureResponse extends AbstractStructBase
     public function setMidocoDeliveryTypeDescription(?array $midocoDeliveryTypeDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDeliveryTypeDescriptionArrayErrorMessage = self::validateMidocoDeliveryTypeDescriptionForArrayConstraintsFromSetMidocoDeliveryTypeDescription($midocoDeliveryTypeDescription))) {
+        if ('' !== ($midocoDeliveryTypeDescriptionArrayErrorMessage = self::validateMidocoDeliveryTypeDescriptionForArrayConstraintFromSetMidocoDeliveryTypeDescription($midocoDeliveryTypeDescription))) {
             throw new InvalidArgumentException($midocoDeliveryTypeDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoDeliveryTypeDescription = $midocoDeliveryTypeDescription;

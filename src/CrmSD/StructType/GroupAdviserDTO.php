@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GroupAdviserDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GroupAdviserDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupAdviserDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -94,7 +95,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set groupAdviserCustomerId value
      * @param int $groupAdviserCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupAdviserDTO
      */
     public function setGroupAdviserCustomerId(?int $groupAdviserCustomerId = null): self
     {
@@ -117,7 +118,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set provisionPercent value
      * @param float $provisionPercent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupAdviserDTO
      */
     public function setProvisionPercent(?float $provisionPercent = null): self
     {
@@ -140,7 +141,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set validFrom value
      * @param string $validFrom
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupAdviserDTO
      */
     public function setValidFrom(?string $validFrom = null): self
     {
@@ -163,7 +164,7 @@ class GroupAdviserDTO extends AbstractStructBase
     /**
      * Set validUntil value
      * @param string $validUntil
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupAdviserDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupAdviserDTO
      */
     public function setValidUntil(?string $validUntil = null): self
     {

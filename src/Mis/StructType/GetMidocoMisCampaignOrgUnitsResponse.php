@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoMisCampaignOrgUnitsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
         return $this->MidocoMisCampaignOrgUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisCampaignOrgUnit method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisCampaignOrgUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisCampaignOrgUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisCampaignOrgUnitForArrayConstraintsFromSetMidocoMisCampaignOrgUnit(?array $values = []): string
+    public static function validateMidocoMisCampaignOrgUnitForArrayConstraintFromSetMidocoMisCampaignOrgUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoMisCampaignOrgUnitsResponse extends AbstractStructBase
     public function setMidocoMisCampaignOrgUnit(?array $midocoMisCampaignOrgUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisCampaignOrgUnitArrayErrorMessage = self::validateMidocoMisCampaignOrgUnitForArrayConstraintsFromSetMidocoMisCampaignOrgUnit($midocoMisCampaignOrgUnit))) {
+        if ('' !== ($midocoMisCampaignOrgUnitArrayErrorMessage = self::validateMidocoMisCampaignOrgUnitForArrayConstraintFromSetMidocoMisCampaignOrgUnit($midocoMisCampaignOrgUnit))) {
             throw new InvalidArgumentException($midocoMisCampaignOrgUnitArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisCampaignOrgUnit = $midocoMisCampaignOrgUnit;

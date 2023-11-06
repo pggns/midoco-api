@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AnnounceGdsMessageResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AnnounceGdsMessageResponse extends AbstractStructBase
 {
     /**
@@ -28,17 +29,25 @@ class AnnounceGdsMessageResponse extends AbstractStructBase
      */
     protected ?int $OrderNo = null;
     /**
+     * The unitName
+     * @var string|null
+     */
+    protected ?string $unitName = null;
+    /**
      * Constructor method for AnnounceGdsMessageResponse
      * @uses AnnounceGdsMessageResponse::setOrderId()
      * @uses AnnounceGdsMessageResponse::setOrderNo()
+     * @uses AnnounceGdsMessageResponse::setUnitName()
      * @param int $orderId
      * @param int $orderNo
+     * @param string $unitName
      */
-    public function __construct(?int $orderId = null, ?int $orderNo = null)
+    public function __construct(?int $orderId = null, ?int $orderNo = null, ?string $unitName = null)
     {
         $this
             ->setOrderId($orderId)
-            ->setOrderNo($orderNo);
+            ->setOrderNo($orderNo)
+            ->setUnitName($unitName);
     }
     /**
      * Get OrderId value
@@ -83,6 +92,29 @@ class AnnounceGdsMessageResponse extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orderNo, true), gettype($orderNo)), __LINE__);
         }
         $this->OrderNo = $orderNo;
+        
+        return $this;
+    }
+    /**
+     * Get unitName value
+     * @return string|null
+     */
+    public function getUnitName(): ?string
+    {
+        return $this->unitName;
+    }
+    /**
+     * Set unitName value
+     * @param string $unitName
+     * @return \Pggns\MidocoApi\Booking\StructType\AnnounceGdsMessageResponse
+     */
+    public function setUnitName(?string $unitName = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($unitName) && !is_string($unitName)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($unitName, true), gettype($unitName)), __LINE__);
+        }
+        $this->unitName = $unitName;
         
         return $this;
     }

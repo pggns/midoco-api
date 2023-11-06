@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDictionaryNameResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDictionaryNameResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDictionaryNameResponse extends AbstractStructBase
         return $this->MidocoDictionaryName;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDictionaryName method
+     * This method is responsible for validating the value(s) passed to the setMidocoDictionaryName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDictionaryName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDictionaryNameForArrayConstraintsFromSetMidocoDictionaryName(?array $values = []): string
+    public static function validateMidocoDictionaryNameForArrayConstraintFromSetMidocoDictionaryName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDictionaryNameResponse extends AbstractStructBase
     public function setMidocoDictionaryName(?array $midocoDictionaryName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDictionaryNameArrayErrorMessage = self::validateMidocoDictionaryNameForArrayConstraintsFromSetMidocoDictionaryName($midocoDictionaryName))) {
+        if ('' !== ($midocoDictionaryNameArrayErrorMessage = self::validateMidocoDictionaryNameForArrayConstraintFromSetMidocoDictionaryName($midocoDictionaryName))) {
             throw new InvalidArgumentException($midocoDictionaryNameArrayErrorMessage, __LINE__);
         }
         $this->MidocoDictionaryName = $midocoDictionaryName;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderIdsForAgencyCommissionDatesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderIdsForAgencyCommissionDatesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrderIdsForAgencyCommissionDatesResponse extends AbstractStructBase
         return $this->MidocoOrderId;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderId method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderIdForArrayConstraintsFromSetMidocoOrderId(?array $values = []): string
+    public static function validateMidocoOrderIdForArrayConstraintFromSetMidocoOrderId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrderIdsForAgencyCommissionDatesResponse extends AbstractStructBase
     public function setMidocoOrderId(?array $midocoOrderId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderIdArrayErrorMessage = self::validateMidocoOrderIdForArrayConstraintsFromSetMidocoOrderId($midocoOrderId))) {
+        if ('' !== ($midocoOrderIdArrayErrorMessage = self::validateMidocoOrderIdForArrayConstraintFromSetMidocoOrderId($midocoOrderId))) {
             throw new InvalidArgumentException($midocoOrderIdArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderId = $midocoOrderId;

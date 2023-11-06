@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getSignatureDoc --- retrieves a signature document by id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSignatureDocResponse extends AbstractStructBase
 {
     /**

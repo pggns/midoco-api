@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GroupAdvisorSettlement StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GroupAdvisorSettlement extends AbstractStructBase
 {
     /**
@@ -225,12 +226,13 @@ class GroupAdvisorSettlement extends AbstractStructBase
         return $this->GroupAdvisorSettlementDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroupAdvisorSettlementDetail method
+     * This method is responsible for validating the value(s) passed to the setGroupAdvisorSettlementDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroupAdvisorSettlementDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroupAdvisorSettlementDetailForArrayConstraintsFromSetGroupAdvisorSettlementDetail(?array $values = []): string
+    public static function validateGroupAdvisorSettlementDetailForArrayConstraintFromSetGroupAdvisorSettlementDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -259,7 +261,7 @@ class GroupAdvisorSettlement extends AbstractStructBase
     public function setGroupAdvisorSettlementDetail(?array $groupAdvisorSettlementDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($groupAdvisorSettlementDetailArrayErrorMessage = self::validateGroupAdvisorSettlementDetailForArrayConstraintsFromSetGroupAdvisorSettlementDetail($groupAdvisorSettlementDetail))) {
+        if ('' !== ($groupAdvisorSettlementDetailArrayErrorMessage = self::validateGroupAdvisorSettlementDetailForArrayConstraintFromSetGroupAdvisorSettlementDetail($groupAdvisorSettlementDetail))) {
             throw new InvalidArgumentException($groupAdvisorSettlementDetailArrayErrorMessage, __LINE__);
         }
         $this->GroupAdvisorSettlementDetail = $groupAdvisorSettlementDetail;

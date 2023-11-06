@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSavedReportExt StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSavedReportExt extends JasperReportDTO
 {
     /**
@@ -18,13 +19,13 @@ class MidocoSavedReportExt extends JasperReportDTO
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - ref: JasperReportType
-     * @var \Pggns\MidocoApi\CrmSD\StructType\JasperReportType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\JasperReportType[]
      */
     protected ?array $JasperReportType = null;
     /**
      * Constructor method for MidocoSavedReportExt
      * @uses MidocoSavedReportExt::setJasperReportType()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JasperReportType[] $jasperReportType
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JasperReportType[] $jasperReportType
      */
     public function __construct(?array $jasperReportType = null)
     {
@@ -33,19 +34,20 @@ class MidocoSavedReportExt extends JasperReportDTO
     }
     /**
      * Get JasperReportType value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperReportType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperReportType[]
      */
     public function getJasperReportType(): ?array
     {
         return $this->JasperReportType;
     }
     /**
-     * This method is responsible for validating the values passed to the setJasperReportType method
+     * This method is responsible for validating the value(s) passed to the setJasperReportType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setJasperReportType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateJasperReportTypeForArrayConstraintsFromSetJasperReportType(?array $values = []): string
+    public static function validateJasperReportTypeForArrayConstraintFromSetJasperReportType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -54,12 +56,12 @@ class MidocoSavedReportExt extends JasperReportDTO
         $invalidValues = [];
         foreach ($values as $midocoSavedReportExtJasperReportTypeItem) {
             // validation for constraint: itemType
-            if (!$midocoSavedReportExtJasperReportTypeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\JasperReportType) {
+            if (!$midocoSavedReportExtJasperReportTypeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\JasperReportType) {
                 $invalidValues[] = is_object($midocoSavedReportExtJasperReportTypeItem) ? get_class($midocoSavedReportExtJasperReportTypeItem) : sprintf('%s(%s)', gettype($midocoSavedReportExtJasperReportTypeItem), var_export($midocoSavedReportExtJasperReportTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\JasperReportType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\JasperReportType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,13 +70,13 @@ class MidocoSavedReportExt extends JasperReportDTO
     /**
      * Set JasperReportType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JasperReportType[] $jasperReportType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSavedReportExt
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JasperReportType[] $jasperReportType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoSavedReportExt
      */
     public function setJasperReportType(?array $jasperReportType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($jasperReportTypeArrayErrorMessage = self::validateJasperReportTypeForArrayConstraintsFromSetJasperReportType($jasperReportType))) {
+        if ('' !== ($jasperReportTypeArrayErrorMessage = self::validateJasperReportTypeForArrayConstraintFromSetJasperReportType($jasperReportType))) {
             throw new InvalidArgumentException($jasperReportTypeArrayErrorMessage, __LINE__);
         }
         $this->JasperReportType = $jasperReportType;
@@ -84,14 +86,14 @@ class MidocoSavedReportExt extends JasperReportDTO
     /**
      * Add item to JasperReportType value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JasperReportType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSavedReportExt
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JasperReportType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoSavedReportExt
      */
-    public function addToJasperReportType(\Pggns\MidocoApi\CrmSD\StructType\JasperReportType $item): self
+    public function addToJasperReportType(\Pggns\MidocoApi\Crmsd\StructType\JasperReportType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\JasperReportType) {
-            throw new InvalidArgumentException(sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\JasperReportType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\JasperReportType) {
+            throw new InvalidArgumentException(sprintf('The JasperReportType property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\JasperReportType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->JasperReportType[] = $item;
         

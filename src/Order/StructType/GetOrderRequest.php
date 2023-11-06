@@ -11,8 +11,17 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderRequest extends AbstractStructBase
 {
+    /**
+     * The IncludeOrderDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * @var string[]
+     */
+    protected ?array $IncludeOrderDetail = null;
     /**
      * The orderNo
      * @var int|null
@@ -35,30 +44,106 @@ class GetOrderRequest extends AbstractStructBase
     protected ?bool $maskCcNo = null;
     /**
      * The withDetails
+     * Meta information extracted from the WSDL
+     * - documentation: If true, the following fields are populated: ExistTravelPlans ExistOrderDocuments ExistOrderNotices ExistOrderRemarks ExistOrderBillings ExistPaymentPaycodes
      * @var bool|null
      */
     protected ?bool $withDetails = null;
     /**
      * Constructor method for GetOrderRequest
+     * @uses GetOrderRequest::setIncludeOrderDetail()
      * @uses GetOrderRequest::setOrderNo()
      * @uses GetOrderRequest::setOrderId()
      * @uses GetOrderRequest::setInternalVersion()
      * @uses GetOrderRequest::setMaskCcNo()
      * @uses GetOrderRequest::setWithDetails()
+     * @param string[] $includeOrderDetail
      * @param int $orderNo
      * @param int $orderId
      * @param int $internalVersion
      * @param bool $maskCcNo
      * @param bool $withDetails
      */
-    public function __construct(?int $orderNo = null, ?int $orderId = null, ?int $internalVersion = null, ?bool $maskCcNo = null, ?bool $withDetails = null)
+    public function __construct(?array $includeOrderDetail = null, ?int $orderNo = null, ?int $orderId = null, ?int $internalVersion = null, ?bool $maskCcNo = null, ?bool $withDetails = null)
     {
         $this
+            ->setIncludeOrderDetail($includeOrderDetail)
             ->setOrderNo($orderNo)
             ->setOrderId($orderId)
             ->setInternalVersion($internalVersion)
             ->setMaskCcNo($maskCcNo)
             ->setWithDetails($withDetails);
+    }
+    /**
+     * Get IncludeOrderDetail value
+     * @return string[]
+     */
+    public function getIncludeOrderDetail(): ?array
+    {
+        return $this->IncludeOrderDetail;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setIncludeOrderDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setIncludeOrderDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateIncludeOrderDetailForArrayConstraintFromSetIncludeOrderDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $getOrderRequestIncludeOrderDetailItem) {
+            // validation for constraint: enumeration
+            if (!\Pggns\MidocoApi\Order\EnumType\GetOrderDetail::valueIsValid($getOrderRequestIncludeOrderDetailItem)) {
+                $invalidValues[] = is_object($getOrderRequestIncludeOrderDetailItem) ? get_class($getOrderRequestIncludeOrderDetailItem) : sprintf('%s(%s)', gettype($getOrderRequestIncludeOrderDetailItem), var_export($getOrderRequestIncludeOrderDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\GetOrderDetail', is_array($invalidValues) ? implode(', ', $invalidValues) : var_export($invalidValues, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\GetOrderDetail::getValidValues()));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set IncludeOrderDetail value
+     * @uses \Pggns\MidocoApi\Order\EnumType\GetOrderDetail::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\GetOrderDetail::getValidValues()
+     * @throws InvalidArgumentException
+     * @param string[] $includeOrderDetail
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRequest
+     */
+    public function setIncludeOrderDetail(?array $includeOrderDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($includeOrderDetailArrayErrorMessage = self::validateIncludeOrderDetailForArrayConstraintFromSetIncludeOrderDetail($includeOrderDetail))) {
+            throw new InvalidArgumentException($includeOrderDetailArrayErrorMessage, __LINE__);
+        }
+        $this->IncludeOrderDetail = $includeOrderDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to IncludeOrderDetail value
+     * @uses \Pggns\MidocoApi\Order\EnumType\GetOrderDetail::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\GetOrderDetail::getValidValues()
+     * @throws InvalidArgumentException
+     * @param string $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetOrderRequest
+     */
+    public function addToIncludeOrderDetail(string $item): self
+    {
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Order\EnumType\GetOrderDetail::valueIsValid($item)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\GetOrderDetail', is_array($item) ? implode(', ', $item) : var_export($item, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\GetOrderDetail::getValidValues())), __LINE__);
+        }
+        $this->IncludeOrderDetail[] = $item;
+        
+        return $this;
     }
     /**
      * Get orderNo value

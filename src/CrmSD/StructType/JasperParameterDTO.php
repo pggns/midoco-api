@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for JasperParameterDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class JasperParameterDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -110,7 +111,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -133,7 +134,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set isStdParam value
      * @param bool $isStdParam
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
      */
     public function setIsStdParam(?bool $isStdParam = null): self
     {
@@ -156,7 +157,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
      */
     public function setName(?string $name = null): self
     {
@@ -179,7 +180,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set paramId value
      * @param int $paramId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
      */
     public function setParamId(?int $paramId = null): self
     {
@@ -202,7 +203,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set tableName value
      * @param string $tableName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
      */
     public function setTableName(?string $tableName = null): self
     {
@@ -225,7 +226,7 @@ class JasperParameterDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JasperParameterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JasperParameterDTO
      */
     public function setType(?string $type = null): self
     {

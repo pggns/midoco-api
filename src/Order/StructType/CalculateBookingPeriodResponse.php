@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CalculateBookingPeriodResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CalculateBookingPeriodResponse extends AbstractStructBase
 {
     /**
@@ -24,17 +25,25 @@ class CalculateBookingPeriodResponse extends AbstractStructBase
      */
     protected ?int $bookingYear = null;
     /**
+     * The isBookingPeriodClosed
+     * @var bool|null
+     */
+    protected ?bool $isBookingPeriodClosed = null;
+    /**
      * Constructor method for CalculateBookingPeriodResponse
      * @uses CalculateBookingPeriodResponse::setBookingPeriod()
      * @uses CalculateBookingPeriodResponse::setBookingYear()
+     * @uses CalculateBookingPeriodResponse::setIsBookingPeriodClosed()
      * @param int $bookingPeriod
      * @param int $bookingYear
+     * @param bool $isBookingPeriodClosed
      */
-    public function __construct(?int $bookingPeriod = null, ?int $bookingYear = null)
+    public function __construct(?int $bookingPeriod = null, ?int $bookingYear = null, ?bool $isBookingPeriodClosed = null)
     {
         $this
             ->setBookingPeriod($bookingPeriod)
-            ->setBookingYear($bookingYear);
+            ->setBookingYear($bookingYear)
+            ->setIsBookingPeriodClosed($isBookingPeriodClosed);
     }
     /**
      * Get bookingPeriod value
@@ -79,6 +88,29 @@ class CalculateBookingPeriodResponse extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bookingYear, true), gettype($bookingYear)), __LINE__);
         }
         $this->bookingYear = $bookingYear;
+        
+        return $this;
+    }
+    /**
+     * Get isBookingPeriodClosed value
+     * @return bool|null
+     */
+    public function getIsBookingPeriodClosed(): ?bool
+    {
+        return $this->isBookingPeriodClosed;
+    }
+    /**
+     * Set isBookingPeriodClosed value
+     * @param bool $isBookingPeriodClosed
+     * @return \Pggns\MidocoApi\Order\StructType\CalculateBookingPeriodResponse
+     */
+    public function setIsBookingPeriodClosed(?bool $isBookingPeriodClosed = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isBookingPeriodClosed) && !is_bool($isBookingPeriodClosed)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isBookingPeriodClosed, true), gettype($isBookingPeriodClosed)), __LINE__);
+        }
+        $this->isBookingPeriodClosed = $isBookingPeriodClosed;
         
         return $this;
     }

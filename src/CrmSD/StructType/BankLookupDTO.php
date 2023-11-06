@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BankLookupDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BankLookupDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class BankLookupDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param int $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BankLookupDTO
      */
     public function setCountryId(?int $countryId = null): self
     {
@@ -70,7 +71,7 @@ class BankLookupDTO extends AbstractStructBase
     /**
      * Set bankNumber value
      * @param string $bankNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BankLookupDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BankLookupDTO
      */
     public function setBankNumber(?string $bankNumber = null): self
     {

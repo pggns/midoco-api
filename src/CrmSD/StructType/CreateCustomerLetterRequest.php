@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateCustomerLetterRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateCustomerLetterRequest extends AbstractStructBase
 {
     /**
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The TemplateType
      * @var string|null
@@ -37,11 +38,11 @@ class CreateCustomerLetterRequest extends AbstractStructBase
      * @uses CreateCustomerLetterRequest::setMidocoCustomerId()
      * @uses CreateCustomerLetterRequest::setTemplateType()
      * @uses CreateCustomerLetterRequest::setLanguage()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
      * @param string $templateType
      * @param string $language
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $templateType = null, ?string $language = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $templateType = null, ?string $language = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -50,18 +51,18 @@ class CreateCustomerLetterRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCustomerLetterRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCustomerLetterRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -78,7 +79,7 @@ class CreateCustomerLetterRequest extends AbstractStructBase
     /**
      * Set TemplateType value
      * @param string $templateType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCustomerLetterRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCustomerLetterRequest
      */
     public function setTemplateType(?string $templateType = null): self
     {
@@ -101,7 +102,7 @@ class CreateCustomerLetterRequest extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCustomerLetterRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCustomerLetterRequest
      */
     public function setLanguage(?string $language = null): self
     {

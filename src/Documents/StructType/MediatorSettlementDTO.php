@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MediatorSettlementDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MediatorSettlementDTO extends AbstractStructBase
 {
     /**
@@ -49,6 +50,11 @@ class MediatorSettlementDTO extends AbstractStructBase
      */
     protected ?bool $isPreview = null;
     /**
+     * The mediatorCurrency
+     * @var string|null
+     */
+    protected ?string $mediatorCurrency = null;
+    /**
      * The mediatorId
      * @var string|null
      */
@@ -58,6 +64,11 @@ class MediatorSettlementDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $paidAmount = null;
+    /**
+     * The paidAmountMediatorCurrency
+     * @var float|null
+     */
+    protected ?float $paidAmountMediatorCurrency = null;
     /**
      * The planId
      * @var string|null
@@ -92,8 +103,10 @@ class MediatorSettlementDTO extends AbstractStructBase
      * @uses MediatorSettlementDTO::setDocumentId()
      * @uses MediatorSettlementDTO::setId()
      * @uses MediatorSettlementDTO::setIsPreview()
+     * @uses MediatorSettlementDTO::setMediatorCurrency()
      * @uses MediatorSettlementDTO::setMediatorId()
      * @uses MediatorSettlementDTO::setPaidAmount()
+     * @uses MediatorSettlementDTO::setPaidAmountMediatorCurrency()
      * @uses MediatorSettlementDTO::setPlanId()
      * @uses MediatorSettlementDTO::setTravelNo()
      * @uses MediatorSettlementDTO::setUnitName()
@@ -106,15 +119,17 @@ class MediatorSettlementDTO extends AbstractStructBase
      * @param int $documentId
      * @param int $id
      * @param bool $isPreview
+     * @param string $mediatorCurrency
      * @param string $mediatorId
      * @param float $paidAmount
+     * @param float $paidAmountMediatorCurrency
      * @param string $planId
      * @param string $travelNo
      * @param string $unitName
      * @param float $vatAmount
      * @param string $vatCode
      */
-    public function __construct(?string $accountId = null, ?int $addlDocumentId = null, ?string $created = null, ?int $creatingUser = null, ?int $documentId = null, ?int $id = null, ?bool $isPreview = null, ?string $mediatorId = null, ?float $paidAmount = null, ?string $planId = null, ?string $travelNo = null, ?string $unitName = null, ?float $vatAmount = null, ?string $vatCode = null)
+    public function __construct(?string $accountId = null, ?int $addlDocumentId = null, ?string $created = null, ?int $creatingUser = null, ?int $documentId = null, ?int $id = null, ?bool $isPreview = null, ?string $mediatorCurrency = null, ?string $mediatorId = null, ?float $paidAmount = null, ?float $paidAmountMediatorCurrency = null, ?string $planId = null, ?string $travelNo = null, ?string $unitName = null, ?float $vatAmount = null, ?string $vatCode = null)
     {
         $this
             ->setAccountId($accountId)
@@ -124,8 +139,10 @@ class MediatorSettlementDTO extends AbstractStructBase
             ->setDocumentId($documentId)
             ->setId($id)
             ->setIsPreview($isPreview)
+            ->setMediatorCurrency($mediatorCurrency)
             ->setMediatorId($mediatorId)
             ->setPaidAmount($paidAmount)
+            ->setPaidAmountMediatorCurrency($paidAmountMediatorCurrency)
             ->setPlanId($planId)
             ->setTravelNo($travelNo)
             ->setUnitName($unitName)
@@ -294,6 +311,29 @@ class MediatorSettlementDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get mediatorCurrency value
+     * @return string|null
+     */
+    public function getMediatorCurrency(): ?string
+    {
+        return $this->mediatorCurrency;
+    }
+    /**
+     * Set mediatorCurrency value
+     * @param string $mediatorCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorSettlementDTO
+     */
+    public function setMediatorCurrency(?string $mediatorCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($mediatorCurrency) && !is_string($mediatorCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mediatorCurrency, true), gettype($mediatorCurrency)), __LINE__);
+        }
+        $this->mediatorCurrency = $mediatorCurrency;
+        
+        return $this;
+    }
+    /**
      * Get mediatorId value
      * @return string|null
      */
@@ -336,6 +376,29 @@ class MediatorSettlementDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($paidAmount, true), gettype($paidAmount)), __LINE__);
         }
         $this->paidAmount = $paidAmount;
+        
+        return $this;
+    }
+    /**
+     * Get paidAmountMediatorCurrency value
+     * @return float|null
+     */
+    public function getPaidAmountMediatorCurrency(): ?float
+    {
+        return $this->paidAmountMediatorCurrency;
+    }
+    /**
+     * Set paidAmountMediatorCurrency value
+     * @param float $paidAmountMediatorCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\MediatorSettlementDTO
+     */
+    public function setPaidAmountMediatorCurrency(?float $paidAmountMediatorCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($paidAmountMediatorCurrency) && !(is_float($paidAmountMediatorCurrency) || is_numeric($paidAmountMediatorCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($paidAmountMediatorCurrency, true), gettype($paidAmountMediatorCurrency)), __LINE__);
+        }
+        $this->paidAmountMediatorCurrency = $paidAmountMediatorCurrency;
         
         return $this;
     }

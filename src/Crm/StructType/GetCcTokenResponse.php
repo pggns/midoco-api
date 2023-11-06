@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCcTokenResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCcTokenResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCcTokenResponse extends AbstractStructBase
         return $this->MidocoCcToken;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCcToken method
+     * This method is responsible for validating the value(s) passed to the setMidocoCcToken method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCcToken method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCcTokenForArrayConstraintsFromSetMidocoCcToken(?array $values = []): string
+    public static function validateMidocoCcTokenForArrayConstraintFromSetMidocoCcToken(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCcTokenResponse extends AbstractStructBase
     public function setMidocoCcToken(?array $midocoCcToken = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCcTokenArrayErrorMessage = self::validateMidocoCcTokenForArrayConstraintsFromSetMidocoCcToken($midocoCcToken))) {
+        if ('' !== ($midocoCcTokenArrayErrorMessage = self::validateMidocoCcTokenForArrayConstraintFromSetMidocoCcToken($midocoCcToken))) {
             throw new InvalidArgumentException($midocoCcTokenArrayErrorMessage, __LINE__);
         }
         $this->MidocoCcToken = $midocoCcToken;

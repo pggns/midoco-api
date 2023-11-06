@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CcTokenReferenceDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CcTokenReferenceDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class CcTokenReferenceDTO extends AbstractStructBase
     /**
      * Set ccMask value
      * @param string $ccMask
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcTokenReferenceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcTokenReferenceDTO
      */
     public function setCcMask(?string $ccMask = null): self
     {
@@ -70,7 +71,7 @@ class CcTokenReferenceDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcTokenReferenceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcTokenReferenceDTO
      */
     public function setId(?int $id = null): self
     {

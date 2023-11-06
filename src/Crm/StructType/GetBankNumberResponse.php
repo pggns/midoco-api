@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBankNumberResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBankNumberResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetBankNumberResponse extends AbstractStructBase
         return $this->MidocoBankCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBankCode method
+     * This method is responsible for validating the value(s) passed to the setMidocoBankCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBankCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBankCodeForArrayConstraintsFromSetMidocoBankCode(?array $values = []): string
+    public static function validateMidocoBankCodeForArrayConstraintFromSetMidocoBankCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetBankNumberResponse extends AbstractStructBase
     public function setMidocoBankCode(?array $midocoBankCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBankCodeArrayErrorMessage = self::validateMidocoBankCodeForArrayConstraintsFromSetMidocoBankCode($midocoBankCode))) {
+        if ('' !== ($midocoBankCodeArrayErrorMessage = self::validateMidocoBankCodeForArrayConstraintFromSetMidocoBankCode($midocoBankCode))) {
             throw new InvalidArgumentException($midocoBankCodeArrayErrorMessage, __LINE__);
         }
         $this->MidocoBankCode = $midocoBankCode;

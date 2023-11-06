@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CCAccessListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CCAccessListRequest extends AbstractStructBase
 {
     /**

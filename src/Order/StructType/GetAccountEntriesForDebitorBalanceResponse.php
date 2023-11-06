@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAccountEntriesForDebitorBalanceResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAccountEntriesForDebitorBalanceResponse extends AbstractStructBase
 {
     /**
@@ -73,12 +74,13 @@ class GetAccountEntriesForDebitorBalanceResponse extends AbstractStructBase
         return $this->MidocoDebitorAccountEntryBalance;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDebitorAccountEntryBalance method
+     * This method is responsible for validating the value(s) passed to the setMidocoDebitorAccountEntryBalance method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDebitorAccountEntryBalance method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDebitorAccountEntryBalanceForArrayConstraintsFromSetMidocoDebitorAccountEntryBalance(?array $values = []): string
+    public static function validateMidocoDebitorAccountEntryBalanceForArrayConstraintFromSetMidocoDebitorAccountEntryBalance(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -107,7 +109,7 @@ class GetAccountEntriesForDebitorBalanceResponse extends AbstractStructBase
     public function setMidocoDebitorAccountEntryBalance(?array $midocoDebitorAccountEntryBalance = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDebitorAccountEntryBalanceArrayErrorMessage = self::validateMidocoDebitorAccountEntryBalanceForArrayConstraintsFromSetMidocoDebitorAccountEntryBalance($midocoDebitorAccountEntryBalance))) {
+        if ('' !== ($midocoDebitorAccountEntryBalanceArrayErrorMessage = self::validateMidocoDebitorAccountEntryBalanceForArrayConstraintFromSetMidocoDebitorAccountEntryBalance($midocoDebitorAccountEntryBalance))) {
             throw new InvalidArgumentException($midocoDebitorAccountEntryBalanceArrayErrorMessage, __LINE__);
         }
         $this->MidocoDebitorAccountEntryBalance = $midocoDebitorAccountEntryBalance;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AccountDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AccountDTO extends AbstractStructBase
 {
     /**
@@ -89,6 +90,11 @@ class AccountDTO extends AbstractStructBase
      */
     protected ?bool $isProtectedAccount = null;
     /**
+     * The lastUsedDate
+     * @var string|null
+     */
+    protected ?string $lastUsedDate = null;
+    /**
      * The lockDate
      * @var string|null
      */
@@ -155,6 +161,7 @@ class AccountDTO extends AbstractStructBase
      * @uses AccountDTO::setIsManualUsage()
      * @uses AccountDTO::setIsPaymentAccount()
      * @uses AccountDTO::setIsProtectedAccount()
+     * @uses AccountDTO::setLastUsedDate()
      * @uses AccountDTO::setLockDate()
      * @uses AccountDTO::setName()
      * @uses AccountDTO::setPlanId()
@@ -180,6 +187,7 @@ class AccountDTO extends AbstractStructBase
      * @param bool $isManualUsage
      * @param bool $isPaymentAccount
      * @param bool $isProtectedAccount
+     * @param string $lastUsedDate
      * @param string $lockDate
      * @param string $name
      * @param string $planId
@@ -191,7 +199,7 @@ class AccountDTO extends AbstractStructBase
      * @param bool $useInItReceipt
      * @param string $vatCode
      */
-    public function __construct(?string $accountId = null, ?string $accountType = null, ?string $accrualAccount = null, ?bool $applyForeignCurrencyToExport = null, ?bool $automaticVat = null, ?string $balanceSheetPosition = null, ?string $clearingAccount = null, ?string $currency = null, ?int $currencyLookupMethod = null, ?string $depositAccount = null, ?bool $isCommissionAccount = null, ?bool $isLocked = null, ?bool $isManualUsage = null, ?bool $isPaymentAccount = null, ?bool $isProtectedAccount = null, ?string $lockDate = null, ?string $name = null, ?string $planId = null, ?bool $preventObBooking = null, ?string $summaryAccount = null, ?bool $useAsCashAccount = null, ?bool $useAsReverseChargeAccount = null, ?bool $useCostCentre = null, ?bool $useInItReceipt = null, ?string $vatCode = null)
+    public function __construct(?string $accountId = null, ?string $accountType = null, ?string $accrualAccount = null, ?bool $applyForeignCurrencyToExport = null, ?bool $automaticVat = null, ?string $balanceSheetPosition = null, ?string $clearingAccount = null, ?string $currency = null, ?int $currencyLookupMethod = null, ?string $depositAccount = null, ?bool $isCommissionAccount = null, ?bool $isLocked = null, ?bool $isManualUsage = null, ?bool $isPaymentAccount = null, ?bool $isProtectedAccount = null, ?string $lastUsedDate = null, ?string $lockDate = null, ?string $name = null, ?string $planId = null, ?bool $preventObBooking = null, ?string $summaryAccount = null, ?bool $useAsCashAccount = null, ?bool $useAsReverseChargeAccount = null, ?bool $useCostCentre = null, ?bool $useInItReceipt = null, ?string $vatCode = null)
     {
         $this
             ->setAccountId($accountId)
@@ -209,6 +217,7 @@ class AccountDTO extends AbstractStructBase
             ->setIsManualUsage($isManualUsage)
             ->setIsPaymentAccount($isPaymentAccount)
             ->setIsProtectedAccount($isProtectedAccount)
+            ->setLastUsedDate($lastUsedDate)
             ->setLockDate($lockDate)
             ->setName($name)
             ->setPlanId($planId)
@@ -562,6 +571,29 @@ class AccountDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isProtectedAccount, true), gettype($isProtectedAccount)), __LINE__);
         }
         $this->isProtectedAccount = $isProtectedAccount;
+        
+        return $this;
+    }
+    /**
+     * Get lastUsedDate value
+     * @return string|null
+     */
+    public function getLastUsedDate(): ?string
+    {
+        return $this->lastUsedDate;
+    }
+    /**
+     * Set lastUsedDate value
+     * @param string $lastUsedDate
+     * @return \Pggns\MidocoApi\OrderSD\StructType\AccountDTO
+     */
+    public function setLastUsedDate(?string $lastUsedDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($lastUsedDate) && !is_string($lastUsedDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastUsedDate, true), gettype($lastUsedDate)), __LINE__);
+        }
+        $this->lastUsedDate = $lastUsedDate;
         
         return $this;
     }

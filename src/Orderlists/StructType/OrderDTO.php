@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrderDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrderDTO extends AbstractStructBase
 {
+    /**
+     * The agencyCurrency
+     * @var string|null
+     */
+    protected ?string $agencyCurrency = null;
     /**
      * The agencyCustomerId
      * @var int|null
@@ -219,6 +225,11 @@ class OrderDTO extends AbstractStructBase
      */
     protected ?string $errorCode = null;
     /**
+     * The errorCodeParameters
+     * @var string|null
+     */
+    protected ?string $errorCodeParameters = null;
+    /**
      * The extBookingId
      * @var string|null
      */
@@ -359,6 +370,11 @@ class OrderDTO extends AbstractStructBase
      */
     protected ?string $mediatorAffiliate = null;
     /**
+     * The mediatorCurrency
+     * @var string|null
+     */
+    protected ?string $mediatorCurrency = null;
+    /**
      * The mediatorId
      * @var string|null
      */
@@ -494,15 +510,30 @@ class OrderDTO extends AbstractStructBase
      */
     protected ?float $totalCommission = null;
     /**
+     * The totalCommissionAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $totalCommissionAgencyCurrency = null;
+    /**
      * The totalCommissionInsurance
      * @var float|null
      */
     protected ?float $totalCommissionInsurance = null;
     /**
+     * The totalCommissionInsuranceAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $totalCommissionInsuranceAgencyCurrency = null;
+    /**
      * The totalCommissionVat
      * @var float|null
      */
     protected ?float $totalCommissionVat = null;
+    /**
+     * The totalCommissionVatAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $totalCommissionVatAgencyCurrency = null;
     /**
      * The totalPayment
      * @var float|null
@@ -590,6 +621,7 @@ class OrderDTO extends AbstractStructBase
     protected ?int $workingUser = null;
     /**
      * Constructor method for OrderDTO
+     * @uses OrderDTO::setAgencyCurrency()
      * @uses OrderDTO::setAgencyCustomerId()
      * @uses OrderDTO::setAgencyDebitorNo()
      * @uses OrderDTO::setAgencyId()
@@ -631,6 +663,7 @@ class OrderDTO extends AbstractStructBase
      * @uses OrderDTO::setEndTravelDate()
      * @uses OrderDTO::setErrorBundle()
      * @uses OrderDTO::setErrorCode()
+     * @uses OrderDTO::setErrorCodeParameters()
      * @uses OrderDTO::setExtBookingId()
      * @uses OrderDTO::setFinalPayment()
      * @uses OrderDTO::setFinalPaymentReceived()
@@ -659,6 +692,7 @@ class OrderDTO extends AbstractStructBase
      * @uses OrderDTO::setMainSupplierId()
      * @uses OrderDTO::setManualCommission()
      * @uses OrderDTO::setMediatorAffiliate()
+     * @uses OrderDTO::setMediatorCurrency()
      * @uses OrderDTO::setMediatorId()
      * @uses OrderDTO::setMediatorType()
      * @uses OrderDTO::setModifyDate()
@@ -686,8 +720,11 @@ class OrderDTO extends AbstractStructBase
      * @uses OrderDTO::setStornoHandled()
      * @uses OrderDTO::setSubAgencyId()
      * @uses OrderDTO::setTotalCommission()
+     * @uses OrderDTO::setTotalCommissionAgencyCurrency()
      * @uses OrderDTO::setTotalCommissionInsurance()
+     * @uses OrderDTO::setTotalCommissionInsuranceAgencyCurrency()
      * @uses OrderDTO::setTotalCommissionVat()
+     * @uses OrderDTO::setTotalCommissionVatAgencyCurrency()
      * @uses OrderDTO::setTotalPayment()
      * @uses OrderDTO::setTotalPrice()
      * @uses OrderDTO::setTransportKey()
@@ -705,6 +742,7 @@ class OrderDTO extends AbstractStructBase
      * @uses OrderDTO::setUnitName()
      * @uses OrderDTO::setWorkStartTime()
      * @uses OrderDTO::setWorkingUser()
+     * @param string $agencyCurrency
      * @param int $agencyCustomerId
      * @param string $agencyDebitorNo
      * @param string $agencyId
@@ -746,6 +784,7 @@ class OrderDTO extends AbstractStructBase
      * @param string $endTravelDate
      * @param string $errorBundle
      * @param string $errorCode
+     * @param string $errorCodeParameters
      * @param string $extBookingId
      * @param string $finalPayment
      * @param bool $finalPaymentReceived
@@ -774,6 +813,7 @@ class OrderDTO extends AbstractStructBase
      * @param string $mainSupplierId
      * @param bool $manualCommission
      * @param string $mediatorAffiliate
+     * @param string $mediatorCurrency
      * @param string $mediatorId
      * @param string $mediatorType
      * @param string $modifyDate
@@ -801,8 +841,11 @@ class OrderDTO extends AbstractStructBase
      * @param bool $stornoHandled
      * @param string $subAgencyId
      * @param float $totalCommission
+     * @param float $totalCommissionAgencyCurrency
      * @param float $totalCommissionInsurance
+     * @param float $totalCommissionInsuranceAgencyCurrency
      * @param float $totalCommissionVat
+     * @param float $totalCommissionVatAgencyCurrency
      * @param float $totalPayment
      * @param float $totalPrice
      * @param string $transportKey
@@ -821,9 +864,10 @@ class OrderDTO extends AbstractStructBase
      * @param string $workStartTime
      * @param int $workingUser
      */
-    public function __construct(?int $agencyCustomerId = null, ?string $agencyDebitorNo = null, ?string $agencyId = null, ?float $bookingCurrencyRate = null, ?float $calculatedMediatorTotal = null, ?bool $catalogKey = null, ?bool $collectiveBilling = null, ?float $commissionBaseAmount = null, ?bool $companyUsage = null, ?string $cooperationId = null, ?string $creationDate = null, ?string $creationTime = null, ?int $creationUser = null, ?string $currency = null, ?int $currencyLookupMethod = null, ?string $customerCostCentre = null, ?string $debitorNo = null, ?string $deliveryType = null, ?string $deliveryTypeId = null, ?string $department = null, ?float $depositAmount = null, ?string $depositDate = null, ?string $depositDunningDate = null, ?string $depositPaymentDueDate = null, ?bool $depositPreset = null, ?bool $depositReceived = null, ?string $depositReceivedDate = null, ?string $destinationKey = null, ?string $displayedCurrency = null, ?float $displayedCurrencyRate = null, ?float $displayedDepositAmount = null, ?float $displayedInkassoPrice = null, ?float $displayedTotalPayment = null, ?float $displayedTotalPrice = null, ?string $dunningDate = null, ?bool $dunningLock = null, ?bool $dunningPreset = null, ?string $durationKey = null, ?string $endTravelDate = null, ?string $errorBundle = null, ?string $errorCode = null, ?string $extBookingId = null, ?string $finalPayment = null, ?bool $finalPaymentReceived = null, ?string $finalPaymentReceivedDate = null, ?string $firstWorkTime = null, ?bool $groupReservation = null, ?bool $hasForeignDebitor = null, ?float $inkassoPrice = null, ?int $internalVersion = null, ?float $invoicedAmount = null, ?string $invoicingType = null, ?bool $isOrderControlled = null, ?bool $isReadonly = null, ?bool $isStorno = null, ?int $lastAgencySettlementPos = null, ?float $lastInkassoPrice = null, ?int $lastInvoiceId = null, ?int $lastWorkingUser = null, ?string $lastWorkingUserTimestamp = null, ?string $legalCountry = null, ?int $lockIndicator = null, ?string $lockReason = null, ?string $lockTimestamp = null, ?int $lockUser = null, ?string $mainBookingId = null, ?string $mainSupplierId = null, ?bool $manualCommission = null, ?string $mediatorAffiliate = null, ?string $mediatorId = null, ?string $mediatorType = null, ?string $modifyDate = null, ?string $modifyTime = null, ?int $modifyUser = null, ?bool $needsCommissionPrint = null, ?bool $needsInvoicePrint = null, ?bool $needsSellModeAssign = null, ?float $nonBookedVat = null, ?bool $optionHandled = null, ?int $orderControlledBy = null, ?string $orderControlledTimestamp = null, ?int $orderId = null, ?int $orderNo = null, ?string $paymentDueDate = null, ?bool $paymentExported = null, ?string $paymentType = null, ?string $personsKey = null, ?string $productType = null, ?string $projectNo = null, ?int $ranking = null, ?bool $requestHandled = null, ?int $sellingType = null, ?string $startTravelDate = null, ?bool $stornoHandled = null, ?string $subAgencyId = null, ?float $totalCommission = null, ?float $totalCommissionInsurance = null, ?float $totalCommissionVat = null, ?float $totalPayment = null, ?float $totalPrice = null, ?string $transportKey = null, ?string $travelDate = null, ?string $travelDocsDeliveryComm = null, ?int $travelDocumentsDeliveredBy = null, ?string $travelDocumentsDeliveryDate = null, ?string $travelDocumentsReceiveDate = null, ?int $travelDocumentsReceivedBy = null, ?int $traveldocsInfoCustBy = null, ?string $traveldocsInfoCustDate = null, ?string $traveldocsInfoCustType = null, ?int $travellerId = null, ?string $traveltypeKey = null, ?string $unitName = null, ?string $workStartTime = null, ?int $workingUser = null)
+    public function __construct(?string $agencyCurrency = null, ?int $agencyCustomerId = null, ?string $agencyDebitorNo = null, ?string $agencyId = null, ?float $bookingCurrencyRate = null, ?float $calculatedMediatorTotal = null, ?bool $catalogKey = null, ?bool $collectiveBilling = null, ?float $commissionBaseAmount = null, ?bool $companyUsage = null, ?string $cooperationId = null, ?string $creationDate = null, ?string $creationTime = null, ?int $creationUser = null, ?string $currency = null, ?int $currencyLookupMethod = null, ?string $customerCostCentre = null, ?string $debitorNo = null, ?string $deliveryType = null, ?string $deliveryTypeId = null, ?string $department = null, ?float $depositAmount = null, ?string $depositDate = null, ?string $depositDunningDate = null, ?string $depositPaymentDueDate = null, ?bool $depositPreset = null, ?bool $depositReceived = null, ?string $depositReceivedDate = null, ?string $destinationKey = null, ?string $displayedCurrency = null, ?float $displayedCurrencyRate = null, ?float $displayedDepositAmount = null, ?float $displayedInkassoPrice = null, ?float $displayedTotalPayment = null, ?float $displayedTotalPrice = null, ?string $dunningDate = null, ?bool $dunningLock = null, ?bool $dunningPreset = null, ?string $durationKey = null, ?string $endTravelDate = null, ?string $errorBundle = null, ?string $errorCode = null, ?string $errorCodeParameters = null, ?string $extBookingId = null, ?string $finalPayment = null, ?bool $finalPaymentReceived = null, ?string $finalPaymentReceivedDate = null, ?string $firstWorkTime = null, ?bool $groupReservation = null, ?bool $hasForeignDebitor = null, ?float $inkassoPrice = null, ?int $internalVersion = null, ?float $invoicedAmount = null, ?string $invoicingType = null, ?bool $isOrderControlled = null, ?bool $isReadonly = null, ?bool $isStorno = null, ?int $lastAgencySettlementPos = null, ?float $lastInkassoPrice = null, ?int $lastInvoiceId = null, ?int $lastWorkingUser = null, ?string $lastWorkingUserTimestamp = null, ?string $legalCountry = null, ?int $lockIndicator = null, ?string $lockReason = null, ?string $lockTimestamp = null, ?int $lockUser = null, ?string $mainBookingId = null, ?string $mainSupplierId = null, ?bool $manualCommission = null, ?string $mediatorAffiliate = null, ?string $mediatorCurrency = null, ?string $mediatorId = null, ?string $mediatorType = null, ?string $modifyDate = null, ?string $modifyTime = null, ?int $modifyUser = null, ?bool $needsCommissionPrint = null, ?bool $needsInvoicePrint = null, ?bool $needsSellModeAssign = null, ?float $nonBookedVat = null, ?bool $optionHandled = null, ?int $orderControlledBy = null, ?string $orderControlledTimestamp = null, ?int $orderId = null, ?int $orderNo = null, ?string $paymentDueDate = null, ?bool $paymentExported = null, ?string $paymentType = null, ?string $personsKey = null, ?string $productType = null, ?string $projectNo = null, ?int $ranking = null, ?bool $requestHandled = null, ?int $sellingType = null, ?string $startTravelDate = null, ?bool $stornoHandled = null, ?string $subAgencyId = null, ?float $totalCommission = null, ?float $totalCommissionAgencyCurrency = null, ?float $totalCommissionInsurance = null, ?float $totalCommissionInsuranceAgencyCurrency = null, ?float $totalCommissionVat = null, ?float $totalCommissionVatAgencyCurrency = null, ?float $totalPayment = null, ?float $totalPrice = null, ?string $transportKey = null, ?string $travelDate = null, ?string $travelDocsDeliveryComm = null, ?int $travelDocumentsDeliveredBy = null, ?string $travelDocumentsDeliveryDate = null, ?string $travelDocumentsReceiveDate = null, ?int $travelDocumentsReceivedBy = null, ?int $traveldocsInfoCustBy = null, ?string $traveldocsInfoCustDate = null, ?string $traveldocsInfoCustType = null, ?int $travellerId = null, ?string $traveltypeKey = null, ?string $unitName = null, ?string $workStartTime = null, ?int $workingUser = null)
     {
         $this
+            ->setAgencyCurrency($agencyCurrency)
             ->setAgencyCustomerId($agencyCustomerId)
             ->setAgencyDebitorNo($agencyDebitorNo)
             ->setAgencyId($agencyId)
@@ -865,6 +909,7 @@ class OrderDTO extends AbstractStructBase
             ->setEndTravelDate($endTravelDate)
             ->setErrorBundle($errorBundle)
             ->setErrorCode($errorCode)
+            ->setErrorCodeParameters($errorCodeParameters)
             ->setExtBookingId($extBookingId)
             ->setFinalPayment($finalPayment)
             ->setFinalPaymentReceived($finalPaymentReceived)
@@ -893,6 +938,7 @@ class OrderDTO extends AbstractStructBase
             ->setMainSupplierId($mainSupplierId)
             ->setManualCommission($manualCommission)
             ->setMediatorAffiliate($mediatorAffiliate)
+            ->setMediatorCurrency($mediatorCurrency)
             ->setMediatorId($mediatorId)
             ->setMediatorType($mediatorType)
             ->setModifyDate($modifyDate)
@@ -920,8 +966,11 @@ class OrderDTO extends AbstractStructBase
             ->setStornoHandled($stornoHandled)
             ->setSubAgencyId($subAgencyId)
             ->setTotalCommission($totalCommission)
+            ->setTotalCommissionAgencyCurrency($totalCommissionAgencyCurrency)
             ->setTotalCommissionInsurance($totalCommissionInsurance)
+            ->setTotalCommissionInsuranceAgencyCurrency($totalCommissionInsuranceAgencyCurrency)
             ->setTotalCommissionVat($totalCommissionVat)
+            ->setTotalCommissionVatAgencyCurrency($totalCommissionVatAgencyCurrency)
             ->setTotalPayment($totalPayment)
             ->setTotalPrice($totalPrice)
             ->setTransportKey($transportKey)
@@ -939,6 +988,29 @@ class OrderDTO extends AbstractStructBase
             ->setUnitName($unitName)
             ->setWorkStartTime($workStartTime)
             ->setWorkingUser($workingUser);
+    }
+    /**
+     * Get agencyCurrency value
+     * @return string|null
+     */
+    public function getAgencyCurrency(): ?string
+    {
+        return $this->agencyCurrency;
+    }
+    /**
+     * Set agencyCurrency value
+     * @param string $agencyCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderDTO
+     */
+    public function setAgencyCurrency(?string $agencyCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($agencyCurrency) && !is_string($agencyCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($agencyCurrency, true), gettype($agencyCurrency)), __LINE__);
+        }
+        $this->agencyCurrency = $agencyCurrency;
+        
+        return $this;
     }
     /**
      * Get agencyCustomerId value
@@ -1884,6 +1956,29 @@ class OrderDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get errorCodeParameters value
+     * @return string|null
+     */
+    public function getErrorCodeParameters(): ?string
+    {
+        return $this->errorCodeParameters;
+    }
+    /**
+     * Set errorCodeParameters value
+     * @param string $errorCodeParameters
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderDTO
+     */
+    public function setErrorCodeParameters(?string $errorCodeParameters = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($errorCodeParameters) && !is_string($errorCodeParameters)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($errorCodeParameters, true), gettype($errorCodeParameters)), __LINE__);
+        }
+        $this->errorCodeParameters = $errorCodeParameters;
+        
+        return $this;
+    }
+    /**
      * Get extBookingId value
      * @return string|null
      */
@@ -2528,6 +2623,29 @@ class OrderDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get mediatorCurrency value
+     * @return string|null
+     */
+    public function getMediatorCurrency(): ?string
+    {
+        return $this->mediatorCurrency;
+    }
+    /**
+     * Set mediatorCurrency value
+     * @param string $mediatorCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderDTO
+     */
+    public function setMediatorCurrency(?string $mediatorCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($mediatorCurrency) && !is_string($mediatorCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mediatorCurrency, true), gettype($mediatorCurrency)), __LINE__);
+        }
+        $this->mediatorCurrency = $mediatorCurrency;
+        
+        return $this;
+    }
+    /**
      * Get mediatorId value
      * @return string|null
      */
@@ -3149,6 +3267,29 @@ class OrderDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get totalCommissionAgencyCurrency value
+     * @return float|null
+     */
+    public function getTotalCommissionAgencyCurrency(): ?float
+    {
+        return $this->totalCommissionAgencyCurrency;
+    }
+    /**
+     * Set totalCommissionAgencyCurrency value
+     * @param float $totalCommissionAgencyCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderDTO
+     */
+    public function setTotalCommissionAgencyCurrency(?float $totalCommissionAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($totalCommissionAgencyCurrency) && !(is_float($totalCommissionAgencyCurrency) || is_numeric($totalCommissionAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalCommissionAgencyCurrency, true), gettype($totalCommissionAgencyCurrency)), __LINE__);
+        }
+        $this->totalCommissionAgencyCurrency = $totalCommissionAgencyCurrency;
+        
+        return $this;
+    }
+    /**
      * Get totalCommissionInsurance value
      * @return float|null
      */
@@ -3172,6 +3313,29 @@ class OrderDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get totalCommissionInsuranceAgencyCurrency value
+     * @return float|null
+     */
+    public function getTotalCommissionInsuranceAgencyCurrency(): ?float
+    {
+        return $this->totalCommissionInsuranceAgencyCurrency;
+    }
+    /**
+     * Set totalCommissionInsuranceAgencyCurrency value
+     * @param float $totalCommissionInsuranceAgencyCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderDTO
+     */
+    public function setTotalCommissionInsuranceAgencyCurrency(?float $totalCommissionInsuranceAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($totalCommissionInsuranceAgencyCurrency) && !(is_float($totalCommissionInsuranceAgencyCurrency) || is_numeric($totalCommissionInsuranceAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalCommissionInsuranceAgencyCurrency, true), gettype($totalCommissionInsuranceAgencyCurrency)), __LINE__);
+        }
+        $this->totalCommissionInsuranceAgencyCurrency = $totalCommissionInsuranceAgencyCurrency;
+        
+        return $this;
+    }
+    /**
      * Get totalCommissionVat value
      * @return float|null
      */
@@ -3191,6 +3355,29 @@ class OrderDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalCommissionVat, true), gettype($totalCommissionVat)), __LINE__);
         }
         $this->totalCommissionVat = $totalCommissionVat;
+        
+        return $this;
+    }
+    /**
+     * Get totalCommissionVatAgencyCurrency value
+     * @return float|null
+     */
+    public function getTotalCommissionVatAgencyCurrency(): ?float
+    {
+        return $this->totalCommissionVatAgencyCurrency;
+    }
+    /**
+     * Set totalCommissionVatAgencyCurrency value
+     * @param float $totalCommissionVatAgencyCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderDTO
+     */
+    public function setTotalCommissionVatAgencyCurrency(?float $totalCommissionVatAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($totalCommissionVatAgencyCurrency) && !(is_float($totalCommissionVatAgencyCurrency) || is_numeric($totalCommissionVatAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($totalCommissionVatAgencyCurrency, true), gettype($totalCommissionVatAgencyCurrency)), __LINE__);
+        }
+        $this->totalCommissionVatAgencyCurrency = $totalCommissionVatAgencyCurrency;
         
         return $this;
     }

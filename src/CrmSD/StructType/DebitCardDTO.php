@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DebitCardDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DebitCardDTO extends AbstractStructBase
 {
     /**
@@ -151,7 +152,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -174,7 +175,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -197,7 +198,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set bankNo value
      * @param string $bankNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setBankNo(?string $bankNo = null): self
     {
@@ -220,7 +221,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -243,7 +244,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setOwner(?string $owner = null): self
     {
@@ -266,7 +267,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set useAsDefault value
      * @param bool $useAsDefault
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setUseAsDefault(?bool $useAsDefault = null): self
     {
@@ -289,7 +290,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set validMonth value
      * @param int $validMonth
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setValidMonth(?int $validMonth = null): self
     {
@@ -312,7 +313,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set validYear value
      * @param int $validYear
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setValidYear(?int $validYear = null): self
     {
@@ -335,7 +336,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -358,7 +359,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set iban value
      * @param string $iban
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setIban(?string $iban = null): self
     {
@@ -381,7 +382,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set swiftBicCode value
      * @param string $swiftBicCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setSwiftBicCode(?string $swiftBicCode = null): self
     {
@@ -404,7 +405,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -427,7 +428,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -450,7 +451,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set typeDescription value
      * @param string $typeDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setTypeDescription(?string $typeDescription = null): self
     {
@@ -473,7 +474,7 @@ class DebitCardDTO extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardDTO
      */
     public function setMandateId(?int $mandateId = null): self
     {

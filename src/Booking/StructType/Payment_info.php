@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Payment information
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Payment_info extends AbstractStructBase
 {
     /**
@@ -70,12 +71,13 @@ class Payment_info extends AbstractStructBase
         return $this->{'cc-payment'};
     }
     /**
-     * This method is responsible for validating the values passed to the setCc_payment method
+     * This method is responsible for validating the value(s) passed to the setCc_payment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCc_payment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCc_paymentForArrayConstraintsFromSetCc_payment(?array $values = []): string
+    public static function validateCc_paymentForArrayConstraintFromSetCc_payment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -104,7 +106,7 @@ class Payment_info extends AbstractStructBase
     public function setCc_payment(?array $cc_payment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cc_paymentArrayErrorMessage = self::validateCc_paymentForArrayConstraintsFromSetCc_payment($cc_payment))) {
+        if ('' !== ($cc_paymentArrayErrorMessage = self::validateCc_paymentForArrayConstraintFromSetCc_payment($cc_payment))) {
             throw new InvalidArgumentException($cc_paymentArrayErrorMessage, __LINE__);
         }
         $this->cc_payment = $this->{'cc-payment'} = $cc_payment;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetExternalSystemsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExternalSystemsResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetExternalSystemsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoExternalSystem
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO[]
      */
     protected ?array $MidocoExternalSystem = null;
     /**
      * Constructor method for GetExternalSystemsResponse
      * @uses GetExternalSystemsResponse::setMidocoExternalSystem()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO[] $midocoExternalSystem
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO[] $midocoExternalSystem
      */
     public function __construct(?array $midocoExternalSystem = null)
     {
@@ -34,19 +35,20 @@ class GetExternalSystemsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoExternalSystem value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO[]
      */
     public function getMidocoExternalSystem(): ?array
     {
         return $this->MidocoExternalSystem;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoExternalSystem method
+     * This method is responsible for validating the value(s) passed to the setMidocoExternalSystem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoExternalSystem method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoExternalSystemForArrayConstraintsFromSetMidocoExternalSystem(?array $values = []): string
+    public static function validateMidocoExternalSystemForArrayConstraintFromSetMidocoExternalSystem(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetExternalSystemsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getExternalSystemsResponseMidocoExternalSystemItem) {
             // validation for constraint: itemType
-            if (!$getExternalSystemsResponseMidocoExternalSystemItem instanceof \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO) {
+            if (!$getExternalSystemsResponseMidocoExternalSystemItem instanceof \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO) {
                 $invalidValues[] = is_object($getExternalSystemsResponseMidocoExternalSystemItem) ? get_class($getExternalSystemsResponseMidocoExternalSystemItem) : sprintf('%s(%s)', gettype($getExternalSystemsResponseMidocoExternalSystemItem), var_export($getExternalSystemsResponseMidocoExternalSystemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoExternalSystem property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoExternalSystem property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetExternalSystemsResponse extends AbstractStructBase
     /**
      * Set MidocoExternalSystem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO[] $midocoExternalSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExternalSystemsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO[] $midocoExternalSystem
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetExternalSystemsResponse
      */
     public function setMidocoExternalSystem(?array $midocoExternalSystem = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoExternalSystemArrayErrorMessage = self::validateMidocoExternalSystemForArrayConstraintsFromSetMidocoExternalSystem($midocoExternalSystem))) {
+        if ('' !== ($midocoExternalSystemArrayErrorMessage = self::validateMidocoExternalSystemForArrayConstraintFromSetMidocoExternalSystem($midocoExternalSystem))) {
             throw new InvalidArgumentException($midocoExternalSystemArrayErrorMessage, __LINE__);
         }
         $this->MidocoExternalSystem = $midocoExternalSystem;
@@ -85,14 +87,14 @@ class GetExternalSystemsResponse extends AbstractStructBase
     /**
      * Add item to MidocoExternalSystem value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetExternalSystemsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetExternalSystemsResponse
      */
-    public function addToMidocoExternalSystem(\Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO $item): self
+    public function addToMidocoExternalSystem(\Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoExternalSystem property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ExternalSystemDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoExternalSystem property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ExternalSystemDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoExternalSystem[] = $item;
         

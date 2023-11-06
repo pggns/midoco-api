@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUnitNoticeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUnitNoticeRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetUnitNoticeRequest extends AbstractStructBase
     /**
      * Set midocoOrgUnitName value
      * @param string $midocoOrgUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetUnitNoticeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetUnitNoticeRequest
      */
     public function setMidocoOrgUnitName(?string $midocoOrgUnitName = null): self
     {

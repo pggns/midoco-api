@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DocFlightDetailDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DocFlightDetailDTO extends AbstractStructBase
 {
     /**

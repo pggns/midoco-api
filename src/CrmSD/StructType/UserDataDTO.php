@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UserDataDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UserDataDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class UserDataDTO extends AbstractStructBase
     /**
      * Set dataKey value
      * @param string $dataKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserDataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserDataDTO
      */
     public function setDataKey(?string $dataKey = null): self
     {
@@ -78,7 +79,7 @@ class UserDataDTO extends AbstractStructBase
     /**
      * Set dataValue value
      * @param string $dataValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserDataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserDataDTO
      */
     public function setDataValue(?string $dataValue = null): self
     {
@@ -101,7 +102,7 @@ class UserDataDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserDataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserDataDTO
      */
     public function setUserId(?int $userId = null): self
     {

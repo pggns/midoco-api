@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListTaskDetailsCriteria StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListTaskDetailsCriteria extends AbstractStructBase
 {
     /**
@@ -157,12 +158,13 @@ class ListTaskDetailsCriteria extends AbstractStructBase
         return $this->UnitCriteria;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitCriteria method
+     * This method is responsible for validating the value(s) passed to the setUnitCriteria method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitCriteria method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitCriteriaForArrayConstraintsFromSetUnitCriteria(?array $values = []): string
+    public static function validateUnitCriteriaForArrayConstraintFromSetUnitCriteria(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -191,7 +193,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     public function setUnitCriteria(?array $unitCriteria = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unitCriteriaArrayErrorMessage = self::validateUnitCriteriaForArrayConstraintsFromSetUnitCriteria($unitCriteria))) {
+        if ('' !== ($unitCriteriaArrayErrorMessage = self::validateUnitCriteriaForArrayConstraintFromSetUnitCriteria($unitCriteria))) {
             throw new InvalidArgumentException($unitCriteriaArrayErrorMessage, __LINE__);
         }
         // validation for constraint: maxOccurs(2)
@@ -231,12 +233,13 @@ class ListTaskDetailsCriteria extends AbstractStructBase
         return $this->queueName;
     }
     /**
-     * This method is responsible for validating the values passed to the setQueueName method
+     * This method is responsible for validating the value(s) passed to the setQueueName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setQueueName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateQueueNameForArrayConstraintsFromSetQueueName(?array $values = []): string
+    public static function validateQueueNameForArrayConstraintFromSetQueueName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -265,7 +268,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     public function setQueueName(?array $queueName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($queueNameArrayErrorMessage = self::validateQueueNameForArrayConstraintsFromSetQueueName($queueName))) {
+        if ('' !== ($queueNameArrayErrorMessage = self::validateQueueNameForArrayConstraintFromSetQueueName($queueName))) {
             throw new InvalidArgumentException($queueNameArrayErrorMessage, __LINE__);
         }
         $this->queueName = $queueName;
@@ -297,12 +300,13 @@ class ListTaskDetailsCriteria extends AbstractStructBase
         return $this->ownerOrgunit;
     }
     /**
-     * This method is responsible for validating the values passed to the setOwnerOrgunit method
+     * This method is responsible for validating the value(s) passed to the setOwnerOrgunit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOwnerOrgunit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOwnerOrgunitForArrayConstraintsFromSetOwnerOrgunit(?array $values = []): string
+    public static function validateOwnerOrgunitForArrayConstraintFromSetOwnerOrgunit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -331,7 +335,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     public function setOwnerOrgunit(?array $ownerOrgunit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($ownerOrgunitArrayErrorMessage = self::validateOwnerOrgunitForArrayConstraintsFromSetOwnerOrgunit($ownerOrgunit))) {
+        if ('' !== ($ownerOrgunitArrayErrorMessage = self::validateOwnerOrgunitForArrayConstraintFromSetOwnerOrgunit($ownerOrgunit))) {
             throw new InvalidArgumentException($ownerOrgunitArrayErrorMessage, __LINE__);
         }
         $this->ownerOrgunit = $ownerOrgunit;
@@ -363,12 +367,13 @@ class ListTaskDetailsCriteria extends AbstractStructBase
         return $this->delegationUser;
     }
     /**
-     * This method is responsible for validating the values passed to the setDelegationUser method
+     * This method is responsible for validating the value(s) passed to the setDelegationUser method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDelegationUser method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDelegationUserForArrayConstraintsFromSetDelegationUser(?array $values = []): string
+    public static function validateDelegationUserForArrayConstraintFromSetDelegationUser(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -397,7 +402,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     public function setDelegationUser(?array $delegationUser = null): self
     {
         // validation for constraint: array
-        if ('' !== ($delegationUserArrayErrorMessage = self::validateDelegationUserForArrayConstraintsFromSetDelegationUser($delegationUser))) {
+        if ('' !== ($delegationUserArrayErrorMessage = self::validateDelegationUserForArrayConstraintFromSetDelegationUser($delegationUser))) {
             throw new InvalidArgumentException($delegationUserArrayErrorMessage, __LINE__);
         }
         $this->delegationUser = $delegationUser;
@@ -429,12 +434,13 @@ class ListTaskDetailsCriteria extends AbstractStructBase
         return $this->taskTypes;
     }
     /**
-     * This method is responsible for validating the values passed to the setTaskTypes method
+     * This method is responsible for validating the value(s) passed to the setTaskTypes method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTaskTypes method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTaskTypesForArrayConstraintsFromSetTaskTypes(?array $values = []): string
+    public static function validateTaskTypesForArrayConstraintFromSetTaskTypes(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -463,7 +469,7 @@ class ListTaskDetailsCriteria extends AbstractStructBase
     public function setTaskTypes(?array $taskTypes = null): self
     {
         // validation for constraint: array
-        if ('' !== ($taskTypesArrayErrorMessage = self::validateTaskTypesForArrayConstraintsFromSetTaskTypes($taskTypes))) {
+        if ('' !== ($taskTypesArrayErrorMessage = self::validateTaskTypesForArrayConstraintFromSetTaskTypes($taskTypes))) {
             throw new InvalidArgumentException($taskTypesArrayErrorMessage, __LINE__);
         }
         $this->taskTypes = $taskTypes;

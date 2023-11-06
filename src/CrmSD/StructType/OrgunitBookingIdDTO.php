@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgunitBookingIdDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgunitBookingIdDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class OrgunitBookingIdDTO extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitBookingIdDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitBookingIdDTO
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -86,7 +87,7 @@ class OrgunitBookingIdDTO extends AbstractStructBase
     /**
      * Set extSystem value
      * @param string $extSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitBookingIdDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitBookingIdDTO
      */
     public function setExtSystem(?string $extSystem = null): self
     {
@@ -109,7 +110,7 @@ class OrgunitBookingIdDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitBookingIdDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitBookingIdDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -132,7 +133,7 @@ class OrgunitBookingIdDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitBookingIdDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitBookingIdDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

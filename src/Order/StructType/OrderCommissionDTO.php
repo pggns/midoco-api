@@ -11,13 +11,29 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrderCommissionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrderCommissionDTO extends AbstractStructBase
 {
+    /**
+     * The agencyCurrency
+     * @var string|null
+     */
+    protected ?string $agencyCurrency = null;
     /**
      * The basePrice
      * @var float|null
      */
     protected ?float $basePrice = null;
+    /**
+     * The basePriceAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $basePriceAgencyCurrency = null;
+    /**
+     * The commissionAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $commissionAgencyCurrency = null;
     /**
      * The commissionAmount
      * @var float|null
@@ -34,6 +50,11 @@ class OrderCommissionDTO extends AbstractStructBase
      */
     protected ?float $commissionBaseAmount = null;
     /**
+     * The commissionInsuranceAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $commissionInsuranceAgencyCurrency = null;
+    /**
      * The commissionInsuranceAmount
      * @var float|null
      */
@@ -43,6 +64,11 @@ class OrderCommissionDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $commissionVatAmount = null;
+    /**
+     * The commissionVatAmountAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $commissionVatAmountAgencyCurrency = null;
     /**
      * The description
      * @var string|null
@@ -85,12 +111,17 @@ class OrderCommissionDTO extends AbstractStructBase
     protected ?float $vatPercent = null;
     /**
      * Constructor method for OrderCommissionDTO
+     * @uses OrderCommissionDTO::setAgencyCurrency()
      * @uses OrderCommissionDTO::setBasePrice()
+     * @uses OrderCommissionDTO::setBasePriceAgencyCurrency()
+     * @uses OrderCommissionDTO::setCommissionAgencyCurrency()
      * @uses OrderCommissionDTO::setCommissionAmount()
      * @uses OrderCommissionDTO::setCommissionBase()
      * @uses OrderCommissionDTO::setCommissionBaseAmount()
+     * @uses OrderCommissionDTO::setCommissionInsuranceAgencyCurrency()
      * @uses OrderCommissionDTO::setCommissionInsuranceAmount()
      * @uses OrderCommissionDTO::setCommissionVatAmount()
+     * @uses OrderCommissionDTO::setCommissionVatAmountAgencyCurrency()
      * @uses OrderCommissionDTO::setDescription()
      * @uses OrderCommissionDTO::setId()
      * @uses OrderCommissionDTO::setIncludedVatAmount()
@@ -99,12 +130,17 @@ class OrderCommissionDTO extends AbstractStructBase
      * @uses OrderCommissionDTO::setItemId()
      * @uses OrderCommissionDTO::setOrderId()
      * @uses OrderCommissionDTO::setVatPercent()
+     * @param string $agencyCurrency
      * @param float $basePrice
+     * @param float $basePriceAgencyCurrency
+     * @param float $commissionAgencyCurrency
      * @param float $commissionAmount
      * @param float $commissionBase
      * @param float $commissionBaseAmount
+     * @param float $commissionInsuranceAgencyCurrency
      * @param float $commissionInsuranceAmount
      * @param float $commissionVatAmount
+     * @param float $commissionVatAmountAgencyCurrency
      * @param string $description
      * @param int $id
      * @param float $includedVatAmount
@@ -114,15 +150,20 @@ class OrderCommissionDTO extends AbstractStructBase
      * @param int $orderId
      * @param float $vatPercent
      */
-    public function __construct(?float $basePrice = null, ?float $commissionAmount = null, ?float $commissionBase = null, ?float $commissionBaseAmount = null, ?float $commissionInsuranceAmount = null, ?float $commissionVatAmount = null, ?string $description = null, ?int $id = null, ?float $includedVatAmount = null, ?bool $isAgencyFee = null, ?bool $isManual = null, ?int $itemId = null, ?int $orderId = null, ?float $vatPercent = null)
+    public function __construct(?string $agencyCurrency = null, ?float $basePrice = null, ?float $basePriceAgencyCurrency = null, ?float $commissionAgencyCurrency = null, ?float $commissionAmount = null, ?float $commissionBase = null, ?float $commissionBaseAmount = null, ?float $commissionInsuranceAgencyCurrency = null, ?float $commissionInsuranceAmount = null, ?float $commissionVatAmount = null, ?float $commissionVatAmountAgencyCurrency = null, ?string $description = null, ?int $id = null, ?float $includedVatAmount = null, ?bool $isAgencyFee = null, ?bool $isManual = null, ?int $itemId = null, ?int $orderId = null, ?float $vatPercent = null)
     {
         $this
+            ->setAgencyCurrency($agencyCurrency)
             ->setBasePrice($basePrice)
+            ->setBasePriceAgencyCurrency($basePriceAgencyCurrency)
+            ->setCommissionAgencyCurrency($commissionAgencyCurrency)
             ->setCommissionAmount($commissionAmount)
             ->setCommissionBase($commissionBase)
             ->setCommissionBaseAmount($commissionBaseAmount)
+            ->setCommissionInsuranceAgencyCurrency($commissionInsuranceAgencyCurrency)
             ->setCommissionInsuranceAmount($commissionInsuranceAmount)
             ->setCommissionVatAmount($commissionVatAmount)
+            ->setCommissionVatAmountAgencyCurrency($commissionVatAmountAgencyCurrency)
             ->setDescription($description)
             ->setId($id)
             ->setIncludedVatAmount($includedVatAmount)
@@ -131,6 +172,29 @@ class OrderCommissionDTO extends AbstractStructBase
             ->setItemId($itemId)
             ->setOrderId($orderId)
             ->setVatPercent($vatPercent);
+    }
+    /**
+     * Get agencyCurrency value
+     * @return string|null
+     */
+    public function getAgencyCurrency(): ?string
+    {
+        return $this->agencyCurrency;
+    }
+    /**
+     * Set agencyCurrency value
+     * @param string $agencyCurrency
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCommissionDTO
+     */
+    public function setAgencyCurrency(?string $agencyCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($agencyCurrency) && !is_string($agencyCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($agencyCurrency, true), gettype($agencyCurrency)), __LINE__);
+        }
+        $this->agencyCurrency = $agencyCurrency;
+        
+        return $this;
     }
     /**
      * Get basePrice value
@@ -152,6 +216,52 @@ class OrderCommissionDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($basePrice, true), gettype($basePrice)), __LINE__);
         }
         $this->basePrice = $basePrice;
+        
+        return $this;
+    }
+    /**
+     * Get basePriceAgencyCurrency value
+     * @return float|null
+     */
+    public function getBasePriceAgencyCurrency(): ?float
+    {
+        return $this->basePriceAgencyCurrency;
+    }
+    /**
+     * Set basePriceAgencyCurrency value
+     * @param float $basePriceAgencyCurrency
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCommissionDTO
+     */
+    public function setBasePriceAgencyCurrency(?float $basePriceAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($basePriceAgencyCurrency) && !(is_float($basePriceAgencyCurrency) || is_numeric($basePriceAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($basePriceAgencyCurrency, true), gettype($basePriceAgencyCurrency)), __LINE__);
+        }
+        $this->basePriceAgencyCurrency = $basePriceAgencyCurrency;
+        
+        return $this;
+    }
+    /**
+     * Get commissionAgencyCurrency value
+     * @return float|null
+     */
+    public function getCommissionAgencyCurrency(): ?float
+    {
+        return $this->commissionAgencyCurrency;
+    }
+    /**
+     * Set commissionAgencyCurrency value
+     * @param float $commissionAgencyCurrency
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCommissionDTO
+     */
+    public function setCommissionAgencyCurrency(?float $commissionAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($commissionAgencyCurrency) && !(is_float($commissionAgencyCurrency) || is_numeric($commissionAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionAgencyCurrency, true), gettype($commissionAgencyCurrency)), __LINE__);
+        }
+        $this->commissionAgencyCurrency = $commissionAgencyCurrency;
         
         return $this;
     }
@@ -225,6 +335,29 @@ class OrderCommissionDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get commissionInsuranceAgencyCurrency value
+     * @return float|null
+     */
+    public function getCommissionInsuranceAgencyCurrency(): ?float
+    {
+        return $this->commissionInsuranceAgencyCurrency;
+    }
+    /**
+     * Set commissionInsuranceAgencyCurrency value
+     * @param float $commissionInsuranceAgencyCurrency
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCommissionDTO
+     */
+    public function setCommissionInsuranceAgencyCurrency(?float $commissionInsuranceAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($commissionInsuranceAgencyCurrency) && !(is_float($commissionInsuranceAgencyCurrency) || is_numeric($commissionInsuranceAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionInsuranceAgencyCurrency, true), gettype($commissionInsuranceAgencyCurrency)), __LINE__);
+        }
+        $this->commissionInsuranceAgencyCurrency = $commissionInsuranceAgencyCurrency;
+        
+        return $this;
+    }
+    /**
      * Get commissionInsuranceAmount value
      * @return float|null
      */
@@ -267,6 +400,29 @@ class OrderCommissionDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionVatAmount, true), gettype($commissionVatAmount)), __LINE__);
         }
         $this->commissionVatAmount = $commissionVatAmount;
+        
+        return $this;
+    }
+    /**
+     * Get commissionVatAmountAgencyCurrency value
+     * @return float|null
+     */
+    public function getCommissionVatAmountAgencyCurrency(): ?float
+    {
+        return $this->commissionVatAmountAgencyCurrency;
+    }
+    /**
+     * Set commissionVatAmountAgencyCurrency value
+     * @param float $commissionVatAmountAgencyCurrency
+     * @return \Pggns\MidocoApi\Order\StructType\OrderCommissionDTO
+     */
+    public function setCommissionVatAmountAgencyCurrency(?float $commissionVatAmountAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($commissionVatAmountAgencyCurrency) && !(is_float($commissionVatAmountAgencyCurrency) || is_numeric($commissionVatAmountAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionVatAmountAgencyCurrency, true), gettype($commissionVatAmountAgencyCurrency)), __LINE__);
+        }
+        $this->commissionVatAmountAgencyCurrency = $commissionVatAmountAgencyCurrency;
         
         return $this;
     }

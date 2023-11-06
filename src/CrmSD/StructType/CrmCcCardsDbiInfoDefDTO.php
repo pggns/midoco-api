@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmCcCardsDbiInfoDefDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmCcCardsDbiInfoDefDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class CrmCcCardsDbiInfoDefDTO extends AbstractStructBase
     /**
      * Set cardNo value
      * @param string $cardNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardsDbiInfoDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardsDbiInfoDefDTO
      */
     public function setCardNo(?string $cardNo = null): self
     {
@@ -102,7 +103,7 @@ class CrmCcCardsDbiInfoDefDTO extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardsDbiInfoDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardsDbiInfoDefDTO
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -125,7 +126,7 @@ class CrmCcCardsDbiInfoDefDTO extends AbstractStructBase
     /**
      * Set ccCardId value
      * @param int $ccCardId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardsDbiInfoDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardsDbiInfoDefDTO
      */
     public function setCcCardId(?int $ccCardId = null): self
     {
@@ -148,7 +149,7 @@ class CrmCcCardsDbiInfoDefDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardsDbiInfoDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardsDbiInfoDefDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -171,7 +172,7 @@ class CrmCcCardsDbiInfoDefDTO extends AbstractStructBase
     /**
      * Set dbiInfoDefinition value
      * @param string $dbiInfoDefinition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardsDbiInfoDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardsDbiInfoDefDTO
      */
     public function setDbiInfoDefinition(?string $dbiInfoDefinition = null): self
     {
@@ -194,7 +195,7 @@ class CrmCcCardsDbiInfoDefDTO extends AbstractStructBase
     /**
      * Set dbiInfoKey value
      * @param string $dbiInfoKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardsDbiInfoDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardsDbiInfoDefDTO
      */
     public function setDbiInfoKey(?string $dbiInfoKey = null): self
     {

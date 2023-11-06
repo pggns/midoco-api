@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoInvoiceDataListSumsType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoInvoiceDataListSumsType extends AbstractStructBase
 {
     /**

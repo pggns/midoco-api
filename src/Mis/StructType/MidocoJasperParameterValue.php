@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoJasperParameterValue StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoJasperParameterValue extends AbstractStructBase
 {
     /**
@@ -47,12 +48,13 @@ class MidocoJasperParameterValue extends AbstractStructBase
         return $this->ParameterValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setParameterValue method
+     * This method is responsible for validating the value(s) passed to the setParameterValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setParameterValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateParameterValueForArrayConstraintsFromSetParameterValue(?array $values = []): string
+    public static function validateParameterValueForArrayConstraintFromSetParameterValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -81,7 +83,7 @@ class MidocoJasperParameterValue extends AbstractStructBase
     public function setParameterValue(?array $parameterValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($parameterValueArrayErrorMessage = self::validateParameterValueForArrayConstraintsFromSetParameterValue($parameterValue))) {
+        if ('' !== ($parameterValueArrayErrorMessage = self::validateParameterValueForArrayConstraintFromSetParameterValue($parameterValue))) {
             throw new InvalidArgumentException($parameterValueArrayErrorMessage, __LINE__);
         }
         $this->ParameterValue = $parameterValue;

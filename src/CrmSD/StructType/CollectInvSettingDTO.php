@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CollectInvSettingDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CollectInvSettingDTO extends AbstractStructBase
 {
     /**
@@ -127,7 +128,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set billingPerCustomerCostCentre value
      * @param bool $billingPerCustomerCostCentre
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setBillingPerCustomerCostCentre(?bool $billingPerCustomerCostCentre = null): self
     {
@@ -150,7 +151,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set billingPerItemCreationUser value
      * @param bool $billingPerItemCreationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setBillingPerItemCreationUser(?bool $billingPerItemCreationUser = null): self
     {
@@ -173,7 +174,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set creditCardType value
      * @param string $creditCardType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setCreditCardType(?string $creditCardType = null): self
     {
@@ -196,7 +197,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -219,7 +220,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set dedicatedCreditCardNo value
      * @param string $dedicatedCreditCardNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setDedicatedCreditCardNo(?string $dedicatedCreditCardNo = null): self
     {
@@ -242,7 +243,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set dedicatedCreditCardType value
      * @param string $dedicatedCreditCardType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setDedicatedCreditCardType(?string $dedicatedCreditCardType = null): self
     {
@@ -265,7 +266,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set immediatePayment value
      * @param bool $immediatePayment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setImmediatePayment(?bool $immediatePayment = null): self
     {
@@ -288,7 +289,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set itemType value
      * @param string $itemType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setItemType(?string $itemType = null): self
     {
@@ -311,7 +312,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set scheduled value
      * @param int $scheduled
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setScheduled(?int $scheduled = null): self
     {
@@ -334,7 +335,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set settingId value
      * @param int $settingId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setSettingId(?int $settingId = null): self
     {
@@ -357,7 +358,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -380,7 +381,7 @@ class CollectInvSettingDTO extends AbstractStructBase
     /**
      * Set useDepartureDateReference value
      * @param bool $useDepartureDateReference
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CollectInvSettingDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CollectInvSettingDTO
      */
     public function setUseDepartureDateReference(?bool $useDepartureDateReference = null): self
     {

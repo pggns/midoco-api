@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetATOLClassificationsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetATOLClassificationsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetATOLClassificationsResponse extends AbstractStructBase
         return $this->MidocoATOLType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoATOLType method
+     * This method is responsible for validating the value(s) passed to the setMidocoATOLType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoATOLType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoATOLTypeForArrayConstraintsFromSetMidocoATOLType(?array $values = []): string
+    public static function validateMidocoATOLTypeForArrayConstraintFromSetMidocoATOLType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetATOLClassificationsResponse extends AbstractStructBase
     public function setMidocoATOLType(?array $midocoATOLType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoATOLTypeArrayErrorMessage = self::validateMidocoATOLTypeForArrayConstraintsFromSetMidocoATOLType($midocoATOLType))) {
+        if ('' !== ($midocoATOLTypeArrayErrorMessage = self::validateMidocoATOLTypeForArrayConstraintFromSetMidocoATOLType($midocoATOLType))) {
             throw new InvalidArgumentException($midocoATOLTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoATOLType = $midocoATOLType;

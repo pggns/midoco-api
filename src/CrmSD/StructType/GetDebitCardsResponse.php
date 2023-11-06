@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getDebitCards --- returns the list of debit cards for a customer transmitted as parameter by customer id and the addresses
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDebitCardsResponse extends AbstractStructBase
 {
     /**
@@ -21,7 +22,7 @@ class GetDebitCardsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmDebitCard
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard[]
      */
     protected ?array $MidocoCrmDebitCard = null;
     /**
@@ -30,7 +31,7 @@ class GetDebitCardsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmAddress
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[]
      */
     protected ?array $MidocoCrmAddress = null;
     /**
@@ -39,25 +40,25 @@ class GetDebitCardsResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoCrmCompany
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $MidocoCrmCompany = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $MidocoCrmCompany = null;
     /**
      * The MidocoCrmPerson
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoCrmPerson
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $MidocoCrmPerson = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $MidocoCrmPerson = null;
     /**
      * The MidocoContactEntry
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     protected ?array $MidocoContactEntry = null;
     /**
@@ -65,9 +66,9 @@ class GetDebitCardsResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoMandate
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $MidocoMandate = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoMandate $MidocoMandate = null;
     /**
      * The salutationId
      * @var string|null
@@ -82,15 +83,15 @@ class GetDebitCardsResponse extends AbstractStructBase
      * @uses GetDebitCardsResponse::setMidocoContactEntry()
      * @uses GetDebitCardsResponse::setMidocoMandate()
      * @uses GetDebitCardsResponse::setSalutationId()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate $midocoMandate
      * @param string $salutationId
      */
-    public function __construct(?array $midocoCrmDebitCard = null, ?array $midocoCrmAddress = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson = null, ?array $midocoContactEntry = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate = null, ?string $salutationId = null)
+    public function __construct(?array $midocoCrmDebitCard = null, ?array $midocoCrmAddress = null, ?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany = null, ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson = null, ?array $midocoContactEntry = null, ?\Pggns\MidocoApi\Crmsd\StructType\MidocoMandate $midocoMandate = null, ?string $salutationId = null)
     {
         $this
             ->setMidocoCrmDebitCard($midocoCrmDebitCard)
@@ -103,19 +104,20 @@ class GetDebitCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmDebitCard value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard[]
      */
     public function getMidocoCrmDebitCard(): ?array
     {
         return $this->MidocoCrmDebitCard;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmDebitCard method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmDebitCard method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmDebitCard method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmDebitCardForArrayConstraintsFromSetMidocoCrmDebitCard(?array $values = []): string
+    public static function validateMidocoCrmDebitCardForArrayConstraintFromSetMidocoCrmDebitCard(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -124,12 +126,12 @@ class GetDebitCardsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDebitCardsResponseMidocoCrmDebitCardItem) {
             // validation for constraint: itemType
-            if (!$getDebitCardsResponseMidocoCrmDebitCardItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard) {
+            if (!$getDebitCardsResponseMidocoCrmDebitCardItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard) {
                 $invalidValues[] = is_object($getDebitCardsResponseMidocoCrmDebitCardItem) ? get_class($getDebitCardsResponseMidocoCrmDebitCardItem) : sprintf('%s(%s)', gettype($getDebitCardsResponseMidocoCrmDebitCardItem), var_export($getDebitCardsResponseMidocoCrmDebitCardItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -138,13 +140,13 @@ class GetDebitCardsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmDebitCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard[] $midocoCrmDebitCard
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
     public function setMidocoCrmDebitCard(?array $midocoCrmDebitCard = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmDebitCardArrayErrorMessage = self::validateMidocoCrmDebitCardForArrayConstraintsFromSetMidocoCrmDebitCard($midocoCrmDebitCard))) {
+        if ('' !== ($midocoCrmDebitCardArrayErrorMessage = self::validateMidocoCrmDebitCardForArrayConstraintFromSetMidocoCrmDebitCard($midocoCrmDebitCard))) {
             throw new InvalidArgumentException($midocoCrmDebitCardArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmDebitCard = $midocoCrmDebitCard;
@@ -154,14 +156,14 @@ class GetDebitCardsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmDebitCard value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
-    public function addToMidocoCrmDebitCard(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard $item): self
+    public function addToMidocoCrmDebitCard(\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmDebitCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmDebitCard property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmDebitCard, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmDebitCard[] = $item;
         
@@ -169,19 +171,20 @@ class GetDebitCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmAddress value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[]
      */
     public function getMidocoCrmAddress(): ?array
     {
         return $this->MidocoCrmAddress;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmAddress method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmAddress method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmAddress method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmAddressForArrayConstraintsFromSetMidocoCrmAddress(?array $values = []): string
+    public static function validateMidocoCrmAddressForArrayConstraintFromSetMidocoCrmAddress(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -190,12 +193,12 @@ class GetDebitCardsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDebitCardsResponseMidocoCrmAddressItem) {
             // validation for constraint: itemType
-            if (!$getDebitCardsResponseMidocoCrmAddressItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress) {
+            if (!$getDebitCardsResponseMidocoCrmAddressItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress) {
                 $invalidValues[] = is_object($getDebitCardsResponseMidocoCrmAddressItem) ? get_class($getDebitCardsResponseMidocoCrmAddressItem) : sprintf('%s(%s)', gettype($getDebitCardsResponseMidocoCrmAddressItem), var_export($getDebitCardsResponseMidocoCrmAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -204,13 +207,13 @@ class GetDebitCardsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress[] $midocoCrmAddress
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress[] $midocoCrmAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
     public function setMidocoCrmAddress(?array $midocoCrmAddress = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmAddressArrayErrorMessage = self::validateMidocoCrmAddressForArrayConstraintsFromSetMidocoCrmAddress($midocoCrmAddress))) {
+        if ('' !== ($midocoCrmAddressArrayErrorMessage = self::validateMidocoCrmAddressForArrayConstraintFromSetMidocoCrmAddress($midocoCrmAddress))) {
             throw new InvalidArgumentException($midocoCrmAddressArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmAddress = $midocoCrmAddress;
@@ -220,14 +223,14 @@ class GetDebitCardsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmAddress value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
-    public function addToMidocoCrmAddress(\Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress $item): self
+    public function addToMidocoCrmAddress(\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmAddress property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmAddress[] = $item;
         
@@ -235,18 +238,18 @@ class GetDebitCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCompany value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO|null
      */
-    public function getMidocoCrmCompany(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+    public function getMidocoCrmCompany(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
     {
         return $this->MidocoCrmCompany;
     }
     /**
      * Set MidocoCrmCompany value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
-    public function setMidocoCrmCompany(?\Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO $midocoCrmCompany = null): self
+    public function setMidocoCrmCompany(?\Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO $midocoCrmCompany = null): self
     {
         $this->MidocoCrmCompany = $midocoCrmCompany;
         
@@ -254,18 +257,18 @@ class GetDebitCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmPerson value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO|null
      */
-    public function getMidocoCrmPerson(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO
+    public function getMidocoCrmPerson(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO
     {
         return $this->MidocoCrmPerson;
     }
     /**
      * Set MidocoCrmPerson value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
-    public function setMidocoCrmPerson(?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonDTO $midocoCrmPerson = null): self
+    public function setMidocoCrmPerson(?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonDTO $midocoCrmPerson = null): self
     {
         $this->MidocoCrmPerson = $midocoCrmPerson;
         
@@ -273,19 +276,20 @@ class GetDebitCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     public function getMidocoContactEntry(): ?array
     {
         return $this->MidocoContactEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry(?array $values = []): string
+    public static function validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -294,12 +298,12 @@ class GetDebitCardsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getDebitCardsResponseMidocoContactEntryItem) {
             // validation for constraint: itemType
-            if (!$getDebitCardsResponseMidocoContactEntryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
+            if (!$getDebitCardsResponseMidocoContactEntryItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
                 $invalidValues[] = is_object($getDebitCardsResponseMidocoContactEntryItem) ? get_class($getDebitCardsResponseMidocoContactEntryItem) : sprintf('%s(%s)', gettype($getDebitCardsResponseMidocoContactEntryItem), var_export($getDebitCardsResponseMidocoContactEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -308,13 +312,13 @@ class GetDebitCardsResponse extends AbstractStructBase
     /**
      * Set MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry($midocoContactEntry))) {
+        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry($midocoContactEntry))) {
             throw new InvalidArgumentException($midocoContactEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactEntry = $midocoContactEntry;
@@ -324,14 +328,14 @@ class GetDebitCardsResponse extends AbstractStructBase
     /**
      * Add item to MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
-    public function addToMidocoContactEntry(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item): self
+    public function addToMidocoContactEntry(\Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntry[] = $item;
         
@@ -339,18 +343,18 @@ class GetDebitCardsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMandate value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate|null
      */
-    public function getMidocoMandate(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate
+    public function getMidocoMandate(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoMandate
     {
         return $this->MidocoMandate;
     }
     /**
      * Set MidocoMandate value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate $midocoMandate
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
-    public function setMidocoMandate(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMandate $midocoMandate = null): self
+    public function setMidocoMandate(?\Pggns\MidocoApi\Crmsd\StructType\MidocoMandate $midocoMandate = null): self
     {
         $this->MidocoMandate = $midocoMandate;
         
@@ -367,7 +371,7 @@ class GetDebitCardsResponse extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitCardsResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitCardsResponse
      */
     public function setSalutationId(?string $salutationId = null): self
     {

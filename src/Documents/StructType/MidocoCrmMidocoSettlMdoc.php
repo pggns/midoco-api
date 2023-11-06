@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmMidocoSettlMdoc StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
 {
     /**
@@ -53,12 +54,13 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
         return $this->MidocoCrmMidocoSettlMdocLevel;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoSettlMdocLevel method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoSettlMdocLevel method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoSettlMdocLevel method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlMdocLevel(?array $values = []): string
+    public static function validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintFromSetMidocoCrmMidocoSettlMdocLevel(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -87,7 +89,7 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     public function setMidocoCrmMidocoSettlMdocLevel(?array $midocoCrmMidocoSettlMdocLevel = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoSettlMdocLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlMdocLevel($midocoCrmMidocoSettlMdocLevel))) {
+        if ('' !== ($midocoCrmMidocoSettlMdocLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintFromSetMidocoCrmMidocoSettlMdocLevel($midocoCrmMidocoSettlMdocLevel))) {
             throw new InvalidArgumentException($midocoCrmMidocoSettlMdocLevelArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoSettlMdocLevel = $midocoCrmMidocoSettlMdocLevel;
@@ -119,12 +121,13 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
         return $this->MidocoAssignedMidocoMdocOUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAssignedMidocoMdocOUnit method
+     * This method is responsible for validating the value(s) passed to the setMidocoAssignedMidocoMdocOUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAssignedMidocoMdocOUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAssignedMidocoMdocOUnitForArrayConstraintsFromSetMidocoAssignedMidocoMdocOUnit(?array $values = []): string
+    public static function validateMidocoAssignedMidocoMdocOUnitForArrayConstraintFromSetMidocoAssignedMidocoMdocOUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,7 +156,7 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     public function setMidocoAssignedMidocoMdocOUnit(?array $midocoAssignedMidocoMdocOUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAssignedMidocoMdocOUnitArrayErrorMessage = self::validateMidocoAssignedMidocoMdocOUnitForArrayConstraintsFromSetMidocoAssignedMidocoMdocOUnit($midocoAssignedMidocoMdocOUnit))) {
+        if ('' !== ($midocoAssignedMidocoMdocOUnitArrayErrorMessage = self::validateMidocoAssignedMidocoMdocOUnitForArrayConstraintFromSetMidocoAssignedMidocoMdocOUnit($midocoAssignedMidocoMdocOUnit))) {
             throw new InvalidArgumentException($midocoAssignedMidocoMdocOUnitArrayErrorMessage, __LINE__);
         }
         $this->MidocoAssignedMidocoMdocOUnit = $midocoAssignedMidocoMdocOUnit;

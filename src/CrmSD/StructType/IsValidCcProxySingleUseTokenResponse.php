@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for IsValidCcProxySingleUseTokenResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class IsValidCcProxySingleUseTokenResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class IsValidCcProxySingleUseTokenResponse extends AbstractStructBase
     /**
      * Set valid value
      * @param bool $valid
-     * @return \Pggns\MidocoApi\CrmSD\StructType\IsValidCcProxySingleUseTokenResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\IsValidCcProxySingleUseTokenResponse
      */
     public function setValid(?bool $valid = null): self
     {

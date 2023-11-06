@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for NovomindRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class NovomindRequest extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set accessToken value
      * @param string $accessToken
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NovomindRequest
      */
     public function setAccessToken(?string $accessToken = null): self
     {
@@ -94,7 +95,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NovomindRequest
      */
     public function setUrl(?string $url = null): self
     {
@@ -117,7 +118,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set methodType value
      * @param string $methodType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NovomindRequest
      */
     public function setMethodType(?string $methodType = null): self
     {
@@ -140,7 +141,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set method value
      * @param string $method
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NovomindRequest
      */
     public function setMethod(?string $method = null): self
     {
@@ -163,7 +164,7 @@ class NovomindRequest extends AbstractStructBase
     /**
      * Set data value
      * @param string $data
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NovomindRequest
      */
     public function setData(?string $data = null): self
     {

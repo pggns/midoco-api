@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteMisReportParam --- deletes the given parameter of an mis report
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMisReportParamResponse extends AbstractStructBase
 {
 }

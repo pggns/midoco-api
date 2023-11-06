@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCustomerInternalVersionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustomerInternalVersionResponse extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class GetCustomerInternalVersionResponse extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerInternalVersionResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerInternalVersionResponse
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +79,7 @@ class GetCustomerInternalVersionResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerInternalVersionResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerInternalVersionResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -101,7 +102,7 @@ class GetCustomerInternalVersionResponse extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerInternalVersionResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerInternalVersionResponse
      */
     public function setModifyUser(?int $modifyUser = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteMediatorSettlementLevelsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMediatorSettlementLevelsRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class DeleteMediatorSettlementLevelsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMediatorSettlementLevelsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMediatorSettlementLevelsRequest
      */
     public function setCustomerId(int $customerId): self
     {

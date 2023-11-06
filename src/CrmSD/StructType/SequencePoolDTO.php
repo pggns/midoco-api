@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SequencePoolDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SequencePoolDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set endValue value
      * @param int $endValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencePoolDTO
      */
     public function setEndValue(?int $endValue = null): self
     {
@@ -110,7 +111,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set increment value
      * @param int $increment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencePoolDTO
      */
     public function setIncrement(?int $increment = null): self
     {
@@ -133,7 +134,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set sequenceName value
      * @param string $sequenceName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencePoolDTO
      */
     public function setSequenceName(?string $sequenceName = null): self
     {
@@ -156,7 +157,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set sequencePoolId value
      * @param int $sequencePoolId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencePoolDTO
      */
     public function setSequencePoolId(?int $sequencePoolId = null): self
     {
@@ -179,7 +180,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set startValue value
      * @param int $startValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencePoolDTO
      */
     public function setStartValue(?int $startValue = null): self
     {
@@ -202,7 +203,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencePoolDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +226,7 @@ class SequencePoolDTO extends AbstractStructBase
     /**
      * Set value value
      * @param int $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencePoolDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencePoolDTO
      */
     public function setValue(?int $value = null): self
     {

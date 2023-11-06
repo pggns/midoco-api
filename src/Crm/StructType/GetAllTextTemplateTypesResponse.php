@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllTextTemplateTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllTextTemplateTypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAllTextTemplateTypesResponse extends AbstractStructBase
         return $this->MidocoTextTemplateTypeExt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTextTemplateTypeExt method
+     * This method is responsible for validating the value(s) passed to the setMidocoTextTemplateTypeExt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTextTemplateTypeExt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTextTemplateTypeExtForArrayConstraintsFromSetMidocoTextTemplateTypeExt(?array $values = []): string
+    public static function validateMidocoTextTemplateTypeExtForArrayConstraintFromSetMidocoTextTemplateTypeExt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAllTextTemplateTypesResponse extends AbstractStructBase
     public function setMidocoTextTemplateTypeExt(?array $midocoTextTemplateTypeExt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTextTemplateTypeExtArrayErrorMessage = self::validateMidocoTextTemplateTypeExtForArrayConstraintsFromSetMidocoTextTemplateTypeExt($midocoTextTemplateTypeExt))) {
+        if ('' !== ($midocoTextTemplateTypeExtArrayErrorMessage = self::validateMidocoTextTemplateTypeExtForArrayConstraintFromSetMidocoTextTemplateTypeExt($midocoTextTemplateTypeExt))) {
             throw new InvalidArgumentException($midocoTextTemplateTypeExtArrayErrorMessage, __LINE__);
         }
         $this->MidocoTextTemplateTypeExt = $midocoTextTemplateTypeExt;

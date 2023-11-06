@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Service fee information, calculated by a delivering system, like storno fee, change fee, name change fee etc.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Packagefee extends AbstractStructBase
 {
     /**
@@ -71,6 +72,13 @@ class Packagefee extends AbstractStructBase
      */
     protected ?string $supplier_id = null;
     /**
+     * The booking_id
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $booking_id = null;
+    /**
      * The status
      * Meta information extracted from the WSDL
      * - default: OK
@@ -101,6 +109,7 @@ class Packagefee extends AbstractStructBase
      * @uses Packagefee::setVat_included()
      * @uses Packagefee::setFee_calculation_info()
      * @uses Packagefee::setSupplier_id()
+     * @uses Packagefee::setBooking_id()
      * @uses Packagefee::setStatus()
      * @uses Packagefee::setPosition()
      * @uses Packagefee::setPrevent_printing()
@@ -113,11 +122,12 @@ class Packagefee extends AbstractStructBase
      * @param bool $vat_included
      * @param string $fee_calculation_info
      * @param string $supplier_id
+     * @param string $booking_id
      * @param string $status
      * @param int $position
      * @param bool $prevent_printing
      */
-    public function __construct(?string $fee_code = null, ?string $fee_description = null, ?float $total_price = null, ?string $currency = null, ?float $vat_free_amount = null, ?float $taxable_amount = null, ?bool $vat_included = null, ?string $fee_calculation_info = null, ?string $supplier_id = null, ?string $status = 'OK', ?int $position = null, ?bool $prevent_printing = null)
+    public function __construct(?string $fee_code = null, ?string $fee_description = null, ?float $total_price = null, ?string $currency = null, ?float $vat_free_amount = null, ?float $taxable_amount = null, ?bool $vat_included = null, ?string $fee_calculation_info = null, ?string $supplier_id = null, ?string $booking_id = null, ?string $status = 'OK', ?int $position = null, ?bool $prevent_printing = null)
     {
         $this
             ->setFee_code($fee_code)
@@ -129,6 +139,7 @@ class Packagefee extends AbstractStructBase
             ->setVat_included($vat_included)
             ->setFee_calculation_info($fee_calculation_info)
             ->setSupplier_id($supplier_id)
+            ->setBooking_id($booking_id)
             ->setStatus($status)
             ->setPosition($position)
             ->setPrevent_printing($prevent_printing);
@@ -337,6 +348,29 @@ class Packagefee extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplier_id, true), gettype($supplier_id)), __LINE__);
         }
         $this->supplier_id = $this->{'supplier-id'} = $supplier_id;
+        
+        return $this;
+    }
+    /**
+     * Get booking_id value
+     * @return string|null
+     */
+    public function getBooking_id(): ?string
+    {
+        return $this->{'booking-id'};
+    }
+    /**
+     * Set booking_id value
+     * @param string $booking_id
+     * @return \Pggns\MidocoApi\Documents\StructType\Packagefee
+     */
+    public function setBooking_id(?string $booking_id = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($booking_id) && !is_string($booking_id)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($booking_id, true), gettype($booking_id)), __LINE__);
+        }
+        $this->booking_id = $this->{'booking-id'} = $booking_id;
         
         return $this;
     }

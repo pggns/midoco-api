@@ -19,7 +19,7 @@ class Search extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Crm\ServiceType\Search
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -270,9 +270,36 @@ class Search extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named searchCrmExternalOffer
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Crm\StructType\SearchCrmExternalOfferRequest $paramSearchCrmExternalOfferRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchCrmExternalOfferResponse|bool
+     */
+    public function searchCrmExternalOffer(\Pggns\MidocoApi\Crm\StructType\SearchCrmExternalOfferRequest $paramSearchCrmExternalOfferRequest)
+    {
+        try {
+            $this->setResult($resultSearchCrmExternalOffer = $this->getSoapClient()->__soapCall('searchCrmExternalOffer', [
+                $paramSearchCrmExternalOfferRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultSearchCrmExternalOffer;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Crm\StructType\SearchBankResponse|\Pggns\MidocoApi\Crm\StructType\SearchBlackListResponse|\Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerByTravelResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerResponse|\Pggns\MidocoApi\Crm\StructType\SearchMidocoMandateResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\SearchBankResponse|\Pggns\MidocoApi\Crm\StructType\SearchBlackListResponse|\Pggns\MidocoApi\Crm\StructType\SearchCrmExternalOfferResponse|\Pggns\MidocoApi\Crm\StructType\SearchCrmTravellersResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustDoubleAddrResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerByPhoneResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerByTravelResponse|\Pggns\MidocoApi\Crm\StructType\SearchCustomerResponse|\Pggns\MidocoApi\Crm\StructType\SearchMidocoMandateResponse
      */
     public function getResult()
     {

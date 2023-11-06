@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SetConfirmationRequiredOfSellitemRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
 {
     /**
@@ -72,12 +73,13 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
         return $this->MidocoSupplierMailNotReceivedInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierMailNotReceivedInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierMailNotReceivedInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierMailNotReceivedInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierMailNotReceivedInfoForArrayConstraintsFromSetMidocoSupplierMailNotReceivedInfo(?array $values = []): string
+    public static function validateMidocoSupplierMailNotReceivedInfoForArrayConstraintFromSetMidocoSupplierMailNotReceivedInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -106,7 +108,7 @@ class SetConfirmationRequiredOfSellitemRequest extends AbstractStructBase
     public function setMidocoSupplierMailNotReceivedInfo(?array $midocoSupplierMailNotReceivedInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierMailNotReceivedInfoArrayErrorMessage = self::validateMidocoSupplierMailNotReceivedInfoForArrayConstraintsFromSetMidocoSupplierMailNotReceivedInfo($midocoSupplierMailNotReceivedInfo))) {
+        if ('' !== ($midocoSupplierMailNotReceivedInfoArrayErrorMessage = self::validateMidocoSupplierMailNotReceivedInfoForArrayConstraintFromSetMidocoSupplierMailNotReceivedInfo($midocoSupplierMailNotReceivedInfo))) {
             throw new InvalidArgumentException($midocoSupplierMailNotReceivedInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierMailNotReceivedInfo = $midocoSupplierMailNotReceivedInfo;

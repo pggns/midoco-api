@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCcToken StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCcToken extends CcTokenDTO
 {
     /**
@@ -19,7 +20,7 @@ class MidocoCcToken extends CcTokenDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCcTokenAttr
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr[]
      */
     protected ?array $MidocoCcTokenAttr = null;
     /**
@@ -37,7 +38,7 @@ class MidocoCcToken extends CcTokenDTO
      * @uses MidocoCcToken::setMidocoCcTokenAttr()
      * @uses MidocoCcToken::setCcMask()
      * @uses MidocoCcToken::setLookupLink()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr[] $midocoCcTokenAttr
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr[] $midocoCcTokenAttr
      * @param string $ccMask
      * @param string $lookupLink
      */
@@ -50,19 +51,20 @@ class MidocoCcToken extends CcTokenDTO
     }
     /**
      * Get MidocoCcTokenAttr value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr[]
      */
     public function getMidocoCcTokenAttr(): ?array
     {
         return $this->MidocoCcTokenAttr;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCcTokenAttr method
+     * This method is responsible for validating the value(s) passed to the setMidocoCcTokenAttr method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCcTokenAttr method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCcTokenAttrForArrayConstraintsFromSetMidocoCcTokenAttr(?array $values = []): string
+    public static function validateMidocoCcTokenAttrForArrayConstraintFromSetMidocoCcTokenAttr(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -71,12 +73,12 @@ class MidocoCcToken extends CcTokenDTO
         $invalidValues = [];
         foreach ($values as $midocoCcTokenMidocoCcTokenAttrItem) {
             // validation for constraint: itemType
-            if (!$midocoCcTokenMidocoCcTokenAttrItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr) {
+            if (!$midocoCcTokenMidocoCcTokenAttrItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr) {
                 $invalidValues[] = is_object($midocoCcTokenMidocoCcTokenAttrItem) ? get_class($midocoCcTokenMidocoCcTokenAttrItem) : sprintf('%s(%s)', gettype($midocoCcTokenMidocoCcTokenAttrItem), var_export($midocoCcTokenMidocoCcTokenAttrItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCcTokenAttr property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCcTokenAttr property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -85,13 +87,13 @@ class MidocoCcToken extends CcTokenDTO
     /**
      * Set MidocoCcTokenAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr[] $midocoCcTokenAttr
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr[] $midocoCcTokenAttr
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCcToken
      */
     public function setMidocoCcTokenAttr(?array $midocoCcTokenAttr = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCcTokenAttrArrayErrorMessage = self::validateMidocoCcTokenAttrForArrayConstraintsFromSetMidocoCcTokenAttr($midocoCcTokenAttr))) {
+        if ('' !== ($midocoCcTokenAttrArrayErrorMessage = self::validateMidocoCcTokenAttrForArrayConstraintFromSetMidocoCcTokenAttr($midocoCcTokenAttr))) {
             throw new InvalidArgumentException($midocoCcTokenAttrArrayErrorMessage, __LINE__);
         }
         $this->MidocoCcTokenAttr = $midocoCcTokenAttr;
@@ -101,14 +103,14 @@ class MidocoCcToken extends CcTokenDTO
     /**
      * Add item to MidocoCcTokenAttr value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCcToken
      */
-    public function addToMidocoCcTokenAttr(\Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr $item): self
+    public function addToMidocoCcTokenAttr(\Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr) {
-            throw new InvalidArgumentException(sprintf('The MidocoCcTokenAttr property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCcTokenAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr) {
+            throw new InvalidArgumentException(sprintf('The MidocoCcTokenAttr property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCcTokenAttr, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCcTokenAttr[] = $item;
         
@@ -125,7 +127,7 @@ class MidocoCcToken extends CcTokenDTO
     /**
      * Set ccMask value
      * @param string $ccMask
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCcToken
      */
     public function setCcMask(?string $ccMask = null): self
     {
@@ -148,7 +150,7 @@ class MidocoCcToken extends CcTokenDTO
     /**
      * Set lookupLink value
      * @param string $lookupLink
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCcToken
      */
     public function setLookupLink(?string $lookupLink = null): self
     {

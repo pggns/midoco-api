@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintSelectsForOrderRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintSelectsForOrderRequest extends AbstractStructBase
 {
     /**
@@ -67,12 +68,13 @@ class GetPrintSelectsForOrderRequest extends AbstractStructBase
         return $this->handler;
     }
     /**
-     * This method is responsible for validating the values passed to the setHandler method
+     * This method is responsible for validating the value(s) passed to the setHandler method
      * This method is willingly generated in order to preserve the one-line inline validation within the setHandler method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateHandlerForArrayConstraintsFromSetHandler(?array $values = []): string
+    public static function validateHandlerForArrayConstraintFromSetHandler(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -101,7 +103,7 @@ class GetPrintSelectsForOrderRequest extends AbstractStructBase
     public function setHandler(?array $handler = null): self
     {
         // validation for constraint: array
-        if ('' !== ($handlerArrayErrorMessage = self::validateHandlerForArrayConstraintsFromSetHandler($handler))) {
+        if ('' !== ($handlerArrayErrorMessage = self::validateHandlerForArrayConstraintFromSetHandler($handler))) {
             throw new InvalidArgumentException($handlerArrayErrorMessage, __LINE__);
         }
         $this->handler = $handler;

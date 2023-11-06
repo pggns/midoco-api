@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Container for OrderAttributes and SellItemAttributes that need to be saved.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrderAttributeValues extends AbstractStructBase
 {
     /**
@@ -53,12 +54,13 @@ class MidocoOrderAttributeValues extends AbstractStructBase
         return $this->orderAttr;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrderAttr method
+     * This method is responsible for validating the value(s) passed to the setOrderAttr method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrderAttr method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrderAttrForArrayConstraintsFromSetOrderAttr(?array $values = []): string
+    public static function validateOrderAttrForArrayConstraintFromSetOrderAttr(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -87,7 +89,7 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     public function setOrderAttr(?array $orderAttr = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orderAttrArrayErrorMessage = self::validateOrderAttrForArrayConstraintsFromSetOrderAttr($orderAttr))) {
+        if ('' !== ($orderAttrArrayErrorMessage = self::validateOrderAttrForArrayConstraintFromSetOrderAttr($orderAttr))) {
             throw new InvalidArgumentException($orderAttrArrayErrorMessage, __LINE__);
         }
         $this->orderAttr = $orderAttr;
@@ -119,12 +121,13 @@ class MidocoOrderAttributeValues extends AbstractStructBase
         return $this->itemAttr;
     }
     /**
-     * This method is responsible for validating the values passed to the setItemAttr method
+     * This method is responsible for validating the value(s) passed to the setItemAttr method
      * This method is willingly generated in order to preserve the one-line inline validation within the setItemAttr method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateItemAttrForArrayConstraintsFromSetItemAttr(?array $values = []): string
+    public static function validateItemAttrForArrayConstraintFromSetItemAttr(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,7 +156,7 @@ class MidocoOrderAttributeValues extends AbstractStructBase
     public function setItemAttr(?array $itemAttr = null): self
     {
         // validation for constraint: array
-        if ('' !== ($itemAttrArrayErrorMessage = self::validateItemAttrForArrayConstraintsFromSetItemAttr($itemAttr))) {
+        if ('' !== ($itemAttrArrayErrorMessage = self::validateItemAttrForArrayConstraintFromSetItemAttr($itemAttr))) {
             throw new InvalidArgumentException($itemAttrArrayErrorMessage, __LINE__);
         }
         $this->itemAttr = $itemAttr;

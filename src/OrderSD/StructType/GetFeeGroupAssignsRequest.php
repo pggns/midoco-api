@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetFeeGroupAssignsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFeeGroupAssignsRequest extends AbstractStructBase
 {
     /**
@@ -79,12 +80,13 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
         return $this->groupId;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroupId method
+     * This method is responsible for validating the value(s) passed to the setGroupId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroupId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroupIdForArrayConstraintsFromSetGroupId(?array $values = []): string
+    public static function validateGroupIdForArrayConstraintFromSetGroupId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -113,7 +115,7 @@ class GetFeeGroupAssignsRequest extends AbstractStructBase
     public function setGroupId(?array $groupId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($groupIdArrayErrorMessage = self::validateGroupIdForArrayConstraintsFromSetGroupId($groupId))) {
+        if ('' !== ($groupIdArrayErrorMessage = self::validateGroupIdForArrayConstraintFromSetGroupId($groupId))) {
             throw new InvalidArgumentException($groupIdArrayErrorMessage, __LINE__);
         }
         $this->groupId = $groupId;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TicketListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TicketListResponse extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class TicketListResponse extends AbstractStructBase
         return $this->MidocoTicketList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTicketList method
+     * This method is responsible for validating the value(s) passed to the setMidocoTicketList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTicketList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTicketListForArrayConstraintsFromSetMidocoTicketList(?array $values = []): string
+    public static function validateMidocoTicketListForArrayConstraintFromSetMidocoTicketList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class TicketListResponse extends AbstractStructBase
     public function setMidocoTicketList(?array $midocoTicketList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTicketListArrayErrorMessage = self::validateMidocoTicketListForArrayConstraintsFromSetMidocoTicketList($midocoTicketList))) {
+        if ('' !== ($midocoTicketListArrayErrorMessage = self::validateMidocoTicketListForArrayConstraintFromSetMidocoTicketList($midocoTicketList))) {
             throw new InvalidArgumentException($midocoTicketListArrayErrorMessage, __LINE__);
         }
         $this->MidocoTicketList = $midocoTicketList;

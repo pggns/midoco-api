@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GuiAttributeDefinitionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GuiAttributeDefinitionDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class GuiAttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GuiAttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GuiAttributeDefinitionDTO
      */
     public function setAttributeId(?int $attributeId = null): self
     {
@@ -102,7 +103,7 @@ class GuiAttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GuiAttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GuiAttributeDefinitionDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -125,7 +126,7 @@ class GuiAttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set groupId value
      * @param string $groupId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GuiAttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GuiAttributeDefinitionDTO
      */
     public function setGroupId(?string $groupId = null): self
     {
@@ -148,7 +149,7 @@ class GuiAttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set isVisible value
      * @param bool $isVisible
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GuiAttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GuiAttributeDefinitionDTO
      */
     public function setIsVisible(?bool $isVisible = null): self
     {
@@ -171,7 +172,7 @@ class GuiAttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GuiAttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GuiAttributeDefinitionDTO
      */
     public function setPosition(?int $position = null): self
     {
@@ -194,7 +195,7 @@ class GuiAttributeDefinitionDTO extends AbstractStructBase
     /**
      * Set preferredWidth value
      * @param int $preferredWidth
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GuiAttributeDefinitionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GuiAttributeDefinitionDTO
      */
     public function setPreferredWidth(?int $preferredWidth = null): self
     {

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: return the fee types taht match the criteria
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
         return $this->MidocoFeeType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFeeType method
+     * This method is responsible for validating the value(s) passed to the setMidocoFeeType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFeeType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFeeTypeForArrayConstraintsFromSetMidocoFeeType(?array $values = []): string
+    public static function validateMidocoFeeTypeForArrayConstraintFromSetMidocoFeeType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class ListAssignedMidocoFeeTypesResponse extends AbstractStructBase
     public function setMidocoFeeType(?array $midocoFeeType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFeeTypeArrayErrorMessage = self::validateMidocoFeeTypeForArrayConstraintsFromSetMidocoFeeType($midocoFeeType))) {
+        if ('' !== ($midocoFeeTypeArrayErrorMessage = self::validateMidocoFeeTypeForArrayConstraintFromSetMidocoFeeType($midocoFeeType))) {
             throw new InvalidArgumentException($midocoFeeTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoFeeType = $midocoFeeType;

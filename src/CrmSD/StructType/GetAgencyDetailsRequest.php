@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgencyDetailsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgencyDetailsRequest extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class GetAgencyDetailsRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyDetailsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyDetailsRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -78,7 +79,7 @@ class GetAgencyDetailsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyDetailsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyDetailsRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -101,7 +102,7 @@ class GetAgencyDetailsRequest extends AbstractStructBase
     /**
      * Set cooperationDate value
      * @param string $cooperationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyDetailsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyDetailsRequest
      */
     public function setCooperationDate(?string $cooperationDate = null): self
     {

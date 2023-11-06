@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckEmailReachabilityRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckEmailReachabilityRequest extends AbstractStructBase
 {
     /**

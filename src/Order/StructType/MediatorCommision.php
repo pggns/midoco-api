@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MediatorCommision StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MediatorCommision extends AbstractStructBase
 {
     /**
@@ -172,12 +173,13 @@ class MediatorCommision extends AbstractStructBase
         return $this->TourOperatorGroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setTourOperatorGroup method
+     * This method is responsible for validating the value(s) passed to the setTourOperatorGroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTourOperatorGroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTourOperatorGroupForArrayConstraintsFromSetTourOperatorGroup(?array $values = []): string
+    public static function validateTourOperatorGroupForArrayConstraintFromSetTourOperatorGroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -206,7 +208,7 @@ class MediatorCommision extends AbstractStructBase
     public function setTourOperatorGroup(?array $tourOperatorGroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($tourOperatorGroupArrayErrorMessage = self::validateTourOperatorGroupForArrayConstraintsFromSetTourOperatorGroup($tourOperatorGroup))) {
+        if ('' !== ($tourOperatorGroupArrayErrorMessage = self::validateTourOperatorGroupForArrayConstraintFromSetTourOperatorGroup($tourOperatorGroup))) {
             throw new InvalidArgumentException($tourOperatorGroupArrayErrorMessage, __LINE__);
         }
         $this->TourOperatorGroup = $tourOperatorGroup;

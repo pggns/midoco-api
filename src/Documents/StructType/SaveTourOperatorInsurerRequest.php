@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveTourOperatorInsurerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveTourOperatorInsurerRequest extends AbstractStructBase
 {
     /**

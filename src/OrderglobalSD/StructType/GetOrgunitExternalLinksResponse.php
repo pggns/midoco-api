@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrgunitExternalLinksResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrgunitExternalLinksResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrgunitExternalLinksResponse extends AbstractStructBase
         return $this->MidocoOrgunitExternalLink;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrgunitExternalLink method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrgunitExternalLink method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrgunitExternalLink method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrgunitExternalLinkForArrayConstraintsFromSetMidocoOrgunitExternalLink(?array $values = []): string
+    public static function validateMidocoOrgunitExternalLinkForArrayConstraintFromSetMidocoOrgunitExternalLink(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrgunitExternalLinksResponse extends AbstractStructBase
     public function setMidocoOrgunitExternalLink(?array $midocoOrgunitExternalLink = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrgunitExternalLinkArrayErrorMessage = self::validateMidocoOrgunitExternalLinkForArrayConstraintsFromSetMidocoOrgunitExternalLink($midocoOrgunitExternalLink))) {
+        if ('' !== ($midocoOrgunitExternalLinkArrayErrorMessage = self::validateMidocoOrgunitExternalLinkForArrayConstraintFromSetMidocoOrgunitExternalLink($midocoOrgunitExternalLink))) {
             throw new InvalidArgumentException($midocoOrgunitExternalLinkArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrgunitExternalLink = $midocoOrgunitExternalLink;

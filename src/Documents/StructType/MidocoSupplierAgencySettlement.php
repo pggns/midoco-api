@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSupplierAgencySettlement StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
 {
     /**
@@ -34,6 +35,11 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
      */
     protected ?string $supplierId = null;
     /**
+     * The settlementParty
+     * @var string|null
+     */
+    protected ?string $settlementParty = null;
+    /**
      * The checked
      * @var bool|null
      */
@@ -44,20 +50,23 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
      * @uses MidocoSupplierAgencySettlement::setStatusBooked()
      * @uses MidocoSupplierAgencySettlement::setStatus()
      * @uses MidocoSupplierAgencySettlement::setSupplierId()
+     * @uses MidocoSupplierAgencySettlement::setSettlementParty()
      * @uses MidocoSupplierAgencySettlement::setChecked()
      * @param string $statusChecked
      * @param string $statusBooked
      * @param string $status
      * @param string $supplierId
+     * @param string $settlementParty
      * @param bool $checked
      */
-    public function __construct(?string $statusChecked = null, ?string $statusBooked = null, ?string $status = null, ?string $supplierId = null, ?bool $checked = null)
+    public function __construct(?string $statusChecked = null, ?string $statusBooked = null, ?string $status = null, ?string $supplierId = null, ?string $settlementParty = null, ?bool $checked = null)
     {
         $this
             ->setStatusChecked($statusChecked)
             ->setStatusBooked($statusBooked)
             ->setStatus($status)
             ->setSupplierId($supplierId)
+            ->setSettlementParty($settlementParty)
             ->setChecked($checked);
     }
     /**
@@ -149,6 +158,29 @@ class MidocoSupplierAgencySettlement extends SupplierAgencySettlementDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplierId, true), gettype($supplierId)), __LINE__);
         }
         $this->supplierId = $supplierId;
+        
+        return $this;
+    }
+    /**
+     * Get settlementParty value
+     * @return string|null
+     */
+    public function getSettlementParty(): ?string
+    {
+        return $this->settlementParty;
+    }
+    /**
+     * Set settlementParty value
+     * @param string $settlementParty
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoSupplierAgencySettlement
+     */
+    public function setSettlementParty(?string $settlementParty = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementParty) && !is_string($settlementParty)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementParty, true), gettype($settlementParty)), __LINE__);
+        }
+        $this->settlementParty = $settlementParty;
         
         return $this;
     }

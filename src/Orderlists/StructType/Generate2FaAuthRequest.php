@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Generate2FaAuthRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Generate2FaAuthRequest extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoCrsSystemResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoCrsSystemResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoCrsSystemResponse extends AbstractStructBase
         return $this->MidocoCrsSystem;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrsSystem method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrsSystem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrsSystem method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrsSystemForArrayConstraintsFromSetMidocoCrsSystem(?array $values = []): string
+    public static function validateMidocoCrsSystemForArrayConstraintFromSetMidocoCrsSystem(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoCrsSystemResponse extends AbstractStructBase
     public function setMidocoCrsSystem(?array $midocoCrsSystem = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrsSystemArrayErrorMessage = self::validateMidocoCrsSystemForArrayConstraintsFromSetMidocoCrsSystem($midocoCrsSystem))) {
+        if ('' !== ($midocoCrsSystemArrayErrorMessage = self::validateMidocoCrsSystemForArrayConstraintFromSetMidocoCrsSystem($midocoCrsSystem))) {
             throw new InvalidArgumentException($midocoCrsSystemArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrsSystem = $midocoCrsSystem;

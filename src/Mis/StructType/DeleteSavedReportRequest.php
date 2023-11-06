@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteSavedReportRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteSavedReportRequest extends AbstractStructBase
 {
     /**

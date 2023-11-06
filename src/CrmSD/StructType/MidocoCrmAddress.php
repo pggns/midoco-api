@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmAddress StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmAddress extends CrmAddressDTO
 {
     /**
@@ -41,7 +42,7 @@ class MidocoCrmAddress extends CrmAddressDTO
     /**
      * Set default value
      * @param bool $default
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmAddress
      */
     public function setDefault(?bool $default = false): self
     {

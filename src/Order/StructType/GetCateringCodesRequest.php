@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCateringCodesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCateringCodesRequest extends AbstractStructBase
 {
     /**
@@ -21,14 +22,24 @@ class GetCateringCodesRequest extends AbstractStructBase
      */
     protected ?\Pggns\MidocoApi\Order\StructType\MidocoCateringCode $MidocoCateringCode = null;
     /**
+     * The cultureId
+     * Meta information extracted from the WSDL
+     * - use: optional
+     * @var string|null
+     */
+    protected ?string $cultureId = null;
+    /**
      * Constructor method for GetCateringCodesRequest
      * @uses GetCateringCodesRequest::setMidocoCateringCode()
+     * @uses GetCateringCodesRequest::setCultureId()
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCateringCode $midocoCateringCode
+     * @param string $cultureId
      */
-    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCateringCode $midocoCateringCode = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoCateringCode $midocoCateringCode = null, ?string $cultureId = null)
     {
         $this
-            ->setMidocoCateringCode($midocoCateringCode);
+            ->setMidocoCateringCode($midocoCateringCode)
+            ->setCultureId($cultureId);
     }
     /**
      * Get MidocoCateringCode value
@@ -46,6 +57,29 @@ class GetCateringCodesRequest extends AbstractStructBase
     public function setMidocoCateringCode(?\Pggns\MidocoApi\Order\StructType\MidocoCateringCode $midocoCateringCode = null): self
     {
         $this->MidocoCateringCode = $midocoCateringCode;
+        
+        return $this;
+    }
+    /**
+     * Get cultureId value
+     * @return string|null
+     */
+    public function getCultureId(): ?string
+    {
+        return $this->cultureId;
+    }
+    /**
+     * Set cultureId value
+     * @param string $cultureId
+     * @return \Pggns\MidocoApi\Order\StructType\GetCateringCodesRequest
+     */
+    public function setCultureId(?string $cultureId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($cultureId) && !is_string($cultureId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cultureId, true), gettype($cultureId)), __LINE__);
+        }
+        $this->cultureId = $cultureId;
         
         return $this;
     }

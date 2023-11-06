@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoBaggageAllowanceResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
         return $this->MidocoBaggageAllowance;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBaggageAllowance method
+     * This method is responsible for validating the value(s) passed to the setMidocoBaggageAllowance method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBaggageAllowance method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBaggageAllowanceForArrayConstraintsFromSetMidocoBaggageAllowance(?array $values = []): string
+    public static function validateMidocoBaggageAllowanceForArrayConstraintFromSetMidocoBaggageAllowance(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoBaggageAllowanceResponse extends AbstractStructBase
     public function setMidocoBaggageAllowance(?array $midocoBaggageAllowance = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBaggageAllowanceArrayErrorMessage = self::validateMidocoBaggageAllowanceForArrayConstraintsFromSetMidocoBaggageAllowance($midocoBaggageAllowance))) {
+        if ('' !== ($midocoBaggageAllowanceArrayErrorMessage = self::validateMidocoBaggageAllowanceForArrayConstraintFromSetMidocoBaggageAllowance($midocoBaggageAllowance))) {
             throw new InvalidArgumentException($midocoBaggageAllowanceArrayErrorMessage, __LINE__);
         }
         $this->MidocoBaggageAllowance = $midocoBaggageAllowance;

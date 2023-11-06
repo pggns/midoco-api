@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCommissions --- returns the list of commissions
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCommissionsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetCommissionsResponse extends AbstractStructBase
         return $this->MidocoCommissionExt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCommissionExt method
+     * This method is responsible for validating the value(s) passed to the setMidocoCommissionExt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCommissionExt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCommissionExtForArrayConstraintsFromSetMidocoCommissionExt(?array $values = []): string
+    public static function validateMidocoCommissionExtForArrayConstraintFromSetMidocoCommissionExt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetCommissionsResponse extends AbstractStructBase
     public function setMidocoCommissionExt(?array $midocoCommissionExt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCommissionExtArrayErrorMessage = self::validateMidocoCommissionExtForArrayConstraintsFromSetMidocoCommissionExt($midocoCommissionExt))) {
+        if ('' !== ($midocoCommissionExtArrayErrorMessage = self::validateMidocoCommissionExtForArrayConstraintFromSetMidocoCommissionExt($midocoCommissionExt))) {
             throw new InvalidArgumentException($midocoCommissionExtArrayErrorMessage, __LINE__);
         }
         $this->MidocoCommissionExt = $midocoCommissionExt;

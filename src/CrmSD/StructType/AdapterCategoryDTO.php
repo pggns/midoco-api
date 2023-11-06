@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AdapterCategoryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AdapterCategoryDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class AdapterCategoryDTO extends AbstractStructBase
     /**
      * Set adapterType value
      * @param string $adapterType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterCategoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterCategoryDTO
      */
     public function setAdapterType(?string $adapterType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UpdateAllCrmAddressesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UpdateAllCrmAddressesRequest extends AbstractStructBase
 {
     /**
@@ -105,7 +106,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -128,7 +129,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -151,7 +152,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -174,7 +175,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set mailingModifyUser value
      * @param int $mailingModifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setMailingModifyUser(?int $mailingModifyUser = null): self
     {
@@ -197,7 +198,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {
@@ -220,7 +221,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set mailingProhibitedContactEntry value
      * @param bool $mailingProhibitedContactEntry
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setMailingProhibitedContactEntry(?bool $mailingProhibitedContactEntry = null): self
     {
@@ -243,7 +244,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set saveHistory value
      * @param bool $saveHistory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setSaveHistory(?bool $saveHistory = true): self
     {
@@ -266,7 +267,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set consent value
      * @param string $consent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setConsent(?string $consent = null): self
     {
@@ -289,7 +290,7 @@ class UpdateAllCrmAddressesRequest extends AbstractStructBase
     /**
      * Set consentTimestamp value
      * @param string $consentTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UpdateAllCrmAddressesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UpdateAllCrmAddressesRequest
      */
     public function setConsentTimestamp(?string $consentTimestamp = null): self
     {

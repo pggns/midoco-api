@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TravelNoMarginForSettlTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
 {
     /**
@@ -18,6 +19,11 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $calculatedMargin = null;
+    /**
+     * The calculatedNegativeMargin
+     * @var float|null
+     */
+    protected ?float $calculatedNegativeMargin = null;
     /**
      * The calculatedVat
      * @var float|null
@@ -64,6 +70,11 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
      */
     protected ?float $sumBuy = null;
     /**
+     * The tentative
+     * @var bool|null
+     */
+    protected ?bool $tentative = null;
+    /**
      * The travelNo
      * @var string|null
      */
@@ -71,6 +82,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
     /**
      * Constructor method for TravelNoMarginForSettlTypeDTO
      * @uses TravelNoMarginForSettlTypeDTO::setCalculatedMargin()
+     * @uses TravelNoMarginForSettlTypeDTO::setCalculatedNegativeMargin()
      * @uses TravelNoMarginForSettlTypeDTO::setCalculatedVat()
      * @uses TravelNoMarginForSettlTypeDTO::setCreationTime()
      * @uses TravelNoMarginForSettlTypeDTO::setCreationUser()
@@ -80,8 +92,10 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
      * @uses TravelNoMarginForSettlTypeDTO::setSettlementDate()
      * @uses TravelNoMarginForSettlTypeDTO::setSettlementType()
      * @uses TravelNoMarginForSettlTypeDTO::setSumBuy()
+     * @uses TravelNoMarginForSettlTypeDTO::setTentative()
      * @uses TravelNoMarginForSettlTypeDTO::setTravelNo()
      * @param float $calculatedMargin
+     * @param float $calculatedNegativeMargin
      * @param float $calculatedVat
      * @param string $creationTime
      * @param int $creationUser
@@ -91,12 +105,14 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
      * @param string $settlementDate
      * @param string $settlementType
      * @param float $sumBuy
+     * @param bool $tentative
      * @param string $travelNo
      */
-    public function __construct(?float $calculatedMargin = null, ?float $calculatedVat = null, ?string $creationTime = null, ?int $creationUser = null, ?bool $isStorno = null, ?int $journalId = null, ?float $percent = null, ?string $settlementDate = null, ?string $settlementType = null, ?float $sumBuy = null, ?string $travelNo = null)
+    public function __construct(?float $calculatedMargin = null, ?float $calculatedNegativeMargin = null, ?float $calculatedVat = null, ?string $creationTime = null, ?int $creationUser = null, ?bool $isStorno = null, ?int $journalId = null, ?float $percent = null, ?string $settlementDate = null, ?string $settlementType = null, ?float $sumBuy = null, ?bool $tentative = null, ?string $travelNo = null)
     {
         $this
             ->setCalculatedMargin($calculatedMargin)
+            ->setCalculatedNegativeMargin($calculatedNegativeMargin)
             ->setCalculatedVat($calculatedVat)
             ->setCreationTime($creationTime)
             ->setCreationUser($creationUser)
@@ -106,6 +122,7 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
             ->setSettlementDate($settlementDate)
             ->setSettlementType($settlementType)
             ->setSumBuy($sumBuy)
+            ->setTentative($tentative)
             ->setTravelNo($travelNo);
     }
     /**
@@ -128,6 +145,29 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedMargin, true), gettype($calculatedMargin)), __LINE__);
         }
         $this->calculatedMargin = $calculatedMargin;
+        
+        return $this;
+    }
+    /**
+     * Get calculatedNegativeMargin value
+     * @return float|null
+     */
+    public function getCalculatedNegativeMargin(): ?float
+    {
+        return $this->calculatedNegativeMargin;
+    }
+    /**
+     * Set calculatedNegativeMargin value
+     * @param float $calculatedNegativeMargin
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
+     */
+    public function setCalculatedNegativeMargin(?float $calculatedNegativeMargin = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($calculatedNegativeMargin) && !(is_float($calculatedNegativeMargin) || is_numeric($calculatedNegativeMargin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedNegativeMargin, true), gettype($calculatedNegativeMargin)), __LINE__);
+        }
+        $this->calculatedNegativeMargin = $calculatedNegativeMargin;
         
         return $this;
     }
@@ -335,6 +375,29 @@ class TravelNoMarginForSettlTypeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($sumBuy, true), gettype($sumBuy)), __LINE__);
         }
         $this->sumBuy = $sumBuy;
+        
+        return $this;
+    }
+    /**
+     * Get tentative value
+     * @return bool|null
+     */
+    public function getTentative(): ?bool
+    {
+        return $this->tentative;
+    }
+    /**
+     * Set tentative value
+     * @param bool $tentative
+     * @return \Pggns\MidocoApi\Order\StructType\TravelNoMarginForSettlTypeDTO
+     */
+    public function setTentative(?bool $tentative = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($tentative) && !is_bool($tentative)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($tentative, true), gettype($tentative)), __LINE__);
+        }
+        $this->tentative = $tentative;
         
         return $this;
     }

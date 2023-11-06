@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmCustomerPaymentDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmCustomerPaymentDTO extends AbstractStructBase
 {
     /**
@@ -114,6 +115,11 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      */
     protected ?float $creditLimit = null;
     /**
+     * The creditLimitWarningPercent
+     * @var float|null
+     */
+    protected ?float $creditLimitWarningPercent = null;
+    /**
      * The customerId
      * @var int|null
      */
@@ -143,11 +149,6 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      * @var int|null
      */
     protected ?int $documentCopies = null;
-    /**
-     * The esrTransfer
-     * @var bool|null
-     */
-    protected ?bool $esrTransfer = null;
     /**
      * The foreignBankTransfer
      * @var bool|null
@@ -229,6 +230,11 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      */
     protected ?int $printOptionId = null;
     /**
+     * The qrInvoiceTransfer
+     * @var bool|null
+     */
+    protected ?bool $qrInvoiceTransfer = null;
+    /**
      * The rebateAllowed
      * @var bool|null
      */
@@ -285,13 +291,13 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      * @uses CrmCustomerPaymentDTO::setCompanyUsage()
      * @uses CrmCustomerPaymentDTO::setConcernId()
      * @uses CrmCustomerPaymentDTO::setCreditLimit()
+     * @uses CrmCustomerPaymentDTO::setCreditLimitWarningPercent()
      * @uses CrmCustomerPaymentDTO::setCustomerId()
      * @uses CrmCustomerPaymentDTO::setDirectDebit()
      * @uses CrmCustomerPaymentDTO::setDirectDebitDate()
      * @uses CrmCustomerPaymentDTO::setDisableCommissionOnVoid()
      * @uses CrmCustomerPaymentDTO::setDisableProvisionPayment()
      * @uses CrmCustomerPaymentDTO::setDocumentCopies()
-     * @uses CrmCustomerPaymentDTO::setEsrTransfer()
      * @uses CrmCustomerPaymentDTO::setForeignBankTransfer()
      * @uses CrmCustomerPaymentDTO::setHasBtContract()
      * @uses CrmCustomerPaymentDTO::setInvoiceAsEmail()
@@ -308,6 +314,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      * @uses CrmCustomerPaymentDTO::setPaymentForcedType()
      * @uses CrmCustomerPaymentDTO::setPrepayment()
      * @uses CrmCustomerPaymentDTO::setPrintOptionId()
+     * @uses CrmCustomerPaymentDTO::setQrInvoiceTransfer()
      * @uses CrmCustomerPaymentDTO::setRebateAllowed()
      * @uses CrmCustomerPaymentDTO::setSendCsvInvoice()
      * @uses CrmCustomerPaymentDTO::setSepaDebit()
@@ -335,13 +342,13 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      * @param bool $companyUsage
      * @param string $concernId
      * @param float $creditLimit
+     * @param float $creditLimitWarningPercent
      * @param int $customerId
      * @param bool $directDebit
      * @param string $directDebitDate
      * @param bool $disableCommissionOnVoid
      * @param bool $disableProvisionPayment
      * @param int $documentCopies
-     * @param bool $esrTransfer
      * @param bool $foreignBankTransfer
      * @param bool $hasBtContract
      * @param bool $invoiceAsEmail
@@ -358,6 +365,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      * @param string $paymentForcedType
      * @param bool $prepayment
      * @param int $printOptionId
+     * @param bool $qrInvoiceTransfer
      * @param bool $rebateAllowed
      * @param bool $sendCsvInvoice
      * @param bool $sepaDebit
@@ -366,7 +374,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
      * @param bool $vatLiability
      * @param bool $vatOrganic
      */
-    public function __construct(?bool $acceptCc = null, ?bool $acceptDebit = null, ?bool $avoidDebit = null, ?int $bankTransferCollective = null, ?string $bankTransferFees = null, ?string $bankTransferInstrKey1 = null, ?string $bankTransferInstrKey2 = null, ?string $bankTransferInstrKey3 = null, ?string $bankTransferInstrKey4 = null, ?int $bankTransferProt = null, ?string $bankTransferType = null, ?bool $billPerPassenger = null, ?bool $billPerPassengerPaymentOfTicket = null, ?int $ccPrintSignature = null, ?string $chargesGroup = null, ?bool $collectiveInvoice = null, ?string $collectiveInvoiceType = null, ?bool $companyUsage = null, ?string $concernId = null, ?float $creditLimit = null, ?int $customerId = null, ?bool $directDebit = null, ?string $directDebitDate = null, ?bool $disableCommissionOnVoid = null, ?bool $disableProvisionPayment = null, ?int $documentCopies = null, ?bool $esrTransfer = null, ?bool $foreignBankTransfer = null, ?bool $hasBtContract = null, ?bool $invoiceAsEmail = null, ?string $invoiceFileFormatId = null, ?bool $isDunningBlock = null, ?bool $isReverseCharge = null, ?string $methodOfPayment = null, ?bool $noPaymentMethod = null, ?bool $outgoingBankTransfer = null, ?string $paymentConditionId = null, ?int $paymentDelay = null, ?int $paymentForcedCcCardId = null, ?int $paymentForcedDebitCardId = null, ?string $paymentForcedType = null, ?bool $prepayment = null, ?int $printOptionId = null, ?bool $rebateAllowed = null, ?bool $sendCsvInvoice = null, ?bool $sepaDebit = null, ?bool $sepaTransfer = null, ?bool $smallBusiness = null, ?bool $vatLiability = null, ?bool $vatOrganic = null)
+    public function __construct(?bool $acceptCc = null, ?bool $acceptDebit = null, ?bool $avoidDebit = null, ?int $bankTransferCollective = null, ?string $bankTransferFees = null, ?string $bankTransferInstrKey1 = null, ?string $bankTransferInstrKey2 = null, ?string $bankTransferInstrKey3 = null, ?string $bankTransferInstrKey4 = null, ?int $bankTransferProt = null, ?string $bankTransferType = null, ?bool $billPerPassenger = null, ?bool $billPerPassengerPaymentOfTicket = null, ?int $ccPrintSignature = null, ?string $chargesGroup = null, ?bool $collectiveInvoice = null, ?string $collectiveInvoiceType = null, ?bool $companyUsage = null, ?string $concernId = null, ?float $creditLimit = null, ?float $creditLimitWarningPercent = null, ?int $customerId = null, ?bool $directDebit = null, ?string $directDebitDate = null, ?bool $disableCommissionOnVoid = null, ?bool $disableProvisionPayment = null, ?int $documentCopies = null, ?bool $foreignBankTransfer = null, ?bool $hasBtContract = null, ?bool $invoiceAsEmail = null, ?string $invoiceFileFormatId = null, ?bool $isDunningBlock = null, ?bool $isReverseCharge = null, ?string $methodOfPayment = null, ?bool $noPaymentMethod = null, ?bool $outgoingBankTransfer = null, ?string $paymentConditionId = null, ?int $paymentDelay = null, ?int $paymentForcedCcCardId = null, ?int $paymentForcedDebitCardId = null, ?string $paymentForcedType = null, ?bool $prepayment = null, ?int $printOptionId = null, ?bool $qrInvoiceTransfer = null, ?bool $rebateAllowed = null, ?bool $sendCsvInvoice = null, ?bool $sepaDebit = null, ?bool $sepaTransfer = null, ?bool $smallBusiness = null, ?bool $vatLiability = null, ?bool $vatOrganic = null)
     {
         $this
             ->setAcceptCc($acceptCc)
@@ -389,13 +397,13 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
             ->setCompanyUsage($companyUsage)
             ->setConcernId($concernId)
             ->setCreditLimit($creditLimit)
+            ->setCreditLimitWarningPercent($creditLimitWarningPercent)
             ->setCustomerId($customerId)
             ->setDirectDebit($directDebit)
             ->setDirectDebitDate($directDebitDate)
             ->setDisableCommissionOnVoid($disableCommissionOnVoid)
             ->setDisableProvisionPayment($disableProvisionPayment)
             ->setDocumentCopies($documentCopies)
-            ->setEsrTransfer($esrTransfer)
             ->setForeignBankTransfer($foreignBankTransfer)
             ->setHasBtContract($hasBtContract)
             ->setInvoiceAsEmail($invoiceAsEmail)
@@ -412,6 +420,7 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
             ->setPaymentForcedType($paymentForcedType)
             ->setPrepayment($prepayment)
             ->setPrintOptionId($printOptionId)
+            ->setQrInvoiceTransfer($qrInvoiceTransfer)
             ->setRebateAllowed($rebateAllowed)
             ->setSendCsvInvoice($sendCsvInvoice)
             ->setSepaDebit($sepaDebit)
@@ -881,6 +890,29 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get creditLimitWarningPercent value
+     * @return float|null
+     */
+    public function getCreditLimitWarningPercent(): ?float
+    {
+        return $this->creditLimitWarningPercent;
+    }
+    /**
+     * Set creditLimitWarningPercent value
+     * @param float $creditLimitWarningPercent
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO
+     */
+    public function setCreditLimitWarningPercent(?float $creditLimitWarningPercent = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($creditLimitWarningPercent) && !(is_float($creditLimitWarningPercent) || is_numeric($creditLimitWarningPercent))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($creditLimitWarningPercent, true), gettype($creditLimitWarningPercent)), __LINE__);
+        }
+        $this->creditLimitWarningPercent = $creditLimitWarningPercent;
+        
+        return $this;
+    }
+    /**
      * Get customerId value
      * @return int|null
      */
@@ -1015,29 +1047,6 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($documentCopies, true), gettype($documentCopies)), __LINE__);
         }
         $this->documentCopies = $documentCopies;
-        
-        return $this;
-    }
-    /**
-     * Get esrTransfer value
-     * @return bool|null
-     */
-    public function getEsrTransfer(): ?bool
-    {
-        return $this->esrTransfer;
-    }
-    /**
-     * Set esrTransfer value
-     * @param bool $esrTransfer
-     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO
-     */
-    public function setEsrTransfer(?bool $esrTransfer = null): self
-    {
-        // validation for constraint: boolean
-        if (!is_null($esrTransfer) && !is_bool($esrTransfer)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($esrTransfer, true), gettype($esrTransfer)), __LINE__);
-        }
-        $this->esrTransfer = $esrTransfer;
         
         return $this;
     }
@@ -1406,6 +1415,29 @@ class CrmCustomerPaymentDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($printOptionId, true), gettype($printOptionId)), __LINE__);
         }
         $this->printOptionId = $printOptionId;
+        
+        return $this;
+    }
+    /**
+     * Get qrInvoiceTransfer value
+     * @return bool|null
+     */
+    public function getQrInvoiceTransfer(): ?bool
+    {
+        return $this->qrInvoiceTransfer;
+    }
+    /**
+     * Set qrInvoiceTransfer value
+     * @param bool $qrInvoiceTransfer
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CrmCustomerPaymentDTO
+     */
+    public function setQrInvoiceTransfer(?bool $qrInvoiceTransfer = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($qrInvoiceTransfer) && !is_bool($qrInvoiceTransfer)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($qrInvoiceTransfer, true), gettype($qrInvoiceTransfer)), __LINE__);
+        }
+        $this->qrInvoiceTransfer = $qrInvoiceTransfer;
         
         return $this;
     }

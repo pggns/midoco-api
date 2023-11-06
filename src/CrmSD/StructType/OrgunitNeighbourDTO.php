@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgunitNeighbourDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgunitNeighbourDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class OrgunitNeighbourDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitNeighbourDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitNeighbourDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -86,7 +87,7 @@ class OrgunitNeighbourDTO extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitNeighbourDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitNeighbourDTO
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -109,7 +110,7 @@ class OrgunitNeighbourDTO extends AbstractStructBase
     /**
      * Set neighbourUnitName value
      * @param string $neighbourUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitNeighbourDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitNeighbourDTO
      */
     public function setNeighbourUnitName(?string $neighbourUnitName = null): self
     {
@@ -132,7 +133,7 @@ class OrgunitNeighbourDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitNeighbourDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitNeighbourDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

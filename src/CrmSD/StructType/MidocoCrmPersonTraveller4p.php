@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmPersonTraveller4p StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmPersonTraveller4p extends CrmPersonTravellerDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoCrmPersonTraveller4p extends CrmPersonTravellerDTO
     /**
      * Set travellerTypeDesc value
      * @param string $travellerTypeDesc
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmPersonTraveller4p
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmPersonTraveller4p
      */
     public function setTravellerTypeDesc(?string $travellerTypeDesc = null): self
     {

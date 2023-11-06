@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveTemplateLanguage --- saves a given template language record
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveTemplateLanguageResponse extends AbstractStructBase
 {
 }

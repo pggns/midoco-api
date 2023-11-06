@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetGroupAdvisorInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetGroupAdvisorInfoResponse extends AbstractStructBase
 {
     /**
@@ -58,12 +59,13 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
         return $this->GroupAdvisorInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroupAdvisorInfo method
+     * This method is responsible for validating the value(s) passed to the setGroupAdvisorInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroupAdvisorInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroupAdvisorInfoForArrayConstraintsFromSetGroupAdvisorInfo(?array $values = []): string
+    public static function validateGroupAdvisorInfoForArrayConstraintFromSetGroupAdvisorInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -92,7 +94,7 @@ class GetGroupAdvisorInfoResponse extends AbstractStructBase
     public function setGroupAdvisorInfo(?array $groupAdvisorInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($groupAdvisorInfoArrayErrorMessage = self::validateGroupAdvisorInfoForArrayConstraintsFromSetGroupAdvisorInfo($groupAdvisorInfo))) {
+        if ('' !== ($groupAdvisorInfoArrayErrorMessage = self::validateGroupAdvisorInfoForArrayConstraintFromSetGroupAdvisorInfo($groupAdvisorInfo))) {
             throw new InvalidArgumentException($groupAdvisorInfoArrayErrorMessage, __LINE__);
         }
         $this->GroupAdvisorInfo = $groupAdvisorInfo;

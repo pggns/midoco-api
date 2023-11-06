@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerCategory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerCategory extends CustomerCategoryDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoCustomerCategory extends CustomerCategoryDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerCategory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerCategory
      */
     public function setIsInherited(?bool $isInherited = null): self
     {

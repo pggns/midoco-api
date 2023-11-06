@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getMidocoSettlMDocs --- returns the Midoco MDocs for the given customer id and/or settl mdoc id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoSettlMDocsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetMidocoSettlMDocsResponse extends AbstractStructBase
         return $this->MidocoCrmMidocoSettlMdoc;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoSettlMdoc method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoSettlMdoc method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoSettlMdoc method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoSettlMdocForArrayConstraintsFromSetMidocoCrmMidocoSettlMdoc(?array $values = []): string
+    public static function validateMidocoCrmMidocoSettlMdocForArrayConstraintFromSetMidocoCrmMidocoSettlMdoc(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetMidocoSettlMDocsResponse extends AbstractStructBase
     public function setMidocoCrmMidocoSettlMdoc(?array $midocoCrmMidocoSettlMdoc = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoSettlMdocArrayErrorMessage = self::validateMidocoCrmMidocoSettlMdocForArrayConstraintsFromSetMidocoCrmMidocoSettlMdoc($midocoCrmMidocoSettlMdoc))) {
+        if ('' !== ($midocoCrmMidocoSettlMdocArrayErrorMessage = self::validateMidocoCrmMidocoSettlMdocForArrayConstraintFromSetMidocoCrmMidocoSettlMdoc($midocoCrmMidocoSettlMdoc))) {
             throw new InvalidArgumentException($midocoCrmMidocoSettlMdocArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoSettlMdoc = $midocoCrmMidocoSettlMdoc;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBillingPositionInfoType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBillingPositionInfoType extends AbstractStructBase
 {
     /**
@@ -21,6 +22,14 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
      * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction|null
      */
     protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $MidocoOnlinePaymentTransaction = null;
+    /**
+     * The MidocoMilesAndMoreBurnTransaction
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * - ref: MidocoMilesAndMoreBurnTransaction
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType|null
+     */
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType $MidocoMilesAndMoreBurnTransaction = null;
     /**
      * The ccError
      * @var int|null
@@ -202,8 +211,14 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
      */
     protected ?bool $isPayment = null;
     /**
+     * The paymentPositionId
+     * @var int|null
+     */
+    protected ?int $paymentPositionId = null;
+    /**
      * Constructor method for MidocoBillingPositionInfoType
      * @uses MidocoBillingPositionInfoType::setMidocoOnlinePaymentTransaction()
+     * @uses MidocoBillingPositionInfoType::setMidocoMilesAndMoreBurnTransaction()
      * @uses MidocoBillingPositionInfoType::setCcError()
      * @uses MidocoBillingPositionInfoType::setPositionId()
      * @uses MidocoBillingPositionInfoType::setTransactionId()
@@ -240,7 +255,9 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
      * @uses MidocoBillingPositionInfoType::setPackageCode()
      * @uses MidocoBillingPositionInfoType::setCalculatedPrintDate()
      * @uses MidocoBillingPositionInfoType::setIsPayment()
+     * @uses MidocoBillingPositionInfoType::setPaymentPositionId()
      * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType $midocoMilesAndMoreBurnTransaction
      * @param int $ccError
      * @param int $positionId
      * @param int $transactionId
@@ -277,11 +294,13 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
      * @param string $packageCode
      * @param string $calculatedPrintDate
      * @param bool $isPayment
+     * @param int $paymentPositionId
      */
-    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null, ?int $ccError = null, ?int $positionId = null, ?int $transactionId = null, ?int $documentId = null, ?int $itemId = null, ?int $voidPositionId = null, ?int $position = null, ?string $accountId = null, ?string $description = null, ?string $referenceNo = null, ?int $noOfItems = null, ?float $singlePrice = null, ?string $currency = null, ?string $originalCurrency = null, ?float $price = null, ?float $originalPrice = null, ?bool $isPackage = null, ?string $destinationCode = null, ?string $costCentre = null, ?string $orderNo = null, ?string $documentCode = null, ?float $commissionPercent = null, ?float $vatPercent = null, ?float $vatAmount = null, ?float $originalVatAmount = null, ?float $vat2percent = null, ?float $vat2base = null, ?float $vat2amount = null, ?float $originalVat2amount = null, ?int $orderId = null, ?string $supplierId = null, ?string $bookingId = null, ?int $documentNo = null, ?string $packageCode = null, ?string $calculatedPrintDate = null, ?bool $isPayment = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType $midocoMilesAndMoreBurnTransaction = null, ?int $ccError = null, ?int $positionId = null, ?int $transactionId = null, ?int $documentId = null, ?int $itemId = null, ?int $voidPositionId = null, ?int $position = null, ?string $accountId = null, ?string $description = null, ?string $referenceNo = null, ?int $noOfItems = null, ?float $singlePrice = null, ?string $currency = null, ?string $originalCurrency = null, ?float $price = null, ?float $originalPrice = null, ?bool $isPackage = null, ?string $destinationCode = null, ?string $costCentre = null, ?string $orderNo = null, ?string $documentCode = null, ?float $commissionPercent = null, ?float $vatPercent = null, ?float $vatAmount = null, ?float $originalVatAmount = null, ?float $vat2percent = null, ?float $vat2base = null, ?float $vat2amount = null, ?float $originalVat2amount = null, ?int $orderId = null, ?string $supplierId = null, ?string $bookingId = null, ?int $documentNo = null, ?string $packageCode = null, ?string $calculatedPrintDate = null, ?bool $isPayment = null, ?int $paymentPositionId = null)
     {
         $this
             ->setMidocoOnlinePaymentTransaction($midocoOnlinePaymentTransaction)
+            ->setMidocoMilesAndMoreBurnTransaction($midocoMilesAndMoreBurnTransaction)
             ->setCcError($ccError)
             ->setPositionId($positionId)
             ->setTransactionId($transactionId)
@@ -317,7 +336,8 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
             ->setDocumentNo($documentNo)
             ->setPackageCode($packageCode)
             ->setCalculatedPrintDate($calculatedPrintDate)
-            ->setIsPayment($isPayment);
+            ->setIsPayment($isPayment)
+            ->setPaymentPositionId($paymentPositionId);
     }
     /**
      * Get MidocoOnlinePaymentTransaction value
@@ -335,6 +355,25 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
     public function setMidocoOnlinePaymentTransaction(?\Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransaction $midocoOnlinePaymentTransaction = null): self
     {
         $this->MidocoOnlinePaymentTransaction = $midocoOnlinePaymentTransaction;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoMilesAndMoreBurnTransaction value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType|null
+     */
+    public function getMidocoMilesAndMoreBurnTransaction(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType
+    {
+        return $this->MidocoMilesAndMoreBurnTransaction;
+    }
+    /**
+     * Set MidocoMilesAndMoreBurnTransaction value
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType $midocoMilesAndMoreBurnTransaction
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingPositionInfoType
+     */
+    public function setMidocoMilesAndMoreBurnTransaction(?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreBurnTransactionType $midocoMilesAndMoreBurnTransaction = null): self
+    {
+        $this->MidocoMilesAndMoreBurnTransaction = $midocoMilesAndMoreBurnTransaction;
         
         return $this;
     }
@@ -1163,6 +1202,29 @@ class MidocoBillingPositionInfoType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isPayment, true), gettype($isPayment)), __LINE__);
         }
         $this->isPayment = $isPayment;
+        
+        return $this;
+    }
+    /**
+     * Get paymentPositionId value
+     * @return int|null
+     */
+    public function getPaymentPositionId(): ?int
+    {
+        return $this->paymentPositionId;
+    }
+    /**
+     * Set paymentPositionId value
+     * @param int $paymentPositionId
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingPositionInfoType
+     */
+    public function setPaymentPositionId(?int $paymentPositionId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($paymentPositionId) && !(is_int($paymentPositionId) || ctype_digit($paymentPositionId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($paymentPositionId, true), gettype($paymentPositionId)), __LINE__);
+        }
+        $this->paymentPositionId = $paymentPositionId;
         
         return $this;
     }

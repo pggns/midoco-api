@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: populateMisTimeTables --- populates the mis time tables with the records corresponding to the given years
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PopulateMisTimeTablesResponse extends AbstractStructBase
 {
 }

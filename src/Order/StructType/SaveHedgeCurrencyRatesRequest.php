@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveHedgeCurrencyRatesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveHedgeCurrencyRatesRequest extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class SaveHedgeCurrencyRatesRequest extends AbstractStructBase
         return $this->MidocoCurrencyRateHedge;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCurrencyRateHedge method
+     * This method is responsible for validating the value(s) passed to the setMidocoCurrencyRateHedge method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCurrencyRateHedge method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCurrencyRateHedgeForArrayConstraintsFromSetMidocoCurrencyRateHedge(?array $values = []): string
+    public static function validateMidocoCurrencyRateHedgeForArrayConstraintFromSetMidocoCurrencyRateHedge(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class SaveHedgeCurrencyRatesRequest extends AbstractStructBase
     public function setMidocoCurrencyRateHedge(?array $midocoCurrencyRateHedge = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCurrencyRateHedgeArrayErrorMessage = self::validateMidocoCurrencyRateHedgeForArrayConstraintsFromSetMidocoCurrencyRateHedge($midocoCurrencyRateHedge))) {
+        if ('' !== ($midocoCurrencyRateHedgeArrayErrorMessage = self::validateMidocoCurrencyRateHedgeForArrayConstraintFromSetMidocoCurrencyRateHedge($midocoCurrencyRateHedge))) {
             throw new InvalidArgumentException($midocoCurrencyRateHedgeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCurrencyRateHedge = $midocoCurrencyRateHedge;

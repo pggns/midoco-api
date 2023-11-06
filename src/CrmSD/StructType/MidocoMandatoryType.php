@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMandatoryType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMandatoryType extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoMandatoryType extends AbstractStructBase
     /**
      * Set mandatory value
      * @param int $mandatory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandatoryType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandatoryType
      */
     public function setMandatory(?int $mandatory = null): self
     {
@@ -70,7 +71,7 @@ class MidocoMandatoryType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandatoryType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandatoryType
      */
     public function setDescription(?string $description = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateTextTemplateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateTextTemplateRequest extends AbstractStructBase
 {
     /**

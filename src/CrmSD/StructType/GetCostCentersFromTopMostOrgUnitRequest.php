@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCostCentersFromTopMostOrgUnitRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCostCentersFromTopMostOrgUnitRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetCostCentersFromTopMostOrgUnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCostCentersFromTopMostOrgUnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCostCentersFromTopMostOrgUnitRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

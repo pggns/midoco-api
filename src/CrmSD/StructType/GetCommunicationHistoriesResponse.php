@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCommunicationHistoriesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCommunicationHistoriesResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCommunicationHistory
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory[]
      */
     protected ?array $MidocoCommunicationHistory = null;
     /**
      * Constructor method for GetCommunicationHistoriesResponse
      * @uses GetCommunicationHistoriesResponse::setMidocoCommunicationHistory()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
      */
     public function __construct(?array $midocoCommunicationHistory = null)
     {
@@ -34,19 +35,20 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCommunicationHistory value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory[]
      */
     public function getMidocoCommunicationHistory(): ?array
     {
         return $this->MidocoCommunicationHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCommunicationHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoCommunicationHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCommunicationHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCommunicationHistoryForArrayConstraintsFromSetMidocoCommunicationHistory(?array $values = []): string
+    public static function validateMidocoCommunicationHistoryForArrayConstraintFromSetMidocoCommunicationHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCommunicationHistoriesResponseMidocoCommunicationHistoryItem) {
             // validation for constraint: itemType
-            if (!$getCommunicationHistoriesResponseMidocoCommunicationHistoryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory) {
+            if (!$getCommunicationHistoriesResponseMidocoCommunicationHistoryItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory) {
                 $invalidValues[] = is_object($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem) ? get_class($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem) : sprintf('%s(%s)', gettype($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem), var_export($getCommunicationHistoriesResponseMidocoCommunicationHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set MidocoCommunicationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory[] $midocoCommunicationHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCommunicationHistoriesResponse
      */
     public function setMidocoCommunicationHistory(?array $midocoCommunicationHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCommunicationHistoryArrayErrorMessage = self::validateMidocoCommunicationHistoryForArrayConstraintsFromSetMidocoCommunicationHistory($midocoCommunicationHistory))) {
+        if ('' !== ($midocoCommunicationHistoryArrayErrorMessage = self::validateMidocoCommunicationHistoryForArrayConstraintFromSetMidocoCommunicationHistory($midocoCommunicationHistory))) {
             throw new InvalidArgumentException($midocoCommunicationHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoCommunicationHistory = $midocoCommunicationHistory;
@@ -85,14 +87,14 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Add item to MidocoCommunicationHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCommunicationHistoriesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCommunicationHistoriesResponse
      */
-    public function addToMidocoCommunicationHistory(\Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory $item): self
+    public function addToMidocoCommunicationHistory(\Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory) {
-            throw new InvalidArgumentException(sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory) {
+            throw new InvalidArgumentException(sprintf('The MidocoCommunicationHistory property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCommunicationHistory[] = $item;
         

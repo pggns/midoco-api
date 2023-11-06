@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckIfMultipleMdcSettlementBillingResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckIfMultipleMdcSettlementBillingResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class CheckIfMultipleMdcSettlementBillingResponse extends AbstractStructBase
         return $this->docIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setDocIds method
+     * This method is responsible for validating the value(s) passed to the setDocIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDocIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDocIdsForArrayConstraintsFromSetDocIds(?array $values = []): string
+    public static function validateDocIdsForArrayConstraintFromSetDocIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class CheckIfMultipleMdcSettlementBillingResponse extends AbstractStructBase
     public function setDocIds(?array $docIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($docIdsArrayErrorMessage = self::validateDocIdsForArrayConstraintsFromSetDocIds($docIds))) {
+        if ('' !== ($docIdsArrayErrorMessage = self::validateDocIdsForArrayConstraintFromSetDocIds($docIds))) {
             throw new InvalidArgumentException($docIdsArrayErrorMessage, __LINE__);
         }
         $this->docIds = $docIds;

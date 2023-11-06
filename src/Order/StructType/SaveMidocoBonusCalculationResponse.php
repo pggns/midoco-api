@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMidocoBonusCalculationResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMidocoBonusCalculationResponse extends AbstractStructBase
 {
     /**
@@ -48,12 +49,13 @@ class SaveMidocoBonusCalculationResponse extends AbstractStructBase
         return $this->users;
     }
     /**
-     * This method is responsible for validating the values passed to the setUsers method
+     * This method is responsible for validating the value(s) passed to the setUsers method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUsers method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUsersForArrayConstraintsFromSetUsers(?array $values = []): string
+    public static function validateUsersForArrayConstraintFromSetUsers(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -82,7 +84,7 @@ class SaveMidocoBonusCalculationResponse extends AbstractStructBase
     public function setUsers(?array $users = null): self
     {
         // validation for constraint: array
-        if ('' !== ($usersArrayErrorMessage = self::validateUsersForArrayConstraintsFromSetUsers($users))) {
+        if ('' !== ($usersArrayErrorMessage = self::validateUsersForArrayConstraintFromSetUsers($users))) {
             throw new InvalidArgumentException($usersArrayErrorMessage, __LINE__);
         }
         $this->users = $users;

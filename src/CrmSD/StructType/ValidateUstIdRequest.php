@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ValidateUstIdRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidateUstIdRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class ValidateUstIdRequest extends AbstractStructBase
     /**
      * Set ustId value
      * @param string $ustId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateUstIdRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateUstIdRequest
      */
     public function setUstId(?string $ustId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSellItemPricing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSellItemPricing extends SellItemPricingDTO
 {
     /**
@@ -35,6 +36,20 @@ class MidocoSellItemPricing extends SellItemPricingDTO
      */
     protected ?float $agencyCalculatedCommissionAmount = null;
     /**
+     * The agencyCommissionBaseAmount
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var float|null
+     */
+    protected ?float $agencyCommissionBaseAmount = null;
+    /**
+     * The agencyCurrencyCalculatedCommissionAmount
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var float|null
+     */
+    protected ?float $agencyCurrencyCalculatedCommissionAmount = null;
+    /**
      * The agencyPercentAmount
      * Meta information extracted from the WSDL
      * - minOccurs: 0
@@ -51,7 +66,7 @@ class MidocoSellItemPricing extends SellItemPricingDTO
     /**
      * The hasCalculatorPriority
      * Meta information extracted from the WSDL
-     * - documentation: Let the backend knows that the values from the sellitempricing have priority. It triggers when the user saved the fx calculator dialog.
+     * - documentation: Let the backend know that the values from the sellitempricing have priority. It triggers when the user saved the fx calculator dialog.
      * - default: false
      * @var bool|null
      */
@@ -71,6 +86,8 @@ class MidocoSellItemPricing extends SellItemPricingDTO
      * @uses MidocoSellItemPricing::setBrokerCalculatedCommissionAmount()
      * @uses MidocoSellItemPricing::setBrokerPaidCommissionAmount()
      * @uses MidocoSellItemPricing::setAgencyCalculatedCommissionAmount()
+     * @uses MidocoSellItemPricing::setAgencyCommissionBaseAmount()
+     * @uses MidocoSellItemPricing::setAgencyCurrencyCalculatedCommissionAmount()
      * @uses MidocoSellItemPricing::setAgencyPercentAmount()
      * @uses MidocoSellItemPricing::setAgencyPaidCommissionAmount()
      * @uses MidocoSellItemPricing::setHasCalculatorPriority()
@@ -78,17 +95,21 @@ class MidocoSellItemPricing extends SellItemPricingDTO
      * @param float $brokerCalculatedCommissionAmount
      * @param float $brokerPaidCommissionAmount
      * @param float $agencyCalculatedCommissionAmount
+     * @param float $agencyCommissionBaseAmount
+     * @param float $agencyCurrencyCalculatedCommissionAmount
      * @param float $agencyPercentAmount
      * @param float $agencyPaidCommissionAmount
      * @param bool $hasCalculatorPriority
      * @param bool $isManualBrokerCommission
      */
-    public function __construct(?float $brokerCalculatedCommissionAmount = null, ?float $brokerPaidCommissionAmount = null, ?float $agencyCalculatedCommissionAmount = null, ?float $agencyPercentAmount = null, ?float $agencyPaidCommissionAmount = null, ?bool $hasCalculatorPriority = false, ?bool $isManualBrokerCommission = false)
+    public function __construct(?float $brokerCalculatedCommissionAmount = null, ?float $brokerPaidCommissionAmount = null, ?float $agencyCalculatedCommissionAmount = null, ?float $agencyCommissionBaseAmount = null, ?float $agencyCurrencyCalculatedCommissionAmount = null, ?float $agencyPercentAmount = null, ?float $agencyPaidCommissionAmount = null, ?bool $hasCalculatorPriority = false, ?bool $isManualBrokerCommission = false)
     {
         $this
             ->setBrokerCalculatedCommissionAmount($brokerCalculatedCommissionAmount)
             ->setBrokerPaidCommissionAmount($brokerPaidCommissionAmount)
             ->setAgencyCalculatedCommissionAmount($agencyCalculatedCommissionAmount)
+            ->setAgencyCommissionBaseAmount($agencyCommissionBaseAmount)
+            ->setAgencyCurrencyCalculatedCommissionAmount($agencyCurrencyCalculatedCommissionAmount)
             ->setAgencyPercentAmount($agencyPercentAmount)
             ->setAgencyPaidCommissionAmount($agencyPaidCommissionAmount)
             ->setHasCalculatorPriority($hasCalculatorPriority)
@@ -160,6 +181,52 @@ class MidocoSellItemPricing extends SellItemPricingDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($agencyCalculatedCommissionAmount, true), gettype($agencyCalculatedCommissionAmount)), __LINE__);
         }
         $this->agencyCalculatedCommissionAmount = $agencyCalculatedCommissionAmount;
+        
+        return $this;
+    }
+    /**
+     * Get agencyCommissionBaseAmount value
+     * @return float|null
+     */
+    public function getAgencyCommissionBaseAmount(): ?float
+    {
+        return $this->agencyCommissionBaseAmount;
+    }
+    /**
+     * Set agencyCommissionBaseAmount value
+     * @param float $agencyCommissionBaseAmount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemPricing
+     */
+    public function setAgencyCommissionBaseAmount(?float $agencyCommissionBaseAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($agencyCommissionBaseAmount) && !(is_float($agencyCommissionBaseAmount) || is_numeric($agencyCommissionBaseAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($agencyCommissionBaseAmount, true), gettype($agencyCommissionBaseAmount)), __LINE__);
+        }
+        $this->agencyCommissionBaseAmount = $agencyCommissionBaseAmount;
+        
+        return $this;
+    }
+    /**
+     * Get agencyCurrencyCalculatedCommissionAmount value
+     * @return float|null
+     */
+    public function getAgencyCurrencyCalculatedCommissionAmount(): ?float
+    {
+        return $this->agencyCurrencyCalculatedCommissionAmount;
+    }
+    /**
+     * Set agencyCurrencyCalculatedCommissionAmount value
+     * @param float $agencyCurrencyCalculatedCommissionAmount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemPricing
+     */
+    public function setAgencyCurrencyCalculatedCommissionAmount(?float $agencyCurrencyCalculatedCommissionAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($agencyCurrencyCalculatedCommissionAmount) && !(is_float($agencyCurrencyCalculatedCommissionAmount) || is_numeric($agencyCurrencyCalculatedCommissionAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($agencyCurrencyCalculatedCommissionAmount, true), gettype($agencyCurrencyCalculatedCommissionAmount)), __LINE__);
+        }
+        $this->agencyCurrencyCalculatedCommissionAmount = $agencyCurrencyCalculatedCommissionAmount;
         
         return $this;
     }

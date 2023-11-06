@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PassengerIdentificationDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PassengerIdentificationDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class PassengerIdentificationDTO extends AbstractStructBase
     /**
      * Set crmUnitName value
      * @param string $crmUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PassengerIdentificationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PassengerIdentificationDTO
      */
     public function setCrmUnitName(?string $crmUnitName = null): self
     {
@@ -86,7 +87,7 @@ class PassengerIdentificationDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PassengerIdentificationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PassengerIdentificationDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +110,7 @@ class PassengerIdentificationDTO extends AbstractStructBase
     /**
      * Set fullName value
      * @param string $fullName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PassengerIdentificationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PassengerIdentificationDTO
      */
     public function setFullName(?string $fullName = null): self
     {
@@ -132,7 +133,7 @@ class PassengerIdentificationDTO extends AbstractStructBase
     /**
      * Set paxId value
      * @param int $paxId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PassengerIdentificationDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PassengerIdentificationDTO
      */
     public function setPaxId(?int $paxId = null): self
     {

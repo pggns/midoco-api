@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CcProxyEmailDataDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CcProxyEmailDataDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CcProxyEmailDataDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -78,7 +79,7 @@ class CcProxyEmailDataDTO extends AbstractStructBase
     /**
      * Set topic value
      * @param string $topic
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO
      */
     public function setTopic(?string $topic = null): self
     {
@@ -101,7 +102,7 @@ class CcProxyEmailDataDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO
      */
     public function setText(?string $text = null): self
     {

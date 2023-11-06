@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchAttributeDefinitionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchAttributeDefinitionRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchAttributeDefinitionRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -86,7 +87,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchAttributeDefinitionRequest
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -109,7 +110,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set contextId value
      * @param string $contextId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchAttributeDefinitionRequest
      */
     public function setContextId(?string $contextId = null): self
     {
@@ -132,7 +133,7 @@ class SearchAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchAttributeDefinitionRequest
      */
     public function setType(?int $type = null): self
     {

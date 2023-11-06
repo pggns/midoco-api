@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMailMessageType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMailMessageType extends AbstractStructBase
 {
     /**
@@ -170,12 +171,13 @@ class MidocoMailMessageType extends AbstractStructBase
         return $this->To;
     }
     /**
-     * This method is responsible for validating the values passed to the setTo method
+     * This method is responsible for validating the value(s) passed to the setTo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateToForArrayConstraintsFromSetTo(?array $values = []): string
+    public static function validateToForArrayConstraintFromSetTo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -204,7 +206,7 @@ class MidocoMailMessageType extends AbstractStructBase
     public function setTo(?array $to = null): self
     {
         // validation for constraint: array
-        if ('' !== ($toArrayErrorMessage = self::validateToForArrayConstraintsFromSetTo($to))) {
+        if ('' !== ($toArrayErrorMessage = self::validateToForArrayConstraintFromSetTo($to))) {
             throw new InvalidArgumentException($toArrayErrorMessage, __LINE__);
         }
         $this->To = $to;
@@ -259,12 +261,13 @@ class MidocoMailMessageType extends AbstractStructBase
         return $this->Cc;
     }
     /**
-     * This method is responsible for validating the values passed to the setCc method
+     * This method is responsible for validating the value(s) passed to the setCc method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCc method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCcForArrayConstraintsFromSetCc(?array $values = []): string
+    public static function validateCcForArrayConstraintFromSetCc(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -293,7 +296,7 @@ class MidocoMailMessageType extends AbstractStructBase
     public function setCc(?array $cc = null): self
     {
         // validation for constraint: array
-        if ('' !== ($ccArrayErrorMessage = self::validateCcForArrayConstraintsFromSetCc($cc))) {
+        if ('' !== ($ccArrayErrorMessage = self::validateCcForArrayConstraintFromSetCc($cc))) {
             throw new InvalidArgumentException($ccArrayErrorMessage, __LINE__);
         }
         $this->Cc = $cc;
@@ -325,12 +328,13 @@ class MidocoMailMessageType extends AbstractStructBase
         return $this->Bcc;
     }
     /**
-     * This method is responsible for validating the values passed to the setBcc method
+     * This method is responsible for validating the value(s) passed to the setBcc method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBcc method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBccForArrayConstraintsFromSetBcc(?array $values = []): string
+    public static function validateBccForArrayConstraintFromSetBcc(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -359,7 +363,7 @@ class MidocoMailMessageType extends AbstractStructBase
     public function setBcc(?array $bcc = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bccArrayErrorMessage = self::validateBccForArrayConstraintsFromSetBcc($bcc))) {
+        if ('' !== ($bccArrayErrorMessage = self::validateBccForArrayConstraintFromSetBcc($bcc))) {
             throw new InvalidArgumentException($bccArrayErrorMessage, __LINE__);
         }
         $this->Bcc = $bcc;
@@ -483,12 +487,13 @@ class MidocoMailMessageType extends AbstractStructBase
         return $this->MidocoMailAttachment;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMailAttachment method
+     * This method is responsible for validating the value(s) passed to the setMidocoMailAttachment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMailAttachment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMailAttachmentForArrayConstraintsFromSetMidocoMailAttachment(?array $values = []): string
+    public static function validateMidocoMailAttachmentForArrayConstraintFromSetMidocoMailAttachment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -517,7 +522,7 @@ class MidocoMailMessageType extends AbstractStructBase
     public function setMidocoMailAttachment(?array $midocoMailAttachment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMailAttachmentArrayErrorMessage = self::validateMidocoMailAttachmentForArrayConstraintsFromSetMidocoMailAttachment($midocoMailAttachment))) {
+        if ('' !== ($midocoMailAttachmentArrayErrorMessage = self::validateMidocoMailAttachmentForArrayConstraintFromSetMidocoMailAttachment($midocoMailAttachment))) {
             throw new InvalidArgumentException($midocoMailAttachmentArrayErrorMessage, __LINE__);
         }
         $this->MidocoMailAttachment = $midocoMailAttachment;
@@ -549,12 +554,13 @@ class MidocoMailMessageType extends AbstractStructBase
         return $this->MidocoMailHeader;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMailHeader method
+     * This method is responsible for validating the value(s) passed to the setMidocoMailHeader method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMailHeader method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMailHeaderForArrayConstraintsFromSetMidocoMailHeader(?array $values = []): string
+    public static function validateMidocoMailHeaderForArrayConstraintFromSetMidocoMailHeader(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -583,7 +589,7 @@ class MidocoMailMessageType extends AbstractStructBase
     public function setMidocoMailHeader(?array $midocoMailHeader = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMailHeaderArrayErrorMessage = self::validateMidocoMailHeaderForArrayConstraintsFromSetMidocoMailHeader($midocoMailHeader))) {
+        if ('' !== ($midocoMailHeaderArrayErrorMessage = self::validateMidocoMailHeaderForArrayConstraintFromSetMidocoMailHeader($midocoMailHeader))) {
             throw new InvalidArgumentException($midocoMailHeaderArrayErrorMessage, __LINE__);
         }
         $this->MidocoMailHeader = $midocoMailHeader;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SupplierReportFormatDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SupplierReportFormatDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class SupplierReportFormatDTO extends AbstractStructBase
     /**
      * Set format value
      * @param string $format
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SupplierReportFormatDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SupplierReportFormatDTO
      */
     public function setFormat(?string $format = null): self
     {
@@ -78,7 +79,7 @@ class SupplierReportFormatDTO extends AbstractStructBase
     /**
      * Set showOnReport value
      * @param bool $showOnReport
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SupplierReportFormatDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SupplierReportFormatDTO
      */
     public function setShowOnReport(?bool $showOnReport = null): self
     {
@@ -101,7 +102,7 @@ class SupplierReportFormatDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SupplierReportFormatDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SupplierReportFormatDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

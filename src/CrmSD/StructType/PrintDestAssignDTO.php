@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintDestAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintDestAssignDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class PrintDestAssignDTO extends AbstractStructBase
     /**
      * Set printDestId value
      * @param string $printDestId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintDestAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintDestAssignDTO
      */
     public function setPrintDestId(?string $printDestId = null): self
     {
@@ -78,7 +79,7 @@ class PrintDestAssignDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintDestAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintDestAssignDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -101,7 +102,7 @@ class PrintDestAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintDestAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintDestAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getContactDescriptions --- returns the list of contact descriptions
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableContactDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAvailableContactDescriptionsResponse extends AbstractStructBase
         return $this->MidocoContactDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactDescriptionForArrayConstraintsFromSetMidocoContactDescription(?array $values = []): string
+    public static function validateMidocoContactDescriptionForArrayConstraintFromSetMidocoContactDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAvailableContactDescriptionsResponse extends AbstractStructBase
     public function setMidocoContactDescription(?array $midocoContactDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactDescriptionArrayErrorMessage = self::validateMidocoContactDescriptionForArrayConstraintsFromSetMidocoContactDescription($midocoContactDescription))) {
+        if ('' !== ($midocoContactDescriptionArrayErrorMessage = self::validateMidocoContactDescriptionForArrayConstraintFromSetMidocoContactDescription($midocoContactDescription))) {
             throw new InvalidArgumentException($midocoContactDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactDescription = $midocoContactDescription;

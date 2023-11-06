@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VatDefinitionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VatDefinitionDTO extends AbstractStructBase
 {
     /**

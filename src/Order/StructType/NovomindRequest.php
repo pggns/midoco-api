@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for NovomindRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class NovomindRequest extends AbstractStructBase
 {
     /**

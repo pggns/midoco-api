@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMediaTypeDescriptionListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMediaTypeDescriptionListResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetMediaTypeDescriptionListResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMediaTypeDescription
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO[]
      */
     protected ?array $MidocoMediaTypeDescription = null;
     /**
      * Constructor method for GetMediaTypeDescriptionListResponse
      * @uses GetMediaTypeDescriptionListResponse::setMidocoMediaTypeDescription()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO[] $midocoMediaTypeDescription
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO[] $midocoMediaTypeDescription
      */
     public function __construct(?array $midocoMediaTypeDescription = null)
     {
@@ -34,19 +35,20 @@ class GetMediaTypeDescriptionListResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMediaTypeDescription value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO[]
      */
     public function getMidocoMediaTypeDescription(): ?array
     {
         return $this->MidocoMediaTypeDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediaTypeDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediaTypeDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediaTypeDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediaTypeDescriptionForArrayConstraintsFromSetMidocoMediaTypeDescription(?array $values = []): string
+    public static function validateMidocoMediaTypeDescriptionForArrayConstraintFromSetMidocoMediaTypeDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetMediaTypeDescriptionListResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMediaTypeDescriptionListResponseMidocoMediaTypeDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getMediaTypeDescriptionListResponseMidocoMediaTypeDescriptionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO) {
+            if (!$getMediaTypeDescriptionListResponseMidocoMediaTypeDescriptionItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO) {
                 $invalidValues[] = is_object($getMediaTypeDescriptionListResponseMidocoMediaTypeDescriptionItem) ? get_class($getMediaTypeDescriptionListResponseMidocoMediaTypeDescriptionItem) : sprintf('%s(%s)', gettype($getMediaTypeDescriptionListResponseMidocoMediaTypeDescriptionItem), var_export($getMediaTypeDescriptionListResponseMidocoMediaTypeDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMediaTypeDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMediaTypeDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetMediaTypeDescriptionListResponse extends AbstractStructBase
     /**
      * Set MidocoMediaTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO[] $midocoMediaTypeDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediaTypeDescriptionListResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO[] $midocoMediaTypeDescription
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediaTypeDescriptionListResponse
      */
     public function setMidocoMediaTypeDescription(?array $midocoMediaTypeDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediaTypeDescriptionArrayErrorMessage = self::validateMidocoMediaTypeDescriptionForArrayConstraintsFromSetMidocoMediaTypeDescription($midocoMediaTypeDescription))) {
+        if ('' !== ($midocoMediaTypeDescriptionArrayErrorMessage = self::validateMidocoMediaTypeDescriptionForArrayConstraintFromSetMidocoMediaTypeDescription($midocoMediaTypeDescription))) {
             throw new InvalidArgumentException($midocoMediaTypeDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediaTypeDescription = $midocoMediaTypeDescription;
@@ -85,14 +87,14 @@ class GetMediaTypeDescriptionListResponse extends AbstractStructBase
     /**
      * Add item to MidocoMediaTypeDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediaTypeDescriptionListResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediaTypeDescriptionListResponse
      */
-    public function addToMidocoMediaTypeDescription(\Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO $item): self
+    public function addToMidocoMediaTypeDescription(\Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoMediaTypeDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MediaTypeDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoMediaTypeDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MediaTypeDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMediaTypeDescription[] = $item;
         

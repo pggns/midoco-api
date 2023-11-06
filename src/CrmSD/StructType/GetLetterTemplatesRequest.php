@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetLetterTemplatesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetLetterTemplatesRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetLetterTemplatesRequest extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLetterTemplatesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLetterTemplatesRequest
      */
     public function setName(?string $name = null): self
     {
@@ -70,7 +71,7 @@ class GetLetterTemplatesRequest extends AbstractStructBase
     /**
      * Set isActive value
      * @param bool $isActive
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetLetterTemplatesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetLetterTemplatesRequest
      */
     public function setIsActive(?bool $isActive = null): self
     {

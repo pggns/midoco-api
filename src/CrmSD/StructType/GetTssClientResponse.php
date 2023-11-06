@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTssClientResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTssClientResponse extends TssApiErrorConveyingResponse
 {
     /**
      * The MidocoTssClient
      * Meta information extracted from the WSDL
      * - ref: MidocoTssClient
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient $MidocoTssClient = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient $MidocoTssClient = null;
     /**
      * Constructor method for GetTssClientResponse
      * @uses GetTssClientResponse::setMidocoTssClient()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient $midocoTssClient
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient $midocoTssClient
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient $midocoTssClient = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient $midocoTssClient = null)
     {
         $this
             ->setMidocoTssClient($midocoTssClient);
     }
     /**
      * Get MidocoTssClient value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient|null
      */
-    public function getMidocoTssClient(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient
+    public function getMidocoTssClient(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient
     {
         return $this->MidocoTssClient;
     }
     /**
      * Set MidocoTssClient value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient $midocoTssClient
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTssClientResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient $midocoTssClient
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTssClientResponse
      */
-    public function setMidocoTssClient(?\Pggns\MidocoApi\CrmSD\StructType\MidocoTssClient $midocoTssClient = null): self
+    public function setMidocoTssClient(?\Pggns\MidocoApi\Crmsd\StructType\MidocoTssClient $midocoTssClient = null): self
     {
         $this->MidocoTssClient = $midocoTssClient;
         

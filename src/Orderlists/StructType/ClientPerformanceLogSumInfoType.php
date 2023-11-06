@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ClientPerformanceLogSumInfoType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ClientPerformanceLogSumInfoType extends AbstractStructBase
 {
     /**

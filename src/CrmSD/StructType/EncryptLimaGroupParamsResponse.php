@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for EncryptLimaGroupParamsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class EncryptLimaGroupParamsResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class EncryptLimaGroupParamsResponse extends AbstractStructBase
     /**
      * Set encrypted value
      * @param string $encrypted
-     * @return \Pggns\MidocoApi\CrmSD\StructType\EncryptLimaGroupParamsResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\EncryptLimaGroupParamsResponse
      */
     public function setEncrypted(?string $encrypted = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrdersForMediatorResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrdersForMediatorResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrdersForMediatorResponse extends AbstractStructBase
         return $this->MidocoMediatorOrderInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediatorOrderInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediatorOrderInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediatorOrderInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediatorOrderInfoForArrayConstraintsFromSetMidocoMediatorOrderInfo(?array $values = []): string
+    public static function validateMidocoMediatorOrderInfoForArrayConstraintFromSetMidocoMediatorOrderInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrdersForMediatorResponse extends AbstractStructBase
     public function setMidocoMediatorOrderInfo(?array $midocoMediatorOrderInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediatorOrderInfoArrayErrorMessage = self::validateMidocoMediatorOrderInfoForArrayConstraintsFromSetMidocoMediatorOrderInfo($midocoMediatorOrderInfo))) {
+        if ('' !== ($midocoMediatorOrderInfoArrayErrorMessage = self::validateMidocoMediatorOrderInfoForArrayConstraintFromSetMidocoMediatorOrderInfo($midocoMediatorOrderInfo))) {
             throw new InvalidArgumentException($midocoMediatorOrderInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediatorOrderInfo = $midocoMediatorOrderInfo;

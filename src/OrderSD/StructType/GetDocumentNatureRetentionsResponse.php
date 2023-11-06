@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDocumentNatureRetentionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDocumentNatureRetentionsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDocumentNatureRetentionsResponse extends AbstractStructBase
         return $this->MidocoDocumentNatureRetention;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDocumentNatureRetention method
+     * This method is responsible for validating the value(s) passed to the setMidocoDocumentNatureRetention method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDocumentNatureRetention method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDocumentNatureRetentionForArrayConstraintsFromSetMidocoDocumentNatureRetention(?array $values = []): string
+    public static function validateMidocoDocumentNatureRetentionForArrayConstraintFromSetMidocoDocumentNatureRetention(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDocumentNatureRetentionsResponse extends AbstractStructBase
     public function setMidocoDocumentNatureRetention(?array $midocoDocumentNatureRetention = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDocumentNatureRetentionArrayErrorMessage = self::validateMidocoDocumentNatureRetentionForArrayConstraintsFromSetMidocoDocumentNatureRetention($midocoDocumentNatureRetention))) {
+        if ('' !== ($midocoDocumentNatureRetentionArrayErrorMessage = self::validateMidocoDocumentNatureRetentionForArrayConstraintFromSetMidocoDocumentNatureRetention($midocoDocumentNatureRetention))) {
             throw new InvalidArgumentException($midocoDocumentNatureRetentionArrayErrorMessage, __LINE__);
         }
         $this->MidocoDocumentNatureRetention = $midocoDocumentNatureRetention;

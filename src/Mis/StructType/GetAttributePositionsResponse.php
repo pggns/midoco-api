@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getAttributePositions --- get all the attribut_position records
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAttributePositionsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAttributePositionsResponse extends AbstractStructBase
         return $this->MidocoAttributePosition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAttributePosition method
+     * This method is responsible for validating the value(s) passed to the setMidocoAttributePosition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAttributePosition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAttributePositionForArrayConstraintsFromSetMidocoAttributePosition(?array $values = []): string
+    public static function validateMidocoAttributePositionForArrayConstraintFromSetMidocoAttributePosition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAttributePositionsResponse extends AbstractStructBase
     public function setMidocoAttributePosition(?array $midocoAttributePosition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAttributePositionArrayErrorMessage = self::validateMidocoAttributePositionForArrayConstraintsFromSetMidocoAttributePosition($midocoAttributePosition))) {
+        if ('' !== ($midocoAttributePositionArrayErrorMessage = self::validateMidocoAttributePositionForArrayConstraintFromSetMidocoAttributePosition($midocoAttributePosition))) {
             throw new InvalidArgumentException($midocoAttributePositionArrayErrorMessage, __LINE__);
         }
         $this->MidocoAttributePosition = $midocoAttributePosition;

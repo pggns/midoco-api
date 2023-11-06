@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: filterSettlementCandidates --- take from crm_mediator_charges all the customers that are not locked and have the settlement month between the start and end date of their charges
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FilterSettlementCandidatesResponse extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class FilterSettlementCandidatesResponse extends AbstractStructBase
         return $this->mediatorId;
     }
     /**
-     * This method is responsible for validating the values passed to the setMediatorId method
+     * This method is responsible for validating the value(s) passed to the setMediatorId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMediatorId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMediatorIdForArrayConstraintsFromSetMediatorId(?array $values = []): string
+    public static function validateMediatorIdForArrayConstraintFromSetMediatorId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -71,12 +73,12 @@ class FilterSettlementCandidatesResponse extends AbstractStructBase
      * Set mediatorId value
      * @throws InvalidArgumentException
      * @param string[] $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FilterSettlementCandidatesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FilterSettlementCandidatesResponse
      */
     public function setMediatorId(?array $mediatorId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mediatorIdArrayErrorMessage = self::validateMediatorIdForArrayConstraintsFromSetMediatorId($mediatorId))) {
+        if ('' !== ($mediatorIdArrayErrorMessage = self::validateMediatorIdForArrayConstraintFromSetMediatorId($mediatorId))) {
             throw new InvalidArgumentException($mediatorIdArrayErrorMessage, __LINE__);
         }
         $this->mediatorId = $mediatorId;
@@ -87,7 +89,7 @@ class FilterSettlementCandidatesResponse extends AbstractStructBase
      * Add item to mediatorId value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FilterSettlementCandidatesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FilterSettlementCandidatesResponse
      */
     public function addToMediatorId(string $item): self
     {

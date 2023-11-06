@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: createTextTemplate --- creates a text template
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateTextTemplateResponse extends AbstractStructBase
 {
     /**

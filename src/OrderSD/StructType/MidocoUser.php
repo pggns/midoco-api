@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoUser StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoUser extends UserDTO
 {
     /**
@@ -41,12 +42,13 @@ class MidocoUser extends UserDTO
         return $this->MidocoCrsExpedient;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrsExpedient method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrsExpedient method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrsExpedient method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrsExpedientForArrayConstraintsFromSetMidocoCrsExpedient(?array $values = []): string
+    public static function validateMidocoCrsExpedientForArrayConstraintFromSetMidocoCrsExpedient(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class MidocoUser extends UserDTO
     public function setMidocoCrsExpedient(?array $midocoCrsExpedient = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrsExpedientArrayErrorMessage = self::validateMidocoCrsExpedientForArrayConstraintsFromSetMidocoCrsExpedient($midocoCrsExpedient))) {
+        if ('' !== ($midocoCrsExpedientArrayErrorMessage = self::validateMidocoCrsExpedientForArrayConstraintFromSetMidocoCrsExpedient($midocoCrsExpedient))) {
             throw new InvalidArgumentException($midocoCrsExpedientArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrsExpedient = $midocoCrsExpedient;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveBillingVatCalculations --- generates and saves the recs in billing_vat_calculations table
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveBillingVatCalculationsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class SaveBillingVatCalculationsResponse extends AbstractStructBase
         return $this->MidocoBillingVatCalculation;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingVatCalculation method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingVatCalculation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingVatCalculation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingVatCalculationForArrayConstraintsFromSetMidocoBillingVatCalculation(?array $values = []): string
+    public static function validateMidocoBillingVatCalculationForArrayConstraintFromSetMidocoBillingVatCalculation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class SaveBillingVatCalculationsResponse extends AbstractStructBase
     public function setMidocoBillingVatCalculation(?array $midocoBillingVatCalculation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingVatCalculationArrayErrorMessage = self::validateMidocoBillingVatCalculationForArrayConstraintsFromSetMidocoBillingVatCalculation($midocoBillingVatCalculation))) {
+        if ('' !== ($midocoBillingVatCalculationArrayErrorMessage = self::validateMidocoBillingVatCalculationForArrayConstraintFromSetMidocoBillingVatCalculation($midocoBillingVatCalculation))) {
             throw new InvalidArgumentException($midocoBillingVatCalculationArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingVatCalculation = $midocoBillingVatCalculation;

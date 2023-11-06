@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDebitCardTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDebitCardTypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDebitCardTypesResponse extends AbstractStructBase
         return $this->MidocoDebitCardType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDebitCardType method
+     * This method is responsible for validating the value(s) passed to the setMidocoDebitCardType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDebitCardType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDebitCardTypeForArrayConstraintsFromSetMidocoDebitCardType(?array $values = []): string
+    public static function validateMidocoDebitCardTypeForArrayConstraintFromSetMidocoDebitCardType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDebitCardTypesResponse extends AbstractStructBase
     public function setMidocoDebitCardType(?array $midocoDebitCardType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDebitCardTypeArrayErrorMessage = self::validateMidocoDebitCardTypeForArrayConstraintsFromSetMidocoDebitCardType($midocoDebitCardType))) {
+        if ('' !== ($midocoDebitCardTypeArrayErrorMessage = self::validateMidocoDebitCardTypeForArrayConstraintFromSetMidocoDebitCardType($midocoDebitCardType))) {
             throw new InvalidArgumentException($midocoDebitCardTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoDebitCardType = $midocoDebitCardType;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTripAppraisalInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTripAppraisalInfo extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class MidocoTripAppraisalInfo extends AbstractStructBase
         return $this->TripAppraisalInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setTripAppraisalInfo method
+     * This method is responsible for validating the value(s) passed to the setTripAppraisalInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTripAppraisalInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTripAppraisalInfoForArrayConstraintsFromSetTripAppraisalInfo(?array $values = []): string
+    public static function validateTripAppraisalInfoForArrayConstraintFromSetTripAppraisalInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class MidocoTripAppraisalInfo extends AbstractStructBase
     public function setTripAppraisalInfo(?array $tripAppraisalInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($tripAppraisalInfoArrayErrorMessage = self::validateTripAppraisalInfoForArrayConstraintsFromSetTripAppraisalInfo($tripAppraisalInfo))) {
+        if ('' !== ($tripAppraisalInfoArrayErrorMessage = self::validateTripAppraisalInfoForArrayConstraintFromSetTripAppraisalInfo($tripAppraisalInfo))) {
             throw new InvalidArgumentException($tripAppraisalInfoArrayErrorMessage, __LINE__);
         }
         $this->TripAppraisalInfo = $tripAppraisalInfo;

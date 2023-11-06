@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDebitInfoForReceiptResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDebitInfoForReceiptResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDebitInfoForReceiptResponse extends AbstractStructBase
         return $this->MidocoDebitInfoForReceipt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDebitInfoForReceipt method
+     * This method is responsible for validating the value(s) passed to the setMidocoDebitInfoForReceipt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDebitInfoForReceipt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDebitInfoForReceiptForArrayConstraintsFromSetMidocoDebitInfoForReceipt(?array $values = []): string
+    public static function validateMidocoDebitInfoForReceiptForArrayConstraintFromSetMidocoDebitInfoForReceipt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDebitInfoForReceiptResponse extends AbstractStructBase
     public function setMidocoDebitInfoForReceipt(?array $midocoDebitInfoForReceipt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDebitInfoForReceiptArrayErrorMessage = self::validateMidocoDebitInfoForReceiptForArrayConstraintsFromSetMidocoDebitInfoForReceipt($midocoDebitInfoForReceipt))) {
+        if ('' !== ($midocoDebitInfoForReceiptArrayErrorMessage = self::validateMidocoDebitInfoForReceiptForArrayConstraintFromSetMidocoDebitInfoForReceipt($midocoDebitInfoForReceipt))) {
             throw new InvalidArgumentException($midocoDebitInfoForReceiptArrayErrorMessage, __LINE__);
         }
         $this->MidocoDebitInfoForReceipt = $midocoDebitInfoForReceipt;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetErmMailInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetErmMailInfoResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetErmMailInfoResponse extends AbstractStructBase
         return $this->MidocoOrderMailErm;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderMailErm method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderMailErm method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderMailErm method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderMailErmForArrayConstraintsFromSetMidocoOrderMailErm(?array $values = []): string
+    public static function validateMidocoOrderMailErmForArrayConstraintFromSetMidocoOrderMailErm(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetErmMailInfoResponse extends AbstractStructBase
     public function setMidocoOrderMailErm(?array $midocoOrderMailErm = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderMailErmArrayErrorMessage = self::validateMidocoOrderMailErmForArrayConstraintsFromSetMidocoOrderMailErm($midocoOrderMailErm))) {
+        if ('' !== ($midocoOrderMailErmArrayErrorMessage = self::validateMidocoOrderMailErmForArrayConstraintFromSetMidocoOrderMailErm($midocoOrderMailErm))) {
             throw new InvalidArgumentException($midocoOrderMailErmArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderMailErm = $midocoOrderMailErm;

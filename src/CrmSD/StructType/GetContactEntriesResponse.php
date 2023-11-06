@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getContactEntries --- returns the list of contact entries corresponding to a customer id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetContactEntriesResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetContactEntriesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoContactEntry
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     protected ?array $MidocoContactEntry = null;
     /**
      * Constructor method for GetContactEntriesResponse
      * @uses GetContactEntriesResponse::setMidocoContactEntry()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
      */
     public function __construct(?array $midocoContactEntry = null)
     {
@@ -36,19 +37,20 @@ class GetContactEntriesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoContactEntry value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[]
      */
     public function getMidocoContactEntry(): ?array
     {
         return $this->MidocoContactEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry(?array $values = []): string
+    public static function validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetContactEntriesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getContactEntriesResponseMidocoContactEntryItem) {
             // validation for constraint: itemType
-            if (!$getContactEntriesResponseMidocoContactEntryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
+            if (!$getContactEntriesResponseMidocoContactEntryItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
                 $invalidValues[] = is_object($getContactEntriesResponseMidocoContactEntryItem) ? get_class($getContactEntriesResponseMidocoContactEntryItem) : sprintf('%s(%s)', gettype($getContactEntriesResponseMidocoContactEntryItem), var_export($getContactEntriesResponseMidocoContactEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetContactEntriesResponse extends AbstractStructBase
     /**
      * Set MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType[] $midocoContactEntry
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetContactEntriesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType[] $midocoContactEntry
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetContactEntriesResponse
      */
     public function setMidocoContactEntry(?array $midocoContactEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintsFromSetMidocoContactEntry($midocoContactEntry))) {
+        if ('' !== ($midocoContactEntryArrayErrorMessage = self::validateMidocoContactEntryForArrayConstraintFromSetMidocoContactEntry($midocoContactEntry))) {
             throw new InvalidArgumentException($midocoContactEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactEntry = $midocoContactEntry;
@@ -87,14 +89,14 @@ class GetContactEntriesResponse extends AbstractStructBase
     /**
      * Add item to MidocoContactEntry value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetContactEntriesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetContactEntriesResponse
      */
-    public function addToMidocoContactEntry(\Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType $item): self
+    public function addToMidocoContactEntry(\Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType) {
-            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType) {
+            throw new InvalidArgumentException(sprintf('The MidocoContactEntry property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoContactEntryType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoContactEntry[] = $item;
         

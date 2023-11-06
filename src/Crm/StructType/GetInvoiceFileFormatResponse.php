@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetInvoiceFileFormatResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetInvoiceFileFormatResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetInvoiceFileFormatResponse extends AbstractStructBase
         return $this->MidocoInvoiceFileFormat;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoiceFileFormat method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoiceFileFormat method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoiceFileFormat method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoiceFileFormatForArrayConstraintsFromSetMidocoInvoiceFileFormat(?array $values = []): string
+    public static function validateMidocoInvoiceFileFormatForArrayConstraintFromSetMidocoInvoiceFileFormat(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetInvoiceFileFormatResponse extends AbstractStructBase
     public function setMidocoInvoiceFileFormat(?array $midocoInvoiceFileFormat = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoiceFileFormatArrayErrorMessage = self::validateMidocoInvoiceFileFormatForArrayConstraintsFromSetMidocoInvoiceFileFormat($midocoInvoiceFileFormat))) {
+        if ('' !== ($midocoInvoiceFileFormatArrayErrorMessage = self::validateMidocoInvoiceFileFormatForArrayConstraintFromSetMidocoInvoiceFileFormat($midocoInvoiceFileFormat))) {
             throw new InvalidArgumentException($midocoInvoiceFileFormatArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoiceFileFormat = $midocoInvoiceFileFormat;

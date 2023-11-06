@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoGUIOnlinePaymentTransaction StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
 {
     /**
@@ -51,12 +52,13 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
         return $this->errorArgs;
     }
     /**
-     * This method is responsible for validating the values passed to the setErrorArgs method
+     * This method is responsible for validating the value(s) passed to the setErrorArgs method
      * This method is willingly generated in order to preserve the one-line inline validation within the setErrorArgs method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateErrorArgsForArrayConstraintsFromSetErrorArgs(?array $values = []): string
+    public static function validateErrorArgsForArrayConstraintFromSetErrorArgs(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
     public function setErrorArgs(?array $errorArgs = null): self
     {
         // validation for constraint: array
-        if ('' !== ($errorArgsArrayErrorMessage = self::validateErrorArgsForArrayConstraintsFromSetErrorArgs($errorArgs))) {
+        if ('' !== ($errorArgsArrayErrorMessage = self::validateErrorArgsForArrayConstraintFromSetErrorArgs($errorArgs))) {
             throw new InvalidArgumentException($errorArgsArrayErrorMessage, __LINE__);
         }
         $this->errorArgs = $errorArgs;
@@ -117,12 +119,13 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
         return $this->processor;
     }
     /**
-     * This method is responsible for validating the values passed to the setProcessor method
+     * This method is responsible for validating the value(s) passed to the setProcessor method
      * This method is willingly generated in order to preserve the one-line inline validation within the setProcessor method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateProcessorForArrayConstraintsFromSetProcessor(?array $values = []): string
+    public static function validateProcessorForArrayConstraintFromSetProcessor(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -151,7 +154,7 @@ class MidocoGUIOnlinePaymentTransaction extends OnlinePaymentTransactionDTO
     public function setProcessor(?array $processor = null): self
     {
         // validation for constraint: array
-        if ('' !== ($processorArrayErrorMessage = self::validateProcessorForArrayConstraintsFromSetProcessor($processor))) {
+        if ('' !== ($processorArrayErrorMessage = self::validateProcessorForArrayConstraintFromSetProcessor($processor))) {
             throw new InvalidArgumentException($processorArrayErrorMessage, __LINE__);
         }
         $this->processor = $processor;

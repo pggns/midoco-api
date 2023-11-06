@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OnlinePaymentTransactionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OnlinePaymentTransactionDTO extends AbstractStructBase
 {
     /**
@@ -154,6 +155,11 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
      */
     protected ?string $posCode = null;
     /**
+     * The settlementDate
+     * @var string|null
+     */
+    protected ?string $settlementDate = null;
+    /**
      * The tokenChecked
      * @var bool|null
      */
@@ -238,6 +244,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
      * @uses OnlinePaymentTransactionDTO::setOrderId()
      * @uses OnlinePaymentTransactionDTO::setPaymentChannelIndicator()
      * @uses OnlinePaymentTransactionDTO::setPosCode()
+     * @uses OnlinePaymentTransactionDTO::setSettlementDate()
      * @uses OnlinePaymentTransactionDTO::setTokenChecked()
      * @uses OnlinePaymentTransactionDTO::setTransactionId()
      * @uses OnlinePaymentTransactionDTO::setTransactionRefId()
@@ -277,6 +284,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
      * @param int $orderId
      * @param string $paymentChannelIndicator
      * @param string $posCode
+     * @param string $settlementDate
      * @param bool $tokenChecked
      * @param int $transactionId
      * @param string $transactionRefId
@@ -289,7 +297,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
      * @param float $vatPercentExtern
      * @param string $xid
      */
-    public function __construct(?float $amount = null, ?string $approvalCode = null, ?int $basePositionId = null, ?string $calculatedPaymentDate = null, ?string $captureDate = null, ?int $captureDone = null, ?string $ccNo = null, ?int $ccReceiptNo = null, ?string $ccToken = null, ?string $ccTokenType = null, ?string $ccType = null, ?int $ccValidMonth = null, ?int $ccValidYear = null, ?string $creationTimestamp = null, ?string $currency = null, ?string $dstid = null, ?string $errorBundle = null, ?string $errorCode = null, ?string $errorDescriptionCode = null, ?string $externalId = null, ?string $initialEcomTransactionId = null, ?bool $isDeposit = null, ?bool $isRecurring = null, ?int $itemId = null, ?string $manualApprovalCode = null, ?int $orderId = null, ?string $paymentChannelIndicator = null, ?string $posCode = null, ?bool $tokenChecked = null, ?int $transactionId = null, ?string $transactionRefId = null, ?string $usedAdapter = null, ?float $vat2AmountExtern = null, ?float $vat2BaseExtern = null, ?float $vat2PercentExtern = null, ?float $vatAmountExtern = null, ?float $vatBaseExtern = null, ?float $vatPercentExtern = null, ?string $xid = null)
+    public function __construct(?float $amount = null, ?string $approvalCode = null, ?int $basePositionId = null, ?string $calculatedPaymentDate = null, ?string $captureDate = null, ?int $captureDone = null, ?string $ccNo = null, ?int $ccReceiptNo = null, ?string $ccToken = null, ?string $ccTokenType = null, ?string $ccType = null, ?int $ccValidMonth = null, ?int $ccValidYear = null, ?string $creationTimestamp = null, ?string $currency = null, ?string $dstid = null, ?string $errorBundle = null, ?string $errorCode = null, ?string $errorDescriptionCode = null, ?string $externalId = null, ?string $initialEcomTransactionId = null, ?bool $isDeposit = null, ?bool $isRecurring = null, ?int $itemId = null, ?string $manualApprovalCode = null, ?int $orderId = null, ?string $paymentChannelIndicator = null, ?string $posCode = null, ?string $settlementDate = null, ?bool $tokenChecked = null, ?int $transactionId = null, ?string $transactionRefId = null, ?string $usedAdapter = null, ?float $vat2AmountExtern = null, ?float $vat2BaseExtern = null, ?float $vat2PercentExtern = null, ?float $vatAmountExtern = null, ?float $vatBaseExtern = null, ?float $vatPercentExtern = null, ?string $xid = null)
     {
         $this
             ->setAmount($amount)
@@ -320,6 +328,7 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
             ->setOrderId($orderId)
             ->setPaymentChannelIndicator($paymentChannelIndicator)
             ->setPosCode($posCode)
+            ->setSettlementDate($settlementDate)
             ->setTokenChecked($tokenChecked)
             ->setTransactionId($transactionId)
             ->setTransactionRefId($transactionRefId)
@@ -973,6 +982,29 @@ class OnlinePaymentTransactionDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($posCode, true), gettype($posCode)), __LINE__);
         }
         $this->posCode = $posCode;
+        
+        return $this;
+    }
+    /**
+     * Get settlementDate value
+     * @return string|null
+     */
+    public function getSettlementDate(): ?string
+    {
+        return $this->settlementDate;
+    }
+    /**
+     * Set settlementDate value
+     * @param string $settlementDate
+     * @return \Pggns\MidocoApi\Order\StructType\OnlinePaymentTransactionDTO
+     */
+    public function setSettlementDate(?string $settlementDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementDate) && !is_string($settlementDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementDate, true), gettype($settlementDate)), __LINE__);
+        }
+        $this->settlementDate = $settlementDate;
         
         return $this;
     }

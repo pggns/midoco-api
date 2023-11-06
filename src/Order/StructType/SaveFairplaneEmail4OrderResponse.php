@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveFairplaneEmail4OrderResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveFairplaneEmail4OrderResponse extends AbstractStructBase
 {
     /**
@@ -39,12 +40,13 @@ class SaveFairplaneEmail4OrderResponse extends AbstractStructBase
         return $this->orderDocumentId;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrderDocumentId method
+     * This method is responsible for validating the value(s) passed to the setOrderDocumentId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrderDocumentId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrderDocumentIdForArrayConstraintsFromSetOrderDocumentId(?array $values = []): string
+    public static function validateOrderDocumentIdForArrayConstraintFromSetOrderDocumentId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -73,7 +75,7 @@ class SaveFairplaneEmail4OrderResponse extends AbstractStructBase
     public function setOrderDocumentId(?array $orderDocumentId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orderDocumentIdArrayErrorMessage = self::validateOrderDocumentIdForArrayConstraintsFromSetOrderDocumentId($orderDocumentId))) {
+        if ('' !== ($orderDocumentIdArrayErrorMessage = self::validateOrderDocumentIdForArrayConstraintFromSetOrderDocumentId($orderDocumentId))) {
             throw new InvalidArgumentException($orderDocumentIdArrayErrorMessage, __LINE__);
         }
         $this->orderDocumentId = $orderDocumentId;

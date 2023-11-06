@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfBeanNamesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfBeanNamesResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetMfBeanNamesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMfBeanLocal
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal[]
      */
     protected ?array $MidocoMfBeanLocal = null;
     /**
      * Constructor method for GetMfBeanNamesResponse
      * @uses GetMfBeanNamesResponse::setMidocoMfBeanLocal()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal[] $midocoMfBeanLocal
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal[] $midocoMfBeanLocal
      */
     public function __construct(?array $midocoMfBeanLocal = null)
     {
@@ -34,19 +35,20 @@ class GetMfBeanNamesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMfBeanLocal value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal[]
      */
     public function getMidocoMfBeanLocal(): ?array
     {
         return $this->MidocoMfBeanLocal;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMfBeanLocal method
+     * This method is responsible for validating the value(s) passed to the setMidocoMfBeanLocal method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMfBeanLocal method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMfBeanLocalForArrayConstraintsFromSetMidocoMfBeanLocal(?array $values = []): string
+    public static function validateMidocoMfBeanLocalForArrayConstraintFromSetMidocoMfBeanLocal(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetMfBeanNamesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMfBeanNamesResponseMidocoMfBeanLocalItem) {
             // validation for constraint: itemType
-            if (!$getMfBeanNamesResponseMidocoMfBeanLocalItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal) {
+            if (!$getMfBeanNamesResponseMidocoMfBeanLocalItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal) {
                 $invalidValues[] = is_object($getMfBeanNamesResponseMidocoMfBeanLocalItem) ? get_class($getMfBeanNamesResponseMidocoMfBeanLocalItem) : sprintf('%s(%s)', gettype($getMfBeanNamesResponseMidocoMfBeanLocalItem), var_export($getMfBeanNamesResponseMidocoMfBeanLocalItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMfBeanLocal property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMfBeanLocal property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetMfBeanNamesResponse extends AbstractStructBase
     /**
      * Set MidocoMfBeanLocal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal[] $midocoMfBeanLocal
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfBeanNamesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal[] $midocoMfBeanLocal
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfBeanNamesResponse
      */
     public function setMidocoMfBeanLocal(?array $midocoMfBeanLocal = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMfBeanLocalArrayErrorMessage = self::validateMidocoMfBeanLocalForArrayConstraintsFromSetMidocoMfBeanLocal($midocoMfBeanLocal))) {
+        if ('' !== ($midocoMfBeanLocalArrayErrorMessage = self::validateMidocoMfBeanLocalForArrayConstraintFromSetMidocoMfBeanLocal($midocoMfBeanLocal))) {
             throw new InvalidArgumentException($midocoMfBeanLocalArrayErrorMessage, __LINE__);
         }
         $this->MidocoMfBeanLocal = $midocoMfBeanLocal;
@@ -85,14 +87,14 @@ class GetMfBeanNamesResponse extends AbstractStructBase
     /**
      * Add item to MidocoMfBeanLocal value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfBeanNamesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfBeanNamesResponse
      */
-    public function addToMidocoMfBeanLocal(\Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal $item): self
+    public function addToMidocoMfBeanLocal(\Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal) {
-            throw new InvalidArgumentException(sprintf('The MidocoMfBeanLocal property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMfBeanLocal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal) {
+            throw new InvalidArgumentException(sprintf('The MidocoMfBeanLocal property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoMfBeanLocal, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMfBeanLocal[] = $item;
         

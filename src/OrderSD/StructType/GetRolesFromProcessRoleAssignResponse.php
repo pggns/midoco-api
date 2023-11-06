@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetRolesFromProcessRoleAssignResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
         return $this->MidocoProcessRoleAssign;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProcessRoleAssign method
+     * This method is responsible for validating the value(s) passed to the setMidocoProcessRoleAssign method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProcessRoleAssign method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProcessRoleAssignForArrayConstraintsFromSetMidocoProcessRoleAssign(?array $values = []): string
+    public static function validateMidocoProcessRoleAssignForArrayConstraintFromSetMidocoProcessRoleAssign(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetRolesFromProcessRoleAssignResponse extends AbstractStructBase
     public function setMidocoProcessRoleAssign(?array $midocoProcessRoleAssign = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProcessRoleAssignArrayErrorMessage = self::validateMidocoProcessRoleAssignForArrayConstraintsFromSetMidocoProcessRoleAssign($midocoProcessRoleAssign))) {
+        if ('' !== ($midocoProcessRoleAssignArrayErrorMessage = self::validateMidocoProcessRoleAssignForArrayConstraintFromSetMidocoProcessRoleAssign($midocoProcessRoleAssign))) {
             throw new InvalidArgumentException($midocoProcessRoleAssignArrayErrorMessage, __LINE__);
         }
         $this->MidocoProcessRoleAssign = $midocoProcessRoleAssign;

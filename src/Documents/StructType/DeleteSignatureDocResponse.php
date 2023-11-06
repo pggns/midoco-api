@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteSignatureDoc --- deletes a list of signature documents by id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteSignatureDocResponse extends AbstractStructBase
 {
 }

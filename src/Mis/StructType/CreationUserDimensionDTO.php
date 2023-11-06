@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreationUserDimensionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreationUserDimensionDTO extends AbstractStructBase
 {
     /**

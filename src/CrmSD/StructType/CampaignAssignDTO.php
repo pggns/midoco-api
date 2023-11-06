@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CampaignAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CampaignAssignDTO extends AbstractStructBase
 {
     /**
@@ -103,7 +104,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -126,7 +127,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -149,7 +150,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set dateOfIssue value
      * @param string $dateOfIssue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setDateOfIssue(?string $dateOfIssue = null): self
     {
@@ -172,7 +173,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set done value
      * @param bool $done
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setDone(?bool $done = null): self
     {
@@ -195,7 +196,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set feedback value
      * @param bool $feedback
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setFeedback(?bool $feedback = null): self
     {
@@ -218,7 +219,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set importedOrgUnit value
      * @param string $importedOrgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setImportedOrgUnit(?string $importedOrgUnit = null): self
     {
@@ -241,7 +242,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set isImported value
      * @param bool $isImported
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setIsImported(?bool $isImported = null): self
     {
@@ -264,7 +265,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set recipientInfo value
      * @param string $recipientInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setRecipientInfo(?string $recipientInfo = null): self
     {
@@ -287,7 +288,7 @@ class CampaignAssignDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CampaignAssignDTO
      */
     public function setRemark(?string $remark = null): self
     {

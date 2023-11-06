@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchPaymentProviderSettlementsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchPaymentProviderSettlementsResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class SearchPaymentProviderSettlementsResponse extends AbstractStructBase
         return $this->MidocoPaymentProviderSettlement;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPaymentProviderSettlement method
+     * This method is responsible for validating the value(s) passed to the setMidocoPaymentProviderSettlement method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPaymentProviderSettlement method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPaymentProviderSettlementForArrayConstraintsFromSetMidocoPaymentProviderSettlement(?array $values = []): string
+    public static function validateMidocoPaymentProviderSettlementForArrayConstraintFromSetMidocoPaymentProviderSettlement(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class SearchPaymentProviderSettlementsResponse extends AbstractStructBase
     public function setMidocoPaymentProviderSettlement(?array $midocoPaymentProviderSettlement = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPaymentProviderSettlementArrayErrorMessage = self::validateMidocoPaymentProviderSettlementForArrayConstraintsFromSetMidocoPaymentProviderSettlement($midocoPaymentProviderSettlement))) {
+        if ('' !== ($midocoPaymentProviderSettlementArrayErrorMessage = self::validateMidocoPaymentProviderSettlementForArrayConstraintFromSetMidocoPaymentProviderSettlement($midocoPaymentProviderSettlement))) {
             throw new InvalidArgumentException($midocoPaymentProviderSettlementArrayErrorMessage, __LINE__);
         }
         $this->MidocoPaymentProviderSettlement = $midocoPaymentProviderSettlement;

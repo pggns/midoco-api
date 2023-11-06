@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getTextTemplates --- return a list of text templates, which are available for the OrgUnit
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTextTemplatesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetTextTemplatesResponse extends AbstractStructBase
         return $this->MidocoCampaignTemplate;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCampaignTemplate method
+     * This method is responsible for validating the value(s) passed to the setMidocoCampaignTemplate method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCampaignTemplate method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCampaignTemplateForArrayConstraintsFromSetMidocoCampaignTemplate(?array $values = []): string
+    public static function validateMidocoCampaignTemplateForArrayConstraintFromSetMidocoCampaignTemplate(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetTextTemplatesResponse extends AbstractStructBase
     public function setMidocoCampaignTemplate(?array $midocoCampaignTemplate = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCampaignTemplateArrayErrorMessage = self::validateMidocoCampaignTemplateForArrayConstraintsFromSetMidocoCampaignTemplate($midocoCampaignTemplate))) {
+        if ('' !== ($midocoCampaignTemplateArrayErrorMessage = self::validateMidocoCampaignTemplateForArrayConstraintFromSetMidocoCampaignTemplate($midocoCampaignTemplate))) {
             throw new InvalidArgumentException($midocoCampaignTemplateArrayErrorMessage, __LINE__);
         }
         $this->MidocoCampaignTemplate = $midocoCampaignTemplate;

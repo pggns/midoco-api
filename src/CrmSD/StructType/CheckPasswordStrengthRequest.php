@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckPasswordStrengthRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckPasswordStrengthRequest extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CheckPasswordStrengthRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckPasswordStrengthRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CheckPasswordStrengthRequest
      */
     public function setPassword(?string $password = null): self
     {
@@ -78,7 +79,7 @@ class CheckPasswordStrengthRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckPasswordStrengthRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CheckPasswordStrengthRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -101,7 +102,7 @@ class CheckPasswordStrengthRequest extends AbstractStructBase
     /**
      * Set passwordLevel value
      * @param int $passwordLevel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckPasswordStrengthRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CheckPasswordStrengthRequest
      */
     public function setPasswordLevel(?int $passwordLevel = null): self
     {

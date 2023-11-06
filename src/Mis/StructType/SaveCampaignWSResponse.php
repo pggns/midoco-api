@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * and is used for further actions
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCampaignWSResponse extends AbstractStructBase
 {
     /**

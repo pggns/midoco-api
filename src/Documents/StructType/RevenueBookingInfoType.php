@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RevenueBookingInfoType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RevenueBookingInfoType extends RevenueBookingDTO
 {
     /**
@@ -23,10 +24,29 @@ class RevenueBookingInfoType extends RevenueBookingDTO
      */
     protected ?array $MidocoRevenueBookingVatDiv = null;
     /**
+     * The MidocoTravelnoPurchaseAssignment
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoTravelnoPurchaseAssignment
+     * @var \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment[]
+     */
+    protected ?array $MidocoTravelnoPurchaseAssignment = null;
+    /**
      * The newTotalAmount
      * @var float|null
      */
     protected ?float $newTotalAmount = null;
+    /**
+     * The bookedSupplierInvoiceAmount
+     * @var float|null
+     */
+    protected ?float $bookedSupplierInvoiceAmount = null;
+    /**
+     * The bookedOriginalSupplierInvoiceAmount
+     * @var float|null
+     */
+    protected ?float $bookedOriginalSupplierInvoiceAmount = null;
     /**
      * The costCentre
      * @var string|null
@@ -52,29 +72,46 @@ class RevenueBookingInfoType extends RevenueBookingDTO
      */
     protected ?bool $preventPaymentForEntry = null;
     /**
+     * The customerId
+     * @var int|null
+     */
+    protected ?int $customerId = null;
+    /**
      * Constructor method for RevenueBookingInfoType
      * @uses RevenueBookingInfoType::setMidocoRevenueBookingVatDiv()
+     * @uses RevenueBookingInfoType::setMidocoTravelnoPurchaseAssignment()
      * @uses RevenueBookingInfoType::setNewTotalAmount()
+     * @uses RevenueBookingInfoType::setBookedSupplierInvoiceAmount()
+     * @uses RevenueBookingInfoType::setBookedOriginalSupplierInvoiceAmount()
      * @uses RevenueBookingInfoType::setCostCentre()
      * @uses RevenueBookingInfoType::setEntryRestAsProv()
      * @uses RevenueBookingInfoType::setForeignCurrencyExchangeRate()
      * @uses RevenueBookingInfoType::setPreventPaymentForEntry()
+     * @uses RevenueBookingInfoType::setCustomerId()
      * @param \Pggns\MidocoApi\Documents\StructType\MidocoRevenueBookingVatDiv[] $midocoRevenueBookingVatDiv
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment[] $midocoTravelnoPurchaseAssignment
      * @param float $newTotalAmount
+     * @param float $bookedSupplierInvoiceAmount
+     * @param float $bookedOriginalSupplierInvoiceAmount
      * @param string $costCentre
      * @param bool $entryRestAsProv
      * @param float $foreignCurrencyExchangeRate
      * @param bool $preventPaymentForEntry
+     * @param int $customerId
      */
-    public function __construct(?array $midocoRevenueBookingVatDiv = null, ?float $newTotalAmount = null, ?string $costCentre = null, ?bool $entryRestAsProv = false, ?float $foreignCurrencyExchangeRate = null, ?bool $preventPaymentForEntry = false)
+    public function __construct(?array $midocoRevenueBookingVatDiv = null, ?array $midocoTravelnoPurchaseAssignment = null, ?float $newTotalAmount = null, ?float $bookedSupplierInvoiceAmount = null, ?float $bookedOriginalSupplierInvoiceAmount = null, ?string $costCentre = null, ?bool $entryRestAsProv = false, ?float $foreignCurrencyExchangeRate = null, ?bool $preventPaymentForEntry = false, ?int $customerId = null)
     {
         $this
             ->setMidocoRevenueBookingVatDiv($midocoRevenueBookingVatDiv)
+            ->setMidocoTravelnoPurchaseAssignment($midocoTravelnoPurchaseAssignment)
             ->setNewTotalAmount($newTotalAmount)
+            ->setBookedSupplierInvoiceAmount($bookedSupplierInvoiceAmount)
+            ->setBookedOriginalSupplierInvoiceAmount($bookedOriginalSupplierInvoiceAmount)
             ->setCostCentre($costCentre)
             ->setEntryRestAsProv($entryRestAsProv)
             ->setForeignCurrencyExchangeRate($foreignCurrencyExchangeRate)
-            ->setPreventPaymentForEntry($preventPaymentForEntry);
+            ->setPreventPaymentForEntry($preventPaymentForEntry)
+            ->setCustomerId($customerId);
     }
     /**
      * Get MidocoRevenueBookingVatDiv value
@@ -85,12 +122,13 @@ class RevenueBookingInfoType extends RevenueBookingDTO
         return $this->MidocoRevenueBookingVatDiv;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRevenueBookingVatDiv method
+     * This method is responsible for validating the value(s) passed to the setMidocoRevenueBookingVatDiv method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRevenueBookingVatDiv method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRevenueBookingVatDivForArrayConstraintsFromSetMidocoRevenueBookingVatDiv(?array $values = []): string
+    public static function validateMidocoRevenueBookingVatDivForArrayConstraintFromSetMidocoRevenueBookingVatDiv(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -119,7 +157,7 @@ class RevenueBookingInfoType extends RevenueBookingDTO
     public function setMidocoRevenueBookingVatDiv(?array $midocoRevenueBookingVatDiv = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRevenueBookingVatDivArrayErrorMessage = self::validateMidocoRevenueBookingVatDivForArrayConstraintsFromSetMidocoRevenueBookingVatDiv($midocoRevenueBookingVatDiv))) {
+        if ('' !== ($midocoRevenueBookingVatDivArrayErrorMessage = self::validateMidocoRevenueBookingVatDivForArrayConstraintFromSetMidocoRevenueBookingVatDiv($midocoRevenueBookingVatDiv))) {
             throw new InvalidArgumentException($midocoRevenueBookingVatDivArrayErrorMessage, __LINE__);
         }
         $this->MidocoRevenueBookingVatDiv = $midocoRevenueBookingVatDiv;
@@ -143,6 +181,73 @@ class RevenueBookingInfoType extends RevenueBookingDTO
         return $this;
     }
     /**
+     * Get MidocoTravelnoPurchaseAssignment value
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment[]
+     */
+    public function getMidocoTravelnoPurchaseAssignment(): ?array
+    {
+        return $this->MidocoTravelnoPurchaseAssignment;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelnoPurchaseAssignment method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelnoPurchaseAssignment method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoTravelnoPurchaseAssignmentForArrayConstraintFromSetMidocoTravelnoPurchaseAssignment(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $revenueBookingInfoTypeMidocoTravelnoPurchaseAssignmentItem) {
+            // validation for constraint: itemType
+            if (!$revenueBookingInfoTypeMidocoTravelnoPurchaseAssignmentItem instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment) {
+                $invalidValues[] = is_object($revenueBookingInfoTypeMidocoTravelnoPurchaseAssignmentItem) ? get_class($revenueBookingInfoTypeMidocoTravelnoPurchaseAssignmentItem) : sprintf('%s(%s)', gettype($revenueBookingInfoTypeMidocoTravelnoPurchaseAssignmentItem), var_export($revenueBookingInfoTypeMidocoTravelnoPurchaseAssignmentItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoTravelnoPurchaseAssignment property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoTravelnoPurchaseAssignment value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment[] $midocoTravelnoPurchaseAssignment
+     * @return \Pggns\MidocoApi\Documents\StructType\RevenueBookingInfoType
+     */
+    public function setMidocoTravelnoPurchaseAssignment(?array $midocoTravelnoPurchaseAssignment = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoTravelnoPurchaseAssignmentArrayErrorMessage = self::validateMidocoTravelnoPurchaseAssignmentForArrayConstraintFromSetMidocoTravelnoPurchaseAssignment($midocoTravelnoPurchaseAssignment))) {
+            throw new InvalidArgumentException($midocoTravelnoPurchaseAssignmentArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoTravelnoPurchaseAssignment = $midocoTravelnoPurchaseAssignment;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoTravelnoPurchaseAssignment value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment $item
+     * @return \Pggns\MidocoApi\Documents\StructType\RevenueBookingInfoType
+     */
+    public function addToMidocoTravelnoPurchaseAssignment(\Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment) {
+            throw new InvalidArgumentException(sprintf('The MidocoTravelnoPurchaseAssignment property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoTravelnoPurchaseAssignment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoTravelnoPurchaseAssignment[] = $item;
+        
+        return $this;
+    }
+    /**
      * Get newTotalAmount value
      * @return float|null
      */
@@ -162,6 +267,52 @@ class RevenueBookingInfoType extends RevenueBookingDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($newTotalAmount, true), gettype($newTotalAmount)), __LINE__);
         }
         $this->newTotalAmount = $newTotalAmount;
+        
+        return $this;
+    }
+    /**
+     * Get bookedSupplierInvoiceAmount value
+     * @return float|null
+     */
+    public function getBookedSupplierInvoiceAmount(): ?float
+    {
+        return $this->bookedSupplierInvoiceAmount;
+    }
+    /**
+     * Set bookedSupplierInvoiceAmount value
+     * @param float $bookedSupplierInvoiceAmount
+     * @return \Pggns\MidocoApi\Documents\StructType\RevenueBookingInfoType
+     */
+    public function setBookedSupplierInvoiceAmount(?float $bookedSupplierInvoiceAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($bookedSupplierInvoiceAmount) && !(is_float($bookedSupplierInvoiceAmount) || is_numeric($bookedSupplierInvoiceAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($bookedSupplierInvoiceAmount, true), gettype($bookedSupplierInvoiceAmount)), __LINE__);
+        }
+        $this->bookedSupplierInvoiceAmount = $bookedSupplierInvoiceAmount;
+        
+        return $this;
+    }
+    /**
+     * Get bookedOriginalSupplierInvoiceAmount value
+     * @return float|null
+     */
+    public function getBookedOriginalSupplierInvoiceAmount(): ?float
+    {
+        return $this->bookedOriginalSupplierInvoiceAmount;
+    }
+    /**
+     * Set bookedOriginalSupplierInvoiceAmount value
+     * @param float $bookedOriginalSupplierInvoiceAmount
+     * @return \Pggns\MidocoApi\Documents\StructType\RevenueBookingInfoType
+     */
+    public function setBookedOriginalSupplierInvoiceAmount(?float $bookedOriginalSupplierInvoiceAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($bookedOriginalSupplierInvoiceAmount) && !(is_float($bookedOriginalSupplierInvoiceAmount) || is_numeric($bookedOriginalSupplierInvoiceAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($bookedOriginalSupplierInvoiceAmount, true), gettype($bookedOriginalSupplierInvoiceAmount)), __LINE__);
+        }
+        $this->bookedOriginalSupplierInvoiceAmount = $bookedOriginalSupplierInvoiceAmount;
         
         return $this;
     }
@@ -254,6 +405,29 @@ class RevenueBookingInfoType extends RevenueBookingDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($preventPaymentForEntry, true), gettype($preventPaymentForEntry)), __LINE__);
         }
         $this->preventPaymentForEntry = $preventPaymentForEntry;
+        
+        return $this;
+    }
+    /**
+     * Get customerId value
+     * @return int|null
+     */
+    public function getCustomerId(): ?int
+    {
+        return $this->customerId;
+    }
+    /**
+     * Set customerId value
+     * @param int $customerId
+     * @return \Pggns\MidocoApi\Documents\StructType\RevenueBookingInfoType
+     */
+    public function setCustomerId(?int $customerId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($customerId) && !(is_int($customerId) || ctype_digit($customerId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($customerId, true), gettype($customerId)), __LINE__);
+        }
+        $this->customerId = $customerId;
         
         return $this;
     }

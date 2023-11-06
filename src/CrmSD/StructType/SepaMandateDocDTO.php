@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SepaMandateDocDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SepaMandateDocDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDocDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -94,7 +95,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDocDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -117,7 +118,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDocDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -140,7 +141,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set mandateDocId value
      * @param int $mandateDocId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDocDTO
      */
     public function setMandateDocId(?int $mandateDocId = null): self
     {
@@ -163,7 +164,7 @@ class SepaMandateDocDTO extends AbstractStructBase
     /**
      * Set mandateId value
      * @param int $mandateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SepaMandateDocDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SepaMandateDocDTO
      */
     public function setMandateId(?int $mandateId = null): self
     {

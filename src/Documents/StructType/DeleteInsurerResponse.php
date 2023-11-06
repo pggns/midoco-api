@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteInsurerResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteInsurerResponse extends AbstractStructBase
 {
 }

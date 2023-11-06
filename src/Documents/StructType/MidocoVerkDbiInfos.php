@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoVerkDbiInfos StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoVerkDbiInfos extends AbstractStructBase
 {
     /**
@@ -475,12 +476,13 @@ class MidocoVerkDbiInfos extends AbstractStructBase
         return $this->MidocoDbiDefValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDbiDefValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoDbiDefValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDbiDefValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDbiDefValueForArrayConstraintsFromSetMidocoDbiDefValue(?array $values = []): string
+    public static function validateMidocoDbiDefValueForArrayConstraintFromSetMidocoDbiDefValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -509,7 +511,7 @@ class MidocoVerkDbiInfos extends AbstractStructBase
     public function setMidocoDbiDefValue(?array $midocoDbiDefValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDbiDefValueArrayErrorMessage = self::validateMidocoDbiDefValueForArrayConstraintsFromSetMidocoDbiDefValue($midocoDbiDefValue))) {
+        if ('' !== ($midocoDbiDefValueArrayErrorMessage = self::validateMidocoDbiDefValueForArrayConstraintFromSetMidocoDbiDefValue($midocoDbiDefValue))) {
             throw new InvalidArgumentException($midocoDbiDefValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoDbiDefValue = $midocoDbiDefValue;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BillingInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BillingInfo extends AbstractStructBase
 {
     /**
@@ -77,12 +78,13 @@ class BillingInfo extends AbstractStructBase
         return $this->CreditCard;
     }
     /**
-     * This method is responsible for validating the values passed to the setCreditCard method
+     * This method is responsible for validating the value(s) passed to the setCreditCard method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCreditCard method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCreditCardForArrayConstraintsFromSetCreditCard(?array $values = []): string
+    public static function validateCreditCardForArrayConstraintFromSetCreditCard(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -111,7 +113,7 @@ class BillingInfo extends AbstractStructBase
     public function setCreditCard(?array $creditCard = null): self
     {
         // validation for constraint: array
-        if ('' !== ($creditCardArrayErrorMessage = self::validateCreditCardForArrayConstraintsFromSetCreditCard($creditCard))) {
+        if ('' !== ($creditCardArrayErrorMessage = self::validateCreditCardForArrayConstraintFromSetCreditCard($creditCard))) {
             throw new InvalidArgumentException($creditCardArrayErrorMessage, __LINE__);
         }
         $this->CreditCard = $creditCard;
@@ -143,12 +145,13 @@ class BillingInfo extends AbstractStructBase
         return $this->BankAccount;
     }
     /**
-     * This method is responsible for validating the values passed to the setBankAccount method
+     * This method is responsible for validating the value(s) passed to the setBankAccount method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBankAccount method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBankAccountForArrayConstraintsFromSetBankAccount(?array $values = []): string
+    public static function validateBankAccountForArrayConstraintFromSetBankAccount(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -177,7 +180,7 @@ class BillingInfo extends AbstractStructBase
     public function setBankAccount(?array $bankAccount = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bankAccountArrayErrorMessage = self::validateBankAccountForArrayConstraintsFromSetBankAccount($bankAccount))) {
+        if ('' !== ($bankAccountArrayErrorMessage = self::validateBankAccountForArrayConstraintFromSetBankAccount($bankAccount))) {
             throw new InvalidArgumentException($bankAccountArrayErrorMessage, __LINE__);
         }
         $this->BankAccount = $bankAccount;
@@ -209,12 +212,13 @@ class BillingInfo extends AbstractStructBase
         return $this->AdditionalBillingInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setAdditionalBillingInfo method
+     * This method is responsible for validating the value(s) passed to the setAdditionalBillingInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAdditionalBillingInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAdditionalBillingInfoForArrayConstraintsFromSetAdditionalBillingInfo(?array $values = []): string
+    public static function validateAdditionalBillingInfoForArrayConstraintFromSetAdditionalBillingInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -243,7 +247,7 @@ class BillingInfo extends AbstractStructBase
     public function setAdditionalBillingInfo(?array $additionalBillingInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($additionalBillingInfoArrayErrorMessage = self::validateAdditionalBillingInfoForArrayConstraintsFromSetAdditionalBillingInfo($additionalBillingInfo))) {
+        if ('' !== ($additionalBillingInfoArrayErrorMessage = self::validateAdditionalBillingInfoForArrayConstraintFromSetAdditionalBillingInfo($additionalBillingInfo))) {
             throw new InvalidArgumentException($additionalBillingInfoArrayErrorMessage, __LINE__);
         }
         $this->AdditionalBillingInfo = $additionalBillingInfo;
@@ -275,12 +279,13 @@ class BillingInfo extends AbstractStructBase
         return $this->AdditionalCreditCardInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setAdditionalCreditCardInfo method
+     * This method is responsible for validating the value(s) passed to the setAdditionalCreditCardInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAdditionalCreditCardInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAdditionalCreditCardInfoForArrayConstraintsFromSetAdditionalCreditCardInfo(?array $values = []): string
+    public static function validateAdditionalCreditCardInfoForArrayConstraintFromSetAdditionalCreditCardInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -309,7 +314,7 @@ class BillingInfo extends AbstractStructBase
     public function setAdditionalCreditCardInfo(?array $additionalCreditCardInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($additionalCreditCardInfoArrayErrorMessage = self::validateAdditionalCreditCardInfoForArrayConstraintsFromSetAdditionalCreditCardInfo($additionalCreditCardInfo))) {
+        if ('' !== ($additionalCreditCardInfoArrayErrorMessage = self::validateAdditionalCreditCardInfoForArrayConstraintFromSetAdditionalCreditCardInfo($additionalCreditCardInfo))) {
             throw new InvalidArgumentException($additionalCreditCardInfoArrayErrorMessage, __LINE__);
         }
         $this->AdditionalCreditCardInfo = $additionalCreditCardInfo;

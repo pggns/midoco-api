@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCampaignFirstLastPageReqType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCampaignFirstLastPageReqType extends AbstractStructBase
 {
     /**

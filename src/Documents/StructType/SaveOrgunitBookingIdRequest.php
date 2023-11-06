@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveOrgunitBookingIdRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveOrgunitBookingIdRequest extends AbstractStructBase
 {
     /**

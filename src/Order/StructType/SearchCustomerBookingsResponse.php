@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchCustomerBookingsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchCustomerBookingsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchCustomerBookingsResponse extends AbstractStructBase
         return $this->MidocoCustomerBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerBooking method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerBookingForArrayConstraintsFromSetMidocoCustomerBooking(?array $values = []): string
+    public static function validateMidocoCustomerBookingForArrayConstraintFromSetMidocoCustomerBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchCustomerBookingsResponse extends AbstractStructBase
     public function setMidocoCustomerBooking(?array $midocoCustomerBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerBookingArrayErrorMessage = self::validateMidocoCustomerBookingForArrayConstraintsFromSetMidocoCustomerBooking($midocoCustomerBooking))) {
+        if ('' !== ($midocoCustomerBookingArrayErrorMessage = self::validateMidocoCustomerBookingForArrayConstraintFromSetMidocoCustomerBooking($midocoCustomerBooking))) {
             throw new InvalidArgumentException($midocoCustomerBookingArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerBooking = $midocoCustomerBooking;

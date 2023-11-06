@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCustomerCommissionDefinitionsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustomerCommissionDefinitionsRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetCustomerCommissionDefinitionsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerCommissionDefinitionsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerCommissionDefinitionsRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

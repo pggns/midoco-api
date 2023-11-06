@@ -11,45 +11,43 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPaymentProviderImportFormatResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPaymentProviderImportFormatResponse extends AbstractStructBase
 {
     /**
-     * The format
+     * The MidocoPaymentProviderImportFormat
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var string|null
+     * - ref: MidocoPaymentProviderImportFormat
+     * @var \Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO|null
      */
-    protected ?string $format = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO $MidocoPaymentProviderImportFormat = null;
     /**
      * Constructor method for GetPaymentProviderImportFormatResponse
-     * @uses GetPaymentProviderImportFormatResponse::setFormat()
-     * @param string $format
+     * @uses GetPaymentProviderImportFormatResponse::setMidocoPaymentProviderImportFormat()
+     * @param \Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO $midocoPaymentProviderImportFormat
      */
-    public function __construct(?string $format = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO $midocoPaymentProviderImportFormat = null)
     {
         $this
-            ->setFormat($format);
+            ->setMidocoPaymentProviderImportFormat($midocoPaymentProviderImportFormat);
     }
     /**
-     * Get format value
-     * @return string|null
+     * Get MidocoPaymentProviderImportFormat value
+     * @return \Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO|null
      */
-    public function getFormat(): ?string
+    public function getMidocoPaymentProviderImportFormat(): ?\Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO
     {
-        return $this->format;
+        return $this->MidocoPaymentProviderImportFormat;
     }
     /**
-     * Set format value
-     * @param string $format
+     * Set MidocoPaymentProviderImportFormat value
+     * @param \Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO $midocoPaymentProviderImportFormat
      * @return \Pggns\MidocoApi\Order\StructType\GetPaymentProviderImportFormatResponse
      */
-    public function setFormat(?string $format = null): self
+    public function setMidocoPaymentProviderImportFormat(?\Pggns\MidocoApi\Order\StructType\PaymentProviderImportFormatDTO $midocoPaymentProviderImportFormat = null): self
     {
-        // validation for constraint: string
-        if (!is_null($format) && !is_string($format)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($format, true), gettype($format)), __LINE__);
-        }
-        $this->format = $format;
+        $this->MidocoPaymentProviderImportFormat = $midocoPaymentProviderImportFormat;
         
         return $this;
     }

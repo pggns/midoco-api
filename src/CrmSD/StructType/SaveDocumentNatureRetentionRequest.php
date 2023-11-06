@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveDocumentNatureRetentionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveDocumentNatureRetentionRequest extends AbstractStructBase
 {
     /**
      * The MidocoDocumentNatureRetention
      * Meta information extracted from the WSDL
      * - ref: MidocoDocumentNatureRetention
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType $MidocoDocumentNatureRetention = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType $MidocoDocumentNatureRetention = null;
     /**
      * Constructor method for SaveDocumentNatureRetentionRequest
      * @uses SaveDocumentNatureRetentionRequest::setMidocoDocumentNatureRetention()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null)
     {
         $this
             ->setMidocoDocumentNatureRetention($midocoDocumentNatureRetention);
     }
     /**
      * Get MidocoDocumentNatureRetention value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType|null
      */
-    public function getMidocoDocumentNatureRetention(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType
+    public function getMidocoDocumentNatureRetention(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType
     {
         return $this->MidocoDocumentNatureRetention;
     }
     /**
      * Set MidocoDocumentNatureRetention value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveDocumentNatureRetentionRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveDocumentNatureRetentionRequest
      */
-    public function setMidocoDocumentNatureRetention(?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null): self
+    public function setMidocoDocumentNatureRetention(?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureRetentionType $midocoDocumentNatureRetention = null): self
     {
         $this->MidocoDocumentNatureRetention = $midocoDocumentNatureRetention;
         

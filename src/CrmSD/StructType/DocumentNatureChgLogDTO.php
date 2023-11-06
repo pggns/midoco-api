@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DocumentNatureChgLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DocumentNatureChgLogDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class DocumentNatureChgLogDTO extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureChgLogDTO
      */
     public function setAction(?string $action = null): self
     {
@@ -110,7 +111,7 @@ class DocumentNatureChgLogDTO extends AbstractStructBase
     /**
      * Set changeId value
      * @param int $changeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureChgLogDTO
      */
     public function setChangeId(?int $changeId = null): self
     {
@@ -133,7 +134,7 @@ class DocumentNatureChgLogDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureChgLogDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -156,7 +157,7 @@ class DocumentNatureChgLogDTO extends AbstractStructBase
     /**
      * Set documentNatureId value
      * @param string $documentNatureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureChgLogDTO
      */
     public function setDocumentNatureId(?string $documentNatureId = null): self
     {
@@ -179,7 +180,7 @@ class DocumentNatureChgLogDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureChgLogDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -202,7 +203,7 @@ class DocumentNatureChgLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureChgLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +226,7 @@ class DocumentNatureChgLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureChgLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureChgLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

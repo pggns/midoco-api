@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoAdviceSettlementDetail StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
 {
     /**
@@ -41,12 +42,13 @@ class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
         return $this->MidocoAdviceDetailVatDiv;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAdviceDetailVatDiv method
+     * This method is responsible for validating the value(s) passed to the setMidocoAdviceDetailVatDiv method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAdviceDetailVatDiv method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAdviceDetailVatDivForArrayConstraintsFromSetMidocoAdviceDetailVatDiv(?array $values = []): string
+    public static function validateMidocoAdviceDetailVatDivForArrayConstraintFromSetMidocoAdviceDetailVatDiv(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class MidocoAdviceSettlementDetail extends AdviceSettlemDetailDTO
     public function setMidocoAdviceDetailVatDiv(?array $midocoAdviceDetailVatDiv = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAdviceDetailVatDivArrayErrorMessage = self::validateMidocoAdviceDetailVatDivForArrayConstraintsFromSetMidocoAdviceDetailVatDiv($midocoAdviceDetailVatDiv))) {
+        if ('' !== ($midocoAdviceDetailVatDivArrayErrorMessage = self::validateMidocoAdviceDetailVatDivForArrayConstraintFromSetMidocoAdviceDetailVatDiv($midocoAdviceDetailVatDiv))) {
             throw new InvalidArgumentException($midocoAdviceDetailVatDivArrayErrorMessage, __LINE__);
         }
         $this->MidocoAdviceDetailVatDiv = $midocoAdviceDetailVatDiv;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getOrderLockReasonDescriptions --- returns a list of order lock reason descriptions for the given lock reason
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
         return $this->MidocoOrderLockReasonDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderLockReasonDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderLockReasonDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderLockReasonDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderLockReasonDescriptionForArrayConstraintsFromSetMidocoOrderLockReasonDescription(?array $values = []): string
+    public static function validateMidocoOrderLockReasonDescriptionForArrayConstraintFromSetMidocoOrderLockReasonDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetOrderLockReasonDescriptionsResponse extends AbstractStructBase
     public function setMidocoOrderLockReasonDescription(?array $midocoOrderLockReasonDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderLockReasonDescriptionArrayErrorMessage = self::validateMidocoOrderLockReasonDescriptionForArrayConstraintsFromSetMidocoOrderLockReasonDescription($midocoOrderLockReasonDescription))) {
+        if ('' !== ($midocoOrderLockReasonDescriptionArrayErrorMessage = self::validateMidocoOrderLockReasonDescriptionForArrayConstraintFromSetMidocoOrderLockReasonDescription($midocoOrderLockReasonDescription))) {
             throw new InvalidArgumentException($midocoOrderLockReasonDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderLockReasonDescription = $midocoOrderLockReasonDescription;

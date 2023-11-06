@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: GetAllCrmMidocoSettlLevels --- returns the Midoco settlement levels defined for the given settl
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllCrmMidocoSettlLevelsResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetAllCrmMidocoSettlLevelsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoSettlLevel
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO[]
      */
     protected ?array $MidocoCrmMidocoSettlLevel = null;
     /**
      * Constructor method for GetAllCrmMidocoSettlLevelsResponse
      * @uses GetAllCrmMidocoSettlLevelsResponse::setMidocoCrmMidocoSettlLevel()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
      */
     public function __construct(?array $midocoCrmMidocoSettlLevel = null)
     {
@@ -36,19 +37,20 @@ class GetAllCrmMidocoSettlLevelsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmMidocoSettlLevel value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO[]
      */
     public function getMidocoCrmMidocoSettlLevel(): ?array
     {
         return $this->MidocoCrmMidocoSettlLevel;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoSettlLevel method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoSettlLevel method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoSettlLevel method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoSettlLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlLevel(?array $values = []): string
+    public static function validateMidocoCrmMidocoSettlLevelForArrayConstraintFromSetMidocoCrmMidocoSettlLevel(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetAllCrmMidocoSettlLevelsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllCrmMidocoSettlLevelsResponseMidocoCrmMidocoSettlLevelItem) {
             // validation for constraint: itemType
-            if (!$getAllCrmMidocoSettlLevelsResponseMidocoCrmMidocoSettlLevelItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO) {
+            if (!$getAllCrmMidocoSettlLevelsResponseMidocoCrmMidocoSettlLevelItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO) {
                 $invalidValues[] = is_object($getAllCrmMidocoSettlLevelsResponseMidocoCrmMidocoSettlLevelItem) ? get_class($getAllCrmMidocoSettlLevelsResponseMidocoCrmMidocoSettlLevelItem) : sprintf('%s(%s)', gettype($getAllCrmMidocoSettlLevelsResponseMidocoCrmMidocoSettlLevelItem), var_export($getAllCrmMidocoSettlLevelsResponseMidocoCrmMidocoSettlLevelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetAllCrmMidocoSettlLevelsResponse extends AbstractStructBase
     /**
      * Set MidocoCrmMidocoSettlLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCrmMidocoSettlLevelsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO[] $midocoCrmMidocoSettlLevel
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllCrmMidocoSettlLevelsResponse
      */
     public function setMidocoCrmMidocoSettlLevel(?array $midocoCrmMidocoSettlLevel = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoSettlLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlLevel($midocoCrmMidocoSettlLevel))) {
+        if ('' !== ($midocoCrmMidocoSettlLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlLevelForArrayConstraintFromSetMidocoCrmMidocoSettlLevel($midocoCrmMidocoSettlLevel))) {
             throw new InvalidArgumentException($midocoCrmMidocoSettlLevelArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoSettlLevel = $midocoCrmMidocoSettlLevel;
@@ -87,14 +89,14 @@ class GetAllCrmMidocoSettlLevelsResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmMidocoSettlLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCrmMidocoSettlLevelsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllCrmMidocoSettlLevelsResponse
      */
-    public function addToMidocoCrmMidocoSettlLevel(\Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO $item): self
+    public function addToMidocoCrmMidocoSettlLevel(\Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlLevel property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoSettlLevel[] = $item;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTourOperatorInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTourOperatorInfo extends AbstractStructBase
 {
     /**
@@ -19,45 +20,45 @@ class MidocoTourOperatorInfo extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTourOperator
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator $MidocoTourOperator = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator $MidocoTourOperator = null;
     /**
      * The MidocoTourOperatorAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTourOperatorAddress
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress $MidocoTourOperatorAddress = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress $MidocoTourOperatorAddress = null;
     /**
      * The MidocoInsurerInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoInsurerInfo
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo $MidocoInsurerInfo = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo $MidocoInsurerInfo = null;
     /**
      * The MidocoAssessorInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoAssessorInfo
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo $MidocoAssessorInfo = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo $MidocoAssessorInfo = null;
     /**
      * The MidocoTourOperatorInsurer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: MidocoTourOperatorInsurer
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer $MidocoTourOperatorInsurer = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer $MidocoTourOperatorInsurer = null;
     /**
      * Constructor method for MidocoTourOperatorInfo
      * @uses MidocoTourOperatorInfo::setMidocoTourOperator()
@@ -65,13 +66,13 @@ class MidocoTourOperatorInfo extends AbstractStructBase
      * @uses MidocoTourOperatorInfo::setMidocoInsurerInfo()
      * @uses MidocoTourOperatorInfo::setMidocoAssessorInfo()
      * @uses MidocoTourOperatorInfo::setMidocoTourOperatorInsurer()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator $midocoTourOperator
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo $midocoInsurerInfo
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo $midocoAssessorInfo
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator $midocoTourOperator
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo $midocoInsurerInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo $midocoAssessorInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator $midocoTourOperator = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo $midocoInsurerInfo = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo $midocoAssessorInfo = null, ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator $midocoTourOperator = null, ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null, ?\Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo $midocoInsurerInfo = null, ?\Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo $midocoAssessorInfo = null, ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null)
     {
         $this
             ->setMidocoTourOperator($midocoTourOperator)
@@ -82,18 +83,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoTourOperator value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator|null
      */
-    public function getMidocoTourOperator(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator
+    public function getMidocoTourOperator(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator
     {
         return $this->MidocoTourOperator;
     }
     /**
      * Set MidocoTourOperator value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator $midocoTourOperator
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator $midocoTourOperator
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoTourOperator(?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperator $midocoTourOperator = null): self
+    public function setMidocoTourOperator(?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperator $midocoTourOperator = null): self
     {
         $this->MidocoTourOperator = $midocoTourOperator;
         
@@ -101,18 +102,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoTourOperatorAddress value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress|null
      */
-    public function getMidocoTourOperatorAddress(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress
+    public function getMidocoTourOperatorAddress(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress
     {
         return $this->MidocoTourOperatorAddress;
     }
     /**
      * Set MidocoTourOperatorAddress value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoTourOperatorAddress(?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null): self
+    public function setMidocoTourOperatorAddress(?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAddress $midocoTourOperatorAddress = null): self
     {
         $this->MidocoTourOperatorAddress = $midocoTourOperatorAddress;
         
@@ -120,18 +121,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoInsurerInfo value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo|null
      */
-    public function getMidocoInsurerInfo(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo
+    public function getMidocoInsurerInfo(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo
     {
         return $this->MidocoInsurerInfo;
     }
     /**
      * Set MidocoInsurerInfo value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo $midocoInsurerInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo $midocoInsurerInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoInsurerInfo(?\Pggns\MidocoApi\CrmSD\StructType\MidocoInsurerInfo $midocoInsurerInfo = null): self
+    public function setMidocoInsurerInfo(?\Pggns\MidocoApi\Crmsd\StructType\MidocoInsurerInfo $midocoInsurerInfo = null): self
     {
         $this->MidocoInsurerInfo = $midocoInsurerInfo;
         
@@ -139,18 +140,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoAssessorInfo value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo|null
      */
-    public function getMidocoAssessorInfo(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo
+    public function getMidocoAssessorInfo(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo
     {
         return $this->MidocoAssessorInfo;
     }
     /**
      * Set MidocoAssessorInfo value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo $midocoAssessorInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo $midocoAssessorInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoAssessorInfo(?\Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo $midocoAssessorInfo = null): self
+    public function setMidocoAssessorInfo(?\Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo $midocoAssessorInfo = null): self
     {
         $this->MidocoAssessorInfo = $midocoAssessorInfo;
         
@@ -158,18 +159,18 @@ class MidocoTourOperatorInfo extends AbstractStructBase
     }
     /**
      * Get MidocoTourOperatorInsurer value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer|null
      */
-    public function getMidocoTourOperatorInsurer(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer
+    public function getMidocoTourOperatorInsurer(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer
     {
         return $this->MidocoTourOperatorInsurer;
     }
     /**
      * Set MidocoTourOperatorInsurer value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInfo
      */
-    public function setMidocoTourOperatorInsurer(?\Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null): self
+    public function setMidocoTourOperatorInsurer(?\Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorInsurer $midocoTourOperatorInsurer = null): self
     {
         $this->MidocoTourOperatorInsurer = $midocoTourOperatorInsurer;
         

@@ -11,15 +11,9 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalesListBySupplierAndMonthRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalesListBySupplierAndMonthRequest extends AbstractStructBase
 {
-    /**
-     * The directDebitor
-     * Meta information extracted from the WSDL
-     * - minOccurs: 1
-     * @var string
-     */
-    protected string $directDebitor;
     /**
      * The MidocoSalesListBySupplierCriteria
      * Meta information extracted from the WSDL
@@ -27,6 +21,11 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
      * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType|null
      */
     protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $MidocoSalesListBySupplierCriteria = null;
+    /**
+     * The directDebitor
+     * @var string|null
+     */
+    protected ?string $directDebitor = null;
     /**
      * The maxReturned
      * Meta information extracted from the WSDL
@@ -44,45 +43,22 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
     protected ?array $excludedUnitName = null;
     /**
      * Constructor method for SalesListBySupplierAndMonthRequest
-     * @uses SalesListBySupplierAndMonthRequest::setDirectDebitor()
      * @uses SalesListBySupplierAndMonthRequest::setMidocoSalesListBySupplierCriteria()
+     * @uses SalesListBySupplierAndMonthRequest::setDirectDebitor()
      * @uses SalesListBySupplierAndMonthRequest::setMaxReturned()
      * @uses SalesListBySupplierAndMonthRequest::setExcludedUnitName()
-     * @param string $directDebitor
      * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria
+     * @param string $directDebitor
      * @param int $maxReturned
      * @param string[] $excludedUnitName
      */
-    public function __construct(string $directDebitor, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null, ?int $maxReturned = null, ?array $excludedUnitName = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null, ?string $directDebitor = null, ?int $maxReturned = null, ?array $excludedUnitName = null)
     {
         $this
-            ->setDirectDebitor($directDebitor)
             ->setMidocoSalesListBySupplierCriteria($midocoSalesListBySupplierCriteria)
+            ->setDirectDebitor($directDebitor)
             ->setMaxReturned($maxReturned)
             ->setExcludedUnitName($excludedUnitName);
-    }
-    /**
-     * Get directDebitor value
-     * @return string
-     */
-    public function getDirectDebitor(): string
-    {
-        return $this->directDebitor;
-    }
-    /**
-     * Set directDebitor value
-     * @param string $directDebitor
-     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthRequest
-     */
-    public function setDirectDebitor(string $directDebitor): self
-    {
-        // validation for constraint: string
-        if (!is_null($directDebitor) && !is_string($directDebitor)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($directDebitor, true), gettype($directDebitor)), __LINE__);
-        }
-        $this->directDebitor = $directDebitor;
-        
-        return $this;
     }
     /**
      * Get MidocoSalesListBySupplierCriteria value
@@ -100,6 +76,29 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
     public function setMidocoSalesListBySupplierCriteria(?\Pggns\MidocoApi\Orderlists\StructType\MidocoSalesListBySupplierCriteriaType $midocoSalesListBySupplierCriteria = null): self
     {
         $this->MidocoSalesListBySupplierCriteria = $midocoSalesListBySupplierCriteria;
+        
+        return $this;
+    }
+    /**
+     * Get directDebitor value
+     * @return string|null
+     */
+    public function getDirectDebitor(): ?string
+    {
+        return $this->directDebitor;
+    }
+    /**
+     * Set directDebitor value
+     * @param string $directDebitor
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SalesListBySupplierAndMonthRequest
+     */
+    public function setDirectDebitor(?string $directDebitor = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($directDebitor) && !is_string($directDebitor)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($directDebitor, true), gettype($directDebitor)), __LINE__);
+        }
+        $this->directDebitor = $directDebitor;
         
         return $this;
     }
@@ -135,12 +134,13 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
         return $this->excludedUnitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setExcludedUnitName method
+     * This method is responsible for validating the value(s) passed to the setExcludedUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setExcludedUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateExcludedUnitNameForArrayConstraintsFromSetExcludedUnitName(?array $values = []): string
+    public static function validateExcludedUnitNameForArrayConstraintFromSetExcludedUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -169,7 +169,7 @@ class SalesListBySupplierAndMonthRequest extends AbstractStructBase
     public function setExcludedUnitName(?array $excludedUnitName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($excludedUnitNameArrayErrorMessage = self::validateExcludedUnitNameForArrayConstraintsFromSetExcludedUnitName($excludedUnitName))) {
+        if ('' !== ($excludedUnitNameArrayErrorMessage = self::validateExcludedUnitNameForArrayConstraintFromSetExcludedUnitName($excludedUnitName))) {
             throw new InvalidArgumentException($excludedUnitNameArrayErrorMessage, __LINE__);
         }
         $this->excludedUnitName = $excludedUnitName;

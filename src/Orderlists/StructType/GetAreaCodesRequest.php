@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAreaCodesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAreaCodesRequest extends AbstractStructBase
 {
     /**
@@ -21,14 +22,24 @@ class GetAreaCodesRequest extends AbstractStructBase
      */
     protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode $MidocoAreaCode = null;
     /**
+     * The cultureId
+     * Meta information extracted from the WSDL
+     * - use: optional
+     * @var string|null
+     */
+    protected ?string $cultureId = null;
+    /**
      * Constructor method for GetAreaCodesRequest
      * @uses GetAreaCodesRequest::setMidocoAreaCode()
+     * @uses GetAreaCodesRequest::setCultureId()
      * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode $midocoAreaCode
+     * @param string $cultureId
      */
-    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode $midocoAreaCode = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode $midocoAreaCode = null, ?string $cultureId = null)
     {
         $this
-            ->setMidocoAreaCode($midocoAreaCode);
+            ->setMidocoAreaCode($midocoAreaCode)
+            ->setCultureId($cultureId);
     }
     /**
      * Get MidocoAreaCode value
@@ -46,6 +57,29 @@ class GetAreaCodesRequest extends AbstractStructBase
     public function setMidocoAreaCode(?\Pggns\MidocoApi\Orderlists\StructType\MidocoAreaCode $midocoAreaCode = null): self
     {
         $this->MidocoAreaCode = $midocoAreaCode;
+        
+        return $this;
+    }
+    /**
+     * Get cultureId value
+     * @return string|null
+     */
+    public function getCultureId(): ?string
+    {
+        return $this->cultureId;
+    }
+    /**
+     * Set cultureId value
+     * @param string $cultureId
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetAreaCodesRequest
+     */
+    public function setCultureId(?string $cultureId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($cultureId) && !is_string($cultureId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cultureId, true), gettype($cultureId)), __LINE__);
+        }
+        $this->cultureId = $cultureId;
         
         return $this;
     }

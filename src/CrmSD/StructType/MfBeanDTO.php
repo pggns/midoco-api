@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MfBeanDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MfBeanDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class MfBeanDTO extends AbstractStructBase
     /**
      * Set bean value
      * @param string $bean
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfBeanDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfBeanDTO
      */
     public function setBean(?string $bean = null): self
     {

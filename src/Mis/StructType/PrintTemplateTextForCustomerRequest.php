@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintTemplateTextForCustomerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintTemplateTextForCustomerRequest extends AbstractStructBase
 {
     /**

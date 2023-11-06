@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * communication record, a false is returned
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckSMSReachabilityResponse extends AbstractStructBase
 {
     /**

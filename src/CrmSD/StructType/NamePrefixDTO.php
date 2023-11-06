@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for NamePrefixDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class NamePrefixDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class NamePrefixDTO extends AbstractStructBase
     /**
      * Set namePrefix value
      * @param string $namePrefix
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NamePrefixDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NamePrefixDTO
      */
     public function setNamePrefix(?string $namePrefix = null): self
     {

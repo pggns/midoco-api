@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CityNameDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CityNameDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set cityLocalizedName value
      * @param string $cityLocalizedName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityNameDTO
      */
     public function setCityLocalizedName(?string $cityLocalizedName = null): self
     {
@@ -94,7 +95,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set cityName value
      * @param string $cityName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityNameDTO
      */
     public function setCityName(?string $cityName = null): self
     {
@@ -117,7 +118,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param string $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityNameDTO
      */
     public function setCountryId(?string $countryId = null): self
     {
@@ -140,7 +141,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityNameDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -163,7 +164,7 @@ class CityNameDTO extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CityNameDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CityNameDTO
      */
     public function setZipCode(?string $zipCode = null): self
     {

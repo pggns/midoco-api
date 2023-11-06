@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchSupplierAgencySettlementsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
 {
     /**
@@ -59,6 +60,16 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
      */
     protected ?int $settlementId = null;
     /**
+     * The settlementParty
+     * @var string|null
+     */
+    protected ?string $settlementParty = null;
+    /**
+     * The receiptNo
+     * @var string|null
+     */
+    protected ?string $receiptNo = null;
+    /**
      * Constructor method for SearchSupplierAgencySettlementsRequest
      * @uses SearchSupplierAgencySettlementsRequest::setCreationDateFrom()
      * @uses SearchSupplierAgencySettlementsRequest::setCreationDateTo()
@@ -69,6 +80,8 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
      * @uses SearchSupplierAgencySettlementsRequest::setBooked()
      * @uses SearchSupplierAgencySettlementsRequest::setChecked()
      * @uses SearchSupplierAgencySettlementsRequest::setSettlementId()
+     * @uses SearchSupplierAgencySettlementsRequest::setSettlementParty()
+     * @uses SearchSupplierAgencySettlementsRequest::setReceiptNo()
      * @param string $creationDateFrom
      * @param string $creationDateTo
      * @param string $settlementDateFrom
@@ -78,8 +91,10 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
      * @param bool $booked
      * @param bool $checked
      * @param int $settlementId
+     * @param string $settlementParty
+     * @param string $receiptNo
      */
-    public function __construct(?string $creationDateFrom = null, ?string $creationDateTo = null, ?string $settlementDateFrom = null, ?string $settlementDateTo = null, ?string $supplierId = null, ?string $bookingId = null, ?bool $booked = null, ?bool $checked = null, ?int $settlementId = null)
+    public function __construct(?string $creationDateFrom = null, ?string $creationDateTo = null, ?string $settlementDateFrom = null, ?string $settlementDateTo = null, ?string $supplierId = null, ?string $bookingId = null, ?bool $booked = null, ?bool $checked = null, ?int $settlementId = null, ?string $settlementParty = null, ?string $receiptNo = null)
     {
         $this
             ->setCreationDateFrom($creationDateFrom)
@@ -90,7 +105,9 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
             ->setBookingId($bookingId)
             ->setBooked($booked)
             ->setChecked($checked)
-            ->setSettlementId($settlementId);
+            ->setSettlementId($settlementId)
+            ->setSettlementParty($settlementParty)
+            ->setReceiptNo($receiptNo);
     }
     /**
      * Get creationDateFrom value
@@ -296,6 +313,52 @@ class SearchSupplierAgencySettlementsRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($settlementId, true), gettype($settlementId)), __LINE__);
         }
         $this->settlementId = $settlementId;
+        
+        return $this;
+    }
+    /**
+     * Get settlementParty value
+     * @return string|null
+     */
+    public function getSettlementParty(): ?string
+    {
+        return $this->settlementParty;
+    }
+    /**
+     * Set settlementParty value
+     * @param string $settlementParty
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
+     */
+    public function setSettlementParty(?string $settlementParty = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementParty) && !is_string($settlementParty)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementParty, true), gettype($settlementParty)), __LINE__);
+        }
+        $this->settlementParty = $settlementParty;
+        
+        return $this;
+    }
+    /**
+     * Get receiptNo value
+     * @return string|null
+     */
+    public function getReceiptNo(): ?string
+    {
+        return $this->receiptNo;
+    }
+    /**
+     * Set receiptNo value
+     * @param string $receiptNo
+     * @return \Pggns\MidocoApi\Order\StructType\SearchSupplierAgencySettlementsRequest
+     */
+    public function setReceiptNo(?string $receiptNo = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($receiptNo) && !is_string($receiptNo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($receiptNo, true), gettype($receiptNo)), __LINE__);
+        }
+        $this->receiptNo = $receiptNo;
         
         return $this;
     }

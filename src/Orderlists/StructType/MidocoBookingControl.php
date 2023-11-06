@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBookingControl StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBookingControl extends AbstractStructBase
 {
     /**
@@ -83,6 +84,11 @@ class MidocoBookingControl extends AbstractStructBase
      * @var string|null
      */
     protected ?string $travelPartner = null;
+    /**
+     * The extSystem
+     * @var string|null
+     */
+    protected ?string $extSystem = null;
     /**
      * The remark
      * @var string|null
@@ -179,6 +185,7 @@ class MidocoBookingControl extends AbstractStructBase
      * @uses MidocoBookingControl::setTravelTarget()
      * @uses MidocoBookingControl::setTravelType()
      * @uses MidocoBookingControl::setTravelPartner()
+     * @uses MidocoBookingControl::setExtSystem()
      * @uses MidocoBookingControl::setRemark()
      * @uses MidocoBookingControl::setSurname()
      * @uses MidocoBookingControl::setForename()
@@ -209,6 +216,7 @@ class MidocoBookingControl extends AbstractStructBase
      * @param string $travelTarget
      * @param string $travelType
      * @param string $travelPartner
+     * @param string $extSystem
      * @param string $remark
      * @param string $surname
      * @param string $forename
@@ -226,7 +234,7 @@ class MidocoBookingControl extends AbstractStructBase
      * @param bool $hideInsurances
      * @param bool $hideCancellations
      */
-    public function __construct(?int $orderId = null, ?int $orderNo = null, ?string $creationDate = null, ?string $creationDateFrom = null, ?string $creationDateTo = null, ?float $price = null, ?int $workingUser = null, ?string $workingUserTimeStamp = null, ?string $travelDate = null, ?string $travelDateFrom = null, ?string $travelDateTo = null, ?string $travelTarget = null, ?string $travelType = null, ?string $travelPartner = null, ?string $remark = null, ?string $surname = null, ?string $forename = null, ?int $custId = null, ?int $createdBy = null, ?string $orgUnit = null, ?string $bookingId = null, ?string $mediator = null, ?string $invoiceNo = null, ?string $ticketNo = null, ?string $agencyId = null, ?string $supplierId = null, ?string $status = null, ?bool $isBookingIdEmpty = null, ?bool $hideInsurances = null, ?bool $hideCancellations = null)
+    public function __construct(?int $orderId = null, ?int $orderNo = null, ?string $creationDate = null, ?string $creationDateFrom = null, ?string $creationDateTo = null, ?float $price = null, ?int $workingUser = null, ?string $workingUserTimeStamp = null, ?string $travelDate = null, ?string $travelDateFrom = null, ?string $travelDateTo = null, ?string $travelTarget = null, ?string $travelType = null, ?string $travelPartner = null, ?string $extSystem = null, ?string $remark = null, ?string $surname = null, ?string $forename = null, ?int $custId = null, ?int $createdBy = null, ?string $orgUnit = null, ?string $bookingId = null, ?string $mediator = null, ?string $invoiceNo = null, ?string $ticketNo = null, ?string $agencyId = null, ?string $supplierId = null, ?string $status = null, ?bool $isBookingIdEmpty = null, ?bool $hideInsurances = null, ?bool $hideCancellations = null)
     {
         $this
             ->setOrderId($orderId)
@@ -243,6 +251,7 @@ class MidocoBookingControl extends AbstractStructBase
             ->setTravelTarget($travelTarget)
             ->setTravelType($travelType)
             ->setTravelPartner($travelPartner)
+            ->setExtSystem($extSystem)
             ->setRemark($remark)
             ->setSurname($surname)
             ->setForename($forename)
@@ -579,6 +588,29 @@ class MidocoBookingControl extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelPartner, true), gettype($travelPartner)), __LINE__);
         }
         $this->travelPartner = $travelPartner;
+        
+        return $this;
+    }
+    /**
+     * Get extSystem value
+     * @return string|null
+     */
+    public function getExtSystem(): ?string
+    {
+        return $this->extSystem;
+    }
+    /**
+     * Set extSystem value
+     * @param string $extSystem
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingControl
+     */
+    public function setExtSystem(?string $extSystem = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($extSystem) && !is_string($extSystem)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($extSystem, true), gettype($extSystem)), __LINE__);
+        }
+        $this->extSystem = $extSystem;
         
         return $this;
     }

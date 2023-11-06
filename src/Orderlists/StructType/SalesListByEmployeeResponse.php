@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalesListByEmployeeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalesListByEmployeeResponse extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class SalesListByEmployeeResponse extends AbstractStructBase
         return $this->MidocoSalesListsByEmployee;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSalesListsByEmployee method
+     * This method is responsible for validating the value(s) passed to the setMidocoSalesListsByEmployee method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSalesListsByEmployee method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSalesListsByEmployeeForArrayConstraintsFromSetMidocoSalesListsByEmployee(?array $values = []): string
+    public static function validateMidocoSalesListsByEmployeeForArrayConstraintFromSetMidocoSalesListsByEmployee(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class SalesListByEmployeeResponse extends AbstractStructBase
     public function setMidocoSalesListsByEmployee(?array $midocoSalesListsByEmployee = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSalesListsByEmployeeArrayErrorMessage = self::validateMidocoSalesListsByEmployeeForArrayConstraintsFromSetMidocoSalesListsByEmployee($midocoSalesListsByEmployee))) {
+        if ('' !== ($midocoSalesListsByEmployeeArrayErrorMessage = self::validateMidocoSalesListsByEmployeeForArrayConstraintFromSetMidocoSalesListsByEmployee($midocoSalesListsByEmployee))) {
             throw new InvalidArgumentException($midocoSalesListsByEmployeeArrayErrorMessage, __LINE__);
         }
         $this->MidocoSalesListsByEmployee = $midocoSalesListsByEmployee;

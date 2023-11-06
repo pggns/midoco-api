@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCustomerCommissionDefinitionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCustomerCommissionDefinitionRequest extends AbstractStructBase
 {
     /**
      * The MidocoCustomerCommissionAssign
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerCommissionAssign
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO $MidocoCustomerCommissionAssign = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO $MidocoCustomerCommissionAssign = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +30,10 @@ class SaveCustomerCommissionDefinitionRequest extends AbstractStructBase
      * Constructor method for SaveCustomerCommissionDefinitionRequest
      * @uses SaveCustomerCommissionDefinitionRequest::setMidocoCustomerCommissionAssign()
      * @uses SaveCustomerCommissionDefinitionRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCustomerCommissionAssign($midocoCustomerCommissionAssign)
@@ -40,18 +41,18 @@ class SaveCustomerCommissionDefinitionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerCommissionAssign value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO|null
      */
-    public function getMidocoCustomerCommissionAssign(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO
+    public function getMidocoCustomerCommissionAssign(): ?\Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO
     {
         return $this->MidocoCustomerCommissionAssign;
     }
     /**
      * Set MidocoCustomerCommissionAssign value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCustomerCommissionDefinitionRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCustomerCommissionDefinitionRequest
      */
-    public function setMidocoCustomerCommissionAssign(?\Pggns\MidocoApi\CrmSD\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign = null): self
+    public function setMidocoCustomerCommissionAssign(?\Pggns\MidocoApi\Crmsd\StructType\CustomerCommissionAssignDTO $midocoCustomerCommissionAssign = null): self
     {
         $this->MidocoCustomerCommissionAssign = $midocoCustomerCommissionAssign;
         
@@ -68,7 +69,7 @@ class SaveCustomerCommissionDefinitionRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCustomerCommissionDefinitionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCustomerCommissionDefinitionRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

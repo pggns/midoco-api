@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ProcessDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ProcessDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class ProcessDTO extends AbstractStructBase
     /**
      * Set isGui value
      * @param bool $isGui
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessDTO
      */
     public function setIsGui(?bool $isGui = null): self
     {
@@ -70,7 +71,7 @@ class ProcessDTO extends AbstractStructBase
     /**
      * Set processName value
      * @param string $processName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ProcessDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ProcessDTO
      */
     public function setProcessName(?string $processName = null): self
     {

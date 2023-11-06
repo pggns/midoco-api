@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchReceiptResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchReceiptResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchReceiptResponse extends AbstractStructBase
         return $this->MidocoReceiptShortInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoReceiptShortInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoReceiptShortInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoReceiptShortInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoReceiptShortInfoForArrayConstraintsFromSetMidocoReceiptShortInfo(?array $values = []): string
+    public static function validateMidocoReceiptShortInfoForArrayConstraintFromSetMidocoReceiptShortInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchReceiptResponse extends AbstractStructBase
     public function setMidocoReceiptShortInfo(?array $midocoReceiptShortInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoReceiptShortInfoArrayErrorMessage = self::validateMidocoReceiptShortInfoForArrayConstraintsFromSetMidocoReceiptShortInfo($midocoReceiptShortInfo))) {
+        if ('' !== ($midocoReceiptShortInfoArrayErrorMessage = self::validateMidocoReceiptShortInfoForArrayConstraintFromSetMidocoReceiptShortInfo($midocoReceiptShortInfo))) {
             throw new InvalidArgumentException($midocoReceiptShortInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoReceiptShortInfo = $midocoReceiptShortInfo;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoArErListCriteriaType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoArErListCriteriaType extends AbstractStructBase
 {
     /**
@@ -82,6 +83,11 @@ class MidocoArErListCriteriaType extends AbstractStructBase
      */
     protected ?string $travelUntil = null;
     /**
+     * The isSiWithoutEr
+     * @var bool|null
+     */
+    protected ?bool $isSiWithoutEr = null;
+    /**
      * Constructor method for MidocoArErListCriteriaType
      * @uses MidocoArErListCriteriaType::setAccountType()
      * @uses MidocoArErListCriteriaType::setStartTravel()
@@ -96,6 +102,7 @@ class MidocoArErListCriteriaType extends AbstractStructBase
      * @uses MidocoArErListCriteriaType::setTravelCreationDateUntil()
      * @uses MidocoArErListCriteriaType::setTravelFrom()
      * @uses MidocoArErListCriteriaType::setTravelUntil()
+     * @uses MidocoArErListCriteriaType::setIsSiWithoutEr()
      * @param string[] $accountType
      * @param string $startTravel
      * @param string $creationDate
@@ -109,8 +116,9 @@ class MidocoArErListCriteriaType extends AbstractStructBase
      * @param string $travelCreationDateUntil
      * @param string $travelFrom
      * @param string $travelUntil
+     * @param bool $isSiWithoutEr
      */
-    public function __construct(?array $accountType = null, ?string $startTravel = null, ?string $creationDate = null, ?string $type = null, ?string $orgUnits = null, ?string $excludedOrgUnits = null, ?string $accountIdFrom = null, ?string $accountIdTo = null, ?int $orderNo = null, ?string $travelCreationDateFrom = null, ?string $travelCreationDateUntil = null, ?string $travelFrom = null, ?string $travelUntil = null)
+    public function __construct(?array $accountType = null, ?string $startTravel = null, ?string $creationDate = null, ?string $type = null, ?string $orgUnits = null, ?string $excludedOrgUnits = null, ?string $accountIdFrom = null, ?string $accountIdTo = null, ?int $orderNo = null, ?string $travelCreationDateFrom = null, ?string $travelCreationDateUntil = null, ?string $travelFrom = null, ?string $travelUntil = null, ?bool $isSiWithoutEr = null)
     {
         $this
             ->setAccountType($accountType)
@@ -125,7 +133,8 @@ class MidocoArErListCriteriaType extends AbstractStructBase
             ->setTravelCreationDateFrom($travelCreationDateFrom)
             ->setTravelCreationDateUntil($travelCreationDateUntil)
             ->setTravelFrom($travelFrom)
-            ->setTravelUntil($travelUntil);
+            ->setTravelUntil($travelUntil)
+            ->setIsSiWithoutEr($isSiWithoutEr);
     }
     /**
      * Get accountType value
@@ -136,12 +145,13 @@ class MidocoArErListCriteriaType extends AbstractStructBase
         return $this->accountType;
     }
     /**
-     * This method is responsible for validating the values passed to the setAccountType method
+     * This method is responsible for validating the value(s) passed to the setAccountType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAccountType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAccountTypeForArrayConstraintsFromSetAccountType(?array $values = []): string
+    public static function validateAccountTypeForArrayConstraintFromSetAccountType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -170,7 +180,7 @@ class MidocoArErListCriteriaType extends AbstractStructBase
     public function setAccountType(?array $accountType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($accountTypeArrayErrorMessage = self::validateAccountTypeForArrayConstraintsFromSetAccountType($accountType))) {
+        if ('' !== ($accountTypeArrayErrorMessage = self::validateAccountTypeForArrayConstraintFromSetAccountType($accountType))) {
             throw new InvalidArgumentException($accountTypeArrayErrorMessage, __LINE__);
         }
         $this->accountType = $accountType;
@@ -466,6 +476,29 @@ class MidocoArErListCriteriaType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelUntil, true), gettype($travelUntil)), __LINE__);
         }
         $this->travelUntil = $travelUntil;
+        
+        return $this;
+    }
+    /**
+     * Get isSiWithoutEr value
+     * @return bool|null
+     */
+    public function getIsSiWithoutEr(): ?bool
+    {
+        return $this->isSiWithoutEr;
+    }
+    /**
+     * Set isSiWithoutEr value
+     * @param bool $isSiWithoutEr
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoArErListCriteriaType
+     */
+    public function setIsSiWithoutEr(?bool $isSiWithoutEr = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isSiWithoutEr) && !is_bool($isSiWithoutEr)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isSiWithoutEr, true), gettype($isSiWithoutEr)), __LINE__);
+        }
+        $this->isSiWithoutEr = $isSiWithoutEr;
         
         return $this;
     }

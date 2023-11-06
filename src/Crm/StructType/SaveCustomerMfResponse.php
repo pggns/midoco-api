@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveCustomerMf --- saves a mf (or more) for a customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCustomerMfResponse extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class SaveCustomerMfResponse extends AbstractStructBase
         return $this->MidocoCustomerMf;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerMf method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerMf method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerMf method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerMfForArrayConstraintsFromSetMidocoCustomerMf(?array $values = []): string
+    public static function validateMidocoCustomerMfForArrayConstraintFromSetMidocoCustomerMf(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class SaveCustomerMfResponse extends AbstractStructBase
     public function setMidocoCustomerMf(?array $midocoCustomerMf = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerMfArrayErrorMessage = self::validateMidocoCustomerMfForArrayConstraintsFromSetMidocoCustomerMf($midocoCustomerMf))) {
+        if ('' !== ($midocoCustomerMfArrayErrorMessage = self::validateMidocoCustomerMfForArrayConstraintFromSetMidocoCustomerMf($midocoCustomerMf))) {
             throw new InvalidArgumentException($midocoCustomerMfArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerMf = $midocoCustomerMf;

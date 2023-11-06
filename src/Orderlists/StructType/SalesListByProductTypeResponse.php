@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalesListByProductTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalesListByProductTypeResponse extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class SalesListByProductTypeResponse extends AbstractStructBase
         return $this->MidocoSalesListsByProductType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSalesListsByProductType method
+     * This method is responsible for validating the value(s) passed to the setMidocoSalesListsByProductType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSalesListsByProductType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSalesListsByProductTypeForArrayConstraintsFromSetMidocoSalesListsByProductType(?array $values = []): string
+    public static function validateMidocoSalesListsByProductTypeForArrayConstraintFromSetMidocoSalesListsByProductType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class SalesListByProductTypeResponse extends AbstractStructBase
     public function setMidocoSalesListsByProductType(?array $midocoSalesListsByProductType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSalesListsByProductTypeArrayErrorMessage = self::validateMidocoSalesListsByProductTypeForArrayConstraintsFromSetMidocoSalesListsByProductType($midocoSalesListsByProductType))) {
+        if ('' !== ($midocoSalesListsByProductTypeArrayErrorMessage = self::validateMidocoSalesListsByProductTypeForArrayConstraintFromSetMidocoSalesListsByProductType($midocoSalesListsByProductType))) {
             throw new InvalidArgumentException($midocoSalesListsByProductTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoSalesListsByProductType = $midocoSalesListsByProductType;

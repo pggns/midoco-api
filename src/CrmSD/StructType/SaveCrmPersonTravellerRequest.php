@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCrmPersonTravellerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCrmPersonTravellerRequest extends AbstractStructBase
 {
     /**
      * The MidocoCrmPersonTraveller
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmPersonTraveller
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $MidocoCrmPersonTraveller = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $MidocoCrmPersonTraveller = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +30,10 @@ class SaveCrmPersonTravellerRequest extends AbstractStructBase
      * Constructor method for SaveCrmPersonTravellerRequest
      * @uses SaveCrmPersonTravellerRequest::setMidocoCrmPersonTraveller()
      * @uses SaveCrmPersonTravellerRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoCrmPersonTraveller($midocoCrmPersonTraveller)
@@ -40,18 +41,18 @@ class SaveCrmPersonTravellerRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO|null
      */
-    public function getMidocoCrmPersonTraveller(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO
+    public function getMidocoCrmPersonTraveller(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO
     {
         return $this->MidocoCrmPersonTraveller;
     }
     /**
      * Set MidocoCrmPersonTraveller value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCrmPersonTravellerRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCrmPersonTravellerRequest
      */
-    public function setMidocoCrmPersonTraveller(?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null): self
+    public function setMidocoCrmPersonTraveller(?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null): self
     {
         $this->MidocoCrmPersonTraveller = $midocoCrmPersonTraveller;
         
@@ -68,7 +69,7 @@ class SaveCrmPersonTravellerRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCrmPersonTravellerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCrmPersonTravellerRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

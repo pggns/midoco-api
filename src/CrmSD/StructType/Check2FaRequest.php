@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Check2FaRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Check2FaRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class Check2FaRequest extends AbstractStructBase
     /**
      * Set authCode value
      * @param string $authCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Check2FaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Check2FaRequest
      */
     public function setAuthCode(?string $authCode = null): self
     {

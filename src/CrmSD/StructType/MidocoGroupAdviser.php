@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoGroupAdviser StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoGroupAdviser extends GroupAdviserDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoGroupAdviser extends GroupAdviserDTO
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGroupAdviser
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGroupAdviser
      */
     public function setName(?string $name = null): self
     {

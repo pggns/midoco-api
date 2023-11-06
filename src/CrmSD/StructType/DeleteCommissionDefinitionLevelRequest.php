@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCommissionDefinitionLevelRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCommissionDefinitionLevelRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class DeleteCommissionDefinitionLevelRequest extends AbstractStructBase
     /**
      * Set commissionId value
      * @param int $commissionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionLevelRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCommissionDefinitionLevelRequest
      */
     public function setCommissionId(?int $commissionId = null): self
     {
@@ -70,7 +71,7 @@ class DeleteCommissionDefinitionLevelRequest extends AbstractStructBase
     /**
      * Set leftMargin value
      * @param float $leftMargin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCommissionDefinitionLevelRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCommissionDefinitionLevelRequest
      */
     public function setLeftMargin(?float $leftMargin = null): self
     {

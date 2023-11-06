@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTypeValuesAndDescriptionsDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
 {
     /**
@@ -64,12 +65,13 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
         return $this->value;
     }
     /**
-     * This method is responsible for validating the values passed to the setValue method
+     * This method is responsible for validating the value(s) passed to the setValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateValueForArrayConstraintsFromSetValue(?array $values = []): string
+    public static function validateValueForArrayConstraintFromSetValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -98,7 +100,7 @@ class GetTypeValuesAndDescriptionsDTO extends AbstractStructBase
     public function setValue(?array $value = null): self
     {
         // validation for constraint: array
-        if ('' !== ($valueArrayErrorMessage = self::validateValueForArrayConstraintsFromSetValue($value))) {
+        if ('' !== ($valueArrayErrorMessage = self::validateValueForArrayConstraintFromSetValue($value))) {
             throw new InvalidArgumentException($valueArrayErrorMessage, __LINE__);
         }
         $this->value = $value;

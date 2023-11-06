@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckUserAccessForOrgunitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckUserAccessForOrgunitResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class CheckUserAccessForOrgunitResponse extends AbstractStructBase
     /**
      * Set hasAccess value
      * @param bool $hasAccess
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CheckUserAccessForOrgunitResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CheckUserAccessForOrgunitResponse
      */
     public function setHasAccess(?bool $hasAccess = null): self
     {

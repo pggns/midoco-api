@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchSupplierSettlementDiffResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchSupplierSettlementDiffResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchSupplierSettlementDiffResponse extends AbstractStructBase
         return $this->MidocoSupplierSettlementDiff;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierSettlementDiff method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierSettlementDiff method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierSettlementDiff method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierSettlementDiffForArrayConstraintsFromSetMidocoSupplierSettlementDiff(?array $values = []): string
+    public static function validateMidocoSupplierSettlementDiffForArrayConstraintFromSetMidocoSupplierSettlementDiff(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchSupplierSettlementDiffResponse extends AbstractStructBase
     public function setMidocoSupplierSettlementDiff(?array $midocoSupplierSettlementDiff = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierSettlementDiffArrayErrorMessage = self::validateMidocoSupplierSettlementDiffForArrayConstraintsFromSetMidocoSupplierSettlementDiff($midocoSupplierSettlementDiff))) {
+        if ('' !== ($midocoSupplierSettlementDiffArrayErrorMessage = self::validateMidocoSupplierSettlementDiffForArrayConstraintFromSetMidocoSupplierSettlementDiff($midocoSupplierSettlementDiff))) {
             throw new InvalidArgumentException($midocoSupplierSettlementDiffArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierSettlementDiff = $midocoSupplierSettlementDiff;

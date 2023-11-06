@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCurrencyForCountry --- returns the currency for the given country
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCurrencyForCountryResponse extends AbstractStructBase
 {
     /**

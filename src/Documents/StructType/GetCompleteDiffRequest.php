@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCompleteDiffRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCompleteDiffRequest extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class GetCompleteDiffRequest extends AbstractStructBase
         return $this->DiffDocumentRefId;
     }
     /**
-     * This method is responsible for validating the values passed to the setDiffDocumentRefId method
+     * This method is responsible for validating the value(s) passed to the setDiffDocumentRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDiffDocumentRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDiffDocumentRefIdForArrayConstraintsFromSetDiffDocumentRefId(?array $values = []): string
+    public static function validateDiffDocumentRefIdForArrayConstraintFromSetDiffDocumentRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class GetCompleteDiffRequest extends AbstractStructBase
     public function setDiffDocumentRefId(?array $diffDocumentRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($diffDocumentRefIdArrayErrorMessage = self::validateDiffDocumentRefIdForArrayConstraintsFromSetDiffDocumentRefId($diffDocumentRefId))) {
+        if ('' !== ($diffDocumentRefIdArrayErrorMessage = self::validateDiffDocumentRefIdForArrayConstraintFromSetDiffDocumentRefId($diffDocumentRefId))) {
             throw new InvalidArgumentException($diffDocumentRefIdArrayErrorMessage, __LINE__);
         }
         $this->DiffDocumentRefId = $diffDocumentRefId;

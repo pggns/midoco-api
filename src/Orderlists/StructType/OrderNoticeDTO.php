@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrderNoticeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrderNoticeDTO extends AbstractStructBase
 {
     /**
@@ -104,6 +105,11 @@ class OrderNoticeDTO extends AbstractStructBase
      */
     protected ?int $orderId = null;
     /**
+     * The origin
+     * @var int|null
+     */
+    protected ?int $origin = null;
+    /**
      * The position
      * @var int|null
      */
@@ -153,6 +159,7 @@ class OrderNoticeDTO extends AbstractStructBase
      * @uses OrderNoticeDTO::setModifyUser()
      * @uses OrderNoticeDTO::setNotice()
      * @uses OrderNoticeDTO::setOrderId()
+     * @uses OrderNoticeDTO::setOrigin()
      * @uses OrderNoticeDTO::setPosition()
      * @uses OrderNoticeDTO::setPrintAllowed()
      * @uses OrderNoticeDTO::setPriority()
@@ -177,6 +184,7 @@ class OrderNoticeDTO extends AbstractStructBase
      * @param int $modifyUser
      * @param string $notice
      * @param int $orderId
+     * @param int $origin
      * @param int $position
      * @param bool $printAllowed
      * @param int $priority
@@ -184,7 +192,7 @@ class OrderNoticeDTO extends AbstractStructBase
      * @param string $startTime
      * @param string $taskType
      */
-    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $deadlineDate = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationUser = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?bool $isSpecialCustomer = null, ?int $itemId = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $orderId = null, ?int $position = null, ?bool $printAllowed = null, ?int $priority = null, ?int $ruleDefinitionId = null, ?string $startTime = null, ?string $taskType = null)
+    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $deadlineDate = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationUser = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?bool $isSpecialCustomer = null, ?int $itemId = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $orderId = null, ?int $origin = null, ?int $position = null, ?bool $printAllowed = null, ?int $priority = null, ?int $ruleDefinitionId = null, ?string $startTime = null, ?string $taskType = null)
     {
         $this
             ->setAsTask($asTask)
@@ -205,6 +213,7 @@ class OrderNoticeDTO extends AbstractStructBase
             ->setModifyUser($modifyUser)
             ->setNotice($notice)
             ->setOrderId($orderId)
+            ->setOrigin($origin)
             ->setPosition($position)
             ->setPrintAllowed($printAllowed)
             ->setPriority($priority)
@@ -623,6 +632,29 @@ class OrderNoticeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($orderId, true), gettype($orderId)), __LINE__);
         }
         $this->orderId = $orderId;
+        
+        return $this;
+    }
+    /**
+     * Get origin value
+     * @return int|null
+     */
+    public function getOrigin(): ?int
+    {
+        return $this->origin;
+    }
+    /**
+     * Set origin value
+     * @param int $origin
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OrderNoticeDTO
+     */
+    public function setOrigin(?int $origin = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($origin) && !(is_int($origin) || ctype_digit($origin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($origin, true), gettype($origin)), __LINE__);
+        }
+        $this->origin = $origin;
         
         return $this;
     }

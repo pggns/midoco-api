@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmNoticeCommentDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmNoticeCommentDTO extends AbstractStructBase
 {
     /**
@@ -111,7 +112,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set baseCommentId value
      * @param int $baseCommentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setBaseCommentId(?int $baseCommentId = null): self
     {
@@ -134,7 +135,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set commentId value
      * @param int $commentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setCommentId(?int $commentId = null): self
     {
@@ -157,7 +158,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set commenttext value
      * @param string $commenttext
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setCommenttext(?string $commenttext = null): self
     {
@@ -180,7 +181,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set creationTime value
      * @param string $creationTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setCreationTime(?string $creationTime = null): self
     {
@@ -203,7 +204,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -226,7 +227,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -249,7 +250,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set markedVoid value
      * @param bool $markedVoid
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setMarkedVoid(?bool $markedVoid = null): self
     {
@@ -272,7 +273,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set modifyTime value
      * @param string $modifyTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setModifyTime(?string $modifyTime = null): self
     {
@@ -295,7 +296,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -318,7 +319,7 @@ class CrmNoticeCommentDTO extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmNoticeCommentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmNoticeCommentDTO
      */
     public function setPosition(?int $position = null): self
     {

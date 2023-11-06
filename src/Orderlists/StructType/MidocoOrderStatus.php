@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrderStatus StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrderStatus extends AbstractStructBase
 {
     /**
@@ -93,12 +94,13 @@ class MidocoOrderStatus extends AbstractStructBase
         return $this->MidocoOrderPayment;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderPayment method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderPayment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderPayment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderPaymentForArrayConstraintsFromSetMidocoOrderPayment(?array $values = []): string
+    public static function validateMidocoOrderPaymentForArrayConstraintFromSetMidocoOrderPayment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -127,7 +129,7 @@ class MidocoOrderStatus extends AbstractStructBase
     public function setMidocoOrderPayment(?array $midocoOrderPayment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderPaymentArrayErrorMessage = self::validateMidocoOrderPaymentForArrayConstraintsFromSetMidocoOrderPayment($midocoOrderPayment))) {
+        if ('' !== ($midocoOrderPaymentArrayErrorMessage = self::validateMidocoOrderPaymentForArrayConstraintFromSetMidocoOrderPayment($midocoOrderPayment))) {
             throw new InvalidArgumentException($midocoOrderPaymentArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderPayment = $midocoOrderPayment;
@@ -159,12 +161,13 @@ class MidocoOrderStatus extends AbstractStructBase
         return $this->MidocoOrderAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderAttributeForArrayConstraintsFromSetMidocoOrderAttribute(?array $values = []): string
+    public static function validateMidocoOrderAttributeForArrayConstraintFromSetMidocoOrderAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -193,7 +196,7 @@ class MidocoOrderStatus extends AbstractStructBase
     public function setMidocoOrderAttribute(?array $midocoOrderAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderAttributeArrayErrorMessage = self::validateMidocoOrderAttributeForArrayConstraintsFromSetMidocoOrderAttribute($midocoOrderAttribute))) {
+        if ('' !== ($midocoOrderAttributeArrayErrorMessage = self::validateMidocoOrderAttributeForArrayConstraintFromSetMidocoOrderAttribute($midocoOrderAttribute))) {
             throw new InvalidArgumentException($midocoOrderAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderAttribute = $midocoOrderAttribute;

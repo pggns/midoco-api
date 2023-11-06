@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FeeTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FeeTypeDTO extends AbstractStructBase
 {
     /**
@@ -74,6 +75,11 @@ class FeeTypeDTO extends AbstractStructBase
      */
     protected ?bool $isBonus = null;
     /**
+     * The isNetto
+     * @var bool|null
+     */
+    protected ?bool $isNetto = null;
+    /**
      * The isOrderFee
      * @var bool|null
      */
@@ -109,6 +115,11 @@ class FeeTypeDTO extends AbstractStructBase
      */
     protected ?bool $takeParentVat = null;
     /**
+     * The taxHandling
+     * @var string|null
+     */
+    protected ?string $taxHandling = null;
+    /**
      * The timeBased
      * @var bool|null
      */
@@ -137,6 +148,7 @@ class FeeTypeDTO extends AbstractStructBase
      * @uses FeeTypeDTO::setFeeReductionCode()
      * @uses FeeTypeDTO::setFeeReductionCodeNoVat()
      * @uses FeeTypeDTO::setIsBonus()
+     * @uses FeeTypeDTO::setIsNetto()
      * @uses FeeTypeDTO::setIsOrderFee()
      * @uses FeeTypeDTO::setIsPercentValueRounded()
      * @uses FeeTypeDTO::setIsVisible()
@@ -144,6 +156,7 @@ class FeeTypeDTO extends AbstractStructBase
      * @uses FeeTypeDTO::setPercentPart()
      * @uses FeeTypeDTO::setSupplierId()
      * @uses FeeTypeDTO::setTakeParentVat()
+     * @uses FeeTypeDTO::setTaxHandling()
      * @uses FeeTypeDTO::setTimeBased()
      * @uses FeeTypeDTO::setValue()
      * @uses FeeTypeDTO::setVerkCode()
@@ -159,6 +172,7 @@ class FeeTypeDTO extends AbstractStructBase
      * @param string $feeReductionCode
      * @param string $feeReductionCodeNoVat
      * @param bool $isBonus
+     * @param bool $isNetto
      * @param bool $isOrderFee
      * @param bool $isPercentValueRounded
      * @param bool $isVisible
@@ -166,11 +180,12 @@ class FeeTypeDTO extends AbstractStructBase
      * @param float $percentPart
      * @param string $supplierId
      * @param bool $takeParentVat
+     * @param string $taxHandling
      * @param bool $timeBased
      * @param float $value
      * @param int $verkCode
      */
-    public function __construct(?string $accountNoTax = null, ?string $accountRc = null, ?string $accountTax = null, ?bool $allowOnlyNegative = null, ?bool $automaticFee = null, ?string $code = null, ?bool $constraintOrgunit = null, ?string $description = null, ?float $feePercent = null, ?string $feeReductionCode = null, ?string $feeReductionCodeNoVat = null, ?bool $isBonus = null, ?bool $isOrderFee = null, ?bool $isPercentValueRounded = null, ?bool $isVisible = null, ?float $minvalue = null, ?float $percentPart = null, ?string $supplierId = null, ?bool $takeParentVat = null, ?bool $timeBased = null, ?float $value = null, ?int $verkCode = null)
+    public function __construct(?string $accountNoTax = null, ?string $accountRc = null, ?string $accountTax = null, ?bool $allowOnlyNegative = null, ?bool $automaticFee = null, ?string $code = null, ?bool $constraintOrgunit = null, ?string $description = null, ?float $feePercent = null, ?string $feeReductionCode = null, ?string $feeReductionCodeNoVat = null, ?bool $isBonus = null, ?bool $isNetto = null, ?bool $isOrderFee = null, ?bool $isPercentValueRounded = null, ?bool $isVisible = null, ?float $minvalue = null, ?float $percentPart = null, ?string $supplierId = null, ?bool $takeParentVat = null, ?string $taxHandling = null, ?bool $timeBased = null, ?float $value = null, ?int $verkCode = null)
     {
         $this
             ->setAccountNoTax($accountNoTax)
@@ -185,6 +200,7 @@ class FeeTypeDTO extends AbstractStructBase
             ->setFeeReductionCode($feeReductionCode)
             ->setFeeReductionCodeNoVat($feeReductionCodeNoVat)
             ->setIsBonus($isBonus)
+            ->setIsNetto($isNetto)
             ->setIsOrderFee($isOrderFee)
             ->setIsPercentValueRounded($isPercentValueRounded)
             ->setIsVisible($isVisible)
@@ -192,6 +208,7 @@ class FeeTypeDTO extends AbstractStructBase
             ->setPercentPart($percentPart)
             ->setSupplierId($supplierId)
             ->setTakeParentVat($takeParentVat)
+            ->setTaxHandling($taxHandling)
             ->setTimeBased($timeBased)
             ->setValue($value)
             ->setVerkCode($verkCode);
@@ -473,6 +490,29 @@ class FeeTypeDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get isNetto value
+     * @return bool|null
+     */
+    public function getIsNetto(): ?bool
+    {
+        return $this->isNetto;
+    }
+    /**
+     * Set isNetto value
+     * @param bool $isNetto
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeTypeDTO
+     */
+    public function setIsNetto(?bool $isNetto = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isNetto) && !is_bool($isNetto)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isNetto, true), gettype($isNetto)), __LINE__);
+        }
+        $this->isNetto = $isNetto;
+        
+        return $this;
+    }
+    /**
      * Get isOrderFee value
      * @return bool|null
      */
@@ -630,6 +670,29 @@ class FeeTypeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($takeParentVat, true), gettype($takeParentVat)), __LINE__);
         }
         $this->takeParentVat = $takeParentVat;
+        
+        return $this;
+    }
+    /**
+     * Get taxHandling value
+     * @return string|null
+     */
+    public function getTaxHandling(): ?string
+    {
+        return $this->taxHandling;
+    }
+    /**
+     * Set taxHandling value
+     * @param string $taxHandling
+     * @return \Pggns\MidocoApi\Orderlists\StructType\FeeTypeDTO
+     */
+    public function setTaxHandling(?string $taxHandling = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($taxHandling) && !is_string($taxHandling)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($taxHandling, true), gettype($taxHandling)), __LINE__);
+        }
+        $this->taxHandling = $taxHandling;
         
         return $this;
     }

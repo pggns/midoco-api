@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoContactSource StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoContactSource extends ContactSourceDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoContactSource extends ContactSourceDTO
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactSource
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactSource
      */
     public function setDescription(?string $description = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTravelNumberVatSchemasResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTravelNumberVatSchemasResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetTravelNumberVatSchemasResponse extends AbstractStructBase
         return $this->MidocoTravelNumberVatSchema;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravelNumberVatSchema method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelNumberVatSchema method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelNumberVatSchema method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravelNumberVatSchemaForArrayConstraintsFromSetMidocoTravelNumberVatSchema(?array $values = []): string
+    public static function validateMidocoTravelNumberVatSchemaForArrayConstraintFromSetMidocoTravelNumberVatSchema(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetTravelNumberVatSchemasResponse extends AbstractStructBase
     public function setMidocoTravelNumberVatSchema(?array $midocoTravelNumberVatSchema = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravelNumberVatSchemaArrayErrorMessage = self::validateMidocoTravelNumberVatSchemaForArrayConstraintsFromSetMidocoTravelNumberVatSchema($midocoTravelNumberVatSchema))) {
+        if ('' !== ($midocoTravelNumberVatSchemaArrayErrorMessage = self::validateMidocoTravelNumberVatSchemaForArrayConstraintFromSetMidocoTravelNumberVatSchema($midocoTravelNumberVatSchema))) {
             throw new InvalidArgumentException($midocoTravelNumberVatSchemaArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravelNumberVatSchema = $midocoTravelNumberVatSchema;

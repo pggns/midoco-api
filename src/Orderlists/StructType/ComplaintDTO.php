@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ComplaintDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ComplaintDTO extends AbstractStructBase
 {
     /**
@@ -54,6 +55,11 @@ class ComplaintDTO extends AbstractStructBase
      */
     protected ?string $receiveDate = null;
     /**
+     * The stateId
+     * @var string|null
+     */
+    protected ?string $stateId = null;
+    /**
      * The typeId
      * @var string|null
      */
@@ -68,6 +74,7 @@ class ComplaintDTO extends AbstractStructBase
      * @uses ComplaintDTO::setOrderId()
      * @uses ComplaintDTO::setOrderNo()
      * @uses ComplaintDTO::setReceiveDate()
+     * @uses ComplaintDTO::setStateId()
      * @uses ComplaintDTO::setTypeId()
      * @param int $complaintId
      * @param int $customerId
@@ -77,9 +84,10 @@ class ComplaintDTO extends AbstractStructBase
      * @param int $orderId
      * @param int $orderNo
      * @param string $receiveDate
+     * @param string $stateId
      * @param string $typeId
      */
-    public function __construct(?int $complaintId = null, ?int $customerId = null, ?string $description = null, ?string $forwardDate = null, ?bool $handled = null, ?int $orderId = null, ?int $orderNo = null, ?string $receiveDate = null, ?string $typeId = null)
+    public function __construct(?int $complaintId = null, ?int $customerId = null, ?string $description = null, ?string $forwardDate = null, ?bool $handled = null, ?int $orderId = null, ?int $orderNo = null, ?string $receiveDate = null, ?string $stateId = null, ?string $typeId = null)
     {
         $this
             ->setComplaintId($complaintId)
@@ -90,6 +98,7 @@ class ComplaintDTO extends AbstractStructBase
             ->setOrderId($orderId)
             ->setOrderNo($orderNo)
             ->setReceiveDate($receiveDate)
+            ->setStateId($stateId)
             ->setTypeId($typeId);
     }
     /**
@@ -273,6 +282,29 @@ class ComplaintDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($receiveDate, true), gettype($receiveDate)), __LINE__);
         }
         $this->receiveDate = $receiveDate;
+        
+        return $this;
+    }
+    /**
+     * Get stateId value
+     * @return string|null
+     */
+    public function getStateId(): ?string
+    {
+        return $this->stateId;
+    }
+    /**
+     * Set stateId value
+     * @param string $stateId
+     * @return \Pggns\MidocoApi\Orderlists\StructType\ComplaintDTO
+     */
+    public function setStateId(?string $stateId = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($stateId) && !is_string($stateId)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($stateId, true), gettype($stateId)), __LINE__);
+        }
+        $this->stateId = $stateId;
         
         return $this;
     }

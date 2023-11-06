@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMediatorByCriteriaRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMediatorByCriteriaRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetMediatorByCriteriaRequest extends AbstractStructBase
     /**
      * Set criteria_name value
      * @param string $criteria_name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorByCriteriaRequest
      */
     public function setCriteria_name(?string $criteria_name = null): self
     {
@@ -70,7 +71,7 @@ class GetMediatorByCriteriaRequest extends AbstractStructBase
     /**
      * Set criteria_value value
      * @param string $criteria_value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorByCriteriaRequest
      */
     public function setCriteria_value(?string $criteria_value = null): self
     {

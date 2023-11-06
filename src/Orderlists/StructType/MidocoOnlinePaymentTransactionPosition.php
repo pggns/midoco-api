@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOnlinePaymentTransactionPosition StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
 {
     /**
@@ -163,6 +164,16 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
      */
     protected ?string $currency = null;
     /**
+     * The originalAmount
+     * @var float|null
+     */
+    protected ?float $originalAmount = null;
+    /**
+     * The originalCurrency
+     * @var string|null
+     */
+    protected ?string $originalCurrency = null;
+    /**
      * Constructor method for MidocoOnlinePaymentTransactionPosition
      * @uses MidocoOnlinePaymentTransactionPosition::setCustomerId()
      * @uses MidocoOnlinePaymentTransactionPosition::setForeName()
@@ -185,6 +196,8 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
      * @uses MidocoOnlinePaymentTransactionPosition::setUsage()
      * @uses MidocoOnlinePaymentTransactionPosition::setIsManual()
      * @uses MidocoOnlinePaymentTransactionPosition::setCurrency()
+     * @uses MidocoOnlinePaymentTransactionPosition::setOriginalAmount()
+     * @uses MidocoOnlinePaymentTransactionPosition::setOriginalCurrency()
      * @param int $customerId
      * @param string $foreName
      * @param string $name
@@ -206,8 +219,10 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
      * @param \Pggns\MidocoApi\Orderlists\StructType\Usage[] $usage
      * @param bool $isManual
      * @param string $currency
+     * @param float $originalAmount
+     * @param string $originalCurrency
      */
-    public function __construct(?int $customerId = null, ?string $foreName = null, ?string $name = null, ?int $debitType = null, ?float $amount = null, ?int $invoiceId = null, ?string $invoiceNo = null, ?int $orderNo = null, ?int $orderId = null, ?string $date = null, ?bool $isDeposit = null, ?string $invoiceType = null, ?string $departureDate = null, ?string $debitorNo = null, ?string $errorCode = null, ?string $errorBundle = null, ?string $errorArgs = null, ?string $errorDescription = null, ?array $usage = null, ?bool $isManual = null, ?string $currency = null)
+    public function __construct(?int $customerId = null, ?string $foreName = null, ?string $name = null, ?int $debitType = null, ?float $amount = null, ?int $invoiceId = null, ?string $invoiceNo = null, ?int $orderNo = null, ?int $orderId = null, ?string $date = null, ?bool $isDeposit = null, ?string $invoiceType = null, ?string $departureDate = null, ?string $debitorNo = null, ?string $errorCode = null, ?string $errorBundle = null, ?string $errorArgs = null, ?string $errorDescription = null, ?array $usage = null, ?bool $isManual = null, ?string $currency = null, ?float $originalAmount = null, ?string $originalCurrency = null)
     {
         $this
             ->setCustomerId($customerId)
@@ -230,7 +245,9 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
             ->setErrorDescription($errorDescription)
             ->setUsage($usage)
             ->setIsManual($isManual)
-            ->setCurrency($currency);
+            ->setCurrency($currency)
+            ->setOriginalAmount($originalAmount)
+            ->setOriginalCurrency($originalCurrency);
     }
     /**
      * Get customerId value
@@ -655,12 +672,13 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
         return $this->Usage;
     }
     /**
-     * This method is responsible for validating the values passed to the setUsage method
+     * This method is responsible for validating the value(s) passed to the setUsage method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUsage method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUsageForArrayConstraintsFromSetUsage(?array $values = []): string
+    public static function validateUsageForArrayConstraintFromSetUsage(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -689,7 +707,7 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
     public function setUsage(?array $usage = null): self
     {
         // validation for constraint: array
-        if ('' !== ($usageArrayErrorMessage = self::validateUsageForArrayConstraintsFromSetUsage($usage))) {
+        if ('' !== ($usageArrayErrorMessage = self::validateUsageForArrayConstraintFromSetUsage($usage))) {
             throw new InvalidArgumentException($usageArrayErrorMessage, __LINE__);
         }
         $this->Usage = $usage;
@@ -755,6 +773,52 @@ class MidocoOnlinePaymentTransactionPosition extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($currency, true), gettype($currency)), __LINE__);
         }
         $this->currency = $currency;
+        
+        return $this;
+    }
+    /**
+     * Get originalAmount value
+     * @return float|null
+     */
+    public function getOriginalAmount(): ?float
+    {
+        return $this->originalAmount;
+    }
+    /**
+     * Set originalAmount value
+     * @param float $originalAmount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     */
+    public function setOriginalAmount(?float $originalAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($originalAmount) && !(is_float($originalAmount) || is_numeric($originalAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($originalAmount, true), gettype($originalAmount)), __LINE__);
+        }
+        $this->originalAmount = $originalAmount;
+        
+        return $this;
+    }
+    /**
+     * Get originalCurrency value
+     * @return string|null
+     */
+    public function getOriginalCurrency(): ?string
+    {
+        return $this->originalCurrency;
+    }
+    /**
+     * Set originalCurrency value
+     * @param string $originalCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOnlinePaymentTransactionPosition
+     */
+    public function setOriginalCurrency(?string $originalCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($originalCurrency) && !is_string($originalCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($originalCurrency, true), gettype($originalCurrency)), __LINE__);
+        }
+        $this->originalCurrency = $originalCurrency;
         
         return $this;
     }

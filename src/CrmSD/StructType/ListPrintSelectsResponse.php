@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListPrintSelectsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListPrintSelectsResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class ListPrintSelectsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoPrintDescription
-     * @var \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO[]
      */
     protected ?array $MidocoPrintDescription = null;
     /**
      * Constructor method for ListPrintSelectsResponse
      * @uses ListPrintSelectsResponse::setMidocoPrintDescription()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @param \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO[] $midocoPrintDescription
      */
     public function __construct(?array $midocoPrintDescription = null)
     {
@@ -34,19 +35,20 @@ class ListPrintSelectsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoPrintDescription value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO[]
      */
     public function getMidocoPrintDescription(): ?array
     {
         return $this->MidocoPrintDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintDescriptionForArrayConstraintsFromSetMidocoPrintDescription(?array $values = []): string
+    public static function validateMidocoPrintDescriptionForArrayConstraintFromSetMidocoPrintDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class ListPrintSelectsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $listPrintSelectsResponseMidocoPrintDescriptionItem) {
             // validation for constraint: itemType
-            if (!$listPrintSelectsResponseMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO) {
+            if (!$listPrintSelectsResponseMidocoPrintDescriptionItem instanceof \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO) {
                 $invalidValues[] = is_object($listPrintSelectsResponseMidocoPrintDescriptionItem) ? get_class($listPrintSelectsResponseMidocoPrintDescriptionItem) : sprintf('%s(%s)', gettype($listPrintSelectsResponseMidocoPrintDescriptionItem), var_export($listPrintSelectsResponseMidocoPrintDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class ListPrintSelectsResponse extends AbstractStructBase
     /**
      * Set MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO[] $midocoPrintDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ListPrintSelectsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO[] $midocoPrintDescription
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ListPrintSelectsResponse
      */
     public function setMidocoPrintDescription(?array $midocoPrintDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintDescriptionArrayErrorMessage = self::validateMidocoPrintDescriptionForArrayConstraintsFromSetMidocoPrintDescription($midocoPrintDescription))) {
+        if ('' !== ($midocoPrintDescriptionArrayErrorMessage = self::validateMidocoPrintDescriptionForArrayConstraintFromSetMidocoPrintDescription($midocoPrintDescription))) {
             throw new InvalidArgumentException($midocoPrintDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintDescription = $midocoPrintDescription;
@@ -85,14 +87,14 @@ class ListPrintSelectsResponse extends AbstractStructBase
     /**
      * Add item to MidocoPrintDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ListPrintSelectsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ListPrintSelectsResponse
      */
-    public function addToMidocoPrintDescription(\Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO $item): self
+    public function addToMidocoPrintDescription(\Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoPrintDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\PrintDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoPrintDescription[] = $item;
         

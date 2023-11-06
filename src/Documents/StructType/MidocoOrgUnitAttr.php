@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrgUnitAttr StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrgUnitAttr extends AbstractStructBase
 {
     /**

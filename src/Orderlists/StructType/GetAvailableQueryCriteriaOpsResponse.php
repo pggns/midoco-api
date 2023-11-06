@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAvailableQueryCriteriaOpsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
         return $this->MidocoQueryCriteriaOp;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoQueryCriteriaOp method
+     * This method is responsible for validating the value(s) passed to the setMidocoQueryCriteriaOp method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoQueryCriteriaOp method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoQueryCriteriaOpForArrayConstraintsFromSetMidocoQueryCriteriaOp(?array $values = []): string
+    public static function validateMidocoQueryCriteriaOpForArrayConstraintFromSetMidocoQueryCriteriaOp(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAvailableQueryCriteriaOpsResponse extends AbstractStructBase
     public function setMidocoQueryCriteriaOp(?array $midocoQueryCriteriaOp = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoQueryCriteriaOpArrayErrorMessage = self::validateMidocoQueryCriteriaOpForArrayConstraintsFromSetMidocoQueryCriteriaOp($midocoQueryCriteriaOp))) {
+        if ('' !== ($midocoQueryCriteriaOpArrayErrorMessage = self::validateMidocoQueryCriteriaOpForArrayConstraintFromSetMidocoQueryCriteriaOp($midocoQueryCriteriaOp))) {
             throw new InvalidArgumentException($midocoQueryCriteriaOpArrayErrorMessage, __LINE__);
         }
         $this->MidocoQueryCriteriaOp = $midocoQueryCriteriaOp;

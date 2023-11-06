@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getJasperReportParam --- return the parameter for the given param id and report id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetJasperReportParamResponse extends AbstractStructBase
 {
     /**

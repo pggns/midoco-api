@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CritTypeCatDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CritTypeCatDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class CritTypeCatDTO extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CritTypeCatDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CritTypeCatDTO
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -70,7 +71,7 @@ class CritTypeCatDTO extends AbstractStructBase
     /**
      * Set guiPosition value
      * @param int $guiPosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CritTypeCatDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CritTypeCatDTO
      */
     public function setGuiPosition(?int $guiPosition = null): self
     {

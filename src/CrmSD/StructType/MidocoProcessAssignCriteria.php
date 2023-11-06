@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoProcessAssignCriteria StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoProcessAssignCriteria extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoProcessAssignCriteria extends AbstractStructBase
     /**
      * Set applicationId value
      * @param string $applicationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProcessAssignCriteria
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProcessAssignCriteria
      */
     public function setApplicationId(?string $applicationId = null): self
     {
@@ -70,7 +71,7 @@ class MidocoProcessAssignCriteria extends AbstractStructBase
     /**
      * Set orgunit value
      * @param string $orgunit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoProcessAssignCriteria
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoProcessAssignCriteria
      */
     public function setOrgunit(?string $orgunit = null): self
     {

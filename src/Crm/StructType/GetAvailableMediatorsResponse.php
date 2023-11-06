@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: returns a list of MidocoMediatorDTO
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableMediatorsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAvailableMediatorsResponse extends AbstractStructBase
         return $this->MidocoMediator;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediator method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediator method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediator method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediatorForArrayConstraintsFromSetMidocoMediator(?array $values = []): string
+    public static function validateMidocoMediatorForArrayConstraintFromSetMidocoMediator(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAvailableMediatorsResponse extends AbstractStructBase
     public function setMidocoMediator(?array $midocoMediator = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediatorArrayErrorMessage = self::validateMidocoMediatorForArrayConstraintsFromSetMidocoMediator($midocoMediator))) {
+        if ('' !== ($midocoMediatorArrayErrorMessage = self::validateMidocoMediatorForArrayConstraintFromSetMidocoMediator($midocoMediator))) {
             throw new InvalidArgumentException($midocoMediatorArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediator = $midocoMediator;

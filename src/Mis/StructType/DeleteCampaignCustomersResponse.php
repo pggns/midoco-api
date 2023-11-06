@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteCampaignCustomers --- deletes the given customers of the given campaign
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCampaignCustomersResponse extends AbstractStructBase
 {
 }

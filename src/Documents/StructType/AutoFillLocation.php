@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * from 0,0 which is upper left corner coordinate offsets are calculated from 0,0 in points (1/72inch) which is lower left corner
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AutoFillLocation extends AbstractStructBase
 {
     /**

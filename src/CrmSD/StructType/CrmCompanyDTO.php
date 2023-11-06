@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmCompanyDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmCompanyDTO extends AbstractStructBase
 {
     /**
@@ -103,7 +104,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set commissionId value
      * @param string $commissionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setCommissionId(?string $commissionId = null): self
     {
@@ -126,7 +127,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -149,7 +150,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -172,7 +173,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set invoiceSignature value
      * @param bool $invoiceSignature
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setInvoiceSignature(?bool $invoiceSignature = null): self
     {
@@ -195,7 +196,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -218,7 +219,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set linkedSupplierId value
      * @param string $linkedSupplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setLinkedSupplierId(?string $linkedSupplierId = null): self
     {
@@ -241,7 +242,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set organisationName value
      * @param string $organisationName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setOrganisationName(?string $organisationName = null): self
     {
@@ -264,7 +265,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set tradeRegister value
      * @param string $tradeRegister
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setTradeRegister(?string $tradeRegister = null): self
     {
@@ -287,7 +288,7 @@ class CrmCompanyDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCompanyDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCompanyDTO
      */
     public function setVatId(?string $vatId = null): self
     {

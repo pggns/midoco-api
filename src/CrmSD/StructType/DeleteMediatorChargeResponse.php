@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteMediatorCharge --- deletes the mediator charge identified by the customer id and the charge id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMediatorChargeResponse extends AbstractStructBase
 {
 }

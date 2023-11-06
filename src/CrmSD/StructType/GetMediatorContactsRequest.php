@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMediatorContactsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMediatorContactsRequest extends AbstractStructBase
 {
     /**
@@ -51,7 +52,7 @@ class GetMediatorContactsRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorContactsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorContactsRequest
      */
     public function setMediatorId(string $mediatorId): self
     {
@@ -74,7 +75,7 @@ class GetMediatorContactsRequest extends AbstractStructBase
     /**
      * Set contactType value
      * @param string $contactType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorContactsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorContactsRequest
      */
     public function setContactType(?string $contactType = null): self
     {

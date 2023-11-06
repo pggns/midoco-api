@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintSelectsForCustomerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintSelectsForCustomerRequest extends AbstractStructBase
 {
     /**
@@ -67,12 +68,13 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
         return $this->handler;
     }
     /**
-     * This method is responsible for validating the values passed to the setHandler method
+     * This method is responsible for validating the value(s) passed to the setHandler method
      * This method is willingly generated in order to preserve the one-line inline validation within the setHandler method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateHandlerForArrayConstraintsFromSetHandler(?array $values = []): string
+    public static function validateHandlerForArrayConstraintFromSetHandler(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -96,12 +98,12 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
      * Set handler value
      * @throws InvalidArgumentException
      * @param string[] $handler
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setHandler(?array $handler = null): self
     {
         // validation for constraint: array
-        if ('' !== ($handlerArrayErrorMessage = self::validateHandlerForArrayConstraintsFromSetHandler($handler))) {
+        if ('' !== ($handlerArrayErrorMessage = self::validateHandlerForArrayConstraintFromSetHandler($handler))) {
             throw new InvalidArgumentException($handlerArrayErrorMessage, __LINE__);
         }
         $this->handler = $handler;
@@ -112,7 +114,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
      * Add item to handler value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintSelectsForCustomerRequest
      */
     public function addToHandler(string $item): self
     {
@@ -135,7 +137,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -158,7 +160,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -181,7 +183,7 @@ class GetPrintSelectsForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPrintSelectsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPrintSelectsForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMediatorRevenue StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMediatorRevenue extends MediatorRevenueDTO
 {
     /**
@@ -79,7 +80,7 @@ class MidocoMediatorRevenue extends MediatorRevenueDTO
     /**
      * Set rowInExcelSheet value
      * @param int $rowInExcelSheet
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMediatorRevenue
      */
     public function setRowInExcelSheet(?int $rowInExcelSheet = null): self
     {
@@ -102,7 +103,7 @@ class MidocoMediatorRevenue extends MediatorRevenueDTO
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMediatorRevenue
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -125,7 +126,7 @@ class MidocoMediatorRevenue extends MediatorRevenueDTO
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMediatorRevenue
      */
     public function setName(?string $name = null): self
     {
@@ -148,7 +149,7 @@ class MidocoMediatorRevenue extends MediatorRevenueDTO
     /**
      * Set location value
      * @param string $location
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMediatorRevenue
      */
     public function setLocation(?string $location = null): self
     {
@@ -171,7 +172,7 @@ class MidocoMediatorRevenue extends MediatorRevenueDTO
     /**
      * Set supplierName value
      * @param string $supplierName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMediatorRevenue
      */
     public function setSupplierName(?string $supplierName = null): self
     {
@@ -194,7 +195,7 @@ class MidocoMediatorRevenue extends MediatorRevenueDTO
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMediatorRevenue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMediatorRevenue
      */
     public function setRemark(?string $remark = null): self
     {

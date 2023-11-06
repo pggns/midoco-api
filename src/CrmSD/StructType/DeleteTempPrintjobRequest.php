@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteTempPrintjobRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteTempPrintjobRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class DeleteTempPrintjobRequest extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteTempPrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteTempPrintjobRequest
      */
     public function setId(?int $id = null): self
     {

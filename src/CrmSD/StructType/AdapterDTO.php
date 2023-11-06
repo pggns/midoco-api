@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AdapterDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AdapterDTO extends AbstractStructBase
 {
     /**
@@ -29,28 +30,44 @@ class AdapterDTO extends AbstractStructBase
      */
     protected ?string $classname = null;
     /**
+     * The documentationUrl
+     * @var string|null
+     */
+    protected ?string $documentationUrl = null;
+    /**
      * The jndiUrl
      * @var string|null
      */
     protected ?string $jndiUrl = null;
     /**
+     * The validator
+     * @var string|null
+     */
+    protected ?string $validator = null;
+    /**
      * Constructor method for AdapterDTO
      * @uses AdapterDTO::setAdapterId()
      * @uses AdapterDTO::setAdapterType()
      * @uses AdapterDTO::setClassname()
+     * @uses AdapterDTO::setDocumentationUrl()
      * @uses AdapterDTO::setJndiUrl()
+     * @uses AdapterDTO::setValidator()
      * @param string $adapterId
      * @param string $adapterType
      * @param string $classname
+     * @param string $documentationUrl
      * @param string $jndiUrl
+     * @param string $validator
      */
-    public function __construct(?string $adapterId = null, ?string $adapterType = null, ?string $classname = null, ?string $jndiUrl = null)
+    public function __construct(?string $adapterId = null, ?string $adapterType = null, ?string $classname = null, ?string $documentationUrl = null, ?string $jndiUrl = null, ?string $validator = null)
     {
         $this
             ->setAdapterId($adapterId)
             ->setAdapterType($adapterType)
             ->setClassname($classname)
-            ->setJndiUrl($jndiUrl);
+            ->setDocumentationUrl($documentationUrl)
+            ->setJndiUrl($jndiUrl)
+            ->setValidator($validator);
     }
     /**
      * Get adapterId value
@@ -63,7 +80,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set adapterId value
      * @param string $adapterId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterDTO
      */
     public function setAdapterId(?string $adapterId = null): self
     {
@@ -86,7 +103,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set adapterType value
      * @param string $adapterType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterDTO
      */
     public function setAdapterType(?string $adapterType = null): self
     {
@@ -109,7 +126,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set classname value
      * @param string $classname
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterDTO
      */
     public function setClassname(?string $classname = null): self
     {
@@ -118,6 +135,29 @@ class AdapterDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($classname, true), gettype($classname)), __LINE__);
         }
         $this->classname = $classname;
+        
+        return $this;
+    }
+    /**
+     * Get documentationUrl value
+     * @return string|null
+     */
+    public function getDocumentationUrl(): ?string
+    {
+        return $this->documentationUrl;
+    }
+    /**
+     * Set documentationUrl value
+     * @param string $documentationUrl
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterDTO
+     */
+    public function setDocumentationUrl(?string $documentationUrl = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($documentationUrl) && !is_string($documentationUrl)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($documentationUrl, true), gettype($documentationUrl)), __LINE__);
+        }
+        $this->documentationUrl = $documentationUrl;
         
         return $this;
     }
@@ -132,7 +172,7 @@ class AdapterDTO extends AbstractStructBase
     /**
      * Set jndiUrl value
      * @param string $jndiUrl
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AdapterDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterDTO
      */
     public function setJndiUrl(?string $jndiUrl = null): self
     {
@@ -141,6 +181,29 @@ class AdapterDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($jndiUrl, true), gettype($jndiUrl)), __LINE__);
         }
         $this->jndiUrl = $jndiUrl;
+        
+        return $this;
+    }
+    /**
+     * Get validator value
+     * @return string|null
+     */
+    public function getValidator(): ?string
+    {
+        return $this->validator;
+    }
+    /**
+     * Set validator value
+     * @param string $validator
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AdapterDTO
+     */
+    public function setValidator(?string $validator = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($validator) && !is_string($validator)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validator, true), gettype($validator)), __LINE__);
+        }
+        $this->validator = $validator;
         
         return $this;
     }

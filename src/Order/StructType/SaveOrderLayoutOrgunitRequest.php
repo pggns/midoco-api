@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveOrderLayoutOrgunitRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
 {
     /**
@@ -49,12 +50,13 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
         return $this->NotAllowedOrgunit;
     }
     /**
-     * This method is responsible for validating the values passed to the setNotAllowedOrgunit method
+     * This method is responsible for validating the value(s) passed to the setNotAllowedOrgunit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setNotAllowedOrgunit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateNotAllowedOrgunitForArrayConstraintsFromSetNotAllowedOrgunit(?array $values = []): string
+    public static function validateNotAllowedOrgunitForArrayConstraintFromSetNotAllowedOrgunit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,7 +85,7 @@ class SaveOrderLayoutOrgunitRequest extends AbstractStructBase
     public function setNotAllowedOrgunit(?array $notAllowedOrgunit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($notAllowedOrgunitArrayErrorMessage = self::validateNotAllowedOrgunitForArrayConstraintsFromSetNotAllowedOrgunit($notAllowedOrgunit))) {
+        if ('' !== ($notAllowedOrgunitArrayErrorMessage = self::validateNotAllowedOrgunitForArrayConstraintFromSetNotAllowedOrgunit($notAllowedOrgunit))) {
             throw new InvalidArgumentException($notAllowedOrgunitArrayErrorMessage, __LINE__);
         }
         $this->NotAllowedOrgunit = $notAllowedOrgunit;

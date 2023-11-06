@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrgunitDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrgunitDTO extends AbstractStructBase
 {
     /**
@@ -287,7 +288,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -310,7 +311,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set contactPerson value
      * @param string $contactPerson
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setContactPerson(?string $contactPerson = null): self
     {
@@ -333,7 +334,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -356,7 +357,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -379,7 +380,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -402,7 +403,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set defaultCultureId value
      * @param string $defaultCultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setDefaultCultureId(?string $defaultCultureId = null): self
     {
@@ -425,7 +426,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setEmail(?string $email = null): self
     {
@@ -448,7 +449,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set email2 value
      * @param string $email2
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setEmail2(?string $email2 = null): self
     {
@@ -471,7 +472,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set emailNotSentReceiver value
      * @param string $emailNotSentReceiver
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setEmailNotSentReceiver(?string $emailNotSentReceiver = null): self
     {
@@ -494,7 +495,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set fax value
      * @param string $fax
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setFax(?string $fax = null): self
     {
@@ -517,7 +518,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set flighttimeEmail value
      * @param string $flighttimeEmail
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setFlighttimeEmail(?string $flighttimeEmail = null): self
     {
@@ -540,7 +541,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set flighttimeRestrictions value
      * @param string $flighttimeRestrictions
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setFlighttimeRestrictions(?string $flighttimeRestrictions = null): self
     {
@@ -563,7 +564,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set isPartCentCampDenied value
      * @param bool $isPartCentCampDenied
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setIsPartCentCampDenied(?bool $isPartCentCampDenied = null): self
     {
@@ -586,7 +587,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set licenseRequired value
      * @param bool $licenseRequired
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setLicenseRequired(?bool $licenseRequired = null): self
     {
@@ -609,7 +610,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set locked value
      * @param bool $locked
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setLocked(?bool $locked = null): self
     {
@@ -632,7 +633,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -655,7 +656,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set preventImport value
      * @param bool $preventImport
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setPreventImport(?bool $preventImport = null): self
     {
@@ -678,7 +679,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set printName value
      * @param string $printName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setPrintName(?string $printName = null): self
     {
@@ -701,7 +702,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set productive value
      * @param bool $productive
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setProductive(?bool $productive = null): self
     {
@@ -724,7 +725,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setQueueId(?int $queueId = null): self
     {
@@ -747,7 +748,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set receiveEmail value
      * @param string $receiveEmail
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setReceiveEmail(?string $receiveEmail = null): self
     {
@@ -770,7 +771,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setState(?string $state = null): self
     {
@@ -793,7 +794,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setStreet(?string $street = null): self
     {
@@ -816,7 +817,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -839,7 +840,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set telephone value
      * @param string $telephone
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setTelephone(?string $telephone = null): self
     {
@@ -862,7 +863,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set timeDifference value
      * @param int $timeDifference
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setTimeDifference(?int $timeDifference = null): self
     {
@@ -885,7 +886,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set timezone value
      * @param string $timezone
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setTimezone(?string $timezone = null): self
     {
@@ -908,7 +909,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set unitAlias value
      * @param string $unitAlias
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setUnitAlias(?string $unitAlias = null): self
     {
@@ -931,7 +932,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -954,7 +955,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set unitParent value
      * @param string $unitParent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setUnitParent(?string $unitParent = null): self
     {
@@ -977,7 +978,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set userGroup value
      * @param bool $userGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setUserGroup(?bool $userGroup = null): self
     {
@@ -1000,7 +1001,7 @@ class OrgunitDTO extends AbstractStructBase
     /**
      * Set vatId value
      * @param string $vatId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitDTO
      */
     public function setVatId(?string $vatId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for railServiceType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RailServiceType extends AbstractStructBase
 {
     /**
@@ -199,6 +200,14 @@ class RailServiceType extends AbstractStructBase
      */
     protected ?bool $vatIncluded = null;
     /**
+     * The companyCustomer
+     * Meta information extracted from the WSDL
+     * - default: false
+     * - minOccurs: 0
+     * @var bool|null
+     */
+    protected ?bool $companyCustomer = null;
+    /**
      * The paxPerService
      * @var int|null
      */
@@ -287,6 +296,7 @@ class RailServiceType extends AbstractStructBase
      * @uses RailServiceType::setServicePrice()
      * @uses RailServiceType::setCurrency()
      * @uses RailServiceType::setVatIncluded()
+     * @uses RailServiceType::setCompanyCustomer()
      * @uses RailServiceType::setPaxPerService()
      * @uses RailServiceType::setReductionCode()
      * @uses RailServiceType::setReductionDesc()
@@ -323,6 +333,7 @@ class RailServiceType extends AbstractStructBase
      * @param float $servicePrice
      * @param string $currency
      * @param bool $vatIncluded
+     * @param bool $companyCustomer
      * @param int $paxPerService
      * @param string $reductionCode
      * @param string $reductionDesc
@@ -332,7 +343,7 @@ class RailServiceType extends AbstractStructBase
      * @param string $ticketCategory
      * @param \Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation
      */
-    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $departureDate = null, ?string $departureTime = null, ?string $departureCode = null, ?string $departureDesc = null, ?string $departurePlatform = null, ?string $arrivalDate = null, ?string $arrivalTime = null, ?string $arrivalCode = null, ?string $arrivalDesc = null, ?string $arrivalPlatform = null, ?string $bookingClass = null, ?string $tariffCode = null, ?string $tariffDesc = null, ?string $trainNo = null, ?string $trainType = null, ?string $waggon = null, ?string $partition = null, ?string $seat = null, ?string $documentNo = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $servicePrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?int $paxPerService = null, ?string $reductionCode = null, ?string $reductionDesc = null, ?string $validFrom = null, ?string $lastCancelDate = null, ?int $noOfChildren = null, ?string $ticketCategory = null, ?\Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation = null)
+    public function __construct(int $position, ?string $serviceCode = null, ?string $serviceName = null, ?string $serviceDescription = null, ?string $departureDate = null, ?string $departureTime = null, ?string $departureCode = null, ?string $departureDesc = null, ?string $departurePlatform = null, ?string $arrivalDate = null, ?string $arrivalTime = null, ?string $arrivalCode = null, ?string $arrivalDesc = null, ?string $arrivalPlatform = null, ?string $bookingClass = null, ?string $tariffCode = null, ?string $tariffDesc = null, ?string $trainNo = null, ?string $trainType = null, ?string $waggon = null, ?string $partition = null, ?string $seat = null, ?string $documentNo = null, ?string $serviceStatus = null, ?string $personAssignment = null, ?float $servicePrice = null, ?string $currency = 'EUR', ?bool $vatIncluded = false, ?bool $companyCustomer = false, ?int $paxPerService = null, ?string $reductionCode = null, ?string $reductionDesc = null, ?string $validFrom = null, ?string $lastCancelDate = null, ?int $noOfChildren = null, ?string $ticketCategory = null, ?\Pggns\MidocoApi\Booking\StructType\CcInformation $ccInformation = null)
     {
         $this
             ->setPosition($position)
@@ -363,6 +374,7 @@ class RailServiceType extends AbstractStructBase
             ->setServicePrice($servicePrice)
             ->setCurrency($currency)
             ->setVatIncluded($vatIncluded)
+            ->setCompanyCustomer($companyCustomer)
             ->setPaxPerService($paxPerService)
             ->setReductionCode($reductionCode)
             ->setReductionDesc($reductionDesc)
@@ -484,7 +496,7 @@ class RailServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($departureDate, true), gettype($departureDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($departureDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $departureDate)) {
+        if (!is_null($departureDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $departureDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($departureDate, true)), __LINE__);
         }
         $this->departureDate = $departureDate;
@@ -511,7 +523,7 @@ class RailServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($departureTime, true), gettype($departureTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($departureTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $departureTime)) {
+        if (!is_null($departureTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $departureTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($departureTime, true)), __LINE__);
         }
         $this->departureTime = $departureTime;
@@ -615,7 +627,7 @@ class RailServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($arrivalDate, true), gettype($arrivalDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($arrivalDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $arrivalDate)) {
+        if (!is_null($arrivalDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $arrivalDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($arrivalDate, true)), __LINE__);
         }
         $this->arrivalDate = $arrivalDate;
@@ -642,7 +654,7 @@ class RailServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($arrivalTime, true), gettype($arrivalTime)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($arrivalTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', $arrivalTime)) {
+        if (!is_null($arrivalTime) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $arrivalTime)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($arrivalTime, true)), __LINE__);
         }
         $this->arrivalTime = $arrivalTime;
@@ -1049,6 +1061,29 @@ class RailServiceType extends AbstractStructBase
         return $this;
     }
     /**
+     * Get companyCustomer value
+     * @return bool|null
+     */
+    public function getCompanyCustomer(): ?bool
+    {
+        return $this->companyCustomer;
+    }
+    /**
+     * Set companyCustomer value
+     * @param bool $companyCustomer
+     * @return \Pggns\MidocoApi\Booking\StructType\RailServiceType
+     */
+    public function setCompanyCustomer(?bool $companyCustomer = false): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($companyCustomer) && !is_bool($companyCustomer)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($companyCustomer, true), gettype($companyCustomer)), __LINE__);
+        }
+        $this->companyCustomer = $companyCustomer;
+        
+        return $this;
+    }
+    /**
      * Get paxPerService value
      * @return int|null
      */
@@ -1137,7 +1172,7 @@ class RailServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validFrom, true), gettype($validFrom)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($validFrom) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $validFrom)) {
+        if (!is_null($validFrom) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $validFrom)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($validFrom, true)), __LINE__);
         }
         $this->validFrom = $validFrom;
@@ -1164,7 +1199,7 @@ class RailServiceType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastCancelDate, true), gettype($lastCancelDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($lastCancelDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $lastCancelDate)) {
+        if (!is_null($lastCancelDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $lastCancelDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($lastCancelDate, true)), __LINE__);
         }
         $this->lastCancelDate = $lastCancelDate;

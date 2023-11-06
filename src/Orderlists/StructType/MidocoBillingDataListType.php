@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBillingDataListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBillingDataListType extends AbstractStructBase
 {
     /**

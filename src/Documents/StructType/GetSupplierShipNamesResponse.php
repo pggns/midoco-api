@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierShipNamesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierShipNamesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSupplierShipNamesResponse extends AbstractStructBase
         return $this->MidocoSupplierShipName;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierShipName method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierShipName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierShipName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierShipNameForArrayConstraintsFromSetMidocoSupplierShipName(?array $values = []): string
+    public static function validateMidocoSupplierShipNameForArrayConstraintFromSetMidocoSupplierShipName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSupplierShipNamesResponse extends AbstractStructBase
     public function setMidocoSupplierShipName(?array $midocoSupplierShipName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierShipNameArrayErrorMessage = self::validateMidocoSupplierShipNameForArrayConstraintsFromSetMidocoSupplierShipName($midocoSupplierShipName))) {
+        if ('' !== ($midocoSupplierShipNameArrayErrorMessage = self::validateMidocoSupplierShipNameForArrayConstraintFromSetMidocoSupplierShipName($midocoSupplierShipName))) {
             throw new InvalidArgumentException($midocoSupplierShipNameArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierShipName = $midocoSupplierShipName;

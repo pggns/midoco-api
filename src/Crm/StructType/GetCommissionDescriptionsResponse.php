@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCommissionDescriptions --- returns the list of commission descriptions of a given commission
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCommissionDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetCommissionDescriptionsResponse extends AbstractStructBase
         return $this->MidocoCommissionDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCommissionDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoCommissionDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCommissionDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCommissionDescriptionForArrayConstraintsFromSetMidocoCommissionDescription(?array $values = []): string
+    public static function validateMidocoCommissionDescriptionForArrayConstraintFromSetMidocoCommissionDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetCommissionDescriptionsResponse extends AbstractStructBase
     public function setMidocoCommissionDescription(?array $midocoCommissionDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCommissionDescriptionArrayErrorMessage = self::validateMidocoCommissionDescriptionForArrayConstraintsFromSetMidocoCommissionDescription($midocoCommissionDescription))) {
+        if ('' !== ($midocoCommissionDescriptionArrayErrorMessage = self::validateMidocoCommissionDescriptionForArrayConstraintFromSetMidocoCommissionDescription($midocoCommissionDescription))) {
             throw new InvalidArgumentException($midocoCommissionDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoCommissionDescription = $midocoCommissionDescription;

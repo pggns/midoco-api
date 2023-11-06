@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoAttributeValue4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoAttributeValue4Printing extends AbstractStructBase
 {
     /**
@@ -29,20 +30,28 @@ class MidocoAttributeValue4Printing extends AbstractStructBase
      */
     protected ?string $formatedValue = null;
     /**
+     * The localization
+     * @var string|null
+     */
+    protected ?string $localization = null;
+    /**
      * Constructor method for MidocoAttributeValue4Printing
      * @uses MidocoAttributeValue4Printing::setId()
      * @uses MidocoAttributeValue4Printing::setAttributeName()
      * @uses MidocoAttributeValue4Printing::setFormatedValue()
+     * @uses MidocoAttributeValue4Printing::setLocalization()
      * @param int $id
      * @param string $attributeName
      * @param string $formatedValue
+     * @param string $localization
      */
-    public function __construct(?int $id = null, ?string $attributeName = null, ?string $formatedValue = null)
+    public function __construct(?int $id = null, ?string $attributeName = null, ?string $formatedValue = null, ?string $localization = null)
     {
         $this
             ->setId($id)
             ->setAttributeName($attributeName)
-            ->setFormatedValue($formatedValue);
+            ->setFormatedValue($formatedValue)
+            ->setLocalization($localization);
     }
     /**
      * Get id value
@@ -110,6 +119,29 @@ class MidocoAttributeValue4Printing extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($formatedValue, true), gettype($formatedValue)), __LINE__);
         }
         $this->formatedValue = $formatedValue;
+        
+        return $this;
+    }
+    /**
+     * Get localization value
+     * @return string|null
+     */
+    public function getLocalization(): ?string
+    {
+        return $this->localization;
+    }
+    /**
+     * Set localization value
+     * @param string $localization
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAttributeValue4Printing
+     */
+    public function setLocalization(?string $localization = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($localization) && !is_string($localization)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($localization, true), gettype($localization)), __LINE__);
+        }
+        $this->localization = $localization;
         
         return $this;
     }

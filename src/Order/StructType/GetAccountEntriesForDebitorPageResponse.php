@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAccountEntriesForDebitorPageResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
         return $this->MidocoDebitorAccountEntry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDebitorAccountEntry method
+     * This method is responsible for validating the value(s) passed to the setMidocoDebitorAccountEntry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDebitorAccountEntry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDebitorAccountEntryForArrayConstraintsFromSetMidocoDebitorAccountEntry(?array $values = []): string
+    public static function validateMidocoDebitorAccountEntryForArrayConstraintFromSetMidocoDebitorAccountEntry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetAccountEntriesForDebitorPageResponse extends AbstractStructBase
     public function setMidocoDebitorAccountEntry(?array $midocoDebitorAccountEntry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDebitorAccountEntryArrayErrorMessage = self::validateMidocoDebitorAccountEntryForArrayConstraintsFromSetMidocoDebitorAccountEntry($midocoDebitorAccountEntry))) {
+        if ('' !== ($midocoDebitorAccountEntryArrayErrorMessage = self::validateMidocoDebitorAccountEntryForArrayConstraintFromSetMidocoDebitorAccountEntry($midocoDebitorAccountEntry))) {
             throw new InvalidArgumentException($midocoDebitorAccountEntryArrayErrorMessage, __LINE__);
         }
         $this->MidocoDebitorAccountEntry = $midocoDebitorAccountEntry;

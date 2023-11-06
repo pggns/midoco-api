@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisCubeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisCubeDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set cubeId value
      * @param int $cubeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisCubeDTO
      */
     public function setCubeId(?int $cubeId = null): self
     {
@@ -86,7 +87,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set cubeName value
      * @param string $cubeName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisCubeDTO
      */
     public function setCubeName(?string $cubeName = null): self
     {
@@ -109,7 +110,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisCubeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -132,7 +133,7 @@ class MisCubeDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisCubeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisCubeDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {

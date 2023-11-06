@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GdsAttribDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GdsAttribDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GdsAttribDTO extends AbstractStructBase
     /**
      * Set attributeId value
      * @param string $attributeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsAttribDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsAttribDTO
      */
     public function setAttributeId(?string $attributeId = null): self
     {
@@ -70,7 +71,7 @@ class GdsAttribDTO extends AbstractStructBase
     /**
      * Set isOptional value
      * @param bool $isOptional
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsAttribDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsAttribDTO
      */
     public function setIsOptional(?bool $isOptional = null): self
     {

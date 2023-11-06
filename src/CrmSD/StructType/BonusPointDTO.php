@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BonusPointDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BonusPointDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class BonusPointDTO extends AbstractStructBase
     /**
      * Set bonusId value
      * @param int $bonusId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BonusPointDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BonusPointDTO
      */
     public function setBonusId(?int $bonusId = null): self
     {
@@ -102,7 +103,7 @@ class BonusPointDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BonusPointDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BonusPointDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -125,7 +126,7 @@ class BonusPointDTO extends AbstractStructBase
     /**
      * Set event value
      * @param string $event
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BonusPointDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BonusPointDTO
      */
     public function setEvent(?string $event = null): self
     {
@@ -148,7 +149,7 @@ class BonusPointDTO extends AbstractStructBase
     /**
      * Set points value
      * @param int $points
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BonusPointDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BonusPointDTO
      */
     public function setPoints(?int $points = null): self
     {
@@ -171,7 +172,7 @@ class BonusPointDTO extends AbstractStructBase
     /**
      * Set timestamp value
      * @param string $timestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BonusPointDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BonusPointDTO
      */
     public function setTimestamp(?string $timestamp = null): self
     {
@@ -194,7 +195,7 @@ class BonusPointDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BonusPointDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BonusPointDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

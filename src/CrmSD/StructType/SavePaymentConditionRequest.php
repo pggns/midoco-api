@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SavePaymentConditionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavePaymentConditionRequest extends AbstractStructBase
 {
     /**
@@ -18,33 +19,33 @@ class SavePaymentConditionRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoPaymentCondition
-     * @var \Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO $MidocoPaymentCondition = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO $MidocoPaymentCondition = null;
     /**
      * Constructor method for SavePaymentConditionRequest
      * @uses SavePaymentConditionRequest::setMidocoPaymentCondition()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO $midocoPaymentCondition
+     * @param \Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO $midocoPaymentCondition
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO $midocoPaymentCondition = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO $midocoPaymentCondition = null)
     {
         $this
             ->setMidocoPaymentCondition($midocoPaymentCondition);
     }
     /**
      * Get MidocoPaymentCondition value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO|null
      */
-    public function getMidocoPaymentCondition(): ?\Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO
+    public function getMidocoPaymentCondition(): ?\Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO
     {
         return $this->MidocoPaymentCondition;
     }
     /**
      * Set MidocoPaymentCondition value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO $midocoPaymentCondition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePaymentConditionRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO $midocoPaymentCondition
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePaymentConditionRequest
      */
-    public function setMidocoPaymentCondition(?\Pggns\MidocoApi\CrmSD\StructType\PaymentConditionDTO $midocoPaymentCondition = null): self
+    public function setMidocoPaymentCondition(?\Pggns\MidocoApi\Crmsd\StructType\PaymentConditionDTO $midocoPaymentCondition = null): self
     {
         $this->MidocoPaymentCondition = $midocoPaymentCondition;
         

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCustomerCollectiveInvoices --- returns the unprinted invoices assigned to the customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
         return $this->MidocoCustomerInvoice;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerInvoice method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerInvoice method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerInvoice method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerInvoiceForArrayConstraintsFromSetMidocoCustomerInvoice(?array $values = []): string
+    public static function validateMidocoCustomerInvoiceForArrayConstraintFromSetMidocoCustomerInvoice(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetUnprintedCustomerInvoicesResponse extends AbstractStructBase
     public function setMidocoCustomerInvoice(?array $midocoCustomerInvoice = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerInvoiceArrayErrorMessage = self::validateMidocoCustomerInvoiceForArrayConstraintsFromSetMidocoCustomerInvoice($midocoCustomerInvoice))) {
+        if ('' !== ($midocoCustomerInvoiceArrayErrorMessage = self::validateMidocoCustomerInvoiceForArrayConstraintFromSetMidocoCustomerInvoice($midocoCustomerInvoice))) {
             throw new InvalidArgumentException($midocoCustomerInvoiceArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerInvoice = $midocoCustomerInvoice;

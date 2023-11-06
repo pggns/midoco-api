@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OnlinePaymentDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OnlinePaymentDTO extends AbstractStructBase
 {
     /**
@@ -114,6 +115,11 @@ class OnlinePaymentDTO extends AbstractStructBase
      */
     protected ?float $remainingAuthAmount = null;
     /**
+     * The settlementDate
+     * @var string|null
+     */
+    protected ?string $settlementDate = null;
+    /**
      * The tokenChecked
      * @var bool|null
      */
@@ -150,6 +156,7 @@ class OnlinePaymentDTO extends AbstractStructBase
      * @uses OnlinePaymentDTO::setOrderId()
      * @uses OnlinePaymentDTO::setPaymentChannelIndicator()
      * @uses OnlinePaymentDTO::setRemainingAuthAmount()
+     * @uses OnlinePaymentDTO::setSettlementDate()
      * @uses OnlinePaymentDTO::setTokenChecked()
      * @uses OnlinePaymentDTO::setV3ds()
      * @uses OnlinePaymentDTO::setXid()
@@ -173,11 +180,12 @@ class OnlinePaymentDTO extends AbstractStructBase
      * @param int $orderId
      * @param string $paymentChannelIndicator
      * @param float $remainingAuthAmount
+     * @param string $settlementDate
      * @param bool $tokenChecked
      * @param string $v3ds
      * @param string $xid
      */
-    public function __construct(?float $authAmount = null, ?string $authenticatedId = null, ?int $cardholderAuthApproval = null, ?string $cardholderAuthVerification = null, ?string $ccNo = null, ?string $ccOwner = null, ?string $ccToken = null, ?int $ccTokenReference = null, ?string $ccTokenType = null, ?string $ccType = null, ?int $ccValidMonth = null, ?int $ccValidYear = null, ?string $cvvToken = null, ?string $dstid = null, ?string $electronicCommerceIndicator = null, ?string $initialEcomTransactionId = null, ?bool $isRecurring = null, ?int $orderId = null, ?string $paymentChannelIndicator = null, ?float $remainingAuthAmount = null, ?bool $tokenChecked = null, ?string $v3ds = null, ?string $xid = null)
+    public function __construct(?float $authAmount = null, ?string $authenticatedId = null, ?int $cardholderAuthApproval = null, ?string $cardholderAuthVerification = null, ?string $ccNo = null, ?string $ccOwner = null, ?string $ccToken = null, ?int $ccTokenReference = null, ?string $ccTokenType = null, ?string $ccType = null, ?int $ccValidMonth = null, ?int $ccValidYear = null, ?string $cvvToken = null, ?string $dstid = null, ?string $electronicCommerceIndicator = null, ?string $initialEcomTransactionId = null, ?bool $isRecurring = null, ?int $orderId = null, ?string $paymentChannelIndicator = null, ?float $remainingAuthAmount = null, ?string $settlementDate = null, ?bool $tokenChecked = null, ?string $v3ds = null, ?string $xid = null)
     {
         $this
             ->setAuthAmount($authAmount)
@@ -200,6 +208,7 @@ class OnlinePaymentDTO extends AbstractStructBase
             ->setOrderId($orderId)
             ->setPaymentChannelIndicator($paymentChannelIndicator)
             ->setRemainingAuthAmount($remainingAuthAmount)
+            ->setSettlementDate($settlementDate)
             ->setTokenChecked($tokenChecked)
             ->setV3ds($v3ds)
             ->setXid($xid);
@@ -661,6 +670,29 @@ class OnlinePaymentDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($remainingAuthAmount, true), gettype($remainingAuthAmount)), __LINE__);
         }
         $this->remainingAuthAmount = $remainingAuthAmount;
+        
+        return $this;
+    }
+    /**
+     * Get settlementDate value
+     * @return string|null
+     */
+    public function getSettlementDate(): ?string
+    {
+        return $this->settlementDate;
+    }
+    /**
+     * Set settlementDate value
+     * @param string $settlementDate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\OnlinePaymentDTO
+     */
+    public function setSettlementDate(?string $settlementDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementDate) && !is_string($settlementDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementDate, true), gettype($settlementDate)), __LINE__);
+        }
+        $this->settlementDate = $settlementDate;
         
         return $this;
     }

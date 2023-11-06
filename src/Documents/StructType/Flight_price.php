@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: prices for flights, split in tax and fare amount
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Flight_price extends AbstractStructBase
 {
     /**
@@ -105,9 +106,7 @@ class Flight_price extends AbstractStructBase
     /**
      * The extPaymentType
      * Meta information extracted from the WSDL
-     * - base: xs:string
      * - minOccurs: 0
-     * - pattern: CASH | DEBIT | CC
      * @var string|null
      */
     protected ?string $extPaymentType = null;
@@ -662,18 +661,17 @@ class Flight_price extends AbstractStructBase
     }
     /**
      * Set extPaymentType value
+     * @uses \Pggns\MidocoApi\Documents\EnumType\ExtPaymentType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Documents\EnumType\ExtPaymentType::getValidValues()
+     * @throws InvalidArgumentException
      * @param string $extPaymentType
      * @return \Pggns\MidocoApi\Documents\StructType\Flight_price
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
-        // validation for constraint: string
-        if (!is_null($extPaymentType) && !is_string($extPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($extPaymentType, true), gettype($extPaymentType)), __LINE__);
-        }
-        // validation for constraint: pattern(CASH, DEBIT, CC)
-        if (!is_null($extPaymentType) && !preg_match('/CASH|DEBIT|CC/', $extPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /CASH|DEBIT|CC/', var_export($extPaymentType, true)), __LINE__);
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Documents\EnumType\ExtPaymentType::valueIsValid($extPaymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Documents\EnumType\ExtPaymentType', is_array($extPaymentType) ? implode(', ', $extPaymentType) : var_export($extPaymentType, true), implode(', ', \Pggns\MidocoApi\Documents\EnumType\ExtPaymentType::getValidValues())), __LINE__);
         }
         $this->extPaymentType = $extPaymentType;
         
@@ -722,7 +720,7 @@ class Flight_price extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ticketing_date, true), gettype($ticketing_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($ticketing_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $ticketing_date)) {
+        if (!is_null($ticketing_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $ticketing_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($ticketing_date, true)), __LINE__);
         }
         $this->ticketing_date = $this->{'ticketing-date'} = $ticketing_date;
@@ -968,12 +966,13 @@ class Flight_price extends AbstractStructBase
         return $this->saving;
     }
     /**
-     * This method is responsible for validating the values passed to the setSaving method
+     * This method is responsible for validating the value(s) passed to the setSaving method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSaving method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSavingForArrayConstraintsFromSetSaving(?array $values = []): string
+    public static function validateSavingForArrayConstraintFromSetSaving(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1002,7 +1001,7 @@ class Flight_price extends AbstractStructBase
     public function setSaving(?array $saving = null): self
     {
         // validation for constraint: array
-        if ('' !== ($savingArrayErrorMessage = self::validateSavingForArrayConstraintsFromSetSaving($saving))) {
+        if ('' !== ($savingArrayErrorMessage = self::validateSavingForArrayConstraintFromSetSaving($saving))) {
             throw new InvalidArgumentException($savingArrayErrorMessage, __LINE__);
         }
         $this->saving = $saving;

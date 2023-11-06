@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AppEventDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AppEventDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class AppEventDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppEventDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppEventDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -70,7 +71,7 @@ class AppEventDTO extends AbstractStructBase
     /**
      * Set eventId value
      * @param string $eventId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AppEventDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AppEventDTO
      */
     public function setEventId(?string $eventId = null): self
     {

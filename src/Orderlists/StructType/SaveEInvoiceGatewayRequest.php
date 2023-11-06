@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Create or update e-invoice gateway configurations. The minimum required field is gateway. If the orgUnit is null, the users orgUnit is assumed.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveEInvoiceGatewayRequest extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class SaveEInvoiceGatewayRequest extends AbstractStructBase
         return $this->MidocoEInvoiceGateway;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoEInvoiceGateway method
+     * This method is responsible for validating the value(s) passed to the setMidocoEInvoiceGateway method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEInvoiceGateway method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoEInvoiceGatewayForArrayConstraintsFromSetMidocoEInvoiceGateway(?array $values = []): string
+    public static function validateMidocoEInvoiceGatewayForArrayConstraintFromSetMidocoEInvoiceGateway(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class SaveEInvoiceGatewayRequest extends AbstractStructBase
     public function setMidocoEInvoiceGateway(?array $midocoEInvoiceGateway = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoEInvoiceGatewayArrayErrorMessage = self::validateMidocoEInvoiceGatewayForArrayConstraintsFromSetMidocoEInvoiceGateway($midocoEInvoiceGateway))) {
+        if ('' !== ($midocoEInvoiceGatewayArrayErrorMessage = self::validateMidocoEInvoiceGatewayForArrayConstraintFromSetMidocoEInvoiceGateway($midocoEInvoiceGateway))) {
             throw new InvalidArgumentException($midocoEInvoiceGatewayArrayErrorMessage, __LINE__);
         }
         $this->MidocoEInvoiceGateway = $midocoEInvoiceGateway;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerSearch StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerSearch extends CustomerSearchDTO
 {
     /**
@@ -47,7 +48,7 @@ class MidocoCustomerSearch extends CustomerSearchDTO
     /**
      * Set isSpecialCustomer value
      * @param bool $isSpecialCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerSearch
      */
     public function setIsSpecialCustomer(?bool $isSpecialCustomer = null): self
     {
@@ -70,7 +71,7 @@ class MidocoCustomerSearch extends CustomerSearchDTO
     /**
      * Set isCrmPersonTraveller value
      * @param bool $isCrmPersonTraveller
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerSearch
      */
     public function setIsCrmPersonTraveller(?bool $isCrmPersonTraveller = null): self
     {

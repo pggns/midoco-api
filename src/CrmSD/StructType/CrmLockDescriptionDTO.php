@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmLockDescriptionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmLockDescriptionDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CrmLockDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmLockDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmLockDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +79,7 @@ class CrmLockDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmLockDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmLockDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +102,7 @@ class CrmLockDescriptionDTO extends AbstractStructBase
     /**
      * Set reasonId value
      * @param string $reasonId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmLockDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmLockDescriptionDTO
      */
     public function setReasonId(?string $reasonId = null): self
     {

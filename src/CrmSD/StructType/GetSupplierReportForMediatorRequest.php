@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierReportForMediatorRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierReportForMediatorRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetSupplierReportForMediatorRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -86,7 +87,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set mediatorTypeId value
      * @param string $mediatorTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetSupplierReportForMediatorRequest
      */
     public function setMediatorTypeId(?string $mediatorTypeId = null): self
     {
@@ -109,7 +110,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set month value
      * @param int $month
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetSupplierReportForMediatorRequest
      */
     public function setMonth(?int $month = null): self
     {
@@ -132,7 +133,7 @@ class GetSupplierReportForMediatorRequest extends AbstractStructBase
     /**
      * Set year value
      * @param int $year
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetSupplierReportForMediatorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetSupplierReportForMediatorRequest
      */
     public function setYear(?int $year = null): self
     {

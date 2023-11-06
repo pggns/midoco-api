@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ComplaintReasonTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ComplaintReasonTypeDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class ComplaintReasonTypeDTO extends AbstractStructBase
     /**
      * Set reasonId value
      * @param string $reasonId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonTypeDTO
      */
     public function setReasonId(?string $reasonId = null): self
     {
@@ -70,7 +71,7 @@ class ComplaintReasonTypeDTO extends AbstractStructBase
     /**
      * Set supplierReason value
      * @param bool $supplierReason
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonTypeDTO
      */
     public function setSupplierReason(?bool $supplierReason = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MisDimensionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MisDimensionDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MisDimensionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisDimensionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisDimensionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +71,7 @@ class MisDimensionDTO extends AbstractStructBase
     /**
      * Set dimensionName value
      * @param string $dimensionName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MisDimensionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MisDimensionDTO
      */
     public function setDimensionName(?string $dimensionName = null): self
     {

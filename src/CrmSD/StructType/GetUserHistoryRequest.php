@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUserHistoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUserHistoryRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetUserHistoryRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetUserHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetUserHistoryRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -70,7 +71,7 @@ class GetUserHistoryRequest extends AbstractStructBase
     /**
      * Set isProcessed value
      * @param bool $isProcessed
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetUserHistoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetUserHistoryRequest
      */
     public function setIsProcessed(?bool $isProcessed = null): self
     {

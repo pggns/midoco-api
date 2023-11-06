@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetEstimateMisCampaignTemplateResultsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
         return $this->orgUnits;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrgUnits method
+     * This method is responsible for validating the value(s) passed to the setOrgUnits method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrgUnits method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrgUnitsForArrayConstraintsFromSetOrgUnits(?array $values = []): string
+    public static function validateOrgUnitsForArrayConstraintFromSetOrgUnits(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
     public function setOrgUnits(?array $orgUnits = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orgUnitsArrayErrorMessage = self::validateOrgUnitsForArrayConstraintsFromSetOrgUnits($orgUnits))) {
+        if ('' !== ($orgUnitsArrayErrorMessage = self::validateOrgUnitsForArrayConstraintFromSetOrgUnits($orgUnits))) {
             throw new InvalidArgumentException($orgUnitsArrayErrorMessage, __LINE__);
         }
         $this->orgUnits = $orgUnits;
@@ -117,12 +119,13 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
         return $this->noOfResults;
     }
     /**
-     * This method is responsible for validating the values passed to the setNoOfResults method
+     * This method is responsible for validating the value(s) passed to the setNoOfResults method
      * This method is willingly generated in order to preserve the one-line inline validation within the setNoOfResults method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateNoOfResultsForArrayConstraintsFromSetNoOfResults(?array $values = []): string
+    public static function validateNoOfResultsForArrayConstraintFromSetNoOfResults(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -151,7 +154,7 @@ class GetEstimateMisCampaignTemplateResultsResponse extends AbstractStructBase
     public function setNoOfResults(?array $noOfResults = null): self
     {
         // validation for constraint: array
-        if ('' !== ($noOfResultsArrayErrorMessage = self::validateNoOfResultsForArrayConstraintsFromSetNoOfResults($noOfResults))) {
+        if ('' !== ($noOfResultsArrayErrorMessage = self::validateNoOfResultsForArrayConstraintFromSetNoOfResults($noOfResults))) {
             throw new InvalidArgumentException($noOfResultsArrayErrorMessage, __LINE__);
         }
         $this->noOfResults = $noOfResults;

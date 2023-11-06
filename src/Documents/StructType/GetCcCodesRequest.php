@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCcCodesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCcCodesRequest extends AbstractStructBase
 {
 }

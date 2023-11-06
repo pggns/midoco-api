@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveSignatureDoc --- saves a signature document
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveSignatureDocResponse extends AbstractStructBase
 {
     /**

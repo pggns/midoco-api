@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoRailDetailsInfo4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoRailDetailsInfo4Printing extends RailDetailDTO
 {
     /**
@@ -74,12 +75,13 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
         return $this->MidocoRailRouting4Printing;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRailRouting4Printing method
+     * This method is responsible for validating the value(s) passed to the setMidocoRailRouting4Printing method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRailRouting4Printing method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRailRouting4PrintingForArrayConstraintsFromSetMidocoRailRouting4Printing(?array $values = []): string
+    public static function validateMidocoRailRouting4PrintingForArrayConstraintFromSetMidocoRailRouting4Printing(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -108,7 +110,7 @@ class MidocoRailDetailsInfo4Printing extends RailDetailDTO
     public function setMidocoRailRouting4Printing(?array $midocoRailRouting4Printing = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRailRouting4PrintingArrayErrorMessage = self::validateMidocoRailRouting4PrintingForArrayConstraintsFromSetMidocoRailRouting4Printing($midocoRailRouting4Printing))) {
+        if ('' !== ($midocoRailRouting4PrintingArrayErrorMessage = self::validateMidocoRailRouting4PrintingForArrayConstraintFromSetMidocoRailRouting4Printing($midocoRailRouting4Printing))) {
             throw new InvalidArgumentException($midocoRailRouting4PrintingArrayErrorMessage, __LINE__);
         }
         $this->MidocoRailRouting4Printing = $midocoRailRouting4Printing;

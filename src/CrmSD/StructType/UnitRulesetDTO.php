@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UnitRulesetDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UnitRulesetDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class UnitRulesetDTO extends AbstractStructBase
     /**
      * Set rulesetId value
      * @param int $rulesetId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitRulesetDTO
      */
     public function setRulesetId(?int $rulesetId = null): self
     {
@@ -70,7 +71,7 @@ class UnitRulesetDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UnitRulesetDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UnitRulesetDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

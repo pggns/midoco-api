@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CustStatDataPerYearDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CustStatDataPerYearDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CustStatDataPerYearDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustStatDataPerYearDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustStatDataPerYearDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +79,7 @@ class CustStatDataPerYearDTO extends AbstractStructBase
     /**
      * Set priceSumYear value
      * @param float $priceSumYear
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustStatDataPerYearDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustStatDataPerYearDTO
      */
     public function setPriceSumYear(?float $priceSumYear = null): self
     {
@@ -101,7 +102,7 @@ class CustStatDataPerYearDTO extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustStatDataPerYearDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustStatDataPerYearDTO
      */
     public function setStartDate(?string $startDate = null): self
     {

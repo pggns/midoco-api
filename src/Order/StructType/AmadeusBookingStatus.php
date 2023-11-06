@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AmadeusBookingStatus StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AmadeusBookingStatus extends AbstractStructBase
 {
     /**
@@ -172,12 +173,13 @@ class AmadeusBookingStatus extends AbstractStructBase
         return $this->MidocoTravelDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravelDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravelDetailForArrayConstraintsFromSetMidocoTravelDetail(?array $values = []): string
+    public static function validateMidocoTravelDetailForArrayConstraintFromSetMidocoTravelDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -206,7 +208,7 @@ class AmadeusBookingStatus extends AbstractStructBase
     public function setMidocoTravelDetail(?array $midocoTravelDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravelDetailArrayErrorMessage = self::validateMidocoTravelDetailForArrayConstraintsFromSetMidocoTravelDetail($midocoTravelDetail))) {
+        if ('' !== ($midocoTravelDetailArrayErrorMessage = self::validateMidocoTravelDetailForArrayConstraintFromSetMidocoTravelDetail($midocoTravelDetail))) {
             throw new InvalidArgumentException($midocoTravelDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravelDetail = $midocoTravelDetail;

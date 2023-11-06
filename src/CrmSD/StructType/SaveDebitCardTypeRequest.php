@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveDebitCardTypeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveDebitCardTypeRequest extends AbstractStructBase
 {
     /**
      * The MidocoDebitCardType
      * Meta information extracted from the WSDL
      * - ref: MidocoDebitCardType
-     * @var \Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO $MidocoDebitCardType = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO $MidocoDebitCardType = null;
     /**
      * Constructor method for SaveDebitCardTypeRequest
      * @uses SaveDebitCardTypeRequest::setMidocoDebitCardType()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO $midocoDebitCardType
+     * @param \Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO $midocoDebitCardType
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO $midocoDebitCardType = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO $midocoDebitCardType = null)
     {
         $this
             ->setMidocoDebitCardType($midocoDebitCardType);
     }
     /**
      * Get MidocoDebitCardType value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO|null
      */
-    public function getMidocoDebitCardType(): ?\Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO
+    public function getMidocoDebitCardType(): ?\Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO
     {
         return $this->MidocoDebitCardType;
     }
     /**
      * Set MidocoDebitCardType value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO $midocoDebitCardType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveDebitCardTypeRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO $midocoDebitCardType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveDebitCardTypeRequest
      */
-    public function setMidocoDebitCardType(?\Pggns\MidocoApi\CrmSD\StructType\DebitCardTypeDTO $midocoDebitCardType = null): self
+    public function setMidocoDebitCardType(?\Pggns\MidocoApi\Crmsd\StructType\DebitCardTypeDTO $midocoDebitCardType = null): self
     {
         $this->MidocoDebitCardType = $midocoDebitCardType;
         

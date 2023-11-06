@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for JournalExportDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class JournalExportDTO extends AbstractStructBase
 {
     /**
@@ -29,6 +30,11 @@ class JournalExportDTO extends AbstractStructBase
      */
     protected ?string $exportDate = null;
     /**
+     * The exportFuture
+     * @var bool|null
+     */
+    protected ?bool $exportFuture = null;
+    /**
      * The exportId
      * @var int|null
      */
@@ -44,37 +50,88 @@ class JournalExportDTO extends AbstractStructBase
      */
     protected ?int $numberOfRows = null;
     /**
+     * The perDate
+     * @var string|null
+     */
+    protected ?string $perDate = null;
+    /**
+     * The perPeriod
+     * @var int|null
+     */
+    protected ?int $perPeriod = null;
+    /**
+     * The perYear
+     * @var int|null
+     */
+    protected ?int $perYear = null;
+    /**
+     * The periodOnly
+     * @var bool|null
+     */
+    protected ?bool $periodOnly = null;
+    /**
      * The repositoryId
      * @var int|null
      */
     protected ?int $repositoryId = null;
     /**
+     * The selectAccount
+     * @var string|null
+     */
+    protected ?string $selectAccount = null;
+    /**
+     * The selectAccountType
+     * @var string|null
+     */
+    protected ?string $selectAccountType = null;
+    /**
      * Constructor method for JournalExportDTO
      * @uses JournalExportDTO::setChecksum()
      * @uses JournalExportDTO::setComments()
      * @uses JournalExportDTO::setExportDate()
+     * @uses JournalExportDTO::setExportFuture()
      * @uses JournalExportDTO::setExportId()
      * @uses JournalExportDTO::setExportUser()
      * @uses JournalExportDTO::setNumberOfRows()
+     * @uses JournalExportDTO::setPerDate()
+     * @uses JournalExportDTO::setPerPeriod()
+     * @uses JournalExportDTO::setPerYear()
+     * @uses JournalExportDTO::setPeriodOnly()
      * @uses JournalExportDTO::setRepositoryId()
+     * @uses JournalExportDTO::setSelectAccount()
+     * @uses JournalExportDTO::setSelectAccountType()
      * @param int $checksum
      * @param string $comments
      * @param string $exportDate
+     * @param bool $exportFuture
      * @param int $exportId
      * @param int $exportUser
      * @param int $numberOfRows
+     * @param string $perDate
+     * @param int $perPeriod
+     * @param int $perYear
+     * @param bool $periodOnly
      * @param int $repositoryId
+     * @param string $selectAccount
+     * @param string $selectAccountType
      */
-    public function __construct(?int $checksum = null, ?string $comments = null, ?string $exportDate = null, ?int $exportId = null, ?int $exportUser = null, ?int $numberOfRows = null, ?int $repositoryId = null)
+    public function __construct(?int $checksum = null, ?string $comments = null, ?string $exportDate = null, ?bool $exportFuture = null, ?int $exportId = null, ?int $exportUser = null, ?int $numberOfRows = null, ?string $perDate = null, ?int $perPeriod = null, ?int $perYear = null, ?bool $periodOnly = null, ?int $repositoryId = null, ?string $selectAccount = null, ?string $selectAccountType = null)
     {
         $this
             ->setChecksum($checksum)
             ->setComments($comments)
             ->setExportDate($exportDate)
+            ->setExportFuture($exportFuture)
             ->setExportId($exportId)
             ->setExportUser($exportUser)
             ->setNumberOfRows($numberOfRows)
-            ->setRepositoryId($repositoryId);
+            ->setPerDate($perDate)
+            ->setPerPeriod($perPeriod)
+            ->setPerYear($perYear)
+            ->setPeriodOnly($periodOnly)
+            ->setRepositoryId($repositoryId)
+            ->setSelectAccount($selectAccount)
+            ->setSelectAccountType($selectAccountType);
     }
     /**
      * Get checksum value
@@ -142,6 +199,29 @@ class JournalExportDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($exportDate, true), gettype($exportDate)), __LINE__);
         }
         $this->exportDate = $exportDate;
+        
+        return $this;
+    }
+    /**
+     * Get exportFuture value
+     * @return bool|null
+     */
+    public function getExportFuture(): ?bool
+    {
+        return $this->exportFuture;
+    }
+    /**
+     * Set exportFuture value
+     * @param bool $exportFuture
+     * @return \Pggns\MidocoApi\Documents\StructType\JournalExportDTO
+     */
+    public function setExportFuture(?bool $exportFuture = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($exportFuture) && !is_bool($exportFuture)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($exportFuture, true), gettype($exportFuture)), __LINE__);
+        }
+        $this->exportFuture = $exportFuture;
         
         return $this;
     }
@@ -215,6 +295,98 @@ class JournalExportDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get perDate value
+     * @return string|null
+     */
+    public function getPerDate(): ?string
+    {
+        return $this->perDate;
+    }
+    /**
+     * Set perDate value
+     * @param string $perDate
+     * @return \Pggns\MidocoApi\Documents\StructType\JournalExportDTO
+     */
+    public function setPerDate(?string $perDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($perDate) && !is_string($perDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($perDate, true), gettype($perDate)), __LINE__);
+        }
+        $this->perDate = $perDate;
+        
+        return $this;
+    }
+    /**
+     * Get perPeriod value
+     * @return int|null
+     */
+    public function getPerPeriod(): ?int
+    {
+        return $this->perPeriod;
+    }
+    /**
+     * Set perPeriod value
+     * @param int $perPeriod
+     * @return \Pggns\MidocoApi\Documents\StructType\JournalExportDTO
+     */
+    public function setPerPeriod(?int $perPeriod = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($perPeriod) && !(is_int($perPeriod) || ctype_digit($perPeriod))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($perPeriod, true), gettype($perPeriod)), __LINE__);
+        }
+        $this->perPeriod = $perPeriod;
+        
+        return $this;
+    }
+    /**
+     * Get perYear value
+     * @return int|null
+     */
+    public function getPerYear(): ?int
+    {
+        return $this->perYear;
+    }
+    /**
+     * Set perYear value
+     * @param int $perYear
+     * @return \Pggns\MidocoApi\Documents\StructType\JournalExportDTO
+     */
+    public function setPerYear(?int $perYear = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($perYear) && !(is_int($perYear) || ctype_digit($perYear))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($perYear, true), gettype($perYear)), __LINE__);
+        }
+        $this->perYear = $perYear;
+        
+        return $this;
+    }
+    /**
+     * Get periodOnly value
+     * @return bool|null
+     */
+    public function getPeriodOnly(): ?bool
+    {
+        return $this->periodOnly;
+    }
+    /**
+     * Set periodOnly value
+     * @param bool $periodOnly
+     * @return \Pggns\MidocoApi\Documents\StructType\JournalExportDTO
+     */
+    public function setPeriodOnly(?bool $periodOnly = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($periodOnly) && !is_bool($periodOnly)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($periodOnly, true), gettype($periodOnly)), __LINE__);
+        }
+        $this->periodOnly = $periodOnly;
+        
+        return $this;
+    }
+    /**
      * Get repositoryId value
      * @return int|null
      */
@@ -234,6 +406,52 @@ class JournalExportDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($repositoryId, true), gettype($repositoryId)), __LINE__);
         }
         $this->repositoryId = $repositoryId;
+        
+        return $this;
+    }
+    /**
+     * Get selectAccount value
+     * @return string|null
+     */
+    public function getSelectAccount(): ?string
+    {
+        return $this->selectAccount;
+    }
+    /**
+     * Set selectAccount value
+     * @param string $selectAccount
+     * @return \Pggns\MidocoApi\Documents\StructType\JournalExportDTO
+     */
+    public function setSelectAccount(?string $selectAccount = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($selectAccount) && !is_string($selectAccount)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($selectAccount, true), gettype($selectAccount)), __LINE__);
+        }
+        $this->selectAccount = $selectAccount;
+        
+        return $this;
+    }
+    /**
+     * Get selectAccountType value
+     * @return string|null
+     */
+    public function getSelectAccountType(): ?string
+    {
+        return $this->selectAccountType;
+    }
+    /**
+     * Set selectAccountType value
+     * @param string $selectAccountType
+     * @return \Pggns\MidocoApi\Documents\StructType\JournalExportDTO
+     */
+    public function setSelectAccountType(?string $selectAccountType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($selectAccountType) && !is_string($selectAccountType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($selectAccountType, true), gettype($selectAccountType)), __LINE__);
+        }
+        $this->selectAccountType = $selectAccountType;
         
         return $this;
     }

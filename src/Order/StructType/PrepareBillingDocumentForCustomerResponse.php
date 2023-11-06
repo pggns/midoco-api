@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrepareBillingDocumentForCustomerResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrepareBillingDocumentForCustomerResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PrepareBillingDocumentForCustomerResponse extends AbstractStructBase
         return $this->MidocoPreparedCollectiveBilling;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPreparedCollectiveBilling method
+     * This method is responsible for validating the value(s) passed to the setMidocoPreparedCollectiveBilling method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPreparedCollectiveBilling method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPreparedCollectiveBillingForArrayConstraintsFromSetMidocoPreparedCollectiveBilling(?array $values = []): string
+    public static function validateMidocoPreparedCollectiveBillingForArrayConstraintFromSetMidocoPreparedCollectiveBilling(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PrepareBillingDocumentForCustomerResponse extends AbstractStructBase
     public function setMidocoPreparedCollectiveBilling(?array $midocoPreparedCollectiveBilling = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPreparedCollectiveBillingArrayErrorMessage = self::validateMidocoPreparedCollectiveBillingForArrayConstraintsFromSetMidocoPreparedCollectiveBilling($midocoPreparedCollectiveBilling))) {
+        if ('' !== ($midocoPreparedCollectiveBillingArrayErrorMessage = self::validateMidocoPreparedCollectiveBillingForArrayConstraintFromSetMidocoPreparedCollectiveBilling($midocoPreparedCollectiveBilling))) {
             throw new InvalidArgumentException($midocoPreparedCollectiveBillingArrayErrorMessage, __LINE__);
         }
         $this->MidocoPreparedCollectiveBilling = $midocoPreparedCollectiveBilling;

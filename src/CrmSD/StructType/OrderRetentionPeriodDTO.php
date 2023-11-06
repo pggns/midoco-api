@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OrderRetentionPeriodDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OrderRetentionPeriodDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class OrderRetentionPeriodDTO extends AbstractStructBase
     /**
      * Set duration value
      * @param int $duration
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrderRetentionPeriodDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrderRetentionPeriodDTO
      */
     public function setDuration(?int $duration = null): self
     {
@@ -86,7 +87,7 @@ class OrderRetentionPeriodDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrderRetentionPeriodDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrderRetentionPeriodDTO
      */
     public function setId(?int $id = null): self
     {
@@ -109,7 +110,7 @@ class OrderRetentionPeriodDTO extends AbstractStructBase
     /**
      * Set startOfDeadline value
      * @param int $startOfDeadline
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrderRetentionPeriodDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrderRetentionPeriodDTO
      */
     public function setStartOfDeadline(?int $startOfDeadline = null): self
     {
@@ -132,7 +133,7 @@ class OrderRetentionPeriodDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrderRetentionPeriodDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrderRetentionPeriodDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

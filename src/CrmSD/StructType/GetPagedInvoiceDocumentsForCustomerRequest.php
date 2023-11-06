@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPagedInvoiceDocumentsForCustomerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPagedInvoiceDocumentsForCustomerRequest extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class GetPagedInvoiceDocumentsForCustomerRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPagedInvoiceDocumentsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPagedInvoiceDocumentsForCustomerRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -78,7 +79,7 @@ class GetPagedInvoiceDocumentsForCustomerRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPagedInvoiceDocumentsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPagedInvoiceDocumentsForCustomerRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -101,7 +102,7 @@ class GetPagedInvoiceDocumentsForCustomerRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPagedInvoiceDocumentsForCustomerRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPagedInvoiceDocumentsForCustomerRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {

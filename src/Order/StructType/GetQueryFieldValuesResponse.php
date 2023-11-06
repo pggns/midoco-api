@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetQueryFieldValuesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetQueryFieldValuesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetQueryFieldValuesResponse extends AbstractStructBase
         return $this->MidocoQueryFieldValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoQueryFieldValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoQueryFieldValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoQueryFieldValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoQueryFieldValueForArrayConstraintsFromSetMidocoQueryFieldValue(?array $values = []): string
+    public static function validateMidocoQueryFieldValueForArrayConstraintFromSetMidocoQueryFieldValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetQueryFieldValuesResponse extends AbstractStructBase
     public function setMidocoQueryFieldValue(?array $midocoQueryFieldValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoQueryFieldValueArrayErrorMessage = self::validateMidocoQueryFieldValueForArrayConstraintsFromSetMidocoQueryFieldValue($midocoQueryFieldValue))) {
+        if ('' !== ($midocoQueryFieldValueArrayErrorMessage = self::validateMidocoQueryFieldValueForArrayConstraintFromSetMidocoQueryFieldValue($midocoQueryFieldValue))) {
             throw new InvalidArgumentException($midocoQueryFieldValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoQueryFieldValue = $midocoQueryFieldValue;

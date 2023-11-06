@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: A list of customers. An exception is thrown if the customer is not found
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FindCustomerForEmailResponse extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class FindCustomerForEmailResponse extends AbstractStructBase
         return $this->MidocoCustomerInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerInfoForArrayConstraintsFromSetMidocoCustomerInfo(?array $values = []): string
+    public static function validateMidocoCustomerInfoForArrayConstraintFromSetMidocoCustomerInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class FindCustomerForEmailResponse extends AbstractStructBase
     public function setMidocoCustomerInfo(?array $midocoCustomerInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerInfoArrayErrorMessage = self::validateMidocoCustomerInfoForArrayConstraintsFromSetMidocoCustomerInfo($midocoCustomerInfo))) {
+        if ('' !== ($midocoCustomerInfoArrayErrorMessage = self::validateMidocoCustomerInfoForArrayConstraintFromSetMidocoCustomerInfo($midocoCustomerInfo))) {
             throw new InvalidArgumentException($midocoCustomerInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerInfo = $midocoCustomerInfo;

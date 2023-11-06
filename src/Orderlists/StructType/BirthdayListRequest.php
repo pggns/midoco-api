@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BirthdayListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BirthdayListRequest extends AbstractStructBase
 {
     /**

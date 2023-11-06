@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ConnectedCustomerListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ConnectedCustomerListResponse extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class ConnectedCustomerListResponse extends AbstractStructBase
         return $this->MidocoConnectedCustomerList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoConnectedCustomerList method
+     * This method is responsible for validating the value(s) passed to the setMidocoConnectedCustomerList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoConnectedCustomerList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoConnectedCustomerListForArrayConstraintsFromSetMidocoConnectedCustomerList(?array $values = []): string
+    public static function validateMidocoConnectedCustomerListForArrayConstraintFromSetMidocoConnectedCustomerList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class ConnectedCustomerListResponse extends AbstractStructBase
     public function setMidocoConnectedCustomerList(?array $midocoConnectedCustomerList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoConnectedCustomerListArrayErrorMessage = self::validateMidocoConnectedCustomerListForArrayConstraintsFromSetMidocoConnectedCustomerList($midocoConnectedCustomerList))) {
+        if ('' !== ($midocoConnectedCustomerListArrayErrorMessage = self::validateMidocoConnectedCustomerListForArrayConstraintFromSetMidocoConnectedCustomerList($midocoConnectedCustomerList))) {
             throw new InvalidArgumentException($midocoConnectedCustomerListArrayErrorMessage, __LINE__);
         }
         $this->MidocoConnectedCustomerList = $midocoConnectedCustomerList;

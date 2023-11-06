@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoAgencySettlementOrderDetailsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
         return $this->MidocoAgencyProvisionDetails;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAgencyProvisionDetails method
+     * This method is responsible for validating the value(s) passed to the setMidocoAgencyProvisionDetails method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAgencyProvisionDetails method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAgencyProvisionDetailsForArrayConstraintsFromSetMidocoAgencyProvisionDetails(?array $values = []): string
+    public static function validateMidocoAgencyProvisionDetailsForArrayConstraintFromSetMidocoAgencyProvisionDetails(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class GetMidocoAgencySettlementOrderDetailsResponse extends AbstractStructBase
     public function setMidocoAgencyProvisionDetails(?array $midocoAgencyProvisionDetails = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAgencyProvisionDetailsArrayErrorMessage = self::validateMidocoAgencyProvisionDetailsForArrayConstraintsFromSetMidocoAgencyProvisionDetails($midocoAgencyProvisionDetails))) {
+        if ('' !== ($midocoAgencyProvisionDetailsArrayErrorMessage = self::validateMidocoAgencyProvisionDetailsForArrayConstraintFromSetMidocoAgencyProvisionDetails($midocoAgencyProvisionDetails))) {
             throw new InvalidArgumentException($midocoAgencyProvisionDetailsArrayErrorMessage, __LINE__);
         }
         $this->MidocoAgencyProvisionDetails = $midocoAgencyProvisionDetails;

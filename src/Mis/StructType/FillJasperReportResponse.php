@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: fillJasperReport --- fill a Jasper report, considering the list of supplied parameters
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FillJasperReportResponse extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoRemarkCategory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoRemarkCategory extends RemarkCategoryDTO
 {
     /**
@@ -57,12 +58,13 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
         return $this->MidocoRemarkCategoryDesc;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRemarkCategoryDesc method
+     * This method is responsible for validating the value(s) passed to the setMidocoRemarkCategoryDesc method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRemarkCategoryDesc method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRemarkCategoryDescForArrayConstraintsFromSetMidocoRemarkCategoryDesc(?array $values = []): string
+    public static function validateMidocoRemarkCategoryDescForArrayConstraintFromSetMidocoRemarkCategoryDesc(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class MidocoRemarkCategory extends RemarkCategoryDTO
     public function setMidocoRemarkCategoryDesc(?array $midocoRemarkCategoryDesc = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRemarkCategoryDescArrayErrorMessage = self::validateMidocoRemarkCategoryDescForArrayConstraintsFromSetMidocoRemarkCategoryDesc($midocoRemarkCategoryDesc))) {
+        if ('' !== ($midocoRemarkCategoryDescArrayErrorMessage = self::validateMidocoRemarkCategoryDescForArrayConstraintFromSetMidocoRemarkCategoryDesc($midocoRemarkCategoryDesc))) {
             throw new InvalidArgumentException($midocoRemarkCategoryDescArrayErrorMessage, __LINE__);
         }
         $this->MidocoRemarkCategoryDesc = $midocoRemarkCategoryDesc;

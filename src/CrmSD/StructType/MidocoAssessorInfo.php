@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoAssessorInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoAssessorInfo extends InsurerInfoType
 {
     /**
@@ -47,7 +48,7 @@ class MidocoAssessorInfo extends InsurerInfoType
     /**
      * Set insuranceCode value
      * @param string $insuranceCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo
      */
     public function setInsuranceCode(?string $insuranceCode = null): self
     {
@@ -70,7 +71,7 @@ class MidocoAssessorInfo extends InsurerInfoType
     /**
      * Set isAssessor value
      * @param bool $isAssessor
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAssessorInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAssessorInfo
      */
     public function setIsAssessor(?bool $isAssessor = null): self
     {

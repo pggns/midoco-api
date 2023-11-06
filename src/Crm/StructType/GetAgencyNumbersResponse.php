@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgencyNumbersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgencyNumbersResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAgencyNumbersResponse extends AbstractStructBase
         return $this->MidocoAgencyNumber;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAgencyNumber method
+     * This method is responsible for validating the value(s) passed to the setMidocoAgencyNumber method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAgencyNumber method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAgencyNumberForArrayConstraintsFromSetMidocoAgencyNumber(?array $values = []): string
+    public static function validateMidocoAgencyNumberForArrayConstraintFromSetMidocoAgencyNumber(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAgencyNumbersResponse extends AbstractStructBase
     public function setMidocoAgencyNumber(?array $midocoAgencyNumber = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAgencyNumberArrayErrorMessage = self::validateMidocoAgencyNumberForArrayConstraintsFromSetMidocoAgencyNumber($midocoAgencyNumber))) {
+        if ('' !== ($midocoAgencyNumberArrayErrorMessage = self::validateMidocoAgencyNumberForArrayConstraintFromSetMidocoAgencyNumber($midocoAgencyNumber))) {
             throw new InvalidArgumentException($midocoAgencyNumberArrayErrorMessage, __LINE__);
         }
         $this->MidocoAgencyNumber = $midocoAgencyNumber;

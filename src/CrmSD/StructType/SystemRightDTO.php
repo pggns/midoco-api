@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SystemRightDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SystemRightDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class SystemRightDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRightDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -78,7 +79,7 @@ class SystemRightDTO extends AbstractStructBase
     /**
      * Set isDefault value
      * @param bool $isDefault
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRightDTO
      */
     public function setIsDefault(?bool $isDefault = null): self
     {
@@ -101,7 +102,7 @@ class SystemRightDTO extends AbstractStructBase
     /**
      * Set rightId value
      * @param string $rightId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemRightDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemRightDTO
      */
     public function setRightId(?string $rightId = null): self
     {

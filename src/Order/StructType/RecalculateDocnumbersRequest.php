@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RecalculateDocnumbersRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RecalculateDocnumbersRequest extends AbstractStructBase
 {
     /**
@@ -24,17 +25,25 @@ class RecalculateDocnumbersRequest extends AbstractStructBase
      */
     protected ?string $mdocSince = null;
     /**
+     * The repositoryId
+     * @var int|null
+     */
+    protected ?int $repositoryId = null;
+    /**
      * Constructor method for RecalculateDocnumbersRequest
      * @uses RecalculateDocnumbersRequest::setUnitName()
      * @uses RecalculateDocnumbersRequest::setMdocSince()
+     * @uses RecalculateDocnumbersRequest::setRepositoryId()
      * @param string $unitName
      * @param string $mdocSince
+     * @param int $repositoryId
      */
-    public function __construct(?string $unitName = null, ?string $mdocSince = null)
+    public function __construct(?string $unitName = null, ?string $mdocSince = null, ?int $repositoryId = null)
     {
         $this
             ->setUnitName($unitName)
-            ->setMdocSince($mdocSince);
+            ->setMdocSince($mdocSince)
+            ->setRepositoryId($repositoryId);
     }
     /**
      * Get unitName value
@@ -79,6 +88,29 @@ class RecalculateDocnumbersRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mdocSince, true), gettype($mdocSince)), __LINE__);
         }
         $this->mdocSince = $mdocSince;
+        
+        return $this;
+    }
+    /**
+     * Get repositoryId value
+     * @return int|null
+     */
+    public function getRepositoryId(): ?int
+    {
+        return $this->repositoryId;
+    }
+    /**
+     * Set repositoryId value
+     * @param int $repositoryId
+     * @return \Pggns\MidocoApi\Order\StructType\RecalculateDocnumbersRequest
+     */
+    public function setRepositoryId(?int $repositoryId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($repositoryId) && !(is_int($repositoryId) || ctype_digit($repositoryId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($repositoryId, true), gettype($repositoryId)), __LINE__);
+        }
+        $this->repositoryId = $repositoryId;
         
         return $this;
     }

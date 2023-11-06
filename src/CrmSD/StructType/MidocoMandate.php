@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMandate StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMandate extends SepaMandateDTO
 {
     /**
@@ -71,7 +72,7 @@ class MidocoMandate extends SepaMandateDTO
     /**
      * Set connectedOrderId value
      * @param int $connectedOrderId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate
      */
     public function setConnectedOrderId(?int $connectedOrderId = null): self
     {
@@ -94,7 +95,7 @@ class MidocoMandate extends SepaMandateDTO
     /**
      * Set connectedDocumentId value
      * @param int $connectedDocumentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate
      */
     public function setConnectedDocumentId(?int $connectedDocumentId = null): self
     {
@@ -117,7 +118,7 @@ class MidocoMandate extends SepaMandateDTO
     /**
      * Set connectedReceiptId value
      * @param int $connectedReceiptId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate
      */
     public function setConnectedReceiptId(?int $connectedReceiptId = null): self
     {
@@ -140,7 +141,7 @@ class MidocoMandate extends SepaMandateDTO
     /**
      * Set referencingCustomerId value
      * @param int $referencingCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate
      */
     public function setReferencingCustomerId(?int $referencingCustomerId = null): self
     {
@@ -163,7 +164,7 @@ class MidocoMandate extends SepaMandateDTO
     /**
      * Set isDefaultDebitCard value
      * @param bool $isDefaultDebitCard
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMandate
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMandate
      */
     public function setIsDefaultDebitCard(?bool $isDefaultDebitCard = null): self
     {

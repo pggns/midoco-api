@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TaskFilterDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TaskFilterDTO extends AbstractStructBase
 {
     /**
@@ -190,12 +191,13 @@ class TaskFilterDTO extends AbstractStructBase
         return $this->userIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setUserIds method
+     * This method is responsible for validating the value(s) passed to the setUserIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUserIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUserIdsForArrayConstraintsFromSetUserIds(?array $values = []): string
+    public static function validateUserIdsForArrayConstraintFromSetUserIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -224,7 +226,7 @@ class TaskFilterDTO extends AbstractStructBase
     public function setUserIds(?array $userIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($userIdsArrayErrorMessage = self::validateUserIdsForArrayConstraintsFromSetUserIds($userIds))) {
+        if ('' !== ($userIdsArrayErrorMessage = self::validateUserIdsForArrayConstraintFromSetUserIds($userIds))) {
             throw new InvalidArgumentException($userIdsArrayErrorMessage, __LINE__);
         }
         $this->userIds = $userIds;
@@ -256,12 +258,13 @@ class TaskFilterDTO extends AbstractStructBase
         return $this->orgUnits;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrgUnits method
+     * This method is responsible for validating the value(s) passed to the setOrgUnits method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrgUnits method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrgUnitsForArrayConstraintsFromSetOrgUnits(?array $values = []): string
+    public static function validateOrgUnitsForArrayConstraintFromSetOrgUnits(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -290,7 +293,7 @@ class TaskFilterDTO extends AbstractStructBase
     public function setOrgUnits(?array $orgUnits = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orgUnitsArrayErrorMessage = self::validateOrgUnitsForArrayConstraintsFromSetOrgUnits($orgUnits))) {
+        if ('' !== ($orgUnitsArrayErrorMessage = self::validateOrgUnitsForArrayConstraintFromSetOrgUnits($orgUnits))) {
             throw new InvalidArgumentException($orgUnitsArrayErrorMessage, __LINE__);
         }
         $this->orgUnits = $orgUnits;
@@ -322,12 +325,13 @@ class TaskFilterDTO extends AbstractStructBase
         return $this->queues;
     }
     /**
-     * This method is responsible for validating the values passed to the setQueues method
+     * This method is responsible for validating the value(s) passed to the setQueues method
      * This method is willingly generated in order to preserve the one-line inline validation within the setQueues method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateQueuesForArrayConstraintsFromSetQueues(?array $values = []): string
+    public static function validateQueuesForArrayConstraintFromSetQueues(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -356,7 +360,7 @@ class TaskFilterDTO extends AbstractStructBase
     public function setQueues(?array $queues = null): self
     {
         // validation for constraint: array
-        if ('' !== ($queuesArrayErrorMessage = self::validateQueuesForArrayConstraintsFromSetQueues($queues))) {
+        if ('' !== ($queuesArrayErrorMessage = self::validateQueuesForArrayConstraintFromSetQueues($queues))) {
             throw new InvalidArgumentException($queuesArrayErrorMessage, __LINE__);
         }
         $this->queues = $queues;
@@ -388,12 +392,13 @@ class TaskFilterDTO extends AbstractStructBase
         return $this->taskTypes;
     }
     /**
-     * This method is responsible for validating the values passed to the setTaskTypes method
+     * This method is responsible for validating the value(s) passed to the setTaskTypes method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTaskTypes method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTaskTypesForArrayConstraintsFromSetTaskTypes(?array $values = []): string
+    public static function validateTaskTypesForArrayConstraintFromSetTaskTypes(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -422,7 +427,7 @@ class TaskFilterDTO extends AbstractStructBase
     public function setTaskTypes(?array $taskTypes = null): self
     {
         // validation for constraint: array
-        if ('' !== ($taskTypesArrayErrorMessage = self::validateTaskTypesForArrayConstraintsFromSetTaskTypes($taskTypes))) {
+        if ('' !== ($taskTypesArrayErrorMessage = self::validateTaskTypesForArrayConstraintFromSetTaskTypes($taskTypes))) {
             throw new InvalidArgumentException($taskTypesArrayErrorMessage, __LINE__);
         }
         $this->taskTypes = $taskTypes;
@@ -569,12 +574,13 @@ class TaskFilterDTO extends AbstractStructBase
         return $this->MidocoTaskViewColumns;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTaskViewColumns method
+     * This method is responsible for validating the value(s) passed to the setMidocoTaskViewColumns method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTaskViewColumns method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTaskViewColumnsForArrayConstraintsFromSetMidocoTaskViewColumns(?array $values = []): string
+    public static function validateMidocoTaskViewColumnsForArrayConstraintFromSetMidocoTaskViewColumns(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -603,7 +609,7 @@ class TaskFilterDTO extends AbstractStructBase
     public function setMidocoTaskViewColumns(?array $midocoTaskViewColumns = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTaskViewColumnsArrayErrorMessage = self::validateMidocoTaskViewColumnsForArrayConstraintsFromSetMidocoTaskViewColumns($midocoTaskViewColumns))) {
+        if ('' !== ($midocoTaskViewColumnsArrayErrorMessage = self::validateMidocoTaskViewColumnsForArrayConstraintFromSetMidocoTaskViewColumns($midocoTaskViewColumns))) {
             throw new InvalidArgumentException($midocoTaskViewColumnsArrayErrorMessage, __LINE__);
         }
         $this->MidocoTaskViewColumns = $midocoTaskViewColumns;

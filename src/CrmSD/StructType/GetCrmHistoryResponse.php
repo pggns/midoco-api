@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrmHistoryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmHistoryResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetCrmHistoryResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmHistory
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO[]
      */
     protected ?array $MidocoCrmHistory = null;
     /**
      * Constructor method for GetCrmHistoryResponse
      * @uses GetCrmHistoryResponse::setMidocoCrmHistory()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO[] $midocoCrmHistory
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO[] $midocoCrmHistory
      */
     public function __construct(?array $midocoCrmHistory = null)
     {
@@ -34,19 +35,20 @@ class GetCrmHistoryResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmHistory value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO[]
      */
     public function getMidocoCrmHistory(): ?array
     {
         return $this->MidocoCrmHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmHistoryForArrayConstraintsFromSetMidocoCrmHistory(?array $values = []): string
+    public static function validateMidocoCrmHistoryForArrayConstraintFromSetMidocoCrmHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetCrmHistoryResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getCrmHistoryResponseMidocoCrmHistoryItem) {
             // validation for constraint: itemType
-            if (!$getCrmHistoryResponseMidocoCrmHistoryItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO) {
+            if (!$getCrmHistoryResponseMidocoCrmHistoryItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO) {
                 $invalidValues[] = is_object($getCrmHistoryResponseMidocoCrmHistoryItem) ? get_class($getCrmHistoryResponseMidocoCrmHistoryItem) : sprintf('%s(%s)', gettype($getCrmHistoryResponseMidocoCrmHistoryItem), var_export($getCrmHistoryResponseMidocoCrmHistoryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmHistory property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetCrmHistoryResponse extends AbstractStructBase
     /**
      * Set MidocoCrmHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO[] $midocoCrmHistory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmHistoryResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO[] $midocoCrmHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmHistoryResponse
      */
     public function setMidocoCrmHistory(?array $midocoCrmHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmHistoryArrayErrorMessage = self::validateMidocoCrmHistoryForArrayConstraintsFromSetMidocoCrmHistory($midocoCrmHistory))) {
+        if ('' !== ($midocoCrmHistoryArrayErrorMessage = self::validateMidocoCrmHistoryForArrayConstraintFromSetMidocoCrmHistory($midocoCrmHistory))) {
             throw new InvalidArgumentException($midocoCrmHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmHistory = $midocoCrmHistory;
@@ -85,14 +87,14 @@ class GetCrmHistoryResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmHistory value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmHistoryResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmHistoryResponse
      */
-    public function addToMidocoCrmHistory(\Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO $item): self
+    public function addToMidocoCrmHistory(\Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmHistory property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmHistoryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmHistory property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmHistoryDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmHistory[] = $item;
         

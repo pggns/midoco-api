@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllDimsForRoleRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllDimsForRoleRequest extends AbstractStructBase
 {
     /**

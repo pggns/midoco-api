@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCampaignDefinition --- gets the lists of criterias and outputs corresponding to a crm campaign
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCampaignDefinitionResponse extends AbstractStructBase
 {
     /**
@@ -67,12 +68,13 @@ class GetCampaignDefinitionResponse extends AbstractStructBase
         return $this->MidocoMisCampaignCriteria;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisCampaignCriteria method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisCampaignCriteria method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisCampaignCriteria method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisCampaignCriteriaForArrayConstraintsFromSetMidocoMisCampaignCriteria(?array $values = []): string
+    public static function validateMidocoMisCampaignCriteriaForArrayConstraintFromSetMidocoMisCampaignCriteria(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -101,7 +103,7 @@ class GetCampaignDefinitionResponse extends AbstractStructBase
     public function setMidocoMisCampaignCriteria(?array $midocoMisCampaignCriteria = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisCampaignCriteriaArrayErrorMessage = self::validateMidocoMisCampaignCriteriaForArrayConstraintsFromSetMidocoMisCampaignCriteria($midocoMisCampaignCriteria))) {
+        if ('' !== ($midocoMisCampaignCriteriaArrayErrorMessage = self::validateMidocoMisCampaignCriteriaForArrayConstraintFromSetMidocoMisCampaignCriteria($midocoMisCampaignCriteria))) {
             throw new InvalidArgumentException($midocoMisCampaignCriteriaArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisCampaignCriteria = $midocoMisCampaignCriteria;
@@ -133,12 +135,13 @@ class GetCampaignDefinitionResponse extends AbstractStructBase
         return $this->MidocoMisCampaignOutput;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisCampaignOutput method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisCampaignOutput method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisCampaignOutput method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisCampaignOutputForArrayConstraintsFromSetMidocoMisCampaignOutput(?array $values = []): string
+    public static function validateMidocoMisCampaignOutputForArrayConstraintFromSetMidocoMisCampaignOutput(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -167,7 +170,7 @@ class GetCampaignDefinitionResponse extends AbstractStructBase
     public function setMidocoMisCampaignOutput(?array $midocoMisCampaignOutput = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisCampaignOutputArrayErrorMessage = self::validateMidocoMisCampaignOutputForArrayConstraintsFromSetMidocoMisCampaignOutput($midocoMisCampaignOutput))) {
+        if ('' !== ($midocoMisCampaignOutputArrayErrorMessage = self::validateMidocoMisCampaignOutputForArrayConstraintFromSetMidocoMisCampaignOutput($midocoMisCampaignOutput))) {
             throw new InvalidArgumentException($midocoMisCampaignOutputArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisCampaignOutput = $midocoMisCampaignOutput;
@@ -199,12 +202,13 @@ class GetCampaignDefinitionResponse extends AbstractStructBase
         return $this->MidocoMisCampaignQueryFilter;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMisCampaignQueryFilter method
+     * This method is responsible for validating the value(s) passed to the setMidocoMisCampaignQueryFilter method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMisCampaignQueryFilter method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMisCampaignQueryFilterForArrayConstraintsFromSetMidocoMisCampaignQueryFilter(?array $values = []): string
+    public static function validateMidocoMisCampaignQueryFilterForArrayConstraintFromSetMidocoMisCampaignQueryFilter(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -233,7 +237,7 @@ class GetCampaignDefinitionResponse extends AbstractStructBase
     public function setMidocoMisCampaignQueryFilter(?array $midocoMisCampaignQueryFilter = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMisCampaignQueryFilterArrayErrorMessage = self::validateMidocoMisCampaignQueryFilterForArrayConstraintsFromSetMidocoMisCampaignQueryFilter($midocoMisCampaignQueryFilter))) {
+        if ('' !== ($midocoMisCampaignQueryFilterArrayErrorMessage = self::validateMidocoMisCampaignQueryFilterForArrayConstraintFromSetMidocoMisCampaignQueryFilter($midocoMisCampaignQueryFilter))) {
             throw new InvalidArgumentException($midocoMisCampaignQueryFilterArrayErrorMessage, __LINE__);
         }
         $this->MidocoMisCampaignQueryFilter = $midocoMisCampaignQueryFilter;

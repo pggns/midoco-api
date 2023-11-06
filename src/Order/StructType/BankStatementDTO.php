@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BankStatementDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BankStatementDTO extends AbstractStructBase
 {
+    /**
+     * The fileFormat
+     * @var string|null
+     */
+    protected ?string $fileFormat = null;
     /**
      * The files
      * @var string|null
@@ -35,22 +41,48 @@ class BankStatementDTO extends AbstractStructBase
     protected ?int $statementId = null;
     /**
      * Constructor method for BankStatementDTO
+     * @uses BankStatementDTO::setFileFormat()
      * @uses BankStatementDTO::setFiles()
      * @uses BankStatementDTO::setReadDate()
      * @uses BankStatementDTO::setReadUser()
      * @uses BankStatementDTO::setStatementId()
+     * @param string $fileFormat
      * @param string $files
      * @param string $readDate
      * @param int $readUser
      * @param int $statementId
      */
-    public function __construct(?string $files = null, ?string $readDate = null, ?int $readUser = null, ?int $statementId = null)
+    public function __construct(?string $fileFormat = null, ?string $files = null, ?string $readDate = null, ?int $readUser = null, ?int $statementId = null)
     {
         $this
+            ->setFileFormat($fileFormat)
             ->setFiles($files)
             ->setReadDate($readDate)
             ->setReadUser($readUser)
             ->setStatementId($statementId);
+    }
+    /**
+     * Get fileFormat value
+     * @return string|null
+     */
+    public function getFileFormat(): ?string
+    {
+        return $this->fileFormat;
+    }
+    /**
+     * Set fileFormat value
+     * @param string $fileFormat
+     * @return \Pggns\MidocoApi\Order\StructType\BankStatementDTO
+     */
+    public function setFileFormat(?string $fileFormat = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($fileFormat) && !is_string($fileFormat)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fileFormat, true), gettype($fileFormat)), __LINE__);
+        }
+        $this->fileFormat = $fileFormat;
+        
+        return $this;
     }
     /**
      * Get files value

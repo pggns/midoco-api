@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Check2FaRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Check2FaRequest extends AbstractStructBase
 {
     /**

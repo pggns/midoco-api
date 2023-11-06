@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveContactMediaResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveContactMediaResponse extends AbstractStructBase
 {
     /**
      * The MidocoContactMedia
      * Meta information extracted from the WSDL
      * - ref: MidocoContactMedia
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO $MidocoContactMedia = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO $MidocoContactMedia = null;
     /**
      * Constructor method for SaveContactMediaResponse
      * @uses SaveContactMediaResponse::setMidocoContactMedia()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO $midocoContactMedia
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO $midocoContactMedia
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO $midocoContactMedia = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO $midocoContactMedia = null)
     {
         $this
             ->setMidocoContactMedia($midocoContactMedia);
     }
     /**
      * Get MidocoContactMedia value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO|null
      */
-    public function getMidocoContactMedia(): ?\Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO
+    public function getMidocoContactMedia(): ?\Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO
     {
         return $this->MidocoContactMedia;
     }
     /**
      * Set MidocoContactMedia value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO $midocoContactMedia
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveContactMediaResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO $midocoContactMedia
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveContactMediaResponse
      */
-    public function setMidocoContactMedia(?\Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO $midocoContactMedia = null): self
+    public function setMidocoContactMedia(?\Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO $midocoContactMedia = null): self
     {
         $this->MidocoContactMedia = $midocoContactMedia;
         

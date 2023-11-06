@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetRemarks4OrgunitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetRemarks4OrgunitResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetRemarks4OrgunitResponse extends AbstractStructBase
         return $this->MidocoTextRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTextRemark method
+     * This method is responsible for validating the value(s) passed to the setMidocoTextRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTextRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTextRemarkForArrayConstraintsFromSetMidocoTextRemark(?array $values = []): string
+    public static function validateMidocoTextRemarkForArrayConstraintFromSetMidocoTextRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetRemarks4OrgunitResponse extends AbstractStructBase
     public function setMidocoTextRemark(?array $midocoTextRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTextRemarkArrayErrorMessage = self::validateMidocoTextRemarkForArrayConstraintsFromSetMidocoTextRemark($midocoTextRemark))) {
+        if ('' !== ($midocoTextRemarkArrayErrorMessage = self::validateMidocoTextRemarkForArrayConstraintFromSetMidocoTextRemark($midocoTextRemark))) {
             throw new InvalidArgumentException($midocoTextRemarkArrayErrorMessage, __LINE__);
         }
         $this->MidocoTextRemark = $midocoTextRemark;

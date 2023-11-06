@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for EinvoiceGatewayDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class EinvoiceGatewayDTO extends AbstractStructBase
 {
     /**
@@ -23,6 +24,11 @@ class EinvoiceGatewayDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $description = null;
+    /**
+     * The format
+     * @var string|null
+     */
+    protected ?string $format = null;
     /**
      * The gateway
      * @var string|null
@@ -42,20 +48,23 @@ class EinvoiceGatewayDTO extends AbstractStructBase
      * Constructor method for EinvoiceGatewayDTO
      * @uses EinvoiceGatewayDTO::setConfiguration()
      * @uses EinvoiceGatewayDTO::setDescription()
+     * @uses EinvoiceGatewayDTO::setFormat()
      * @uses EinvoiceGatewayDTO::setGateway()
      * @uses EinvoiceGatewayDTO::setOrgUnit()
      * @uses EinvoiceGatewayDTO::setUrl()
      * @param string $configuration
      * @param string $description
+     * @param string $format
      * @param string $gateway
      * @param string $orgUnit
      * @param string $url
      */
-    public function __construct(?string $configuration = null, ?string $description = null, ?string $gateway = null, ?string $orgUnit = null, ?string $url = null)
+    public function __construct(?string $configuration = null, ?string $description = null, ?string $format = null, ?string $gateway = null, ?string $orgUnit = null, ?string $url = null)
     {
         $this
             ->setConfiguration($configuration)
             ->setDescription($description)
+            ->setFormat($format)
             ->setGateway($gateway)
             ->setOrgUnit($orgUnit)
             ->setUrl($url);
@@ -103,6 +112,29 @@ class EinvoiceGatewayDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($description, true), gettype($description)), __LINE__);
         }
         $this->description = $description;
+        
+        return $this;
+    }
+    /**
+     * Get format value
+     * @return string|null
+     */
+    public function getFormat(): ?string
+    {
+        return $this->format;
+    }
+    /**
+     * Set format value
+     * @param string $format
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EinvoiceGatewayDTO
+     */
+    public function setFormat(?string $format = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($format) && !is_string($format)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($format, true), gettype($format)), __LINE__);
+        }
+        $this->format = $format;
         
         return $this;
     }

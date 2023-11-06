@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MigrateFiskalyTssResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MigrateFiskalyTssResponse extends AbstractStructBase
 {
     /**
@@ -77,12 +78,13 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
         return $this->{'Migration-Log'};
     }
     /**
-     * This method is responsible for validating the values passed to the setMigration_Log method
+     * This method is responsible for validating the value(s) passed to the setMigration_Log method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMigration_Log method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMigration_LogForArrayConstraintsFromSetMigration_Log(?array $values = []): string
+    public static function validateMigration_LogForArrayConstraintFromSetMigration_Log(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -111,7 +113,7 @@ class MigrateFiskalyTssResponse extends AbstractStructBase
     public function setMigration_Log(?array $migration_Log = null): self
     {
         // validation for constraint: array
-        if ('' !== ($migration_LogArrayErrorMessage = self::validateMigration_LogForArrayConstraintsFromSetMigration_Log($migration_Log))) {
+        if ('' !== ($migration_LogArrayErrorMessage = self::validateMigration_LogForArrayConstraintFromSetMigration_Log($migration_Log))) {
             throw new InvalidArgumentException($migration_LogArrayErrorMessage, __LINE__);
         }
         $this->Migration_Log = $this->{'Migration-Log'} = $migration_Log;

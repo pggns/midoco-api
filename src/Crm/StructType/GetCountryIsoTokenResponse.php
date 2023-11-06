@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCountryIsoTokenResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCountryIsoTokenResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCountryIsoTokenResponse extends AbstractStructBase
         return $this->MidocoCountryToken;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCountryToken method
+     * This method is responsible for validating the value(s) passed to the setMidocoCountryToken method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCountryToken method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCountryTokenForArrayConstraintsFromSetMidocoCountryToken(?array $values = []): string
+    public static function validateMidocoCountryTokenForArrayConstraintFromSetMidocoCountryToken(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCountryIsoTokenResponse extends AbstractStructBase
     public function setMidocoCountryToken(?array $midocoCountryToken = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCountryTokenArrayErrorMessage = self::validateMidocoCountryTokenForArrayConstraintsFromSetMidocoCountryToken($midocoCountryToken))) {
+        if ('' !== ($midocoCountryTokenArrayErrorMessage = self::validateMidocoCountryTokenForArrayConstraintFromSetMidocoCountryToken($midocoCountryToken))) {
             throw new InvalidArgumentException($midocoCountryTokenArrayErrorMessage, __LINE__);
         }
         $this->MidocoCountryToken = $midocoCountryToken;

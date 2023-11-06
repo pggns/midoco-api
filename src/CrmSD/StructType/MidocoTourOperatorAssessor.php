@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTourOperatorAssessor StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTourOperatorAssessor extends TouroperatorInsurerDTO
 {
     /**
@@ -47,7 +48,7 @@ class MidocoTourOperatorAssessor extends TouroperatorInsurerDTO
     /**
      * Set companyName value
      * @param string $companyName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAssessor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAssessor
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -70,7 +71,7 @@ class MidocoTourOperatorAssessor extends TouroperatorInsurerDTO
     /**
      * Set insuranceCode value
      * @param string $insuranceCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoTourOperatorAssessor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoTourOperatorAssessor
      */
     public function setInsuranceCode(?string $insuranceCode = null): self
     {

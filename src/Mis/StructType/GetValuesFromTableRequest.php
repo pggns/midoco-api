@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetValuesFromTableRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetValuesFromTableRequest extends AbstractStructBase
 {
     /**

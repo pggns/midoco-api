@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getComplaints --- returns the list of complaints of a customer (given by customer id)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetComplaintsResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetComplaintsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoComplaint
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO[]
      */
     protected ?array $MidocoComplaint = null;
     /**
      * Constructor method for GetComplaintsResponse
      * @uses GetComplaintsResponse::setMidocoComplaint()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO[] $midocoComplaint
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO[] $midocoComplaint
      */
     public function __construct(?array $midocoComplaint = null)
     {
@@ -36,19 +37,20 @@ class GetComplaintsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoComplaint value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO[]
      */
     public function getMidocoComplaint(): ?array
     {
         return $this->MidocoComplaint;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoComplaint method
+     * This method is responsible for validating the value(s) passed to the setMidocoComplaint method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoComplaint method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoComplaintForArrayConstraintsFromSetMidocoComplaint(?array $values = []): string
+    public static function validateMidocoComplaintForArrayConstraintFromSetMidocoComplaint(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetComplaintsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getComplaintsResponseMidocoComplaintItem) {
             // validation for constraint: itemType
-            if (!$getComplaintsResponseMidocoComplaintItem instanceof \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO) {
+            if (!$getComplaintsResponseMidocoComplaintItem instanceof \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO) {
                 $invalidValues[] = is_object($getComplaintsResponseMidocoComplaintItem) ? get_class($getComplaintsResponseMidocoComplaintItem) : sprintf('%s(%s)', gettype($getComplaintsResponseMidocoComplaintItem), var_export($getComplaintsResponseMidocoComplaintItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoComplaint property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoComplaint property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetComplaintsResponse extends AbstractStructBase
     /**
      * Set MidocoComplaint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO[] $midocoComplaint
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetComplaintsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO[] $midocoComplaint
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetComplaintsResponse
      */
     public function setMidocoComplaint(?array $midocoComplaint = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoComplaintArrayErrorMessage = self::validateMidocoComplaintForArrayConstraintsFromSetMidocoComplaint($midocoComplaint))) {
+        if ('' !== ($midocoComplaintArrayErrorMessage = self::validateMidocoComplaintForArrayConstraintFromSetMidocoComplaint($midocoComplaint))) {
             throw new InvalidArgumentException($midocoComplaintArrayErrorMessage, __LINE__);
         }
         $this->MidocoComplaint = $midocoComplaint;
@@ -87,14 +89,14 @@ class GetComplaintsResponse extends AbstractStructBase
     /**
      * Add item to MidocoComplaint value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetComplaintsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetComplaintsResponse
      */
-    public function addToMidocoComplaint(\Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO $item): self
+    public function addToMidocoComplaint(\Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoComplaint property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ComplaintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoComplaint property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ComplaintDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoComplaint[] = $item;
         

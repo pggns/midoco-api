@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTravelNumberAutoRemarksResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
         return $this->MidocoTravelNumberAutoRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravelNumberAutoRemark method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelNumberAutoRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelNumberAutoRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravelNumberAutoRemarkForArrayConstraintsFromSetMidocoTravelNumberAutoRemark(?array $values = []): string
+    public static function validateMidocoTravelNumberAutoRemarkForArrayConstraintFromSetMidocoTravelNumberAutoRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetTravelNumberAutoRemarksResponse extends AbstractStructBase
     public function setMidocoTravelNumberAutoRemark(?array $midocoTravelNumberAutoRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravelNumberAutoRemarkArrayErrorMessage = self::validateMidocoTravelNumberAutoRemarkForArrayConstraintsFromSetMidocoTravelNumberAutoRemark($midocoTravelNumberAutoRemark))) {
+        if ('' !== ($midocoTravelNumberAutoRemarkArrayErrorMessage = self::validateMidocoTravelNumberAutoRemarkForArrayConstraintFromSetMidocoTravelNumberAutoRemark($midocoTravelNumberAutoRemark))) {
             throw new InvalidArgumentException($midocoTravelNumberAutoRemarkArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravelNumberAutoRemark = $midocoTravelNumberAutoRemark;

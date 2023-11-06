@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for A3MAdapterValue StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class A3MAdapterValue extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class A3MAdapterValue extends AbstractStructBase
     /**
      * Set midocoCustomerId value
      * @param int $midocoCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\A3MAdapterValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\A3MAdapterValue
      */
     public function setMidocoCustomerId(?int $midocoCustomerId = null): self
     {
@@ -102,7 +103,7 @@ class A3MAdapterValue extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \Pggns\MidocoApi\CrmSD\StructType\A3MAdapterValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\A3MAdapterValue
      */
     public function setUrl(?string $url = null): self
     {
@@ -125,7 +126,7 @@ class A3MAdapterValue extends AbstractStructBase
     /**
      * Set user value
      * @param string $user
-     * @return \Pggns\MidocoApi\CrmSD\StructType\A3MAdapterValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\A3MAdapterValue
      */
     public function setUser(?string $user = null): self
     {
@@ -148,7 +149,7 @@ class A3MAdapterValue extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\CrmSD\StructType\A3MAdapterValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\A3MAdapterValue
      */
     public function setPassword(?string $password = null): self
     {
@@ -171,7 +172,7 @@ class A3MAdapterValue extends AbstractStructBase
     /**
      * Set exportContactData value
      * @param bool $exportContactData
-     * @return \Pggns\MidocoApi\CrmSD\StructType\A3MAdapterValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\A3MAdapterValue
      */
     public function setExportContactData(?bool $exportContactData = null): self
     {
@@ -194,7 +195,7 @@ class A3MAdapterValue extends AbstractStructBase
     /**
      * Set exportAccomodationData value
      * @param bool $exportAccomodationData
-     * @return \Pggns\MidocoApi\CrmSD\StructType\A3MAdapterValue
+     * @return \Pggns\MidocoApi\Crmsd\StructType\A3MAdapterValue
      */
     public function setExportAccomodationData(?bool $exportAccomodationData = null): self
     {

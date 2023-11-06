@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchDatastoresResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchDatastoresResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchDatastoresResponse extends AbstractStructBase
         return $this->MidocoDatastore;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDatastore method
+     * This method is responsible for validating the value(s) passed to the setMidocoDatastore method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDatastore method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDatastoreForArrayConstraintsFromSetMidocoDatastore(?array $values = []): string
+    public static function validateMidocoDatastoreForArrayConstraintFromSetMidocoDatastore(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchDatastoresResponse extends AbstractStructBase
     public function setMidocoDatastore(?array $midocoDatastore = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDatastoreArrayErrorMessage = self::validateMidocoDatastoreForArrayConstraintsFromSetMidocoDatastore($midocoDatastore))) {
+        if ('' !== ($midocoDatastoreArrayErrorMessage = self::validateMidocoDatastoreForArrayConstraintFromSetMidocoDatastore($midocoDatastore))) {
             throw new InvalidArgumentException($midocoDatastoreArrayErrorMessage, __LINE__);
         }
         $this->MidocoDatastore = $midocoDatastore;

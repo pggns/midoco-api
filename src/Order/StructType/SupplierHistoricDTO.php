@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SupplierHistoricDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SupplierHistoricDTO extends AbstractStructBase
 {
     /**
@@ -89,6 +90,16 @@ class SupplierHistoricDTO extends AbstractStructBase
      */
     protected ?string $accountSupplierVat = null;
     /**
+     * The activeCommissionSettlement
+     * @var bool|null
+     */
+    protected ?bool $activeCommissionSettlement = null;
+    /**
+     * The allowMarkUp
+     * @var bool|null
+     */
+    protected ?bool $allowMarkUp = null;
+    /**
      * The autoRemarkPosition
      * @var int|null
      */
@@ -133,6 +144,11 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $emailNotification = null;
+    /**
+     * The entryHandlingCollective
+     * @var int|null
+     */
+    protected ?int $entryHandlingCollective = null;
     /**
      * The entryRestAsProv
      * @var bool|null
@@ -239,10 +255,25 @@ class SupplierHistoricDTO extends AbstractStructBase
      */
     protected ?string $settlementGroup = null;
     /**
+     * The settlementTypeCreditDefault
+     * @var string|null
+     */
+    protected ?string $settlementTypeCreditDefault = null;
+    /**
+     * The settlementTypeDebitDefault
+     * @var string|null
+     */
+    protected ?string $settlementTypeDebitDefault = null;
+    /**
      * The stornoNotification
      * @var bool|null
      */
     protected ?bool $stornoNotification = null;
+    /**
+     * The supplierGroupForFee
+     * @var string|null
+     */
+    protected ?string $supplierGroupForFee = null;
     /**
      * The supplierId
      * @var string|null
@@ -310,6 +341,8 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @uses SupplierHistoricDTO::setAccountProvisionVatDi()
      * @uses SupplierHistoricDTO::setAccountSupplierPayment()
      * @uses SupplierHistoricDTO::setAccountSupplierVat()
+     * @uses SupplierHistoricDTO::setActiveCommissionSettlement()
+     * @uses SupplierHistoricDTO::setAllowMarkUp()
      * @uses SupplierHistoricDTO::setAutoRemarkPosition()
      * @uses SupplierHistoricDTO::setBookingIdRequired()
      * @uses SupplierHistoricDTO::setCollectiveSettlement()
@@ -319,6 +352,7 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @uses SupplierHistoricDTO::setCurrency()
      * @uses SupplierHistoricDTO::setCustomerWishNotification()
      * @uses SupplierHistoricDTO::setEmailNotification()
+     * @uses SupplierHistoricDTO::setEntryHandlingCollective()
      * @uses SupplierHistoricDTO::setEntryRestAsProv()
      * @uses SupplierHistoricDTO::setGroup1()
      * @uses SupplierHistoricDTO::setGroup2()
@@ -340,7 +374,10 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @uses SupplierHistoricDTO::setPrintOptionId()
      * @uses SupplierHistoricDTO::setRequiresConfirmation()
      * @uses SupplierHistoricDTO::setSettlementGroup()
+     * @uses SupplierHistoricDTO::setSettlementTypeCreditDefault()
+     * @uses SupplierHistoricDTO::setSettlementTypeDebitDefault()
      * @uses SupplierHistoricDTO::setStornoNotification()
+     * @uses SupplierHistoricDTO::setSupplierGroupForFee()
      * @uses SupplierHistoricDTO::setSupplierId()
      * @uses SupplierHistoricDTO::setSuppressBackofficeExport()
      * @uses SupplierHistoricDTO::setSuppressRevenueBooking()
@@ -366,6 +403,8 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @param string $accountProvisionVatDi
      * @param string $accountSupplierPayment
      * @param string $accountSupplierVat
+     * @param bool $activeCommissionSettlement
+     * @param bool $allowMarkUp
      * @param int $autoRemarkPosition
      * @param bool $bookingIdRequired
      * @param bool $collectiveSettlement
@@ -375,6 +414,7 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @param string $currency
      * @param bool $customerWishNotification
      * @param bool $emailNotification
+     * @param int $entryHandlingCollective
      * @param bool $entryRestAsProv
      * @param string $group1
      * @param string $group2
@@ -396,7 +436,10 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @param int $printOptionId
      * @param bool $requiresConfirmation
      * @param string $settlementGroup
+     * @param string $settlementTypeCreditDefault
+     * @param string $settlementTypeDebitDefault
      * @param bool $stornoNotification
+     * @param string $supplierGroupForFee
      * @param string $supplierId
      * @param bool $suppressBackofficeExport
      * @param bool $suppressRevenueBooking
@@ -408,7 +451,7 @@ class SupplierHistoricDTO extends AbstractStructBase
      * @param bool $vatIdChange
      * @param int $verkCode
      */
-    public function __construct(?bool $acceptCash = null, ?bool $acceptCc = null, ?bool $acceptDebit = null, ?bool $acceptInvoice = null, ?string $accountDiPayment = null, ?string $accountExpenseInvoice = null, ?string $accountProvisionInsurance = null, ?string $accountProvisionInsuranceDi = null, ?string $accountProvisionNovat = null, ?string $accountProvisionNovatDi = null, ?string $accountProvisionReceivable = null, ?string $accountProvisionVat = null, ?string $accountProvisionVatDi = null, ?string $accountSupplierPayment = null, ?string $accountSupplierVat = null, ?int $autoRemarkPosition = null, ?bool $bookingIdRequired = null, ?bool $collectiveSettlement = null, ?int $commissionMode = null, ?string $creationDate = null, ?int $creationUser = null, ?string $currency = null, ?bool $customerWishNotification = null, ?bool $emailNotification = null, ?bool $entryRestAsProv = null, ?string $group1 = null, ?string $group2 = null, ?string $group3 = null, ?int $inkassoMode = null, ?string $interimAccount = null, ?bool $isCommPrefTravelDate = null, ?bool $isInsurance = null, ?bool $isLocked = null, ?bool $isOwnAccount = null, ?bool $isOwnSettlement = null, ?bool $isPrefTravelDate = null, ?bool $isVarious = null, ?string $lockDate = null, ?string $name = null, ?int $optionPeriod = null, ?bool $preventBillingPosSplit = null, ?bool $preventBookingRefGen = null, ?int $printOptionId = null, ?bool $requiresConfirmation = null, ?string $settlementGroup = null, ?bool $stornoNotification = null, ?string $supplierId = null, ?bool $suppressBackofficeExport = null, ?bool $suppressRevenueBooking = null, ?bool $travelDocumentsPerItem = null, ?bool $useBookingAsEntry = null, ?string $validCreationTravel = null, ?string $validDate = null, ?string $vatId = null, ?bool $vatIdChange = null, ?int $verkCode = null)
+    public function __construct(?bool $acceptCash = null, ?bool $acceptCc = null, ?bool $acceptDebit = null, ?bool $acceptInvoice = null, ?string $accountDiPayment = null, ?string $accountExpenseInvoice = null, ?string $accountProvisionInsurance = null, ?string $accountProvisionInsuranceDi = null, ?string $accountProvisionNovat = null, ?string $accountProvisionNovatDi = null, ?string $accountProvisionReceivable = null, ?string $accountProvisionVat = null, ?string $accountProvisionVatDi = null, ?string $accountSupplierPayment = null, ?string $accountSupplierVat = null, ?bool $activeCommissionSettlement = null, ?bool $allowMarkUp = null, ?int $autoRemarkPosition = null, ?bool $bookingIdRequired = null, ?bool $collectiveSettlement = null, ?int $commissionMode = null, ?string $creationDate = null, ?int $creationUser = null, ?string $currency = null, ?bool $customerWishNotification = null, ?bool $emailNotification = null, ?int $entryHandlingCollective = null, ?bool $entryRestAsProv = null, ?string $group1 = null, ?string $group2 = null, ?string $group3 = null, ?int $inkassoMode = null, ?string $interimAccount = null, ?bool $isCommPrefTravelDate = null, ?bool $isInsurance = null, ?bool $isLocked = null, ?bool $isOwnAccount = null, ?bool $isOwnSettlement = null, ?bool $isPrefTravelDate = null, ?bool $isVarious = null, ?string $lockDate = null, ?string $name = null, ?int $optionPeriod = null, ?bool $preventBillingPosSplit = null, ?bool $preventBookingRefGen = null, ?int $printOptionId = null, ?bool $requiresConfirmation = null, ?string $settlementGroup = null, ?string $settlementTypeCreditDefault = null, ?string $settlementTypeDebitDefault = null, ?bool $stornoNotification = null, ?string $supplierGroupForFee = null, ?string $supplierId = null, ?bool $suppressBackofficeExport = null, ?bool $suppressRevenueBooking = null, ?bool $travelDocumentsPerItem = null, ?bool $useBookingAsEntry = null, ?string $validCreationTravel = null, ?string $validDate = null, ?string $vatId = null, ?bool $vatIdChange = null, ?int $verkCode = null)
     {
         $this
             ->setAcceptCash($acceptCash)
@@ -426,6 +469,8 @@ class SupplierHistoricDTO extends AbstractStructBase
             ->setAccountProvisionVatDi($accountProvisionVatDi)
             ->setAccountSupplierPayment($accountSupplierPayment)
             ->setAccountSupplierVat($accountSupplierVat)
+            ->setActiveCommissionSettlement($activeCommissionSettlement)
+            ->setAllowMarkUp($allowMarkUp)
             ->setAutoRemarkPosition($autoRemarkPosition)
             ->setBookingIdRequired($bookingIdRequired)
             ->setCollectiveSettlement($collectiveSettlement)
@@ -435,6 +480,7 @@ class SupplierHistoricDTO extends AbstractStructBase
             ->setCurrency($currency)
             ->setCustomerWishNotification($customerWishNotification)
             ->setEmailNotification($emailNotification)
+            ->setEntryHandlingCollective($entryHandlingCollective)
             ->setEntryRestAsProv($entryRestAsProv)
             ->setGroup1($group1)
             ->setGroup2($group2)
@@ -456,7 +502,10 @@ class SupplierHistoricDTO extends AbstractStructBase
             ->setPrintOptionId($printOptionId)
             ->setRequiresConfirmation($requiresConfirmation)
             ->setSettlementGroup($settlementGroup)
+            ->setSettlementTypeCreditDefault($settlementTypeCreditDefault)
+            ->setSettlementTypeDebitDefault($settlementTypeDebitDefault)
             ->setStornoNotification($stornoNotification)
+            ->setSupplierGroupForFee($supplierGroupForFee)
             ->setSupplierId($supplierId)
             ->setSuppressBackofficeExport($suppressBackofficeExport)
             ->setSuppressRevenueBooking($suppressRevenueBooking)
@@ -814,6 +863,52 @@ class SupplierHistoricDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get activeCommissionSettlement value
+     * @return bool|null
+     */
+    public function getActiveCommissionSettlement(): ?bool
+    {
+        return $this->activeCommissionSettlement;
+    }
+    /**
+     * Set activeCommissionSettlement value
+     * @param bool $activeCommissionSettlement
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricDTO
+     */
+    public function setActiveCommissionSettlement(?bool $activeCommissionSettlement = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($activeCommissionSettlement) && !is_bool($activeCommissionSettlement)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($activeCommissionSettlement, true), gettype($activeCommissionSettlement)), __LINE__);
+        }
+        $this->activeCommissionSettlement = $activeCommissionSettlement;
+        
+        return $this;
+    }
+    /**
+     * Get allowMarkUp value
+     * @return bool|null
+     */
+    public function getAllowMarkUp(): ?bool
+    {
+        return $this->allowMarkUp;
+    }
+    /**
+     * Set allowMarkUp value
+     * @param bool $allowMarkUp
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricDTO
+     */
+    public function setAllowMarkUp(?bool $allowMarkUp = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($allowMarkUp) && !is_bool($allowMarkUp)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($allowMarkUp, true), gettype($allowMarkUp)), __LINE__);
+        }
+        $this->allowMarkUp = $allowMarkUp;
+        
+        return $this;
+    }
+    /**
      * Get autoRemarkPosition value
      * @return int|null
      */
@@ -1017,6 +1112,29 @@ class SupplierHistoricDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($emailNotification, true), gettype($emailNotification)), __LINE__);
         }
         $this->emailNotification = $emailNotification;
+        
+        return $this;
+    }
+    /**
+     * Get entryHandlingCollective value
+     * @return int|null
+     */
+    public function getEntryHandlingCollective(): ?int
+    {
+        return $this->entryHandlingCollective;
+    }
+    /**
+     * Set entryHandlingCollective value
+     * @param int $entryHandlingCollective
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricDTO
+     */
+    public function setEntryHandlingCollective(?int $entryHandlingCollective = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($entryHandlingCollective) && !(is_int($entryHandlingCollective) || ctype_digit($entryHandlingCollective))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($entryHandlingCollective, true), gettype($entryHandlingCollective)), __LINE__);
+        }
+        $this->entryHandlingCollective = $entryHandlingCollective;
         
         return $this;
     }
@@ -1504,6 +1622,52 @@ class SupplierHistoricDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get settlementTypeCreditDefault value
+     * @return string|null
+     */
+    public function getSettlementTypeCreditDefault(): ?string
+    {
+        return $this->settlementTypeCreditDefault;
+    }
+    /**
+     * Set settlementTypeCreditDefault value
+     * @param string $settlementTypeCreditDefault
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricDTO
+     */
+    public function setSettlementTypeCreditDefault(?string $settlementTypeCreditDefault = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementTypeCreditDefault) && !is_string($settlementTypeCreditDefault)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementTypeCreditDefault, true), gettype($settlementTypeCreditDefault)), __LINE__);
+        }
+        $this->settlementTypeCreditDefault = $settlementTypeCreditDefault;
+        
+        return $this;
+    }
+    /**
+     * Get settlementTypeDebitDefault value
+     * @return string|null
+     */
+    public function getSettlementTypeDebitDefault(): ?string
+    {
+        return $this->settlementTypeDebitDefault;
+    }
+    /**
+     * Set settlementTypeDebitDefault value
+     * @param string $settlementTypeDebitDefault
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricDTO
+     */
+    public function setSettlementTypeDebitDefault(?string $settlementTypeDebitDefault = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementTypeDebitDefault) && !is_string($settlementTypeDebitDefault)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementTypeDebitDefault, true), gettype($settlementTypeDebitDefault)), __LINE__);
+        }
+        $this->settlementTypeDebitDefault = $settlementTypeDebitDefault;
+        
+        return $this;
+    }
+    /**
      * Get stornoNotification value
      * @return bool|null
      */
@@ -1523,6 +1687,29 @@ class SupplierHistoricDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($stornoNotification, true), gettype($stornoNotification)), __LINE__);
         }
         $this->stornoNotification = $stornoNotification;
+        
+        return $this;
+    }
+    /**
+     * Get supplierGroupForFee value
+     * @return string|null
+     */
+    public function getSupplierGroupForFee(): ?string
+    {
+        return $this->supplierGroupForFee;
+    }
+    /**
+     * Set supplierGroupForFee value
+     * @param string $supplierGroupForFee
+     * @return \Pggns\MidocoApi\Order\StructType\SupplierHistoricDTO
+     */
+    public function setSupplierGroupForFee(?string $supplierGroupForFee = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($supplierGroupForFee) && !is_string($supplierGroupForFee)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplierGroupForFee, true), gettype($supplierGroupForFee)), __LINE__);
+        }
+        $this->supplierGroupForFee = $supplierGroupForFee;
         
         return $this;
     }

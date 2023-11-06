@@ -15,6 +15,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * set, the CrmAddressDTO structure is put in the return DTO and the error code is set to 0 to simulate a validation. When a validation is successful, the resulting embedded CrmAddressDTO will have the validated flag set
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidateAddressResponse extends AbstractStructBase
 {
     /**
@@ -99,12 +100,13 @@ class ValidateAddressResponse extends AbstractStructBase
         return $this->MidocoAddressValidate;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAddressValidate method
+     * This method is responsible for validating the value(s) passed to the setMidocoAddressValidate method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAddressValidate method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAddressValidateForArrayConstraintsFromSetMidocoAddressValidate(?array $values = []): string
+    public static function validateMidocoAddressValidateForArrayConstraintFromSetMidocoAddressValidate(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -133,7 +135,7 @@ class ValidateAddressResponse extends AbstractStructBase
     public function setMidocoAddressValidate(?array $midocoAddressValidate = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAddressValidateArrayErrorMessage = self::validateMidocoAddressValidateForArrayConstraintsFromSetMidocoAddressValidate($midocoAddressValidate))) {
+        if ('' !== ($midocoAddressValidateArrayErrorMessage = self::validateMidocoAddressValidateForArrayConstraintFromSetMidocoAddressValidate($midocoAddressValidate))) {
             throw new InvalidArgumentException($midocoAddressValidateArrayErrorMessage, __LINE__);
         }
         $this->MidocoAddressValidate = $midocoAddressValidate;

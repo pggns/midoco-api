@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTemplateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTemplateRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetTemplateRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTemplateRequest
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -70,7 +71,7 @@ class GetTemplateRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTemplateRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

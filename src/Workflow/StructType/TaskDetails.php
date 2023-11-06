@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TaskDetails StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TaskDetails extends Task
 {
     /**
@@ -34,23 +35,39 @@ class TaskDetails extends Task
      */
     protected ?string $creationOrgunit = null;
     /**
+     * The deletable
+     * @var bool|null
+     */
+    protected ?bool $deletable = null;
+    /**
+     * The origin
+     * @var int|null
+     */
+    protected ?int $origin = null;
+    /**
      * Constructor method for TaskDetails
      * @uses TaskDetails::setCreationUser()
      * @uses TaskDetails::setWarningLevel()
      * @uses TaskDetails::setIsNotice()
      * @uses TaskDetails::setCreationOrgunit()
+     * @uses TaskDetails::setDeletable()
+     * @uses TaskDetails::setOrigin()
      * @param string $creationUser
      * @param int $warningLevel
      * @param bool $isNotice
      * @param string $creationOrgunit
+     * @param bool $deletable
+     * @param int $origin
      */
-    public function __construct(?string $creationUser = null, ?int $warningLevel = null, ?bool $isNotice = null, ?string $creationOrgunit = null)
+    public function __construct(?string $creationUser = null, ?int $warningLevel = null, ?bool $isNotice = null, ?string $creationOrgunit = null, ?bool $deletable = null, ?int $origin = null)
     {
         $this
             ->setCreationUser($creationUser)
             ->setWarningLevel($warningLevel)
             ->setIsNotice($isNotice)
-            ->setCreationOrgunit($creationOrgunit);
+            ->setCreationOrgunit($creationOrgunit)
+            ->setDeletable($deletable)
+            ->setOrigin($origin);
     }
     /**
      * Get creationUser value
@@ -141,6 +158,52 @@ class TaskDetails extends Task
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creationOrgunit, true), gettype($creationOrgunit)), __LINE__);
         }
         $this->creationOrgunit = $creationOrgunit;
+        
+        return $this;
+    }
+    /**
+     * Get deletable value
+     * @return bool|null
+     */
+    public function getDeletable(): ?bool
+    {
+        return $this->deletable;
+    }
+    /**
+     * Set deletable value
+     * @param bool $deletable
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDetails
+     */
+    public function setDeletable(?bool $deletable = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($deletable) && !is_bool($deletable)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($deletable, true), gettype($deletable)), __LINE__);
+        }
+        $this->deletable = $deletable;
+        
+        return $this;
+    }
+    /**
+     * Get origin value
+     * @return int|null
+     */
+    public function getOrigin(): ?int
+    {
+        return $this->origin;
+    }
+    /**
+     * Set origin value
+     * @param int $origin
+     * @return \Pggns\MidocoApi\Workflow\StructType\TaskDetails
+     */
+    public function setOrigin(?int $origin = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($origin) && !(is_int($origin) || ctype_digit($origin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($origin, true), gettype($origin)), __LINE__);
+        }
+        $this->origin = $origin;
         
         return $this;
     }

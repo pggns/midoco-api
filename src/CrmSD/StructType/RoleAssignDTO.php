@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RoleAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RoleAssignDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class RoleAssignDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleAssignDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -78,7 +79,7 @@ class RoleAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -101,7 +102,7 @@ class RoleAssignDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleAssignDTO
      */
     public function setUserId(?int $userId = null): self
     {

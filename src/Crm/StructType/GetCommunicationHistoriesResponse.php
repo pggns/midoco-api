@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCommunicationHistoriesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCommunicationHistoriesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
         return $this->MidocoCommunicationHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCommunicationHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoCommunicationHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCommunicationHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCommunicationHistoryForArrayConstraintsFromSetMidocoCommunicationHistory(?array $values = []): string
+    public static function validateMidocoCommunicationHistoryForArrayConstraintFromSetMidocoCommunicationHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCommunicationHistoriesResponse extends AbstractStructBase
     public function setMidocoCommunicationHistory(?array $midocoCommunicationHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCommunicationHistoryArrayErrorMessage = self::validateMidocoCommunicationHistoryForArrayConstraintsFromSetMidocoCommunicationHistory($midocoCommunicationHistory))) {
+        if ('' !== ($midocoCommunicationHistoryArrayErrorMessage = self::validateMidocoCommunicationHistoryForArrayConstraintFromSetMidocoCommunicationHistory($midocoCommunicationHistory))) {
             throw new InvalidArgumentException($midocoCommunicationHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoCommunicationHistory = $midocoCommunicationHistory;

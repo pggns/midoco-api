@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for JournalDataRecord StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class JournalDataRecord extends AbstractStructBase
 {
     /**
@@ -217,12 +218,13 @@ class JournalDataRecord extends AbstractStructBase
         return $this->EntryBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setEntryBooking method
+     * This method is responsible for validating the value(s) passed to the setEntryBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEntryBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEntryBookingForArrayConstraintsFromSetEntryBooking(?array $values = []): string
+    public static function validateEntryBookingForArrayConstraintFromSetEntryBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -251,7 +253,7 @@ class JournalDataRecord extends AbstractStructBase
     public function setEntryBooking(?array $entryBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($entryBookingArrayErrorMessage = self::validateEntryBookingForArrayConstraintsFromSetEntryBooking($entryBooking))) {
+        if ('' !== ($entryBookingArrayErrorMessage = self::validateEntryBookingForArrayConstraintFromSetEntryBooking($entryBooking))) {
             throw new InvalidArgumentException($entryBookingArrayErrorMessage, __LINE__);
         }
         $this->EntryBooking = $entryBooking;
@@ -283,12 +285,13 @@ class JournalDataRecord extends AbstractStructBase
         return $this->CostCentreBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setCostCentreBooking method
+     * This method is responsible for validating the value(s) passed to the setCostCentreBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCostCentreBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCostCentreBookingForArrayConstraintsFromSetCostCentreBooking(?array $values = []): string
+    public static function validateCostCentreBookingForArrayConstraintFromSetCostCentreBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -317,7 +320,7 @@ class JournalDataRecord extends AbstractStructBase
     public function setCostCentreBooking(?array $costCentreBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($costCentreBookingArrayErrorMessage = self::validateCostCentreBookingForArrayConstraintsFromSetCostCentreBooking($costCentreBooking))) {
+        if ('' !== ($costCentreBookingArrayErrorMessage = self::validateCostCentreBookingForArrayConstraintFromSetCostCentreBooking($costCentreBooking))) {
             throw new InvalidArgumentException($costCentreBookingArrayErrorMessage, __LINE__);
         }
         $this->CostCentreBooking = $costCentreBooking;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for WserviceDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class WserviceDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class WserviceDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\WserviceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\WserviceDTO
      */
     public function setName(?string $name = null): self
     {
@@ -70,7 +71,7 @@ class WserviceDTO extends AbstractStructBase
     /**
      * Set wsgroup value
      * @param string $wsgroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\WserviceDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\WserviceDTO
      */
     public function setWsgroup(?string $wsgroup = null): self
     {

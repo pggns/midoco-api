@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderDocumentsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderDocumentsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrderDocumentsResponse extends AbstractStructBase
         return $this->MidocoOrderDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderDocumentForArrayConstraintsFromSetMidocoOrderDocument(?array $values = []): string
+    public static function validateMidocoOrderDocumentForArrayConstraintFromSetMidocoOrderDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrderDocumentsResponse extends AbstractStructBase
     public function setMidocoOrderDocument(?array $midocoOrderDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderDocumentArrayErrorMessage = self::validateMidocoOrderDocumentForArrayConstraintsFromSetMidocoOrderDocument($midocoOrderDocument))) {
+        if ('' !== ($midocoOrderDocumentArrayErrorMessage = self::validateMidocoOrderDocumentForArrayConstraintFromSetMidocoOrderDocument($midocoOrderDocument))) {
             throw new InvalidArgumentException($midocoOrderDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderDocument = $midocoOrderDocument;

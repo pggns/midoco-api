@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDeferralArErListSumsType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDeferralArErListSumsType extends AbstractStructBase
 {
     /**

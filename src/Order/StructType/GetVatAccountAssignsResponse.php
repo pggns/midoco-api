@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetVatAccountAssignsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetVatAccountAssignsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetVatAccountAssignsResponse extends AbstractStructBase
         return $this->MidocoVatAccountAssign;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVatAccountAssign method
+     * This method is responsible for validating the value(s) passed to the setMidocoVatAccountAssign method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVatAccountAssign method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVatAccountAssignForArrayConstraintsFromSetMidocoVatAccountAssign(?array $values = []): string
+    public static function validateMidocoVatAccountAssignForArrayConstraintFromSetMidocoVatAccountAssign(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetVatAccountAssignsResponse extends AbstractStructBase
     public function setMidocoVatAccountAssign(?array $midocoVatAccountAssign = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVatAccountAssignArrayErrorMessage = self::validateMidocoVatAccountAssignForArrayConstraintsFromSetMidocoVatAccountAssign($midocoVatAccountAssign))) {
+        if ('' !== ($midocoVatAccountAssignArrayErrorMessage = self::validateMidocoVatAccountAssignForArrayConstraintFromSetMidocoVatAccountAssign($midocoVatAccountAssign))) {
             throw new InvalidArgumentException($midocoVatAccountAssignArrayErrorMessage, __LINE__);
         }
         $this->MidocoVatAccountAssign = $midocoVatAccountAssign;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchDuplicatedAdviceSettlementDetailRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchDuplicatedAdviceSettlementDetailRequest extends AbstractStructBase
 {
     /**
@@ -39,12 +40,13 @@ class SearchDuplicatedAdviceSettlementDetailRequest extends AbstractStructBase
         return $this->detailId;
     }
     /**
-     * This method is responsible for validating the values passed to the setDetailId method
+     * This method is responsible for validating the value(s) passed to the setDetailId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDetailId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDetailIdForArrayConstraintsFromSetDetailId(?array $values = []): string
+    public static function validateDetailIdForArrayConstraintFromSetDetailId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -73,7 +75,7 @@ class SearchDuplicatedAdviceSettlementDetailRequest extends AbstractStructBase
     public function setDetailId(?array $detailId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($detailIdArrayErrorMessage = self::validateDetailIdForArrayConstraintsFromSetDetailId($detailId))) {
+        if ('' !== ($detailIdArrayErrorMessage = self::validateDetailIdForArrayConstraintFromSetDetailId($detailId))) {
             throw new InvalidArgumentException($detailIdArrayErrorMessage, __LINE__);
         }
         $this->detailId = $detailId;

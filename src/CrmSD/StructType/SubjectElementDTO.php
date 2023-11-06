@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SubjectElementDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SubjectElementDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectElementDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -86,7 +87,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectElementDTO
      */
     public function setId(?int $id = null): self
     {
@@ -109,7 +110,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectElementDTO
      */
     public function setLocale(?string $locale = null): self
     {
@@ -132,7 +133,7 @@ class SubjectElementDTO extends AbstractStructBase
     /**
      * Set template value
      * @param string $template
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectElementDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectElementDTO
      */
     public function setTemplate(?string $template = null): self
     {

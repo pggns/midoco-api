@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ContactHistoryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ContactHistoryDTO extends AbstractStructBase
 {
     /**
@@ -151,7 +152,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -174,7 +175,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -197,7 +198,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -220,7 +221,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -243,7 +244,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set direction value
      * @param string $direction
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setDirection(?string $direction = null): self
     {
@@ -266,7 +267,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set externalReference value
      * @param string $externalReference
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setExternalReference(?string $externalReference = null): self
     {
@@ -289,7 +290,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set itemId value
      * @param int $itemId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setItemId(?int $itemId = null): self
     {
@@ -312,7 +313,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set noticePosition value
      * @param int $noticePosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setNoticePosition(?int $noticePosition = null): self
     {
@@ -335,7 +336,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -358,7 +359,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set origin value
      * @param string $origin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setOrigin(?string $origin = null): self
     {
@@ -381,7 +382,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set timeOfContact value
      * @param string $timeOfContact
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setTimeOfContact(?string $timeOfContact = null): self
     {
@@ -404,7 +405,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -427,7 +428,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set typeOfTask value
      * @param int $typeOfTask
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setTypeOfTask(?int $typeOfTask = null): self
     {
@@ -450,7 +451,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -473,7 +474,7 @@ class ContactHistoryDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactHistoryDTO
      */
     public function setUserId(?int $userId = null): self
     {

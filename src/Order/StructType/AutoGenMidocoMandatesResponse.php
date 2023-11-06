@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AutoGenMidocoMandatesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AutoGenMidocoMandatesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class AutoGenMidocoMandatesResponse extends AbstractStructBase
         return $this->MidocoMandateGenError;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMandateGenError method
+     * This method is responsible for validating the value(s) passed to the setMidocoMandateGenError method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMandateGenError method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMandateGenErrorForArrayConstraintsFromSetMidocoMandateGenError(?array $values = []): string
+    public static function validateMidocoMandateGenErrorForArrayConstraintFromSetMidocoMandateGenError(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class AutoGenMidocoMandatesResponse extends AbstractStructBase
     public function setMidocoMandateGenError(?array $midocoMandateGenError = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMandateGenErrorArrayErrorMessage = self::validateMidocoMandateGenErrorForArrayConstraintsFromSetMidocoMandateGenError($midocoMandateGenError))) {
+        if ('' !== ($midocoMandateGenErrorArrayErrorMessage = self::validateMidocoMandateGenErrorForArrayConstraintFromSetMidocoMandateGenError($midocoMandateGenError))) {
             throw new InvalidArgumentException($midocoMandateGenErrorArrayErrorMessage, __LINE__);
         }
         $this->MidocoMandateGenError = $midocoMandateGenError;

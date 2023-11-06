@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmCustomer4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmCustomer4Printing extends CrmCustomerDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoCrmCustomer4Printing extends CrmCustomerDTO
     /**
      * Set lockReasonDesc value
      * @param string $lockReasonDesc
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCustomer4Printing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomer4Printing
      */
     public function setLockReasonDesc(?string $lockReasonDesc = null): self
     {

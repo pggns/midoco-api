@@ -15,6 +15,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * or tasks for the user to print other documents)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AnnounceBookingMessageResponse extends AbstractStructBase
 {
     /**
@@ -42,20 +43,31 @@ class AnnounceBookingMessageResponse extends AbstractStructBase
      */
     protected ?string $unitName = null;
     /**
+     * The message
+     * Meta information extracted from the WSDL
+     * - documentation: An error message or the reason the import was ignored - only filled in test systems.
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $message = null;
+    /**
      * Constructor method for AnnounceBookingMessageResponse
      * @uses AnnounceBookingMessageResponse::setOrderId()
      * @uses AnnounceBookingMessageResponse::setOrderNo()
      * @uses AnnounceBookingMessageResponse::setUnitName()
+     * @uses AnnounceBookingMessageResponse::setMessage()
      * @param int $orderId
      * @param int $orderNo
      * @param string $unitName
+     * @param string $message
      */
-    public function __construct(?int $orderId = null, ?int $orderNo = null, ?string $unitName = null)
+    public function __construct(?int $orderId = null, ?int $orderNo = null, ?string $unitName = null, ?string $message = null)
     {
         $this
             ->setOrderId($orderId)
             ->setOrderNo($orderNo)
-            ->setUnitName($unitName);
+            ->setUnitName($unitName)
+            ->setMessage($message);
     }
     /**
      * Get OrderId value
@@ -123,6 +135,29 @@ class AnnounceBookingMessageResponse extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($unitName, true), gettype($unitName)), __LINE__);
         }
         $this->unitName = $unitName;
+        
+        return $this;
+    }
+    /**
+     * Get message value
+     * @return string|null
+     */
+    public function getMessage(): ?string
+    {
+        return $this->message;
+    }
+    /**
+     * Set message value
+     * @param string $message
+     * @return \Pggns\MidocoApi\Order\StructType\AnnounceBookingMessageResponse
+     */
+    public function setMessage(?string $message = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($message) && !is_string($message)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($message, true), gettype($message)), __LINE__);
+        }
+        $this->message = $message;
         
         return $this;
     }

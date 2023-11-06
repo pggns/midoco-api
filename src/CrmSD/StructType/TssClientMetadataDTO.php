@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TssClientMetadataDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TssClientMetadataDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientMetadataDTO
      */
     public function setName(?string $name = null): self
     {
@@ -94,7 +95,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientMetadataDTO
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -117,7 +118,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientMetadataDTO
      */
     public function setTssSystem(?string $tssSystem = null): self
     {
@@ -140,7 +141,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientMetadataDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -163,7 +164,7 @@ class TssClientMetadataDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientMetadataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientMetadataDTO
      */
     public function setValue(?string $value = null): self
     {

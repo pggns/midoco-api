@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getTemplateTextForCustomer --- returns the text of the campaign that will be sent to the given customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTemplateTextForCustomerResponse extends AbstractStructBase
 {
     /**

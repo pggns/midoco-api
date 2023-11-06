@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoInvoiceFileFormat StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
 {
     /**
@@ -19,13 +20,13 @@ class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoiceFileFormatContent
-     * @var \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO[]
      */
     protected ?array $MidocoInvoiceFileFormatContent = null;
     /**
      * Constructor method for MidocoInvoiceFileFormat
      * @uses MidocoInvoiceFileFormat::setMidocoInvoiceFileFormatContent()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO[] $midocoInvoiceFileFormatContent
+     * @param \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO[] $midocoInvoiceFileFormatContent
      */
     public function __construct(?array $midocoInvoiceFileFormatContent = null)
     {
@@ -34,19 +35,20 @@ class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
     }
     /**
      * Get MidocoInvoiceFileFormatContent value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO[]
      */
     public function getMidocoInvoiceFileFormatContent(): ?array
     {
         return $this->MidocoInvoiceFileFormatContent;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoiceFileFormatContent method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoiceFileFormatContent method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoiceFileFormatContent method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoiceFileFormatContentForArrayConstraintsFromSetMidocoInvoiceFileFormatContent(?array $values = []): string
+    public static function validateMidocoInvoiceFileFormatContentForArrayConstraintFromSetMidocoInvoiceFileFormatContent(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
         $invalidValues = [];
         foreach ($values as $midocoInvoiceFileFormatMidocoInvoiceFileFormatContentItem) {
             // validation for constraint: itemType
-            if (!$midocoInvoiceFileFormatMidocoInvoiceFileFormatContentItem instanceof \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO) {
+            if (!$midocoInvoiceFileFormatMidocoInvoiceFileFormatContentItem instanceof \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO) {
                 $invalidValues[] = is_object($midocoInvoiceFileFormatMidocoInvoiceFileFormatContentItem) ? get_class($midocoInvoiceFileFormatMidocoInvoiceFileFormatContentItem) : sprintf('%s(%s)', gettype($midocoInvoiceFileFormatMidocoInvoiceFileFormatContentItem), var_export($midocoInvoiceFileFormatMidocoInvoiceFileFormatContentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceFileFormatContent property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceFileFormatContent property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
     /**
      * Set MidocoInvoiceFileFormatContent value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO[] $midocoInvoiceFileFormatContent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat
+     * @param \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO[] $midocoInvoiceFileFormatContent
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceFileFormat
      */
     public function setMidocoInvoiceFileFormatContent(?array $midocoInvoiceFileFormatContent = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoiceFileFormatContentArrayErrorMessage = self::validateMidocoInvoiceFileFormatContentForArrayConstraintsFromSetMidocoInvoiceFileFormatContent($midocoInvoiceFileFormatContent))) {
+        if ('' !== ($midocoInvoiceFileFormatContentArrayErrorMessage = self::validateMidocoInvoiceFileFormatContentForArrayConstraintFromSetMidocoInvoiceFileFormatContent($midocoInvoiceFileFormatContent))) {
             throw new InvalidArgumentException($midocoInvoiceFileFormatContentArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoiceFileFormatContent = $midocoInvoiceFileFormatContent;
@@ -85,14 +87,14 @@ class MidocoInvoiceFileFormat extends InvoiceFileFormatDTO
     /**
      * Add item to MidocoInvoiceFileFormatContent value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceFileFormat
+     * @param \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceFileFormat
      */
-    public function addToMidocoInvoiceFileFormatContent(\Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO $item): self
+    public function addToMidocoInvoiceFileFormatContent(\Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceFileFormatContent property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceFileFormatContent property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceFileFormatContent[] = $item;
         

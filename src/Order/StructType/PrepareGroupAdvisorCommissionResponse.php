@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrepareGroupAdvisorCommissionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrepareGroupAdvisorCommissionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PrepareGroupAdvisorCommissionResponse extends AbstractStructBase
         return $this->GroupAdvisorSettlement;
     }
     /**
-     * This method is responsible for validating the values passed to the setGroupAdvisorSettlement method
+     * This method is responsible for validating the value(s) passed to the setGroupAdvisorSettlement method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGroupAdvisorSettlement method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGroupAdvisorSettlementForArrayConstraintsFromSetGroupAdvisorSettlement(?array $values = []): string
+    public static function validateGroupAdvisorSettlementForArrayConstraintFromSetGroupAdvisorSettlement(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PrepareGroupAdvisorCommissionResponse extends AbstractStructBase
     public function setGroupAdvisorSettlement(?array $groupAdvisorSettlement = null): self
     {
         // validation for constraint: array
-        if ('' !== ($groupAdvisorSettlementArrayErrorMessage = self::validateGroupAdvisorSettlementForArrayConstraintsFromSetGroupAdvisorSettlement($groupAdvisorSettlement))) {
+        if ('' !== ($groupAdvisorSettlementArrayErrorMessage = self::validateGroupAdvisorSettlementForArrayConstraintFromSetGroupAdvisorSettlement($groupAdvisorSettlement))) {
             throw new InvalidArgumentException($groupAdvisorSettlementArrayErrorMessage, __LINE__);
         }
         $this->GroupAdvisorSettlement = $groupAdvisorSettlement;

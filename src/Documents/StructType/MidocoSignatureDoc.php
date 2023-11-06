@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSignatureDoc StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSignatureDoc extends SignatureDocDTO
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoExternalCampaign StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoExternalCampaign extends ExternalCampaignDTO
 {
     /**
@@ -42,12 +43,13 @@ class MidocoExternalCampaign extends ExternalCampaignDTO
         return $this->ExternalCampaignAssignment;
     }
     /**
-     * This method is responsible for validating the values passed to the setExternalCampaignAssignment method
+     * This method is responsible for validating the value(s) passed to the setExternalCampaignAssignment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setExternalCampaignAssignment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateExternalCampaignAssignmentForArrayConstraintsFromSetExternalCampaignAssignment(?array $values = []): string
+    public static function validateExternalCampaignAssignmentForArrayConstraintFromSetExternalCampaignAssignment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class MidocoExternalCampaign extends ExternalCampaignDTO
     public function setExternalCampaignAssignment(?array $externalCampaignAssignment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($externalCampaignAssignmentArrayErrorMessage = self::validateExternalCampaignAssignmentForArrayConstraintsFromSetExternalCampaignAssignment($externalCampaignAssignment))) {
+        if ('' !== ($externalCampaignAssignmentArrayErrorMessage = self::validateExternalCampaignAssignmentForArrayConstraintFromSetExternalCampaignAssignment($externalCampaignAssignment))) {
             throw new InvalidArgumentException($externalCampaignAssignmentArrayErrorMessage, __LINE__);
         }
         $this->ExternalCampaignAssignment = $externalCampaignAssignment;

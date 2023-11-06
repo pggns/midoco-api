@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VoidReceiptRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VoidReceiptRequest extends AbstractStructBase
 {
     /**
@@ -96,12 +97,13 @@ class VoidReceiptRequest extends AbstractStructBase
         return $this->ReceiptPositioninfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setReceiptPositioninfo method
+     * This method is responsible for validating the value(s) passed to the setReceiptPositioninfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setReceiptPositioninfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateReceiptPositioninfoForArrayConstraintsFromSetReceiptPositioninfo(?array $values = []): string
+    public static function validateReceiptPositioninfoForArrayConstraintFromSetReceiptPositioninfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -130,7 +132,7 @@ class VoidReceiptRequest extends AbstractStructBase
     public function setReceiptPositioninfo(?array $receiptPositioninfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($receiptPositioninfoArrayErrorMessage = self::validateReceiptPositioninfoForArrayConstraintsFromSetReceiptPositioninfo($receiptPositioninfo))) {
+        if ('' !== ($receiptPositioninfoArrayErrorMessage = self::validateReceiptPositioninfoForArrayConstraintFromSetReceiptPositioninfo($receiptPositioninfo))) {
             throw new InvalidArgumentException($receiptPositioninfoArrayErrorMessage, __LINE__);
         }
         $this->ReceiptPositioninfo = $receiptPositioninfo;

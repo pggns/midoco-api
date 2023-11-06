@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UpdateLinkedCrmCompaniesToSupplierRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UpdateLinkedCrmCompaniesToSupplierRequest extends AbstractStructBase
 {
     /**

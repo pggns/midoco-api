@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllOrgunitsWithDiversDebitorRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllOrgunitsWithDiversDebitorRequest extends AbstractStructBase
 {
     /**
      * The MidocoDebitor
      * Meta information extracted from the WSDL
      * - ref: MidocoDebitor
-     * @var \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\DebitorDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\DebitorDTO $MidocoDebitor = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\DebitorDTO $MidocoDebitor = null;
     /**
      * Constructor method for GetAllOrgunitsWithDiversDebitorRequest
      * @uses GetAllOrgunitsWithDiversDebitorRequest::setMidocoDebitor()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO $midocoDebitor
+     * @param \Pggns\MidocoApi\Crmsd\StructType\DebitorDTO $midocoDebitor
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\DebitorDTO $midocoDebitor = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\DebitorDTO $midocoDebitor = null)
     {
         $this
             ->setMidocoDebitor($midocoDebitor);
     }
     /**
      * Get MidocoDebitor value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorDTO|null
      */
-    public function getMidocoDebitor(): ?\Pggns\MidocoApi\CrmSD\StructType\DebitorDTO
+    public function getMidocoDebitor(): ?\Pggns\MidocoApi\Crmsd\StructType\DebitorDTO
     {
         return $this->MidocoDebitor;
     }
     /**
      * Set MidocoDebitor value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\DebitorDTO $midocoDebitor
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllOrgunitsWithDiversDebitorRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\DebitorDTO $midocoDebitor
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllOrgunitsWithDiversDebitorRequest
      */
-    public function setMidocoDebitor(?\Pggns\MidocoApi\CrmSD\StructType\DebitorDTO $midocoDebitor = null): self
+    public function setMidocoDebitor(?\Pggns\MidocoApi\Crmsd\StructType\DebitorDTO $midocoDebitor = null): self
     {
         $this->MidocoDebitor = $midocoDebitor;
         

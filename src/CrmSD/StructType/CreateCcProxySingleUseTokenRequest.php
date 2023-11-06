@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateCcProxySingleUseTokenRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
 {
     /**
@@ -47,9 +48,9 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     protected ?string $orgUnit = null;
     /**
      * The emailData
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO $emailData = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO $emailData = null;
     /**
      * Constructor method for CreateCcProxySingleUseTokenRequest
      * @uses CreateCcProxySingleUseTokenRequest::setToken()
@@ -65,9 +66,9 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
      * @param int $lifespanInSeconds
      * @param int $userId
      * @param string $orgUnit
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO $emailData
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO $emailData
      */
-    public function __construct(?string $token = null, ?string $tokenValue = null, ?string $sensitiveId = null, ?int $lifespanInSeconds = null, ?int $userId = null, ?string $orgUnit = null, ?\Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO $emailData = null)
+    public function __construct(?string $token = null, ?string $tokenValue = null, ?string $sensitiveId = null, ?int $lifespanInSeconds = null, ?int $userId = null, ?string $orgUnit = null, ?\Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO $emailData = null)
     {
         $this
             ->setToken($token)
@@ -89,7 +90,7 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     /**
      * Set token value
      * @param string $token
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCcProxySingleUseTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCcProxySingleUseTokenRequest
      */
     public function setToken(?string $token = null): self
     {
@@ -112,7 +113,7 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     /**
      * Set tokenValue value
      * @param string $tokenValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCcProxySingleUseTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCcProxySingleUseTokenRequest
      */
     public function setTokenValue(?string $tokenValue = null): self
     {
@@ -135,7 +136,7 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     /**
      * Set sensitiveId value
      * @param string $sensitiveId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCcProxySingleUseTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCcProxySingleUseTokenRequest
      */
     public function setSensitiveId(?string $sensitiveId = null): self
     {
@@ -158,7 +159,7 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     /**
      * Set lifespanInSeconds value
      * @param int $lifespanInSeconds
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCcProxySingleUseTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCcProxySingleUseTokenRequest
      */
     public function setLifespanInSeconds(?int $lifespanInSeconds = null): self
     {
@@ -181,7 +182,7 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCcProxySingleUseTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCcProxySingleUseTokenRequest
      */
     public function setUserId(?int $userId = null): self
     {
@@ -204,7 +205,7 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCcProxySingleUseTokenRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCcProxySingleUseTokenRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -218,18 +219,18 @@ class CreateCcProxySingleUseTokenRequest extends AbstractStructBase
     }
     /**
      * Get emailData value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO|null
      */
-    public function getEmailData(): ?\Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO
+    public function getEmailData(): ?\Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO
     {
         return $this->emailData;
     }
     /**
      * Set emailData value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO $emailData
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCcProxySingleUseTokenRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO $emailData
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCcProxySingleUseTokenRequest
      */
-    public function setEmailData(?\Pggns\MidocoApi\CrmSD\StructType\CcProxyEmailDataDTO $emailData = null): self
+    public function setEmailData(?\Pggns\MidocoApi\Crmsd\StructType\CcProxyEmailDataDTO $emailData = null): self
     {
         $this->emailData = $emailData;
         

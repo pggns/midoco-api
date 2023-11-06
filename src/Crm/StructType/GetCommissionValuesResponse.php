@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCommissionValues --- returns the list of commission values corresponding to the commission given as parameter
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCommissionValuesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetCommissionValuesResponse extends AbstractStructBase
         return $this->MidocoCommissionValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCommissionValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoCommissionValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCommissionValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCommissionValueForArrayConstraintsFromSetMidocoCommissionValue(?array $values = []): string
+    public static function validateMidocoCommissionValueForArrayConstraintFromSetMidocoCommissionValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetCommissionValuesResponse extends AbstractStructBase
     public function setMidocoCommissionValue(?array $midocoCommissionValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCommissionValueArrayErrorMessage = self::validateMidocoCommissionValueForArrayConstraintsFromSetMidocoCommissionValue($midocoCommissionValue))) {
+        if ('' !== ($midocoCommissionValueArrayErrorMessage = self::validateMidocoCommissionValueForArrayConstraintFromSetMidocoCommissionValue($midocoCommissionValue))) {
             throw new InvalidArgumentException($midocoCommissionValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoCommissionValue = $midocoCommissionValue;

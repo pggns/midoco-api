@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: VerifyPassword checks if the customer password is valid. The e-mail address is required.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VerifyPasswordRequest extends AbstractStructBase
 {
     /**
@@ -49,7 +50,7 @@ class VerifyPasswordRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VerifyPasswordRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VerifyPasswordRequest
      */
     public function setEmail(?string $email = null): self
     {
@@ -72,7 +73,7 @@ class VerifyPasswordRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \Pggns\MidocoApi\CrmSD\StructType\VerifyPasswordRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\VerifyPasswordRequest
      */
     public function setPassword(?string $password = null): self
     {

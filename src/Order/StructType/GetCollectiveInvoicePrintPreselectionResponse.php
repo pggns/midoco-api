@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCollectiveInvoicePrintPreselectionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCollectiveInvoicePrintPreselectionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCollectiveInvoicePrintPreselectionResponse extends AbstractStructBase
         return $this->MidocoCollectiveInvoicePrintPreselectionData;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCollectiveInvoicePrintPreselectionData method
+     * This method is responsible for validating the value(s) passed to the setMidocoCollectiveInvoicePrintPreselectionData method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCollectiveInvoicePrintPreselectionData method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCollectiveInvoicePrintPreselectionDataForArrayConstraintsFromSetMidocoCollectiveInvoicePrintPreselectionData(?array $values = []): string
+    public static function validateMidocoCollectiveInvoicePrintPreselectionDataForArrayConstraintFromSetMidocoCollectiveInvoicePrintPreselectionData(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCollectiveInvoicePrintPreselectionResponse extends AbstractStructBase
     public function setMidocoCollectiveInvoicePrintPreselectionData(?array $midocoCollectiveInvoicePrintPreselectionData = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCollectiveInvoicePrintPreselectionDataArrayErrorMessage = self::validateMidocoCollectiveInvoicePrintPreselectionDataForArrayConstraintsFromSetMidocoCollectiveInvoicePrintPreselectionData($midocoCollectiveInvoicePrintPreselectionData))) {
+        if ('' !== ($midocoCollectiveInvoicePrintPreselectionDataArrayErrorMessage = self::validateMidocoCollectiveInvoicePrintPreselectionDataForArrayConstraintFromSetMidocoCollectiveInvoicePrintPreselectionData($midocoCollectiveInvoicePrintPreselectionData))) {
             throw new InvalidArgumentException($midocoCollectiveInvoicePrintPreselectionDataArrayErrorMessage, __LINE__);
         }
         $this->MidocoCollectiveInvoicePrintPreselectionData = $midocoCollectiveInvoicePrintPreselectionData;

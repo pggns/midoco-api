@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrmPrintTypeNoOfCopiesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmPrintTypeNoOfCopiesRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetCrmPrintTypeNoOfCopiesRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmPrintTypeNoOfCopiesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmPrintTypeNoOfCopiesRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +71,7 @@ class GetCrmPrintTypeNoOfCopiesRequest extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCrmPrintTypeNoOfCopiesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCrmPrintTypeNoOfCopiesRequest
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCountries --- returns the list of countries
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCountriesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetCountriesResponse extends AbstractStructBase
         return $this->MidocoCountryName;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCountryName method
+     * This method is responsible for validating the value(s) passed to the setMidocoCountryName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCountryName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCountryNameForArrayConstraintsFromSetMidocoCountryName(?array $values = []): string
+    public static function validateMidocoCountryNameForArrayConstraintFromSetMidocoCountryName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetCountriesResponse extends AbstractStructBase
     public function setMidocoCountryName(?array $midocoCountryName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCountryNameArrayErrorMessage = self::validateMidocoCountryNameForArrayConstraintsFromSetMidocoCountryName($midocoCountryName))) {
+        if ('' !== ($midocoCountryNameArrayErrorMessage = self::validateMidocoCountryNameForArrayConstraintFromSetMidocoCountryName($midocoCountryName))) {
             throw new InvalidArgumentException($midocoCountryNameArrayErrorMessage, __LINE__);
         }
         $this->MidocoCountryName = $midocoCountryName;

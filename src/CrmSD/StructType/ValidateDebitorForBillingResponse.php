@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: validateDebitorForBilling --- validates if the debitor no supplied for a billing document is a valid one
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidateDebitorForBillingResponse extends AbstractStructBase
 {
     /**
@@ -51,7 +52,7 @@ class ValidateDebitorForBillingResponse extends AbstractStructBase
     /**
      * Set isValid value
      * @param bool $isValid
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateDebitorForBillingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateDebitorForBillingResponse
      */
     public function setIsValid(bool $isValid): self
     {
@@ -74,7 +75,7 @@ class ValidateDebitorForBillingResponse extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateDebitorForBillingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateDebitorForBillingResponse
      */
     public function setDescription(?string $description = null): self
     {

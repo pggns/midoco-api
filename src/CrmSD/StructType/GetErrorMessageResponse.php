@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetErrorMessageResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetErrorMessageResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetErrorMessageResponse extends AbstractStructBase
     /**
      * Set error_text value
      * @param string $error_text
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetErrorMessageResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetErrorMessageResponse
      */
     public function setError_text(?string $error_text = null): self
     {

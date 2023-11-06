@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrgUnitInfoRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrgUnitInfoRequest extends AbstractStructBase
 {
     /**

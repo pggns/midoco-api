@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDuplicateSupplierInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDuplicateSupplierInfo extends AbstractStructBase
 {
     /**
@@ -79,11 +80,6 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
      */
     protected ?bool $duplicateStorno = null;
     /**
-     * The duplicateReservation
-     * @var bool|null
-     */
-    protected ?bool $duplicateReservation = null;
-    /**
      * The duplicateDisabledItemTypes
      * @var bool|null
      */
@@ -108,7 +104,6 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
      * @uses MidocoDuplicateSupplierInfo::setDuplicateAgencies()
      * @uses MidocoDuplicateSupplierInfo::setDuplicateAutoRemarks()
      * @uses MidocoDuplicateSupplierInfo::setDuplicateStorno()
-     * @uses MidocoDuplicateSupplierInfo::setDuplicateReservation()
      * @uses MidocoDuplicateSupplierInfo::setDuplicateDisabledItemTypes()
      * @uses MidocoDuplicateSupplierInfo::setDuplicateSelectAll()
      * @param string $srcSupplierId
@@ -124,11 +119,10 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
      * @param bool $duplicateAgencies
      * @param bool $duplicateAutoRemarks
      * @param bool $duplicateStorno
-     * @param bool $duplicateReservation
      * @param bool $duplicateDisabledItemTypes
      * @param bool $duplicateSelectAll
      */
-    public function __construct(?string $srcSupplierId = null, ?string $destSupplierId = null, ?string $destSupplierName = null, ?bool $duplicateInfo = null, ?bool $duplicateAddress = null, ?bool $duplicatePayment = null, ?bool $duplicateAccounts = null, ?bool $duplicateMediator = null, ?bool $duplicateAgenciesCommission = null, ?bool $duplicateSettlementAccounts = null, ?bool $duplicateAgencies = null, ?bool $duplicateAutoRemarks = null, ?bool $duplicateStorno = null, ?bool $duplicateReservation = null, ?bool $duplicateDisabledItemTypes = null, ?bool $duplicateSelectAll = null)
+    public function __construct(?string $srcSupplierId = null, ?string $destSupplierId = null, ?string $destSupplierName = null, ?bool $duplicateInfo = null, ?bool $duplicateAddress = null, ?bool $duplicatePayment = null, ?bool $duplicateAccounts = null, ?bool $duplicateMediator = null, ?bool $duplicateAgenciesCommission = null, ?bool $duplicateSettlementAccounts = null, ?bool $duplicateAgencies = null, ?bool $duplicateAutoRemarks = null, ?bool $duplicateStorno = null, ?bool $duplicateDisabledItemTypes = null, ?bool $duplicateSelectAll = null)
     {
         $this
             ->setSrcSupplierId($srcSupplierId)
@@ -144,7 +138,6 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
             ->setDuplicateAgencies($duplicateAgencies)
             ->setDuplicateAutoRemarks($duplicateAutoRemarks)
             ->setDuplicateStorno($duplicateStorno)
-            ->setDuplicateReservation($duplicateReservation)
             ->setDuplicateDisabledItemTypes($duplicateDisabledItemTypes)
             ->setDuplicateSelectAll($duplicateSelectAll);
     }
@@ -444,29 +437,6 @@ class MidocoDuplicateSupplierInfo extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($duplicateStorno, true), gettype($duplicateStorno)), __LINE__);
         }
         $this->duplicateStorno = $duplicateStorno;
-        
-        return $this;
-    }
-    /**
-     * Get duplicateReservation value
-     * @return bool|null
-     */
-    public function getDuplicateReservation(): ?bool
-    {
-        return $this->duplicateReservation;
-    }
-    /**
-     * Set duplicateReservation value
-     * @param bool $duplicateReservation
-     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDuplicateSupplierInfo
-     */
-    public function setDuplicateReservation(?bool $duplicateReservation = null): self
-    {
-        // validation for constraint: boolean
-        if (!is_null($duplicateReservation) && !is_bool($duplicateReservation)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($duplicateReservation, true), gettype($duplicateReservation)), __LINE__);
-        }
-        $this->duplicateReservation = $duplicateReservation;
         
         return $this;
     }

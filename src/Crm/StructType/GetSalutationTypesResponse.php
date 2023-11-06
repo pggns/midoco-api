@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getSalutationTypes --- returns the list of salutation types
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSalutationTypesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetSalutationTypesResponse extends AbstractStructBase
         return $this->MidocoSalutationTypeExt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSalutationTypeExt method
+     * This method is responsible for validating the value(s) passed to the setMidocoSalutationTypeExt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSalutationTypeExt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSalutationTypeExtForArrayConstraintsFromSetMidocoSalutationTypeExt(?array $values = []): string
+    public static function validateMidocoSalutationTypeExtForArrayConstraintFromSetMidocoSalutationTypeExt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetSalutationTypesResponse extends AbstractStructBase
     public function setMidocoSalutationTypeExt(?array $midocoSalutationTypeExt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSalutationTypeExtArrayErrorMessage = self::validateMidocoSalutationTypeExtForArrayConstraintsFromSetMidocoSalutationTypeExt($midocoSalutationTypeExt))) {
+        if ('' !== ($midocoSalutationTypeExtArrayErrorMessage = self::validateMidocoSalutationTypeExtForArrayConstraintFromSetMidocoSalutationTypeExt($midocoSalutationTypeExt))) {
             throw new InvalidArgumentException($midocoSalutationTypeExtArrayErrorMessage, __LINE__);
         }
         $this->MidocoSalutationTypeExt = $midocoSalutationTypeExt;

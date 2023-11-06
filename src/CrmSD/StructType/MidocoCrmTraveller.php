@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmTraveller StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmTraveller extends CrmTravellerDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoCrmTraveller extends CrmTravellerDTO
     /**
      * Set fullName value
      * @param string $fullName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmTraveller
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmTraveller
      */
     public function setFullName(?string $fullName = null): self
     {

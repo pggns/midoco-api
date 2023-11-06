@@ -9,8 +9,11 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
  * This class stands for MidocoSellItemType StructType
+ * Meta information extracted from the WSDL
+ * - documentation: Only included if the MILES_AND_MORE adapter is assigned to the org.-unit and this detail is requested.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSellItemType extends SellItemDTO
 {
     /**
@@ -178,6 +181,33 @@ class MidocoSellItemType extends SellItemDTO
      */
     protected ?\Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO $MidocoSellItemEinvoice = null;
     /**
+     * The MidocoEnrichmentCreditCard
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * - ref: MidocoEnrichmentCreditCard
+     * @var \Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO|null
+     */
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO $MidocoEnrichmentCreditCard = null;
+    /**
+     * The MidocoMilesAndMoreEarnInfo
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * - ref: MidocoMilesAndMoreEarnInfo
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType|null
+     */
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType $MidocoMilesAndMoreEarnInfo = null;
+    /**
+     * The MidocoOrderNotice
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoOrderNotice
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice[]
+     */
+    protected ?array $MidocoOrderNotice = null;
+    /**
      * The unitAlias
      * @var string|null
      */
@@ -185,7 +215,7 @@ class MidocoSellItemType extends SellItemDTO
     /**
      * The isPackageChild
      * Meta information extracted from the WSDL
-     * - documentation: true = is child of a package Warning! This is new since 14.7.1, rearly used. Maybe there is better solution to extends the MidocoSellItem with ParentMidocoSellItem?
+     * - documentation: true = is child of a package Warning! This is new since 14.7.1, rarely used. Maybe there is a better solution to extends the MidocoSellItem with ParentMidocoSellItem?
      * @var bool|null
      */
     protected ?bool $isPackageChild = null;
@@ -194,6 +224,11 @@ class MidocoSellItemType extends SellItemDTO
      * @var int|null
      */
     protected ?int $billingStatus = null;
+    /**
+     * The incomingInvoiceStatus
+     * @var int|null
+     */
+    protected ?int $incomingInvoiceStatus = null;
     /**
      * The is_deletable
      * @var bool|null
@@ -230,9 +265,13 @@ class MidocoSellItemType extends SellItemDTO
      * @uses MidocoSellItemType::setMidocoSellItemItem()
      * @uses MidocoSellItemType::setMidocoSellItemSaving()
      * @uses MidocoSellItemType::setMidocoSellItemEinvoice()
+     * @uses MidocoSellItemType::setMidocoEnrichmentCreditCard()
+     * @uses MidocoSellItemType::setMidocoMilesAndMoreEarnInfo()
+     * @uses MidocoSellItemType::setMidocoOrderNotice()
      * @uses MidocoSellItemType::setUnitAlias()
      * @uses MidocoSellItemType::setIsPackageChild()
      * @uses MidocoSellItemType::setBillingStatus()
+     * @uses MidocoSellItemType::setIncomingInvoiceStatus()
      * @uses MidocoSellItemType::setIs_deletable()
      * @uses MidocoSellItemType::setDisplayedItemPrice()
      * @uses MidocoSellItemType::setDisplayedCurrency()
@@ -255,14 +294,18 @@ class MidocoSellItemType extends SellItemDTO
      * @param \Pggns\MidocoApi\Orderlists\StructType\SellItemItemDTO $midocoSellItemItem
      * @param \Pggns\MidocoApi\Orderlists\StructType\SellItemSavingDTO[] $midocoSellItemSaving
      * @param \Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO $midocoSellItemEinvoice
+     * @param \Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO $midocoEnrichmentCreditCard
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType $midocoMilesAndMoreEarnInfo
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice[] $midocoOrderNotice
      * @param string $unitAlias
      * @param bool $isPackageChild
      * @param int $billingStatus
+     * @param int $incomingInvoiceStatus
      * @param bool $is_deletable
      * @param float $displayedItemPrice
      * @param string $displayedCurrency
      */
-    public function __construct(?array $midocoPriceDetail = null, ?array $midocoOnlinePaymentTransaction = null, ?array $midocoSellPassenger = null, ?array $midocoSellRemark = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentItem $midocoDocumentItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelItemType $midocoTravelItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\ManualitemDTO $midocoManualItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO $midocoCalcItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO $midocoPackageInfo = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemPricing $midocoSellItemPricing = null, ?array $midocoSellItemError = null, ?array $midocoSellItem = null, ?array $revenueBookingInfo = null, ?array $midocoSellItemAttribute = null, ?array $midocoSellItemVatDivision = null, ?array $midocoSellDetailsPrice = null, ?\Pggns\MidocoApi\Orderlists\StructType\SellItemItemDTO $midocoSellItemItem = null, ?array $midocoSellItemSaving = null, ?\Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO $midocoSellItemEinvoice = null, ?string $unitAlias = null, ?bool $isPackageChild = null, ?int $billingStatus = null, ?bool $is_deletable = null, ?float $displayedItemPrice = null, ?string $displayedCurrency = null)
+    public function __construct(?array $midocoPriceDetail = null, ?array $midocoOnlinePaymentTransaction = null, ?array $midocoSellPassenger = null, ?array $midocoSellRemark = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoDocumentItem $midocoDocumentItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoTravelItemType $midocoTravelItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\ManualitemDTO $midocoManualItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\CalcitemDTO $midocoCalcItem = null, ?\Pggns\MidocoApi\Orderlists\StructType\PackageitemDTO $midocoPackageInfo = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemPricing $midocoSellItemPricing = null, ?array $midocoSellItemError = null, ?array $midocoSellItem = null, ?array $revenueBookingInfo = null, ?array $midocoSellItemAttribute = null, ?array $midocoSellItemVatDivision = null, ?array $midocoSellDetailsPrice = null, ?\Pggns\MidocoApi\Orderlists\StructType\SellItemItemDTO $midocoSellItemItem = null, ?array $midocoSellItemSaving = null, ?\Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO $midocoSellItemEinvoice = null, ?\Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO $midocoEnrichmentCreditCard = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType $midocoMilesAndMoreEarnInfo = null, ?array $midocoOrderNotice = null, ?string $unitAlias = null, ?bool $isPackageChild = null, ?int $billingStatus = null, ?int $incomingInvoiceStatus = null, ?bool $is_deletable = null, ?float $displayedItemPrice = null, ?string $displayedCurrency = null)
     {
         $this
             ->setMidocoPriceDetail($midocoPriceDetail)
@@ -284,9 +327,13 @@ class MidocoSellItemType extends SellItemDTO
             ->setMidocoSellItemItem($midocoSellItemItem)
             ->setMidocoSellItemSaving($midocoSellItemSaving)
             ->setMidocoSellItemEinvoice($midocoSellItemEinvoice)
+            ->setMidocoEnrichmentCreditCard($midocoEnrichmentCreditCard)
+            ->setMidocoMilesAndMoreEarnInfo($midocoMilesAndMoreEarnInfo)
+            ->setMidocoOrderNotice($midocoOrderNotice)
             ->setUnitAlias($unitAlias)
             ->setIsPackageChild($isPackageChild)
             ->setBillingStatus($billingStatus)
+            ->setIncomingInvoiceStatus($incomingInvoiceStatus)
             ->setIs_deletable($is_deletable)
             ->setDisplayedItemPrice($displayedItemPrice)
             ->setDisplayedCurrency($displayedCurrency);
@@ -300,12 +347,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoPriceDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPriceDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoPriceDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPriceDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPriceDetailForArrayConstraintsFromSetMidocoPriceDetail(?array $values = []): string
+    public static function validateMidocoPriceDetailForArrayConstraintFromSetMidocoPriceDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -334,7 +382,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoPriceDetail(?array $midocoPriceDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPriceDetailArrayErrorMessage = self::validateMidocoPriceDetailForArrayConstraintsFromSetMidocoPriceDetail($midocoPriceDetail))) {
+        if ('' !== ($midocoPriceDetailArrayErrorMessage = self::validateMidocoPriceDetailForArrayConstraintFromSetMidocoPriceDetail($midocoPriceDetail))) {
             throw new InvalidArgumentException($midocoPriceDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoPriceDetail = $midocoPriceDetail;
@@ -366,12 +414,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoOnlinePaymentTransaction;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOnlinePaymentTransaction method
+     * This method is responsible for validating the value(s) passed to the setMidocoOnlinePaymentTransaction method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOnlinePaymentTransaction method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOnlinePaymentTransactionForArrayConstraintsFromSetMidocoOnlinePaymentTransaction(?array $values = []): string
+    public static function validateMidocoOnlinePaymentTransactionForArrayConstraintFromSetMidocoOnlinePaymentTransaction(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -400,7 +449,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoOnlinePaymentTransaction(?array $midocoOnlinePaymentTransaction = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOnlinePaymentTransactionArrayErrorMessage = self::validateMidocoOnlinePaymentTransactionForArrayConstraintsFromSetMidocoOnlinePaymentTransaction($midocoOnlinePaymentTransaction))) {
+        if ('' !== ($midocoOnlinePaymentTransactionArrayErrorMessage = self::validateMidocoOnlinePaymentTransactionForArrayConstraintFromSetMidocoOnlinePaymentTransaction($midocoOnlinePaymentTransaction))) {
             throw new InvalidArgumentException($midocoOnlinePaymentTransactionArrayErrorMessage, __LINE__);
         }
         $this->MidocoOnlinePaymentTransaction = $midocoOnlinePaymentTransaction;
@@ -432,12 +481,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellPassenger;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellPassenger method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellPassenger method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellPassenger method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellPassengerForArrayConstraintsFromSetMidocoSellPassenger(?array $values = []): string
+    public static function validateMidocoSellPassengerForArrayConstraintFromSetMidocoSellPassenger(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -466,7 +516,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellPassengerArrayErrorMessage = self::validateMidocoSellPassengerForArrayConstraintsFromSetMidocoSellPassenger($midocoSellPassenger))) {
+        if ('' !== ($midocoSellPassengerArrayErrorMessage = self::validateMidocoSellPassengerForArrayConstraintFromSetMidocoSellPassenger($midocoSellPassenger))) {
             throw new InvalidArgumentException($midocoSellPassengerArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellPassenger = $midocoSellPassenger;
@@ -498,12 +548,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellRemark method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellRemarkForArrayConstraintsFromSetMidocoSellRemark(?array $values = []): string
+    public static function validateMidocoSellRemarkForArrayConstraintFromSetMidocoSellRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -532,7 +583,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellRemark(?array $midocoSellRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellRemarkArrayErrorMessage = self::validateMidocoSellRemarkForArrayConstraintsFromSetMidocoSellRemark($midocoSellRemark))) {
+        if ('' !== ($midocoSellRemarkArrayErrorMessage = self::validateMidocoSellRemarkForArrayConstraintFromSetMidocoSellRemark($midocoSellRemark))) {
             throw new InvalidArgumentException($midocoSellRemarkArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellRemark = $midocoSellRemark;
@@ -678,12 +729,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellItemError;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemError method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemError method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemError method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemErrorForArrayConstraintsFromSetMidocoSellItemError(?array $values = []): string
+    public static function validateMidocoSellItemErrorForArrayConstraintFromSetMidocoSellItemError(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -712,7 +764,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellItemError(?array $midocoSellItemError = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemErrorArrayErrorMessage = self::validateMidocoSellItemErrorForArrayConstraintsFromSetMidocoSellItemError($midocoSellItemError))) {
+        if ('' !== ($midocoSellItemErrorArrayErrorMessage = self::validateMidocoSellItemErrorForArrayConstraintFromSetMidocoSellItemError($midocoSellItemError))) {
             throw new InvalidArgumentException($midocoSellItemErrorArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemError = $midocoSellItemError;
@@ -744,12 +796,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellItem;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItem method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItem method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemForArrayConstraintsFromSetMidocoSellItem(?array $values = []): string
+    public static function validateMidocoSellItemForArrayConstraintFromSetMidocoSellItem(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -778,7 +831,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellItem(?array $midocoSellItem = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemArrayErrorMessage = self::validateMidocoSellItemForArrayConstraintsFromSetMidocoSellItem($midocoSellItem))) {
+        if ('' !== ($midocoSellItemArrayErrorMessage = self::validateMidocoSellItemForArrayConstraintFromSetMidocoSellItem($midocoSellItem))) {
             throw new InvalidArgumentException($midocoSellItemArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItem = $midocoSellItem;
@@ -810,12 +863,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->RevenueBookingInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setRevenueBookingInfo method
+     * This method is responsible for validating the value(s) passed to the setRevenueBookingInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRevenueBookingInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRevenueBookingInfoForArrayConstraintsFromSetRevenueBookingInfo(?array $values = []): string
+    public static function validateRevenueBookingInfoForArrayConstraintFromSetRevenueBookingInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -844,7 +898,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setRevenueBookingInfo(?array $revenueBookingInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($revenueBookingInfoArrayErrorMessage = self::validateRevenueBookingInfoForArrayConstraintsFromSetRevenueBookingInfo($revenueBookingInfo))) {
+        if ('' !== ($revenueBookingInfoArrayErrorMessage = self::validateRevenueBookingInfoForArrayConstraintFromSetRevenueBookingInfo($revenueBookingInfo))) {
             throw new InvalidArgumentException($revenueBookingInfoArrayErrorMessage, __LINE__);
         }
         $this->RevenueBookingInfo = $revenueBookingInfo;
@@ -876,12 +930,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellItemAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemAttributeForArrayConstraintsFromSetMidocoSellItemAttribute(?array $values = []): string
+    public static function validateMidocoSellItemAttributeForArrayConstraintFromSetMidocoSellItemAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -910,7 +965,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellItemAttribute(?array $midocoSellItemAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemAttributeArrayErrorMessage = self::validateMidocoSellItemAttributeForArrayConstraintsFromSetMidocoSellItemAttribute($midocoSellItemAttribute))) {
+        if ('' !== ($midocoSellItemAttributeArrayErrorMessage = self::validateMidocoSellItemAttributeForArrayConstraintFromSetMidocoSellItemAttribute($midocoSellItemAttribute))) {
             throw new InvalidArgumentException($midocoSellItemAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemAttribute = $midocoSellItemAttribute;
@@ -942,12 +997,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellItemVatDivision;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemVatDivision method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemVatDivision method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemVatDivision method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemVatDivisionForArrayConstraintsFromSetMidocoSellItemVatDivision(?array $values = []): string
+    public static function validateMidocoSellItemVatDivisionForArrayConstraintFromSetMidocoSellItemVatDivision(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -976,7 +1032,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellItemVatDivision(?array $midocoSellItemVatDivision = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemVatDivisionArrayErrorMessage = self::validateMidocoSellItemVatDivisionForArrayConstraintsFromSetMidocoSellItemVatDivision($midocoSellItemVatDivision))) {
+        if ('' !== ($midocoSellItemVatDivisionArrayErrorMessage = self::validateMidocoSellItemVatDivisionForArrayConstraintFromSetMidocoSellItemVatDivision($midocoSellItemVatDivision))) {
             throw new InvalidArgumentException($midocoSellItemVatDivisionArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemVatDivision = $midocoSellItemVatDivision;
@@ -1008,12 +1064,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellDetailsPrice;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellDetailsPrice method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellDetailsPrice method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellDetailsPrice method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellDetailsPriceForArrayConstraintsFromSetMidocoSellDetailsPrice(?array $values = []): string
+    public static function validateMidocoSellDetailsPriceForArrayConstraintFromSetMidocoSellDetailsPrice(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1042,7 +1099,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellDetailsPrice(?array $midocoSellDetailsPrice = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellDetailsPriceArrayErrorMessage = self::validateMidocoSellDetailsPriceForArrayConstraintsFromSetMidocoSellDetailsPrice($midocoSellDetailsPrice))) {
+        if ('' !== ($midocoSellDetailsPriceArrayErrorMessage = self::validateMidocoSellDetailsPriceForArrayConstraintFromSetMidocoSellDetailsPrice($midocoSellDetailsPrice))) {
             throw new InvalidArgumentException($midocoSellDetailsPriceArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellDetailsPrice = $midocoSellDetailsPrice;
@@ -1093,12 +1150,13 @@ class MidocoSellItemType extends SellItemDTO
         return $this->MidocoSellItemSaving;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemSaving method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemSaving method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemSaving method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemSavingForArrayConstraintsFromSetMidocoSellItemSaving(?array $values = []): string
+    public static function validateMidocoSellItemSavingForArrayConstraintFromSetMidocoSellItemSaving(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1127,7 +1185,7 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellItemSaving(?array $midocoSellItemSaving = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemSavingArrayErrorMessage = self::validateMidocoSellItemSavingForArrayConstraintsFromSetMidocoSellItemSaving($midocoSellItemSaving))) {
+        if ('' !== ($midocoSellItemSavingArrayErrorMessage = self::validateMidocoSellItemSavingForArrayConstraintFromSetMidocoSellItemSaving($midocoSellItemSaving))) {
             throw new InvalidArgumentException($midocoSellItemSavingArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemSaving = $midocoSellItemSaving;
@@ -1166,6 +1224,111 @@ class MidocoSellItemType extends SellItemDTO
     public function setMidocoSellItemEinvoice(?\Pggns\MidocoApi\Orderlists\StructType\SellItemEinvoiceDTO $midocoSellItemEinvoice = null): self
     {
         $this->MidocoSellItemEinvoice = $midocoSellItemEinvoice;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoEnrichmentCreditCard value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO|null
+     */
+    public function getMidocoEnrichmentCreditCard(): ?\Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO
+    {
+        return $this->MidocoEnrichmentCreditCard;
+    }
+    /**
+     * Set MidocoEnrichmentCreditCard value
+     * @param \Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO $midocoEnrichmentCreditCard
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType
+     */
+    public function setMidocoEnrichmentCreditCard(?\Pggns\MidocoApi\Orderlists\StructType\EnrichmentCreditCardDTO $midocoEnrichmentCreditCard = null): self
+    {
+        $this->MidocoEnrichmentCreditCard = $midocoEnrichmentCreditCard;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoMilesAndMoreEarnInfo value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType|null
+     */
+    public function getMidocoMilesAndMoreEarnInfo(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType
+    {
+        return $this->MidocoMilesAndMoreEarnInfo;
+    }
+    /**
+     * Set MidocoMilesAndMoreEarnInfo value
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType $midocoMilesAndMoreEarnInfo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType
+     */
+    public function setMidocoMilesAndMoreEarnInfo(?\Pggns\MidocoApi\Orderlists\StructType\MidocoMilesAndMoreEarnInfoType $midocoMilesAndMoreEarnInfo = null): self
+    {
+        $this->MidocoMilesAndMoreEarnInfo = $midocoMilesAndMoreEarnInfo;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoOrderNotice value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice[]
+     */
+    public function getMidocoOrderNotice(): ?array
+    {
+        return $this->MidocoOrderNotice;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderNotice method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderNotice method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoOrderNoticeForArrayConstraintFromSetMidocoOrderNotice(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoSellItemTypeMidocoOrderNoticeItem) {
+            // validation for constraint: itemType
+            if (!$midocoSellItemTypeMidocoOrderNoticeItem instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice) {
+                $invalidValues[] = is_object($midocoSellItemTypeMidocoOrderNoticeItem) ? get_class($midocoSellItemTypeMidocoOrderNoticeItem) : sprintf('%s(%s)', gettype($midocoSellItemTypeMidocoOrderNoticeItem), var_export($midocoSellItemTypeMidocoOrderNoticeItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoOrderNotice property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoOrderNotice value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice[] $midocoOrderNotice
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType
+     */
+    public function setMidocoOrderNotice(?array $midocoOrderNotice = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoOrderNoticeArrayErrorMessage = self::validateMidocoOrderNoticeForArrayConstraintFromSetMidocoOrderNotice($midocoOrderNotice))) {
+            throw new InvalidArgumentException($midocoOrderNoticeArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoOrderNotice = $midocoOrderNotice;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoOrderNotice value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType
+     */
+    public function addToMidocoOrderNotice(\Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderNotice property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\MidocoOrderNotice, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoOrderNotice[] = $item;
         
         return $this;
     }
@@ -1235,6 +1398,29 @@ class MidocoSellItemType extends SellItemDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($billingStatus, true), gettype($billingStatus)), __LINE__);
         }
         $this->billingStatus = $billingStatus;
+        
+        return $this;
+    }
+    /**
+     * Get incomingInvoiceStatus value
+     * @return int|null
+     */
+    public function getIncomingInvoiceStatus(): ?int
+    {
+        return $this->incomingInvoiceStatus;
+    }
+    /**
+     * Set incomingInvoiceStatus value
+     * @param int $incomingInvoiceStatus
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoSellItemType
+     */
+    public function setIncomingInvoiceStatus(?int $incomingInvoiceStatus = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($incomingInvoiceStatus) && !(is_int($incomingInvoiceStatus) || ctype_digit($incomingInvoiceStatus))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($incomingInvoiceStatus, true), gettype($incomingInvoiceStatus)), __LINE__);
+        }
+        $this->incomingInvoiceStatus = $incomingInvoiceStatus;
         
         return $this;
     }

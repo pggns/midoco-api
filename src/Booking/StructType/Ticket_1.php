@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Ticket StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Ticket_1 extends AbstractStructBase
 {
     /**
@@ -88,6 +89,11 @@ class Ticket_1 extends AbstractStructBase
      * @var string|null
      */
     protected ?string $bspValidator = null;
+    /**
+     * The checkDigit
+     * @var string|null
+     */
+    protected ?string $checkDigit = null;
     /**
      * The dateOfIssue
      * Meta information extracted from the WSDL
@@ -200,6 +206,7 @@ class Ticket_1 extends AbstractStructBase
      * @uses Ticket_1::setTicketId()
      * @uses Ticket_1::setBspAgency()
      * @uses Ticket_1::setBspValidator()
+     * @uses Ticket_1::setCheckDigit()
      * @uses Ticket_1::setDateOfIssue()
      * @uses Ticket_1::setTicketSubtypeDescription()
      * @uses Ticket_1::setTicketNumber()
@@ -228,6 +235,7 @@ class Ticket_1 extends AbstractStructBase
      * @param int $ticketId
      * @param string $bspAgency
      * @param string $bspValidator
+     * @param string $checkDigit
      * @param string $dateOfIssue
      * @param string $ticketSubtypeDescription
      * @param string $ticketNumber
@@ -248,7 +256,7 @@ class Ticket_1 extends AbstractStructBase
      * @param string $extPaymentType
      * @param string $emdSubGroup
      */
-    public function __construct(int $bookingPositionRefId, int $travelerRefId, int $ticketPriceRefId, ?array $ticketCoupon = null, ?array $bookingDetailRefId = null, ?\Pggns\MidocoApi\Booking\StructType\CreditCardPayment $creditCardPayment = null, ?int $ticketId = null, ?string $bspAgency = null, ?string $bspValidator = null, ?string $dateOfIssue = null, ?string $ticketSubtypeDescription = null, ?string $ticketNumber = null, ?string $ticketSubtype = null, ?string $ticketType = null, ?string $referencedTicketNumber = null, ?string $exchangeTicketNumber = null, ?bool $isDomestic = null, ?string $ticketPrintType = null, ?string $ticketNumberConj = null, ?string $ticketTariffType = null, ?string $ticketingAgent = null, ?string $ticketingCity = null, ?string $ticketingPcc = null, ?string $travelDate = null, ?string $paymentType = null, ?bool $isInkasso = null, ?string $extPaymentType = null, ?string $emdSubGroup = null)
+    public function __construct(int $bookingPositionRefId, int $travelerRefId, int $ticketPriceRefId, ?array $ticketCoupon = null, ?array $bookingDetailRefId = null, ?\Pggns\MidocoApi\Booking\StructType\CreditCardPayment $creditCardPayment = null, ?int $ticketId = null, ?string $bspAgency = null, ?string $bspValidator = null, ?string $checkDigit = null, ?string $dateOfIssue = null, ?string $ticketSubtypeDescription = null, ?string $ticketNumber = null, ?string $ticketSubtype = null, ?string $ticketType = null, ?string $referencedTicketNumber = null, ?string $exchangeTicketNumber = null, ?bool $isDomestic = null, ?string $ticketPrintType = null, ?string $ticketNumberConj = null, ?string $ticketTariffType = null, ?string $ticketingAgent = null, ?string $ticketingCity = null, ?string $ticketingPcc = null, ?string $travelDate = null, ?string $paymentType = null, ?bool $isInkasso = null, ?string $extPaymentType = null, ?string $emdSubGroup = null)
     {
         $this
             ->setBookingPositionRefId($bookingPositionRefId)
@@ -260,6 +268,7 @@ class Ticket_1 extends AbstractStructBase
             ->setTicketId($ticketId)
             ->setBspAgency($bspAgency)
             ->setBspValidator($bspValidator)
+            ->setCheckDigit($checkDigit)
             ->setDateOfIssue($dateOfIssue)
             ->setTicketSubtypeDescription($ticketSubtypeDescription)
             ->setTicketNumber($ticketNumber)
@@ -351,19 +360,20 @@ class Ticket_1 extends AbstractStructBase
     }
     /**
      * Get TicketCoupon value
-     * @return \Pggns\MidocoApi\Booking\StructType\TicketCoupon[]
+     * @return \Pggns\MidocoApi\Booking\StructType\TicketCoupon[]|null
      */
     public function getTicketCoupon(): ?array
     {
-        return isset($this->TicketCoupon) ? $this->TicketCoupon : null;
+        return $this->TicketCoupon ?? null;
     }
     /**
-     * This method is responsible for validating the values passed to the setTicketCoupon method
+     * This method is responsible for validating the value(s) passed to the setTicketCoupon method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTicketCoupon method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTicketCouponForArrayConstraintsFromSetTicketCoupon(?array $values = []): string
+    public static function validateTicketCouponForArrayConstraintFromSetTicketCoupon(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -384,13 +394,13 @@ class Ticket_1 extends AbstractStructBase
         return $message;
     }
     /**
-     * This method is responsible for validating the value passed to the setTicketCoupon method
+     * This method is responsible for validating the value(s) passed to the setTicketCoupon method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTicketCoupon method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateTicketCouponForChoiceConstraintsFromSetTicketCoupon($value): string
+    public function validateTicketCouponForChoiceConstraintFromSetTicketCoupon($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -424,11 +434,11 @@ class Ticket_1 extends AbstractStructBase
     public function setTicketCoupon(?array $ticketCoupon = null): self
     {
         // validation for constraint: array
-        if ('' !== ($ticketCouponArrayErrorMessage = self::validateTicketCouponForArrayConstraintsFromSetTicketCoupon($ticketCoupon))) {
+        if ('' !== ($ticketCouponArrayErrorMessage = self::validateTicketCouponForArrayConstraintFromSetTicketCoupon($ticketCoupon))) {
             throw new InvalidArgumentException($ticketCouponArrayErrorMessage, __LINE__);
         }
         // validation for constraint: choice(TicketCoupon, BookingDetailRefId)
-        if ('' !== ($ticketCouponChoiceErrorMessage = self::validateTicketCouponForChoiceConstraintsFromSetTicketCoupon($ticketCoupon))) {
+        if ('' !== ($ticketCouponChoiceErrorMessage = self::validateTicketCouponForChoiceConstraintFromSetTicketCoupon($ticketCoupon))) {
             throw new InvalidArgumentException($ticketCouponChoiceErrorMessage, __LINE__);
         }
         // validation for constraint: choiceMaxOccurs(1)
@@ -444,13 +454,13 @@ class Ticket_1 extends AbstractStructBase
         return $this;
     }
     /**
-     * This method is responsible for validating the value passed to the addToTicketCoupon method
+     * This method is responsible for validating the value(s) passed to the addToTicketCoupon method
      * This method is willingly generated in order to preserve the one-line inline validation within the addToTicketCoupon method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateItemForChoiceConstraintsFromAddToTicketCoupon($value): string
+    public function validateItemForChoiceConstraintFromAddToTicketCoupon($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -484,7 +494,7 @@ class Ticket_1 extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('The TicketCoupon property can only contain items of type \Pggns\MidocoApi\Booking\StructType\TicketCoupon, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: choice(TicketCoupon, BookingDetailRefId)
-        if ('' !== ($itemChoiceErrorMessage = self::validateItemForChoiceConstraintsFromAddToTicketCoupon($item))) {
+        if ('' !== ($itemChoiceErrorMessage = self::validateItemForChoiceConstraintFromAddToTicketCoupon($item))) {
             throw new InvalidArgumentException($itemChoiceErrorMessage, __LINE__);
         }
         // validation for constraint: choiceMaxOccurs(1)
@@ -497,19 +507,20 @@ class Ticket_1 extends AbstractStructBase
     }
     /**
      * Get BookingDetailRefId value
-     * @return int[]
+     * @return int[]|null
      */
     public function getBookingDetailRefId(): ?array
     {
-        return isset($this->BookingDetailRefId) ? $this->BookingDetailRefId : null;
+        return $this->BookingDetailRefId ?? null;
     }
     /**
-     * This method is responsible for validating the values passed to the setBookingDetailRefId method
+     * This method is responsible for validating the value(s) passed to the setBookingDetailRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBookingDetailRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBookingDetailRefIdForArrayConstraintsFromSetBookingDetailRefId(?array $values = []): string
+    public static function validateBookingDetailRefIdForArrayConstraintFromSetBookingDetailRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -530,13 +541,13 @@ class Ticket_1 extends AbstractStructBase
         return $message;
     }
     /**
-     * This method is responsible for validating the value passed to the setBookingDetailRefId method
+     * This method is responsible for validating the value(s) passed to the setBookingDetailRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBookingDetailRefId method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateBookingDetailRefIdForChoiceConstraintsFromSetBookingDetailRefId($value): string
+    public function validateBookingDetailRefIdForChoiceConstraintFromSetBookingDetailRefId($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -570,11 +581,11 @@ class Ticket_1 extends AbstractStructBase
     public function setBookingDetailRefId(?array $bookingDetailRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bookingDetailRefIdArrayErrorMessage = self::validateBookingDetailRefIdForArrayConstraintsFromSetBookingDetailRefId($bookingDetailRefId))) {
+        if ('' !== ($bookingDetailRefIdArrayErrorMessage = self::validateBookingDetailRefIdForArrayConstraintFromSetBookingDetailRefId($bookingDetailRefId))) {
             throw new InvalidArgumentException($bookingDetailRefIdArrayErrorMessage, __LINE__);
         }
         // validation for constraint: choice(TicketCoupon, BookingDetailRefId)
-        if ('' !== ($bookingDetailRefIdChoiceErrorMessage = self::validateBookingDetailRefIdForChoiceConstraintsFromSetBookingDetailRefId($bookingDetailRefId))) {
+        if ('' !== ($bookingDetailRefIdChoiceErrorMessage = self::validateBookingDetailRefIdForChoiceConstraintFromSetBookingDetailRefId($bookingDetailRefId))) {
             throw new InvalidArgumentException($bookingDetailRefIdChoiceErrorMessage, __LINE__);
         }
         // validation for constraint: choiceMaxOccurs(1)
@@ -590,13 +601,13 @@ class Ticket_1 extends AbstractStructBase
         return $this;
     }
     /**
-     * This method is responsible for validating the value passed to the addToBookingDetailRefId method
+     * This method is responsible for validating the value(s) passed to the addToBookingDetailRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the addToBookingDetailRefId method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateItemForChoiceConstraintsFromAddToBookingDetailRefId($value): string
+    public function validateItemForChoiceConstraintFromAddToBookingDetailRefId($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -630,7 +641,7 @@ class Ticket_1 extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('The BookingDetailRefId property can only contain items of type int, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: choice(TicketCoupon, BookingDetailRefId)
-        if ('' !== ($itemChoiceErrorMessage = self::validateItemForChoiceConstraintsFromAddToBookingDetailRefId($item))) {
+        if ('' !== ($itemChoiceErrorMessage = self::validateItemForChoiceConstraintFromAddToBookingDetailRefId($item))) {
             throw new InvalidArgumentException($itemChoiceErrorMessage, __LINE__);
         }
         // validation for constraint: choiceMaxOccurs(1)
@@ -730,6 +741,29 @@ class Ticket_1 extends AbstractStructBase
         return $this;
     }
     /**
+     * Get checkDigit value
+     * @return string|null
+     */
+    public function getCheckDigit(): ?string
+    {
+        return $this->checkDigit;
+    }
+    /**
+     * Set checkDigit value
+     * @param string $checkDigit
+     * @return \Pggns\MidocoApi\Booking\StructType\Ticket_1
+     */
+    public function setCheckDigit(?string $checkDigit = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($checkDigit) && !is_string($checkDigit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($checkDigit, true), gettype($checkDigit)), __LINE__);
+        }
+        $this->checkDigit = $checkDigit;
+        
+        return $this;
+    }
+    /**
      * Get dateOfIssue value
      * @return string|null
      */
@@ -749,7 +783,7 @@ class Ticket_1 extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($dateOfIssue, true), gettype($dateOfIssue)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($dateOfIssue) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $dateOfIssue)) {
+        if (!is_null($dateOfIssue) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $dateOfIssue)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($dateOfIssue, true)), __LINE__);
         }
         $this->dateOfIssue = $dateOfIssue;
@@ -1081,7 +1115,7 @@ class Ticket_1 extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($travelDate, true), gettype($travelDate)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($travelDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $travelDate)) {
+        if (!is_null($travelDate) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $travelDate)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($travelDate, true)), __LINE__);
         }
         $this->travelDate = $travelDate;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTssClient StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTssClient extends TssClientDTO
 {
     /**
@@ -57,12 +58,13 @@ class MidocoTssClient extends TssClientDTO
         return $this->MidocoTssClientMetadata;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTssClientMetadata method
+     * This method is responsible for validating the value(s) passed to the setMidocoTssClientMetadata method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTssClientMetadata method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTssClientMetadataForArrayConstraintsFromSetMidocoTssClientMetadata(?array $values = []): string
+    public static function validateMidocoTssClientMetadataForArrayConstraintFromSetMidocoTssClientMetadata(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class MidocoTssClient extends TssClientDTO
     public function setMidocoTssClientMetadata(?array $midocoTssClientMetadata = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTssClientMetadataArrayErrorMessage = self::validateMidocoTssClientMetadataForArrayConstraintsFromSetMidocoTssClientMetadata($midocoTssClientMetadata))) {
+        if ('' !== ($midocoTssClientMetadataArrayErrorMessage = self::validateMidocoTssClientMetadataForArrayConstraintFromSetMidocoTssClientMetadata($midocoTssClientMetadata))) {
             throw new InvalidArgumentException($midocoTssClientMetadataArrayErrorMessage, __LINE__);
         }
         $this->MidocoTssClientMetadata = $midocoTssClientMetadata;

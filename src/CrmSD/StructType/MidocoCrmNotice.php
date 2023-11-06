@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmNotice StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmNotice extends CrmNoticeDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoCrmNotice extends CrmNoticeDTO
     /**
      * Set delegationComment value
      * @param string $delegationComment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmNotice
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmNotice
      */
     public function setDelegationComment(?string $delegationComment = null): self
     {

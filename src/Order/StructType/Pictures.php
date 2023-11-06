@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for pictures StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Pictures extends AbstractStructBase
 {
     /**
@@ -57,12 +58,13 @@ class Pictures extends AbstractStructBase
         return $this->picturetype;
     }
     /**
-     * This method is responsible for validating the values passed to the setPicturetype method
+     * This method is responsible for validating the value(s) passed to the setPicturetype method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPicturetype method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePicturetypeForArrayConstraintsFromSetPicturetype(?array $values = []): string
+    public static function validatePicturetypeForArrayConstraintFromSetPicturetype(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class Pictures extends AbstractStructBase
     public function setPicturetype(?array $picturetype = null): self
     {
         // validation for constraint: array
-        if ('' !== ($picturetypeArrayErrorMessage = self::validatePicturetypeForArrayConstraintsFromSetPicturetype($picturetype))) {
+        if ('' !== ($picturetypeArrayErrorMessage = self::validatePicturetypeForArrayConstraintFromSetPicturetype($picturetype))) {
             throw new InvalidArgumentException($picturetypeArrayErrorMessage, __LINE__);
         }
         $this->picturetype = $picturetype;

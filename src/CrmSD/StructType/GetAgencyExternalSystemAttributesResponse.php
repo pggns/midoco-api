@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgencyExternalSystemAttributesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgencyExternalSystemAttributesResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetAgencyExternalSystemAttributesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoExternalSystemAttribute
-     * @var \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO[]
      */
     protected ?array $MidocoExternalSystemAttribute = null;
     /**
      * Constructor method for GetAgencyExternalSystemAttributesResponse
      * @uses GetAgencyExternalSystemAttributesResponse::setMidocoExternalSystemAttribute()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO[] $midocoExternalSystemAttribute
+     * @param \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO[] $midocoExternalSystemAttribute
      */
     public function __construct(?array $midocoExternalSystemAttribute = null)
     {
@@ -34,19 +35,20 @@ class GetAgencyExternalSystemAttributesResponse extends AbstractStructBase
     }
     /**
      * Get MidocoExternalSystemAttribute value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO[]
      */
     public function getMidocoExternalSystemAttribute(): ?array
     {
         return $this->MidocoExternalSystemAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoExternalSystemAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoExternalSystemAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoExternalSystemAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoExternalSystemAttributeForArrayConstraintsFromSetMidocoExternalSystemAttribute(?array $values = []): string
+    public static function validateMidocoExternalSystemAttributeForArrayConstraintFromSetMidocoExternalSystemAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetAgencyExternalSystemAttributesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAgencyExternalSystemAttributesResponseMidocoExternalSystemAttributeItem) {
             // validation for constraint: itemType
-            if (!$getAgencyExternalSystemAttributesResponseMidocoExternalSystemAttributeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO) {
+            if (!$getAgencyExternalSystemAttributesResponseMidocoExternalSystemAttributeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO) {
                 $invalidValues[] = is_object($getAgencyExternalSystemAttributesResponseMidocoExternalSystemAttributeItem) ? get_class($getAgencyExternalSystemAttributesResponseMidocoExternalSystemAttributeItem) : sprintf('%s(%s)', gettype($getAgencyExternalSystemAttributesResponseMidocoExternalSystemAttributeItem), var_export($getAgencyExternalSystemAttributesResponseMidocoExternalSystemAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoExternalSystemAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoExternalSystemAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetAgencyExternalSystemAttributesResponse extends AbstractStructBase
     /**
      * Set MidocoExternalSystemAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO[] $midocoExternalSystemAttribute
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyExternalSystemAttributesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO[] $midocoExternalSystemAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyExternalSystemAttributesResponse
      */
     public function setMidocoExternalSystemAttribute(?array $midocoExternalSystemAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoExternalSystemAttributeArrayErrorMessage = self::validateMidocoExternalSystemAttributeForArrayConstraintsFromSetMidocoExternalSystemAttribute($midocoExternalSystemAttribute))) {
+        if ('' !== ($midocoExternalSystemAttributeArrayErrorMessage = self::validateMidocoExternalSystemAttributeForArrayConstraintFromSetMidocoExternalSystemAttribute($midocoExternalSystemAttribute))) {
             throw new InvalidArgumentException($midocoExternalSystemAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoExternalSystemAttribute = $midocoExternalSystemAttribute;
@@ -85,14 +87,14 @@ class GetAgencyExternalSystemAttributesResponse extends AbstractStructBase
     /**
      * Add item to MidocoExternalSystemAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAgencyExternalSystemAttributesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAgencyExternalSystemAttributesResponse
      */
-    public function addToMidocoExternalSystemAttribute(\Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO $item): self
+    public function addToMidocoExternalSystemAttribute(\Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoExternalSystemAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoExternalSystemAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoExternalSystemAttribute[] = $item;
         

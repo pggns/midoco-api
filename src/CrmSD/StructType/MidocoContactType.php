@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoContactType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoContactType extends ContactTypeDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoContactType extends ContactTypeDTO
     /**
      * Set isLocallyDefined value
      * @param bool $isLocallyDefined
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactType
      */
     public function setIsLocallyDefined(?bool $isLocallyDefined = null): self
     {

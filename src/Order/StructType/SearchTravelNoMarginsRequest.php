@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchTravelNoMarginsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchTravelNoMarginsRequest extends AbstractStructBase
 {
     /**
@@ -128,12 +129,13 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
         return $this->travelNo;
     }
     /**
-     * This method is responsible for validating the values passed to the setTravelNo method
+     * This method is responsible for validating the value(s) passed to the setTravelNo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTravelNo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTravelNoForArrayConstraintsFromSetTravelNo(?array $values = []): string
+    public static function validateTravelNoForArrayConstraintFromSetTravelNo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -162,7 +164,7 @@ class SearchTravelNoMarginsRequest extends AbstractStructBase
     public function setTravelNo(?array $travelNo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($travelNoArrayErrorMessage = self::validateTravelNoForArrayConstraintsFromSetTravelNo($travelNo))) {
+        if ('' !== ($travelNoArrayErrorMessage = self::validateTravelNoForArrayConstraintFromSetTravelNo($travelNo))) {
             throw new InvalidArgumentException($travelNoArrayErrorMessage, __LINE__);
         }
         $this->travelNo = $travelNo;

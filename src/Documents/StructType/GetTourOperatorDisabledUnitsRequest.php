@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: MIDOCO-38078: TourOparatorId can't be set/used with the InsurerId at the same time. To avoid to create 2 Cmds it was implemented in 1 Cmd
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTourOperatorDisabledUnitsRequest extends AbstractStructBase
 {
     /**

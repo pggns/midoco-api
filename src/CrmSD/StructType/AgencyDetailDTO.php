@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AgencyDetailDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AgencyDetailDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyDetailDTO
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -94,7 +95,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyDetailDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -117,7 +118,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set externalSystem value
      * @param string $externalSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyDetailDTO
      */
     public function setExternalSystem(?string $externalSystem = null): self
     {
@@ -140,7 +141,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set invoicingMode value
      * @param int $invoicingMode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyDetailDTO
      */
     public function setInvoicingMode(?int $invoicingMode = null): self
     {
@@ -163,7 +164,7 @@ class AgencyDetailDTO extends AbstractStructBase
     /**
      * Set midocoOrgUnit value
      * @param string $midocoOrgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyDetailDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyDetailDTO
      */
     public function setMidocoOrgUnit(?string $midocoOrgUnit = null): self
     {

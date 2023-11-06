@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: PrintTemplateTextForCustomer --- returns the fotext of the campaign that will be sent to the given customer
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintTemplateTextForCustomerResponse extends AbstractStructBase
 {
     /**

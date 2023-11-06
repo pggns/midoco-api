@@ -11,90 +11,92 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderAccountingInfosResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderAccountingInfosResponse extends AbstractStructBase
 {
     /**
-     * The AccountingInfo
+     * The MidocoOrderAccountingInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - ref: AccountingInfo
-     * @var \Pggns\MidocoApi\Order\StructType\AccountingInfoType[]
+     * - ref: MidocoOrderAccountingInfo
+     * @var \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO[]
      */
-    protected ?array $AccountingInfo = null;
+    protected ?array $MidocoOrderAccountingInfo = null;
     /**
      * Constructor method for GetOrderAccountingInfosResponse
-     * @uses GetOrderAccountingInfosResponse::setAccountingInfo()
-     * @param \Pggns\MidocoApi\Order\StructType\AccountingInfoType[] $accountingInfo
+     * @uses GetOrderAccountingInfosResponse::setMidocoOrderAccountingInfo()
+     * @param \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO[] $midocoOrderAccountingInfo
      */
-    public function __construct(?array $accountingInfo = null)
+    public function __construct(?array $midocoOrderAccountingInfo = null)
     {
         $this
-            ->setAccountingInfo($accountingInfo);
+            ->setMidocoOrderAccountingInfo($midocoOrderAccountingInfo);
     }
     /**
-     * Get AccountingInfo value
-     * @return \Pggns\MidocoApi\Order\StructType\AccountingInfoType[]
+     * Get MidocoOrderAccountingInfo value
+     * @return \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO[]
      */
-    public function getAccountingInfo(): ?array
+    public function getMidocoOrderAccountingInfo(): ?array
     {
-        return $this->AccountingInfo;
+        return $this->MidocoOrderAccountingInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setAccountingInfo method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setAccountingInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderAccountingInfo method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderAccountingInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAccountingInfoForArrayConstraintsFromSetAccountingInfo(?array $values = []): string
+    public static function validateMidocoOrderAccountingInfoForArrayConstraintFromSetMidocoOrderAccountingInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
         }
         $message = '';
         $invalidValues = [];
-        foreach ($values as $getOrderAccountingInfosResponseAccountingInfoItem) {
+        foreach ($values as $getOrderAccountingInfosResponseMidocoOrderAccountingInfoItem) {
             // validation for constraint: itemType
-            if (!$getOrderAccountingInfosResponseAccountingInfoItem instanceof \Pggns\MidocoApi\Order\StructType\AccountingInfoType) {
-                $invalidValues[] = is_object($getOrderAccountingInfosResponseAccountingInfoItem) ? get_class($getOrderAccountingInfosResponseAccountingInfoItem) : sprintf('%s(%s)', gettype($getOrderAccountingInfosResponseAccountingInfoItem), var_export($getOrderAccountingInfosResponseAccountingInfoItem, true));
+            if (!$getOrderAccountingInfosResponseMidocoOrderAccountingInfoItem instanceof \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO) {
+                $invalidValues[] = is_object($getOrderAccountingInfosResponseMidocoOrderAccountingInfoItem) ? get_class($getOrderAccountingInfosResponseMidocoOrderAccountingInfoItem) : sprintf('%s(%s)', gettype($getOrderAccountingInfosResponseMidocoOrderAccountingInfoItem), var_export($getOrderAccountingInfosResponseMidocoOrderAccountingInfoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AccountingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AccountingInfoType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderAccountingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
         return $message;
     }
     /**
-     * Set AccountingInfo value
+     * Set MidocoOrderAccountingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Order\StructType\AccountingInfoType[] $accountingInfo
+     * @param \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO[] $midocoOrderAccountingInfo
      * @return \Pggns\MidocoApi\Order\StructType\GetOrderAccountingInfosResponse
      */
-    public function setAccountingInfo(?array $accountingInfo = null): self
+    public function setMidocoOrderAccountingInfo(?array $midocoOrderAccountingInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($accountingInfoArrayErrorMessage = self::validateAccountingInfoForArrayConstraintsFromSetAccountingInfo($accountingInfo))) {
-            throw new InvalidArgumentException($accountingInfoArrayErrorMessage, __LINE__);
+        if ('' !== ($midocoOrderAccountingInfoArrayErrorMessage = self::validateMidocoOrderAccountingInfoForArrayConstraintFromSetMidocoOrderAccountingInfo($midocoOrderAccountingInfo))) {
+            throw new InvalidArgumentException($midocoOrderAccountingInfoArrayErrorMessage, __LINE__);
         }
-        $this->AccountingInfo = $accountingInfo;
+        $this->MidocoOrderAccountingInfo = $midocoOrderAccountingInfo;
         
         return $this;
     }
     /**
-     * Add item to AccountingInfo value
+     * Add item to MidocoOrderAccountingInfo value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Order\StructType\AccountingInfoType $item
+     * @param \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO $item
      * @return \Pggns\MidocoApi\Order\StructType\GetOrderAccountingInfosResponse
      */
-    public function addToAccountingInfo(\Pggns\MidocoApi\Order\StructType\AccountingInfoType $item): self
+    public function addToMidocoOrderAccountingInfo(\Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\AccountingInfoType) {
-            throw new InvalidArgumentException(sprintf('The AccountingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\AccountingInfoType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderAccountingInfo property can only contain items of type \Pggns\MidocoApi\Order\StructType\OrderAccountingInfoDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
-        $this->AccountingInfo[] = $item;
+        $this->MidocoOrderAccountingInfo[] = $item;
         
         return $this;
     }

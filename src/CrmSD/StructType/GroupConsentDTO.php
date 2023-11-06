@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GroupConsentDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GroupConsentDTO extends AbstractStructBase
 {
     /**
@@ -103,7 +104,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set consentTimestamp value
      * @param string $consentTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setConsentTimestamp(?string $consentTimestamp = null): self
     {
@@ -126,7 +127,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -149,7 +150,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -172,7 +173,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set externalConsentId value
      * @param string $externalConsentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setExternalConsentId(?string $externalConsentId = null): self
     {
@@ -195,7 +196,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set mailingProhibited value
      * @param bool $mailingProhibited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setMailingProhibited(?bool $mailingProhibited = null): self
     {
@@ -218,7 +219,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set mailingStatus value
      * @param string $mailingStatus
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setMailingStatus(?string $mailingStatus = null): self
     {
@@ -241,7 +242,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set mailingStatusModifyDate value
      * @param string $mailingStatusModifyDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setMailingStatusModifyDate(?string $mailingStatusModifyDate = null): self
     {
@@ -264,7 +265,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set mailingStatusModifyUser value
      * @param int $mailingStatusModifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setMailingStatusModifyUser(?int $mailingStatusModifyUser = null): self
     {
@@ -287,7 +288,7 @@ class GroupConsentDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GroupConsentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GroupConsentDTO
      */
     public function setType(?string $type = null): self
     {

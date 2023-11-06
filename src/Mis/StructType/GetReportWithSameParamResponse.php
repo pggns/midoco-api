@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetReportWithSameParamResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetReportWithSameParamResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetReportWithSameParamResponse extends AbstractStructBase
         return $this->JasperReport;
     }
     /**
-     * This method is responsible for validating the values passed to the setJasperReport method
+     * This method is responsible for validating the value(s) passed to the setJasperReport method
      * This method is willingly generated in order to preserve the one-line inline validation within the setJasperReport method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateJasperReportForArrayConstraintsFromSetJasperReport(?array $values = []): string
+    public static function validateJasperReportForArrayConstraintFromSetJasperReport(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetReportWithSameParamResponse extends AbstractStructBase
     public function setJasperReport(?array $jasperReport = null): self
     {
         // validation for constraint: array
-        if ('' !== ($jasperReportArrayErrorMessage = self::validateJasperReportForArrayConstraintsFromSetJasperReport($jasperReport))) {
+        if ('' !== ($jasperReportArrayErrorMessage = self::validateJasperReportForArrayConstraintFromSetJasperReport($jasperReport))) {
             throw new InvalidArgumentException($jasperReportArrayErrorMessage, __LINE__);
         }
         $this->JasperReport = $jasperReport;

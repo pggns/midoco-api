@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VatReconciliationResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VatReconciliationResponse extends AbstractStructBase
 {
     /**
@@ -61,12 +62,13 @@ class VatReconciliationResponse extends AbstractStructBase
         return $this->MidocoVatReconciliation;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVatReconciliation method
+     * This method is responsible for validating the value(s) passed to the setMidocoVatReconciliation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVatReconciliation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVatReconciliationForArrayConstraintsFromSetMidocoVatReconciliation(?array $values = []): string
+    public static function validateMidocoVatReconciliationForArrayConstraintFromSetMidocoVatReconciliation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -95,7 +97,7 @@ class VatReconciliationResponse extends AbstractStructBase
     public function setMidocoVatReconciliation(?array $midocoVatReconciliation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVatReconciliationArrayErrorMessage = self::validateMidocoVatReconciliationForArrayConstraintsFromSetMidocoVatReconciliation($midocoVatReconciliation))) {
+        if ('' !== ($midocoVatReconciliationArrayErrorMessage = self::validateMidocoVatReconciliationForArrayConstraintFromSetMidocoVatReconciliation($midocoVatReconciliation))) {
             throw new InvalidArgumentException($midocoVatReconciliationArrayErrorMessage, __LINE__);
         }
         $this->MidocoVatReconciliation = $midocoVatReconciliation;
@@ -127,12 +129,13 @@ class VatReconciliationResponse extends AbstractStructBase
         return $this->MidocoVatReconciliationSums;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVatReconciliationSums method
+     * This method is responsible for validating the value(s) passed to the setMidocoVatReconciliationSums method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVatReconciliationSums method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVatReconciliationSumsForArrayConstraintsFromSetMidocoVatReconciliationSums(?array $values = []): string
+    public static function validateMidocoVatReconciliationSumsForArrayConstraintFromSetMidocoVatReconciliationSums(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -161,7 +164,7 @@ class VatReconciliationResponse extends AbstractStructBase
     public function setMidocoVatReconciliationSums(?array $midocoVatReconciliationSums = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVatReconciliationSumsArrayErrorMessage = self::validateMidocoVatReconciliationSumsForArrayConstraintsFromSetMidocoVatReconciliationSums($midocoVatReconciliationSums))) {
+        if ('' !== ($midocoVatReconciliationSumsArrayErrorMessage = self::validateMidocoVatReconciliationSumsForArrayConstraintFromSetMidocoVatReconciliationSums($midocoVatReconciliationSums))) {
             throw new InvalidArgumentException($midocoVatReconciliationSumsArrayErrorMessage, __LINE__);
         }
         $this->MidocoVatReconciliationSums = $midocoVatReconciliationSums;

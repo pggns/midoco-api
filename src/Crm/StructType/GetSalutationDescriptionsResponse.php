@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSalutationDescriptionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSalutationDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSalutationDescriptionsResponse extends AbstractStructBase
         return $this->MidocoSalutationDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSalutationDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoSalutationDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSalutationDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSalutationDescriptionForArrayConstraintsFromSetMidocoSalutationDescription(?array $values = []): string
+    public static function validateMidocoSalutationDescriptionForArrayConstraintFromSetMidocoSalutationDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSalutationDescriptionsResponse extends AbstractStructBase
     public function setMidocoSalutationDescription(?array $midocoSalutationDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSalutationDescriptionArrayErrorMessage = self::validateMidocoSalutationDescriptionForArrayConstraintsFromSetMidocoSalutationDescription($midocoSalutationDescription))) {
+        if ('' !== ($midocoSalutationDescriptionArrayErrorMessage = self::validateMidocoSalutationDescriptionForArrayConstraintFromSetMidocoSalutationDescription($midocoSalutationDescription))) {
             throw new InvalidArgumentException($midocoSalutationDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoSalutationDescription = $midocoSalutationDescription;

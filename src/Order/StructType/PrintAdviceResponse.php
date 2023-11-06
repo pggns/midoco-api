@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintAdviceResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintAdviceResponse extends AbstractStructBase
 {
     /**
@@ -59,6 +60,11 @@ class PrintAdviceResponse extends AbstractStructBase
      */
     protected ?string $name = null;
     /**
+     * The printType
+     * @var string|null
+     */
+    protected ?string $printType = null;
+    /**
      * Constructor method for PrintAdviceResponse
      * @uses PrintAdviceResponse::setMidocoMailMessage()
      * @uses PrintAdviceResponse::setMidocoMailDescription4Inexso()
@@ -66,14 +72,16 @@ class PrintAdviceResponse extends AbstractStructBase
      * @uses PrintAdviceResponse::setData()
      * @uses PrintAdviceResponse::setFopMsg()
      * @uses PrintAdviceResponse::setName()
+     * @uses PrintAdviceResponse::setPrintType()
      * @param \Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage
      * @param \Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso
      * @param int[] $printJobIds
      * @param string[] $data
      * @param string[] $fopMsg
      * @param string $name
+     * @param string $printType
      */
-    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null, ?array $printJobIds = null, ?array $data = null, ?array $fopMsg = null, ?string $name = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoMailMessageType $midocoMailMessage = null, ?\Pggns\MidocoApi\Order\StructType\MidocoMailDescription4Inexso $midocoMailDescription4Inexso = null, ?array $printJobIds = null, ?array $data = null, ?array $fopMsg = null, ?string $name = null, ?string $printType = null)
     {
         $this
             ->setMidocoMailMessage($midocoMailMessage)
@@ -81,7 +89,8 @@ class PrintAdviceResponse extends AbstractStructBase
             ->setPrintJobIds($printJobIds)
             ->setData($data)
             ->setFopMsg($fopMsg)
-            ->setName($name);
+            ->setName($name)
+            ->setPrintType($printType);
     }
     /**
      * Get MidocoMailMessage value
@@ -130,12 +139,13 @@ class PrintAdviceResponse extends AbstractStructBase
         return $this->printJobIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintJobIds method
+     * This method is responsible for validating the value(s) passed to the setPrintJobIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintJobIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintJobIdsForArrayConstraintsFromSetPrintJobIds(?array $values = []): string
+    public static function validatePrintJobIdsForArrayConstraintFromSetPrintJobIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -164,7 +174,7 @@ class PrintAdviceResponse extends AbstractStructBase
     public function setPrintJobIds(?array $printJobIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printJobIdsArrayErrorMessage = self::validatePrintJobIdsForArrayConstraintsFromSetPrintJobIds($printJobIds))) {
+        if ('' !== ($printJobIdsArrayErrorMessage = self::validatePrintJobIdsForArrayConstraintFromSetPrintJobIds($printJobIds))) {
             throw new InvalidArgumentException($printJobIdsArrayErrorMessage, __LINE__);
         }
         $this->printJobIds = $printJobIds;
@@ -196,12 +206,13 @@ class PrintAdviceResponse extends AbstractStructBase
         return $this->data;
     }
     /**
-     * This method is responsible for validating the values passed to the setData method
+     * This method is responsible for validating the value(s) passed to the setData method
      * This method is willingly generated in order to preserve the one-line inline validation within the setData method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDataForArrayConstraintsFromSetData(?array $values = []): string
+    public static function validateDataForArrayConstraintFromSetData(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -230,7 +241,7 @@ class PrintAdviceResponse extends AbstractStructBase
     public function setData(?array $data = null): self
     {
         // validation for constraint: array
-        if ('' !== ($dataArrayErrorMessage = self::validateDataForArrayConstraintsFromSetData($data))) {
+        if ('' !== ($dataArrayErrorMessage = self::validateDataForArrayConstraintFromSetData($data))) {
             throw new InvalidArgumentException($dataArrayErrorMessage, __LINE__);
         }
         $this->data = $data;
@@ -262,12 +273,13 @@ class PrintAdviceResponse extends AbstractStructBase
         return $this->fopMsg;
     }
     /**
-     * This method is responsible for validating the values passed to the setFopMsg method
+     * This method is responsible for validating the value(s) passed to the setFopMsg method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFopMsg method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFopMsgForArrayConstraintsFromSetFopMsg(?array $values = []): string
+    public static function validateFopMsgForArrayConstraintFromSetFopMsg(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -296,7 +308,7 @@ class PrintAdviceResponse extends AbstractStructBase
     public function setFopMsg(?array $fopMsg = null): self
     {
         // validation for constraint: array
-        if ('' !== ($fopMsgArrayErrorMessage = self::validateFopMsgForArrayConstraintsFromSetFopMsg($fopMsg))) {
+        if ('' !== ($fopMsgArrayErrorMessage = self::validateFopMsgForArrayConstraintFromSetFopMsg($fopMsg))) {
             throw new InvalidArgumentException($fopMsgArrayErrorMessage, __LINE__);
         }
         $this->fopMsg = $fopMsg;
@@ -339,6 +351,29 @@ class PrintAdviceResponse extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($name, true), gettype($name)), __LINE__);
         }
         $this->name = $name;
+        
+        return $this;
+    }
+    /**
+     * Get printType value
+     * @return string|null
+     */
+    public function getPrintType(): ?string
+    {
+        return $this->printType;
+    }
+    /**
+     * Set printType value
+     * @param string $printType
+     * @return \Pggns\MidocoApi\Order\StructType\PrintAdviceResponse
+     */
+    public function setPrintType(?string $printType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($printType) && !is_string($printType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($printType, true), gettype($printType)), __LINE__);
+        }
+        $this->printType = $printType;
         
         return $this;
     }

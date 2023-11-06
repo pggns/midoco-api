@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UserExportLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UserExportLogDTO extends AbstractStructBase
 {
     /**
@@ -95,7 +96,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set exportName value
      * @param string $exportName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setExportName(?string $exportName = null): self
     {
@@ -118,7 +119,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set exportSize value
      * @param int $exportSize
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setExportSize(?int $exportSize = null): self
     {
@@ -141,7 +142,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set exportTime value
      * @param string $exportTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setExportTime(?string $exportTime = null): self
     {
@@ -164,7 +165,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set exportType value
      * @param string $exportType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setExportType(?string $exportType = null): self
     {
@@ -187,7 +188,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setId(?int $id = null): self
     {
@@ -210,7 +211,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set rowCount value
      * @param int $rowCount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setRowCount(?int $rowCount = null): self
     {
@@ -233,7 +234,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -256,7 +257,7 @@ class UserExportLogDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\UserExportLogDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\UserExportLogDTO
      */
     public function setUserId(?int $userId = null): self
     {

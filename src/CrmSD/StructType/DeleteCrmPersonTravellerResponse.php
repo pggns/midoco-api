@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCrmPersonTravellerResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCrmPersonTravellerResponse extends AbstractStructBase
 {
     /**
@@ -18,33 +19,33 @@ class DeleteCrmPersonTravellerResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmPersonTraveller
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $MidocoCrmPersonTraveller = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $MidocoCrmPersonTraveller = null;
     /**
      * Constructor method for DeleteCrmPersonTravellerResponse
      * @uses DeleteCrmPersonTravellerResponse::setMidocoCrmPersonTraveller()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null)
     {
         $this
             ->setMidocoCrmPersonTraveller($midocoCrmPersonTraveller);
     }
     /**
      * Get MidocoCrmPersonTraveller value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO|null
      */
-    public function getMidocoCrmPersonTraveller(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO
+    public function getMidocoCrmPersonTraveller(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO
     {
         return $this->MidocoCrmPersonTraveller;
     }
     /**
      * Set MidocoCrmPersonTraveller value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCrmPersonTravellerResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCrmPersonTravellerResponse
      */
-    public function setMidocoCrmPersonTraveller(?\Pggns\MidocoApi\CrmSD\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null): self
+    public function setMidocoCrmPersonTraveller(?\Pggns\MidocoApi\Crmsd\StructType\CrmPersonTravellerDTO $midocoCrmPersonTraveller = null): self
     {
         $this->MidocoCrmPersonTraveller = $midocoCrmPersonTraveller;
         

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetConnectionTypeListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetConnectionTypeListResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetConnectionTypeListResponse extends AbstractStructBase
         return $this->MidocoConnectionType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoConnectionType method
+     * This method is responsible for validating the value(s) passed to the setMidocoConnectionType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoConnectionType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoConnectionTypeForArrayConstraintsFromSetMidocoConnectionType(?array $values = []): string
+    public static function validateMidocoConnectionTypeForArrayConstraintFromSetMidocoConnectionType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetConnectionTypeListResponse extends AbstractStructBase
     public function setMidocoConnectionType(?array $midocoConnectionType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoConnectionTypeArrayErrorMessage = self::validateMidocoConnectionTypeForArrayConstraintsFromSetMidocoConnectionType($midocoConnectionType))) {
+        if ('' !== ($midocoConnectionTypeArrayErrorMessage = self::validateMidocoConnectionTypeForArrayConstraintFromSetMidocoConnectionType($midocoConnectionType))) {
             throw new InvalidArgumentException($midocoConnectionTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoConnectionType = $midocoConnectionType;

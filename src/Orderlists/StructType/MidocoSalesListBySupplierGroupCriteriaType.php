@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSalesListBySupplierGroupCriteriaType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSalesListBySupplierGroupCriteriaType extends MidocoSalesListCriteriaType
 {
     /**

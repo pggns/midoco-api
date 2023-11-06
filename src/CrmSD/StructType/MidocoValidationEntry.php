@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoValidationEntry StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoValidationEntry extends MfLocalDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoValidationEntry extends MfLocalDTO
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoValidationEntry
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoValidationEntry
      */
     public function setPosition(?int $position = null): self
     {

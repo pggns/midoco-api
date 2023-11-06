@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SubjectDefDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SubjectDefDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class SubjectDefDTO extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectDefDTO
      */
     public function setId(?string $id = null): self
     {
@@ -110,7 +111,7 @@ class SubjectDefDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectDefDTO
      */
     public function setName(?string $name = null): self
     {
@@ -133,7 +134,7 @@ class SubjectDefDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectDefDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -156,7 +157,7 @@ class SubjectDefDTO extends AbstractStructBase
     /**
      * Set subjectText value
      * @param string $subjectText
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectDefDTO
      */
     public function setSubjectText(?string $subjectText = null): self
     {
@@ -179,7 +180,7 @@ class SubjectDefDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectDefDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -202,7 +203,7 @@ class SubjectDefDTO extends AbstractStructBase
     /**
      * Set useAsDefault value
      * @param bool $useAsDefault
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectDefDTO
      */
     public function setUseAsDefault(?bool $useAsDefault = null): self
     {
@@ -225,7 +226,7 @@ class SubjectDefDTO extends AbstractStructBase
     /**
      * Set useInSubject value
      * @param string $useInSubject
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SubjectDefDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SubjectDefDTO
      */
     public function setUseInSubject(?string $useInSubject = null): self
     {

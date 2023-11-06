@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCustomerLinksRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustomerLinksRequest extends AbstractStructBase
 {
     /**
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The linkType
      * @var int|null
@@ -29,10 +30,10 @@ class GetCustomerLinksRequest extends AbstractStructBase
      * Constructor method for GetCustomerLinksRequest
      * @uses GetCustomerLinksRequest::setMidocoCustomerId()
      * @uses GetCustomerLinksRequest::setLinkType()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
      * @param int $linkType
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $linkType = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $linkType = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -40,18 +41,18 @@ class GetCustomerLinksRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerLinksRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerLinksRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -68,7 +69,7 @@ class GetCustomerLinksRequest extends AbstractStructBase
     /**
      * Set linkType value
      * @param int $linkType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerLinksRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerLinksRequest
      */
     public function setLinkType(?int $linkType = null): self
     {

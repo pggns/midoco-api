@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveTemplate --- save a given template
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveTemplateResponse extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class SaveTemplateResponse extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveTemplateResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveTemplateResponse
      */
     public function setTemplateId(?int $templateId = null): self
     {

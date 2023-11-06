@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetIntroTaskOverviewResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetIntroTaskOverviewResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetIntroTaskOverviewResponse extends AbstractStructBase
         return $this->IntroTaskOverview;
     }
     /**
-     * This method is responsible for validating the values passed to the setIntroTaskOverview method
+     * This method is responsible for validating the value(s) passed to the setIntroTaskOverview method
      * This method is willingly generated in order to preserve the one-line inline validation within the setIntroTaskOverview method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateIntroTaskOverviewForArrayConstraintsFromSetIntroTaskOverview(?array $values = []): string
+    public static function validateIntroTaskOverviewForArrayConstraintFromSetIntroTaskOverview(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetIntroTaskOverviewResponse extends AbstractStructBase
     public function setIntroTaskOverview(?array $introTaskOverview = null): self
     {
         // validation for constraint: array
-        if ('' !== ($introTaskOverviewArrayErrorMessage = self::validateIntroTaskOverviewForArrayConstraintsFromSetIntroTaskOverview($introTaskOverview))) {
+        if ('' !== ($introTaskOverviewArrayErrorMessage = self::validateIntroTaskOverviewForArrayConstraintFromSetIntroTaskOverview($introTaskOverview))) {
             throw new InvalidArgumentException($introTaskOverviewArrayErrorMessage, __LINE__);
         }
         $this->IntroTaskOverview = $introTaskOverview;

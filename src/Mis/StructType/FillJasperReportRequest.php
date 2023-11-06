@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FillJasperReportRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FillJasperReportRequest extends AbstractStructBase
 {
     /**
@@ -57,12 +58,13 @@ class FillJasperReportRequest extends AbstractStructBase
         return $this->MidocoJasperParameterValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoJasperParameterValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoJasperParameterValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoJasperParameterValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoJasperParameterValueForArrayConstraintsFromSetMidocoJasperParameterValue(?array $values = []): string
+    public static function validateMidocoJasperParameterValueForArrayConstraintFromSetMidocoJasperParameterValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -91,7 +93,7 @@ class FillJasperReportRequest extends AbstractStructBase
     public function setMidocoJasperParameterValue(?array $midocoJasperParameterValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoJasperParameterValueArrayErrorMessage = self::validateMidocoJasperParameterValueForArrayConstraintsFromSetMidocoJasperParameterValue($midocoJasperParameterValue))) {
+        if ('' !== ($midocoJasperParameterValueArrayErrorMessage = self::validateMidocoJasperParameterValueForArrayConstraintFromSetMidocoJasperParameterValue($midocoJasperParameterValue))) {
             throw new InvalidArgumentException($midocoJasperParameterValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoJasperParameterValue = $midocoJasperParameterValue;

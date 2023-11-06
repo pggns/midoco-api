@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDocumentNaturesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDocumentNaturesRequest extends AbstractStructBase
 {
     /**
      * The MidocoDocumentNature
      * Meta information extracted from the WSDL
      * - ref: MidocoDocumentNature
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType $MidocoDocumentNature = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType $MidocoDocumentNature = null;
     /**
      * Constructor method for GetDocumentNaturesRequest
      * @uses GetDocumentNaturesRequest::setMidocoDocumentNature()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType $midocoDocumentNature
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType $midocoDocumentNature
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType $midocoDocumentNature = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType $midocoDocumentNature = null)
     {
         $this
             ->setMidocoDocumentNature($midocoDocumentNature);
     }
     /**
      * Get MidocoDocumentNature value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType|null
      */
-    public function getMidocoDocumentNature(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType
+    public function getMidocoDocumentNature(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType
     {
         return $this->MidocoDocumentNature;
     }
     /**
      * Set MidocoDocumentNature value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType $midocoDocumentNature
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDocumentNaturesRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType $midocoDocumentNature
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDocumentNaturesRequest
      */
-    public function setMidocoDocumentNature(?\Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentNatureType $midocoDocumentNature = null): self
+    public function setMidocoDocumentNature(?\Pggns\MidocoApi\Crmsd\StructType\MidocoDocumentNatureType $midocoDocumentNature = null): self
     {
         $this->MidocoDocumentNature = $midocoDocumentNature;
         

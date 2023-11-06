@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BillingNoticeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BillingNoticeDTO extends AbstractStructBase
 {
     /**
@@ -94,6 +95,11 @@ class BillingNoticeDTO extends AbstractStructBase
      */
     protected ?string $notice = null;
     /**
+     * The origin
+     * @var int|null
+     */
+    protected ?int $origin = null;
+    /**
      * The position
      * @var int|null
      */
@@ -131,6 +137,7 @@ class BillingNoticeDTO extends AbstractStructBase
      * @uses BillingNoticeDTO::setModifyTimestamp()
      * @uses BillingNoticeDTO::setModifyUser()
      * @uses BillingNoticeDTO::setNotice()
+     * @uses BillingNoticeDTO::setOrigin()
      * @uses BillingNoticeDTO::setPosition()
      * @uses BillingNoticeDTO::setPriority()
      * @uses BillingNoticeDTO::setStartTime()
@@ -151,12 +158,13 @@ class BillingNoticeDTO extends AbstractStructBase
      * @param string $modifyTimestamp
      * @param int $modifyUser
      * @param string $notice
+     * @param int $origin
      * @param int $position
      * @param int $priority
      * @param string $startTime
      * @param string $taskType
      */
-    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationUser = null, ?int $documentId = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?bool $isSpecialCustomer = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $position = null, ?int $priority = null, ?string $startTime = null, ?string $taskType = null)
+    public function __construct(?bool $asTask = null, ?string $creationOrgunit = null, ?string $creationTimestamp = null, ?int $creationUser = null, ?string $delegationOrgunit = null, ?string $delegationQueue = null, ?int $delegationUser = null, ?int $documentId = null, ?string $dueDate = null, ?string $finishTimestamp = null, ?int $finishUser = null, ?bool $finished = null, ?bool $isSpecialCustomer = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notice = null, ?int $origin = null, ?int $position = null, ?int $priority = null, ?string $startTime = null, ?string $taskType = null)
     {
         $this
             ->setAsTask($asTask)
@@ -175,6 +183,7 @@ class BillingNoticeDTO extends AbstractStructBase
             ->setModifyTimestamp($modifyTimestamp)
             ->setModifyUser($modifyUser)
             ->setNotice($notice)
+            ->setOrigin($origin)
             ->setPosition($position)
             ->setPriority($priority)
             ->setStartTime($startTime)
@@ -545,6 +554,29 @@ class BillingNoticeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($notice, true), gettype($notice)), __LINE__);
         }
         $this->notice = $notice;
+        
+        return $this;
+    }
+    /**
+     * Get origin value
+     * @return int|null
+     */
+    public function getOrigin(): ?int
+    {
+        return $this->origin;
+    }
+    /**
+     * Set origin value
+     * @param int $origin
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingNoticeDTO
+     */
+    public function setOrigin(?int $origin = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($origin) && !(is_int($origin) || ctype_digit($origin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($origin, true), gettype($origin)), __LINE__);
+        }
+        $this->origin = $origin;
         
         return $this;
     }

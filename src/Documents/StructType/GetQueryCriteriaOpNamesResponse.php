@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetQueryCriteriaOpNamesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetQueryCriteriaOpNamesResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetQueryCriteriaOpNamesResponse extends AbstractStructBase
         return $this->CriteriaOpName;
     }
     /**
-     * This method is responsible for validating the values passed to the setCriteriaOpName method
+     * This method is responsible for validating the value(s) passed to the setCriteriaOpName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCriteriaOpName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCriteriaOpNameForArrayConstraintsFromSetCriteriaOpName(?array $values = []): string
+    public static function validateCriteriaOpNameForArrayConstraintFromSetCriteriaOpName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetQueryCriteriaOpNamesResponse extends AbstractStructBase
     public function setCriteriaOpName(?array $criteriaOpName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($criteriaOpNameArrayErrorMessage = self::validateCriteriaOpNameForArrayConstraintsFromSetCriteriaOpName($criteriaOpName))) {
+        if ('' !== ($criteriaOpNameArrayErrorMessage = self::validateCriteriaOpNameForArrayConstraintFromSetCriteriaOpName($criteriaOpName))) {
             throw new InvalidArgumentException($criteriaOpNameArrayErrorMessage, __LINE__);
         }
         $this->CriteriaOpName = $criteriaOpName;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveCampaignForReachable --- saves the campaign, but includes only the customers that does not have the mailing_prohibited field set to TRUE
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCampaignForReachableResponse extends AbstractStructBase
 {
     /**

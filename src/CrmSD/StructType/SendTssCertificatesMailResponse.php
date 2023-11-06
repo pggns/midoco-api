@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SendTssCertificatesMailResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SendTssCertificatesMailResponse extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class SendTssCertificatesMailResponse extends AbstractStructBase
     /**
      * Set successful value
      * @param bool $successful
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssCertificatesMailResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssCertificatesMailResponse
      */
     public function setSuccessful(?bool $successful = false): self
     {

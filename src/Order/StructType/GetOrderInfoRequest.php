@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderInfoRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderInfoRequest extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetOrderInfoRequest extends AbstractStructBase
         return $this->OrderInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrderInfo method
+     * This method is responsible for validating the value(s) passed to the setOrderInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrderInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrderInfoForArrayConstraintsFromSetOrderInfo(?array $values = []): string
+    public static function validateOrderInfoForArrayConstraintFromSetOrderInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetOrderInfoRequest extends AbstractStructBase
     public function setOrderInfo(?array $orderInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orderInfoArrayErrorMessage = self::validateOrderInfoForArrayConstraintsFromSetOrderInfo($orderInfo))) {
+        if ('' !== ($orderInfoArrayErrorMessage = self::validateOrderInfoForArrayConstraintFromSetOrderInfo($orderInfo))) {
             throw new InvalidArgumentException($orderInfoArrayErrorMessage, __LINE__);
         }
         // validation for constraint: maxOccurs(500)

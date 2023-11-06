@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveMidocoChargeOrgUnit --- saves a MidocoAssignedSettlMdocOUnit
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMidocoChargeOrgUnitResponse extends AbstractStructBase
 {
     /**
@@ -20,33 +21,33 @@ class SaveMidocoChargeOrgUnitResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoChargeOu
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $MidocoAssignedMidocoChargeOu = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO $MidocoAssignedMidocoChargeOu = null;
     /**
      * Constructor method for SaveMidocoChargeOrgUnitResponse
      * @uses SaveMidocoChargeOrgUnitResponse::setMidocoAssignedMidocoChargeOu()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu = null)
     {
         $this
             ->setMidocoAssignedMidocoChargeOu($midocoAssignedMidocoChargeOu);
     }
     /**
      * Get MidocoAssignedMidocoChargeOu value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO|null
      */
-    public function getMidocoAssignedMidocoChargeOu(): ?\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO
+    public function getMidocoAssignedMidocoChargeOu(): ?\Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO
     {
         return $this->MidocoAssignedMidocoChargeOu;
     }
     /**
      * Set MidocoAssignedMidocoChargeOu value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMidocoChargeOrgUnitResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMidocoChargeOrgUnitResponse
      */
-    public function setMidocoAssignedMidocoChargeOu(?\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu = null): self
+    public function setMidocoAssignedMidocoChargeOu(?\Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO $midocoAssignedMidocoChargeOu = null): self
     {
         $this->MidocoAssignedMidocoChargeOu = $midocoAssignedMidocoChargeOu;
         

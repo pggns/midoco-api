@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CommunicationHistoryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CommunicationHistoryDTO extends AbstractStructBase
 {
     /**
@@ -119,7 +120,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set commId value
      * @param int $commId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setCommId(?int $commId = null): self
     {
@@ -142,7 +143,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -165,7 +166,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set creationUserId value
      * @param int $creationUserId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setCreationUserId(?int $creationUserId = null): self
     {
@@ -188,7 +189,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -211,7 +212,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set deliveryType value
      * @param string $deliveryType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setDeliveryType(?string $deliveryType = null): self
     {
@@ -234,7 +235,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set documentType value
      * @param string $documentType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setDocumentType(?string $documentType = null): self
     {
@@ -257,7 +258,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -280,7 +281,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set printTime value
      * @param string $printTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setPrintTime(?string $printTime = null): self
     {
@@ -303,7 +304,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set templateName value
      * @param string $templateName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setTemplateName(?string $templateName = null): self
     {
@@ -326,7 +327,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set timePrinted value
      * @param string $timePrinted
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setTimePrinted(?string $timePrinted = null): self
     {
@@ -349,7 +350,7 @@ class CommunicationHistoryDTO extends AbstractStructBase
     /**
      * Set travelNo value
      * @param string $travelNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CommunicationHistoryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CommunicationHistoryDTO
      */
     public function setTravelNo(?string $travelNo = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMatchingFeeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMatchingFeeRequest extends AbstractStructBase
 {
     /**
@@ -1069,12 +1070,13 @@ class GetMatchingFeeRequest extends AbstractStructBase
         return $this->MidocoSellItemAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemAttributeForArrayConstraintsFromSetMidocoSellItemAttribute(?array $values = []): string
+    public static function validateMidocoSellItemAttributeForArrayConstraintFromSetMidocoSellItemAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1103,7 +1105,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     public function setMidocoSellItemAttribute(?array $midocoSellItemAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemAttributeArrayErrorMessage = self::validateMidocoSellItemAttributeForArrayConstraintsFromSetMidocoSellItemAttribute($midocoSellItemAttribute))) {
+        if ('' !== ($midocoSellItemAttributeArrayErrorMessage = self::validateMidocoSellItemAttributeForArrayConstraintFromSetMidocoSellItemAttribute($midocoSellItemAttribute))) {
             throw new InvalidArgumentException($midocoSellItemAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemAttribute = $midocoSellItemAttribute;
@@ -1135,12 +1137,13 @@ class GetMatchingFeeRequest extends AbstractStructBase
         return $this->MidocoOrderAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderAttributeForArrayConstraintsFromSetMidocoOrderAttribute(?array $values = []): string
+    public static function validateMidocoOrderAttributeForArrayConstraintFromSetMidocoOrderAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1169,7 +1172,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     public function setMidocoOrderAttribute(?array $midocoOrderAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderAttributeArrayErrorMessage = self::validateMidocoOrderAttributeForArrayConstraintsFromSetMidocoOrderAttribute($midocoOrderAttribute))) {
+        if ('' !== ($midocoOrderAttributeArrayErrorMessage = self::validateMidocoOrderAttributeForArrayConstraintFromSetMidocoOrderAttribute($midocoOrderAttribute))) {
             throw new InvalidArgumentException($midocoOrderAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderAttribute = $midocoOrderAttribute;
@@ -1201,12 +1204,13 @@ class GetMatchingFeeRequest extends AbstractStructBase
         return $this->accountId;
     }
     /**
-     * This method is responsible for validating the values passed to the setAccountId method
+     * This method is responsible for validating the value(s) passed to the setAccountId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAccountId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAccountIdForArrayConstraintsFromSetAccountId(?array $values = []): string
+    public static function validateAccountIdForArrayConstraintFromSetAccountId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1235,7 +1239,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     public function setAccountId(?array $accountId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($accountIdArrayErrorMessage = self::validateAccountIdForArrayConstraintsFromSetAccountId($accountId))) {
+        if ('' !== ($accountIdArrayErrorMessage = self::validateAccountIdForArrayConstraintFromSetAccountId($accountId))) {
             throw new InvalidArgumentException($accountIdArrayErrorMessage, __LINE__);
         }
         $this->accountId = $accountId;
@@ -1428,12 +1432,13 @@ class GetMatchingFeeRequest extends AbstractStructBase
         return $this->railTicketType;
     }
     /**
-     * This method is responsible for validating the values passed to the setRailTicketType method
+     * This method is responsible for validating the value(s) passed to the setRailTicketType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRailTicketType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRailTicketTypeForArrayConstraintsFromSetRailTicketType(?array $values = []): string
+    public static function validateRailTicketTypeForArrayConstraintFromSetRailTicketType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1462,7 +1467,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     public function setRailTicketType(?array $railTicketType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($railTicketTypeArrayErrorMessage = self::validateRailTicketTypeForArrayConstraintsFromSetRailTicketType($railTicketType))) {
+        if ('' !== ($railTicketTypeArrayErrorMessage = self::validateRailTicketTypeForArrayConstraintFromSetRailTicketType($railTicketType))) {
             throw new InvalidArgumentException($railTicketTypeArrayErrorMessage, __LINE__);
         }
         $this->railTicketType = $railTicketType;
@@ -1655,12 +1660,13 @@ class GetMatchingFeeRequest extends AbstractStructBase
         return $this->MidocoVatDivision;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVatDivision method
+     * This method is responsible for validating the value(s) passed to the setMidocoVatDivision method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVatDivision method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVatDivisionForArrayConstraintsFromSetMidocoVatDivision(?array $values = []): string
+    public static function validateMidocoVatDivisionForArrayConstraintFromSetMidocoVatDivision(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1689,7 +1695,7 @@ class GetMatchingFeeRequest extends AbstractStructBase
     public function setMidocoVatDivision(?array $midocoVatDivision = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVatDivisionArrayErrorMessage = self::validateMidocoVatDivisionForArrayConstraintsFromSetMidocoVatDivision($midocoVatDivision))) {
+        if ('' !== ($midocoVatDivisionArrayErrorMessage = self::validateMidocoVatDivisionForArrayConstraintFromSetMidocoVatDivision($midocoVatDivision))) {
             throw new InvalidArgumentException($midocoVatDivisionArrayErrorMessage, __LINE__);
         }
         $this->MidocoVatDivision = $midocoVatDivision;
@@ -1768,17 +1774,20 @@ class GetMatchingFeeRequest extends AbstractStructBase
     }
     /**
      * Set extPaymentType value
+     * @uses \Pggns\MidocoApi\Order\EnumType\ExtPaymentType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\ExtPaymentType::getValidValues()
+     * @throws InvalidArgumentException
      * @param string $extPaymentType
      * @return \Pggns\MidocoApi\Order\StructType\GetMatchingFeeRequest
      */
     public function setExtPaymentType(?string $extPaymentType = null): self
     {
-        // validation for constraint: string
-        if (!is_null($extPaymentType) && !is_string($extPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($extPaymentType, true), gettype($extPaymentType)), __LINE__);
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Order\EnumType\ExtPaymentType::valueIsValid($extPaymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\ExtPaymentType', is_array($extPaymentType) ? implode(', ', $extPaymentType) : var_export($extPaymentType, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\ExtPaymentType::getValidValues())), __LINE__);
         }
         // validation for constraint: pattern(CASH, DEBIT, CC, FULL_CREDIT)
-        if (!is_null($extPaymentType) && !preg_match('/CASH|DEBIT|CC|FULL_CREDIT/', $extPaymentType)) {
+        if (!is_null($extPaymentType) && !preg_match('/CASH|DEBIT|CC|FULL_CREDIT/', (string) $extPaymentType)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /CASH|DEBIT|CC|FULL_CREDIT/', var_export($extPaymentType, true)), __LINE__);
         }
         $this->extPaymentType = $extPaymentType;

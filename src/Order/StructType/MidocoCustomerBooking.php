@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerBooking StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerBooking extends AbstractStructBase
 {
     /**
@@ -154,12 +155,13 @@ class MidocoCustomerBooking extends AbstractStructBase
         return $this->PrintTypeId;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintTypeId method
+     * This method is responsible for validating the value(s) passed to the setPrintTypeId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintTypeId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintTypeIdForArrayConstraintsFromSetPrintTypeId(?array $values = []): string
+    public static function validatePrintTypeIdForArrayConstraintFromSetPrintTypeId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -188,7 +190,7 @@ class MidocoCustomerBooking extends AbstractStructBase
     public function setPrintTypeId(?array $printTypeId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printTypeIdArrayErrorMessage = self::validatePrintTypeIdForArrayConstraintsFromSetPrintTypeId($printTypeId))) {
+        if ('' !== ($printTypeIdArrayErrorMessage = self::validatePrintTypeIdForArrayConstraintFromSetPrintTypeId($printTypeId))) {
             throw new InvalidArgumentException($printTypeIdArrayErrorMessage, __LINE__);
         }
         $this->PrintTypeId = $printTypeId;

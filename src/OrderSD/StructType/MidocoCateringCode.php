@@ -11,8 +11,18 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCateringCode StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCateringCode extends CateringDTO
 {
+    /**
+     * The MidocoCateringDescription
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoCateringDescription
+     * @var \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO[]
+     */
+    protected ?array $MidocoCateringDescription = null;
     /**
      * The unitName
      * Meta information extracted from the WSDL
@@ -21,14 +31,94 @@ class MidocoCateringCode extends CateringDTO
      */
     protected ?string $unitName = null;
     /**
-     * Constructor method for MidocoCateringCode
-     * @uses MidocoCateringCode::setUnitName()
-     * @param string $unitName
+     * The displayDescription
+     * Meta information extracted from the WSDL
+     * - documentation: All descriptions are in the MidocoDescription-List, but one is extracted depending on cultureId from a Get-Request, to get the fastest access instead of iterating through the list.
+     * @var string|null
      */
-    public function __construct(?string $unitName = null)
+    protected ?string $displayDescription = null;
+    /**
+     * Constructor method for MidocoCateringCode
+     * @uses MidocoCateringCode::setMidocoCateringDescription()
+     * @uses MidocoCateringCode::setUnitName()
+     * @uses MidocoCateringCode::setDisplayDescription()
+     * @param \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO[] $midocoCateringDescription
+     * @param string $unitName
+     * @param string $displayDescription
+     */
+    public function __construct(?array $midocoCateringDescription = null, ?string $unitName = null, ?string $displayDescription = null)
     {
         $this
-            ->setUnitName($unitName);
+            ->setMidocoCateringDescription($midocoCateringDescription)
+            ->setUnitName($unitName)
+            ->setDisplayDescription($displayDescription);
+    }
+    /**
+     * Get MidocoCateringDescription value
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO[]
+     */
+    public function getMidocoCateringDescription(): ?array
+    {
+        return $this->MidocoCateringDescription;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setMidocoCateringDescription method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCateringDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoCateringDescriptionForArrayConstraintFromSetMidocoCateringDescription(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoCateringCodeMidocoCateringDescriptionItem) {
+            // validation for constraint: itemType
+            if (!$midocoCateringCodeMidocoCateringDescriptionItem instanceof \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO) {
+                $invalidValues[] = is_object($midocoCateringCodeMidocoCateringDescriptionItem) ? get_class($midocoCateringCodeMidocoCateringDescriptionItem) : sprintf('%s(%s)', gettype($midocoCateringCodeMidocoCateringDescriptionItem), var_export($midocoCateringCodeMidocoCateringDescriptionItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoCateringDescription property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoCateringDescription value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO[] $midocoCateringDescription
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode
+     */
+    public function setMidocoCateringDescription(?array $midocoCateringDescription = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoCateringDescriptionArrayErrorMessage = self::validateMidocoCateringDescriptionForArrayConstraintFromSetMidocoCateringDescription($midocoCateringDescription))) {
+            throw new InvalidArgumentException($midocoCateringDescriptionArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoCateringDescription = $midocoCateringDescription;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoCateringDescription value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO $item
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode
+     */
+    public function addToMidocoCateringDescription(\Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCateringDescription property can only contain items of type \Pggns\MidocoApi\OrderSD\StructType\CateringDescriptionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoCateringDescription[] = $item;
+        
+        return $this;
     }
     /**
      * Get unitName value
@@ -50,6 +140,29 @@ class MidocoCateringCode extends CateringDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($unitName, true), gettype($unitName)), __LINE__);
         }
         $this->unitName = $unitName;
+        
+        return $this;
+    }
+    /**
+     * Get displayDescription value
+     * @return string|null
+     */
+    public function getDisplayDescription(): ?string
+    {
+        return $this->displayDescription;
+    }
+    /**
+     * Set displayDescription value
+     * @param string $displayDescription
+     * @return \Pggns\MidocoApi\OrderSD\StructType\MidocoCateringCode
+     */
+    public function setDisplayDescription(?string $displayDescription = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($displayDescription) && !is_string($displayDescription)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($displayDescription, true), gettype($displayDescription)), __LINE__);
+        }
+        $this->displayDescription = $displayDescription;
         
         return $this;
     }

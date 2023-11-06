@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CriteriaValueDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CriteriaValueDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaValueDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -86,7 +87,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set guiPosition value
      * @param int $guiPosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaValueDTO
      */
     public function setGuiPosition(?int $guiPosition = null): self
     {
@@ -109,7 +110,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaValueDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -132,7 +133,7 @@ class CriteriaValueDTO extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CriteriaValueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CriteriaValueDTO
      */
     public function setValue(?string $value = null): self
     {

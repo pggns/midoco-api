@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoSystemOrgunitClosingResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSystemOrgunitClosing
-     * @var \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO[]
      */
     protected ?array $MidocoSystemOrgunitClosing = null;
     /**
      * Constructor method for GetMidocoSystemOrgunitClosingResponse
      * @uses GetMidocoSystemOrgunitClosingResponse::setMidocoSystemOrgunitClosing()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
+     * @param \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
      */
     public function __construct(?array $midocoSystemOrgunitClosing = null)
     {
@@ -34,19 +35,20 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSystemOrgunitClosing value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO[]
      */
     public function getMidocoSystemOrgunitClosing(): ?array
     {
         return $this->MidocoSystemOrgunitClosing;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSystemOrgunitClosing method
+     * This method is responsible for validating the value(s) passed to the setMidocoSystemOrgunitClosing method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSystemOrgunitClosing method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSystemOrgunitClosingForArrayConstraintsFromSetMidocoSystemOrgunitClosing(?array $values = []): string
+    public static function validateMidocoSystemOrgunitClosingForArrayConstraintFromSetMidocoSystemOrgunitClosing(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem) {
             // validation for constraint: itemType
-            if (!$getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem instanceof \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO) {
+            if (!$getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem instanceof \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO) {
                 $invalidValues[] = is_object($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem) ? get_class($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem) : sprintf('%s(%s)', gettype($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem), var_export($getMidocoSystemOrgunitClosingResponseMidocoSystemOrgunitClosingItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
     /**
      * Set MidocoSystemOrgunitClosing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoSystemOrgunitClosingResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO[] $midocoSystemOrgunitClosing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoSystemOrgunitClosingResponse
      */
     public function setMidocoSystemOrgunitClosing(?array $midocoSystemOrgunitClosing = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSystemOrgunitClosingArrayErrorMessage = self::validateMidocoSystemOrgunitClosingForArrayConstraintsFromSetMidocoSystemOrgunitClosing($midocoSystemOrgunitClosing))) {
+        if ('' !== ($midocoSystemOrgunitClosingArrayErrorMessage = self::validateMidocoSystemOrgunitClosingForArrayConstraintFromSetMidocoSystemOrgunitClosing($midocoSystemOrgunitClosing))) {
             throw new InvalidArgumentException($midocoSystemOrgunitClosingArrayErrorMessage, __LINE__);
         }
         $this->MidocoSystemOrgunitClosing = $midocoSystemOrgunitClosing;
@@ -85,14 +87,14 @@ class GetMidocoSystemOrgunitClosingResponse extends AbstractStructBase
     /**
      * Add item to MidocoSystemOrgunitClosing value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoSystemOrgunitClosingResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoSystemOrgunitClosingResponse
      */
-    public function addToMidocoSystemOrgunitClosing(\Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO $item): self
+    public function addToMidocoSystemOrgunitClosing(\Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSystemOrgunitClosing property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSystemOrgunitClosing[] = $item;
         

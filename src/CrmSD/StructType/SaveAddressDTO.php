@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveAddressDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveAddressDTO extends CrmAddressDTO
 {
     /**
@@ -39,7 +40,7 @@ class SaveAddressDTO extends CrmAddressDTO
     /**
      * Set makeDefault value
      * @param bool $makeDefault
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveAddressDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveAddressDTO
      */
     public function setMakeDefault(?bool $makeDefault = null): self
     {

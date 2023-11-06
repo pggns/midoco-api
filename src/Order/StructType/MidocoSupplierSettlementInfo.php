@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSupplierSettlementInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSupplierSettlementInfo extends AbstractStructBase
 {
     /**
@@ -304,12 +305,13 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
         return $this->MidocoSellItemError;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemError method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemError method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemError method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemErrorForArrayConstraintsFromSetMidocoSellItemError(?array $values = []): string
+    public static function validateMidocoSellItemErrorForArrayConstraintFromSetMidocoSellItemError(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -338,7 +340,7 @@ class MidocoSupplierSettlementInfo extends AbstractStructBase
     public function setMidocoSellItemError(?array $midocoSellItemError = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemErrorArrayErrorMessage = self::validateMidocoSellItemErrorForArrayConstraintsFromSetMidocoSellItemError($midocoSellItemError))) {
+        if ('' !== ($midocoSellItemErrorArrayErrorMessage = self::validateMidocoSellItemErrorForArrayConstraintFromSetMidocoSellItemError($midocoSellItemError))) {
             throw new InvalidArgumentException($midocoSellItemErrorArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemError = $midocoSellItemError;

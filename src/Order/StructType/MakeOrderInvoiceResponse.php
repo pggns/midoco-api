@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MakeOrderInvoiceResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MakeOrderInvoiceResponse extends AbstractStructBase
 {
     /**
@@ -109,12 +110,13 @@ class MakeOrderInvoiceResponse extends AbstractStructBase
         return $this->VoidInvoices;
     }
     /**
-     * This method is responsible for validating the values passed to the setVoidInvoices method
+     * This method is responsible for validating the value(s) passed to the setVoidInvoices method
      * This method is willingly generated in order to preserve the one-line inline validation within the setVoidInvoices method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVoidInvoicesForArrayConstraintsFromSetVoidInvoices(?array $values = []): string
+    public static function validateVoidInvoicesForArrayConstraintFromSetVoidInvoices(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -143,7 +145,7 @@ class MakeOrderInvoiceResponse extends AbstractStructBase
     public function setVoidInvoices(?array $voidInvoices = null): self
     {
         // validation for constraint: array
-        if ('' !== ($voidInvoicesArrayErrorMessage = self::validateVoidInvoicesForArrayConstraintsFromSetVoidInvoices($voidInvoices))) {
+        if ('' !== ($voidInvoicesArrayErrorMessage = self::validateVoidInvoicesForArrayConstraintFromSetVoidInvoices($voidInvoices))) {
             throw new InvalidArgumentException($voidInvoicesArrayErrorMessage, __LINE__);
         }
         $this->VoidInvoices = $voidInvoices;
@@ -175,12 +177,13 @@ class MakeOrderInvoiceResponse extends AbstractStructBase
         return $this->VoidPartialInvoice;
     }
     /**
-     * This method is responsible for validating the values passed to the setVoidPartialInvoice method
+     * This method is responsible for validating the value(s) passed to the setVoidPartialInvoice method
      * This method is willingly generated in order to preserve the one-line inline validation within the setVoidPartialInvoice method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVoidPartialInvoiceForArrayConstraintsFromSetVoidPartialInvoice(?array $values = []): string
+    public static function validateVoidPartialInvoiceForArrayConstraintFromSetVoidPartialInvoice(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -209,7 +212,7 @@ class MakeOrderInvoiceResponse extends AbstractStructBase
     public function setVoidPartialInvoice(?array $voidPartialInvoice = null): self
     {
         // validation for constraint: array
-        if ('' !== ($voidPartialInvoiceArrayErrorMessage = self::validateVoidPartialInvoiceForArrayConstraintsFromSetVoidPartialInvoice($voidPartialInvoice))) {
+        if ('' !== ($voidPartialInvoiceArrayErrorMessage = self::validateVoidPartialInvoiceForArrayConstraintFromSetVoidPartialInvoice($voidPartialInvoice))) {
             throw new InvalidArgumentException($voidPartialInvoiceArrayErrorMessage, __LINE__);
         }
         $this->VoidPartialInvoice = $voidPartialInvoice;

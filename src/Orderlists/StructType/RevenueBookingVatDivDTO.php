@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RevenueBookingVatDivDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RevenueBookingVatDivDTO extends AbstractStructBase
 {
+    /**
+     * The bruttoAmount
+     * @var float|null
+     */
+    protected ?float $bruttoAmount = null;
     /**
      * The commenttext
      * @var string|null
@@ -34,6 +40,11 @@ class RevenueBookingVatDivDTO extends AbstractStructBase
      */
     protected ?int $revenueId = null;
     /**
+     * The vatAmount
+     * @var float|null
+     */
+    protected ?float $vatAmount = null;
+    /**
      * The vatCode
      * @var string|null
      */
@@ -45,28 +56,57 @@ class RevenueBookingVatDivDTO extends AbstractStructBase
     protected ?float $vatPercent = null;
     /**
      * Constructor method for RevenueBookingVatDivDTO
+     * @uses RevenueBookingVatDivDTO::setBruttoAmount()
      * @uses RevenueBookingVatDivDTO::setCommenttext()
      * @uses RevenueBookingVatDivDTO::setPosition()
      * @uses RevenueBookingVatDivDTO::setRatio()
      * @uses RevenueBookingVatDivDTO::setRevenueId()
+     * @uses RevenueBookingVatDivDTO::setVatAmount()
      * @uses RevenueBookingVatDivDTO::setVatCode()
      * @uses RevenueBookingVatDivDTO::setVatPercent()
+     * @param float $bruttoAmount
      * @param string $commenttext
      * @param int $position
      * @param float $ratio
      * @param int $revenueId
+     * @param float $vatAmount
      * @param string $vatCode
      * @param float $vatPercent
      */
-    public function __construct(?string $commenttext = null, ?int $position = null, ?float $ratio = null, ?int $revenueId = null, ?string $vatCode = null, ?float $vatPercent = null)
+    public function __construct(?float $bruttoAmount = null, ?string $commenttext = null, ?int $position = null, ?float $ratio = null, ?int $revenueId = null, ?float $vatAmount = null, ?string $vatCode = null, ?float $vatPercent = null)
     {
         $this
+            ->setBruttoAmount($bruttoAmount)
             ->setCommenttext($commenttext)
             ->setPosition($position)
             ->setRatio($ratio)
             ->setRevenueId($revenueId)
+            ->setVatAmount($vatAmount)
             ->setVatCode($vatCode)
             ->setVatPercent($vatPercent);
+    }
+    /**
+     * Get bruttoAmount value
+     * @return float|null
+     */
+    public function getBruttoAmount(): ?float
+    {
+        return $this->bruttoAmount;
+    }
+    /**
+     * Set bruttoAmount value
+     * @param float $bruttoAmount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingVatDivDTO
+     */
+    public function setBruttoAmount(?float $bruttoAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($bruttoAmount) && !(is_float($bruttoAmount) || is_numeric($bruttoAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($bruttoAmount, true), gettype($bruttoAmount)), __LINE__);
+        }
+        $this->bruttoAmount = $bruttoAmount;
+        
+        return $this;
     }
     /**
      * Get commenttext value
@@ -157,6 +197,29 @@ class RevenueBookingVatDivDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($revenueId, true), gettype($revenueId)), __LINE__);
         }
         $this->revenueId = $revenueId;
+        
+        return $this;
+    }
+    /**
+     * Get vatAmount value
+     * @return float|null
+     */
+    public function getVatAmount(): ?float
+    {
+        return $this->vatAmount;
+    }
+    /**
+     * Set vatAmount value
+     * @param float $vatAmount
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingVatDivDTO
+     */
+    public function setVatAmount(?float $vatAmount = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($vatAmount) && !(is_float($vatAmount) || is_numeric($vatAmount))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($vatAmount, true), gettype($vatAmount)), __LINE__);
+        }
+        $this->vatAmount = $vatAmount;
         
         return $this;
     }

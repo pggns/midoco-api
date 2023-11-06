@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FindCustomerOrDebitorRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FindCustomerOrDebitorRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class FindCustomerOrDebitorRequest extends AbstractStructBase
     /**
      * Set searchCode value
      * @param string $searchCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FindCustomerOrDebitorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FindCustomerOrDebitorRequest
      */
     public function setSearchCode(?string $searchCode = null): self
     {

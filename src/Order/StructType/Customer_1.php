@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Customer information, describing the person or company who is to be registered as paying or getting the paperwork for the booked travel (2 entries possible)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Customer_1 extends AbstractStructBase
 {
     /**
@@ -35,9 +36,9 @@ class Customer_1 extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: Address
-     * @var \Pggns\MidocoApi\Order\StructType\Address|null
+     * @var \Pggns\MidocoApi\Order\StructType\Address_1|null
      */
-    protected ?\Pggns\MidocoApi\Order\StructType\Address $Address = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Address_1 $Address = null;
     /**
      * The Communication
      * Meta information extracted from the WSDL
@@ -123,7 +124,7 @@ class Customer_1 extends AbstractStructBase
      * @uses Customer_1::setOverrideExistingOrderCustomer()
      * @param \Pggns\MidocoApi\Order\StructType\PrivateData_1 $privateData
      * @param \Pggns\MidocoApi\Order\StructType\CompanyData_1 $companyData
-     * @param \Pggns\MidocoApi\Order\StructType\Address $address
+     * @param \Pggns\MidocoApi\Order\StructType\Address_1 $address
      * @param \Pggns\MidocoApi\Order\StructType\Communication_1[] $communication
      * @param int[] $creditCardRefId
      * @param int[] $bankAccountRefId
@@ -134,7 +135,7 @@ class Customer_1 extends AbstractStructBase
      * @param string $type
      * @param bool $overrideExistingOrderCustomer
      */
-    public function __construct(?\Pggns\MidocoApi\Order\StructType\PrivateData_1 $privateData = null, ?\Pggns\MidocoApi\Order\StructType\CompanyData_1 $companyData = null, ?\Pggns\MidocoApi\Order\StructType\Address $address = null, ?array $communication = null, ?array $creditCardRefId = null, ?array $bankAccountRefId = null, ?int $midocoCustomerId = null, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?string $type = 'INVOICE', ?bool $overrideExistingOrderCustomer = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PrivateData_1 $privateData = null, ?\Pggns\MidocoApi\Order\StructType\CompanyData_1 $companyData = null, ?\Pggns\MidocoApi\Order\StructType\Address_1 $address = null, ?array $communication = null, ?array $creditCardRefId = null, ?array $bankAccountRefId = null, ?int $midocoCustomerId = null, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?string $type = 'INVOICE', ?bool $overrideExistingOrderCustomer = false)
     {
         $this
             ->setPrivateData($privateData)
@@ -190,18 +191,18 @@ class Customer_1 extends AbstractStructBase
     }
     /**
      * Get Address value
-     * @return \Pggns\MidocoApi\Order\StructType\Address|null
+     * @return \Pggns\MidocoApi\Order\StructType\Address_1|null
      */
-    public function getAddress(): ?\Pggns\MidocoApi\Order\StructType\Address
+    public function getAddress(): ?\Pggns\MidocoApi\Order\StructType\Address_1
     {
         return $this->Address;
     }
     /**
      * Set Address value
-     * @param \Pggns\MidocoApi\Order\StructType\Address $address
+     * @param \Pggns\MidocoApi\Order\StructType\Address_1 $address
      * @return \Pggns\MidocoApi\Order\StructType\Customer_1
      */
-    public function setAddress(?\Pggns\MidocoApi\Order\StructType\Address $address = null): self
+    public function setAddress(?\Pggns\MidocoApi\Order\StructType\Address_1 $address = null): self
     {
         $this->Address = $address;
         
@@ -216,12 +217,13 @@ class Customer_1 extends AbstractStructBase
         return $this->Communication;
     }
     /**
-     * This method is responsible for validating the values passed to the setCommunication method
+     * This method is responsible for validating the value(s) passed to the setCommunication method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCommunication method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCommunicationForArrayConstraintsFromSetCommunication(?array $values = []): string
+    public static function validateCommunicationForArrayConstraintFromSetCommunication(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -250,7 +252,7 @@ class Customer_1 extends AbstractStructBase
     public function setCommunication(?array $communication = null): self
     {
         // validation for constraint: array
-        if ('' !== ($communicationArrayErrorMessage = self::validateCommunicationForArrayConstraintsFromSetCommunication($communication))) {
+        if ('' !== ($communicationArrayErrorMessage = self::validateCommunicationForArrayConstraintFromSetCommunication($communication))) {
             throw new InvalidArgumentException($communicationArrayErrorMessage, __LINE__);
         }
         $this->Communication = $communication;
@@ -282,12 +284,13 @@ class Customer_1 extends AbstractStructBase
         return $this->CreditCardRefId;
     }
     /**
-     * This method is responsible for validating the values passed to the setCreditCardRefId method
+     * This method is responsible for validating the value(s) passed to the setCreditCardRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCreditCardRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCreditCardRefIdForArrayConstraintsFromSetCreditCardRefId(?array $values = []): string
+    public static function validateCreditCardRefIdForArrayConstraintFromSetCreditCardRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -316,7 +319,7 @@ class Customer_1 extends AbstractStructBase
     public function setCreditCardRefId(?array $creditCardRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($creditCardRefIdArrayErrorMessage = self::validateCreditCardRefIdForArrayConstraintsFromSetCreditCardRefId($creditCardRefId))) {
+        if ('' !== ($creditCardRefIdArrayErrorMessage = self::validateCreditCardRefIdForArrayConstraintFromSetCreditCardRefId($creditCardRefId))) {
             throw new InvalidArgumentException($creditCardRefIdArrayErrorMessage, __LINE__);
         }
         $this->CreditCardRefId = $creditCardRefId;
@@ -348,12 +351,13 @@ class Customer_1 extends AbstractStructBase
         return $this->BankAccountRefId;
     }
     /**
-     * This method is responsible for validating the values passed to the setBankAccountRefId method
+     * This method is responsible for validating the value(s) passed to the setBankAccountRefId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBankAccountRefId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBankAccountRefIdForArrayConstraintsFromSetBankAccountRefId(?array $values = []): string
+    public static function validateBankAccountRefIdForArrayConstraintFromSetBankAccountRefId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -382,7 +386,7 @@ class Customer_1 extends AbstractStructBase
     public function setBankAccountRefId(?array $bankAccountRefId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bankAccountRefIdArrayErrorMessage = self::validateBankAccountRefIdForArrayConstraintsFromSetBankAccountRefId($bankAccountRefId))) {
+        if ('' !== ($bankAccountRefIdArrayErrorMessage = self::validateBankAccountRefIdForArrayConstraintFromSetBankAccountRefId($bankAccountRefId))) {
             throw new InvalidArgumentException($bankAccountRefIdArrayErrorMessage, __LINE__);
         }
         $this->BankAccountRefId = $bankAccountRefId;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrdTypeValuesAndDescriptionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrdTypeValuesAndDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -65,12 +66,13 @@ class GetOrdTypeValuesAndDescriptionsResponse extends AbstractStructBase
         return $this->MidocoOrdCriteriaType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrdCriteriaType method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrdCriteriaType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrdCriteriaType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrdCriteriaTypeForArrayConstraintsFromSetMidocoOrdCriteriaType(?array $values = []): string
+    public static function validateMidocoOrdCriteriaTypeForArrayConstraintFromSetMidocoOrdCriteriaType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,7 +101,7 @@ class GetOrdTypeValuesAndDescriptionsResponse extends AbstractStructBase
     public function setMidocoOrdCriteriaType(?array $midocoOrdCriteriaType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrdCriteriaTypeArrayErrorMessage = self::validateMidocoOrdCriteriaTypeForArrayConstraintsFromSetMidocoOrdCriteriaType($midocoOrdCriteriaType))) {
+        if ('' !== ($midocoOrdCriteriaTypeArrayErrorMessage = self::validateMidocoOrdCriteriaTypeForArrayConstraintFromSetMidocoOrdCriteriaType($midocoOrdCriteriaType))) {
             throw new InvalidArgumentException($midocoOrdCriteriaTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrdCriteriaType = $midocoOrdCriteriaType;
@@ -131,12 +133,13 @@ class GetOrdTypeValuesAndDescriptionsResponse extends AbstractStructBase
         return $this->MidocoOrdCriteriaDescriptionCategory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrdCriteriaDescriptionCategory method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrdCriteriaDescriptionCategory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrdCriteriaDescriptionCategory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrdCriteriaDescriptionCategoryForArrayConstraintsFromSetMidocoOrdCriteriaDescriptionCategory(?array $values = []): string
+    public static function validateMidocoOrdCriteriaDescriptionCategoryForArrayConstraintFromSetMidocoOrdCriteriaDescriptionCategory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -165,7 +168,7 @@ class GetOrdTypeValuesAndDescriptionsResponse extends AbstractStructBase
     public function setMidocoOrdCriteriaDescriptionCategory(?array $midocoOrdCriteriaDescriptionCategory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrdCriteriaDescriptionCategoryArrayErrorMessage = self::validateMidocoOrdCriteriaDescriptionCategoryForArrayConstraintsFromSetMidocoOrdCriteriaDescriptionCategory($midocoOrdCriteriaDescriptionCategory))) {
+        if ('' !== ($midocoOrdCriteriaDescriptionCategoryArrayErrorMessage = self::validateMidocoOrdCriteriaDescriptionCategoryForArrayConstraintFromSetMidocoOrdCriteriaDescriptionCategory($midocoOrdCriteriaDescriptionCategory))) {
             throw new InvalidArgumentException($midocoOrdCriteriaDescriptionCategoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrdCriteriaDescriptionCategory = $midocoOrdCriteriaDescriptionCategory;
@@ -197,12 +200,13 @@ class GetOrdTypeValuesAndDescriptionsResponse extends AbstractStructBase
         return $this->GetOrdTypeValuesAndDescriptionsDTO;
     }
     /**
-     * This method is responsible for validating the values passed to the setGetOrdTypeValuesAndDescriptionsDTO method
+     * This method is responsible for validating the value(s) passed to the setGetOrdTypeValuesAndDescriptionsDTO method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGetOrdTypeValuesAndDescriptionsDTO method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGetOrdTypeValuesAndDescriptionsDTOForArrayConstraintsFromSetGetOrdTypeValuesAndDescriptionsDTO(?array $values = []): string
+    public static function validateGetOrdTypeValuesAndDescriptionsDTOForArrayConstraintFromSetGetOrdTypeValuesAndDescriptionsDTO(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -231,7 +235,7 @@ class GetOrdTypeValuesAndDescriptionsResponse extends AbstractStructBase
     public function setGetOrdTypeValuesAndDescriptionsDTO(?array $getOrdTypeValuesAndDescriptionsDTO = null): self
     {
         // validation for constraint: array
-        if ('' !== ($getOrdTypeValuesAndDescriptionsDTOArrayErrorMessage = self::validateGetOrdTypeValuesAndDescriptionsDTOForArrayConstraintsFromSetGetOrdTypeValuesAndDescriptionsDTO($getOrdTypeValuesAndDescriptionsDTO))) {
+        if ('' !== ($getOrdTypeValuesAndDescriptionsDTOArrayErrorMessage = self::validateGetOrdTypeValuesAndDescriptionsDTOForArrayConstraintFromSetGetOrdTypeValuesAndDescriptionsDTO($getOrdTypeValuesAndDescriptionsDTO))) {
             throw new InvalidArgumentException($getOrdTypeValuesAndDescriptionsDTOArrayErrorMessage, __LINE__);
         }
         $this->GetOrdTypeValuesAndDescriptionsDTO = $getOrdTypeValuesAndDescriptionsDTO;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrderHistoryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderHistoryResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrderHistoryResponse extends AbstractStructBase
         return $this->MidocoOrderHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderHistoryForArrayConstraintsFromSetMidocoOrderHistory(?array $values = []): string
+    public static function validateMidocoOrderHistoryForArrayConstraintFromSetMidocoOrderHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrderHistoryResponse extends AbstractStructBase
     public function setMidocoOrderHistory(?array $midocoOrderHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderHistoryArrayErrorMessage = self::validateMidocoOrderHistoryForArrayConstraintsFromSetMidocoOrderHistory($midocoOrderHistory))) {
+        if ('' !== ($midocoOrderHistoryArrayErrorMessage = self::validateMidocoOrderHistoryForArrayConstraintFromSetMidocoOrderHistory($midocoOrderHistory))) {
             throw new InvalidArgumentException($midocoOrderHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderHistory = $midocoOrderHistory;

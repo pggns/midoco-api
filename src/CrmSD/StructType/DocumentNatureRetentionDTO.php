@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DocumentNatureRetentionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DocumentNatureRetentionDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class DocumentNatureRetentionDTO extends AbstractStructBase
     /**
      * Set allowDeleteDocument value
      * @param bool $allowDeleteDocument
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureRetentionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureRetentionDTO
      */
     public function setAllowDeleteDocument(?bool $allowDeleteDocument = null): self
     {
@@ -102,7 +103,7 @@ class DocumentNatureRetentionDTO extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureRetentionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureRetentionDTO
      */
     public function setDocumentId(?int $documentId = null): self
     {
@@ -125,7 +126,7 @@ class DocumentNatureRetentionDTO extends AbstractStructBase
     /**
      * Set modifiableByUser value
      * @param bool $modifiableByUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureRetentionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureRetentionDTO
      */
     public function setModifiableByUser(?bool $modifiableByUser = null): self
     {
@@ -148,7 +149,7 @@ class DocumentNatureRetentionDTO extends AbstractStructBase
     /**
      * Set retentionMonths value
      * @param int $retentionMonths
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureRetentionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureRetentionDTO
      */
     public function setRetentionMonths(?int $retentionMonths = null): self
     {
@@ -171,7 +172,7 @@ class DocumentNatureRetentionDTO extends AbstractStructBase
     /**
      * Set startRetentionPeriod value
      * @param int $startRetentionPeriod
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureRetentionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureRetentionDTO
      */
     public function setStartRetentionPeriod(?int $startRetentionPeriod = null): self
     {
@@ -194,7 +195,7 @@ class DocumentNatureRetentionDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumentNatureRetentionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumentNatureRetentionDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

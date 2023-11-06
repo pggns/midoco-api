@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CustomerMfRuleAttributeType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CustomerMfRuleAttributeType extends AbstractStructBase
 {
     /**
@@ -46,17 +47,17 @@ class CustomerMfRuleAttributeType extends AbstractStructBase
     }
     /**
      * Set name value
-     * @uses \Pggns\MidocoApi\CrmSD\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid()
-     * @uses \Pggns\MidocoApi\CrmSD\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues()
+     * @uses \Pggns\MidocoApi\Crmsd\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid()
+     * @uses \Pggns\MidocoApi\Crmsd\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues()
      * @throws InvalidArgumentException
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerMfRuleAttributeType
      */
     public function setName(?string $name = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\CrmSD\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid($name)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\CrmSD\EnumType\CustomerMfRuleAttributeTypeNames', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\CrmSD\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Crmsd\EnumType\CustomerMfRuleAttributeTypeNames::valueIsValid($name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Crmsd\EnumType\CustomerMfRuleAttributeTypeNames', is_array($name) ? implode(', ', $name) : var_export($name, true), implode(', ', \Pggns\MidocoApi\Crmsd\EnumType\CustomerMfRuleAttributeTypeNames::getValidValues())), __LINE__);
         }
         $this->name = $name;
         
@@ -73,7 +74,7 @@ class CustomerMfRuleAttributeType extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerMfRuleAttributeType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerMfRuleAttributeType
      */
     public function setValue(?string $value = null): self
     {

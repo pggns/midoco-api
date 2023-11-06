@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrdersForTravellerResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrdersForTravellerResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrdersForTravellerResponse extends AbstractStructBase
         return $this->MidocoTravellerOrderInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravellerOrderInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravellerOrderInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravellerOrderInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravellerOrderInfoForArrayConstraintsFromSetMidocoTravellerOrderInfo(?array $values = []): string
+    public static function validateMidocoTravellerOrderInfoForArrayConstraintFromSetMidocoTravellerOrderInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrdersForTravellerResponse extends AbstractStructBase
     public function setMidocoTravellerOrderInfo(?array $midocoTravellerOrderInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravellerOrderInfoArrayErrorMessage = self::validateMidocoTravellerOrderInfoForArrayConstraintsFromSetMidocoTravellerOrderInfo($midocoTravellerOrderInfo))) {
+        if ('' !== ($midocoTravellerOrderInfoArrayErrorMessage = self::validateMidocoTravellerOrderInfoForArrayConstraintFromSetMidocoTravellerOrderInfo($midocoTravellerOrderInfo))) {
             throw new InvalidArgumentException($midocoTravellerOrderInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravellerOrderInfo = $midocoTravellerOrderInfo;

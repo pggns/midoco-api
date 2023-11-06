@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveMisReportParams --- saves the given report parameters
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMisReportParamsResponse extends AbstractStructBase
 {
 }

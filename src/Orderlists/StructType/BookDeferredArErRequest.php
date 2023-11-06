@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BookDeferredArErRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BookDeferredArErRequest extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class BookDeferredArErRequest extends AbstractStructBase
         return $this->midocoDeferralArErOutputList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDeferralArErOutputList method
+     * This method is responsible for validating the value(s) passed to the setMidocoDeferralArErOutputList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDeferralArErOutputList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDeferralArErOutputListForArrayConstraintsFromSetMidocoDeferralArErOutputList(?array $values = []): string
+    public static function validateMidocoDeferralArErOutputListForArrayConstraintFromSetMidocoDeferralArErOutputList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class BookDeferredArErRequest extends AbstractStructBase
     public function setMidocoDeferralArErOutputList(?array $midocoDeferralArErOutputList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDeferralArErOutputListArrayErrorMessage = self::validateMidocoDeferralArErOutputListForArrayConstraintsFromSetMidocoDeferralArErOutputList($midocoDeferralArErOutputList))) {
+        if ('' !== ($midocoDeferralArErOutputListArrayErrorMessage = self::validateMidocoDeferralArErOutputListForArrayConstraintFromSetMidocoDeferralArErOutputList($midocoDeferralArErOutputList))) {
             throw new InvalidArgumentException($midocoDeferralArErOutputListArrayErrorMessage, __LINE__);
         }
         $this->midocoDeferralArErOutputList = $midocoDeferralArErOutputList;

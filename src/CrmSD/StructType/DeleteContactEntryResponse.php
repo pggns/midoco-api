@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteContactEntry --- deletes a specified contact entry. return void
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteContactEntryResponse extends AbstractStructBase
 {
     /**
@@ -50,12 +51,13 @@ class DeleteContactEntryResponse extends AbstractStructBase
         return $this->errors;
     }
     /**
-     * This method is responsible for validating the values passed to the setErrors method
+     * This method is responsible for validating the value(s) passed to the setErrors method
      * This method is willingly generated in order to preserve the one-line inline validation within the setErrors method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateErrorsForArrayConstraintsFromSetErrors(?array $values = []): string
+    public static function validateErrorsForArrayConstraintFromSetErrors(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -79,12 +81,12 @@ class DeleteContactEntryResponse extends AbstractStructBase
      * Set errors value
      * @throws InvalidArgumentException
      * @param string[] $errors
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteContactEntryResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteContactEntryResponse
      */
     public function setErrors(?array $errors = null): self
     {
         // validation for constraint: array
-        if ('' !== ($errorsArrayErrorMessage = self::validateErrorsForArrayConstraintsFromSetErrors($errors))) {
+        if ('' !== ($errorsArrayErrorMessage = self::validateErrorsForArrayConstraintFromSetErrors($errors))) {
             throw new InvalidArgumentException($errorsArrayErrorMessage, __LINE__);
         }
         $this->errors = $errors;
@@ -95,7 +97,7 @@ class DeleteContactEntryResponse extends AbstractStructBase
      * Add item to errors value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteContactEntryResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteContactEntryResponse
      */
     public function addToErrors(string $item): self
     {
@@ -118,7 +120,7 @@ class DeleteContactEntryResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteContactEntryResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteContactEntryResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

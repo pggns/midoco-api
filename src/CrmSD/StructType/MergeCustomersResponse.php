@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: mergeCustomers --- merge 2 customers that are considered to be the same
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MergeCustomersResponse extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class MergeCustomersResponse extends AbstractStructBase
     /**
      * Set customersMerged value
      * @param bool $customersMerged
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MergeCustomersResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MergeCustomersResponse
      */
     public function setCustomersMerged(?bool $customersMerged = null): self
     {

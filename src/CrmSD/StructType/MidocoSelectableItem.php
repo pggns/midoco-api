@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSelectableItem StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSelectableItem extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoSelectableItem extends AbstractStructBase
     /**
      * Set isSelected value
      * @param bool $isSelected
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectableItem
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectableItem
      */
     public function setIsSelected(?bool $isSelected = null): self
     {
@@ -70,7 +71,7 @@ class MidocoSelectableItem extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoSelectableItem
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoSelectableItem
      */
     public function setDescription(?string $description = null): self
     {

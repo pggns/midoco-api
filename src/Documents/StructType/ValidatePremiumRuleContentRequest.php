@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ValidatePremiumRuleContentRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidatePremiumRuleContentRequest extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
         return $this->orgunit;
     }
     /**
-     * This method is responsible for validating the values passed to the setOrgunit method
+     * This method is responsible for validating the value(s) passed to the setOrgunit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setOrgunit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateOrgunitForArrayConstraintsFromSetOrgunit(?array $values = []): string
+    public static function validateOrgunitForArrayConstraintFromSetOrgunit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
     public function setOrgunit(?array $orgunit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($orgunitArrayErrorMessage = self::validateOrgunitForArrayConstraintsFromSetOrgunit($orgunit))) {
+        if ('' !== ($orgunitArrayErrorMessage = self::validateOrgunitForArrayConstraintFromSetOrgunit($orgunit))) {
             throw new InvalidArgumentException($orgunitArrayErrorMessage, __LINE__);
         }
         $this->orgunit = $orgunit;
@@ -125,12 +127,13 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
         return $this->rulebase;
     }
     /**
-     * This method is responsible for validating the values passed to the setRulebase method
+     * This method is responsible for validating the value(s) passed to the setRulebase method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRulebase method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRulebaseForArrayConstraintsFromSetRulebase(?array $values = []): string
+    public static function validateRulebaseForArrayConstraintFromSetRulebase(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -159,7 +162,7 @@ class ValidatePremiumRuleContentRequest extends AbstractStructBase
     public function setRulebase(?array $rulebase = null): self
     {
         // validation for constraint: array
-        if ('' !== ($rulebaseArrayErrorMessage = self::validateRulebaseForArrayConstraintsFromSetRulebase($rulebase))) {
+        if ('' !== ($rulebaseArrayErrorMessage = self::validateRulebaseForArrayConstraintFromSetRulebase($rulebase))) {
             throw new InvalidArgumentException($rulebaseArrayErrorMessage, __LINE__);
         }
         $this->rulebase = $rulebase;

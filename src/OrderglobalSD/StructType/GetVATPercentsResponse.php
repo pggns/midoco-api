@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetVATPercentsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetVATPercentsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetVATPercentsResponse extends AbstractStructBase
         return $this->MidocoVatDefinition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVatDefinition method
+     * This method is responsible for validating the value(s) passed to the setMidocoVatDefinition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVatDefinition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVatDefinitionForArrayConstraintsFromSetMidocoVatDefinition(?array $values = []): string
+    public static function validateMidocoVatDefinitionForArrayConstraintFromSetMidocoVatDefinition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetVATPercentsResponse extends AbstractStructBase
     public function setMidocoVatDefinition(?array $midocoVatDefinition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVatDefinitionArrayErrorMessage = self::validateMidocoVatDefinitionForArrayConstraintsFromSetMidocoVatDefinition($midocoVatDefinition))) {
+        if ('' !== ($midocoVatDefinitionArrayErrorMessage = self::validateMidocoVatDefinitionForArrayConstraintFromSetMidocoVatDefinition($midocoVatDefinition))) {
             throw new InvalidArgumentException($midocoVatDefinitionArrayErrorMessage, __LINE__);
         }
         $this->MidocoVatDefinition = $midocoVatDefinition;

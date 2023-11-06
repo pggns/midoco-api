@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTTVByProductRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTTVByProductRequest extends AbstractStructBase
 {
     /**

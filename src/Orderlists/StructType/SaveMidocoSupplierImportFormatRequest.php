@@ -11,41 +11,42 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMidocoSupplierImportFormatRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMidocoSupplierImportFormatRequest extends AbstractStructBase
 {
     /**
-     * The MidocoSupplierImportFormat
+     * The MidocoSupplierAgencyImportFormat
      * Meta information extracted from the WSDL
-     * - ref: MidocoSupplierImportFormat
-     * @var \Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO|null
+     * - ref: MidocoSupplierAgencyImportFormat
+     * @var \Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO|null
      */
-    protected ?\Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO $MidocoSupplierImportFormat = null;
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO $MidocoSupplierAgencyImportFormat = null;
     /**
      * Constructor method for SaveMidocoSupplierImportFormatRequest
-     * @uses SaveMidocoSupplierImportFormatRequest::setMidocoSupplierImportFormat()
-     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat
+     * @uses SaveMidocoSupplierImportFormatRequest::setMidocoSupplierAgencyImportFormat()
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO $midocoSupplierAgencyImportFormat
      */
-    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat = null)
+    public function __construct(?\Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO $midocoSupplierAgencyImportFormat = null)
     {
         $this
-            ->setMidocoSupplierImportFormat($midocoSupplierImportFormat);
+            ->setMidocoSupplierAgencyImportFormat($midocoSupplierAgencyImportFormat);
     }
     /**
-     * Get MidocoSupplierImportFormat value
-     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO|null
+     * Get MidocoSupplierAgencyImportFormat value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO|null
      */
-    public function getMidocoSupplierImportFormat(): ?\Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO
+    public function getMidocoSupplierAgencyImportFormat(): ?\Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO
     {
-        return $this->MidocoSupplierImportFormat;
+        return $this->MidocoSupplierAgencyImportFormat;
     }
     /**
-     * Set MidocoSupplierImportFormat value
-     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat
+     * Set MidocoSupplierAgencyImportFormat value
+     * @param \Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO $midocoSupplierAgencyImportFormat
      * @return \Pggns\MidocoApi\Orderlists\StructType\SaveMidocoSupplierImportFormatRequest
      */
-    public function setMidocoSupplierImportFormat(?\Pggns\MidocoApi\Orderlists\StructType\SupplierImportFormatDTO $midocoSupplierImportFormat = null): self
+    public function setMidocoSupplierAgencyImportFormat(?\Pggns\MidocoApi\Orderlists\StructType\SupplierAgencyImportFormatDTO $midocoSupplierAgencyImportFormat = null): self
     {
-        $this->MidocoSupplierImportFormat = $midocoSupplierImportFormat;
+        $this->MidocoSupplierAgencyImportFormat = $midocoSupplierAgencyImportFormat;
         
         return $this;
     }

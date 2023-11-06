@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VermiLinkAttributes StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VermiLinkAttributes extends AbstractStructBase
 {
     /**
@@ -201,12 +202,13 @@ class VermiLinkAttributes extends AbstractStructBase
         return $this->MidocoSellPassenger;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellPassenger method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellPassenger method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellPassenger method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellPassengerForArrayConstraintsFromSetMidocoSellPassenger(?array $values = []): string
+    public static function validateMidocoSellPassengerForArrayConstraintFromSetMidocoSellPassenger(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -235,7 +237,7 @@ class VermiLinkAttributes extends AbstractStructBase
     public function setMidocoSellPassenger(?array $midocoSellPassenger = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellPassengerArrayErrorMessage = self::validateMidocoSellPassengerForArrayConstraintsFromSetMidocoSellPassenger($midocoSellPassenger))) {
+        if ('' !== ($midocoSellPassengerArrayErrorMessage = self::validateMidocoSellPassengerForArrayConstraintFromSetMidocoSellPassenger($midocoSellPassenger))) {
             throw new InvalidArgumentException($midocoSellPassengerArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellPassenger = $midocoSellPassenger;
@@ -267,12 +269,13 @@ class VermiLinkAttributes extends AbstractStructBase
         return $this->serviceCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setServiceCode method
+     * This method is responsible for validating the value(s) passed to the setServiceCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setServiceCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateServiceCodeForArrayConstraintsFromSetServiceCode(?array $values = []): string
+    public static function validateServiceCodeForArrayConstraintFromSetServiceCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -301,7 +304,7 @@ class VermiLinkAttributes extends AbstractStructBase
     public function setServiceCode(?array $serviceCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($serviceCodeArrayErrorMessage = self::validateServiceCodeForArrayConstraintsFromSetServiceCode($serviceCode))) {
+        if ('' !== ($serviceCodeArrayErrorMessage = self::validateServiceCodeForArrayConstraintFromSetServiceCode($serviceCode))) {
             throw new InvalidArgumentException($serviceCodeArrayErrorMessage, __LINE__);
         }
         $this->serviceCode = $serviceCode;

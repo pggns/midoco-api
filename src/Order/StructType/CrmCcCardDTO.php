@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmCcCardDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmCcCardDTO extends AbstractStructBase
 {
     /**
@@ -38,11 +39,6 @@ class CrmCcCardDTO extends AbstractStructBase
      * @var int|null
      */
     protected ?int $customerId = null;
-    /**
-     * The isBonus
-     * @var bool|null
-     */
-    protected ?bool $isBonus = null;
     /**
      * The issuer
      * @var string|null
@@ -85,7 +81,6 @@ class CrmCcCardDTO extends AbstractStructBase
      * @uses CrmCcCardDTO::setCcCardId()
      * @uses CrmCcCardDTO::setCcTokenReference()
      * @uses CrmCcCardDTO::setCustomerId()
-     * @uses CrmCcCardDTO::setIsBonus()
      * @uses CrmCcCardDTO::setIssuer()
      * @uses CrmCcCardDTO::setMerchantWhitelisted()
      * @uses CrmCcCardDTO::setOwner()
@@ -98,7 +93,6 @@ class CrmCcCardDTO extends AbstractStructBase
      * @param int $ccCardId
      * @param int $ccTokenReference
      * @param int $customerId
-     * @param bool $isBonus
      * @param string $issuer
      * @param bool $merchantWhitelisted
      * @param string $owner
@@ -107,7 +101,7 @@ class CrmCcCardDTO extends AbstractStructBase
      * @param int $validMonth
      * @param int $validYear
      */
-    public function __construct(?string $cardNo = null, ?string $cardType = null, ?int $ccCardId = null, ?int $ccTokenReference = null, ?int $customerId = null, ?bool $isBonus = null, ?string $issuer = null, ?bool $merchantWhitelisted = null, ?string $owner = null, ?bool $tokenChecked = null, ?string $typeDescription = null, ?int $validMonth = null, ?int $validYear = null)
+    public function __construct(?string $cardNo = null, ?string $cardType = null, ?int $ccCardId = null, ?int $ccTokenReference = null, ?int $customerId = null, ?string $issuer = null, ?bool $merchantWhitelisted = null, ?string $owner = null, ?bool $tokenChecked = null, ?string $typeDescription = null, ?int $validMonth = null, ?int $validYear = null)
     {
         $this
             ->setCardNo($cardNo)
@@ -115,7 +109,6 @@ class CrmCcCardDTO extends AbstractStructBase
             ->setCcCardId($ccCardId)
             ->setCcTokenReference($ccTokenReference)
             ->setCustomerId($customerId)
-            ->setIsBonus($isBonus)
             ->setIssuer($issuer)
             ->setMerchantWhitelisted($merchantWhitelisted)
             ->setOwner($owner)
@@ -236,29 +229,6 @@ class CrmCcCardDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($customerId, true), gettype($customerId)), __LINE__);
         }
         $this->customerId = $customerId;
-        
-        return $this;
-    }
-    /**
-     * Get isBonus value
-     * @return bool|null
-     */
-    public function getIsBonus(): ?bool
-    {
-        return $this->isBonus;
-    }
-    /**
-     * Set isBonus value
-     * @param bool $isBonus
-     * @return \Pggns\MidocoApi\Order\StructType\CrmCcCardDTO
-     */
-    public function setIsBonus(?bool $isBonus = null): self
-    {
-        // validation for constraint: boolean
-        if (!is_null($isBonus) && !is_bool($isBonus)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isBonus, true), gettype($isBonus)), __LINE__);
-        }
-        $this->isBonus = $isBonus;
         
         return $this;
     }

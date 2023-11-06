@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDocumentsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDocumentsRequest extends AbstractStructBase
 {
     /**
      * The MidocoCustomerId
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The beginIndex
      * @var int|null
@@ -41,12 +42,12 @@ class GetDocumentsRequest extends AbstractStructBase
      * @uses GetDocumentsRequest::setBeginIndex()
      * @uses GetDocumentsRequest::setEndIndex()
      * @uses GetDocumentsRequest::setIsManual()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
      * @param int $beginIndex
      * @param int $endIndex
      * @param bool $isManual
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $beginIndex = null, ?int $endIndex = null, ?bool $isManual = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null, ?int $beginIndex = null, ?int $endIndex = null, ?bool $isManual = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -56,18 +57,18 @@ class GetDocumentsRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO
     {
         return $this->MidocoCustomerId;
     }
     /**
      * Set MidocoCustomerId value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDocumentsRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDocumentsRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         $this->MidocoCustomerId = $midocoCustomerId;
         
@@ -84,7 +85,7 @@ class GetDocumentsRequest extends AbstractStructBase
     /**
      * Set beginIndex value
      * @param int $beginIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDocumentsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDocumentsRequest
      */
     public function setBeginIndex(?int $beginIndex = null): self
     {
@@ -107,7 +108,7 @@ class GetDocumentsRequest extends AbstractStructBase
     /**
      * Set endIndex value
      * @param int $endIndex
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDocumentsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDocumentsRequest
      */
     public function setEndIndex(?int $endIndex = null): self
     {
@@ -130,7 +131,7 @@ class GetDocumentsRequest extends AbstractStructBase
     /**
      * Set isManual value
      * @param bool $isManual
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDocumentsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDocumentsRequest
      */
     public function setIsManual(?bool $isManual = null): self
     {

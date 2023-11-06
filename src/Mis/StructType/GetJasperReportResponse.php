@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getJasperReport --- return the report for the given id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetJasperReportResponse extends AbstractStructBase
 {
     /**

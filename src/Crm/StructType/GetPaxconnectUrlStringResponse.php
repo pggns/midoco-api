@@ -11,10 +11,13 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPaxconnectUrlStringResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPaxconnectUrlStringResponse extends AbstractStructBase
 {
     /**
      * The responseString
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $responseString = null;

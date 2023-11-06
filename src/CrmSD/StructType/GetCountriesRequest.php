@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCountriesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCountriesRequest extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetCountriesRequest extends AbstractStructBase
         return $this->CountryIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setCountryIds method
+     * This method is responsible for validating the value(s) passed to the setCountryIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCountryIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCountryIdsForArrayConstraintsFromSetCountryIds(?array $values = []): string
+    public static function validateCountryIdsForArrayConstraintFromSetCountryIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -69,12 +71,12 @@ class GetCountriesRequest extends AbstractStructBase
      * Set CountryIds value
      * @throws InvalidArgumentException
      * @param string[] $countryIds
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCountriesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCountriesRequest
      */
     public function setCountryIds(?array $countryIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($countryIdsArrayErrorMessage = self::validateCountryIdsForArrayConstraintsFromSetCountryIds($countryIds))) {
+        if ('' !== ($countryIdsArrayErrorMessage = self::validateCountryIdsForArrayConstraintFromSetCountryIds($countryIds))) {
             throw new InvalidArgumentException($countryIdsArrayErrorMessage, __LINE__);
         }
         $this->CountryIds = $countryIds;
@@ -85,7 +87,7 @@ class GetCountriesRequest extends AbstractStructBase
      * Add item to CountryIds value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCountriesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCountriesRequest
      */
     public function addToCountryIds(string $item): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCalcItemDetailsInfo4Printing StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
 {
     /**
@@ -148,6 +149,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      */
     protected ?array $MidocoTouchedVatCode = null;
     /**
+     * The isMarginVat
+     * Meta information extracted from the WSDL
+     * - default: false
+     * @var bool|null
+     */
+    protected ?bool $isMarginVat = null;
+    /**
      * Constructor method for MidocoCalcItemDetailsInfo4Printing
      * @uses MidocoCalcItemDetailsInfo4Printing::setSupplier()
      * @uses MidocoCalcItemDetailsInfo4Printing::setCreationDate()
@@ -169,6 +177,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * @uses MidocoCalcItemDetailsInfo4Printing::setIsSegmentMultiply()
      * @uses MidocoCalcItemDetailsInfo4Printing::setIsTravellerMultiply()
      * @uses MidocoCalcItemDetailsInfo4Printing::setMidocoTouchedVatCode()
+     * @uses MidocoCalcItemDetailsInfo4Printing::setIsMarginVat()
      * @param string $supplier
      * @param string $creationDate
      * @param string $description
@@ -189,8 +198,9 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
      * @param bool $isSegmentMultiply
      * @param bool $isTravellerMultiply
      * @param \Pggns\MidocoApi\Orderlists\StructType\TouchedVatCodeType[] $midocoTouchedVatCode
+     * @param bool $isMarginVat
      */
-    public function __construct(?string $supplier = null, ?string $creationDate = null, ?string $description = null, ?string $bookingId = null, ?string $status = null, ?float $price = null, ?float $oldPrice = null, ?int $itemId = null, ?array $remarks = null, ?bool $isReverseCharge = null, ?int $passengerAssignment = null, ?string $supplierVatPercent = null, ?float $supplierVatAmount = null, ?array $midocoSellItemVatDivision = null, ?array $midocoInvoicePosition = null, ?array $midocoInvoiceVatPosition = null, ?array $feeTypeLocalization = null, ?bool $isSegmentMultiply = null, ?bool $isTravellerMultiply = null, ?array $midocoTouchedVatCode = null)
+    public function __construct(?string $supplier = null, ?string $creationDate = null, ?string $description = null, ?string $bookingId = null, ?string $status = null, ?float $price = null, ?float $oldPrice = null, ?int $itemId = null, ?array $remarks = null, ?bool $isReverseCharge = null, ?int $passengerAssignment = null, ?string $supplierVatPercent = null, ?float $supplierVatAmount = null, ?array $midocoSellItemVatDivision = null, ?array $midocoInvoicePosition = null, ?array $midocoInvoiceVatPosition = null, ?array $feeTypeLocalization = null, ?bool $isSegmentMultiply = null, ?bool $isTravellerMultiply = null, ?array $midocoTouchedVatCode = null, ?bool $isMarginVat = false)
     {
         $this
             ->setSupplier($supplier)
@@ -212,7 +222,8 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
             ->setFeeTypeLocalization($feeTypeLocalization)
             ->setIsSegmentMultiply($isSegmentMultiply)
             ->setIsTravellerMultiply($isTravellerMultiply)
-            ->setMidocoTouchedVatCode($midocoTouchedVatCode);
+            ->setMidocoTouchedVatCode($midocoTouchedVatCode)
+            ->setIsMarginVat($isMarginVat);
     }
     /**
      * Get supplier value
@@ -407,12 +418,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         return $this->remarks;
     }
     /**
-     * This method is responsible for validating the values passed to the setRemarks method
+     * This method is responsible for validating the value(s) passed to the setRemarks method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRemarks method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRemarksForArrayConstraintsFromSetRemarks(?array $values = []): string
+    public static function validateRemarksForArrayConstraintFromSetRemarks(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -441,7 +453,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     public function setRemarks(?array $remarks = null): self
     {
         // validation for constraint: array
-        if ('' !== ($remarksArrayErrorMessage = self::validateRemarksForArrayConstraintsFromSetRemarks($remarks))) {
+        if ('' !== ($remarksArrayErrorMessage = self::validateRemarksForArrayConstraintFromSetRemarks($remarks))) {
             throw new InvalidArgumentException($remarksArrayErrorMessage, __LINE__);
         }
         $this->remarks = $remarks;
@@ -565,12 +577,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         return $this->MidocoSellItemVatDivision;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSellItemVatDivision method
+     * This method is responsible for validating the value(s) passed to the setMidocoSellItemVatDivision method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSellItemVatDivision method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSellItemVatDivisionForArrayConstraintsFromSetMidocoSellItemVatDivision(?array $values = []): string
+    public static function validateMidocoSellItemVatDivisionForArrayConstraintFromSetMidocoSellItemVatDivision(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -599,7 +612,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     public function setMidocoSellItemVatDivision(?array $midocoSellItemVatDivision = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSellItemVatDivisionArrayErrorMessage = self::validateMidocoSellItemVatDivisionForArrayConstraintsFromSetMidocoSellItemVatDivision($midocoSellItemVatDivision))) {
+        if ('' !== ($midocoSellItemVatDivisionArrayErrorMessage = self::validateMidocoSellItemVatDivisionForArrayConstraintFromSetMidocoSellItemVatDivision($midocoSellItemVatDivision))) {
             throw new InvalidArgumentException($midocoSellItemVatDivisionArrayErrorMessage, __LINE__);
         }
         $this->MidocoSellItemVatDivision = $midocoSellItemVatDivision;
@@ -631,12 +644,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         return $this->MidocoInvoicePosition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoicePosition method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoicePosition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoicePosition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoicePositionForArrayConstraintsFromSetMidocoInvoicePosition(?array $values = []): string
+    public static function validateMidocoInvoicePositionForArrayConstraintFromSetMidocoInvoicePosition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -665,7 +679,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     public function setMidocoInvoicePosition(?array $midocoInvoicePosition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoicePositionArrayErrorMessage = self::validateMidocoInvoicePositionForArrayConstraintsFromSetMidocoInvoicePosition($midocoInvoicePosition))) {
+        if ('' !== ($midocoInvoicePositionArrayErrorMessage = self::validateMidocoInvoicePositionForArrayConstraintFromSetMidocoInvoicePosition($midocoInvoicePosition))) {
             throw new InvalidArgumentException($midocoInvoicePositionArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoicePosition = $midocoInvoicePosition;
@@ -697,12 +711,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         return $this->MidocoInvoiceVatPosition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoiceVatPosition method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoiceVatPosition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoiceVatPosition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoiceVatPositionForArrayConstraintsFromSetMidocoInvoiceVatPosition(?array $values = []): string
+    public static function validateMidocoInvoiceVatPositionForArrayConstraintFromSetMidocoInvoiceVatPosition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -731,7 +746,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     public function setMidocoInvoiceVatPosition(?array $midocoInvoiceVatPosition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoiceVatPositionArrayErrorMessage = self::validateMidocoInvoiceVatPositionForArrayConstraintsFromSetMidocoInvoiceVatPosition($midocoInvoiceVatPosition))) {
+        if ('' !== ($midocoInvoiceVatPositionArrayErrorMessage = self::validateMidocoInvoiceVatPositionForArrayConstraintFromSetMidocoInvoiceVatPosition($midocoInvoiceVatPosition))) {
             throw new InvalidArgumentException($midocoInvoiceVatPositionArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoiceVatPosition = $midocoInvoiceVatPosition;
@@ -763,12 +778,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         return $this->FeeTypeLocalization;
     }
     /**
-     * This method is responsible for validating the values passed to the setFeeTypeLocalization method
+     * This method is responsible for validating the value(s) passed to the setFeeTypeLocalization method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFeeTypeLocalization method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFeeTypeLocalizationForArrayConstraintsFromSetFeeTypeLocalization(?array $values = []): string
+    public static function validateFeeTypeLocalizationForArrayConstraintFromSetFeeTypeLocalization(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -797,7 +813,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     public function setFeeTypeLocalization(?array $feeTypeLocalization = null): self
     {
         // validation for constraint: array
-        if ('' !== ($feeTypeLocalizationArrayErrorMessage = self::validateFeeTypeLocalizationForArrayConstraintsFromSetFeeTypeLocalization($feeTypeLocalization))) {
+        if ('' !== ($feeTypeLocalizationArrayErrorMessage = self::validateFeeTypeLocalizationForArrayConstraintFromSetFeeTypeLocalization($feeTypeLocalization))) {
             throw new InvalidArgumentException($feeTypeLocalizationArrayErrorMessage, __LINE__);
         }
         $this->FeeTypeLocalization = $feeTypeLocalization;
@@ -875,12 +891,13 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
         return $this->MidocoTouchedVatCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTouchedVatCode method
+     * This method is responsible for validating the value(s) passed to the setMidocoTouchedVatCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTouchedVatCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTouchedVatCodeForArrayConstraintsFromSetMidocoTouchedVatCode(?array $values = []): string
+    public static function validateMidocoTouchedVatCodeForArrayConstraintFromSetMidocoTouchedVatCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -909,7 +926,7 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
     public function setMidocoTouchedVatCode(?array $midocoTouchedVatCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTouchedVatCodeArrayErrorMessage = self::validateMidocoTouchedVatCodeForArrayConstraintsFromSetMidocoTouchedVatCode($midocoTouchedVatCode))) {
+        if ('' !== ($midocoTouchedVatCodeArrayErrorMessage = self::validateMidocoTouchedVatCodeForArrayConstraintFromSetMidocoTouchedVatCode($midocoTouchedVatCode))) {
             throw new InvalidArgumentException($midocoTouchedVatCodeArrayErrorMessage, __LINE__);
         }
         $this->MidocoTouchedVatCode = $midocoTouchedVatCode;
@@ -929,6 +946,29 @@ class MidocoCalcItemDetailsInfo4Printing extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('The MidocoTouchedVatCode property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\TouchedVatCodeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoTouchedVatCode[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get isMarginVat value
+     * @return bool|null
+     */
+    public function getIsMarginVat(): ?bool
+    {
+        return $this->isMarginVat;
+    }
+    /**
+     * Set isMarginVat value
+     * @param bool $isMarginVat
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoCalcItemDetailsInfo4Printing
+     */
+    public function setIsMarginVat(?bool $isMarginVat = false): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isMarginVat) && !is_bool($isMarginVat)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isMarginVat, true), gettype($isMarginVat)), __LINE__);
+        }
+        $this->isMarginVat = $isMarginVat;
         
         return $this;
     }

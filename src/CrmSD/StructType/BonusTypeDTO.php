@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BonusTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BonusTypeDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class BonusTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BonusTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BonusTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

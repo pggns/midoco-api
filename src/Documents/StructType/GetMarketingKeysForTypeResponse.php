@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMarketingKeysForTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMarketingKeysForTypeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMarketingKeysForTypeResponse extends AbstractStructBase
         return $this->MidocoMarketingKey;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMarketingKey method
+     * This method is responsible for validating the value(s) passed to the setMidocoMarketingKey method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMarketingKey method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMarketingKeyForArrayConstraintsFromSetMidocoMarketingKey(?array $values = []): string
+    public static function validateMidocoMarketingKeyForArrayConstraintFromSetMidocoMarketingKey(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMarketingKeysForTypeResponse extends AbstractStructBase
     public function setMidocoMarketingKey(?array $midocoMarketingKey = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMarketingKeyArrayErrorMessage = self::validateMidocoMarketingKeyForArrayConstraintsFromSetMidocoMarketingKey($midocoMarketingKey))) {
+        if ('' !== ($midocoMarketingKeyArrayErrorMessage = self::validateMidocoMarketingKeyForArrayConstraintFromSetMidocoMarketingKey($midocoMarketingKey))) {
             throw new InvalidArgumentException($midocoMarketingKeyArrayErrorMessage, __LINE__);
         }
         $this->MidocoMarketingKey = $midocoMarketingKey;

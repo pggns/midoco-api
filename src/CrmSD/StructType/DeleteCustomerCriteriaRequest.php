@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCustomerCriteriaRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCustomerCriteriaRequest extends AbstractStructBase
 {
     /**
@@ -19,7 +20,7 @@ class DeleteCustomerCriteriaRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCriteria
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria[]
      */
     protected ?array $MidocoCrmCriteria = null;
     /**
@@ -31,7 +32,7 @@ class DeleteCustomerCriteriaRequest extends AbstractStructBase
      * Constructor method for DeleteCustomerCriteriaRequest
      * @uses DeleteCustomerCriteriaRequest::setMidocoCrmCriteria()
      * @uses DeleteCustomerCriteriaRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria[] $midocoCrmCriteria
      * @param int $internalVersion
      */
     public function __construct(?array $midocoCrmCriteria = null, ?int $internalVersion = null)
@@ -42,19 +43,20 @@ class DeleteCustomerCriteriaRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCriteria value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria[]
      */
     public function getMidocoCrmCriteria(): ?array
     {
         return $this->MidocoCrmCriteria;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmCriteria method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmCriteria method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmCriteria method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmCriteriaForArrayConstraintsFromSetMidocoCrmCriteria(?array $values = []): string
+    public static function validateMidocoCrmCriteriaForArrayConstraintFromSetMidocoCrmCriteria(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -63,12 +65,12 @@ class DeleteCustomerCriteriaRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteCustomerCriteriaRequestMidocoCrmCriteriaItem) {
             // validation for constraint: itemType
-            if (!$deleteCustomerCriteriaRequestMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO) {
+            if (!$deleteCustomerCriteriaRequestMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria) {
                 $invalidValues[] = is_object($deleteCustomerCriteriaRequestMidocoCrmCriteriaItem) ? get_class($deleteCustomerCriteriaRequestMidocoCrmCriteriaItem) : sprintf('%s(%s)', gettype($deleteCustomerCriteriaRequestMidocoCrmCriteriaItem), var_export($deleteCustomerCriteriaRequestMidocoCrmCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,13 +79,13 @@ class DeleteCustomerCriteriaRequest extends AbstractStructBase
     /**
      * Set MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerCriteriaRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria[] $midocoCrmCriteria
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCustomerCriteriaRequest
      */
     public function setMidocoCrmCriteria(?array $midocoCrmCriteria = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmCriteriaArrayErrorMessage = self::validateMidocoCrmCriteriaForArrayConstraintsFromSetMidocoCrmCriteria($midocoCrmCriteria))) {
+        if ('' !== ($midocoCrmCriteriaArrayErrorMessage = self::validateMidocoCrmCriteriaForArrayConstraintFromSetMidocoCrmCriteria($midocoCrmCriteria))) {
             throw new InvalidArgumentException($midocoCrmCriteriaArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmCriteria = $midocoCrmCriteria;
@@ -93,14 +95,14 @@ class DeleteCustomerCriteriaRequest extends AbstractStructBase
     /**
      * Add item to MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerCriteriaRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCustomerCriteriaRequest
      */
-    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO $item): self
+    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCriteria[] = $item;
         
@@ -117,7 +119,7 @@ class DeleteCustomerCriteriaRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCustomerCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCustomerCriteriaRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

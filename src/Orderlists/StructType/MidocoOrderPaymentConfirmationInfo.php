@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrderPaymentConfirmationInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
         return $this->PaymentConfirmationInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setPaymentConfirmationInfo method
+     * This method is responsible for validating the value(s) passed to the setPaymentConfirmationInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPaymentConfirmationInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePaymentConfirmationInfoForArrayConstraintsFromSetPaymentConfirmationInfo(?array $values = []): string
+    public static function validatePaymentConfirmationInfoForArrayConstraintFromSetPaymentConfirmationInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class MidocoOrderPaymentConfirmationInfo extends AbstractStructBase
     public function setPaymentConfirmationInfo(?array $paymentConfirmationInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($paymentConfirmationInfoArrayErrorMessage = self::validatePaymentConfirmationInfoForArrayConstraintsFromSetPaymentConfirmationInfo($paymentConfirmationInfo))) {
+        if ('' !== ($paymentConfirmationInfoArrayErrorMessage = self::validatePaymentConfirmationInfoForArrayConstraintFromSetPaymentConfirmationInfo($paymentConfirmationInfo))) {
             throw new InvalidArgumentException($paymentConfirmationInfoArrayErrorMessage, __LINE__);
         }
         $this->PaymentConfirmationInfo = $paymentConfirmationInfo;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BankSearchDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BankSearchDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class BankSearchDTO extends AbstractStructBase
     /**
      * Set bankName value
      * @param string $bankName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BankSearchDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BankSearchDTO
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -78,7 +79,7 @@ class BankSearchDTO extends AbstractStructBase
     /**
      * Set countryId value
      * @param int $countryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BankSearchDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BankSearchDTO
      */
     public function setCountryId(?int $countryId = null): self
     {
@@ -101,7 +102,7 @@ class BankSearchDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BankSearchDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BankSearchDTO
      */
     public function setCity(?string $city = null): self
     {

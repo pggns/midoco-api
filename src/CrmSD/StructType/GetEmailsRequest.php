@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetEmailsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetEmailsRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetEmailsRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -86,7 +87,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set deliveryCustomerId value
      * @param int $deliveryCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetEmailsRequest
      */
     public function setDeliveryCustomerId(?int $deliveryCustomerId = null): self
     {
@@ -109,7 +110,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set agencyId value
      * @param string $agencyId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetEmailsRequest
      */
     public function setAgencyId(?string $agencyId = null): self
     {
@@ -132,7 +133,7 @@ class GetEmailsRequest extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetEmailsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetEmailsRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {

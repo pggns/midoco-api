@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ApplicationLocaleDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ApplicationLocaleDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ApplicationLocaleDTO extends AbstractStructBase
     /**
      * Set appId value
      * @param string $appId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ApplicationLocaleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ApplicationLocaleDTO
      */
     public function setAppId(?string $appId = null): self
     {
@@ -78,7 +79,7 @@ class ApplicationLocaleDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ApplicationLocaleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ApplicationLocaleDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +102,7 @@ class ApplicationLocaleDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ApplicationLocaleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ApplicationLocaleDTO
      */
     public function setName(?string $name = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierDisabledItemTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierDisabledItemTypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSupplierDisabledItemTypesResponse extends AbstractStructBase
         return $this->MidocoSupplierDisabledItemType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierDisabledItemType method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierDisabledItemType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierDisabledItemType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierDisabledItemTypeForArrayConstraintsFromSetMidocoSupplierDisabledItemType(?array $values = []): string
+    public static function validateMidocoSupplierDisabledItemTypeForArrayConstraintFromSetMidocoSupplierDisabledItemType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSupplierDisabledItemTypesResponse extends AbstractStructBase
     public function setMidocoSupplierDisabledItemType(?array $midocoSupplierDisabledItemType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierDisabledItemTypeArrayErrorMessage = self::validateMidocoSupplierDisabledItemTypeForArrayConstraintsFromSetMidocoSupplierDisabledItemType($midocoSupplierDisabledItemType))) {
+        if ('' !== ($midocoSupplierDisabledItemTypeArrayErrorMessage = self::validateMidocoSupplierDisabledItemTypeForArrayConstraintFromSetMidocoSupplierDisabledItemType($midocoSupplierDisabledItemType))) {
             throw new InvalidArgumentException($midocoSupplierDisabledItemTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierDisabledItemType = $midocoSupplierDisabledItemType;

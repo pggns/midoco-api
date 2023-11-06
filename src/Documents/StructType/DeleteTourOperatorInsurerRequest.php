@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteTourOperatorInsurerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteTourOperatorInsurerRequest extends AbstractStructBase
 {
     /**

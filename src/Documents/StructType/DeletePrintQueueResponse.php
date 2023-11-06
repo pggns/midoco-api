@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeletePrintQueueResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeletePrintQueueResponse extends AbstractStructBase
 {
 }

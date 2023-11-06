@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SequencetypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SequencetypeDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class SequencetypeDTO extends AbstractStructBase
     /**
      * Set sequenceName value
      * @param string $sequenceName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SequencetypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SequencetypeDTO
      */
     public function setSequenceName(?string $sequenceName = null): self
     {

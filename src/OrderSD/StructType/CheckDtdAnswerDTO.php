@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CheckDtdAnswerDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckDtdAnswerDTO extends AbstractStructBase
 {
     /**
@@ -19,30 +20,45 @@ class CheckDtdAnswerDTO extends AbstractStructBase
      */
     protected ?string $answerText = null;
     /**
+     * The category
+     * @var string|null
+     */
+    protected ?string $category = null;
+    /**
+     * The code
+     * @var string|null
+     */
+    protected ?string $code = null;
+    /**
      * The dbId
      * @var int|null
      */
     protected ?int $dbId = null;
     /**
-     * The id
-     * @var int|null
+     * The inputType
+     * @var string|null
      */
-    protected ?int $id = null;
+    protected ?string $inputType = null;
     /**
      * The position
      * @var int|null
      */
     protected ?int $position = null;
     /**
-     * The requiresAmount
+     * The requiresInput
      * @var bool|null
      */
-    protected ?bool $requiresAmount = null;
+    protected ?bool $requiresInput = null;
     /**
      * The validForSupplier
      * @var string|null
      */
     protected ?string $validForSupplier = null;
+    /**
+     * The validForTravelType
+     * @var string|null
+     */
+    protected ?string $validForTravelType = null;
     /**
      * The validFrom
      * @var string|null
@@ -56,31 +72,40 @@ class CheckDtdAnswerDTO extends AbstractStructBase
     /**
      * Constructor method for CheckDtdAnswerDTO
      * @uses CheckDtdAnswerDTO::setAnswerText()
+     * @uses CheckDtdAnswerDTO::setCategory()
+     * @uses CheckDtdAnswerDTO::setCode()
      * @uses CheckDtdAnswerDTO::setDbId()
-     * @uses CheckDtdAnswerDTO::setId()
+     * @uses CheckDtdAnswerDTO::setInputType()
      * @uses CheckDtdAnswerDTO::setPosition()
-     * @uses CheckDtdAnswerDTO::setRequiresAmount()
+     * @uses CheckDtdAnswerDTO::setRequiresInput()
      * @uses CheckDtdAnswerDTO::setValidForSupplier()
+     * @uses CheckDtdAnswerDTO::setValidForTravelType()
      * @uses CheckDtdAnswerDTO::setValidFrom()
      * @uses CheckDtdAnswerDTO::setValidTo()
      * @param string $answerText
+     * @param string $category
+     * @param string $code
      * @param int $dbId
-     * @param int $id
+     * @param string $inputType
      * @param int $position
-     * @param bool $requiresAmount
+     * @param bool $requiresInput
      * @param string $validForSupplier
+     * @param string $validForTravelType
      * @param string $validFrom
      * @param string $validTo
      */
-    public function __construct(?string $answerText = null, ?int $dbId = null, ?int $id = null, ?int $position = null, ?bool $requiresAmount = null, ?string $validForSupplier = null, ?string $validFrom = null, ?string $validTo = null)
+    public function __construct(?string $answerText = null, ?string $category = null, ?string $code = null, ?int $dbId = null, ?string $inputType = null, ?int $position = null, ?bool $requiresInput = null, ?string $validForSupplier = null, ?string $validForTravelType = null, ?string $validFrom = null, ?string $validTo = null)
     {
         $this
             ->setAnswerText($answerText)
+            ->setCategory($category)
+            ->setCode($code)
             ->setDbId($dbId)
-            ->setId($id)
+            ->setInputType($inputType)
             ->setPosition($position)
-            ->setRequiresAmount($requiresAmount)
+            ->setRequiresInput($requiresInput)
             ->setValidForSupplier($validForSupplier)
+            ->setValidForTravelType($validForTravelType)
             ->setValidFrom($validFrom)
             ->setValidTo($validTo);
     }
@@ -108,6 +133,52 @@ class CheckDtdAnswerDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get category value
+     * @return string|null
+     */
+    public function getCategory(): ?string
+    {
+        return $this->category;
+    }
+    /**
+     * Set category value
+     * @param string $category
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
+     */
+    public function setCategory(?string $category = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($category) && !is_string($category)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($category, true), gettype($category)), __LINE__);
+        }
+        $this->category = $category;
+        
+        return $this;
+    }
+    /**
+     * Get code value
+     * @return string|null
+     */
+    public function getCode(): ?string
+    {
+        return $this->code;
+    }
+    /**
+     * Set code value
+     * @param string $code
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
+     */
+    public function setCode(?string $code = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($code) && !is_string($code)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($code, true), gettype($code)), __LINE__);
+        }
+        $this->code = $code;
+        
+        return $this;
+    }
+    /**
      * Get dbId value
      * @return int|null
      */
@@ -131,25 +202,25 @@ class CheckDtdAnswerDTO extends AbstractStructBase
         return $this;
     }
     /**
-     * Get id value
-     * @return int|null
+     * Get inputType value
+     * @return string|null
      */
-    public function getId(): ?int
+    public function getInputType(): ?string
     {
-        return $this->id;
+        return $this->inputType;
     }
     /**
-     * Set id value
-     * @param int $id
+     * Set inputType value
+     * @param string $inputType
      * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
-    public function setId(?int $id = null): self
+    public function setInputType(?string $inputType = null): self
     {
-        // validation for constraint: int
-        if (!is_null($id) && !(is_int($id) || ctype_digit($id))) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($id, true), gettype($id)), __LINE__);
+        // validation for constraint: string
+        if (!is_null($inputType) && !is_string($inputType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($inputType, true), gettype($inputType)), __LINE__);
         }
-        $this->id = $id;
+        $this->inputType = $inputType;
         
         return $this;
     }
@@ -177,25 +248,25 @@ class CheckDtdAnswerDTO extends AbstractStructBase
         return $this;
     }
     /**
-     * Get requiresAmount value
+     * Get requiresInput value
      * @return bool|null
      */
-    public function getRequiresAmount(): ?bool
+    public function getRequiresInput(): ?bool
     {
-        return $this->requiresAmount;
+        return $this->requiresInput;
     }
     /**
-     * Set requiresAmount value
-     * @param bool $requiresAmount
+     * Set requiresInput value
+     * @param bool $requiresInput
      * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
      */
-    public function setRequiresAmount(?bool $requiresAmount = null): self
+    public function setRequiresInput(?bool $requiresInput = null): self
     {
         // validation for constraint: boolean
-        if (!is_null($requiresAmount) && !is_bool($requiresAmount)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($requiresAmount, true), gettype($requiresAmount)), __LINE__);
+        if (!is_null($requiresInput) && !is_bool($requiresInput)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($requiresInput, true), gettype($requiresInput)), __LINE__);
         }
-        $this->requiresAmount = $requiresAmount;
+        $this->requiresInput = $requiresInput;
         
         return $this;
     }
@@ -219,6 +290,29 @@ class CheckDtdAnswerDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validForSupplier, true), gettype($validForSupplier)), __LINE__);
         }
         $this->validForSupplier = $validForSupplier;
+        
+        return $this;
+    }
+    /**
+     * Get validForTravelType value
+     * @return string|null
+     */
+    public function getValidForTravelType(): ?string
+    {
+        return $this->validForTravelType;
+    }
+    /**
+     * Set validForTravelType value
+     * @param string $validForTravelType
+     * @return \Pggns\MidocoApi\OrderSD\StructType\CheckDtdAnswerDTO
+     */
+    public function setValidForTravelType(?string $validForTravelType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($validForTravelType) && !is_string($validForTravelType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validForTravelType, true), gettype($validForTravelType)), __LINE__);
+        }
+        $this->validForTravelType = $validForTravelType;
         
         return $this;
     }

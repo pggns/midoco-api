@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSichVExportProtocolResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSichVExportProtocolResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetSichVExportProtocolResponse extends AbstractStructBase
         return $this->MidocoTssExportProtocol;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTssExportProtocol method
+     * This method is responsible for validating the value(s) passed to the setMidocoTssExportProtocol method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTssExportProtocol method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTssExportProtocolForArrayConstraintsFromSetMidocoTssExportProtocol(?array $values = []): string
+    public static function validateMidocoTssExportProtocolForArrayConstraintFromSetMidocoTssExportProtocol(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetSichVExportProtocolResponse extends AbstractStructBase
     public function setMidocoTssExportProtocol(?array $midocoTssExportProtocol = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTssExportProtocolArrayErrorMessage = self::validateMidocoTssExportProtocolForArrayConstraintsFromSetMidocoTssExportProtocol($midocoTssExportProtocol))) {
+        if ('' !== ($midocoTssExportProtocolArrayErrorMessage = self::validateMidocoTssExportProtocolForArrayConstraintFromSetMidocoTssExportProtocol($midocoTssExportProtocol))) {
             throw new InvalidArgumentException($midocoTssExportProtocolArrayErrorMessage, __LINE__);
         }
         $this->MidocoTssExportProtocol = $midocoTssExportProtocol;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerOrder StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerOrder extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoCustomerOrder extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerOrder
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerOrder
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -70,7 +71,7 @@ class MidocoCustomerOrder extends AbstractStructBase
     /**
      * Set orderNo value
      * @param int $orderNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerOrder
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerOrder
      */
     public function setOrderNo(?int $orderNo = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTooltipTravelersForItemIdResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
         return $this->MidocoTooltipTravelersForItem;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTooltipTravelersForItem method
+     * This method is responsible for validating the value(s) passed to the setMidocoTooltipTravelersForItem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTooltipTravelersForItem method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTooltipTravelersForItemForArrayConstraintsFromSetMidocoTooltipTravelersForItem(?array $values = []): string
+    public static function validateMidocoTooltipTravelersForItemForArrayConstraintFromSetMidocoTooltipTravelersForItem(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetTooltipTravelersForItemIdResponse extends AbstractStructBase
     public function setMidocoTooltipTravelersForItem(?array $midocoTooltipTravelersForItem = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTooltipTravelersForItemArrayErrorMessage = self::validateMidocoTooltipTravelersForItemForArrayConstraintsFromSetMidocoTooltipTravelersForItem($midocoTooltipTravelersForItem))) {
+        if ('' !== ($midocoTooltipTravelersForItemArrayErrorMessage = self::validateMidocoTooltipTravelersForItemForArrayConstraintFromSetMidocoTooltipTravelersForItem($midocoTooltipTravelersForItem))) {
             throw new InvalidArgumentException($midocoTooltipTravelersForItemArrayErrorMessage, __LINE__);
         }
         $this->MidocoTooltipTravelersForItem = $midocoTooltipTravelersForItem;

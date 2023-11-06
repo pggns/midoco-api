@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrsExpedientDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrsExpedientDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CrsExpedientDTO extends AbstractStructBase
     /**
      * Set crsName value
      * @param string $crsName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO
      */
     public function setCrsName(?string $crsName = null): self
     {
@@ -78,7 +79,7 @@ class CrsExpedientDTO extends AbstractStructBase
     /**
      * Set expedientId value
      * @param string $expedientId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO
      */
     public function setExpedientId(?string $expedientId = null): self
     {
@@ -101,7 +102,7 @@ class CrsExpedientDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrsExpedientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrsExpedientDTO
      */
     public function setUserId(?int $userId = null): self
     {

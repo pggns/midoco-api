@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTravelDocumentsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTravelDocumentsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetTravelDocumentsResponse extends AbstractStructBase
         return $this->MidocoTravelDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravelDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravelDocumentForArrayConstraintsFromSetMidocoTravelDocument(?array $values = []): string
+    public static function validateMidocoTravelDocumentForArrayConstraintFromSetMidocoTravelDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetTravelDocumentsResponse extends AbstractStructBase
     public function setMidocoTravelDocument(?array $midocoTravelDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravelDocumentArrayErrorMessage = self::validateMidocoTravelDocumentForArrayConstraintsFromSetMidocoTravelDocument($midocoTravelDocument))) {
+        if ('' !== ($midocoTravelDocumentArrayErrorMessage = self::validateMidocoTravelDocumentForArrayConstraintFromSetMidocoTravelDocument($midocoTravelDocument))) {
             throw new InvalidArgumentException($midocoTravelDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravelDocument = $midocoTravelDocument;

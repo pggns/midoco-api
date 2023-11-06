@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: removeNonReachable --- remove the non-reachable customers for a given campaign
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetNonReachableResponse extends AbstractStructBase
 {
     /**

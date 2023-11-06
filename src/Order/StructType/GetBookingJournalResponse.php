@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBookingJournalResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBookingJournalResponse extends AbstractStructBase
 {
     /**
@@ -77,12 +78,13 @@ class GetBookingJournalResponse extends AbstractStructBase
         return $this->MidocoBookingJournal;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBookingJournal method
+     * This method is responsible for validating the value(s) passed to the setMidocoBookingJournal method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBookingJournal method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBookingJournalForArrayConstraintsFromSetMidocoBookingJournal(?array $values = []): string
+    public static function validateMidocoBookingJournalForArrayConstraintFromSetMidocoBookingJournal(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -111,7 +113,7 @@ class GetBookingJournalResponse extends AbstractStructBase
     public function setMidocoBookingJournal(?array $midocoBookingJournal = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBookingJournalArrayErrorMessage = self::validateMidocoBookingJournalForArrayConstraintsFromSetMidocoBookingJournal($midocoBookingJournal))) {
+        if ('' !== ($midocoBookingJournalArrayErrorMessage = self::validateMidocoBookingJournalForArrayConstraintFromSetMidocoBookingJournal($midocoBookingJournal))) {
             throw new InvalidArgumentException($midocoBookingJournalArrayErrorMessage, __LINE__);
         }
         $this->MidocoBookingJournal = $midocoBookingJournal;
@@ -143,12 +145,13 @@ class GetBookingJournalResponse extends AbstractStructBase
         return $this->MidocoBookingJournalSums;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBookingJournalSums method
+     * This method is responsible for validating the value(s) passed to the setMidocoBookingJournalSums method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBookingJournalSums method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBookingJournalSumsForArrayConstraintsFromSetMidocoBookingJournalSums(?array $values = []): string
+    public static function validateMidocoBookingJournalSumsForArrayConstraintFromSetMidocoBookingJournalSums(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -177,7 +180,7 @@ class GetBookingJournalResponse extends AbstractStructBase
     public function setMidocoBookingJournalSums(?array $midocoBookingJournalSums = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBookingJournalSumsArrayErrorMessage = self::validateMidocoBookingJournalSumsForArrayConstraintsFromSetMidocoBookingJournalSums($midocoBookingJournalSums))) {
+        if ('' !== ($midocoBookingJournalSumsArrayErrorMessage = self::validateMidocoBookingJournalSumsForArrayConstraintFromSetMidocoBookingJournalSums($midocoBookingJournalSums))) {
             throw new InvalidArgumentException($midocoBookingJournalSumsArrayErrorMessage, __LINE__);
         }
         $this->MidocoBookingJournalSums = $midocoBookingJournalSums;

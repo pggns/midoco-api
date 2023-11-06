@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\ServiceType;
+namespace Pggns\MidocoApi\Crmsd\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -16,13 +16,13 @@ class Remove extends AbstractSoapClientBase
     /**
      * Sets the MidocoCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
-     * @return \Pggns\MidocoApi\CrmSD\ServiceType\Remove
+     * @param string|null $actor
+     * @return \Pggns\MidocoApi\Crmsd\ServiceType\Remove
      */
-    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
+    public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
     {
         return $this->setSoapHeader($namespace, 'MidocoCredentials', $midocoCredentials, $mustUnderstand, $actor);
     }
@@ -31,15 +31,15 @@ class Remove extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
      * - SOAPHeaderNamespaces: http://www.midoco.de/system
-     * - SOAPHeaderTypes: \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\RemoveCriteriaTypesFromCategoryRequest $paramRemoveCriteriaTypesFromCategoryRequest
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RemoveCriteriaTypesFromCategoryResponse|bool
+     * @param \Pggns\MidocoApi\Crmsd\StructType\RemoveCriteriaTypesFromCategoryRequest $paramRemoveCriteriaTypesFromCategoryRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RemoveCriteriaTypesFromCategoryResponse|bool
      */
-    public function removeCriteriaTypesFromCategory(\Pggns\MidocoApi\CrmSD\StructType\RemoveCriteriaTypesFromCategoryRequest $paramRemoveCriteriaTypesFromCategoryRequest)
+    public function removeCriteriaTypesFromCategory(\Pggns\MidocoApi\Crmsd\StructType\RemoveCriteriaTypesFromCategoryRequest $paramRemoveCriteriaTypesFromCategoryRequest)
     {
         try {
             $this->setResult($resultRemoveCriteriaTypesFromCategory = $this->getSoapClient()->__soapCall('removeCriteriaTypesFromCategory', [
@@ -56,7 +56,7 @@ class Remove extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RemoveCriteriaTypesFromCategoryResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RemoveCriteriaTypesFromCategoryResponse
      */
     public function getResult()
     {

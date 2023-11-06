@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for accomodation-service-type StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Accomodation_service_type extends AbstractStructBase
 {
     /**
@@ -82,6 +83,13 @@ class Accomodation_service_type extends AbstractStructBase
      * @var string|null
      */
     protected ?string $no_of_services = null;
+    /**
+     * The no_of_nights
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var int|null
+     */
+    protected ?int $no_of_nights = null;
     /**
      * The start_date
      * Meta information extracted from the WSDL
@@ -253,6 +261,7 @@ class Accomodation_service_type extends AbstractStructBase
      * @uses Accomodation_service_type::setLocation_description()
      * @uses Accomodation_service_type::setAllocation()
      * @uses Accomodation_service_type::setNo_of_services()
+     * @uses Accomodation_service_type::setNo_of_nights()
      * @uses Accomodation_service_type::setStart_date()
      * @uses Accomodation_service_type::setEnd_date()
      * @uses Accomodation_service_type::setService_status()
@@ -289,6 +298,7 @@ class Accomodation_service_type extends AbstractStructBase
      * @param string $location_description
      * @param string $allocation
      * @param string $no_of_services
+     * @param int $no_of_nights
      * @param string $start_date
      * @param string $end_date
      * @param string $service_status
@@ -315,7 +325,7 @@ class Accomodation_service_type extends AbstractStructBase
      * @param string $sourceExtId
      * @param string $airport_code
      */
-    public function __construct(int $position, ?string $service_code = null, ?string $service_name = null, ?string $service_description = null, ?string $accomodation = null, ?string $accomodation_description = null, ?string $catering = null, ?string $catering_description = null, ?string $location_description = null, ?string $allocation = null, ?string $no_of_services = null, ?string $start_date = null, ?string $end_date = null, ?string $service_status = null, ?string $person_assignment = null, ?float $total_price = null, ?string $currency = 'EUR', ?bool $vat_included = false, ?string $country_description = null, ?string $transfer_description = null, ?string $address_line1 = null, ?string $address_line2 = null, ?string $address_line3 = null, ?string $address_line4 = null, ?string $emergency_Number = null, ?string $corporate_discount = null, ?array $traveler_ref_id = null, ?string $chain = null, ?string $category = null, ?string $bookingId = null, ?string $bookingDate = null, ?string $supplierId = null, ?string $extId = null, ?string $sourceSystem = null, ?string $sourceExtId = null, ?string $airport_code = null)
+    public function __construct(int $position, ?string $service_code = null, ?string $service_name = null, ?string $service_description = null, ?string $accomodation = null, ?string $accomodation_description = null, ?string $catering = null, ?string $catering_description = null, ?string $location_description = null, ?string $allocation = null, ?string $no_of_services = null, ?int $no_of_nights = null, ?string $start_date = null, ?string $end_date = null, ?string $service_status = null, ?string $person_assignment = null, ?float $total_price = null, ?string $currency = 'EUR', ?bool $vat_included = false, ?string $country_description = null, ?string $transfer_description = null, ?string $address_line1 = null, ?string $address_line2 = null, ?string $address_line3 = null, ?string $address_line4 = null, ?string $emergency_Number = null, ?string $corporate_discount = null, ?array $traveler_ref_id = null, ?string $chain = null, ?string $category = null, ?string $bookingId = null, ?string $bookingDate = null, ?string $supplierId = null, ?string $extId = null, ?string $sourceSystem = null, ?string $sourceExtId = null, ?string $airport_code = null)
     {
         $this
             ->setPosition($position)
@@ -329,6 +339,7 @@ class Accomodation_service_type extends AbstractStructBase
             ->setLocation_description($location_description)
             ->setAllocation($allocation)
             ->setNo_of_services($no_of_services)
+            ->setNo_of_nights($no_of_nights)
             ->setStart_date($start_date)
             ->setEnd_date($end_date)
             ->setService_status($service_status)
@@ -609,6 +620,29 @@ class Accomodation_service_type extends AbstractStructBase
         return $this;
     }
     /**
+     * Get no_of_nights value
+     * @return int|null
+     */
+    public function getNo_of_nights(): ?int
+    {
+        return $this->{'no-of-nights'};
+    }
+    /**
+     * Set no_of_nights value
+     * @param int $no_of_nights
+     * @return \Pggns\MidocoApi\Documents\StructType\Accomodation_service_type
+     */
+    public function setNo_of_nights(?int $no_of_nights = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($no_of_nights) && !(is_int($no_of_nights) || ctype_digit($no_of_nights))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($no_of_nights, true), gettype($no_of_nights)), __LINE__);
+        }
+        $this->no_of_nights = $this->{'no-of-nights'} = $no_of_nights;
+        
+        return $this;
+    }
+    /**
      * Get start_date value
      * @return string|null
      */
@@ -628,7 +662,7 @@ class Accomodation_service_type extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($start_date, true), gettype($start_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($start_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $start_date)) {
+        if (!is_null($start_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $start_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($start_date, true)), __LINE__);
         }
         $this->start_date = $this->{'start-date'} = $start_date;
@@ -655,7 +689,7 @@ class Accomodation_service_type extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($end_date, true), gettype($end_date)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4}-[0-9]{2}-[0-9]{2})
-        if (!is_null($end_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $end_date)) {
+        if (!is_null($end_date) && !preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', (string) $end_date)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}-[0-9]{2}-[0-9]{2}/', var_export($end_date, true)), __LINE__);
         }
         $this->end_date = $this->{'end-date'} = $end_date;
@@ -970,12 +1004,13 @@ class Accomodation_service_type extends AbstractStructBase
         return $this->{'traveler-ref-id'};
     }
     /**
-     * This method is responsible for validating the values passed to the setTraveler_ref_id method
+     * This method is responsible for validating the value(s) passed to the setTraveler_ref_id method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTraveler_ref_id method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTraveler_ref_idForArrayConstraintsFromSetTraveler_ref_id(?array $values = []): string
+    public static function validateTraveler_ref_idForArrayConstraintFromSetTraveler_ref_id(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1004,7 +1039,7 @@ class Accomodation_service_type extends AbstractStructBase
     public function setTraveler_ref_id(?array $traveler_ref_id = null): self
     {
         // validation for constraint: array
-        if ('' !== ($traveler_ref_idArrayErrorMessage = self::validateTraveler_ref_idForArrayConstraintsFromSetTraveler_ref_id($traveler_ref_id))) {
+        if ('' !== ($traveler_ref_idArrayErrorMessage = self::validateTraveler_ref_idForArrayConstraintFromSetTraveler_ref_id($traveler_ref_id))) {
             throw new InvalidArgumentException($traveler_ref_idArrayErrorMessage, __LINE__);
         }
         $this->traveler_ref_id = $this->{'traveler-ref-id'} = $traveler_ref_id;

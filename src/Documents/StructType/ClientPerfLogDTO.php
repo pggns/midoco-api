@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ClientPerfLogDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ClientPerfLogDTO extends AbstractStructBase
 {
     /**

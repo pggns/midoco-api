@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SupplAgencySettlemBookAttributeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
 {
     /**
@@ -29,6 +30,11 @@ class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
      */
     protected ?int $bookingPosition = null;
     /**
+     * The saveAsItemAttribute
+     * @var bool|null
+     */
+    protected ?bool $saveAsItemAttribute = null;
+    /**
      * The settlementId
      * @var int|null
      */
@@ -38,18 +44,21 @@ class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
      * @uses SupplAgencySettlemBookAttributeDTO::setAttributeName()
      * @uses SupplAgencySettlemBookAttributeDTO::setAttributeValue()
      * @uses SupplAgencySettlemBookAttributeDTO::setBookingPosition()
+     * @uses SupplAgencySettlemBookAttributeDTO::setSaveAsItemAttribute()
      * @uses SupplAgencySettlemBookAttributeDTO::setSettlementId()
      * @param string $attributeName
      * @param string $attributeValue
      * @param int $bookingPosition
+     * @param bool $saveAsItemAttribute
      * @param int $settlementId
      */
-    public function __construct(?string $attributeName = null, ?string $attributeValue = null, ?int $bookingPosition = null, ?int $settlementId = null)
+    public function __construct(?string $attributeName = null, ?string $attributeValue = null, ?int $bookingPosition = null, ?bool $saveAsItemAttribute = null, ?int $settlementId = null)
     {
         $this
             ->setAttributeName($attributeName)
             ->setAttributeValue($attributeValue)
             ->setBookingPosition($bookingPosition)
+            ->setSaveAsItemAttribute($saveAsItemAttribute)
             ->setSettlementId($settlementId);
     }
     /**
@@ -118,6 +127,29 @@ class SupplAgencySettlemBookAttributeDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bookingPosition, true), gettype($bookingPosition)), __LINE__);
         }
         $this->bookingPosition = $bookingPosition;
+        
+        return $this;
+    }
+    /**
+     * Get saveAsItemAttribute value
+     * @return bool|null
+     */
+    public function getSaveAsItemAttribute(): ?bool
+    {
+        return $this->saveAsItemAttribute;
+    }
+    /**
+     * Set saveAsItemAttribute value
+     * @param bool $saveAsItemAttribute
+     * @return \Pggns\MidocoApi\Documents\StructType\SupplAgencySettlemBookAttributeDTO
+     */
+    public function setSaveAsItemAttribute(?bool $saveAsItemAttribute = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($saveAsItemAttribute) && !is_bool($saveAsItemAttribute)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($saveAsItemAttribute, true), gettype($saveAsItemAttribute)), __LINE__);
+        }
+        $this->saveAsItemAttribute = $saveAsItemAttribute;
         
         return $this;
     }

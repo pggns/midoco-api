@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPrintjobListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPrintjobListResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetPrintjobListResponse extends AbstractStructBase
         return $this->MidocoPrintjob;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintjob method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintjob method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintjob method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintjobForArrayConstraintsFromSetMidocoPrintjob(?array $values = []): string
+    public static function validateMidocoPrintjobForArrayConstraintFromSetMidocoPrintjob(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetPrintjobListResponse extends AbstractStructBase
     public function setMidocoPrintjob(?array $midocoPrintjob = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintjobArrayErrorMessage = self::validateMidocoPrintjobForArrayConstraintsFromSetMidocoPrintjob($midocoPrintjob))) {
+        if ('' !== ($midocoPrintjobArrayErrorMessage = self::validateMidocoPrintjobForArrayConstraintFromSetMidocoPrintjob($midocoPrintjob))) {
             throw new InvalidArgumentException($midocoPrintjobArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintjob = $midocoPrintjob;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SendTssTestMailRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SendTssTestMailRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class SendTssTestMailRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssTestMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssTestMailRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -70,7 +71,7 @@ class SendTssTestMailRequest extends AbstractStructBase
     /**
      * Set emailAddresses value
      * @param string $emailAddresses
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssTestMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssTestMailRequest
      */
     public function setEmailAddresses(?string $emailAddresses = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfGroupResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfGroupResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetMfGroupResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMfGroup
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup[]
      */
     protected ?array $MidocoMfGroup = null;
     /**
      * Constructor method for GetMfGroupResponse
      * @uses GetMfGroupResponse::setMidocoMfGroup()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup[] $midocoMfGroup
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup[] $midocoMfGroup
      */
     public function __construct(?array $midocoMfGroup = null)
     {
@@ -34,19 +35,20 @@ class GetMfGroupResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMfGroup value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup[]
      */
     public function getMidocoMfGroup(): ?array
     {
         return $this->MidocoMfGroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMfGroup method
+     * This method is responsible for validating the value(s) passed to the setMidocoMfGroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMfGroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMfGroupForArrayConstraintsFromSetMidocoMfGroup(?array $values = []): string
+    public static function validateMidocoMfGroupForArrayConstraintFromSetMidocoMfGroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetMfGroupResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMfGroupResponseMidocoMfGroupItem) {
             // validation for constraint: itemType
-            if (!$getMfGroupResponseMidocoMfGroupItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup) {
+            if (!$getMfGroupResponseMidocoMfGroupItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup) {
                 $invalidValues[] = is_object($getMfGroupResponseMidocoMfGroupItem) ? get_class($getMfGroupResponseMidocoMfGroupItem) : sprintf('%s(%s)', gettype($getMfGroupResponseMidocoMfGroupItem), var_export($getMfGroupResponseMidocoMfGroupItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetMfGroupResponse extends AbstractStructBase
     /**
      * Set MidocoMfGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup[] $midocoMfGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfGroupResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup[] $midocoMfGroup
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfGroupResponse
      */
     public function setMidocoMfGroup(?array $midocoMfGroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMfGroupArrayErrorMessage = self::validateMidocoMfGroupForArrayConstraintsFromSetMidocoMfGroup($midocoMfGroup))) {
+        if ('' !== ($midocoMfGroupArrayErrorMessage = self::validateMidocoMfGroupForArrayConstraintFromSetMidocoMfGroup($midocoMfGroup))) {
             throw new InvalidArgumentException($midocoMfGroupArrayErrorMessage, __LINE__);
         }
         $this->MidocoMfGroup = $midocoMfGroup;
@@ -85,14 +87,14 @@ class GetMfGroupResponse extends AbstractStructBase
     /**
      * Add item to MidocoMfGroup value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfGroupResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfGroupResponse
      */
-    public function addToMidocoMfGroup(\Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup $item): self
+    public function addToMidocoMfGroup(\Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup) {
-            throw new InvalidArgumentException(sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMfGroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup) {
+            throw new InvalidArgumentException(sprintf('The MidocoMfGroup property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoMfGroup, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMfGroup[] = $item;
         

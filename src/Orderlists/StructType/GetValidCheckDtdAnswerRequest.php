@@ -11,43 +11,169 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetValidCheckDtdAnswerRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetValidCheckDtdAnswerRequest extends AbstractStructBase
 {
     /**
-     * The supplierId
-     * @var string|null
+     * The supplier_travelType_combination
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 1
+     * @var \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination[]
      */
-    protected ?string $supplierId = null;
+    protected array $supplier_travelType_combination;
+    /**
+     * The category
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * @var string[]
+     */
+    protected ?array $category = null;
     /**
      * Constructor method for GetValidCheckDtdAnswerRequest
-     * @uses GetValidCheckDtdAnswerRequest::setSupplierId()
-     * @param string $supplierId
+     * @uses GetValidCheckDtdAnswerRequest::setSupplier_travelType_combination()
+     * @uses GetValidCheckDtdAnswerRequest::setCategory()
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination[] $supplier_travelType_combination
+     * @param string[] $category
      */
-    public function __construct(?string $supplierId = null)
+    public function __construct(array $supplier_travelType_combination, ?array $category = null)
     {
         $this
-            ->setSupplierId($supplierId);
+            ->setSupplier_travelType_combination($supplier_travelType_combination)
+            ->setCategory($category);
     }
     /**
-     * Get supplierId value
-     * @return string|null
+     * Get supplier_travelType_combination value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination[]
      */
-    public function getSupplierId(): ?string
+    public function getSupplier_travelType_combination(): array
     {
-        return $this->supplierId;
+        return $this->{'supplier-travelType-combination'};
     }
     /**
-     * Set supplierId value
-     * @param string $supplierId
+     * This method is responsible for validating the value(s) passed to the setSupplier_travelType_combination method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setSupplier_travelType_combination method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateSupplier_travelType_combinationForArrayConstraintFromSetSupplier_travelType_combination(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $getValidCheckDtdAnswerRequestSupplier_travelType_combinationItem) {
+            // validation for constraint: itemType
+            if (!$getValidCheckDtdAnswerRequestSupplier_travelType_combinationItem instanceof \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination) {
+                $invalidValues[] = is_object($getValidCheckDtdAnswerRequestSupplier_travelType_combinationItem) ? get_class($getValidCheckDtdAnswerRequestSupplier_travelType_combinationItem) : sprintf('%s(%s)', gettype($getValidCheckDtdAnswerRequestSupplier_travelType_combinationItem), var_export($getValidCheckDtdAnswerRequestSupplier_travelType_combinationItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The supplier_travelType_combination property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set supplier_travelType_combination value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination[] $supplier_travelType_combination
      * @return \Pggns\MidocoApi\Orderlists\StructType\GetValidCheckDtdAnswerRequest
      */
-    public function setSupplierId(?string $supplierId = null): self
+    public function setSupplier_travelType_combination(array $supplier_travelType_combination): self
     {
-        // validation for constraint: string
-        if (!is_null($supplierId) && !is_string($supplierId)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($supplierId, true), gettype($supplierId)), __LINE__);
+        // validation for constraint: array
+        if ('' !== ($supplier_travelType_combinationArrayErrorMessage = self::validateSupplier_travelType_combinationForArrayConstraintFromSetSupplier_travelType_combination($supplier_travelType_combination))) {
+            throw new InvalidArgumentException($supplier_travelType_combinationArrayErrorMessage, __LINE__);
         }
-        $this->supplierId = $supplierId;
+        $this->supplier_travelType_combination = $this->{'supplier-travelType-combination'} = $supplier_travelType_combination;
+        
+        return $this;
+    }
+    /**
+     * Add item to supplier_travelType_combination value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetValidCheckDtdAnswerRequest
+     */
+    public function addToSupplier_travelType_combination(\Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination) {
+            throw new InvalidArgumentException(sprintf('The supplier_travelType_combination property can only contain items of type \Pggns\MidocoApi\Orderlists\StructType\Supplier_travelType_combination, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->supplier_travelType_combination[] = $this->{'supplier-travelType-combination'}[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get category value
+     * @return string[]
+     */
+    public function getCategory(): ?array
+    {
+        return $this->category;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setCategory method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setCategory method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateCategoryForArrayConstraintFromSetCategory(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $getValidCheckDtdAnswerRequestCategoryItem) {
+            // validation for constraint: itemType
+            if (!is_string($getValidCheckDtdAnswerRequestCategoryItem)) {
+                $invalidValues[] = is_object($getValidCheckDtdAnswerRequestCategoryItem) ? get_class($getValidCheckDtdAnswerRequestCategoryItem) : sprintf('%s(%s)', gettype($getValidCheckDtdAnswerRequestCategoryItem), var_export($getValidCheckDtdAnswerRequestCategoryItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The category property can only contain items of type string, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set category value
+     * @throws InvalidArgumentException
+     * @param string[] $category
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetValidCheckDtdAnswerRequest
+     */
+    public function setCategory(?array $category = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($categoryArrayErrorMessage = self::validateCategoryForArrayConstraintFromSetCategory($category))) {
+            throw new InvalidArgumentException($categoryArrayErrorMessage, __LINE__);
+        }
+        $this->category = $category;
+        
+        return $this;
+    }
+    /**
+     * Add item to category value
+     * @throws InvalidArgumentException
+     * @param string $item
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetValidCheckDtdAnswerRequest
+     */
+    public function addToCategory(string $item): self
+    {
+        // validation for constraint: itemType
+        if (!is_string($item)) {
+            throw new InvalidArgumentException(sprintf('The category property can only contain items of type string, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->category[] = $item;
         
         return $this;
     }

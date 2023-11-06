@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBankNameResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBankNameResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetBankNameResponse extends AbstractStructBase
         return $this->Bank;
     }
     /**
-     * This method is responsible for validating the values passed to the setBank method
+     * This method is responsible for validating the value(s) passed to the setBank method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBank method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBankForArrayConstraintsFromSetBank(?array $values = []): string
+    public static function validateBankForArrayConstraintFromSetBank(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetBankNameResponse extends AbstractStructBase
     public function setBank(?array $bank = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bankArrayErrorMessage = self::validateBankForArrayConstraintsFromSetBank($bank))) {
+        if ('' !== ($bankArrayErrorMessage = self::validateBankForArrayConstraintFromSetBank($bank))) {
             throw new InvalidArgumentException($bankArrayErrorMessage, __LINE__);
         }
         $this->Bank = $bank;

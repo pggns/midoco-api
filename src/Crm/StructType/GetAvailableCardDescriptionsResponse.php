@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: returns the available card type descriptions
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableCardDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAvailableCardDescriptionsResponse extends AbstractStructBase
         return $this->MidocoCardDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCardDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoCardDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCardDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCardDescriptionForArrayConstraintsFromSetMidocoCardDescription(?array $values = []): string
+    public static function validateMidocoCardDescriptionForArrayConstraintFromSetMidocoCardDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAvailableCardDescriptionsResponse extends AbstractStructBase
     public function setMidocoCardDescription(?array $midocoCardDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCardDescriptionArrayErrorMessage = self::validateMidocoCardDescriptionForArrayConstraintsFromSetMidocoCardDescription($midocoCardDescription))) {
+        if ('' !== ($midocoCardDescriptionArrayErrorMessage = self::validateMidocoCardDescriptionForArrayConstraintFromSetMidocoCardDescription($midocoCardDescription))) {
             throw new InvalidArgumentException($midocoCardDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoCardDescription = $midocoCardDescription;

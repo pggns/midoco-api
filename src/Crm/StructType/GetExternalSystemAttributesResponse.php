@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetExternalSystemAttributesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExternalSystemAttributesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetExternalSystemAttributesResponse extends AbstractStructBase
         return $this->MidocoExternalSystemAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoExternalSystemAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoExternalSystemAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoExternalSystemAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoExternalSystemAttributeForArrayConstraintsFromSetMidocoExternalSystemAttribute(?array $values = []): string
+    public static function validateMidocoExternalSystemAttributeForArrayConstraintFromSetMidocoExternalSystemAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetExternalSystemAttributesResponse extends AbstractStructBase
     public function setMidocoExternalSystemAttribute(?array $midocoExternalSystemAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoExternalSystemAttributeArrayErrorMessage = self::validateMidocoExternalSystemAttributeForArrayConstraintsFromSetMidocoExternalSystemAttribute($midocoExternalSystemAttribute))) {
+        if ('' !== ($midocoExternalSystemAttributeArrayErrorMessage = self::validateMidocoExternalSystemAttributeForArrayConstraintFromSetMidocoExternalSystemAttribute($midocoExternalSystemAttribute))) {
             throw new InvalidArgumentException($midocoExternalSystemAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoExternalSystemAttribute = $midocoExternalSystemAttribute;

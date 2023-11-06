@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveConsentUnitsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveConsentUnitsRequest extends AbstractStructBase
 {
     /**
@@ -34,7 +35,7 @@ class SaveConsentUnitsRequest extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $disabledUnitName = [];
+    protected array $disabledUnitName;
     /**
      * Constructor method for SaveConsentUnitsRequest
      * @uses SaveConsentUnitsRequest::setConsentId()
@@ -62,7 +63,7 @@ class SaveConsentUnitsRequest extends AbstractStructBase
     /**
      * Set consentId value
      * @param string $consentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveConsentUnitsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveConsentUnitsRequest
      */
     public function setConsentId(string $consentId): self
     {
@@ -85,7 +86,7 @@ class SaveConsentUnitsRequest extends AbstractStructBase
     /**
      * Set isGroup value
      * @param bool $isGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveConsentUnitsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveConsentUnitsRequest
      */
     public function setIsGroup(bool $isGroup): self
     {
@@ -106,12 +107,13 @@ class SaveConsentUnitsRequest extends AbstractStructBase
         return $this->disabledUnitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setDisabledUnitName method
+     * This method is responsible for validating the value(s) passed to the setDisabledUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDisabledUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDisabledUnitNameForArrayConstraintsFromSetDisabledUnitName(?array $values = []): string
+    public static function validateDisabledUnitNameForArrayConstraintFromSetDisabledUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -135,12 +137,12 @@ class SaveConsentUnitsRequest extends AbstractStructBase
      * Set disabledUnitName value
      * @throws InvalidArgumentException
      * @param string[] $disabledUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveConsentUnitsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveConsentUnitsRequest
      */
     public function setDisabledUnitName(array $disabledUnitName): self
     {
         // validation for constraint: array
-        if ('' !== ($disabledUnitNameArrayErrorMessage = self::validateDisabledUnitNameForArrayConstraintsFromSetDisabledUnitName($disabledUnitName))) {
+        if ('' !== ($disabledUnitNameArrayErrorMessage = self::validateDisabledUnitNameForArrayConstraintFromSetDisabledUnitName($disabledUnitName))) {
             throw new InvalidArgumentException($disabledUnitNameArrayErrorMessage, __LINE__);
         }
         $this->disabledUnitName = $disabledUnitName;
@@ -151,7 +153,7 @@ class SaveConsentUnitsRequest extends AbstractStructBase
      * Add item to disabledUnitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveConsentUnitsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveConsentUnitsRequest
      */
     public function addToDisabledUnitName(string $item): self
     {

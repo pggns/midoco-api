@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListAsCampaignRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListAsCampaignRequest extends AbstractStructBase
 {
     /**
@@ -83,12 +84,13 @@ class ListAsCampaignRequest extends AbstractStructBase
         return $this->campaignData;
     }
     /**
-     * This method is responsible for validating the values passed to the setCampaignData method
+     * This method is responsible for validating the value(s) passed to the setCampaignData method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCampaignData method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCampaignDataForArrayConstraintsFromSetCampaignData(?array $values = []): string
+    public static function validateCampaignDataForArrayConstraintFromSetCampaignData(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -117,7 +119,7 @@ class ListAsCampaignRequest extends AbstractStructBase
     public function setCampaignData(?array $campaignData = null): self
     {
         // validation for constraint: array
-        if ('' !== ($campaignDataArrayErrorMessage = self::validateCampaignDataForArrayConstraintsFromSetCampaignData($campaignData))) {
+        if ('' !== ($campaignDataArrayErrorMessage = self::validateCampaignDataForArrayConstraintFromSetCampaignData($campaignData))) {
             throw new InvalidArgumentException($campaignDataArrayErrorMessage, __LINE__);
         }
         $this->campaignData = $campaignData;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDestinationAutoRemarksResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDestinationAutoRemarksResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetDestinationAutoRemarksResponse extends AbstractStructBase
         return $this->MidocoDestinationAutoRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDestinationAutoRemark method
+     * This method is responsible for validating the value(s) passed to the setMidocoDestinationAutoRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDestinationAutoRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDestinationAutoRemarkForArrayConstraintsFromSetMidocoDestinationAutoRemark(?array $values = []): string
+    public static function validateMidocoDestinationAutoRemarkForArrayConstraintFromSetMidocoDestinationAutoRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetDestinationAutoRemarksResponse extends AbstractStructBase
     public function setMidocoDestinationAutoRemark(?array $midocoDestinationAutoRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDestinationAutoRemarkArrayErrorMessage = self::validateMidocoDestinationAutoRemarkForArrayConstraintsFromSetMidocoDestinationAutoRemark($midocoDestinationAutoRemark))) {
+        if ('' !== ($midocoDestinationAutoRemarkArrayErrorMessage = self::validateMidocoDestinationAutoRemarkForArrayConstraintFromSetMidocoDestinationAutoRemark($midocoDestinationAutoRemark))) {
             throw new InvalidArgumentException($midocoDestinationAutoRemarkArrayErrorMessage, __LINE__);
         }
         $this->MidocoDestinationAutoRemark = $midocoDestinationAutoRemark;

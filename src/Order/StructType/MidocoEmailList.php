@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoEmailList StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoEmailList extends AbstractStructBase
 {
     /**
@@ -48,12 +49,13 @@ class MidocoEmailList extends AbstractStructBase
         return $this->MidocoEmail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoEmail method
+     * This method is responsible for validating the value(s) passed to the setMidocoEmail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEmail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoEmailForArrayConstraintsFromSetMidocoEmail(?array $values = []): string
+    public static function validateMidocoEmailForArrayConstraintFromSetMidocoEmail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -82,7 +84,7 @@ class MidocoEmailList extends AbstractStructBase
     public function setMidocoEmail(?array $midocoEmail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoEmailArrayErrorMessage = self::validateMidocoEmailForArrayConstraintsFromSetMidocoEmail($midocoEmail))) {
+        if ('' !== ($midocoEmailArrayErrorMessage = self::validateMidocoEmailForArrayConstraintFromSetMidocoEmail($midocoEmail))) {
             throw new InvalidArgumentException($midocoEmailArrayErrorMessage, __LINE__);
         }
         $this->MidocoEmail = $midocoEmail;

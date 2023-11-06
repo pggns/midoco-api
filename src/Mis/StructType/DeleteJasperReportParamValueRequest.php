@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteJasperReportParamValueRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteJasperReportParamValueRequest extends AbstractStructBase
 {
     /**

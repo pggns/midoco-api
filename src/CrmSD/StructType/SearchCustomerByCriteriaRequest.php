@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchCustomerByCriteriaRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchCustomerByCriteriaRequest extends AbstractStructBase
 {
     /**
@@ -152,12 +153,13 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
         return $this->feeGroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setFeeGroup method
+     * This method is responsible for validating the value(s) passed to the setFeeGroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFeeGroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFeeGroupForArrayConstraintsFromSetFeeGroup(?array $values = []): string
+    public static function validateFeeGroupForArrayConstraintFromSetFeeGroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -181,12 +183,12 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
      * Set feeGroup value
      * @throws InvalidArgumentException
      * @param string[] $feeGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setFeeGroup(?array $feeGroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($feeGroupArrayErrorMessage = self::validateFeeGroupForArrayConstraintsFromSetFeeGroup($feeGroup))) {
+        if ('' !== ($feeGroupArrayErrorMessage = self::validateFeeGroupForArrayConstraintFromSetFeeGroup($feeGroup))) {
             throw new InvalidArgumentException($feeGroupArrayErrorMessage, __LINE__);
         }
         $this->feeGroup = $feeGroup;
@@ -197,7 +199,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
      * Add item to feeGroup value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function addToFeeGroup(string $item): self
     {
@@ -220,7 +222,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set addressTypeId value
      * @param int $addressTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setAddressTypeId(?int $addressTypeId = null): self
     {
@@ -243,7 +245,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set mediaId value
      * @param string $mediaId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setMediaId(?string $mediaId = null): self
     {
@@ -266,7 +268,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set lockReasonId value
      * @param string $lockReasonId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setLockReasonId(?string $lockReasonId = null): self
     {
@@ -289,7 +291,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set deletedReasonId value
      * @param int $deletedReasonId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setDeletedReasonId(?int $deletedReasonId = null): self
     {
@@ -312,7 +314,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set costCentre value
      * @param string $costCentre
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setCostCentre(?string $costCentre = null): self
     {
@@ -335,7 +337,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set printOptionId value
      * @param int $printOptionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setPrintOptionId(?int $printOptionId = null): self
     {
@@ -358,7 +360,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set criteriaTypeId value
      * @param string $criteriaTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setCriteriaTypeId(?string $criteriaTypeId = null): self
     {
@@ -381,7 +383,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set paymentConditionId value
      * @param string $paymentConditionId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setPaymentConditionId(?string $paymentConditionId = null): self
     {
@@ -404,7 +406,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set travellerType value
      * @param string $travellerType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setTravellerType(?string $travellerType = null): self
     {
@@ -427,7 +429,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set connectionTypeId value
      * @param int $connectionTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setConnectionTypeId(?int $connectionTypeId = null): self
     {
@@ -450,7 +452,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set salutationId value
      * @param string $salutationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setSalutationId(?string $salutationId = null): self
     {
@@ -473,7 +475,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set accountNo value
      * @param string $accountNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setAccountNo(?string $accountNo = null): self
     {
@@ -496,7 +498,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set accountType value
      * @param string $accountType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setAccountType(?string $accountType = null): self
     {
@@ -519,7 +521,7 @@ class SearchCustomerByCriteriaRequest extends AbstractStructBase
     /**
      * Set notDeleted value
      * @param bool $notDeleted
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchCustomerByCriteriaRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchCustomerByCriteriaRequest
      */
     public function setNotDeleted(?bool $notDeleted = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmMidocoSettlFeeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmMidocoSettlFeeDTO extends AbstractStructBase
 {
     /**
@@ -103,7 +104,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setAmount(?float $amount = null): self
     {
@@ -126,7 +127,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set amountPerBatch value
      * @param float $amountPerBatch
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setAmountPerBatch(?float $amountPerBatch = null): self
     {
@@ -149,7 +150,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set batchQuantity value
      * @param int $batchQuantity
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setBatchQuantity(?int $batchQuantity = null): self
     {
@@ -172,7 +173,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -195,7 +196,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -218,7 +219,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set factor value
      * @param int $factor
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setFactor(?int $factor = null): self
     {
@@ -241,7 +242,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set feeId value
      * @param int $feeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setFeeId(?int $feeId = null): self
     {
@@ -264,7 +265,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set includedQuantity value
      * @param int $includedQuantity
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setIncludedQuantity(?int $includedQuantity = null): self
     {
@@ -287,7 +288,7 @@ class CrmMidocoSettlFeeDTO extends AbstractStructBase
     /**
      * Set settlementId value
      * @param int $settlementId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlFeeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlFeeDTO
      */
     public function setSettlementId(?int $settlementId = null): self
     {

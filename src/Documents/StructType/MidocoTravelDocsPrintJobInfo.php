@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTravelDocsPrintJobInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
 {
     /**
@@ -69,12 +70,13 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
         return $this->MidocoPrintSelect;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintSelect method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintSelect method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintSelect method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintSelectForArrayConstraintsFromSetMidocoPrintSelect(?array $values = []): string
+    public static function validateMidocoPrintSelectForArrayConstraintFromSetMidocoPrintSelect(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -103,7 +105,7 @@ class MidocoTravelDocsPrintJobInfo extends AbstractStructBase
     public function setMidocoPrintSelect(?array $midocoPrintSelect = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintSelectArrayErrorMessage = self::validateMidocoPrintSelectForArrayConstraintsFromSetMidocoPrintSelect($midocoPrintSelect))) {
+        if ('' !== ($midocoPrintSelectArrayErrorMessage = self::validateMidocoPrintSelectForArrayConstraintFromSetMidocoPrintSelect($midocoPrintSelect))) {
             throw new InvalidArgumentException($midocoPrintSelectArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintSelect = $midocoPrintSelect;

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteJasperParameter --- delete a parameter
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteJasperParameterResponse extends AbstractStructBase
 {
 }

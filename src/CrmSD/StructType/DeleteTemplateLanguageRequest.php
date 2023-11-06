@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteTemplateLanguage --- deletes the template for the given language
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteTemplateLanguageRequest extends AbstractStructBase
 {
     /**
@@ -49,7 +50,7 @@ class DeleteTemplateLanguageRequest extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteTemplateLanguageRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteTemplateLanguageRequest
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -72,7 +73,7 @@ class DeleteTemplateLanguageRequest extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteTemplateLanguageRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteTemplateLanguageRequest
      */
     public function setLanguage(?string $language = null): self
     {

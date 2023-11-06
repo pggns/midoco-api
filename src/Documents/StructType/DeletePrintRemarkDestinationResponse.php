@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeletePrintRemarkDestinationResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeletePrintRemarkDestinationResponse extends AbstractStructBase
 {
 }

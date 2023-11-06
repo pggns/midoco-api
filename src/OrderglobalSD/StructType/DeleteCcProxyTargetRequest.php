@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCcProxyTargetRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCcProxyTargetRequest extends AbstractStructBase
 {
     /**

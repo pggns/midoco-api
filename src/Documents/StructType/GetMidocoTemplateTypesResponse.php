@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoTemplateTypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoTemplateTypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoTemplateTypesResponse extends AbstractStructBase
         return $this->MidocoTemplateType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTemplateType method
+     * This method is responsible for validating the value(s) passed to the setMidocoTemplateType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTemplateType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTemplateTypeForArrayConstraintsFromSetMidocoTemplateType(?array $values = []): string
+    public static function validateMidocoTemplateTypeForArrayConstraintFromSetMidocoTemplateType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoTemplateTypesResponse extends AbstractStructBase
     public function setMidocoTemplateType(?array $midocoTemplateType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTemplateTypeArrayErrorMessage = self::validateMidocoTemplateTypeForArrayConstraintsFromSetMidocoTemplateType($midocoTemplateType))) {
+        if ('' !== ($midocoTemplateTypeArrayErrorMessage = self::validateMidocoTemplateTypeForArrayConstraintFromSetMidocoTemplateType($midocoTemplateType))) {
             throw new InvalidArgumentException($midocoTemplateTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoTemplateType = $midocoTemplateType;

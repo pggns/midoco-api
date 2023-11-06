@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBillingPrintInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingPrintInfoResponse extends AbstractStructBase
 {
     /**
@@ -65,12 +66,13 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
         return $this->MidocoBillingPrintInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingPrintInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingPrintInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingPrintInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingPrintInfoForArrayConstraintsFromSetMidocoBillingPrintInfo(?array $values = []): string
+    public static function validateMidocoBillingPrintInfoForArrayConstraintFromSetMidocoBillingPrintInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,7 +101,7 @@ class GetBillingPrintInfoResponse extends AbstractStructBase
     public function setMidocoBillingPrintInfo(?array $midocoBillingPrintInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingPrintInfoArrayErrorMessage = self::validateMidocoBillingPrintInfoForArrayConstraintsFromSetMidocoBillingPrintInfo($midocoBillingPrintInfo))) {
+        if ('' !== ($midocoBillingPrintInfoArrayErrorMessage = self::validateMidocoBillingPrintInfoForArrayConstraintFromSetMidocoBillingPrintInfo($midocoBillingPrintInfo))) {
             throw new InvalidArgumentException($midocoBillingPrintInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingPrintInfo = $midocoBillingPrintInfo;

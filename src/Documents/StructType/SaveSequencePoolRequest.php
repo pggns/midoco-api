@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveSequencePoolRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveSequencePoolRequest extends AbstractStructBase
 {
     /**

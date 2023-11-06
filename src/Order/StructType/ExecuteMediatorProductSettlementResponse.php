@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExecuteMediatorProductSettlementResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExecuteMediatorProductSettlementResponse extends AbstractStructBase
 {
     /**
@@ -64,12 +65,13 @@ class ExecuteMediatorProductSettlementResponse extends AbstractStructBase
         return $this->MidocoMediatorProductSettlementInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediatorProductSettlementInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediatorProductSettlementInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediatorProductSettlementInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediatorProductSettlementInfoForArrayConstraintsFromSetMidocoMediatorProductSettlementInfo(?array $values = []): string
+    public static function validateMidocoMediatorProductSettlementInfoForArrayConstraintFromSetMidocoMediatorProductSettlementInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -98,7 +100,7 @@ class ExecuteMediatorProductSettlementResponse extends AbstractStructBase
     public function setMidocoMediatorProductSettlementInfo(?array $midocoMediatorProductSettlementInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediatorProductSettlementInfoArrayErrorMessage = self::validateMidocoMediatorProductSettlementInfoForArrayConstraintsFromSetMidocoMediatorProductSettlementInfo($midocoMediatorProductSettlementInfo))) {
+        if ('' !== ($midocoMediatorProductSettlementInfoArrayErrorMessage = self::validateMidocoMediatorProductSettlementInfoForArrayConstraintFromSetMidocoMediatorProductSettlementInfo($midocoMediatorProductSettlementInfo))) {
             throw new InvalidArgumentException($midocoMediatorProductSettlementInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediatorProductSettlementInfo = $midocoMediatorProductSettlementInfo;
@@ -130,12 +132,13 @@ class ExecuteMediatorProductSettlementResponse extends AbstractStructBase
         return $this->MediatorError;
     }
     /**
-     * This method is responsible for validating the values passed to the setMediatorError method
+     * This method is responsible for validating the value(s) passed to the setMediatorError method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMediatorError method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMediatorErrorForArrayConstraintsFromSetMediatorError(?array $values = []): string
+    public static function validateMediatorErrorForArrayConstraintFromSetMediatorError(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -164,7 +167,7 @@ class ExecuteMediatorProductSettlementResponse extends AbstractStructBase
     public function setMediatorError(?array $mediatorError = null): self
     {
         // validation for constraint: array
-        if ('' !== ($mediatorErrorArrayErrorMessage = self::validateMediatorErrorForArrayConstraintsFromSetMediatorError($mediatorError))) {
+        if ('' !== ($mediatorErrorArrayErrorMessage = self::validateMediatorErrorForArrayConstraintFromSetMediatorError($mediatorError))) {
             throw new InvalidArgumentException($mediatorErrorArrayErrorMessage, __LINE__);
         }
         $this->MediatorError = $mediatorError;
@@ -196,12 +199,13 @@ class ExecuteMediatorProductSettlementResponse extends AbstractStructBase
         return $this->pdfForPreview;
     }
     /**
-     * This method is responsible for validating the values passed to the setPdfForPreview method
+     * This method is responsible for validating the value(s) passed to the setPdfForPreview method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPdfForPreview method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePdfForPreviewForArrayConstraintsFromSetPdfForPreview(?array $values = []): string
+    public static function validatePdfForPreviewForArrayConstraintFromSetPdfForPreview(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -230,7 +234,7 @@ class ExecuteMediatorProductSettlementResponse extends AbstractStructBase
     public function setPdfForPreview(?array $pdfForPreview = null): self
     {
         // validation for constraint: array
-        if ('' !== ($pdfForPreviewArrayErrorMessage = self::validatePdfForPreviewForArrayConstraintsFromSetPdfForPreview($pdfForPreview))) {
+        if ('' !== ($pdfForPreviewArrayErrorMessage = self::validatePdfForPreviewForArrayConstraintFromSetPdfForPreview($pdfForPreview))) {
             throw new InvalidArgumentException($pdfForPreviewArrayErrorMessage, __LINE__);
         }
         $this->pdfForPreview = $pdfForPreview;

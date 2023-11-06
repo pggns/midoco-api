@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: GetAllCrmMidocoSettlFees --- returns the Midoco settlement levels defined for the given settl
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
         return $this->MidocoCrmMidocoSettlFee;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoSettlFee method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoSettlFee method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoSettlFee method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoSettlFeeForArrayConstraintsFromSetMidocoCrmMidocoSettlFee(?array $values = []): string
+    public static function validateMidocoCrmMidocoSettlFeeForArrayConstraintFromSetMidocoCrmMidocoSettlFee(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetAllCrmMidocoSettlFeesResponse extends AbstractStructBase
     public function setMidocoCrmMidocoSettlFee(?array $midocoCrmMidocoSettlFee = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoSettlFeeArrayErrorMessage = self::validateMidocoCrmMidocoSettlFeeForArrayConstraintsFromSetMidocoCrmMidocoSettlFee($midocoCrmMidocoSettlFee))) {
+        if ('' !== ($midocoCrmMidocoSettlFeeArrayErrorMessage = self::validateMidocoCrmMidocoSettlFeeForArrayConstraintFromSetMidocoCrmMidocoSettlFee($midocoCrmMidocoSettlFee))) {
             throw new InvalidArgumentException($midocoCrmMidocoSettlFeeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoSettlFee = $midocoCrmMidocoSettlFee;

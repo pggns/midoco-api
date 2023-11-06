@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchCustomerByCriteriaResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchCustomerByCriteriaResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchCustomerByCriteriaResponse extends AbstractStructBase
         return $this->MidocoCustomerInformation;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustomerInformation method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerInformation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerInformation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustomerInformationForArrayConstraintsFromSetMidocoCustomerInformation(?array $values = []): string
+    public static function validateMidocoCustomerInformationForArrayConstraintFromSetMidocoCustomerInformation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchCustomerByCriteriaResponse extends AbstractStructBase
     public function setMidocoCustomerInformation(?array $midocoCustomerInformation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustomerInformationArrayErrorMessage = self::validateMidocoCustomerInformationForArrayConstraintsFromSetMidocoCustomerInformation($midocoCustomerInformation))) {
+        if ('' !== ($midocoCustomerInformationArrayErrorMessage = self::validateMidocoCustomerInformationForArrayConstraintFromSetMidocoCustomerInformation($midocoCustomerInformation))) {
             throw new InvalidArgumentException($midocoCustomerInformationArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustomerInformation = $midocoCustomerInformation;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoItemSellingModeHistory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoItemSellingModeHistory extends MidocoItemSellingModeType
 {
     /**

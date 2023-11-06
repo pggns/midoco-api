@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: optional payments at booking level | if there is additional service included, it should be added here | each contained booking and the services for this booking are contained here
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Booking extends AbstractStructBase
 {
     /**
@@ -641,6 +642,20 @@ class Booking extends AbstractStructBase
      */
     protected ?string $settlement_type = null;
     /**
+     * The group_item_name
+     * Meta information extracted from the WSDL
+     * - documentation: group information field for sellitem and billingposition e.g. the combination of flight date flight number
+     * @var string|null
+     */
+    protected ?string $group_item_name = null;
+    /**
+     * The group_item_flag
+     * Meta information extracted from the WSDL
+     * - documentation: the flag for group booking
+     * @var bool|null
+     */
+    protected ?bool $group_item_flag = null;
+    /**
      * Constructor method for booking
      * @uses Booking::setSupplier()
      * @uses Booking::setPosition()
@@ -721,6 +736,8 @@ class Booking extends AbstractStructBase
      * @uses Booking::setContract_time()
      * @uses Booking::setTransfer()
      * @uses Booking::setSettlement_type()
+     * @uses Booking::setGroup_item_name()
+     * @uses Booking::setGroup_item_flag()
      * @param string $supplier
      * @param int $position
      * @param int $option_period
@@ -800,8 +817,10 @@ class Booking extends AbstractStructBase
      * @param string $contract_time
      * @param string $transfer
      * @param string $settlement_type
+     * @param string $group_item_name
+     * @param bool $group_item_flag
      */
-    public function __construct(string $supplier, int $position, ?int $option_period = null, ?string $service_description = null, ?string $accomodation_code = null, ?string $accomodation_description = null, ?string $departure_code = null, ?string $departure_description = null, ?string $destination_code = null, ?string $destination_description = null, ?string $return_departure_code = null, ?string $return_departure_description = null, ?string $return_destination_code = null, ?string $return_destination_description = null, ?string $return_code = null, ?string $return_description = null, ?string $catering_description = null, ?string $room_description = null, ?string $insurance_description = null, ?string $area_code = null, ?string $area_description = null, ?string $location_description = null, ?string $country = null, ?string $country_description = null, ?string $cruise_description = null, ?string $source_ext_id = null, ?string $source_ext_system = null, ?string $carrier = null, ?string $flight_no = null, ?string $return_carrier = null, ?string $return_flight_no = null, ?array $generic_service = null, ?array $car_service = null, ?array $flight_service = null, ?array $accomodation_service = null, ?array $insurance_service = null, ?array $transfer_service = null, ?array $bus_service = null, ?array $rail_service = null, ?array $cruise_service = null, ?array $event_service = null, ?\Pggns\MidocoApi\Orderlists\StructType\Hints $hints = null, ?array $person = null, ?array $cc_authorisation = null, ?array $midoco_cc_authorisation = null, ?array $remark = null, ?array $saving = null, ?array $attribute = null, ?array $additionalService = null, ?string $departure_time = null, ?string $arrival_time = null, ?string $return_departure_time = null, ?string $return_arrival_time = null, ?array $externalPayment = null, ?string $travel_no = null, ?string $travel_no_description = null, ?string $catalog = null, ?string $product_type = null, ?bool $is_request = false, ?bool $is_option = false, ?bool $is_one_way = false, ?string $booking_id = null, ?string $booking_version = null, ?string $supplier_agency = null, ?string $reference_booking_id = null, ?string $reference_type = null, ?string $reference_url = null, ?int $price_ref = null, ?int $package_ref = null, ?bool $prevent_printing = null, ?string $category = null, ?string $booking_date = null, ?string $creation_date = null, ?string $selling_mode = null, ?string $confirmation_group = null, ?bool $mobility_indicator = null, ?string $contract_time = null, ?string $transfer = null, ?string $settlement_type = null)
+    public function __construct(string $supplier, int $position, ?int $option_period = null, ?string $service_description = null, ?string $accomodation_code = null, ?string $accomodation_description = null, ?string $departure_code = null, ?string $departure_description = null, ?string $destination_code = null, ?string $destination_description = null, ?string $return_departure_code = null, ?string $return_departure_description = null, ?string $return_destination_code = null, ?string $return_destination_description = null, ?string $return_code = null, ?string $return_description = null, ?string $catering_description = null, ?string $room_description = null, ?string $insurance_description = null, ?string $area_code = null, ?string $area_description = null, ?string $location_description = null, ?string $country = null, ?string $country_description = null, ?string $cruise_description = null, ?string $source_ext_id = null, ?string $source_ext_system = null, ?string $carrier = null, ?string $flight_no = null, ?string $return_carrier = null, ?string $return_flight_no = null, ?array $generic_service = null, ?array $car_service = null, ?array $flight_service = null, ?array $accomodation_service = null, ?array $insurance_service = null, ?array $transfer_service = null, ?array $bus_service = null, ?array $rail_service = null, ?array $cruise_service = null, ?array $event_service = null, ?\Pggns\MidocoApi\Orderlists\StructType\Hints $hints = null, ?array $person = null, ?array $cc_authorisation = null, ?array $midoco_cc_authorisation = null, ?array $remark = null, ?array $saving = null, ?array $attribute = null, ?array $additionalService = null, ?string $departure_time = null, ?string $arrival_time = null, ?string $return_departure_time = null, ?string $return_arrival_time = null, ?array $externalPayment = null, ?string $travel_no = null, ?string $travel_no_description = null, ?string $catalog = null, ?string $product_type = null, ?bool $is_request = false, ?bool $is_option = false, ?bool $is_one_way = false, ?string $booking_id = null, ?string $booking_version = null, ?string $supplier_agency = null, ?string $reference_booking_id = null, ?string $reference_type = null, ?string $reference_url = null, ?int $price_ref = null, ?int $package_ref = null, ?bool $prevent_printing = null, ?string $category = null, ?string $booking_date = null, ?string $creation_date = null, ?string $selling_mode = null, ?string $confirmation_group = null, ?bool $mobility_indicator = null, ?string $contract_time = null, ?string $transfer = null, ?string $settlement_type = null, ?string $group_item_name = null, ?bool $group_item_flag = null)
     {
         $this
             ->setSupplier($supplier)
@@ -882,7 +901,9 @@ class Booking extends AbstractStructBase
             ->setMobility_indicator($mobility_indicator)
             ->setContract_time($contract_time)
             ->setTransfer($transfer)
-            ->setSettlement_type($settlement_type);
+            ->setSettlement_type($settlement_type)
+            ->setGroup_item_name($group_item_name)
+            ->setGroup_item_flag($group_item_flag);
     }
     /**
      * Get supplier value
@@ -1622,12 +1643,13 @@ class Booking extends AbstractStructBase
         return $this->{'generic-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setGeneric_service method
+     * This method is responsible for validating the value(s) passed to the setGeneric_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setGeneric_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateGeneric_serviceForArrayConstraintsFromSetGeneric_service(?array $values = []): string
+    public static function validateGeneric_serviceForArrayConstraintFromSetGeneric_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1656,7 +1678,7 @@ class Booking extends AbstractStructBase
     public function setGeneric_service(?array $generic_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($generic_serviceArrayErrorMessage = self::validateGeneric_serviceForArrayConstraintsFromSetGeneric_service($generic_service))) {
+        if ('' !== ($generic_serviceArrayErrorMessage = self::validateGeneric_serviceForArrayConstraintFromSetGeneric_service($generic_service))) {
             throw new InvalidArgumentException($generic_serviceArrayErrorMessage, __LINE__);
         }
         $this->generic_service = $this->{'generic-service'} = $generic_service;
@@ -1688,12 +1710,13 @@ class Booking extends AbstractStructBase
         return $this->{'car-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setCar_service method
+     * This method is responsible for validating the value(s) passed to the setCar_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCar_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCar_serviceForArrayConstraintsFromSetCar_service(?array $values = []): string
+    public static function validateCar_serviceForArrayConstraintFromSetCar_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1722,7 +1745,7 @@ class Booking extends AbstractStructBase
     public function setCar_service(?array $car_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($car_serviceArrayErrorMessage = self::validateCar_serviceForArrayConstraintsFromSetCar_service($car_service))) {
+        if ('' !== ($car_serviceArrayErrorMessage = self::validateCar_serviceForArrayConstraintFromSetCar_service($car_service))) {
             throw new InvalidArgumentException($car_serviceArrayErrorMessage, __LINE__);
         }
         $this->car_service = $this->{'car-service'} = $car_service;
@@ -1754,12 +1777,13 @@ class Booking extends AbstractStructBase
         return $this->{'flight-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setFlight_service method
+     * This method is responsible for validating the value(s) passed to the setFlight_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setFlight_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateFlight_serviceForArrayConstraintsFromSetFlight_service(?array $values = []): string
+    public static function validateFlight_serviceForArrayConstraintFromSetFlight_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1788,7 +1812,7 @@ class Booking extends AbstractStructBase
     public function setFlight_service(?array $flight_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($flight_serviceArrayErrorMessage = self::validateFlight_serviceForArrayConstraintsFromSetFlight_service($flight_service))) {
+        if ('' !== ($flight_serviceArrayErrorMessage = self::validateFlight_serviceForArrayConstraintFromSetFlight_service($flight_service))) {
             throw new InvalidArgumentException($flight_serviceArrayErrorMessage, __LINE__);
         }
         $this->flight_service = $this->{'flight-service'} = $flight_service;
@@ -1820,12 +1844,13 @@ class Booking extends AbstractStructBase
         return $this->{'accomodation-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setAccomodation_service method
+     * This method is responsible for validating the value(s) passed to the setAccomodation_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAccomodation_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAccomodation_serviceForArrayConstraintsFromSetAccomodation_service(?array $values = []): string
+    public static function validateAccomodation_serviceForArrayConstraintFromSetAccomodation_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1854,7 +1879,7 @@ class Booking extends AbstractStructBase
     public function setAccomodation_service(?array $accomodation_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($accomodation_serviceArrayErrorMessage = self::validateAccomodation_serviceForArrayConstraintsFromSetAccomodation_service($accomodation_service))) {
+        if ('' !== ($accomodation_serviceArrayErrorMessage = self::validateAccomodation_serviceForArrayConstraintFromSetAccomodation_service($accomodation_service))) {
             throw new InvalidArgumentException($accomodation_serviceArrayErrorMessage, __LINE__);
         }
         $this->accomodation_service = $this->{'accomodation-service'} = $accomodation_service;
@@ -1886,12 +1911,13 @@ class Booking extends AbstractStructBase
         return $this->{'insurance-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setInsurance_service method
+     * This method is responsible for validating the value(s) passed to the setInsurance_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setInsurance_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateInsurance_serviceForArrayConstraintsFromSetInsurance_service(?array $values = []): string
+    public static function validateInsurance_serviceForArrayConstraintFromSetInsurance_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1920,7 +1946,7 @@ class Booking extends AbstractStructBase
     public function setInsurance_service(?array $insurance_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($insurance_serviceArrayErrorMessage = self::validateInsurance_serviceForArrayConstraintsFromSetInsurance_service($insurance_service))) {
+        if ('' !== ($insurance_serviceArrayErrorMessage = self::validateInsurance_serviceForArrayConstraintFromSetInsurance_service($insurance_service))) {
             throw new InvalidArgumentException($insurance_serviceArrayErrorMessage, __LINE__);
         }
         $this->insurance_service = $this->{'insurance-service'} = $insurance_service;
@@ -1952,12 +1978,13 @@ class Booking extends AbstractStructBase
         return $this->{'transfer-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setTransfer_service method
+     * This method is responsible for validating the value(s) passed to the setTransfer_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTransfer_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTransfer_serviceForArrayConstraintsFromSetTransfer_service(?array $values = []): string
+    public static function validateTransfer_serviceForArrayConstraintFromSetTransfer_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1986,7 +2013,7 @@ class Booking extends AbstractStructBase
     public function setTransfer_service(?array $transfer_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($transfer_serviceArrayErrorMessage = self::validateTransfer_serviceForArrayConstraintsFromSetTransfer_service($transfer_service))) {
+        if ('' !== ($transfer_serviceArrayErrorMessage = self::validateTransfer_serviceForArrayConstraintFromSetTransfer_service($transfer_service))) {
             throw new InvalidArgumentException($transfer_serviceArrayErrorMessage, __LINE__);
         }
         $this->transfer_service = $this->{'transfer-service'} = $transfer_service;
@@ -2018,12 +2045,13 @@ class Booking extends AbstractStructBase
         return $this->{'bus-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setBus_service method
+     * This method is responsible for validating the value(s) passed to the setBus_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setBus_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateBus_serviceForArrayConstraintsFromSetBus_service(?array $values = []): string
+    public static function validateBus_serviceForArrayConstraintFromSetBus_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2052,7 +2080,7 @@ class Booking extends AbstractStructBase
     public function setBus_service(?array $bus_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($bus_serviceArrayErrorMessage = self::validateBus_serviceForArrayConstraintsFromSetBus_service($bus_service))) {
+        if ('' !== ($bus_serviceArrayErrorMessage = self::validateBus_serviceForArrayConstraintFromSetBus_service($bus_service))) {
             throw new InvalidArgumentException($bus_serviceArrayErrorMessage, __LINE__);
         }
         $this->bus_service = $this->{'bus-service'} = $bus_service;
@@ -2084,12 +2112,13 @@ class Booking extends AbstractStructBase
         return $this->{'rail-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setRail_service method
+     * This method is responsible for validating the value(s) passed to the setRail_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRail_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRail_serviceForArrayConstraintsFromSetRail_service(?array $values = []): string
+    public static function validateRail_serviceForArrayConstraintFromSetRail_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2118,7 +2147,7 @@ class Booking extends AbstractStructBase
     public function setRail_service(?array $rail_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($rail_serviceArrayErrorMessage = self::validateRail_serviceForArrayConstraintsFromSetRail_service($rail_service))) {
+        if ('' !== ($rail_serviceArrayErrorMessage = self::validateRail_serviceForArrayConstraintFromSetRail_service($rail_service))) {
             throw new InvalidArgumentException($rail_serviceArrayErrorMessage, __LINE__);
         }
         $this->rail_service = $this->{'rail-service'} = $rail_service;
@@ -2150,12 +2179,13 @@ class Booking extends AbstractStructBase
         return $this->{'cruise-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setCruise_service method
+     * This method is responsible for validating the value(s) passed to the setCruise_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCruise_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCruise_serviceForArrayConstraintsFromSetCruise_service(?array $values = []): string
+    public static function validateCruise_serviceForArrayConstraintFromSetCruise_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2184,7 +2214,7 @@ class Booking extends AbstractStructBase
     public function setCruise_service(?array $cruise_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cruise_serviceArrayErrorMessage = self::validateCruise_serviceForArrayConstraintsFromSetCruise_service($cruise_service))) {
+        if ('' !== ($cruise_serviceArrayErrorMessage = self::validateCruise_serviceForArrayConstraintFromSetCruise_service($cruise_service))) {
             throw new InvalidArgumentException($cruise_serviceArrayErrorMessage, __LINE__);
         }
         $this->cruise_service = $this->{'cruise-service'} = $cruise_service;
@@ -2216,12 +2246,13 @@ class Booking extends AbstractStructBase
         return $this->{'event-service'};
     }
     /**
-     * This method is responsible for validating the values passed to the setEvent_service method
+     * This method is responsible for validating the value(s) passed to the setEvent_service method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEvent_service method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEvent_serviceForArrayConstraintsFromSetEvent_service(?array $values = []): string
+    public static function validateEvent_serviceForArrayConstraintFromSetEvent_service(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2250,7 +2281,7 @@ class Booking extends AbstractStructBase
     public function setEvent_service(?array $event_service = null): self
     {
         // validation for constraint: array
-        if ('' !== ($event_serviceArrayErrorMessage = self::validateEvent_serviceForArrayConstraintsFromSetEvent_service($event_service))) {
+        if ('' !== ($event_serviceArrayErrorMessage = self::validateEvent_serviceForArrayConstraintFromSetEvent_service($event_service))) {
             throw new InvalidArgumentException($event_serviceArrayErrorMessage, __LINE__);
         }
         $this->event_service = $this->{'event-service'} = $event_service;
@@ -2301,12 +2332,13 @@ class Booking extends AbstractStructBase
         return $this->person;
     }
     /**
-     * This method is responsible for validating the values passed to the setPerson method
+     * This method is responsible for validating the value(s) passed to the setPerson method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPerson method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePersonForArrayConstraintsFromSetPerson(?array $values = []): string
+    public static function validatePersonForArrayConstraintFromSetPerson(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2335,7 +2367,7 @@ class Booking extends AbstractStructBase
     public function setPerson(?array $person = null): self
     {
         // validation for constraint: array
-        if ('' !== ($personArrayErrorMessage = self::validatePersonForArrayConstraintsFromSetPerson($person))) {
+        if ('' !== ($personArrayErrorMessage = self::validatePersonForArrayConstraintFromSetPerson($person))) {
             throw new InvalidArgumentException($personArrayErrorMessage, __LINE__);
         }
         $this->person = $person;
@@ -2367,12 +2399,13 @@ class Booking extends AbstractStructBase
         return $this->{'cc-authorisation'};
     }
     /**
-     * This method is responsible for validating the values passed to the setCc_authorisation method
+     * This method is responsible for validating the value(s) passed to the setCc_authorisation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCc_authorisation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCc_authorisationForArrayConstraintsFromSetCc_authorisation(?array $values = []): string
+    public static function validateCc_authorisationForArrayConstraintFromSetCc_authorisation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2401,7 +2434,7 @@ class Booking extends AbstractStructBase
     public function setCc_authorisation(?array $cc_authorisation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cc_authorisationArrayErrorMessage = self::validateCc_authorisationForArrayConstraintsFromSetCc_authorisation($cc_authorisation))) {
+        if ('' !== ($cc_authorisationArrayErrorMessage = self::validateCc_authorisationForArrayConstraintFromSetCc_authorisation($cc_authorisation))) {
             throw new InvalidArgumentException($cc_authorisationArrayErrorMessage, __LINE__);
         }
         $this->cc_authorisation = $this->{'cc-authorisation'} = $cc_authorisation;
@@ -2433,12 +2466,13 @@ class Booking extends AbstractStructBase
         return $this->{'midoco-cc-authorisation'};
     }
     /**
-     * This method is responsible for validating the values passed to the setMidoco_cc_authorisation method
+     * This method is responsible for validating the value(s) passed to the setMidoco_cc_authorisation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidoco_cc_authorisation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidoco_cc_authorisationForArrayConstraintsFromSetMidoco_cc_authorisation(?array $values = []): string
+    public static function validateMidoco_cc_authorisationForArrayConstraintFromSetMidoco_cc_authorisation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2467,7 +2501,7 @@ class Booking extends AbstractStructBase
     public function setMidoco_cc_authorisation(?array $midoco_cc_authorisation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midoco_cc_authorisationArrayErrorMessage = self::validateMidoco_cc_authorisationForArrayConstraintsFromSetMidoco_cc_authorisation($midoco_cc_authorisation))) {
+        if ('' !== ($midoco_cc_authorisationArrayErrorMessage = self::validateMidoco_cc_authorisationForArrayConstraintFromSetMidoco_cc_authorisation($midoco_cc_authorisation))) {
             throw new InvalidArgumentException($midoco_cc_authorisationArrayErrorMessage, __LINE__);
         }
         $this->midoco_cc_authorisation = $this->{'midoco-cc-authorisation'} = $midoco_cc_authorisation;
@@ -2499,12 +2533,13 @@ class Booking extends AbstractStructBase
         return $this->remark;
     }
     /**
-     * This method is responsible for validating the values passed to the setRemark method
+     * This method is responsible for validating the value(s) passed to the setRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRemarkForArrayConstraintsFromSetRemark(?array $values = []): string
+    public static function validateRemarkForArrayConstraintFromSetRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2533,7 +2568,7 @@ class Booking extends AbstractStructBase
     public function setRemark(?array $remark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($remarkArrayErrorMessage = self::validateRemarkForArrayConstraintsFromSetRemark($remark))) {
+        if ('' !== ($remarkArrayErrorMessage = self::validateRemarkForArrayConstraintFromSetRemark($remark))) {
             throw new InvalidArgumentException($remarkArrayErrorMessage, __LINE__);
         }
         $this->remark = $remark;
@@ -2565,12 +2600,13 @@ class Booking extends AbstractStructBase
         return $this->saving;
     }
     /**
-     * This method is responsible for validating the values passed to the setSaving method
+     * This method is responsible for validating the value(s) passed to the setSaving method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSaving method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSavingForArrayConstraintsFromSetSaving(?array $values = []): string
+    public static function validateSavingForArrayConstraintFromSetSaving(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2599,7 +2635,7 @@ class Booking extends AbstractStructBase
     public function setSaving(?array $saving = null): self
     {
         // validation for constraint: array
-        if ('' !== ($savingArrayErrorMessage = self::validateSavingForArrayConstraintsFromSetSaving($saving))) {
+        if ('' !== ($savingArrayErrorMessage = self::validateSavingForArrayConstraintFromSetSaving($saving))) {
             throw new InvalidArgumentException($savingArrayErrorMessage, __LINE__);
         }
         $this->saving = $saving;
@@ -2631,12 +2667,13 @@ class Booking extends AbstractStructBase
         return $this->attribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setAttribute method
+     * This method is responsible for validating the value(s) passed to the setAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAttributeForArrayConstraintsFromSetAttribute(?array $values = []): string
+    public static function validateAttributeForArrayConstraintFromSetAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2665,7 +2702,7 @@ class Booking extends AbstractStructBase
     public function setAttribute(?array $attribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($attributeArrayErrorMessage = self::validateAttributeForArrayConstraintsFromSetAttribute($attribute))) {
+        if ('' !== ($attributeArrayErrorMessage = self::validateAttributeForArrayConstraintFromSetAttribute($attribute))) {
             throw new InvalidArgumentException($attributeArrayErrorMessage, __LINE__);
         }
         $this->attribute = $attribute;
@@ -2697,12 +2734,13 @@ class Booking extends AbstractStructBase
         return $this->AdditionalService;
     }
     /**
-     * This method is responsible for validating the values passed to the setAdditionalService method
+     * This method is responsible for validating the value(s) passed to the setAdditionalService method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAdditionalService method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAdditionalServiceForArrayConstraintsFromSetAdditionalService(?array $values = []): string
+    public static function validateAdditionalServiceForArrayConstraintFromSetAdditionalService(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2731,7 +2769,7 @@ class Booking extends AbstractStructBase
     public function setAdditionalService(?array $additionalService = null): self
     {
         // validation for constraint: array
-        if ('' !== ($additionalServiceArrayErrorMessage = self::validateAdditionalServiceForArrayConstraintsFromSetAdditionalService($additionalService))) {
+        if ('' !== ($additionalServiceArrayErrorMessage = self::validateAdditionalServiceForArrayConstraintFromSetAdditionalService($additionalService))) {
             throw new InvalidArgumentException($additionalServiceArrayErrorMessage, __LINE__);
         }
         $this->AdditionalService = $additionalService;
@@ -2774,7 +2812,7 @@ class Booking extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($departure_time, true), gettype($departure_time)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($departure_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', $departure_time)) {
+        if (!is_null($departure_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $departure_time)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($departure_time, true)), __LINE__);
         }
         $this->departure_time = $this->{'departure-time'} = $departure_time;
@@ -2801,7 +2839,7 @@ class Booking extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($arrival_time, true), gettype($arrival_time)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($arrival_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', $arrival_time)) {
+        if (!is_null($arrival_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $arrival_time)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($arrival_time, true)), __LINE__);
         }
         $this->arrival_time = $this->{'arrival-time'} = $arrival_time;
@@ -2828,7 +2866,7 @@ class Booking extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($return_departure_time, true), gettype($return_departure_time)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($return_departure_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', $return_departure_time)) {
+        if (!is_null($return_departure_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $return_departure_time)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($return_departure_time, true)), __LINE__);
         }
         $this->return_departure_time = $this->{'return-departure-time'} = $return_departure_time;
@@ -2855,7 +2893,7 @@ class Booking extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($return_arrival_time, true), gettype($return_arrival_time)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2}:[0-9]{2})
-        if (!is_null($return_arrival_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', $return_arrival_time)) {
+        if (!is_null($return_arrival_time) && !preg_match('/[0-9]{2}:[0-9]{2}/', (string) $return_arrival_time)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}:[0-9]{2}/', var_export($return_arrival_time, true)), __LINE__);
         }
         $this->return_arrival_time = $this->{'return-arrival-time'} = $return_arrival_time;
@@ -2871,12 +2909,13 @@ class Booking extends AbstractStructBase
         return $this->ExternalPayment;
     }
     /**
-     * This method is responsible for validating the values passed to the setExternalPayment method
+     * This method is responsible for validating the value(s) passed to the setExternalPayment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setExternalPayment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateExternalPaymentForArrayConstraintsFromSetExternalPayment(?array $values = []): string
+    public static function validateExternalPaymentForArrayConstraintFromSetExternalPayment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -2905,7 +2944,7 @@ class Booking extends AbstractStructBase
     public function setExternalPayment(?array $externalPayment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($externalPaymentArrayErrorMessage = self::validateExternalPaymentForArrayConstraintsFromSetExternalPayment($externalPayment))) {
+        if ('' !== ($externalPaymentArrayErrorMessage = self::validateExternalPaymentForArrayConstraintFromSetExternalPayment($externalPayment))) {
             throw new InvalidArgumentException($externalPaymentArrayErrorMessage, __LINE__);
         }
         $this->ExternalPayment = $externalPayment;
@@ -3503,6 +3542,52 @@ class Booking extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlement_type, true), gettype($settlement_type)), __LINE__);
         }
         $this->settlement_type = $this->{'settlement-type'} = $settlement_type;
+        
+        return $this;
+    }
+    /**
+     * Get group_item_name value
+     * @return string|null
+     */
+    public function getGroup_item_name(): ?string
+    {
+        return $this->{'group-item-name'};
+    }
+    /**
+     * Set group_item_name value
+     * @param string $group_item_name
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking
+     */
+    public function setGroup_item_name(?string $group_item_name = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($group_item_name) && !is_string($group_item_name)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($group_item_name, true), gettype($group_item_name)), __LINE__);
+        }
+        $this->group_item_name = $this->{'group-item-name'} = $group_item_name;
+        
+        return $this;
+    }
+    /**
+     * Get group_item_flag value
+     * @return bool|null
+     */
+    public function getGroup_item_flag(): ?bool
+    {
+        return $this->{'group-item-flag'};
+    }
+    /**
+     * Set group_item_flag value
+     * @param bool $group_item_flag
+     * @return \Pggns\MidocoApi\Orderlists\StructType\Booking
+     */
+    public function setGroup_item_flag(?bool $group_item_flag = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($group_item_flag) && !is_bool($group_item_flag)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($group_item_flag, true), gettype($group_item_flag)), __LINE__);
+        }
+        $this->group_item_flag = $this->{'group-item-flag'} = $group_item_flag;
         
         return $this;
     }

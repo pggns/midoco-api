@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: free text info, not used for printing, only internal
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Hints extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class Hints extends AbstractStructBase
         return $this->hint;
     }
     /**
-     * This method is responsible for validating the values passed to the setHint method
+     * This method is responsible for validating the value(s) passed to the setHint method
      * This method is willingly generated in order to preserve the one-line inline validation within the setHint method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateHintForArrayConstraintsFromSetHint(?array $values = []): string
+    public static function validateHintForArrayConstraintFromSetHint(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class Hints extends AbstractStructBase
     public function setHint(?array $hint = null): self
     {
         // validation for constraint: array
-        if ('' !== ($hintArrayErrorMessage = self::validateHintForArrayConstraintsFromSetHint($hint))) {
+        if ('' !== ($hintArrayErrorMessage = self::validateHintForArrayConstraintFromSetHint($hint))) {
             throw new InvalidArgumentException($hintArrayErrorMessage, __LINE__);
         }
         $this->hint = $hint;

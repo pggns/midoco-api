@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoUserChangesListType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoUserChangesListType extends AbstractStructBase
 {
     /**

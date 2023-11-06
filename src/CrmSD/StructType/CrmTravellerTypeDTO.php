@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmTravellerTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmTravellerTypeDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class CrmTravellerTypeDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravellerTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravellerTypeDTO
      */
     public function setType(?string $type = null): self
     {

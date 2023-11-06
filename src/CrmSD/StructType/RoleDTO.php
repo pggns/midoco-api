@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RoleDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RoleDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set grade value
      * @param int $grade
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleDTO
      */
     public function setGrade(?int $grade = null): self
     {
@@ -94,7 +95,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set isRoleInherited value
      * @param bool $isRoleInherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleDTO
      */
     public function setIsRoleInherited(?bool $isRoleInherited = null): self
     {
@@ -117,7 +118,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set roleId value
      * @param int $roleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleDTO
      */
     public function setRoleId(?int $roleId = null): self
     {
@@ -140,7 +141,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set roleName value
      * @param string $roleName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleDTO
      */
     public function setRoleName(?string $roleName = null): self
     {
@@ -163,7 +164,7 @@ class RoleDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

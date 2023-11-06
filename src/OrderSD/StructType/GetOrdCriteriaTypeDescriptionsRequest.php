@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrdCriteriaTypeDescriptionsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrdCriteriaTypeDescriptionsRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetOrdCriteriaTypeDescriptionsRequest extends AbstractStructBase
         return $this->MidocoOrdCriteriaType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrdCriteriaType method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrdCriteriaType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrdCriteriaType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrdCriteriaTypeForArrayConstraintsFromSetMidocoOrdCriteriaType(?array $values = []): string
+    public static function validateMidocoOrdCriteriaTypeForArrayConstraintFromSetMidocoOrdCriteriaType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetOrdCriteriaTypeDescriptionsRequest extends AbstractStructBase
     public function setMidocoOrdCriteriaType(?array $midocoOrdCriteriaType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrdCriteriaTypeArrayErrorMessage = self::validateMidocoOrdCriteriaTypeForArrayConstraintsFromSetMidocoOrdCriteriaType($midocoOrdCriteriaType))) {
+        if ('' !== ($midocoOrdCriteriaTypeArrayErrorMessage = self::validateMidocoOrdCriteriaTypeForArrayConstraintFromSetMidocoOrdCriteriaType($midocoOrdCriteriaType))) {
             throw new InvalidArgumentException($midocoOrdCriteriaTypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrdCriteriaType = $midocoOrdCriteriaType;

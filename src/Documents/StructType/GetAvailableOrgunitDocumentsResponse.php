@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAvailableOrgunitDocumentsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableOrgunitDocumentsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAvailableOrgunitDocumentsResponse extends AbstractStructBase
         return $this->MidocoOrgunitDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrgunitDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrgunitDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrgunitDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrgunitDocumentForArrayConstraintsFromSetMidocoOrgunitDocument(?array $values = []): string
+    public static function validateMidocoOrgunitDocumentForArrayConstraintFromSetMidocoOrgunitDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAvailableOrgunitDocumentsResponse extends AbstractStructBase
     public function setMidocoOrgunitDocument(?array $midocoOrgunitDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrgunitDocumentArrayErrorMessage = self::validateMidocoOrgunitDocumentForArrayConstraintsFromSetMidocoOrgunitDocument($midocoOrgunitDocument))) {
+        if ('' !== ($midocoOrgunitDocumentArrayErrorMessage = self::validateMidocoOrgunitDocumentForArrayConstraintFromSetMidocoOrgunitDocument($midocoOrgunitDocument))) {
             throw new InvalidArgumentException($midocoOrgunitDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrgunitDocument = $midocoOrgunitDocument;

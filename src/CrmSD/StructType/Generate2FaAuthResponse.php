@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Generate2FaAuthResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Generate2FaAuthResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class Generate2FaAuthResponse extends AbstractStructBase
     /**
      * Set qrdata value
      * @param string $qrdata
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Generate2FaAuthResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Generate2FaAuthResponse
      */
     public function setQrdata(?string $qrdata = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Tss-Migration-Summary StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Tss_Migration_Summary extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set completed value
      * @param int $completed
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Tss_Migration_Summary
      */
     public function setCompleted(?int $completed = null): self
     {
@@ -102,7 +103,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set failed value
      * @param int $failed
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Tss_Migration_Summary
      */
     public function setFailed(?int $failed = null): self
     {
@@ -125,7 +126,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set ignored value
      * @param int $ignored
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Tss_Migration_Summary
      */
     public function setIgnored(?int $ignored = null): self
     {
@@ -148,7 +149,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set start value
      * @param string $start
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Tss_Migration_Summary
      */
     public function setStart(?string $start = null): self
     {
@@ -171,7 +172,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set end value
      * @param string $end
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Tss_Migration_Summary
      */
     public function setEnd(?string $end = null): self
     {
@@ -194,7 +195,7 @@ class Tss_Migration_Summary extends AbstractStructBase
     /**
      * Set elapsed_ms value
      * @param int $elapsed_ms
-     * @return \Pggns\MidocoApi\CrmSD\StructType\Tss_Migration_Summary
+     * @return \Pggns\MidocoApi\Crmsd\StructType\Tss_Migration_Summary
      */
     public function setElapsed_ms(?int $elapsed_ms = null): self
     {

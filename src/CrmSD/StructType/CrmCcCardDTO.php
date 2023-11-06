@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmCcCardDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmCcCardDTO extends AbstractStructBase
 {
     /**
@@ -38,11 +39,6 @@ class CrmCcCardDTO extends AbstractStructBase
      * @var int|null
      */
     protected ?int $customerId = null;
-    /**
-     * The isBonus
-     * @var bool|null
-     */
-    protected ?bool $isBonus = null;
     /**
      * The issuer
      * @var string|null
@@ -85,7 +81,6 @@ class CrmCcCardDTO extends AbstractStructBase
      * @uses CrmCcCardDTO::setCcCardId()
      * @uses CrmCcCardDTO::setCcTokenReference()
      * @uses CrmCcCardDTO::setCustomerId()
-     * @uses CrmCcCardDTO::setIsBonus()
      * @uses CrmCcCardDTO::setIssuer()
      * @uses CrmCcCardDTO::setMerchantWhitelisted()
      * @uses CrmCcCardDTO::setOwner()
@@ -98,7 +93,6 @@ class CrmCcCardDTO extends AbstractStructBase
      * @param int $ccCardId
      * @param int $ccTokenReference
      * @param int $customerId
-     * @param bool $isBonus
      * @param string $issuer
      * @param bool $merchantWhitelisted
      * @param string $owner
@@ -107,7 +101,7 @@ class CrmCcCardDTO extends AbstractStructBase
      * @param int $validMonth
      * @param int $validYear
      */
-    public function __construct(?string $cardNo = null, ?string $cardType = null, ?int $ccCardId = null, ?int $ccTokenReference = null, ?int $customerId = null, ?bool $isBonus = null, ?string $issuer = null, ?bool $merchantWhitelisted = null, ?string $owner = null, ?bool $tokenChecked = null, ?string $typeDescription = null, ?int $validMonth = null, ?int $validYear = null)
+    public function __construct(?string $cardNo = null, ?string $cardType = null, ?int $ccCardId = null, ?int $ccTokenReference = null, ?int $customerId = null, ?string $issuer = null, ?bool $merchantWhitelisted = null, ?string $owner = null, ?bool $tokenChecked = null, ?string $typeDescription = null, ?int $validMonth = null, ?int $validYear = null)
     {
         $this
             ->setCardNo($cardNo)
@@ -115,7 +109,6 @@ class CrmCcCardDTO extends AbstractStructBase
             ->setCcCardId($ccCardId)
             ->setCcTokenReference($ccTokenReference)
             ->setCustomerId($customerId)
-            ->setIsBonus($isBonus)
             ->setIssuer($issuer)
             ->setMerchantWhitelisted($merchantWhitelisted)
             ->setOwner($owner)
@@ -135,7 +128,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set cardNo value
      * @param string $cardNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setCardNo(?string $cardNo = null): self
     {
@@ -158,7 +151,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -181,7 +174,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set ccCardId value
      * @param int $ccCardId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setCcCardId(?int $ccCardId = null): self
     {
@@ -204,7 +197,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set ccTokenReference value
      * @param int $ccTokenReference
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setCcTokenReference(?int $ccTokenReference = null): self
     {
@@ -227,7 +220,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -236,29 +229,6 @@ class CrmCcCardDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($customerId, true), gettype($customerId)), __LINE__);
         }
         $this->customerId = $customerId;
-        
-        return $this;
-    }
-    /**
-     * Get isBonus value
-     * @return bool|null
-     */
-    public function getIsBonus(): ?bool
-    {
-        return $this->isBonus;
-    }
-    /**
-     * Set isBonus value
-     * @param bool $isBonus
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
-     */
-    public function setIsBonus(?bool $isBonus = null): self
-    {
-        // validation for constraint: boolean
-        if (!is_null($isBonus) && !is_bool($isBonus)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isBonus, true), gettype($isBonus)), __LINE__);
-        }
-        $this->isBonus = $isBonus;
         
         return $this;
     }
@@ -273,7 +243,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set issuer value
      * @param string $issuer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setIssuer(?string $issuer = null): self
     {
@@ -296,7 +266,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set merchantWhitelisted value
      * @param bool $merchantWhitelisted
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setMerchantWhitelisted(?bool $merchantWhitelisted = null): self
     {
@@ -319,7 +289,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set owner value
      * @param string $owner
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setOwner(?string $owner = null): self
     {
@@ -342,7 +312,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set tokenChecked value
      * @param bool $tokenChecked
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setTokenChecked(?bool $tokenChecked = null): self
     {
@@ -365,7 +335,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set typeDescription value
      * @param string $typeDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setTypeDescription(?string $typeDescription = null): self
     {
@@ -388,7 +358,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set validMonth value
      * @param int $validMonth
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setValidMonth(?int $validMonth = null): self
     {
@@ -411,7 +381,7 @@ class CrmCcCardDTO extends AbstractStructBase
     /**
      * Set validYear value
      * @param int $validYear
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCcCardDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCcCardDTO
      */
     public function setValidYear(?int $validYear = null): self
     {

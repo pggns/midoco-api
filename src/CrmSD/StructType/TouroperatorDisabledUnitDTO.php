@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TouroperatorDisabledUnitDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TouroperatorDisabledUnitDTO extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class TouroperatorDisabledUnitDTO extends AbstractStructBase
     /**
      * Set disabledUnitName value
      * @param string $disabledUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDisabledUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDisabledUnitDTO
      */
     public function setDisabledUnitName(?string $disabledUnitName = null): self
     {
@@ -70,7 +71,7 @@ class TouroperatorDisabledUnitDTO extends AbstractStructBase
     /**
      * Set touroperatorId value
      * @param int $touroperatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TouroperatorDisabledUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TouroperatorDisabledUnitDTO
      */
     public function setTouroperatorId(?int $touroperatorId = null): self
     {

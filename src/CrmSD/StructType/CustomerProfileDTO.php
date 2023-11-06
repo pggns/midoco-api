@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CustomerProfileDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CustomerProfileDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class CustomerProfileDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerProfileDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerProfileDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -102,7 +103,7 @@ class CustomerProfileDTO extends AbstractStructBase
     /**
      * Set gdsId value
      * @param string $gdsId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerProfileDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerProfileDTO
      */
     public function setGdsId(?string $gdsId = null): self
     {
@@ -125,7 +126,7 @@ class CustomerProfileDTO extends AbstractStructBase
     /**
      * Set profileId value
      * @param int $profileId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerProfileDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerProfileDTO
      */
     public function setProfileId(?int $profileId = null): self
     {
@@ -148,7 +149,7 @@ class CustomerProfileDTO extends AbstractStructBase
     /**
      * Set profileNumber value
      * @param string $profileNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerProfileDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerProfileDTO
      */
     public function setProfileNumber(?string $profileNumber = null): self
     {
@@ -171,7 +172,7 @@ class CustomerProfileDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerProfileDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerProfileDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -194,7 +195,7 @@ class CustomerProfileDTO extends AbstractStructBase
     /**
      * Set versionNo value
      * @param int $versionNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerProfileDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerProfileDTO
      */
     public function setVersionNo(?int $versionNo = null): self
     {

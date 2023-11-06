@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AccountEntriesSearchCriteria StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AccountEntriesSearchCriteria extends AbstractStructBase
 {
     /**
@@ -73,6 +74,11 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $isExported = null;
+    /**
+     * The isLimitExceeded
+     * @var bool|null
+     */
+    protected ?bool $isLimitExceeded = null;
     /**
      * The receiptDateFrom
      * @var string|null
@@ -149,6 +155,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
      * @uses AccountEntriesSearchCriteria::setExportIdFrom()
      * @uses AccountEntriesSearchCriteria::setExportIdTo()
      * @uses AccountEntriesSearchCriteria::setIsExported()
+     * @uses AccountEntriesSearchCriteria::setIsLimitExceeded()
      * @uses AccountEntriesSearchCriteria::setReceiptDateFrom()
      * @uses AccountEntriesSearchCriteria::setReceiptDateTo()
      * @uses AccountEntriesSearchCriteria::setBookingDateFrom()
@@ -173,6 +180,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
      * @param string $exportIdFrom
      * @param string $exportIdTo
      * @param bool $isExported
+     * @param bool $isLimitExceeded
      * @param string $receiptDateFrom
      * @param string $receiptDateTo
      * @param string $bookingDateFrom
@@ -186,7 +194,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
      * @param string $originalCurrency
      * @param bool $processingLock
      */
-    public function __construct(?string $accountFrom = null, ?string $accountTo = null, ?string $accountIds = null, ?string $accountType = null, ?string $dueDateFrom = null, ?string $dueDateTo = null, ?int $customerId = null, ?string $agencyId = null, ?string $entryId = null, ?string $exportIdFrom = null, ?string $exportIdTo = null, ?bool $isExported = null, ?string $receiptDateFrom = null, ?string $receiptDateTo = null, ?string $bookingDateFrom = null, ?string $bookingDateTo = null, ?int $balanceMode = 0, ?int $bookingPeriodFrom = null, ?int $bookingPeriodTo = null, ?int $bookingYearFrom = null, ?int $bookingYearTo = null, ?string $currency = null, ?string $originalCurrency = null, ?bool $processingLock = null)
+    public function __construct(?string $accountFrom = null, ?string $accountTo = null, ?string $accountIds = null, ?string $accountType = null, ?string $dueDateFrom = null, ?string $dueDateTo = null, ?int $customerId = null, ?string $agencyId = null, ?string $entryId = null, ?string $exportIdFrom = null, ?string $exportIdTo = null, ?bool $isExported = null, ?bool $isLimitExceeded = null, ?string $receiptDateFrom = null, ?string $receiptDateTo = null, ?string $bookingDateFrom = null, ?string $bookingDateTo = null, ?int $balanceMode = 0, ?int $bookingPeriodFrom = null, ?int $bookingPeriodTo = null, ?int $bookingYearFrom = null, ?int $bookingYearTo = null, ?string $currency = null, ?string $originalCurrency = null, ?bool $processingLock = null)
     {
         $this
             ->setAccountFrom($accountFrom)
@@ -201,6 +209,7 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
             ->setExportIdFrom($exportIdFrom)
             ->setExportIdTo($exportIdTo)
             ->setIsExported($isExported)
+            ->setIsLimitExceeded($isLimitExceeded)
             ->setReceiptDateFrom($receiptDateFrom)
             ->setReceiptDateTo($receiptDateTo)
             ->setBookingDateFrom($bookingDateFrom)
@@ -487,6 +496,29 @@ class AccountEntriesSearchCriteria extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isExported, true), gettype($isExported)), __LINE__);
         }
         $this->isExported = $isExported;
+        
+        return $this;
+    }
+    /**
+     * Get isLimitExceeded value
+     * @return bool|null
+     */
+    public function getIsLimitExceeded(): ?bool
+    {
+        return $this->isLimitExceeded;
+    }
+    /**
+     * Set isLimitExceeded value
+     * @param bool $isLimitExceeded
+     * @return \Pggns\MidocoApi\Order\StructType\AccountEntriesSearchCriteria
+     */
+    public function setIsLimitExceeded(?bool $isLimitExceeded = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isLimitExceeded) && !is_bool($isLimitExceeded)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isLimitExceeded, true), gettype($isLimitExceeded)), __LINE__);
+        }
+        $this->isLimitExceeded = $isLimitExceeded;
         
         return $this;
     }

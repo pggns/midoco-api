@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetFairplaneDetailsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFairplaneDetailsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetFairplaneDetailsResponse extends AbstractStructBase
         return $this->MidocoFairplaneStatus;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFairplaneStatus method
+     * This method is responsible for validating the value(s) passed to the setMidocoFairplaneStatus method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFairplaneStatus method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFairplaneStatusForArrayConstraintsFromSetMidocoFairplaneStatus(?array $values = []): string
+    public static function validateMidocoFairplaneStatusForArrayConstraintFromSetMidocoFairplaneStatus(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetFairplaneDetailsResponse extends AbstractStructBase
     public function setMidocoFairplaneStatus(?array $midocoFairplaneStatus = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFairplaneStatusArrayErrorMessage = self::validateMidocoFairplaneStatusForArrayConstraintsFromSetMidocoFairplaneStatus($midocoFairplaneStatus))) {
+        if ('' !== ($midocoFairplaneStatusArrayErrorMessage = self::validateMidocoFairplaneStatusForArrayConstraintFromSetMidocoFairplaneStatus($midocoFairplaneStatus))) {
             throw new InvalidArgumentException($midocoFairplaneStatusArrayErrorMessage, __LINE__);
         }
         $this->MidocoFairplaneStatus = $midocoFairplaneStatus;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteMidocoSystemOrgunitClosingResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMidocoSystemOrgunitClosingResponse extends AbstractStructBase
 {
     /**
      * The MidocoSystemOrgunitClosing
      * Meta information extracted from the WSDL
      * - ref: MidocoSystemOrgunitClosing
-     * @var \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO $MidocoSystemOrgunitClosing = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO $MidocoSystemOrgunitClosing = null;
     /**
      * Constructor method for DeleteMidocoSystemOrgunitClosingResponse
      * @uses DeleteMidocoSystemOrgunitClosingResponse::setMidocoSystemOrgunitClosing()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing
+     * @param \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing = null)
     {
         $this
             ->setMidocoSystemOrgunitClosing($midocoSystemOrgunitClosing);
     }
     /**
      * Get MidocoSystemOrgunitClosing value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO|null
      */
-    public function getMidocoSystemOrgunitClosing(): ?\Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO
+    public function getMidocoSystemOrgunitClosing(): ?\Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO
     {
         return $this->MidocoSystemOrgunitClosing;
     }
     /**
      * Set MidocoSystemOrgunitClosing value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoSystemOrgunitClosingResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoSystemOrgunitClosingResponse
      */
-    public function setMidocoSystemOrgunitClosing(?\Pggns\MidocoApi\CrmSD\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing = null): self
+    public function setMidocoSystemOrgunitClosing(?\Pggns\MidocoApi\Crmsd\StructType\OrgunitClosingDTO $midocoSystemOrgunitClosing = null): self
     {
         $this->MidocoSystemOrgunitClosing = $midocoSystemOrgunitClosing;
         

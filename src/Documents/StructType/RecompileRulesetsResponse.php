@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RecompileRulesetsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RecompileRulesetsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class RecompileRulesetsResponse extends AbstractStructBase
         return $this->SystemRulesetCompiledResult;
     }
     /**
-     * This method is responsible for validating the values passed to the setSystemRulesetCompiledResult method
+     * This method is responsible for validating the value(s) passed to the setSystemRulesetCompiledResult method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSystemRulesetCompiledResult method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSystemRulesetCompiledResultForArrayConstraintsFromSetSystemRulesetCompiledResult(?array $values = []): string
+    public static function validateSystemRulesetCompiledResultForArrayConstraintFromSetSystemRulesetCompiledResult(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class RecompileRulesetsResponse extends AbstractStructBase
     public function setSystemRulesetCompiledResult(?array $systemRulesetCompiledResult = null): self
     {
         // validation for constraint: array
-        if ('' !== ($systemRulesetCompiledResultArrayErrorMessage = self::validateSystemRulesetCompiledResultForArrayConstraintsFromSetSystemRulesetCompiledResult($systemRulesetCompiledResult))) {
+        if ('' !== ($systemRulesetCompiledResultArrayErrorMessage = self::validateSystemRulesetCompiledResultForArrayConstraintFromSetSystemRulesetCompiledResult($systemRulesetCompiledResult))) {
             throw new InvalidArgumentException($systemRulesetCompiledResultArrayErrorMessage, __LINE__);
         }
         $this->SystemRulesetCompiledResult = $systemRulesetCompiledResult;

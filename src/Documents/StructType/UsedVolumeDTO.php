@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UsedVolumeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UsedVolumeDTO extends AbstractStructBase
 {
     /**

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCustomerMandateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustomerMandateRequest extends AbstractStructBase
 {
     /**
@@ -69,7 +70,7 @@ class GetCustomerMandateRequest extends AbstractStructBase
     /**
      * Set mandateType value
      * @param string $mandateType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerMandateRequest
      */
     public function setMandateType(?string $mandateType = null): self
     {
@@ -92,7 +93,7 @@ class GetCustomerMandateRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerMandateRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -115,7 +116,7 @@ class GetCustomerMandateRequest extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerMandateRequest
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -138,7 +139,7 @@ class GetCustomerMandateRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param int $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCustomerMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCustomerMandateRequest
      */
     public function setDocumentId(?int $documentId = null): self
     {

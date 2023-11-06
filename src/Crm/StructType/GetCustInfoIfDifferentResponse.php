@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getCustInfoIfDifferent --- get the address, debitor and payment information of 2 customers if the this information is different
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCustInfoIfDifferentResponse extends AbstractStructBase
 {
     /**
@@ -115,12 +116,13 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
         return $this->MidocoCustAddrDebitorPayment;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustAddrDebitorPayment method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustAddrDebitorPayment method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustAddrDebitorPayment method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustAddrDebitorPaymentForArrayConstraintsFromSetMidocoCustAddrDebitorPayment(?array $values = []): string
+    public static function validateMidocoCustAddrDebitorPaymentForArrayConstraintFromSetMidocoCustAddrDebitorPayment(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -149,7 +151,7 @@ class GetCustInfoIfDifferentResponse extends AbstractStructBase
     public function setMidocoCustAddrDebitorPayment(?array $midocoCustAddrDebitorPayment = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustAddrDebitorPaymentArrayErrorMessage = self::validateMidocoCustAddrDebitorPaymentForArrayConstraintsFromSetMidocoCustAddrDebitorPayment($midocoCustAddrDebitorPayment))) {
+        if ('' !== ($midocoCustAddrDebitorPaymentArrayErrorMessage = self::validateMidocoCustAddrDebitorPaymentForArrayConstraintFromSetMidocoCustAddrDebitorPayment($midocoCustAddrDebitorPayment))) {
             throw new InvalidArgumentException($midocoCustAddrDebitorPaymentArrayErrorMessage, __LINE__);
         }
         // validation for constraint: maxOccurs(2)

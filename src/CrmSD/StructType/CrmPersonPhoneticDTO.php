@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmPersonPhoneticDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmPersonPhoneticDTO extends AbstractStructBase
 {
     /**
@@ -95,7 +96,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -118,7 +119,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set exactForename value
      * @param string $exactForename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setExactForename(?string $exactForename = null): self
     {
@@ -141,7 +142,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set exactMiddleName value
      * @param string $exactMiddleName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setExactMiddleName(?string $exactMiddleName = null): self
     {
@@ -164,7 +165,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set exactName value
      * @param string $exactName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setExactName(?string $exactName = null): self
     {
@@ -187,7 +188,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set exactNamePrefix value
      * @param string $exactNamePrefix
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setExactNamePrefix(?string $exactNamePrefix = null): self
     {
@@ -210,7 +211,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set forename value
      * @param string $forename
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setForename(?string $forename = null): self
     {
@@ -233,7 +234,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -256,7 +257,7 @@ class CrmPersonPhoneticDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPersonPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPersonPhoneticDTO
      */
     public function setName(?string $name = null): self
     {

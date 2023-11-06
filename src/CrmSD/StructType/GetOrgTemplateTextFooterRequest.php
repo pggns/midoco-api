@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetOrgTemplateTextFooterRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrgTemplateTextFooterRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class GetOrgTemplateTextFooterRequest extends AbstractStructBase
     /**
      * Set printTypeId value
      * @param string $printTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrgTemplateTextFooterRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrgTemplateTextFooterRequest
      */
     public function setPrintTypeId(?string $printTypeId = null): self
     {
@@ -70,7 +71,7 @@ class GetOrgTemplateTextFooterRequest extends AbstractStructBase
     /**
      * Set orgunitName value
      * @param string $orgunitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrgTemplateTextFooterRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrgTemplateTextFooterRequest
      */
     public function setOrgunitName(?string $orgunitName = null): self
     {

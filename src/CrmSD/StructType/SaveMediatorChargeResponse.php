@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveMediatorCharge --- saves a mediator charge
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMediatorChargeResponse extends AbstractStructBase
 {
     /**
@@ -20,33 +21,33 @@ class SaveMediatorChargeResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - ref: MidocoCrmMediatorChargeInfo
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType $MidocoCrmMediatorChargeInfo = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType $MidocoCrmMediatorChargeInfo = null;
     /**
      * Constructor method for SaveMediatorChargeResponse
      * @uses SaveMediatorChargeResponse::setMidocoCrmMediatorChargeInfo()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo = null)
     {
         $this
             ->setMidocoCrmMediatorChargeInfo($midocoCrmMediatorChargeInfo);
     }
     /**
      * Get MidocoCrmMediatorChargeInfo value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType|null
      */
-    public function getMidocoCrmMediatorChargeInfo(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType
+    public function getMidocoCrmMediatorChargeInfo(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType
     {
         return $this->MidocoCrmMediatorChargeInfo;
     }
     /**
      * Set MidocoCrmMediatorChargeInfo value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorChargeResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMediatorChargeResponse
      */
-    public function setMidocoCrmMediatorChargeInfo(?\Pggns\MidocoApi\CrmSD\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo = null): self
+    public function setMidocoCrmMediatorChargeInfo(?\Pggns\MidocoApi\Crmsd\StructType\CrmMediatorChargeInfoType $midocoCrmMediatorChargeInfo = null): self
     {
         $this->MidocoCrmMediatorChargeInfo = $midocoCrmMediatorChargeInfo;
         

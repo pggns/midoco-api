@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExportTravelPlanResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExportTravelPlanResponse extends AbstractStructBase
 {
     /**
@@ -72,12 +73,13 @@ class ExportTravelPlanResponse extends AbstractStructBase
         return $this->MidocoAdditionalPrintDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAdditionalPrintDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoAdditionalPrintDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAdditionalPrintDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAdditionalPrintDocumentForArrayConstraintsFromSetMidocoAdditionalPrintDocument(?array $values = []): string
+    public static function validateMidocoAdditionalPrintDocumentForArrayConstraintFromSetMidocoAdditionalPrintDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -106,7 +108,7 @@ class ExportTravelPlanResponse extends AbstractStructBase
     public function setMidocoAdditionalPrintDocument(?array $midocoAdditionalPrintDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAdditionalPrintDocumentArrayErrorMessage = self::validateMidocoAdditionalPrintDocumentForArrayConstraintsFromSetMidocoAdditionalPrintDocument($midocoAdditionalPrintDocument))) {
+        if ('' !== ($midocoAdditionalPrintDocumentArrayErrorMessage = self::validateMidocoAdditionalPrintDocumentForArrayConstraintFromSetMidocoAdditionalPrintDocument($midocoAdditionalPrintDocument))) {
             throw new InvalidArgumentException($midocoAdditionalPrintDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoAdditionalPrintDocument = $midocoAdditionalPrintDocument;

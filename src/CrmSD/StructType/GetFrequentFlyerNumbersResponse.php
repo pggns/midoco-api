@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetFrequentFlyerNumbersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFrequentFlyerNumbersResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetFrequentFlyerNumbersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoFrequentFlyerNumber
-     * @var \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[]
      */
     protected ?array $MidocoFrequentFlyerNumber = null;
     /**
      * Constructor method for GetFrequentFlyerNumbersResponse
      * @uses GetFrequentFlyerNumbersResponse::setMidocoFrequentFlyerNumber()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
+     * @param \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
      */
     public function __construct(?array $midocoFrequentFlyerNumber = null)
     {
@@ -34,19 +35,20 @@ class GetFrequentFlyerNumbersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoFrequentFlyerNumber value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[]
      */
     public function getMidocoFrequentFlyerNumber(): ?array
     {
         return $this->MidocoFrequentFlyerNumber;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFrequentFlyerNumber method
+     * This method is responsible for validating the value(s) passed to the setMidocoFrequentFlyerNumber method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFrequentFlyerNumber method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFrequentFlyerNumberForArrayConstraintsFromSetMidocoFrequentFlyerNumber(?array $values = []): string
+    public static function validateMidocoFrequentFlyerNumberForArrayConstraintFromSetMidocoFrequentFlyerNumber(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetFrequentFlyerNumbersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getFrequentFlyerNumbersResponseMidocoFrequentFlyerNumberItem) {
             // validation for constraint: itemType
-            if (!$getFrequentFlyerNumbersResponseMidocoFrequentFlyerNumberItem instanceof \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO) {
+            if (!$getFrequentFlyerNumbersResponseMidocoFrequentFlyerNumberItem instanceof \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO) {
                 $invalidValues[] = is_object($getFrequentFlyerNumbersResponseMidocoFrequentFlyerNumberItem) ? get_class($getFrequentFlyerNumbersResponseMidocoFrequentFlyerNumberItem) : sprintf('%s(%s)', gettype($getFrequentFlyerNumbersResponseMidocoFrequentFlyerNumberItem), var_export($getFrequentFlyerNumbersResponseMidocoFrequentFlyerNumberItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetFrequentFlyerNumbersResponse extends AbstractStructBase
     /**
      * Set MidocoFrequentFlyerNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetFrequentFlyerNumbersResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO[] $midocoFrequentFlyerNumber
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetFrequentFlyerNumbersResponse
      */
     public function setMidocoFrequentFlyerNumber(?array $midocoFrequentFlyerNumber = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFrequentFlyerNumberArrayErrorMessage = self::validateMidocoFrequentFlyerNumberForArrayConstraintsFromSetMidocoFrequentFlyerNumber($midocoFrequentFlyerNumber))) {
+        if ('' !== ($midocoFrequentFlyerNumberArrayErrorMessage = self::validateMidocoFrequentFlyerNumberForArrayConstraintFromSetMidocoFrequentFlyerNumber($midocoFrequentFlyerNumber))) {
             throw new InvalidArgumentException($midocoFrequentFlyerNumberArrayErrorMessage, __LINE__);
         }
         $this->MidocoFrequentFlyerNumber = $midocoFrequentFlyerNumber;
@@ -85,14 +87,14 @@ class GetFrequentFlyerNumbersResponse extends AbstractStructBase
     /**
      * Add item to MidocoFrequentFlyerNumber value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetFrequentFlyerNumbersResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetFrequentFlyerNumbersResponse
      */
-    public function addToMidocoFrequentFlyerNumber(\Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO $item): self
+    public function addToMidocoFrequentFlyerNumber(\Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\FrequentFlyerNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoFrequentFlyerNumber property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\FrequentFlyerNumberDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoFrequentFlyerNumber[] = $item;
         

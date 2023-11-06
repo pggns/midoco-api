@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ContactMediaDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ContactMediaDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set isOrderVisible value
      * @param bool $isOrderVisible
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO
      */
     public function setIsOrderVisible(?bool $isOrderVisible = null): self
     {
@@ -86,7 +87,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set isPrivate value
      * @param bool $isPrivate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO
      */
     public function setIsPrivate(?bool $isPrivate = null): self
     {
@@ -109,7 +110,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set mediaId value
      * @param string $mediaId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO
      */
     public function setMediaId(?string $mediaId = null): self
     {
@@ -132,7 +133,7 @@ class ContactMediaDTO extends AbstractStructBase
     /**
      * Set mediaType value
      * @param int $mediaType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ContactMediaDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ContactMediaDTO
      */
     public function setMediaType(?int $mediaType = null): self
     {

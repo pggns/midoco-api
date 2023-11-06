@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmTravellerTypeDescrDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmTravellerTypeDescrDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CrmTravellerTypeDescrDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravellerTypeDescrDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravellerTypeDescrDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +79,7 @@ class CrmTravellerTypeDescrDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravellerTypeDescrDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravellerTypeDescrDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +102,7 @@ class CrmTravellerTypeDescrDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTravellerTypeDescrDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTravellerTypeDescrDTO
      */
     public function setType(?string $type = null): self
     {

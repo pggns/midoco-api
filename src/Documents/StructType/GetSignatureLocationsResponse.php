@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSignatureLocationsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSignatureLocationsResponse extends AbstractStructBase
 {
     /**
@@ -82,12 +83,13 @@ class GetSignatureLocationsResponse extends AbstractStructBase
         return $this->SignatureLocation;
     }
     /**
-     * This method is responsible for validating the values passed to the setSignatureLocation method
+     * This method is responsible for validating the value(s) passed to the setSignatureLocation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSignatureLocation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSignatureLocationForArrayConstraintsFromSetSignatureLocation(?array $values = []): string
+    public static function validateSignatureLocationForArrayConstraintFromSetSignatureLocation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -116,7 +118,7 @@ class GetSignatureLocationsResponse extends AbstractStructBase
     public function setSignatureLocation(?array $signatureLocation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($signatureLocationArrayErrorMessage = self::validateSignatureLocationForArrayConstraintsFromSetSignatureLocation($signatureLocation))) {
+        if ('' !== ($signatureLocationArrayErrorMessage = self::validateSignatureLocationForArrayConstraintFromSetSignatureLocation($signatureLocation))) {
             throw new InvalidArgumentException($signatureLocationArrayErrorMessage, __LINE__);
         }
         $this->SignatureLocation = $signatureLocation;
@@ -148,12 +150,13 @@ class GetSignatureLocationsResponse extends AbstractStructBase
         return $this->AutoFillLocation;
     }
     /**
-     * This method is responsible for validating the values passed to the setAutoFillLocation method
+     * This method is responsible for validating the value(s) passed to the setAutoFillLocation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAutoFillLocation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAutoFillLocationForArrayConstraintsFromSetAutoFillLocation(?array $values = []): string
+    public static function validateAutoFillLocationForArrayConstraintFromSetAutoFillLocation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -182,7 +185,7 @@ class GetSignatureLocationsResponse extends AbstractStructBase
     public function setAutoFillLocation(?array $autoFillLocation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($autoFillLocationArrayErrorMessage = self::validateAutoFillLocationForArrayConstraintsFromSetAutoFillLocation($autoFillLocation))) {
+        if ('' !== ($autoFillLocationArrayErrorMessage = self::validateAutoFillLocationForArrayConstraintFromSetAutoFillLocation($autoFillLocation))) {
             throw new InvalidArgumentException($autoFillLocationArrayErrorMessage, __LINE__);
         }
         $this->AutoFillLocation = $autoFillLocation;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DiffDocumentRefId StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DiffDocumentRefId extends AbstractStructBase
 {
     /**

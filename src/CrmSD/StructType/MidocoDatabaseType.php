@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDatabaseType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDatabaseType extends AbstractStructBase
 {
     /**
@@ -81,7 +82,7 @@ class MidocoDatabaseType extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType
      */
     public function setType(?string $type = null): self
     {
@@ -104,7 +105,7 @@ class MidocoDatabaseType extends AbstractStructBase
     /**
      * Set host value
      * @param string $host
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType
      */
     public function setHost(?string $host = null): self
     {
@@ -127,7 +128,7 @@ class MidocoDatabaseType extends AbstractStructBase
     /**
      * Set instance value
      * @param string $instance
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType
      */
     public function setInstance(?string $instance = null): self
     {
@@ -150,7 +151,7 @@ class MidocoDatabaseType extends AbstractStructBase
     /**
      * Set port value
      * @param string $port
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType
      */
     public function setPort(?string $port = null): self
     {
@@ -173,7 +174,7 @@ class MidocoDatabaseType extends AbstractStructBase
     /**
      * Set inherited value
      * @param bool $inherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType
      */
     public function setInherited(?bool $inherited = false): self
     {
@@ -196,7 +197,7 @@ class MidocoDatabaseType extends AbstractStructBase
     /**
      * Set database value
      * @param string $database
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoDatabaseType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoDatabaseType
      */
     public function setDatabase(?string $database = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCashTurnoverExportsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCashTurnoverExportsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCashTurnoverExportsResponse extends AbstractStructBase
         return $this->MidocoCashTurnoverExport;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCashTurnoverExport method
+     * This method is responsible for validating the value(s) passed to the setMidocoCashTurnoverExport method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCashTurnoverExport method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCashTurnoverExportForArrayConstraintsFromSetMidocoCashTurnoverExport(?array $values = []): string
+    public static function validateMidocoCashTurnoverExportForArrayConstraintFromSetMidocoCashTurnoverExport(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCashTurnoverExportsResponse extends AbstractStructBase
     public function setMidocoCashTurnoverExport(?array $midocoCashTurnoverExport = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCashTurnoverExportArrayErrorMessage = self::validateMidocoCashTurnoverExportForArrayConstraintsFromSetMidocoCashTurnoverExport($midocoCashTurnoverExport))) {
+        if ('' !== ($midocoCashTurnoverExportArrayErrorMessage = self::validateMidocoCashTurnoverExportForArrayConstraintFromSetMidocoCashTurnoverExport($midocoCashTurnoverExport))) {
             throw new InvalidArgumentException($midocoCashTurnoverExportArrayErrorMessage, __LINE__);
         }
         $this->MidocoCashTurnoverExport = $midocoCashTurnoverExport;

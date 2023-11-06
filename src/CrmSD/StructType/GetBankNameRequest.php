@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBankNameRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBankNameRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetBankNameRequest extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBankNameRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetBankNameRequest
      */
     public function setCity(?string $city = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDirectDebitPosition StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
 {
     /**
@@ -108,6 +109,11 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
      */
     protected ?string $approvalCode = null;
     /**
+     * The selected
+     * @var bool|null
+     */
+    protected ?bool $selected = null;
+    /**
      * Constructor method for MidocoDirectDebitPosition
      * @uses MidocoDirectDebitPosition::setAccountNo()
      * @uses MidocoDirectDebitPosition::setAccountBlz()
@@ -127,6 +133,7 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
      * @uses MidocoDirectDebitPosition::setIsSepa()
      * @uses MidocoDirectDebitPosition::setExtReference()
      * @uses MidocoDirectDebitPosition::setApprovalCode()
+     * @uses MidocoDirectDebitPosition::setSelected()
      * @param string $accountNo
      * @param string $accountBlz
      * @param string $accountName
@@ -145,8 +152,9 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
      * @param bool $isSepa
      * @param string $extReference
      * @param string $approvalCode
+     * @param bool $selected
      */
-    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountName = null, ?string $accountOwner = null, ?string $accountCountry = null, ?string $transactionType = null, ?string $iban = null, ?string $swiftBicCode = null, ?int $mandateId = null, ?string $executionDate = null, ?string $mandateReference = null, ?bool $isRecurrent = null, ?string $mandateType = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null, ?bool $bankTransferCollective = null, ?bool $isSepa = false, ?string $extReference = null, ?string $approvalCode = null)
+    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountName = null, ?string $accountOwner = null, ?string $accountCountry = null, ?string $transactionType = null, ?string $iban = null, ?string $swiftBicCode = null, ?int $mandateId = null, ?string $executionDate = null, ?string $mandateReference = null, ?bool $isRecurrent = null, ?string $mandateType = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoPaymentOrdersInfos $midocoPaymentOrdersInfos = null, ?bool $bankTransferCollective = null, ?bool $isSepa = false, ?string $extReference = null, ?string $approvalCode = null, ?bool $selected = null)
     {
         $this
             ->setAccountNo($accountNo)
@@ -166,7 +174,8 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
             ->setBankTransferCollective($bankTransferCollective)
             ->setIsSepa($isSepa)
             ->setExtReference($extReference)
-            ->setApprovalCode($approvalCode);
+            ->setApprovalCode($approvalCode)
+            ->setSelected($selected);
     }
     /**
      * Get accountNo value
@@ -575,6 +584,29 @@ class MidocoDirectDebitPosition extends MidocoOnlinePaymentTransactionPosition
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($approvalCode, true), gettype($approvalCode)), __LINE__);
         }
         $this->approvalCode = $approvalCode;
+        
+        return $this;
+    }
+    /**
+     * Get selected value
+     * @return bool|null
+     */
+    public function getSelected(): ?bool
+    {
+        return $this->selected;
+    }
+    /**
+     * Set selected value
+     * @param bool $selected
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoDirectDebitPosition
+     */
+    public function setSelected(?bool $selected = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($selected) && !is_bool($selected)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($selected, true), gettype($selected)), __LINE__);
+        }
+        $this->selected = $selected;
         
         return $this;
     }

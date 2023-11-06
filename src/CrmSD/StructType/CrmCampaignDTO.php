@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmCampaignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmCampaignDTO extends AbstractStructBase
 {
     /**
@@ -119,7 +120,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set campaignId value
      * @param int $campaignId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setCampaignId(?int $campaignId = null): self
     {
@@ -142,7 +143,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set campaignType value
      * @param string $campaignType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setCampaignType(?string $campaignType = null): self
     {
@@ -165,7 +166,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -188,7 +189,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set executeUserId value
      * @param int $executeUserId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setExecuteUserId(?int $executeUserId = null): self
     {
@@ -211,7 +212,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set externalReference value
      * @param string $externalReference
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setExternalReference(?string $externalReference = null): self
     {
@@ -234,7 +235,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set importSystem value
      * @param string $importSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setImportSystem(?string $importSystem = null): self
     {
@@ -257,7 +258,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set isExported value
      * @param bool $isExported
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setIsExported(?bool $isExported = null): self
     {
@@ -280,7 +281,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set isImported value
      * @param bool $isImported
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setIsImported(?bool $isImported = null): self
     {
@@ -303,7 +304,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set numberOfResults value
      * @param int $numberOfResults
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setNumberOfResults(?int $numberOfResults = null): self
     {
@@ -326,7 +327,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -349,7 +350,7 @@ class CrmCampaignDTO extends AbstractStructBase
     /**
      * Set sender value
      * @param string $sender
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCampaignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCampaignDTO
      */
     public function setSender(?string $sender = null): self
     {

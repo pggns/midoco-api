@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBalanceListCriteriaType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBalanceListCriteriaType extends AbstractStructBase
 {
     /**
@@ -92,6 +93,11 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
      */
     protected ?bool $isSortBalancePosition = null;
     /**
+     * The costUnit
+     * @var string|null
+     */
+    protected ?string $costUnit = null;
+    /**
      * Constructor method for MidocoBalanceListCriteriaType
      * @uses MidocoBalanceListCriteriaType::setAccountType()
      * @uses MidocoBalanceListCriteriaType::setAccountIdFrom()
@@ -108,6 +114,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
      * @uses MidocoBalanceListCriteriaType::setIsExported()
      * @uses MidocoBalanceListCriteriaType::setMonthlyView()
      * @uses MidocoBalanceListCriteriaType::setIsSortBalancePosition()
+     * @uses MidocoBalanceListCriteriaType::setCostUnit()
      * @param string[] $accountType
      * @param string $accountIdFrom
      * @param string $accountIdTo
@@ -123,8 +130,9 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
      * @param bool $isExported
      * @param bool $monthlyView
      * @param bool $isSortBalancePosition
+     * @param string $costUnit
      */
-    public function __construct(?array $accountType = null, ?string $accountIdFrom = null, ?string $accountIdTo = null, ?int $bookingPeriodStart = null, ?int $bookingPeriodEnd = null, ?int $bookingYear = null, ?string $bookingDateStart = null, ?string $bookingDateEnd = null, ?bool $useSummaryAccounts = null, ?string $receiptDateStart = null, ?string $receiptDateEnd = null, ?int $exportId = null, ?bool $isExported = null, ?bool $monthlyView = null, ?bool $isSortBalancePosition = null)
+    public function __construct(?array $accountType = null, ?string $accountIdFrom = null, ?string $accountIdTo = null, ?int $bookingPeriodStart = null, ?int $bookingPeriodEnd = null, ?int $bookingYear = null, ?string $bookingDateStart = null, ?string $bookingDateEnd = null, ?bool $useSummaryAccounts = null, ?string $receiptDateStart = null, ?string $receiptDateEnd = null, ?int $exportId = null, ?bool $isExported = null, ?bool $monthlyView = null, ?bool $isSortBalancePosition = null, ?string $costUnit = null)
     {
         $this
             ->setAccountType($accountType)
@@ -141,7 +149,8 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
             ->setExportId($exportId)
             ->setIsExported($isExported)
             ->setMonthlyView($monthlyView)
-            ->setIsSortBalancePosition($isSortBalancePosition);
+            ->setIsSortBalancePosition($isSortBalancePosition)
+            ->setCostUnit($costUnit);
     }
     /**
      * Get accountType value
@@ -152,12 +161,13 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
         return $this->accountType;
     }
     /**
-     * This method is responsible for validating the values passed to the setAccountType method
+     * This method is responsible for validating the value(s) passed to the setAccountType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAccountType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAccountTypeForArrayConstraintsFromSetAccountType(?array $values = []): string
+    public static function validateAccountTypeForArrayConstraintFromSetAccountType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -186,7 +196,7 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
     public function setAccountType(?array $accountType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($accountTypeArrayErrorMessage = self::validateAccountTypeForArrayConstraintsFromSetAccountType($accountType))) {
+        if ('' !== ($accountTypeArrayErrorMessage = self::validateAccountTypeForArrayConstraintFromSetAccountType($accountType))) {
             throw new InvalidArgumentException($accountTypeArrayErrorMessage, __LINE__);
         }
         $this->accountType = $accountType;
@@ -528,6 +538,29 @@ class MidocoBalanceListCriteriaType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isSortBalancePosition, true), gettype($isSortBalancePosition)), __LINE__);
         }
         $this->isSortBalancePosition = $isSortBalancePosition;
+        
+        return $this;
+    }
+    /**
+     * Get costUnit value
+     * @return string|null
+     */
+    public function getCostUnit(): ?string
+    {
+        return $this->costUnit;
+    }
+    /**
+     * Set costUnit value
+     * @param string $costUnit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBalanceListCriteriaType
+     */
+    public function setCostUnit(?string $costUnit = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($costUnit) && !is_string($costUnit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($costUnit, true), gettype($costUnit)), __LINE__);
+        }
+        $this->costUnit = $costUnit;
         
         return $this;
     }

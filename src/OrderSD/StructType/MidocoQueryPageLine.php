@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoQueryPageLine StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoQueryPageLine extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class MidocoQueryPageLine extends AbstractStructBase
         return $this->MidocoQueryPageLineValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoQueryPageLineValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoQueryPageLineValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoQueryPageLineValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoQueryPageLineValueForArrayConstraintsFromSetMidocoQueryPageLineValue(?array $values = []): string
+    public static function validateMidocoQueryPageLineValueForArrayConstraintFromSetMidocoQueryPageLineValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class MidocoQueryPageLine extends AbstractStructBase
     public function setMidocoQueryPageLineValue(?array $midocoQueryPageLineValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoQueryPageLineValueArrayErrorMessage = self::validateMidocoQueryPageLineValueForArrayConstraintsFromSetMidocoQueryPageLineValue($midocoQueryPageLineValue))) {
+        if ('' !== ($midocoQueryPageLineValueArrayErrorMessage = self::validateMidocoQueryPageLineValueForArrayConstraintFromSetMidocoQueryPageLineValue($midocoQueryPageLineValue))) {
             throw new InvalidArgumentException($midocoQueryPageLineValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoQueryPageLineValue = $midocoQueryPageLineValue;

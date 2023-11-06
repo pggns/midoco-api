@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VoidAndRebookForeignCurrencyEntryHistoryRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VoidAndRebookForeignCurrencyEntryHistoryRequest extends AbstractStructBase
 {
     /**
@@ -47,12 +48,13 @@ class VoidAndRebookForeignCurrencyEntryHistoryRequest extends AbstractStructBase
         return $this->entryHistoryId;
     }
     /**
-     * This method is responsible for validating the values passed to the setEntryHistoryId method
+     * This method is responsible for validating the value(s) passed to the setEntryHistoryId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setEntryHistoryId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateEntryHistoryIdForArrayConstraintsFromSetEntryHistoryId(?array $values = []): string
+    public static function validateEntryHistoryIdForArrayConstraintFromSetEntryHistoryId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -81,7 +83,7 @@ class VoidAndRebookForeignCurrencyEntryHistoryRequest extends AbstractStructBase
     public function setEntryHistoryId(?array $entryHistoryId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($entryHistoryIdArrayErrorMessage = self::validateEntryHistoryIdForArrayConstraintsFromSetEntryHistoryId($entryHistoryId))) {
+        if ('' !== ($entryHistoryIdArrayErrorMessage = self::validateEntryHistoryIdForArrayConstraintFromSetEntryHistoryId($entryHistoryId))) {
             throw new InvalidArgumentException($entryHistoryIdArrayErrorMessage, __LINE__);
         }
         $this->entryHistoryId = $entryHistoryId;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmTemplateLanguageDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmTemplateLanguageDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CrmTemplateLanguageDTO extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateLanguageDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateLanguageDTO
      */
     public function setLanguage(?string $language = null): self
     {
@@ -78,7 +79,7 @@ class CrmTemplateLanguageDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateLanguageDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateLanguageDTO
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -101,7 +102,7 @@ class CrmTemplateLanguageDTO extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateLanguageDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateLanguageDTO
      */
     public function setText(?string $text = null): self
     {

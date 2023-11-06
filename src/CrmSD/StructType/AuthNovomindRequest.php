@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AuthNovomindRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AuthNovomindRequest extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set userName value
      * @param string $userName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AuthNovomindRequest
      */
     public function setUserName(?string $userName = null): self
     {
@@ -102,7 +103,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set userPwd value
      * @param string $userPwd
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AuthNovomindRequest
      */
     public function setUserPwd(?string $userPwd = null): self
     {
@@ -125,7 +126,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set restUri value
      * @param string $restUri
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AuthNovomindRequest
      */
     public function setRestUri(?string $restUri = null): self
     {
@@ -148,7 +149,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set authServerUri value
      * @param string $authServerUri
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AuthNovomindRequest
      */
     public function setAuthServerUri(?string $authServerUri = null): self
     {
@@ -171,7 +172,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set clientId value
      * @param string $clientId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AuthNovomindRequest
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -194,7 +195,7 @@ class AuthNovomindRequest extends AbstractStructBase
     /**
      * Set clientSecret value
      * @param string $clientSecret
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AuthNovomindRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AuthNovomindRequest
      */
     public function setClientSecret(?string $clientSecret = null): self
     {

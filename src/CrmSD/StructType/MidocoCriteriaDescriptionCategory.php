@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCriteriaDescriptionCategory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCriteriaDescriptionCategory extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set categoryId value
      * @param int $categoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setCategoryId(?int $categoryId = null): self
     {
@@ -94,7 +95,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -117,7 +118,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setDescription(?string $description = null): self
     {
@@ -140,7 +141,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -163,7 +164,7 @@ class MidocoCriteriaDescriptionCategory extends AbstractStructBase
     /**
      * Set guiCategoryPosition value
      * @param int $guiCategoryPosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCriteriaDescriptionCategory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCriteriaDescriptionCategory
      */
     public function setGuiCategoryPosition(?int $guiCategoryPosition = null): self
     {

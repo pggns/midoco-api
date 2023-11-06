@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for A3MAdapterValues StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class A3MAdapterValues extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class A3MAdapterValues extends AbstractStructBase
         return $this->A3MAdapterValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setA3MAdapterValue method
+     * This method is responsible for validating the value(s) passed to the setA3MAdapterValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setA3MAdapterValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateA3MAdapterValueForArrayConstraintsFromSetA3MAdapterValue(?array $values = []): string
+    public static function validateA3MAdapterValueForArrayConstraintFromSetA3MAdapterValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class A3MAdapterValues extends AbstractStructBase
     public function setA3MAdapterValue(?array $a3MAdapterValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($a3MAdapterValueArrayErrorMessage = self::validateA3MAdapterValueForArrayConstraintsFromSetA3MAdapterValue($a3MAdapterValue))) {
+        if ('' !== ($a3MAdapterValueArrayErrorMessage = self::validateA3MAdapterValueForArrayConstraintFromSetA3MAdapterValue($a3MAdapterValue))) {
             throw new InvalidArgumentException($a3MAdapterValueArrayErrorMessage, __LINE__);
         }
         $this->A3MAdapterValue = $a3MAdapterValue;

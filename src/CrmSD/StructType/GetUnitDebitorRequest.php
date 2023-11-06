@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUnitDebitorRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUnitDebitorRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetUnitDebitorRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetUnitDebitorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetUnitDebitorRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

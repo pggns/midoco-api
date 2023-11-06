@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBookingJournal StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBookingJournal extends BookingJournalDTO
 {
     /**
@@ -55,6 +56,11 @@ class MidocoBookingJournal extends BookingJournalDTO
      */
     protected ?int $displayOrderId = null;
     /**
+     * The displayItemId
+     * @var int|null
+     */
+    protected ?int $displayItemId = null;
+    /**
      * The accountDescDebit
      * @var string|null
      */
@@ -73,6 +79,7 @@ class MidocoBookingJournal extends BookingJournalDTO
      * @uses MidocoBookingJournal::setPosition()
      * @uses MidocoBookingJournal::setDisplayOrderNo()
      * @uses MidocoBookingJournal::setDisplayOrderId()
+     * @uses MidocoBookingJournal::setDisplayItemId()
      * @uses MidocoBookingJournal::setAccountDescDebit()
      * @uses MidocoBookingJournal::setAccountDescCredit()
      * @param \Pggns\MidocoApi\Orderlists\StructType\JournalAttributeDTO[] $midocoJournalAttribute
@@ -82,10 +89,11 @@ class MidocoBookingJournal extends BookingJournalDTO
      * @param int $position
      * @param int $displayOrderNo
      * @param int $displayOrderId
+     * @param int $displayItemId
      * @param string $accountDescDebit
      * @param string $accountDescCredit
      */
-    public function __construct(?array $midocoJournalAttribute = null, ?int $customerId = null, ?int $voidJournalId = null, ?int $invoiceId = null, ?int $position = null, ?int $displayOrderNo = null, ?int $displayOrderId = null, ?string $accountDescDebit = null, ?string $accountDescCredit = null)
+    public function __construct(?array $midocoJournalAttribute = null, ?int $customerId = null, ?int $voidJournalId = null, ?int $invoiceId = null, ?int $position = null, ?int $displayOrderNo = null, ?int $displayOrderId = null, ?int $displayItemId = null, ?string $accountDescDebit = null, ?string $accountDescCredit = null)
     {
         $this
             ->setMidocoJournalAttribute($midocoJournalAttribute)
@@ -95,6 +103,7 @@ class MidocoBookingJournal extends BookingJournalDTO
             ->setPosition($position)
             ->setDisplayOrderNo($displayOrderNo)
             ->setDisplayOrderId($displayOrderId)
+            ->setDisplayItemId($displayItemId)
             ->setAccountDescDebit($accountDescDebit)
             ->setAccountDescCredit($accountDescCredit);
     }
@@ -107,12 +116,13 @@ class MidocoBookingJournal extends BookingJournalDTO
         return $this->MidocoJournalAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoJournalAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoJournalAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoJournalAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoJournalAttributeForArrayConstraintsFromSetMidocoJournalAttribute(?array $values = []): string
+    public static function validateMidocoJournalAttributeForArrayConstraintFromSetMidocoJournalAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -141,7 +151,7 @@ class MidocoBookingJournal extends BookingJournalDTO
     public function setMidocoJournalAttribute(?array $midocoJournalAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoJournalAttributeArrayErrorMessage = self::validateMidocoJournalAttributeForArrayConstraintsFromSetMidocoJournalAttribute($midocoJournalAttribute))) {
+        if ('' !== ($midocoJournalAttributeArrayErrorMessage = self::validateMidocoJournalAttributeForArrayConstraintFromSetMidocoJournalAttribute($midocoJournalAttribute))) {
             throw new InvalidArgumentException($midocoJournalAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoJournalAttribute = $midocoJournalAttribute;
@@ -299,6 +309,29 @@ class MidocoBookingJournal extends BookingJournalDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($displayOrderId, true), gettype($displayOrderId)), __LINE__);
         }
         $this->displayOrderId = $displayOrderId;
+        
+        return $this;
+    }
+    /**
+     * Get displayItemId value
+     * @return int|null
+     */
+    public function getDisplayItemId(): ?int
+    {
+        return $this->displayItemId;
+    }
+    /**
+     * Set displayItemId value
+     * @param int $displayItemId
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBookingJournal
+     */
+    public function setDisplayItemId(?int $displayItemId = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($displayItemId) && !(is_int($displayItemId) || ctype_digit($displayItemId))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($displayItemId, true), gettype($displayItemId)), __LINE__);
+        }
+        $this->displayItemId = $displayItemId;
         
         return $this;
     }

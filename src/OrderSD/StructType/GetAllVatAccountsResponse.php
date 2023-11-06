@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllVatAccountsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllVatAccountsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAllVatAccountsResponse extends AbstractStructBase
         return $this->MidocoVatAccount;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVatAccount method
+     * This method is responsible for validating the value(s) passed to the setMidocoVatAccount method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVatAccount method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVatAccountForArrayConstraintsFromSetMidocoVatAccount(?array $values = []): string
+    public static function validateMidocoVatAccountForArrayConstraintFromSetMidocoVatAccount(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAllVatAccountsResponse extends AbstractStructBase
     public function setMidocoVatAccount(?array $midocoVatAccount = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVatAccountArrayErrorMessage = self::validateMidocoVatAccountForArrayConstraintsFromSetMidocoVatAccount($midocoVatAccount))) {
+        if ('' !== ($midocoVatAccountArrayErrorMessage = self::validateMidocoVatAccountForArrayConstraintFromSetMidocoVatAccount($midocoVatAccount))) {
             throw new InvalidArgumentException($midocoVatAccountArrayErrorMessage, __LINE__);
         }
         $this->MidocoVatAccount = $midocoVatAccount;

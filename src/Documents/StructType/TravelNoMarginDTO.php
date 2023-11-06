@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TravelNoMarginDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TravelNoMarginDTO extends AbstractStructBase
 {
     /**
@@ -18,6 +19,11 @@ class TravelNoMarginDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $bookedMargin = null;
+    /**
+     * The bookedNegativeMargin
+     * @var float|null
+     */
+    protected ?float $bookedNegativeMargin = null;
     /**
      * The bookedVat
      * @var float|null
@@ -28,6 +34,11 @@ class TravelNoMarginDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $calculatedMargin = null;
+    /**
+     * The calculatedNegativeMargin
+     * @var float|null
+     */
+    protected ?float $calculatedNegativeMargin = null;
     /**
      * The calculatedVat
      * @var float|null
@@ -69,10 +80,20 @@ class TravelNoMarginDTO extends AbstractStructBase
      */
     protected ?bool $incomingInvoiceComplete = null;
     /**
+     * The isDirty
+     * @var bool|null
+     */
+    protected ?bool $isDirty = null;
+    /**
      * The isStorno
      * @var bool|null
      */
     protected ?bool $isStorno = null;
+    /**
+     * The lastModifyTime
+     * @var string|null
+     */
+    protected ?string $lastModifyTime = null;
     /**
      * The manualSettlTypePercent
      * @var bool|null
@@ -129,6 +150,16 @@ class TravelNoMarginDTO extends AbstractStructBase
      */
     protected ?float $sumCommission = null;
     /**
+     * The sumNegativeBuy
+     * @var float|null
+     */
+    protected ?float $sumNegativeBuy = null;
+    /**
+     * The sumNegativeSale
+     * @var float|null
+     */
+    protected ?float $sumNegativeSale = null;
+    /**
      * The sumSale
      * @var float|null
      */
@@ -141,8 +172,10 @@ class TravelNoMarginDTO extends AbstractStructBase
     /**
      * Constructor method for TravelNoMarginDTO
      * @uses TravelNoMarginDTO::setBookedMargin()
+     * @uses TravelNoMarginDTO::setBookedNegativeMargin()
      * @uses TravelNoMarginDTO::setBookedVat()
      * @uses TravelNoMarginDTO::setCalculatedMargin()
+     * @uses TravelNoMarginDTO::setCalculatedNegativeMargin()
      * @uses TravelNoMarginDTO::setCalculatedVat()
      * @uses TravelNoMarginDTO::setComment()
      * @uses TravelNoMarginDTO::setCostCentre()
@@ -151,7 +184,9 @@ class TravelNoMarginDTO extends AbstractStructBase
      * @uses TravelNoMarginDTO::setDescrShort()
      * @uses TravelNoMarginDTO::setDestination()
      * @uses TravelNoMarginDTO::setIncomingInvoiceComplete()
+     * @uses TravelNoMarginDTO::setIsDirty()
      * @uses TravelNoMarginDTO::setIsStorno()
+     * @uses TravelNoMarginDTO::setLastModifyTime()
      * @uses TravelNoMarginDTO::setManualSettlTypePercent()
      * @uses TravelNoMarginDTO::setMarginPercent()
      * @uses TravelNoMarginDTO::setNeedsMarginBooking()
@@ -163,11 +198,15 @@ class TravelNoMarginDTO extends AbstractStructBase
      * @uses TravelNoMarginDTO::setStartTravel()
      * @uses TravelNoMarginDTO::setSumBuy()
      * @uses TravelNoMarginDTO::setSumCommission()
+     * @uses TravelNoMarginDTO::setSumNegativeBuy()
+     * @uses TravelNoMarginDTO::setSumNegativeSale()
      * @uses TravelNoMarginDTO::setSumSale()
      * @uses TravelNoMarginDTO::setTravelNo()
      * @param float $bookedMargin
+     * @param float $bookedNegativeMargin
      * @param float $bookedVat
      * @param float $calculatedMargin
+     * @param float $calculatedNegativeMargin
      * @param float $calculatedVat
      * @param string $comment
      * @param string $costCentre
@@ -176,7 +215,9 @@ class TravelNoMarginDTO extends AbstractStructBase
      * @param string $descrShort
      * @param string $destination
      * @param bool $incomingInvoiceComplete
+     * @param bool $isDirty
      * @param bool $isStorno
+     * @param string $lastModifyTime
      * @param bool $manualSettlTypePercent
      * @param float $marginPercent
      * @param bool $needsMarginBooking
@@ -188,15 +229,19 @@ class TravelNoMarginDTO extends AbstractStructBase
      * @param string $startTravel
      * @param float $sumBuy
      * @param float $sumCommission
+     * @param float $sumNegativeBuy
+     * @param float $sumNegativeSale
      * @param float $sumSale
      * @param string $travelNo
      */
-    public function __construct(?float $bookedMargin = null, ?float $bookedVat = null, ?float $calculatedMargin = null, ?float $calculatedVat = null, ?string $comment = null, ?string $costCentre = null, ?string $creationTime = null, ?int $creationUser = null, ?string $descrShort = null, ?string $destination = null, ?bool $incomingInvoiceComplete = null, ?bool $isStorno = null, ?bool $manualSettlTypePercent = null, ?float $marginPercent = null, ?bool $needsMarginBooking = null, ?string $orgunitName = null, ?bool $outgoingInvoiceComplete = null, ?bool $preventMarginBooking = null, ?float $revenuePercent = null, ?string $settlementDate = null, ?string $startTravel = null, ?float $sumBuy = null, ?float $sumCommission = null, ?float $sumSale = null, ?string $travelNo = null)
+    public function __construct(?float $bookedMargin = null, ?float $bookedNegativeMargin = null, ?float $bookedVat = null, ?float $calculatedMargin = null, ?float $calculatedNegativeMargin = null, ?float $calculatedVat = null, ?string $comment = null, ?string $costCentre = null, ?string $creationTime = null, ?int $creationUser = null, ?string $descrShort = null, ?string $destination = null, ?bool $incomingInvoiceComplete = null, ?bool $isDirty = null, ?bool $isStorno = null, ?string $lastModifyTime = null, ?bool $manualSettlTypePercent = null, ?float $marginPercent = null, ?bool $needsMarginBooking = null, ?string $orgunitName = null, ?bool $outgoingInvoiceComplete = null, ?bool $preventMarginBooking = null, ?float $revenuePercent = null, ?string $settlementDate = null, ?string $startTravel = null, ?float $sumBuy = null, ?float $sumCommission = null, ?float $sumNegativeBuy = null, ?float $sumNegativeSale = null, ?float $sumSale = null, ?string $travelNo = null)
     {
         $this
             ->setBookedMargin($bookedMargin)
+            ->setBookedNegativeMargin($bookedNegativeMargin)
             ->setBookedVat($bookedVat)
             ->setCalculatedMargin($calculatedMargin)
+            ->setCalculatedNegativeMargin($calculatedNegativeMargin)
             ->setCalculatedVat($calculatedVat)
             ->setComment($comment)
             ->setCostCentre($costCentre)
@@ -205,7 +250,9 @@ class TravelNoMarginDTO extends AbstractStructBase
             ->setDescrShort($descrShort)
             ->setDestination($destination)
             ->setIncomingInvoiceComplete($incomingInvoiceComplete)
+            ->setIsDirty($isDirty)
             ->setIsStorno($isStorno)
+            ->setLastModifyTime($lastModifyTime)
             ->setManualSettlTypePercent($manualSettlTypePercent)
             ->setMarginPercent($marginPercent)
             ->setNeedsMarginBooking($needsMarginBooking)
@@ -217,6 +264,8 @@ class TravelNoMarginDTO extends AbstractStructBase
             ->setStartTravel($startTravel)
             ->setSumBuy($sumBuy)
             ->setSumCommission($sumCommission)
+            ->setSumNegativeBuy($sumNegativeBuy)
+            ->setSumNegativeSale($sumNegativeSale)
             ->setSumSale($sumSale)
             ->setTravelNo($travelNo);
     }
@@ -240,6 +289,29 @@ class TravelNoMarginDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($bookedMargin, true), gettype($bookedMargin)), __LINE__);
         }
         $this->bookedMargin = $bookedMargin;
+        
+        return $this;
+    }
+    /**
+     * Get bookedNegativeMargin value
+     * @return float|null
+     */
+    public function getBookedNegativeMargin(): ?float
+    {
+        return $this->bookedNegativeMargin;
+    }
+    /**
+     * Set bookedNegativeMargin value
+     * @param float $bookedNegativeMargin
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNoMarginDTO
+     */
+    public function setBookedNegativeMargin(?float $bookedNegativeMargin = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($bookedNegativeMargin) && !(is_float($bookedNegativeMargin) || is_numeric($bookedNegativeMargin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($bookedNegativeMargin, true), gettype($bookedNegativeMargin)), __LINE__);
+        }
+        $this->bookedNegativeMargin = $bookedNegativeMargin;
         
         return $this;
     }
@@ -286,6 +358,29 @@ class TravelNoMarginDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedMargin, true), gettype($calculatedMargin)), __LINE__);
         }
         $this->calculatedMargin = $calculatedMargin;
+        
+        return $this;
+    }
+    /**
+     * Get calculatedNegativeMargin value
+     * @return float|null
+     */
+    public function getCalculatedNegativeMargin(): ?float
+    {
+        return $this->calculatedNegativeMargin;
+    }
+    /**
+     * Set calculatedNegativeMargin value
+     * @param float $calculatedNegativeMargin
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNoMarginDTO
+     */
+    public function setCalculatedNegativeMargin(?float $calculatedNegativeMargin = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($calculatedNegativeMargin) && !(is_float($calculatedNegativeMargin) || is_numeric($calculatedNegativeMargin))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedNegativeMargin, true), gettype($calculatedNegativeMargin)), __LINE__);
+        }
+        $this->calculatedNegativeMargin = $calculatedNegativeMargin;
         
         return $this;
     }
@@ -474,6 +569,29 @@ class TravelNoMarginDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get isDirty value
+     * @return bool|null
+     */
+    public function getIsDirty(): ?bool
+    {
+        return $this->isDirty;
+    }
+    /**
+     * Set isDirty value
+     * @param bool $isDirty
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNoMarginDTO
+     */
+    public function setIsDirty(?bool $isDirty = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isDirty) && !is_bool($isDirty)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isDirty, true), gettype($isDirty)), __LINE__);
+        }
+        $this->isDirty = $isDirty;
+        
+        return $this;
+    }
+    /**
      * Get isStorno value
      * @return bool|null
      */
@@ -493,6 +611,29 @@ class TravelNoMarginDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isStorno, true), gettype($isStorno)), __LINE__);
         }
         $this->isStorno = $isStorno;
+        
+        return $this;
+    }
+    /**
+     * Get lastModifyTime value
+     * @return string|null
+     */
+    public function getLastModifyTime(): ?string
+    {
+        return $this->lastModifyTime;
+    }
+    /**
+     * Set lastModifyTime value
+     * @param string $lastModifyTime
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNoMarginDTO
+     */
+    public function setLastModifyTime(?string $lastModifyTime = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($lastModifyTime) && !is_string($lastModifyTime)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($lastModifyTime, true), gettype($lastModifyTime)), __LINE__);
+        }
+        $this->lastModifyTime = $lastModifyTime;
         
         return $this;
     }
@@ -746,6 +887,52 @@ class TravelNoMarginDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($sumCommission, true), gettype($sumCommission)), __LINE__);
         }
         $this->sumCommission = $sumCommission;
+        
+        return $this;
+    }
+    /**
+     * Get sumNegativeBuy value
+     * @return float|null
+     */
+    public function getSumNegativeBuy(): ?float
+    {
+        return $this->sumNegativeBuy;
+    }
+    /**
+     * Set sumNegativeBuy value
+     * @param float $sumNegativeBuy
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNoMarginDTO
+     */
+    public function setSumNegativeBuy(?float $sumNegativeBuy = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($sumNegativeBuy) && !(is_float($sumNegativeBuy) || is_numeric($sumNegativeBuy))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($sumNegativeBuy, true), gettype($sumNegativeBuy)), __LINE__);
+        }
+        $this->sumNegativeBuy = $sumNegativeBuy;
+        
+        return $this;
+    }
+    /**
+     * Get sumNegativeSale value
+     * @return float|null
+     */
+    public function getSumNegativeSale(): ?float
+    {
+        return $this->sumNegativeSale;
+    }
+    /**
+     * Set sumNegativeSale value
+     * @param float $sumNegativeSale
+     * @return \Pggns\MidocoApi\Documents\StructType\TravelNoMarginDTO
+     */
+    public function setSumNegativeSale(?float $sumNegativeSale = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($sumNegativeSale) && !(is_float($sumNegativeSale) || is_numeric($sumNegativeSale))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($sumNegativeSale, true), gettype($sumNegativeSale)), __LINE__);
+        }
+        $this->sumNegativeSale = $sumNegativeSale;
         
         return $this;
     }

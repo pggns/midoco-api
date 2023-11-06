@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ComplaintStateDataDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ComplaintStateDataDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class ComplaintStateDataDTO extends AbstractStructBase
     /**
      * Set stateId value
      * @param string $stateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintStateDataDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintStateDataDTO
      */
     public function setStateId(?string $stateId = null): self
     {

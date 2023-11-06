@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCrmHistoryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCrmHistoryResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCrmHistoryResponse extends AbstractStructBase
         return $this->MidocoCrmHistory;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmHistory method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmHistory method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmHistory method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmHistoryForArrayConstraintsFromSetMidocoCrmHistory(?array $values = []): string
+    public static function validateMidocoCrmHistoryForArrayConstraintFromSetMidocoCrmHistory(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCrmHistoryResponse extends AbstractStructBase
     public function setMidocoCrmHistory(?array $midocoCrmHistory = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmHistoryArrayErrorMessage = self::validateMidocoCrmHistoryForArrayConstraintsFromSetMidocoCrmHistory($midocoCrmHistory))) {
+        if ('' !== ($midocoCrmHistoryArrayErrorMessage = self::validateMidocoCrmHistoryForArrayConstraintFromSetMidocoCrmHistory($midocoCrmHistory))) {
             throw new InvalidArgumentException($midocoCrmHistoryArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmHistory = $midocoCrmHistory;

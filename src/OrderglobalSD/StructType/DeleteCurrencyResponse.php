@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCurrencyResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCurrencyResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class DeleteCurrencyResponse extends AbstractStructBase
         return $this->MidocoCurrency;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCurrency method
+     * This method is responsible for validating the value(s) passed to the setMidocoCurrency method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCurrency method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCurrencyForArrayConstraintsFromSetMidocoCurrency(?array $values = []): string
+    public static function validateMidocoCurrencyForArrayConstraintFromSetMidocoCurrency(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class DeleteCurrencyResponse extends AbstractStructBase
     public function setMidocoCurrency(?array $midocoCurrency = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCurrencyArrayErrorMessage = self::validateMidocoCurrencyForArrayConstraintsFromSetMidocoCurrency($midocoCurrency))) {
+        if ('' !== ($midocoCurrencyArrayErrorMessage = self::validateMidocoCurrencyForArrayConstraintFromSetMidocoCurrency($midocoCurrency))) {
             throw new InvalidArgumentException($midocoCurrencyArrayErrorMessage, __LINE__);
         }
         $this->MidocoCurrency = $midocoCurrency;

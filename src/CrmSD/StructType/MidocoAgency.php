@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoAgency StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoAgency extends AgencyDetailDTO
 {
     /**
@@ -19,23 +20,23 @@ class MidocoAgency extends AgencyDetailDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAgencyCommission
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO[]
      */
     protected ?array $MidocoAgencyCommission = null;
     /**
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL
      * - ref: MidocoCrmCustomer
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $MidocoCrmCustomer = null;
     /**
-     * The MidocoCustomerPayment
+     * The MidocoCrmCustomerPayment
      * Meta information extracted from the WSDL
-     * - ref: MidocoCustomerPayment
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO|null
+     * - ref: MidocoCrmCustomerPayment
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO $MidocoCustomerPayment = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $MidocoCrmCustomerPayment = null;
     /**
      * The cooperationName
      * @var string|null
@@ -45,36 +46,37 @@ class MidocoAgency extends AgencyDetailDTO
      * Constructor method for MidocoAgency
      * @uses MidocoAgency::setMidocoAgencyCommission()
      * @uses MidocoAgency::setMidocoCrmCustomer()
-     * @uses MidocoAgency::setMidocoCustomerPayment()
+     * @uses MidocoAgency::setMidocoCrmCustomerPayment()
      * @uses MidocoAgency::setCooperationName()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
      * @param string $cooperationName
      */
-    public function __construct(?array $midocoAgencyCommission = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment = null, ?string $cooperationName = null)
+    public function __construct(?array $midocoAgencyCommission = null, ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer = null, ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null, ?string $cooperationName = null)
     {
         $this
             ->setMidocoAgencyCommission($midocoAgencyCommission)
             ->setMidocoCrmCustomer($midocoCrmCustomer)
-            ->setMidocoCustomerPayment($midocoCustomerPayment)
+            ->setMidocoCrmCustomerPayment($midocoCrmCustomerPayment)
             ->setCooperationName($cooperationName);
     }
     /**
      * Get MidocoAgencyCommission value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO[]
      */
     public function getMidocoAgencyCommission(): ?array
     {
         return $this->MidocoAgencyCommission;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAgencyCommission method
+     * This method is responsible for validating the value(s) passed to the setMidocoAgencyCommission method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAgencyCommission method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAgencyCommissionForArrayConstraintsFromSetMidocoAgencyCommission(?array $values = []): string
+    public static function validateMidocoAgencyCommissionForArrayConstraintFromSetMidocoAgencyCommission(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -83,12 +85,12 @@ class MidocoAgency extends AgencyDetailDTO
         $invalidValues = [];
         foreach ($values as $midocoAgencyMidocoAgencyCommissionItem) {
             // validation for constraint: itemType
-            if (!$midocoAgencyMidocoAgencyCommissionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO) {
+            if (!$midocoAgencyMidocoAgencyCommissionItem instanceof \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO) {
                 $invalidValues[] = is_object($midocoAgencyMidocoAgencyCommissionItem) ? get_class($midocoAgencyMidocoAgencyCommissionItem) : sprintf('%s(%s)', gettype($midocoAgencyMidocoAgencyCommissionItem), var_export($midocoAgencyMidocoAgencyCommissionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -97,13 +99,13 @@ class MidocoAgency extends AgencyDetailDTO
     /**
      * Set MidocoAgencyCommission value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAgency
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO[] $midocoAgencyCommission
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAgency
      */
     public function setMidocoAgencyCommission(?array $midocoAgencyCommission = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAgencyCommissionArrayErrorMessage = self::validateMidocoAgencyCommissionForArrayConstraintsFromSetMidocoAgencyCommission($midocoAgencyCommission))) {
+        if ('' !== ($midocoAgencyCommissionArrayErrorMessage = self::validateMidocoAgencyCommissionForArrayConstraintFromSetMidocoAgencyCommission($midocoAgencyCommission))) {
             throw new InvalidArgumentException($midocoAgencyCommissionArrayErrorMessage, __LINE__);
         }
         $this->MidocoAgencyCommission = $midocoAgencyCommission;
@@ -113,14 +115,14 @@ class MidocoAgency extends AgencyDetailDTO
     /**
      * Add item to MidocoAgencyCommission value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAgency
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAgency
      */
-    public function addToMidocoAgencyCommission(\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $item): self
+    public function addToMidocoAgencyCommission(\Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAgencyCommission property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAgencyCommission[] = $item;
         
@@ -128,39 +130,39 @@ class MidocoAgency extends AgencyDetailDTO
     }
     /**
      * Get MidocoCrmCustomer value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO|null
      */
-    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO
+    public function getMidocoCrmCustomer(): ?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO
     {
         return $this->MidocoCrmCustomer;
     }
     /**
      * Set MidocoCrmCustomer value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAgency
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAgency
      */
-    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
+    public function setMidocoCrmCustomer(?\Pggns\MidocoApi\Crmsd\StructType\CrmCustomerDTO $midocoCrmCustomer = null): self
     {
         $this->MidocoCrmCustomer = $midocoCrmCustomer;
         
         return $this;
     }
     /**
-     * Get MidocoCustomerPayment value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO|null
+     * Get MidocoCrmCustomerPayment value
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment|null
      */
-    public function getMidocoCustomerPayment(): ?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO
+    public function getMidocoCrmCustomerPayment(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment
     {
-        return $this->MidocoCustomerPayment;
+        return $this->MidocoCrmCustomerPayment;
     }
     /**
-     * Set MidocoCustomerPayment value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAgency
+     * Set MidocoCrmCustomerPayment value
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAgency
      */
-    public function setMidocoCustomerPayment(?\Pggns\MidocoApi\CrmSD\StructType\CrmCustomerPaymentDTO $midocoCustomerPayment = null): self
+    public function setMidocoCrmCustomerPayment(?\Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCustomerPayment $midocoCrmCustomerPayment = null): self
     {
-        $this->MidocoCustomerPayment = $midocoCustomerPayment;
+        $this->MidocoCrmCustomerPayment = $midocoCrmCustomerPayment;
         
         return $this;
     }
@@ -175,7 +177,7 @@ class MidocoAgency extends AgencyDetailDTO
     /**
      * Set cooperationName value
      * @param string $cooperationName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoAgency
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoAgency
      */
     public function setCooperationName(?string $cooperationName = null): self
     {

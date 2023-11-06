@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: retrieve all preparedRevenueBookings and revenueBookings of this sellItem
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSellItemRevenuesResponse extends AbstractStructBase
 {
     /**
@@ -72,12 +73,13 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
         return $this->MidocoPreparedRevenueBooking;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPreparedRevenueBooking method
+     * This method is responsible for validating the value(s) passed to the setMidocoPreparedRevenueBooking method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPreparedRevenueBooking method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPreparedRevenueBookingForArrayConstraintsFromSetMidocoPreparedRevenueBooking(?array $values = []): string
+    public static function validateMidocoPreparedRevenueBookingForArrayConstraintFromSetMidocoPreparedRevenueBooking(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -106,7 +108,7 @@ class GetSellItemRevenuesResponse extends AbstractStructBase
     public function setMidocoPreparedRevenueBooking(?array $midocoPreparedRevenueBooking = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPreparedRevenueBookingArrayErrorMessage = self::validateMidocoPreparedRevenueBookingForArrayConstraintsFromSetMidocoPreparedRevenueBooking($midocoPreparedRevenueBooking))) {
+        if ('' !== ($midocoPreparedRevenueBookingArrayErrorMessage = self::validateMidocoPreparedRevenueBookingForArrayConstraintFromSetMidocoPreparedRevenueBooking($midocoPreparedRevenueBooking))) {
             throw new InvalidArgumentException($midocoPreparedRevenueBookingArrayErrorMessage, __LINE__);
         }
         $this->MidocoPreparedRevenueBooking = $midocoPreparedRevenueBooking;

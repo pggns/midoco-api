@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: deleteJasperReport --- delete a jasper report
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteJasperReportResponse extends AbstractStructBase
 {
 }

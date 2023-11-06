@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCampaignResultsInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCampaignResultsInfoResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCampaignResultsInfoResponse extends AbstractStructBase
         return $this->CampaignResultsInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setCampaignResultsInfo method
+     * This method is responsible for validating the value(s) passed to the setCampaignResultsInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCampaignResultsInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCampaignResultsInfoForArrayConstraintsFromSetCampaignResultsInfo(?array $values = []): string
+    public static function validateCampaignResultsInfoForArrayConstraintFromSetCampaignResultsInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCampaignResultsInfoResponse extends AbstractStructBase
     public function setCampaignResultsInfo(?array $campaignResultsInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($campaignResultsInfoArrayErrorMessage = self::validateCampaignResultsInfoForArrayConstraintsFromSetCampaignResultsInfo($campaignResultsInfo))) {
+        if ('' !== ($campaignResultsInfoArrayErrorMessage = self::validateCampaignResultsInfoForArrayConstraintFromSetCampaignResultsInfo($campaignResultsInfo))) {
             throw new InvalidArgumentException($campaignResultsInfoArrayErrorMessage, __LINE__);
         }
         $this->CampaignResultsInfo = $campaignResultsInfo;

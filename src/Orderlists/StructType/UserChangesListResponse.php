@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for UserChangesListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class UserChangesListResponse extends AbstractStructBase
 {
     /**
@@ -50,12 +51,13 @@ class UserChangesListResponse extends AbstractStructBase
         return $this->MidocoUserChangesList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoUserChangesList method
+     * This method is responsible for validating the value(s) passed to the setMidocoUserChangesList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoUserChangesList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoUserChangesListForArrayConstraintsFromSetMidocoUserChangesList(?array $values = []): string
+    public static function validateMidocoUserChangesListForArrayConstraintFromSetMidocoUserChangesList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -84,7 +86,7 @@ class UserChangesListResponse extends AbstractStructBase
     public function setMidocoUserChangesList(?array $midocoUserChangesList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoUserChangesListArrayErrorMessage = self::validateMidocoUserChangesListForArrayConstraintsFromSetMidocoUserChangesList($midocoUserChangesList))) {
+        if ('' !== ($midocoUserChangesListArrayErrorMessage = self::validateMidocoUserChangesListForArrayConstraintFromSetMidocoUserChangesList($midocoUserChangesList))) {
             throw new InvalidArgumentException($midocoUserChangesListArrayErrorMessage, __LINE__);
         }
         $this->MidocoUserChangesList = $midocoUserChangesList;

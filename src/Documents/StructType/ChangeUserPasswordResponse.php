@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ChangeUserPasswordResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ChangeUserPasswordResponse extends AbstractStructBase
 {
 }

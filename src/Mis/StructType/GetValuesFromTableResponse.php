@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getValuesFromTable --- returns the values as strings of the given field from the given table
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetValuesFromTableResponse extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class GetValuesFromTableResponse extends AbstractStructBase
         return $this->stringValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setStringValue method
+     * This method is responsible for validating the value(s) passed to the setStringValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setStringValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateStringValueForArrayConstraintsFromSetStringValue(?array $values = []): string
+    public static function validateStringValueForArrayConstraintFromSetStringValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class GetValuesFromTableResponse extends AbstractStructBase
     public function setStringValue(?array $stringValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($stringValueArrayErrorMessage = self::validateStringValueForArrayConstraintsFromSetStringValue($stringValue))) {
+        if ('' !== ($stringValueArrayErrorMessage = self::validateStringValueForArrayConstraintFromSetStringValue($stringValue))) {
             throw new InvalidArgumentException($stringValueArrayErrorMessage, __LINE__);
         }
         $this->stringValue = $stringValue;

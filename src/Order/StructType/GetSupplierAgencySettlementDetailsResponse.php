@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierAgencySettlementDetailsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierAgencySettlementDetailsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSupplierAgencySettlementDetailsResponse extends AbstractStructBase
         return $this->MidocoSupplierAgencySettlementDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierAgencySettlementDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierAgencySettlementDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierAgencySettlementDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierAgencySettlementDetailForArrayConstraintsFromSetMidocoSupplierAgencySettlementDetail(?array $values = []): string
+    public static function validateMidocoSupplierAgencySettlementDetailForArrayConstraintFromSetMidocoSupplierAgencySettlementDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSupplierAgencySettlementDetailsResponse extends AbstractStructBase
     public function setMidocoSupplierAgencySettlementDetail(?array $midocoSupplierAgencySettlementDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierAgencySettlementDetailArrayErrorMessage = self::validateMidocoSupplierAgencySettlementDetailForArrayConstraintsFromSetMidocoSupplierAgencySettlementDetail($midocoSupplierAgencySettlementDetail))) {
+        if ('' !== ($midocoSupplierAgencySettlementDetailArrayErrorMessage = self::validateMidocoSupplierAgencySettlementDetailForArrayConstraintFromSetMidocoSupplierAgencySettlementDetail($midocoSupplierAgencySettlementDetail))) {
             throw new InvalidArgumentException($midocoSupplierAgencySettlementDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierAgencySettlementDetail = $midocoSupplierAgencySettlementDetail;

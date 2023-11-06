@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ccToken StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CcToken extends AbstractStructBase
 {
     /**
@@ -139,12 +140,13 @@ class CcToken extends AbstractStructBase
         return $this->tokenAttributes;
     }
     /**
-     * This method is responsible for validating the values passed to the setTokenAttributes method
+     * This method is responsible for validating the value(s) passed to the setTokenAttributes method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTokenAttributes method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateTokenAttributesForArrayConstraintsFromSetTokenAttributes(?array $values = []): string
+    public static function validateTokenAttributesForArrayConstraintFromSetTokenAttributes(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -173,7 +175,7 @@ class CcToken extends AbstractStructBase
     public function setTokenAttributes(?array $tokenAttributes = null): self
     {
         // validation for constraint: array
-        if ('' !== ($tokenAttributesArrayErrorMessage = self::validateTokenAttributesForArrayConstraintsFromSetTokenAttributes($tokenAttributes))) {
+        if ('' !== ($tokenAttributesArrayErrorMessage = self::validateTokenAttributesForArrayConstraintFromSetTokenAttributes($tokenAttributes))) {
             throw new InvalidArgumentException($tokenAttributesArrayErrorMessage, __LINE__);
         }
         // validation for constraint: maxOccurs(3)

@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RevenueBookingDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RevenueBookingDTO extends AbstractStructBase
 {
+    /**
+     * The accrualWrittenOff
+     * @var bool|null
+     */
+    protected ?bool $accrualWrittenOff = null;
     /**
      * The adviceDetailId
      * @var int|null
@@ -74,10 +80,10 @@ class RevenueBookingDTO extends AbstractStructBase
      */
     protected ?string $dueDate = null;
     /**
-     * The esrRefNo
-     * @var string|null
+     * The fullyAssignedToTravelnoSales
+     * @var bool|null
      */
-    protected ?string $esrRefNo = null;
+    protected ?bool $fullyAssignedToTravelnoSales = null;
     /**
      * The isDeposit
      * @var bool|null
@@ -88,6 +94,11 @@ class RevenueBookingDTO extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $isManual = null;
+    /**
+     * The isPaid
+     * @var bool|null
+     */
+    protected ?bool $isPaid = null;
     /**
      * The isPseudoBooking
      * @var bool|null
@@ -138,6 +149,16 @@ class RevenueBookingDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $originalRevenueVatFree = null;
+    /**
+     * The paymentDate
+     * @var string|null
+     */
+    protected ?string $paymentDate = null;
+    /**
+     * The qrInvoiceRefNo
+     * @var string|null
+     */
+    protected ?string $qrInvoiceRefNo = null;
     /**
      * The receiptDate
      * @var string|null
@@ -225,6 +246,7 @@ class RevenueBookingDTO extends AbstractStructBase
     protected ?string $travelType = null;
     /**
      * Constructor method for RevenueBookingDTO
+     * @uses RevenueBookingDTO::setAccrualWrittenOff()
      * @uses RevenueBookingDTO::setAdviceDetailId()
      * @uses RevenueBookingDTO::setAutomaticEntry()
      * @uses RevenueBookingDTO::setBookingDate()
@@ -237,9 +259,10 @@ class RevenueBookingDTO extends AbstractStructBase
      * @uses RevenueBookingDTO::setCurrency()
      * @uses RevenueBookingDTO::setDestination()
      * @uses RevenueBookingDTO::setDueDate()
-     * @uses RevenueBookingDTO::setEsrRefNo()
+     * @uses RevenueBookingDTO::setFullyAssignedToTravelnoSales()
      * @uses RevenueBookingDTO::setIsDeposit()
      * @uses RevenueBookingDTO::setIsManual()
+     * @uses RevenueBookingDTO::setIsPaid()
      * @uses RevenueBookingDTO::setIsPseudoBooking()
      * @uses RevenueBookingDTO::setIsSingleMargin()
      * @uses RevenueBookingDTO::setIsVoided()
@@ -250,6 +273,8 @@ class RevenueBookingDTO extends AbstractStructBase
      * @uses RevenueBookingDTO::setOriginalRevenueInclVat()
      * @uses RevenueBookingDTO::setOriginalRevenueInsurance()
      * @uses RevenueBookingDTO::setOriginalRevenueVatFree()
+     * @uses RevenueBookingDTO::setPaymentDate()
+     * @uses RevenueBookingDTO::setQrInvoiceRefNo()
      * @uses RevenueBookingDTO::setReceiptDate()
      * @uses RevenueBookingDTO::setReceiptNo()
      * @uses RevenueBookingDTO::setRevenueId()
@@ -267,6 +292,7 @@ class RevenueBookingDTO extends AbstractStructBase
      * @uses RevenueBookingDTO::setSupplierId()
      * @uses RevenueBookingDTO::setSupplierInvoiceAmount()
      * @uses RevenueBookingDTO::setTravelType()
+     * @param bool $accrualWrittenOff
      * @param int $adviceDetailId
      * @param bool $automaticEntry
      * @param string $bookingDate
@@ -279,9 +305,10 @@ class RevenueBookingDTO extends AbstractStructBase
      * @param string $currency
      * @param string $destination
      * @param string $dueDate
-     * @param string $esrRefNo
+     * @param bool $fullyAssignedToTravelnoSales
      * @param bool $isDeposit
      * @param bool $isManual
+     * @param bool $isPaid
      * @param bool $isPseudoBooking
      * @param bool $isSingleMargin
      * @param bool $isVoided
@@ -292,6 +319,8 @@ class RevenueBookingDTO extends AbstractStructBase
      * @param float $originalRevenueInclVat
      * @param float $originalRevenueInsurance
      * @param float $originalRevenueVatFree
+     * @param string $paymentDate
+     * @param string $qrInvoiceRefNo
      * @param string $receiptDate
      * @param string $receiptNo
      * @param int $revenueId
@@ -310,9 +339,10 @@ class RevenueBookingDTO extends AbstractStructBase
      * @param float $supplierInvoiceAmount
      * @param string $travelType
      */
-    public function __construct(?int $adviceDetailId = null, ?bool $automaticEntry = null, ?string $bookingDate = null, ?string $bookingText = null, ?float $bruttoPrice = null, ?string $cancelledTimestamp = null, ?string $creationTimestamp = null, ?string $creationType = null, ?int $creationUser = null, ?string $currency = null, ?string $destination = null, ?string $dueDate = null, ?string $esrRefNo = null, ?bool $isDeposit = null, ?bool $isManual = null, ?bool $isPseudoBooking = null, ?bool $isSingleMargin = null, ?bool $isVoided = null, ?int $itemId = null, ?int $modifyUser = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?float $originalRevenueInclVat = null, ?float $originalRevenueInsurance = null, ?float $originalRevenueVatFree = null, ?string $receiptDate = null, ?string $receiptNo = null, ?int $revenueId = null, ?float $revenueInclVat = null, ?float $revenueInsurance = null, ?float $revenueVatAmount = null, ?float $revenueVatFree = null, ?float $revenueVatPercent = null, ?string $settlementType = null, ?string $settlementTypeDebit = null, ?bool $stornoAccounts = null, ?int $suppSettlemId = null, ?int $suppSettlemPos = null, ?float $supplierDiAmount = null, ?string $supplierId = null, ?float $supplierInvoiceAmount = null, ?string $travelType = null)
+    public function __construct(?bool $accrualWrittenOff = null, ?int $adviceDetailId = null, ?bool $automaticEntry = null, ?string $bookingDate = null, ?string $bookingText = null, ?float $bruttoPrice = null, ?string $cancelledTimestamp = null, ?string $creationTimestamp = null, ?string $creationType = null, ?int $creationUser = null, ?string $currency = null, ?string $destination = null, ?string $dueDate = null, ?bool $fullyAssignedToTravelnoSales = null, ?bool $isDeposit = null, ?bool $isManual = null, ?bool $isPaid = null, ?bool $isPseudoBooking = null, ?bool $isSingleMargin = null, ?bool $isVoided = null, ?int $itemId = null, ?int $modifyUser = null, ?float $originalAmount = null, ?string $originalCurrency = null, ?float $originalRevenueInclVat = null, ?float $originalRevenueInsurance = null, ?float $originalRevenueVatFree = null, ?string $paymentDate = null, ?string $qrInvoiceRefNo = null, ?string $receiptDate = null, ?string $receiptNo = null, ?int $revenueId = null, ?float $revenueInclVat = null, ?float $revenueInsurance = null, ?float $revenueVatAmount = null, ?float $revenueVatFree = null, ?float $revenueVatPercent = null, ?string $settlementType = null, ?string $settlementTypeDebit = null, ?bool $stornoAccounts = null, ?int $suppSettlemId = null, ?int $suppSettlemPos = null, ?float $supplierDiAmount = null, ?string $supplierId = null, ?float $supplierInvoiceAmount = null, ?string $travelType = null)
     {
         $this
+            ->setAccrualWrittenOff($accrualWrittenOff)
             ->setAdviceDetailId($adviceDetailId)
             ->setAutomaticEntry($automaticEntry)
             ->setBookingDate($bookingDate)
@@ -325,9 +355,10 @@ class RevenueBookingDTO extends AbstractStructBase
             ->setCurrency($currency)
             ->setDestination($destination)
             ->setDueDate($dueDate)
-            ->setEsrRefNo($esrRefNo)
+            ->setFullyAssignedToTravelnoSales($fullyAssignedToTravelnoSales)
             ->setIsDeposit($isDeposit)
             ->setIsManual($isManual)
+            ->setIsPaid($isPaid)
             ->setIsPseudoBooking($isPseudoBooking)
             ->setIsSingleMargin($isSingleMargin)
             ->setIsVoided($isVoided)
@@ -338,6 +369,8 @@ class RevenueBookingDTO extends AbstractStructBase
             ->setOriginalRevenueInclVat($originalRevenueInclVat)
             ->setOriginalRevenueInsurance($originalRevenueInsurance)
             ->setOriginalRevenueVatFree($originalRevenueVatFree)
+            ->setPaymentDate($paymentDate)
+            ->setQrInvoiceRefNo($qrInvoiceRefNo)
             ->setReceiptDate($receiptDate)
             ->setReceiptNo($receiptNo)
             ->setRevenueId($revenueId)
@@ -355,6 +388,29 @@ class RevenueBookingDTO extends AbstractStructBase
             ->setSupplierId($supplierId)
             ->setSupplierInvoiceAmount($supplierInvoiceAmount)
             ->setTravelType($travelType);
+    }
+    /**
+     * Get accrualWrittenOff value
+     * @return bool|null
+     */
+    public function getAccrualWrittenOff(): ?bool
+    {
+        return $this->accrualWrittenOff;
+    }
+    /**
+     * Set accrualWrittenOff value
+     * @param bool $accrualWrittenOff
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingDTO
+     */
+    public function setAccrualWrittenOff(?bool $accrualWrittenOff = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($accrualWrittenOff) && !is_bool($accrualWrittenOff)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($accrualWrittenOff, true), gettype($accrualWrittenOff)), __LINE__);
+        }
+        $this->accrualWrittenOff = $accrualWrittenOff;
+        
+        return $this;
     }
     /**
      * Get adviceDetailId value
@@ -633,25 +689,25 @@ class RevenueBookingDTO extends AbstractStructBase
         return $this;
     }
     /**
-     * Get esrRefNo value
-     * @return string|null
+     * Get fullyAssignedToTravelnoSales value
+     * @return bool|null
      */
-    public function getEsrRefNo(): ?string
+    public function getFullyAssignedToTravelnoSales(): ?bool
     {
-        return $this->esrRefNo;
+        return $this->fullyAssignedToTravelnoSales;
     }
     /**
-     * Set esrRefNo value
-     * @param string $esrRefNo
+     * Set fullyAssignedToTravelnoSales value
+     * @param bool $fullyAssignedToTravelnoSales
      * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingDTO
      */
-    public function setEsrRefNo(?string $esrRefNo = null): self
+    public function setFullyAssignedToTravelnoSales(?bool $fullyAssignedToTravelnoSales = null): self
     {
-        // validation for constraint: string
-        if (!is_null($esrRefNo) && !is_string($esrRefNo)) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($esrRefNo, true), gettype($esrRefNo)), __LINE__);
+        // validation for constraint: boolean
+        if (!is_null($fullyAssignedToTravelnoSales) && !is_bool($fullyAssignedToTravelnoSales)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($fullyAssignedToTravelnoSales, true), gettype($fullyAssignedToTravelnoSales)), __LINE__);
         }
-        $this->esrRefNo = $esrRefNo;
+        $this->fullyAssignedToTravelnoSales = $fullyAssignedToTravelnoSales;
         
         return $this;
     }
@@ -698,6 +754,29 @@ class RevenueBookingDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isManual, true), gettype($isManual)), __LINE__);
         }
         $this->isManual = $isManual;
+        
+        return $this;
+    }
+    /**
+     * Get isPaid value
+     * @return bool|null
+     */
+    public function getIsPaid(): ?bool
+    {
+        return $this->isPaid;
+    }
+    /**
+     * Set isPaid value
+     * @param bool $isPaid
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingDTO
+     */
+    public function setIsPaid(?bool $isPaid = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isPaid) && !is_bool($isPaid)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isPaid, true), gettype($isPaid)), __LINE__);
+        }
+        $this->isPaid = $isPaid;
         
         return $this;
     }
@@ -928,6 +1007,52 @@ class RevenueBookingDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($originalRevenueVatFree, true), gettype($originalRevenueVatFree)), __LINE__);
         }
         $this->originalRevenueVatFree = $originalRevenueVatFree;
+        
+        return $this;
+    }
+    /**
+     * Get paymentDate value
+     * @return string|null
+     */
+    public function getPaymentDate(): ?string
+    {
+        return $this->paymentDate;
+    }
+    /**
+     * Set paymentDate value
+     * @param string $paymentDate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingDTO
+     */
+    public function setPaymentDate(?string $paymentDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($paymentDate) && !is_string($paymentDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($paymentDate, true), gettype($paymentDate)), __LINE__);
+        }
+        $this->paymentDate = $paymentDate;
+        
+        return $this;
+    }
+    /**
+     * Get qrInvoiceRefNo value
+     * @return string|null
+     */
+    public function getQrInvoiceRefNo(): ?string
+    {
+        return $this->qrInvoiceRefNo;
+    }
+    /**
+     * Set qrInvoiceRefNo value
+     * @param string $qrInvoiceRefNo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\RevenueBookingDTO
+     */
+    public function setQrInvoiceRefNo(?string $qrInvoiceRefNo = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($qrInvoiceRefNo) && !is_string($qrInvoiceRefNo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($qrInvoiceRefNo, true), gettype($qrInvoiceRefNo)), __LINE__);
+        }
+        $this->qrInvoiceRefNo = $qrInvoiceRefNo;
         
         return $this;
     }

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMyTaskViewUserResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMyTaskViewUserResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMyTaskViewUserResponse extends AbstractStructBase
         return $this->MidocoMyTaskViewUser;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMyTaskViewUser method
+     * This method is responsible for validating the value(s) passed to the setMidocoMyTaskViewUser method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMyTaskViewUser method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMyTaskViewUserForArrayConstraintsFromSetMidocoMyTaskViewUser(?array $values = []): string
+    public static function validateMidocoMyTaskViewUserForArrayConstraintFromSetMidocoMyTaskViewUser(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMyTaskViewUserResponse extends AbstractStructBase
     public function setMidocoMyTaskViewUser(?array $midocoMyTaskViewUser = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMyTaskViewUserArrayErrorMessage = self::validateMidocoMyTaskViewUserForArrayConstraintsFromSetMidocoMyTaskViewUser($midocoMyTaskViewUser))) {
+        if ('' !== ($midocoMyTaskViewUserArrayErrorMessage = self::validateMidocoMyTaskViewUserForArrayConstraintFromSetMidocoMyTaskViewUser($midocoMyTaskViewUser))) {
             throw new InvalidArgumentException($midocoMyTaskViewUserArrayErrorMessage, __LINE__);
         }
         $this->MidocoMyTaskViewUser = $midocoMyTaskViewUser;

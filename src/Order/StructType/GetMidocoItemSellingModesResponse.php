@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoItemSellingModesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoItemSellingModesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoItemSellingModesResponse extends AbstractStructBase
         return $this->MidocoItemSellingMode;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoItemSellingMode method
+     * This method is responsible for validating the value(s) passed to the setMidocoItemSellingMode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoItemSellingMode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoItemSellingModeForArrayConstraintsFromSetMidocoItemSellingMode(?array $values = []): string
+    public static function validateMidocoItemSellingModeForArrayConstraintFromSetMidocoItemSellingMode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoItemSellingModesResponse extends AbstractStructBase
     public function setMidocoItemSellingMode(?array $midocoItemSellingMode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoItemSellingModeArrayErrorMessage = self::validateMidocoItemSellingModeForArrayConstraintsFromSetMidocoItemSellingMode($midocoItemSellingMode))) {
+        if ('' !== ($midocoItemSellingModeArrayErrorMessage = self::validateMidocoItemSellingModeForArrayConstraintFromSetMidocoItemSellingMode($midocoItemSellingMode))) {
             throw new InvalidArgumentException($midocoItemSellingModeArrayErrorMessage, __LINE__);
         }
         $this->MidocoItemSellingMode = $midocoItemSellingMode;

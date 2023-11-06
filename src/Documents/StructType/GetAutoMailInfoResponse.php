@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAutoMailInfoResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAutoMailInfoResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAutoMailInfoResponse extends AbstractStructBase
         return $this->MidocoAutoMailInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAutoMailInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoAutoMailInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAutoMailInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAutoMailInfoForArrayConstraintsFromSetMidocoAutoMailInfo(?array $values = []): string
+    public static function validateMidocoAutoMailInfoForArrayConstraintFromSetMidocoAutoMailInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAutoMailInfoResponse extends AbstractStructBase
     public function setMidocoAutoMailInfo(?array $midocoAutoMailInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAutoMailInfoArrayErrorMessage = self::validateMidocoAutoMailInfoForArrayConstraintsFromSetMidocoAutoMailInfo($midocoAutoMailInfo))) {
+        if ('' !== ($midocoAutoMailInfoArrayErrorMessage = self::validateMidocoAutoMailInfoForArrayConstraintFromSetMidocoAutoMailInfo($midocoAutoMailInfo))) {
             throw new InvalidArgumentException($midocoAutoMailInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoAutoMailInfo = $midocoAutoMailInfo;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListMidocoQuestionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListMidocoQuestionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListMidocoQuestionResponse extends AbstractStructBase
         return $this->MidocoQuestion;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoQuestion method
+     * This method is responsible for validating the value(s) passed to the setMidocoQuestion method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoQuestion method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoQuestionForArrayConstraintsFromSetMidocoQuestion(?array $values = []): string
+    public static function validateMidocoQuestionForArrayConstraintFromSetMidocoQuestion(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListMidocoQuestionResponse extends AbstractStructBase
     public function setMidocoQuestion(?array $midocoQuestion = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoQuestionArrayErrorMessage = self::validateMidocoQuestionForArrayConstraintsFromSetMidocoQuestion($midocoQuestion))) {
+        if ('' !== ($midocoQuestionArrayErrorMessage = self::validateMidocoQuestionForArrayConstraintFromSetMidocoQuestion($midocoQuestion))) {
             throw new InvalidArgumentException($midocoQuestionArrayErrorMessage, __LINE__);
         }
         $this->MidocoQuestion = $midocoQuestion;

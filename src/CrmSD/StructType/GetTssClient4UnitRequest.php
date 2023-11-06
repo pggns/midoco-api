@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTssClient4UnitRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTssClient4UnitRequest extends AbstractStructBase
 {
     /**
@@ -59,7 +60,7 @@ class GetTssClient4UnitRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTssClient4UnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTssClient4UnitRequest
      */
     public function setUnitName(string $unitName): self
     {
@@ -82,7 +83,7 @@ class GetTssClient4UnitRequest extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTssClient4UnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTssClient4UnitRequest
      */
     public function setTssSystem(string $tssSystem): self
     {
@@ -105,7 +106,7 @@ class GetTssClient4UnitRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTssClient4UnitRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTssClient4UnitRequest
      */
     public function setTssId(?string $tssId = null): self
     {

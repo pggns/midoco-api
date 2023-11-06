@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetProductTypeMediatorConditionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
         return $this->MidocoProductTypeMediatorCondition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoProductTypeMediatorCondition method
+     * This method is responsible for validating the value(s) passed to the setMidocoProductTypeMediatorCondition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoProductTypeMediatorCondition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoProductTypeMediatorConditionForArrayConstraintsFromSetMidocoProductTypeMediatorCondition(?array $values = []): string
+    public static function validateMidocoProductTypeMediatorConditionForArrayConstraintFromSetMidocoProductTypeMediatorCondition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetProductTypeMediatorConditionsResponse extends AbstractStructBase
     public function setMidocoProductTypeMediatorCondition(?array $midocoProductTypeMediatorCondition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoProductTypeMediatorConditionArrayErrorMessage = self::validateMidocoProductTypeMediatorConditionForArrayConstraintsFromSetMidocoProductTypeMediatorCondition($midocoProductTypeMediatorCondition))) {
+        if ('' !== ($midocoProductTypeMediatorConditionArrayErrorMessage = self::validateMidocoProductTypeMediatorConditionForArrayConstraintFromSetMidocoProductTypeMediatorCondition($midocoProductTypeMediatorCondition))) {
             throw new InvalidArgumentException($midocoProductTypeMediatorConditionArrayErrorMessage, __LINE__);
         }
         $this->MidocoProductTypeMediatorCondition = $midocoProductTypeMediatorCondition;

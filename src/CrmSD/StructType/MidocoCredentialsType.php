@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCredentialsType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCredentialsType extends AbstractStructBase
 {
     /**
@@ -91,7 +92,7 @@ class MidocoCredentialsType extends AbstractStructBase
     /**
      * Set Login value
      * @param string $login
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType
      */
     public function setLogin(?string $login = null): self
     {
@@ -114,7 +115,7 @@ class MidocoCredentialsType extends AbstractStructBase
     /**
      * Set Password value
      * @param string $password
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType
      */
     public function setPassword(?string $password = null): self
     {
@@ -137,7 +138,7 @@ class MidocoCredentialsType extends AbstractStructBase
     /**
      * Set OrganisationUnit value
      * @param string $organisationUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType
      */
     public function setOrganisationUnit(?string $organisationUnit = null): self
     {
@@ -160,7 +161,7 @@ class MidocoCredentialsType extends AbstractStructBase
     /**
      * Set Locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType
      */
     public function setLocale(?string $locale = null): self
     {
@@ -183,7 +184,7 @@ class MidocoCredentialsType extends AbstractStructBase
     /**
      * Set RoleID value
      * @param int $roleID
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType
      */
     public function setRoleID(?int $roleID = null): self
     {
@@ -206,7 +207,7 @@ class MidocoCredentialsType extends AbstractStructBase
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCredentialsType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCredentialsType
      */
     public function setSessionID(?string $sessionID = null): self
     {

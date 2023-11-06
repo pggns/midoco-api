@@ -19,7 +19,7 @@ class Delete extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Order\ServiceType\Delete
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -650,6 +650,33 @@ class Delete extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named deleteEmptyOrder
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteEmptyOrderRequest $paramDeleteEmptyOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteEmptyOrderResponse|bool
+     */
+    public function deleteEmptyOrder(\Pggns\MidocoApi\Order\StructType\DeleteEmptyOrderRequest $paramDeleteEmptyOrderRequest)
+    {
+        try {
+            $this->setResult($resultDeleteEmptyOrder = $this->getSoapClient()->__soapCall('deleteEmptyOrder', [
+                $paramDeleteEmptyOrderRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultDeleteEmptyOrder;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Method to call the operation originally named deleteProcessedBooking
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: MidocoCredentials
@@ -1082,9 +1109,36 @@ class Delete extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named deleteTravelnoPurchaseAssignment
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\DeleteTravelnoPurchaseAssignmentRequest $paramDeleteTravelnoPurchaseAssignmentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteTravelnoPurchaseAssignmentResponse|bool
+     */
+    public function deleteTravelnoPurchaseAssignment(\Pggns\MidocoApi\Order\StructType\DeleteTravelnoPurchaseAssignmentRequest $paramDeleteTravelnoPurchaseAssignmentRequest)
+    {
+        try {
+            $this->setResult($resultDeleteTravelnoPurchaseAssignment = $this->getSoapClient()->__soapCall('deleteTravelnoPurchaseAssignment', [
+                $paramDeleteTravelnoPurchaseAssignmentRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultDeleteTravelnoPurchaseAssignment;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementDetailResponse|\Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingNoticesResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPositionResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPrintResponse|\Pggns\MidocoApi\Order\StructType\DeleteCashBookPrintResponse|\Pggns\MidocoApi\Order\StructType\DeleteCashbookResponse|\Pggns\MidocoApi\Order\StructType\DeleteFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementBillingResponse|\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementChargeResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorBillingResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorChargeResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorProductSettlementInfoResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusAdditionResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusCalculationResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoOrderQmResponse|\Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsResponse|\Pggns\MidocoApi\Order\StructType\DeleteOldSkippedBookingsResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderAttributesResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderDebitPaymentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderNoticeResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderOnlinePaymentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\DeletePaymentProviderSettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteProcessedBookingResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellItemResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingResponse|\Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteSupplierSettlementErrorsForItemResponse
+     * @return \Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementDetailResponse|\Pggns\MidocoApi\Order\StructType\DeleteAdviceSettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingNoticesResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPositionResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPosRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteBillingPrintResponse|\Pggns\MidocoApi\Order\StructType\DeleteCashBookPrintResponse|\Pggns\MidocoApi\Order\StructType\DeleteCashbookResponse|\Pggns\MidocoApi\Order\StructType\DeleteEmptyOrderResponse|\Pggns\MidocoApi\Order\StructType\DeleteFlightTimeChangeEmailResponse|\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementBillingResponse|\Pggns\MidocoApi\Order\StructType\DeleteMdcSettlementChargeResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorBillingResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorChargeResponse|\Pggns\MidocoApi\Order\StructType\DeleteMediatorProductSettlementInfoResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusAdditionResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoBonusCalculationResponse|\Pggns\MidocoApi\Order\StructType\DeleteMidocoOrderQmResponse|\Pggns\MidocoApi\Order\StructType\DeleteOldProcessedBookingsResponse|\Pggns\MidocoApi\Order\StructType\DeleteOldSkippedBookingsResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderAttributesResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderDebitPaymentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderDocumentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderNoticeResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderOnlinePaymentResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrderResponse|\Pggns\MidocoApi\Order\StructType\DeleteOrdersDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\DeletePaymentProviderSettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteProcessedBookingResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellItemAttributesResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellItemResponse|\Pggns\MidocoApi\Order\StructType\DeleteSellRemarkResponse|\Pggns\MidocoApi\Order\StructType\DeleteSkippedBookingResponse|\Pggns\MidocoApi\Order\StructType\DeleteSupplierAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\DeleteSupplierSettlementErrorsForItemResponse|\Pggns\MidocoApi\Order\StructType\DeleteTravelnoPurchaseAssignmentResponse
      */
     public function getResult()
     {

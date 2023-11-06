@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetContactMediaListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetContactMediaListResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetContactMediaListResponse extends AbstractStructBase
         return $this->MidocoContactMedia;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactMedia method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactMedia method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactMedia method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactMediaForArrayConstraintsFromSetMidocoContactMedia(?array $values = []): string
+    public static function validateMidocoContactMediaForArrayConstraintFromSetMidocoContactMedia(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetContactMediaListResponse extends AbstractStructBase
     public function setMidocoContactMedia(?array $midocoContactMedia = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactMediaArrayErrorMessage = self::validateMidocoContactMediaForArrayConstraintsFromSetMidocoContactMedia($midocoContactMedia))) {
+        if ('' !== ($midocoContactMediaArrayErrorMessage = self::validateMidocoContactMediaForArrayConstraintFromSetMidocoContactMedia($midocoContactMedia))) {
             throw new InvalidArgumentException($midocoContactMediaArrayErrorMessage, __LINE__);
         }
         $this->MidocoContactMedia = $midocoContactMedia;

@@ -11,8 +11,17 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBookingJournalRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBookingJournalRequest extends AbstractStructBase
 {
+    /**
+     * The bookingSource
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * @var int[]
+     */
+    protected ?array $bookingSource = null;
     /**
      * The MidocoOrderByInfo
      * Meta information extracted from the WSDL
@@ -153,6 +162,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     protected ?int $journalId = null;
     /**
      * Constructor method for GetBookingJournalRequest
+     * @uses GetBookingJournalRequest::setBookingSource()
      * @uses GetBookingJournalRequest::setMidocoOrderByInfo()
      * @uses GetBookingJournalRequest::setFrom_date()
      * @uses GetBookingJournalRequest::setTo_date()
@@ -179,6 +189,7 @@ class GetBookingJournalRequest extends AbstractStructBase
      * @uses GetBookingJournalRequest::setCostCentres()
      * @uses GetBookingJournalRequest::setExportCodes()
      * @uses GetBookingJournalRequest::setJournalId()
+     * @param int[] $bookingSource
      * @param \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[] $midocoOrderByInfo
      * @param string $from_date
      * @param string $to_date
@@ -206,9 +217,10 @@ class GetBookingJournalRequest extends AbstractStructBase
      * @param string $exportCodes
      * @param int $journalId
      */
-    public function __construct(?array $midocoOrderByInfo = null, ?string $from_date = null, ?string $to_date = null, ?string $accountIds = null, ?string $accountType = null, ?bool $export_done = null, ?int $booking_year = null, ?int $from_booking_period = null, ?int $to_booking_period = null, ?string $bookingDateFrom = null, ?string $bookingDateTo = null, ?string $entry_id = null, ?int $export_id = null, ?int $beginIndex = null, ?int $endIndex = null, ?string $bookingText = null, ?bool $buildSum = null, ?bool $onlyReverseCharges = null, ?string $receiptNo = null, ?string $creationDateFrom = null, ?string $creationDateTo = null, ?int $creationUser = null, ?float $bookingAmount = null, ?string $costCentres = null, ?string $exportCodes = null, ?int $journalId = null)
+    public function __construct(?array $bookingSource = null, ?array $midocoOrderByInfo = null, ?string $from_date = null, ?string $to_date = null, ?string $accountIds = null, ?string $accountType = null, ?bool $export_done = null, ?int $booking_year = null, ?int $from_booking_period = null, ?int $to_booking_period = null, ?string $bookingDateFrom = null, ?string $bookingDateTo = null, ?string $entry_id = null, ?int $export_id = null, ?int $beginIndex = null, ?int $endIndex = null, ?string $bookingText = null, ?bool $buildSum = null, ?bool $onlyReverseCharges = null, ?string $receiptNo = null, ?string $creationDateFrom = null, ?string $creationDateTo = null, ?int $creationUser = null, ?float $bookingAmount = null, ?string $costCentres = null, ?string $exportCodes = null, ?int $journalId = null)
     {
         $this
+            ->setBookingSource($bookingSource)
             ->setMidocoOrderByInfo($midocoOrderByInfo)
             ->setFrom_date($from_date)
             ->setTo_date($to_date)
@@ -237,6 +249,73 @@ class GetBookingJournalRequest extends AbstractStructBase
             ->setJournalId($journalId);
     }
     /**
+     * Get bookingSource value
+     * @return int[]
+     */
+    public function getBookingSource(): ?array
+    {
+        return $this->bookingSource;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setBookingSource method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setBookingSource method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateBookingSourceForArrayConstraintFromSetBookingSource(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $getBookingJournalRequestBookingSourceItem) {
+            // validation for constraint: itemType
+            if (!(is_int($getBookingJournalRequestBookingSourceItem) || ctype_digit($getBookingJournalRequestBookingSourceItem))) {
+                $invalidValues[] = is_object($getBookingJournalRequestBookingSourceItem) ? get_class($getBookingJournalRequestBookingSourceItem) : sprintf('%s(%s)', gettype($getBookingJournalRequestBookingSourceItem), var_export($getBookingJournalRequestBookingSourceItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The bookingSource property can only contain items of type int, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set bookingSource value
+     * @throws InvalidArgumentException
+     * @param int[] $bookingSource
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
+     */
+    public function setBookingSource(?array $bookingSource = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($bookingSourceArrayErrorMessage = self::validateBookingSourceForArrayConstraintFromSetBookingSource($bookingSource))) {
+            throw new InvalidArgumentException($bookingSourceArrayErrorMessage, __LINE__);
+        }
+        $this->bookingSource = $bookingSource;
+        
+        return $this;
+    }
+    /**
+     * Add item to bookingSource value
+     * @throws InvalidArgumentException
+     * @param int $item
+     * @return \Pggns\MidocoApi\Order\StructType\GetBookingJournalRequest
+     */
+    public function addToBookingSource(int $item): self
+    {
+        // validation for constraint: itemType
+        if (!(is_int($item) || ctype_digit($item))) {
+            throw new InvalidArgumentException(sprintf('The bookingSource property can only contain items of type int, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->bookingSource[] = $item;
+        
+        return $this;
+    }
+    /**
      * Get MidocoOrderByInfo value
      * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderByInfo[]
      */
@@ -245,12 +324,13 @@ class GetBookingJournalRequest extends AbstractStructBase
         return $this->MidocoOrderByInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderByInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderByInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderByInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderByInfoForArrayConstraintsFromSetMidocoOrderByInfo(?array $values = []): string
+    public static function validateMidocoOrderByInfoForArrayConstraintFromSetMidocoOrderByInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -279,7 +359,7 @@ class GetBookingJournalRequest extends AbstractStructBase
     public function setMidocoOrderByInfo(?array $midocoOrderByInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderByInfoArrayErrorMessage = self::validateMidocoOrderByInfoForArrayConstraintsFromSetMidocoOrderByInfo($midocoOrderByInfo))) {
+        if ('' !== ($midocoOrderByInfoArrayErrorMessage = self::validateMidocoOrderByInfoForArrayConstraintFromSetMidocoOrderByInfo($midocoOrderByInfo))) {
             throw new InvalidArgumentException($midocoOrderByInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderByInfo = $midocoOrderByInfo;

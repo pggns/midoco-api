@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCrmNoticeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCrmNoticeRequest extends AbstractStructBase
 {
     /**
@@ -59,7 +60,7 @@ class DeleteCrmNoticeRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCrmNoticeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCrmNoticeRequest
      */
     public function setCustomerId(int $customerId): self
     {
@@ -82,7 +83,7 @@ class DeleteCrmNoticeRequest extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCrmNoticeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCrmNoticeRequest
      */
     public function setPosition(int $position): self
     {
@@ -105,7 +106,7 @@ class DeleteCrmNoticeRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCrmNoticeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCrmNoticeRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

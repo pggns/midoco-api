@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBillingPositions4AgencyFeeTypeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
         return $this->MidocoAgencyFeeTypeBillingPosition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAgencyFeeTypeBillingPosition method
+     * This method is responsible for validating the value(s) passed to the setMidocoAgencyFeeTypeBillingPosition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAgencyFeeTypeBillingPosition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAgencyFeeTypeBillingPositionForArrayConstraintsFromSetMidocoAgencyFeeTypeBillingPosition(?array $values = []): string
+    public static function validateMidocoAgencyFeeTypeBillingPositionForArrayConstraintFromSetMidocoAgencyFeeTypeBillingPosition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetBillingPositions4AgencyFeeTypeResponse extends AbstractStructBase
     public function setMidocoAgencyFeeTypeBillingPosition(?array $midocoAgencyFeeTypeBillingPosition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAgencyFeeTypeBillingPositionArrayErrorMessage = self::validateMidocoAgencyFeeTypeBillingPositionForArrayConstraintsFromSetMidocoAgencyFeeTypeBillingPosition($midocoAgencyFeeTypeBillingPosition))) {
+        if ('' !== ($midocoAgencyFeeTypeBillingPositionArrayErrorMessage = self::validateMidocoAgencyFeeTypeBillingPositionForArrayConstraintFromSetMidocoAgencyFeeTypeBillingPosition($midocoAgencyFeeTypeBillingPosition))) {
             throw new InvalidArgumentException($midocoAgencyFeeTypeBillingPositionArrayErrorMessage, __LINE__);
         }
         $this->MidocoAgencyFeeTypeBillingPosition = $midocoAgencyFeeTypeBillingPosition;

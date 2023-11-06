@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchJournalExportsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchJournalExportsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class SearchJournalExportsResponse extends AbstractStructBase
         return $this->MidocoJournalExport;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoJournalExport method
+     * This method is responsible for validating the value(s) passed to the setMidocoJournalExport method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoJournalExport method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoJournalExportForArrayConstraintsFromSetMidocoJournalExport(?array $values = []): string
+    public static function validateMidocoJournalExportForArrayConstraintFromSetMidocoJournalExport(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class SearchJournalExportsResponse extends AbstractStructBase
     public function setMidocoJournalExport(?array $midocoJournalExport = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoJournalExportArrayErrorMessage = self::validateMidocoJournalExportForArrayConstraintsFromSetMidocoJournalExport($midocoJournalExport))) {
+        if ('' !== ($midocoJournalExportArrayErrorMessage = self::validateMidocoJournalExportForArrayConstraintFromSetMidocoJournalExport($midocoJournalExport))) {
             throw new InvalidArgumentException($midocoJournalExportArrayErrorMessage, __LINE__);
         }
         $this->MidocoJournalExport = $midocoJournalExport;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMisReportInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMisReportInfo extends MisReportDTO
 {
     /**

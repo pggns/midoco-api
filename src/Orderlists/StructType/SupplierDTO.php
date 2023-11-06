@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SupplierDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SupplierDTO extends AbstractStructBase
 {
     /**
@@ -244,6 +245,16 @@ class SupplierDTO extends AbstractStructBase
      */
     protected ?string $settlementGroup = null;
     /**
+     * The settlementTypeCreditDefault
+     * @var string|null
+     */
+    protected ?string $settlementTypeCreditDefault = null;
+    /**
+     * The settlementTypeDebitDefault
+     * @var string|null
+     */
+    protected ?string $settlementTypeDebitDefault = null;
+    /**
      * The stornoNotification
      * @var bool|null
      */
@@ -351,6 +362,8 @@ class SupplierDTO extends AbstractStructBase
      * @uses SupplierDTO::setPrintOptionId()
      * @uses SupplierDTO::setRequiresConfirmation()
      * @uses SupplierDTO::setSettlementGroup()
+     * @uses SupplierDTO::setSettlementTypeCreditDefault()
+     * @uses SupplierDTO::setSettlementTypeDebitDefault()
      * @uses SupplierDTO::setStornoNotification()
      * @uses SupplierDTO::setSupplierGroupForFee()
      * @uses SupplierDTO::setSupplierId()
@@ -409,6 +422,8 @@ class SupplierDTO extends AbstractStructBase
      * @param int $printOptionId
      * @param bool $requiresConfirmation
      * @param string $settlementGroup
+     * @param string $settlementTypeCreditDefault
+     * @param string $settlementTypeDebitDefault
      * @param bool $stornoNotification
      * @param string $supplierGroupForFee
      * @param string $supplierId
@@ -422,7 +437,7 @@ class SupplierDTO extends AbstractStructBase
      * @param bool $vatIdChange
      * @param int $verkCode
      */
-    public function __construct(?bool $acceptCash = null, ?bool $acceptCc = null, ?bool $acceptDebit = null, ?bool $acceptInvoice = null, ?string $accountDiPayment = null, ?string $accountExpenseInvoice = null, ?string $accountProvisionInsurance = null, ?string $accountProvisionInsuranceDi = null, ?string $accountProvisionNovat = null, ?string $accountProvisionNovatDi = null, ?string $accountProvisionReceivable = null, ?string $accountProvisionVat = null, ?string $accountProvisionVatDi = null, ?string $accountSupplierPayment = null, ?string $accountSupplierVat = null, ?bool $activeCommissionSettlement = null, ?bool $allowMarkUp = null, ?int $autoRemarkPosition = null, ?bool $bookingIdRequired = null, ?bool $collectiveSettlement = null, ?int $commissionMode = null, ?string $currency = null, ?bool $customerWishNotification = null, ?bool $emailNotification = null, ?int $entryHandlingCollective = null, ?bool $entryRestAsProv = null, ?string $group1 = null, ?string $group2 = null, ?string $group3 = null, ?int $inkassoMode = null, ?string $interimAccount = null, ?bool $isCommPrefTravelDate = null, ?bool $isInsurance = null, ?bool $isLocked = null, ?bool $isOwnAccount = null, ?bool $isOwnSettlement = null, ?bool $isPrefTravelDate = null, ?bool $isVarious = null, ?string $lockDate = null, ?string $name = null, ?int $optionPeriod = null, ?bool $preventBillingPosSplit = null, ?bool $preventBookingRefGen = null, ?int $printOptionId = null, ?bool $requiresConfirmation = null, ?string $settlementGroup = null, ?bool $stornoNotification = null, ?string $supplierGroupForFee = null, ?string $supplierId = null, ?bool $suppressBackofficeExport = null, ?bool $suppressRevenueBooking = null, ?bool $travelDocumentsPerItem = null, ?bool $useBookingAsEntry = null, ?string $validCreationTravel = null, ?string $validDate = null, ?string $vatId = null, ?bool $vatIdChange = null, ?int $verkCode = null)
+    public function __construct(?bool $acceptCash = null, ?bool $acceptCc = null, ?bool $acceptDebit = null, ?bool $acceptInvoice = null, ?string $accountDiPayment = null, ?string $accountExpenseInvoice = null, ?string $accountProvisionInsurance = null, ?string $accountProvisionInsuranceDi = null, ?string $accountProvisionNovat = null, ?string $accountProvisionNovatDi = null, ?string $accountProvisionReceivable = null, ?string $accountProvisionVat = null, ?string $accountProvisionVatDi = null, ?string $accountSupplierPayment = null, ?string $accountSupplierVat = null, ?bool $activeCommissionSettlement = null, ?bool $allowMarkUp = null, ?int $autoRemarkPosition = null, ?bool $bookingIdRequired = null, ?bool $collectiveSettlement = null, ?int $commissionMode = null, ?string $currency = null, ?bool $customerWishNotification = null, ?bool $emailNotification = null, ?int $entryHandlingCollective = null, ?bool $entryRestAsProv = null, ?string $group1 = null, ?string $group2 = null, ?string $group3 = null, ?int $inkassoMode = null, ?string $interimAccount = null, ?bool $isCommPrefTravelDate = null, ?bool $isInsurance = null, ?bool $isLocked = null, ?bool $isOwnAccount = null, ?bool $isOwnSettlement = null, ?bool $isPrefTravelDate = null, ?bool $isVarious = null, ?string $lockDate = null, ?string $name = null, ?int $optionPeriod = null, ?bool $preventBillingPosSplit = null, ?bool $preventBookingRefGen = null, ?int $printOptionId = null, ?bool $requiresConfirmation = null, ?string $settlementGroup = null, ?string $settlementTypeCreditDefault = null, ?string $settlementTypeDebitDefault = null, ?bool $stornoNotification = null, ?string $supplierGroupForFee = null, ?string $supplierId = null, ?bool $suppressBackofficeExport = null, ?bool $suppressRevenueBooking = null, ?bool $travelDocumentsPerItem = null, ?bool $useBookingAsEntry = null, ?string $validCreationTravel = null, ?string $validDate = null, ?string $vatId = null, ?bool $vatIdChange = null, ?int $verkCode = null)
     {
         $this
             ->setAcceptCash($acceptCash)
@@ -471,6 +486,8 @@ class SupplierDTO extends AbstractStructBase
             ->setPrintOptionId($printOptionId)
             ->setRequiresConfirmation($requiresConfirmation)
             ->setSettlementGroup($settlementGroup)
+            ->setSettlementTypeCreditDefault($settlementTypeCreditDefault)
+            ->setSettlementTypeDebitDefault($settlementTypeDebitDefault)
             ->setStornoNotification($stornoNotification)
             ->setSupplierGroupForFee($supplierGroupForFee)
             ->setSupplierId($supplierId)
@@ -1539,6 +1556,52 @@ class SupplierDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementGroup, true), gettype($settlementGroup)), __LINE__);
         }
         $this->settlementGroup = $settlementGroup;
+        
+        return $this;
+    }
+    /**
+     * Get settlementTypeCreditDefault value
+     * @return string|null
+     */
+    public function getSettlementTypeCreditDefault(): ?string
+    {
+        return $this->settlementTypeCreditDefault;
+    }
+    /**
+     * Set settlementTypeCreditDefault value
+     * @param string $settlementTypeCreditDefault
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
+     */
+    public function setSettlementTypeCreditDefault(?string $settlementTypeCreditDefault = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementTypeCreditDefault) && !is_string($settlementTypeCreditDefault)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementTypeCreditDefault, true), gettype($settlementTypeCreditDefault)), __LINE__);
+        }
+        $this->settlementTypeCreditDefault = $settlementTypeCreditDefault;
+        
+        return $this;
+    }
+    /**
+     * Get settlementTypeDebitDefault value
+     * @return string|null
+     */
+    public function getSettlementTypeDebitDefault(): ?string
+    {
+        return $this->settlementTypeDebitDefault;
+    }
+    /**
+     * Set settlementTypeDebitDefault value
+     * @param string $settlementTypeDebitDefault
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SupplierDTO
+     */
+    public function setSettlementTypeDebitDefault(?string $settlementTypeDebitDefault = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementTypeDebitDefault) && !is_string($settlementTypeDebitDefault)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementTypeDebitDefault, true), gettype($settlementTypeDebitDefault)), __LINE__);
+        }
+        $this->settlementTypeDebitDefault = $settlementTypeDebitDefault;
         
         return $this;
     }

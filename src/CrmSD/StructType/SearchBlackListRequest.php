@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchBlackListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchBlackListRequest extends AbstractStructBase
 {
     /**
@@ -111,12 +112,13 @@ class SearchBlackListRequest extends AbstractStructBase
         return $this->unitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitName method
+     * This method is responsible for validating the value(s) passed to the setUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitNameForArrayConstraintsFromSetUnitName(?array $values = []): string
+    public static function validateUnitNameForArrayConstraintFromSetUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -140,12 +142,12 @@ class SearchBlackListRequest extends AbstractStructBase
      * Set unitName value
      * @throws InvalidArgumentException
      * @param string[] $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setUnitName(?array $unitName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintsFromSetUnitName($unitName))) {
+        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintFromSetUnitName($unitName))) {
             throw new InvalidArgumentException($unitNameArrayErrorMessage, __LINE__);
         }
         $this->unitName = $unitName;
@@ -156,7 +158,7 @@ class SearchBlackListRequest extends AbstractStructBase
      * Add item to unitName value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function addToUnitName(string $item): self
     {
@@ -179,7 +181,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set surName value
      * @param string $surName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setSurName(?string $surName = null): self
     {
@@ -202,7 +204,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set foreName value
      * @param string $foreName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setForeName(?string $foreName = null): self
     {
@@ -225,7 +227,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setStreet(?string $street = null): self
     {
@@ -248,7 +250,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set streetNo value
      * @param string $streetNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setStreetNo(?string $streetNo = null): self
     {
@@ -271,7 +273,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -294,7 +296,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set postOfficeBox value
      * @param string $postOfficeBox
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -317,7 +319,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setCity(?string $city = null): self
     {
@@ -340,7 +342,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set countryCode value
      * @param string $countryCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -363,7 +365,7 @@ class SearchBlackListRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBlackListRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBlackListRequest
      */
     public function setEmail(?string $email = null): self
     {

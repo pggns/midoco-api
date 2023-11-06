@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetExternalLinksResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExternalLinksResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetExternalLinksResponse extends AbstractStructBase
         return $this->MidocoExternalLink;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoExternalLink method
+     * This method is responsible for validating the value(s) passed to the setMidocoExternalLink method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoExternalLink method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoExternalLinkForArrayConstraintsFromSetMidocoExternalLink(?array $values = []): string
+    public static function validateMidocoExternalLinkForArrayConstraintFromSetMidocoExternalLink(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetExternalLinksResponse extends AbstractStructBase
     public function setMidocoExternalLink(?array $midocoExternalLink = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoExternalLinkArrayErrorMessage = self::validateMidocoExternalLinkForArrayConstraintsFromSetMidocoExternalLink($midocoExternalLink))) {
+        if ('' !== ($midocoExternalLinkArrayErrorMessage = self::validateMidocoExternalLinkForArrayConstraintFromSetMidocoExternalLink($midocoExternalLink))) {
             throw new InvalidArgumentException($midocoExternalLinkArrayErrorMessage, __LINE__);
         }
         $this->MidocoExternalLink = $midocoExternalLink;

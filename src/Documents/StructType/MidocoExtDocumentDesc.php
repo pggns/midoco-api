@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoExtDocumentDesc StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoExtDocumentDesc extends AbstractStructBase
 {
     /**
@@ -21,7 +22,7 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     /**
      * The MidocoBillingDocument
      * Meta information extracted from the WSDL
-     * - choice: MidocoBillingDocument | MidocoInvoice | MidocoReceipt
+     * - choice: MidocoBillingDocument | MidocoInvoice | MidocoReceipt | CashBookInfo
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
@@ -32,7 +33,7 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     /**
      * The MidocoInvoice
      * Meta information extracted from the WSDL
-     * - choice: MidocoBillingDocument | MidocoInvoice | MidocoReceipt
+     * - choice: MidocoBillingDocument | MidocoInvoice | MidocoReceipt | CashBookInfo
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
@@ -43,7 +44,7 @@ class MidocoExtDocumentDesc extends AbstractStructBase
     /**
      * The MidocoReceipt
      * Meta information extracted from the WSDL
-     * - choice: MidocoBillingDocument | MidocoInvoice | MidocoReceipt
+     * - choice: MidocoBillingDocument | MidocoInvoice | MidocoReceipt | CashBookInfo
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - minOccurs: 0
@@ -51,6 +52,17 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * @var \Pggns\MidocoApi\Documents\StructType\MidocoReceipt|null
      */
     protected ?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt $MidocoReceipt = null;
+    /**
+     * The CashBookInfo
+     * Meta information extracted from the WSDL
+     * - choice: MidocoBillingDocument | MidocoInvoice | MidocoReceipt | CashBookInfo
+     * - choiceMaxOccurs: 1
+     * - choiceMinOccurs: 1
+     * - minOccurs: 0
+     * - ref: order:CashBookInfo
+     * @var \Pggns\MidocoApi\Documents\StructType\CashBookInfo|null
+     */
+    protected ?\Pggns\MidocoApi\Documents\StructType\CashBookInfo $CashBookInfo = null;
     /**
      * The refDocumentNumber
      * @var string|null
@@ -62,20 +74,23 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      * @uses MidocoExtDocumentDesc::setMidocoBillingDocument()
      * @uses MidocoExtDocumentDesc::setMidocoInvoice()
      * @uses MidocoExtDocumentDesc::setMidocoReceipt()
+     * @uses MidocoExtDocumentDesc::setCashBookInfo()
      * @uses MidocoExtDocumentDesc::setRefDocumentNumber()
      * @param string $documentType
      * @param \Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument
      * @param \Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice
      * @param \Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt
+     * @param \Pggns\MidocoApi\Documents\StructType\CashBookInfo $cashBookInfo
      * @param string $refDocumentNumber
      */
-    public function __construct(?string $documentType = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt = null, ?string $refDocumentNumber = null)
+    public function __construct(?string $documentType = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice = null, ?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt = null, ?\Pggns\MidocoApi\Documents\StructType\CashBookInfo $cashBookInfo = null, ?string $refDocumentNumber = null)
     {
         $this
             ->setDocumentType($documentType)
             ->setMidocoBillingDocument($midocoBillingDocument)
             ->setMidocoInvoice($midocoInvoice)
             ->setMidocoReceipt($midocoReceipt)
+            ->setCashBookInfo($cashBookInfo)
             ->setRefDocumentNumber($refDocumentNumber);
     }
     /**
@@ -110,16 +125,16 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      */
     public function getMidocoBillingDocument(): ?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument
     {
-        return isset($this->MidocoBillingDocument) ? $this->MidocoBillingDocument : null;
+        return $this->MidocoBillingDocument ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setMidocoBillingDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingDocument method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateMidocoBillingDocumentForChoiceConstraintsFromSetMidocoBillingDocument($value): string
+    public function validateMidocoBillingDocumentForChoiceConstraintFromSetMidocoBillingDocument($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -128,6 +143,7 @@ class MidocoExtDocumentDesc extends AbstractStructBase
         $properties = [
             'MidocoInvoice',
             'MidocoReceipt',
+            'CashBookInfo',
         ];
         try {
             foreach ($properties as $property) {
@@ -152,8 +168,8 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      */
     public function setMidocoBillingDocument(?\Pggns\MidocoApi\Documents\StructType\MidocoBillingDocument $midocoBillingDocument = null): self
     {
-        // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt)
-        if ('' !== ($midocoBillingDocumentChoiceErrorMessage = self::validateMidocoBillingDocumentForChoiceConstraintsFromSetMidocoBillingDocument($midocoBillingDocument))) {
+        // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt, CashBookInfo)
+        if ('' !== ($midocoBillingDocumentChoiceErrorMessage = self::validateMidocoBillingDocumentForChoiceConstraintFromSetMidocoBillingDocument($midocoBillingDocument))) {
             throw new InvalidArgumentException($midocoBillingDocumentChoiceErrorMessage, __LINE__);
         }
         if (is_null($midocoBillingDocument) || (is_array($midocoBillingDocument) && empty($midocoBillingDocument))) {
@@ -170,16 +186,16 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      */
     public function getMidocoInvoice(): ?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice
     {
-        return isset($this->MidocoInvoice) ? $this->MidocoInvoice : null;
+        return $this->MidocoInvoice ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setMidocoInvoice method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoice method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoice method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateMidocoInvoiceForChoiceConstraintsFromSetMidocoInvoice($value): string
+    public function validateMidocoInvoiceForChoiceConstraintFromSetMidocoInvoice($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -188,6 +204,7 @@ class MidocoExtDocumentDesc extends AbstractStructBase
         $properties = [
             'MidocoBillingDocument',
             'MidocoReceipt',
+            'CashBookInfo',
         ];
         try {
             foreach ($properties as $property) {
@@ -212,8 +229,8 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      */
     public function setMidocoInvoice(?\Pggns\MidocoApi\Documents\StructType\MidocoInvoice $midocoInvoice = null): self
     {
-        // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt)
-        if ('' !== ($midocoInvoiceChoiceErrorMessage = self::validateMidocoInvoiceForChoiceConstraintsFromSetMidocoInvoice($midocoInvoice))) {
+        // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt, CashBookInfo)
+        if ('' !== ($midocoInvoiceChoiceErrorMessage = self::validateMidocoInvoiceForChoiceConstraintFromSetMidocoInvoice($midocoInvoice))) {
             throw new InvalidArgumentException($midocoInvoiceChoiceErrorMessage, __LINE__);
         }
         if (is_null($midocoInvoice) || (is_array($midocoInvoice) && empty($midocoInvoice))) {
@@ -230,16 +247,16 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      */
     public function getMidocoReceipt(): ?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt
     {
-        return isset($this->MidocoReceipt) ? $this->MidocoReceipt : null;
+        return $this->MidocoReceipt ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setMidocoReceipt method
+     * This method is responsible for validating the value(s) passed to the setMidocoReceipt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoReceipt method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateMidocoReceiptForChoiceConstraintsFromSetMidocoReceipt($value): string
+    public function validateMidocoReceiptForChoiceConstraintFromSetMidocoReceipt($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -248,6 +265,7 @@ class MidocoExtDocumentDesc extends AbstractStructBase
         $properties = [
             'MidocoBillingDocument',
             'MidocoInvoice',
+            'CashBookInfo',
         ];
         try {
             foreach ($properties as $property) {
@@ -272,14 +290,75 @@ class MidocoExtDocumentDesc extends AbstractStructBase
      */
     public function setMidocoReceipt(?\Pggns\MidocoApi\Documents\StructType\MidocoReceipt $midocoReceipt = null): self
     {
-        // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt)
-        if ('' !== ($midocoReceiptChoiceErrorMessage = self::validateMidocoReceiptForChoiceConstraintsFromSetMidocoReceipt($midocoReceipt))) {
+        // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt, CashBookInfo)
+        if ('' !== ($midocoReceiptChoiceErrorMessage = self::validateMidocoReceiptForChoiceConstraintFromSetMidocoReceipt($midocoReceipt))) {
             throw new InvalidArgumentException($midocoReceiptChoiceErrorMessage, __LINE__);
         }
         if (is_null($midocoReceipt) || (is_array($midocoReceipt) && empty($midocoReceipt))) {
             unset($this->MidocoReceipt);
         } else {
             $this->MidocoReceipt = $midocoReceipt;
+        }
+        
+        return $this;
+    }
+    /**
+     * Get CashBookInfo value
+     * @return \Pggns\MidocoApi\Documents\StructType\CashBookInfo|null
+     */
+    public function getCashBookInfo(): ?\Pggns\MidocoApi\Documents\StructType\CashBookInfo
+    {
+        return $this->CashBookInfo ?? null;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setCashBookInfo method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setCashBookInfo method
+     * This has to validate that the property which is being set is the only one among the given choices
+     * @param mixed $value
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public function validateCashBookInfoForChoiceConstraintFromSetCashBookInfo($value): string
+    {
+        $message = '';
+        if (is_null($value)) {
+            return $message;
+        }
+        $properties = [
+            'MidocoBillingDocument',
+            'MidocoInvoice',
+            'MidocoReceipt',
+        ];
+        try {
+            foreach ($properties as $property) {
+                if (isset($this->{$property})) {
+                    throw new InvalidArgumentException(sprintf('The property CashBookInfo can\'t be set as the property %s is already set. Only one property must be set among these properties: CashBookInfo, %s.', $property, implode(', ', $properties)), __LINE__);
+                }
+            }
+        } catch (InvalidArgumentException $e) {
+            $message = $e->getMessage();
+        }
+        
+        return $message;
+    }
+    /**
+     * Set CashBookInfo value
+     * This property belongs to a choice that allows only one property to exist. It is
+     * therefore removable from the request, consequently if the value assigned to this
+     * property is null, the property is removed from this object
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Documents\StructType\CashBookInfo $cashBookInfo
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoExtDocumentDesc
+     */
+    public function setCashBookInfo(?\Pggns\MidocoApi\Documents\StructType\CashBookInfo $cashBookInfo = null): self
+    {
+        // validation for constraint: choice(MidocoBillingDocument, MidocoInvoice, MidocoReceipt, CashBookInfo)
+        if ('' !== ($cashBookInfoChoiceErrorMessage = self::validateCashBookInfoForChoiceConstraintFromSetCashBookInfo($cashBookInfo))) {
+            throw new InvalidArgumentException($cashBookInfoChoiceErrorMessage, __LINE__);
+        }
+        if (is_null($cashBookInfo) || (is_array($cashBookInfo) && empty($cashBookInfo))) {
+            unset($this->CashBookInfo);
+        } else {
+            $this->CashBookInfo = $cashBookInfo;
         }
         
         return $this;

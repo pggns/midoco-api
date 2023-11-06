@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoMisCube StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoMisCube extends MisCubeDTO
 {
 }

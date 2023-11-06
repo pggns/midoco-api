@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoOrgUnitGuiAttributeRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
 {
     /**
@@ -49,7 +50,7 @@ class GetMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoOrgUnitGuiAttributeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoOrgUnitGuiAttributeRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -71,17 +72,17 @@ class GetMidocoOrgUnitGuiAttributeRequest extends AbstractStructBase
     }
     /**
      * Set GUIAttributeGroup value
-     * @uses \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::valueIsValid()
-     * @uses \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::getValidValues()
+     * @uses \Pggns\MidocoApi\Crmsd\EnumType\GUIAttributeGroup::valueIsValid()
+     * @uses \Pggns\MidocoApi\Crmsd\EnumType\GUIAttributeGroup::getValidValues()
      * @throws InvalidArgumentException
      * @param string $gUIAttributeGroup
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoOrgUnitGuiAttributeRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoOrgUnitGuiAttributeRequest
      */
     public function setGUIAttributeGroup(?string $gUIAttributeGroup = null): self
     {
         // validation for constraint: enumeration
-        if (!\Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::valueIsValid($gUIAttributeGroup)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup', is_array($gUIAttributeGroup) ? implode(', ', $gUIAttributeGroup) : var_export($gUIAttributeGroup, true), implode(', ', \Pggns\MidocoApi\CrmSD\EnumType\GUIAttributeGroup::getValidValues())), __LINE__);
+        if (!\Pggns\MidocoApi\Crmsd\EnumType\GUIAttributeGroup::valueIsValid($gUIAttributeGroup)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Crmsd\EnumType\GUIAttributeGroup', is_array($gUIAttributeGroup) ? implode(', ', $gUIAttributeGroup) : var_export($gUIAttributeGroup, true), implode(', ', \Pggns\MidocoApi\Crmsd\EnumType\GUIAttributeGroup::getValidValues())), __LINE__);
         }
         $this->GUIAttributeGroup = $gUIAttributeGroup;
         

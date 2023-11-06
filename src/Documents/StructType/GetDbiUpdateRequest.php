@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDbiUpdateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDbiUpdateRequest extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoJasperReportParamList StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoJasperReportParamList extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class MidocoJasperReportParamList extends AbstractStructBase
         return $this->MidocoJasperReportParamValue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoJasperReportParamValue method
+     * This method is responsible for validating the value(s) passed to the setMidocoJasperReportParamValue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoJasperReportParamValue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoJasperReportParamValueForArrayConstraintsFromSetMidocoJasperReportParamValue(?array $values = []): string
+    public static function validateMidocoJasperReportParamValueForArrayConstraintFromSetMidocoJasperReportParamValue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class MidocoJasperReportParamList extends AbstractStructBase
     public function setMidocoJasperReportParamValue(?array $midocoJasperReportParamValue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoJasperReportParamValueArrayErrorMessage = self::validateMidocoJasperReportParamValueForArrayConstraintsFromSetMidocoJasperReportParamValue($midocoJasperReportParamValue))) {
+        if ('' !== ($midocoJasperReportParamValueArrayErrorMessage = self::validateMidocoJasperReportParamValueForArrayConstraintFromSetMidocoJasperReportParamValue($midocoJasperReportParamValue))) {
             throw new InvalidArgumentException($midocoJasperReportParamValueArrayErrorMessage, __LINE__);
         }
         $this->MidocoJasperReportParamValue = $midocoJasperReportParamValue;

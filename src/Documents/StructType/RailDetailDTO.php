@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RailDetailDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RailDetailDTO extends AbstractStructBase
 {
     /**
@@ -123,6 +124,11 @@ class RailDetailDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $documentNo = null;
+    /**
+     * The domesticIndicator
+     * @var string|null
+     */
+    protected ?string $domesticIndicator = null;
     /**
      * The feeAmount
      * @var float|null
@@ -367,6 +373,7 @@ class RailDetailDTO extends AbstractStructBase
      * @uses RailDetailDTO::setDeparturePlatform()
      * @uses RailDetailDTO::setDepartureTime()
      * @uses RailDetailDTO::setDocumentNo()
+     * @uses RailDetailDTO::setDomesticIndicator()
      * @uses RailDetailDTO::setFeeAmount()
      * @uses RailDetailDTO::setGlobalPrice()
      * @uses RailDetailDTO::setIssueType()
@@ -433,6 +440,7 @@ class RailDetailDTO extends AbstractStructBase
      * @param string $departurePlatform
      * @param string $departureTime
      * @param string $documentNo
+     * @param string $domesticIndicator
      * @param float $feeAmount
      * @param bool $globalPrice
      * @param string $issueType
@@ -478,7 +486,7 @@ class RailDetailDTO extends AbstractStructBase
      * @param float $vatPercent
      * @param string $waggon
      */
-    public function __construct(?string $adapter = null, ?string $arrivalCode = null, ?string $arrivalDate = null, ?string $arrivalDesc = null, ?string $arrivalPlatform = null, ?string $arrivalTime = null, ?string $bookingClass = null, ?string $bookingType = null, ?float $cancellationFee = null, ?string $ccApprovalCode = null, ?string $ccNumber = null, ?string $ccSlipNo = null, ?string $ccType = null, ?bool $companyCustomer = null, ?string $crsAgencyNo = null, ?string $currency = null, ?string $departureCode = null, ?string $departureDate = null, ?string $departureDesc = null, ?string $departurePlatform = null, ?string $departureTime = null, ?string $documentNo = null, ?float $feeAmount = null, ?bool $globalPrice = null, ?string $issueType = null, ?int $itemId = null, ?string $journeyType = null, ?string $lastCancelDate = null, ?int $noOfChildren = null, ?string $partition = null, ?float $passengercommrate = null, ?int $paxPerServices = null, ?string $paymentMode = null, ?string $personAssignment = null, ?int $position = null, ?string $priceClass = null, ?string $priceType = null, ?string $productType = null, ?string $reductionCode = null, ?string $reductionDesc = null, ?int $referencePosition = null, ?string $seat = null, ?string $seatExtra = null, ?string $serviceCode = null, ?string $serviceDesc = null, ?string $serviceName = null, ?float $servicePrice = null, ?string $serviceStatus = null, ?string $tariffCode = null, ?string $tariffDesc = null, ?string $ticketCategory = null, ?bool $tokenChecked = null, ?string $tourTicket = null, ?string $traffic = null, ?string $trainNo = null, ?string $trainType = null, ?string $validFrom = null, ?string $validTo = null, ?float $vat2Amount = null, ?float $vat2Base = null, ?float $vat2Percent = null, ?float $vatAmount = null, ?float $vatBase = null, ?bool $vatIncluded = null, ?float $vatPercent = null, ?string $waggon = null)
+    public function __construct(?string $adapter = null, ?string $arrivalCode = null, ?string $arrivalDate = null, ?string $arrivalDesc = null, ?string $arrivalPlatform = null, ?string $arrivalTime = null, ?string $bookingClass = null, ?string $bookingType = null, ?float $cancellationFee = null, ?string $ccApprovalCode = null, ?string $ccNumber = null, ?string $ccSlipNo = null, ?string $ccType = null, ?bool $companyCustomer = null, ?string $crsAgencyNo = null, ?string $currency = null, ?string $departureCode = null, ?string $departureDate = null, ?string $departureDesc = null, ?string $departurePlatform = null, ?string $departureTime = null, ?string $documentNo = null, ?string $domesticIndicator = null, ?float $feeAmount = null, ?bool $globalPrice = null, ?string $issueType = null, ?int $itemId = null, ?string $journeyType = null, ?string $lastCancelDate = null, ?int $noOfChildren = null, ?string $partition = null, ?float $passengercommrate = null, ?int $paxPerServices = null, ?string $paymentMode = null, ?string $personAssignment = null, ?int $position = null, ?string $priceClass = null, ?string $priceType = null, ?string $productType = null, ?string $reductionCode = null, ?string $reductionDesc = null, ?int $referencePosition = null, ?string $seat = null, ?string $seatExtra = null, ?string $serviceCode = null, ?string $serviceDesc = null, ?string $serviceName = null, ?float $servicePrice = null, ?string $serviceStatus = null, ?string $tariffCode = null, ?string $tariffDesc = null, ?string $ticketCategory = null, ?bool $tokenChecked = null, ?string $tourTicket = null, ?string $traffic = null, ?string $trainNo = null, ?string $trainType = null, ?string $validFrom = null, ?string $validTo = null, ?float $vat2Amount = null, ?float $vat2Base = null, ?float $vat2Percent = null, ?float $vatAmount = null, ?float $vatBase = null, ?bool $vatIncluded = null, ?float $vatPercent = null, ?string $waggon = null)
     {
         $this
             ->setAdapter($adapter)
@@ -503,6 +511,7 @@ class RailDetailDTO extends AbstractStructBase
             ->setDeparturePlatform($departurePlatform)
             ->setDepartureTime($departureTime)
             ->setDocumentNo($documentNo)
+            ->setDomesticIndicator($domesticIndicator)
             ->setFeeAmount($feeAmount)
             ->setGlobalPrice($globalPrice)
             ->setIssueType($issueType)
@@ -1051,6 +1060,29 @@ class RailDetailDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($documentNo, true), gettype($documentNo)), __LINE__);
         }
         $this->documentNo = $documentNo;
+        
+        return $this;
+    }
+    /**
+     * Get domesticIndicator value
+     * @return string|null
+     */
+    public function getDomesticIndicator(): ?string
+    {
+        return $this->domesticIndicator;
+    }
+    /**
+     * Set domesticIndicator value
+     * @param string $domesticIndicator
+     * @return \Pggns\MidocoApi\Documents\StructType\RailDetailDTO
+     */
+    public function setDomesticIndicator(?string $domesticIndicator = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($domesticIndicator) && !is_string($domesticIndicator)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($domesticIndicator, true), gettype($domesticIndicator)), __LINE__);
+        }
+        $this->domesticIndicator = $domesticIndicator;
         
         return $this;
     }

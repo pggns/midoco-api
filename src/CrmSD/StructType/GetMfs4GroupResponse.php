@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfs4GroupResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfs4GroupResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetMfs4GroupResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoMf
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMf[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoMf[]
      */
     protected ?array $MidocoMf = null;
     /**
      * Constructor method for GetMfs4GroupResponse
      * @uses GetMfs4GroupResponse::setMidocoMf()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMf[] $midocoMf
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMf[] $midocoMf
      */
     public function __construct(?array $midocoMf = null)
     {
@@ -34,19 +35,20 @@ class GetMfs4GroupResponse extends AbstractStructBase
     }
     /**
      * Get MidocoMf value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMf[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMf[]
      */
     public function getMidocoMf(): ?array
     {
         return $this->MidocoMf;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMf method
+     * This method is responsible for validating the value(s) passed to the setMidocoMf method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMf method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMfForArrayConstraintsFromSetMidocoMf(?array $values = []): string
+    public static function validateMidocoMfForArrayConstraintFromSetMidocoMf(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetMfs4GroupResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMfs4GroupResponseMidocoMfItem) {
             // validation for constraint: itemType
-            if (!$getMfs4GroupResponseMidocoMfItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMf) {
+            if (!$getMfs4GroupResponseMidocoMfItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoMf) {
                 $invalidValues[] = is_object($getMfs4GroupResponseMidocoMfItem) ? get_class($getMfs4GroupResponseMidocoMfItem) : sprintf('%s(%s)', gettype($getMfs4GroupResponseMidocoMfItem), var_export($getMfs4GroupResponseMidocoMfItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMf, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoMf, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetMfs4GroupResponse extends AbstractStructBase
     /**
      * Set MidocoMf value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMf[] $midocoMf
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfs4GroupResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMf[] $midocoMf
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfs4GroupResponse
      */
     public function setMidocoMf(?array $midocoMf = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMfArrayErrorMessage = self::validateMidocoMfForArrayConstraintsFromSetMidocoMf($midocoMf))) {
+        if ('' !== ($midocoMfArrayErrorMessage = self::validateMidocoMfForArrayConstraintFromSetMidocoMf($midocoMf))) {
             throw new InvalidArgumentException($midocoMfArrayErrorMessage, __LINE__);
         }
         $this->MidocoMf = $midocoMf;
@@ -85,14 +87,14 @@ class GetMfs4GroupResponse extends AbstractStructBase
     /**
      * Add item to MidocoMf value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMf $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfs4GroupResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMf $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfs4GroupResponse
      */
-    public function addToMidocoMf(\Pggns\MidocoApi\CrmSD\StructType\MidocoMf $item): self
+    public function addToMidocoMf(\Pggns\MidocoApi\Crmsd\StructType\MidocoMf $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoMf) {
-            throw new InvalidArgumentException(sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoMf, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoMf) {
+            throw new InvalidArgumentException(sprintf('The MidocoMf property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoMf, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoMf[] = $item;
         

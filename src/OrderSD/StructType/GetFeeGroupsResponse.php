@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetFeeGroupsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFeeGroupsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetFeeGroupsResponse extends AbstractStructBase
         return $this->MidocoFeeGroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFeeGroup method
+     * This method is responsible for validating the value(s) passed to the setMidocoFeeGroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFeeGroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFeeGroupForArrayConstraintsFromSetMidocoFeeGroup(?array $values = []): string
+    public static function validateMidocoFeeGroupForArrayConstraintFromSetMidocoFeeGroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetFeeGroupsResponse extends AbstractStructBase
     public function setMidocoFeeGroup(?array $midocoFeeGroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFeeGroupArrayErrorMessage = self::validateMidocoFeeGroupForArrayConstraintsFromSetMidocoFeeGroup($midocoFeeGroup))) {
+        if ('' !== ($midocoFeeGroupArrayErrorMessage = self::validateMidocoFeeGroupForArrayConstraintFromSetMidocoFeeGroup($midocoFeeGroup))) {
             throw new InvalidArgumentException($midocoFeeGroupArrayErrorMessage, __LINE__);
         }
         $this->MidocoFeeGroup = $midocoFeeGroup;

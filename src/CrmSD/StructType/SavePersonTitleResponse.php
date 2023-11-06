@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SavePersonTitleResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavePersonTitleResponse extends AbstractStructBase
 {
     /**
@@ -19,33 +20,33 @@ class SavePersonTitleResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: PersonTitle
-     * @var \Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO
+     * @var \Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO
      */
-    protected \Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO $PersonTitle;
+    protected \Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO $PersonTitle;
     /**
      * Constructor method for SavePersonTitleResponse
      * @uses SavePersonTitleResponse::setPersonTitle()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO $personTitle
+     * @param \Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO $personTitle
      */
-    public function __construct(\Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO $personTitle)
+    public function __construct(\Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO $personTitle)
     {
         $this
             ->setPersonTitle($personTitle);
     }
     /**
      * Get PersonTitle value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO
      */
-    public function getPersonTitle(): \Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO
+    public function getPersonTitle(): \Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO
     {
         return $this->PersonTitle;
     }
     /**
      * Set PersonTitle value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO $personTitle
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePersonTitleResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO $personTitle
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePersonTitleResponse
      */
-    public function setPersonTitle(\Pggns\MidocoApi\CrmSD\StructType\PersonTitleDTO $personTitle): self
+    public function setPersonTitle(\Pggns\MidocoApi\Crmsd\StructType\PersonTitleDTO $personTitle): self
     {
         $this->PersonTitle = $personTitle;
         

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetHedgeCurrencyRateRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetHedgeCurrencyRateRequest extends AbstractStructBase
 {
     /**
@@ -39,12 +40,13 @@ class GetHedgeCurrencyRateRequest extends AbstractStructBase
         return $this->hedgeCurrencyRequest;
     }
     /**
-     * This method is responsible for validating the values passed to the setHedgeCurrencyRequest method
+     * This method is responsible for validating the value(s) passed to the setHedgeCurrencyRequest method
      * This method is willingly generated in order to preserve the one-line inline validation within the setHedgeCurrencyRequest method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateHedgeCurrencyRequestForArrayConstraintsFromSetHedgeCurrencyRequest(?array $values = []): string
+    public static function validateHedgeCurrencyRequestForArrayConstraintFromSetHedgeCurrencyRequest(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -73,7 +75,7 @@ class GetHedgeCurrencyRateRequest extends AbstractStructBase
     public function setHedgeCurrencyRequest(?array $hedgeCurrencyRequest = null): self
     {
         // validation for constraint: array
-        if ('' !== ($hedgeCurrencyRequestArrayErrorMessage = self::validateHedgeCurrencyRequestForArrayConstraintsFromSetHedgeCurrencyRequest($hedgeCurrencyRequest))) {
+        if ('' !== ($hedgeCurrencyRequestArrayErrorMessage = self::validateHedgeCurrencyRequestForArrayConstraintFromSetHedgeCurrencyRequest($hedgeCurrencyRequest))) {
             throw new InvalidArgumentException($hedgeCurrencyRequestArrayErrorMessage, __LINE__);
         }
         $this->hedgeCurrencyRequest = $hedgeCurrencyRequest;

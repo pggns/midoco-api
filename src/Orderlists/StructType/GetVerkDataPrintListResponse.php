@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetVerkDataPrintListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetVerkDataPrintListResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetVerkDataPrintListResponse extends AbstractStructBase
         return $this->MidocoVerkDataPrint;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoVerkDataPrint method
+     * This method is responsible for validating the value(s) passed to the setMidocoVerkDataPrint method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoVerkDataPrint method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoVerkDataPrintForArrayConstraintsFromSetMidocoVerkDataPrint(?array $values = []): string
+    public static function validateMidocoVerkDataPrintForArrayConstraintFromSetMidocoVerkDataPrint(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetVerkDataPrintListResponse extends AbstractStructBase
     public function setMidocoVerkDataPrint(?array $midocoVerkDataPrint = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoVerkDataPrintArrayErrorMessage = self::validateMidocoVerkDataPrintForArrayConstraintsFromSetMidocoVerkDataPrint($midocoVerkDataPrint))) {
+        if ('' !== ($midocoVerkDataPrintArrayErrorMessage = self::validateMidocoVerkDataPrintForArrayConstraintFromSetMidocoVerkDataPrint($midocoVerkDataPrint))) {
             throw new InvalidArgumentException($midocoVerkDataPrintArrayErrorMessage, __LINE__);
         }
         $this->MidocoVerkDataPrint = $midocoVerkDataPrint;

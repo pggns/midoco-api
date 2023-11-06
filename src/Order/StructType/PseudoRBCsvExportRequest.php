@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PseudoRBCsvExportRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PseudoRBCsvExportRequest extends AbstractStructBase
 {
     /**
@@ -71,12 +72,13 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
         return $this->MidocoPseudoRevenueBookingDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPseudoRevenueBookingDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoPseudoRevenueBookingDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPseudoRevenueBookingDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPseudoRevenueBookingDetailForArrayConstraintsFromSetMidocoPseudoRevenueBookingDetail(?array $values = []): string
+    public static function validateMidocoPseudoRevenueBookingDetailForArrayConstraintFromSetMidocoPseudoRevenueBookingDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -105,7 +107,7 @@ class PseudoRBCsvExportRequest extends AbstractStructBase
     public function setMidocoPseudoRevenueBookingDetail(?array $midocoPseudoRevenueBookingDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPseudoRevenueBookingDetailArrayErrorMessage = self::validateMidocoPseudoRevenueBookingDetailForArrayConstraintsFromSetMidocoPseudoRevenueBookingDetail($midocoPseudoRevenueBookingDetail))) {
+        if ('' !== ($midocoPseudoRevenueBookingDetailArrayErrorMessage = self::validateMidocoPseudoRevenueBookingDetailForArrayConstraintFromSetMidocoPseudoRevenueBookingDetail($midocoPseudoRevenueBookingDetail))) {
             throw new InvalidArgumentException($midocoPseudoRevenueBookingDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoPseudoRevenueBookingDetail = $midocoPseudoRevenueBookingDetail;

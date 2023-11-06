@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoInset StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoInset extends AbstractStructBase
 {
     /**
@@ -65,7 +66,7 @@ class MidocoInset extends AbstractStructBase
     /**
      * Set fileName value
      * @param string $fileName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInset
      */
     public function setFileName(?string $fileName = null): self
     {
@@ -88,7 +89,7 @@ class MidocoInset extends AbstractStructBase
     /**
      * Set fileContent value
      * @param string $fileContent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInset
      */
     public function setFileContent(?string $fileContent = null): self
     {
@@ -111,7 +112,7 @@ class MidocoInset extends AbstractStructBase
     /**
      * Set saveAsTravelPlan value
      * @param bool $saveAsTravelPlan
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInset
      */
     public function setSaveAsTravelPlan(?bool $saveAsTravelPlan = false): self
     {
@@ -134,7 +135,7 @@ class MidocoInset extends AbstractStructBase
     /**
      * Set repositoryId value
      * @param int $repositoryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInset
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInset
      */
     public function setRepositoryId(?int $repositoryId = null): self
     {

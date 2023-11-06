@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoVatReconciliationCriteriaType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoVatReconciliationCriteriaType extends AbstractStructBase
 {
     /**
@@ -96,12 +97,13 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
         return $this->vatCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setVatCode method
+     * This method is responsible for validating the value(s) passed to the setVatCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setVatCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateVatCodeForArrayConstraintsFromSetVatCode(?array $values = []): string
+    public static function validateVatCodeForArrayConstraintFromSetVatCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -130,7 +132,7 @@ class MidocoVatReconciliationCriteriaType extends AbstractStructBase
     public function setVatCode(?array $vatCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($vatCodeArrayErrorMessage = self::validateVatCodeForArrayConstraintsFromSetVatCode($vatCode))) {
+        if ('' !== ($vatCodeArrayErrorMessage = self::validateVatCodeForArrayConstraintFromSetVatCode($vatCode))) {
             throw new InvalidArgumentException($vatCodeArrayErrorMessage, __LINE__);
         }
         $this->vatCode = $vatCode;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for InvoiceFileFormatContentDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class InvoiceFileFormatContentDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set alternativeHeaderName value
      * @param string $alternativeHeaderName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO
      */
     public function setAlternativeHeaderName(?string $alternativeHeaderName = null): self
     {
@@ -86,7 +87,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set columnName value
      * @param string $columnName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO
      */
     public function setColumnName(?string $columnName = null): self
     {
@@ -109,7 +110,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set formatId value
      * @param string $formatId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO
      */
     public function setFormatId(?string $formatId = null): self
     {
@@ -132,7 +133,7 @@ class InvoiceFileFormatContentDTO extends AbstractStructBase
     /**
      * Set positionNoExport value
      * @param int $positionNoExport
-     * @return \Pggns\MidocoApi\CrmSD\StructType\InvoiceFileFormatContentDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\InvoiceFileFormatContentDTO
      */
     public function setPositionNoExport(?int $positionNoExport = null): self
     {

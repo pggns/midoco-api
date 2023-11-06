@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDirectDebitTransaction StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDirectDebitTransaction extends DtausTransactionDTO
 {
     /**
@@ -118,12 +119,13 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
         return $this->MidocoDirectDebitTransactionPurpose;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDirectDebitTransactionPurpose method
+     * This method is responsible for validating the value(s) passed to the setMidocoDirectDebitTransactionPurpose method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDirectDebitTransactionPurpose method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDirectDebitTransactionPurposeForArrayConstraintsFromSetMidocoDirectDebitTransactionPurpose(?array $values = []): string
+    public static function validateMidocoDirectDebitTransactionPurposeForArrayConstraintFromSetMidocoDirectDebitTransactionPurpose(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -152,7 +154,7 @@ class MidocoDirectDebitTransaction extends DtausTransactionDTO
     public function setMidocoDirectDebitTransactionPurpose(?array $midocoDirectDebitTransactionPurpose = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDirectDebitTransactionPurposeArrayErrorMessage = self::validateMidocoDirectDebitTransactionPurposeForArrayConstraintsFromSetMidocoDirectDebitTransactionPurpose($midocoDirectDebitTransactionPurpose))) {
+        if ('' !== ($midocoDirectDebitTransactionPurposeArrayErrorMessage = self::validateMidocoDirectDebitTransactionPurposeForArrayConstraintFromSetMidocoDirectDebitTransactionPurpose($midocoDirectDebitTransactionPurpose))) {
             throw new InvalidArgumentException($midocoDirectDebitTransactionPurposeArrayErrorMessage, __LINE__);
         }
         $this->MidocoDirectDebitTransactionPurpose = $midocoDirectDebitTransactionPurpose;

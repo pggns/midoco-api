@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListCabinClassResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListCabinClassResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListCabinClassResponse extends AbstractStructBase
         return $this->MidocoCabinClass;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCabinClass method
+     * This method is responsible for validating the value(s) passed to the setMidocoCabinClass method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCabinClass method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCabinClassForArrayConstraintsFromSetMidocoCabinClass(?array $values = []): string
+    public static function validateMidocoCabinClassForArrayConstraintFromSetMidocoCabinClass(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListCabinClassResponse extends AbstractStructBase
     public function setMidocoCabinClass(?array $midocoCabinClass = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCabinClassArrayErrorMessage = self::validateMidocoCabinClassForArrayConstraintsFromSetMidocoCabinClass($midocoCabinClass))) {
+        if ('' !== ($midocoCabinClassArrayErrorMessage = self::validateMidocoCabinClassForArrayConstraintFromSetMidocoCabinClass($midocoCabinClass))) {
             throw new InvalidArgumentException($midocoCabinClassArrayErrorMessage, __LINE__);
         }
         $this->MidocoCabinClass = $midocoCabinClass;

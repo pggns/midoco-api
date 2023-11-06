@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ABTAListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ABTAListResponse extends AbstractStructBase
 {
     /**
@@ -58,12 +59,13 @@ class ABTAListResponse extends AbstractStructBase
         return $this->MidocoABTAList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoABTAList method
+     * This method is responsible for validating the value(s) passed to the setMidocoABTAList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoABTAList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoABTAListForArrayConstraintsFromSetMidocoABTAList(?array $values = []): string
+    public static function validateMidocoABTAListForArrayConstraintFromSetMidocoABTAList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -92,7 +94,7 @@ class ABTAListResponse extends AbstractStructBase
     public function setMidocoABTAList(?array $midocoABTAList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoABTAListArrayErrorMessage = self::validateMidocoABTAListForArrayConstraintsFromSetMidocoABTAList($midocoABTAList))) {
+        if ('' !== ($midocoABTAListArrayErrorMessage = self::validateMidocoABTAListForArrayConstraintFromSetMidocoABTAList($midocoABTAList))) {
             throw new InvalidArgumentException($midocoABTAListArrayErrorMessage, __LINE__);
         }
         $this->MidocoABTAList = $midocoABTAList;

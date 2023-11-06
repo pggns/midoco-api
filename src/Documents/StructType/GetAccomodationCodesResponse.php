@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAccomodationCodesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAccomodationCodesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAccomodationCodesResponse extends AbstractStructBase
         return $this->MidocoAccomodationCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAccomodationCode method
+     * This method is responsible for validating the value(s) passed to the setMidocoAccomodationCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAccomodationCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAccomodationCodeForArrayConstraintsFromSetMidocoAccomodationCode(?array $values = []): string
+    public static function validateMidocoAccomodationCodeForArrayConstraintFromSetMidocoAccomodationCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAccomodationCodesResponse extends AbstractStructBase
     public function setMidocoAccomodationCode(?array $midocoAccomodationCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAccomodationCodeArrayErrorMessage = self::validateMidocoAccomodationCodeForArrayConstraintsFromSetMidocoAccomodationCode($midocoAccomodationCode))) {
+        if ('' !== ($midocoAccomodationCodeArrayErrorMessage = self::validateMidocoAccomodationCodeForArrayConstraintFromSetMidocoAccomodationCode($midocoAccomodationCode))) {
             throw new InvalidArgumentException($midocoAccomodationCodeArrayErrorMessage, __LINE__);
         }
         $this->MidocoAccomodationCode = $midocoAccomodationCode;

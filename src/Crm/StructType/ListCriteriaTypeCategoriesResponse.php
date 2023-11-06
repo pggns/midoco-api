@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListCriteriaTypeCategoriesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListCriteriaTypeCategoriesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class ListCriteriaTypeCategoriesResponse extends AbstractStructBase
         return $this->MidocoCriteriaTypeCategoryInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCriteriaTypeCategoryInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoCriteriaTypeCategoryInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCriteriaTypeCategoryInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCriteriaTypeCategoryInfoForArrayConstraintsFromSetMidocoCriteriaTypeCategoryInfo(?array $values = []): string
+    public static function validateMidocoCriteriaTypeCategoryInfoForArrayConstraintFromSetMidocoCriteriaTypeCategoryInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListCriteriaTypeCategoriesResponse extends AbstractStructBase
     public function setMidocoCriteriaTypeCategoryInfo(?array $midocoCriteriaTypeCategoryInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCriteriaTypeCategoryInfoArrayErrorMessage = self::validateMidocoCriteriaTypeCategoryInfoForArrayConstraintsFromSetMidocoCriteriaTypeCategoryInfo($midocoCriteriaTypeCategoryInfo))) {
+        if ('' !== ($midocoCriteriaTypeCategoryInfoArrayErrorMessage = self::validateMidocoCriteriaTypeCategoryInfoForArrayConstraintFromSetMidocoCriteriaTypeCategoryInfo($midocoCriteriaTypeCategoryInfo))) {
             throw new InvalidArgumentException($midocoCriteriaTypeCategoryInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoCriteriaTypeCategoryInfo = $midocoCriteriaTypeCategoryInfo;

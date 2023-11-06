@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmPrintRecipientDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmPrintRecipientDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPrintRecipientDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -94,7 +95,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set isOriginalPrint value
      * @param bool $isOriginalPrint
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPrintRecipientDTO
      */
     public function setIsOriginalPrint(?bool $isOriginalPrint = null): self
     {
@@ -117,7 +118,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set printType value
      * @param string $printType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPrintRecipientDTO
      */
     public function setPrintType(?string $printType = null): self
     {
@@ -140,7 +141,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set recipient value
      * @param string $recipient
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPrintRecipientDTO
      */
     public function setRecipient(?string $recipient = null): self
     {
@@ -163,7 +164,7 @@ class CrmPrintRecipientDTO extends AbstractStructBase
     /**
      * Set recipientId value
      * @param int $recipientId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmPrintRecipientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmPrintRecipientDTO
      */
     public function setRecipientId(?int $recipientId = null): self
     {

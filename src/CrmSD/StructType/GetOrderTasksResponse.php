@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getHistory --- returns the list of order notices (manual tasks) for a given customer id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderTasksResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetOrderTasksResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrderTask
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask[]
      */
     protected ?array $MidocoOrderTask = null;
     /**
      * Constructor method for GetOrderTasksResponse
      * @uses GetOrderTasksResponse::setMidocoOrderTask()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask[] $midocoOrderTask
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask[] $midocoOrderTask
      */
     public function __construct(?array $midocoOrderTask = null)
     {
@@ -36,19 +37,20 @@ class GetOrderTasksResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrderTask value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask[]
      */
     public function getMidocoOrderTask(): ?array
     {
         return $this->MidocoOrderTask;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderTask method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderTask method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderTask method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderTaskForArrayConstraintsFromSetMidocoOrderTask(?array $values = []): string
+    public static function validateMidocoOrderTaskForArrayConstraintFromSetMidocoOrderTask(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetOrderTasksResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getOrderTasksResponseMidocoOrderTaskItem) {
             // validation for constraint: itemType
-            if (!$getOrderTasksResponseMidocoOrderTaskItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask) {
+            if (!$getOrderTasksResponseMidocoOrderTaskItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask) {
                 $invalidValues[] = is_object($getOrderTasksResponseMidocoOrderTaskItem) ? get_class($getOrderTasksResponseMidocoOrderTaskItem) : sprintf('%s(%s)', gettype($getOrderTasksResponseMidocoOrderTaskItem), var_export($getOrderTasksResponseMidocoOrderTaskItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrderTask property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrderTask property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetOrderTasksResponse extends AbstractStructBase
     /**
      * Set MidocoOrderTask value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask[] $midocoOrderTask
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrderTasksResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask[] $midocoOrderTask
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrderTasksResponse
      */
     public function setMidocoOrderTask(?array $midocoOrderTask = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderTaskArrayErrorMessage = self::validateMidocoOrderTaskForArrayConstraintsFromSetMidocoOrderTask($midocoOrderTask))) {
+        if ('' !== ($midocoOrderTaskArrayErrorMessage = self::validateMidocoOrderTaskForArrayConstraintFromSetMidocoOrderTask($midocoOrderTask))) {
             throw new InvalidArgumentException($midocoOrderTaskArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderTask = $midocoOrderTask;
@@ -87,14 +89,14 @@ class GetOrderTasksResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrderTask value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetOrderTasksResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetOrderTasksResponse
      */
-    public function addToMidocoOrderTask(\Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask $item): self
+    public function addToMidocoOrderTask(\Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrderTask property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrderTask property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrderTask[] = $item;
         

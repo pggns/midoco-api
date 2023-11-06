@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MarginListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MarginListRequest extends AbstractStructBase
 {
     /**

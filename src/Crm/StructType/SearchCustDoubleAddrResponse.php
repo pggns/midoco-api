@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: searchCustDoubleAddr --- search the customer with potential double addresses
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchCustDoubleAddrResponse extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
         return $this->MidocoCustDoubleAddrInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCustDoubleAddrInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustDoubleAddrInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustDoubleAddrInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCustDoubleAddrInfoForArrayConstraintsFromSetMidocoCustDoubleAddrInfo(?array $values = []): string
+    public static function validateMidocoCustDoubleAddrInfoForArrayConstraintFromSetMidocoCustDoubleAddrInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class SearchCustDoubleAddrResponse extends AbstractStructBase
     public function setMidocoCustDoubleAddrInfo(?array $midocoCustDoubleAddrInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCustDoubleAddrInfoArrayErrorMessage = self::validateMidocoCustDoubleAddrInfoForArrayConstraintsFromSetMidocoCustDoubleAddrInfo($midocoCustDoubleAddrInfo))) {
+        if ('' !== ($midocoCustDoubleAddrInfoArrayErrorMessage = self::validateMidocoCustDoubleAddrInfoForArrayConstraintFromSetMidocoCustDoubleAddrInfo($midocoCustDoubleAddrInfo))) {
             throw new InvalidArgumentException($midocoCustDoubleAddrInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoCustDoubleAddrInfo = $midocoCustDoubleAddrInfo;

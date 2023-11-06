@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBookingTextsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBookingTextsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetBookingTextsResponse extends AbstractStructBase
         return $this->MidocoBookingText;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBookingText method
+     * This method is responsible for validating the value(s) passed to the setMidocoBookingText method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBookingText method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBookingTextForArrayConstraintsFromSetMidocoBookingText(?array $values = []): string
+    public static function validateMidocoBookingTextForArrayConstraintFromSetMidocoBookingText(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetBookingTextsResponse extends AbstractStructBase
     public function setMidocoBookingText(?array $midocoBookingText = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBookingTextArrayErrorMessage = self::validateMidocoBookingTextForArrayConstraintsFromSetMidocoBookingText($midocoBookingText))) {
+        if ('' !== ($midocoBookingTextArrayErrorMessage = self::validateMidocoBookingTextForArrayConstraintFromSetMidocoBookingText($midocoBookingText))) {
             throw new InvalidArgumentException($midocoBookingTextArrayErrorMessage, __LINE__);
         }
         $this->MidocoBookingText = $midocoBookingText;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DebitorHistoryEntryDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DebitorHistoryEntryDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class DebitorHistoryEntryDTO extends AbstractStructBase
     /**
      * Set entryId value
      * @param int $entryId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorHistoryEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorHistoryEntryDTO
      */
     public function setEntryId(?int $entryId = null): self
     {
@@ -86,7 +87,7 @@ class DebitorHistoryEntryDTO extends AbstractStructBase
     /**
      * Set entryName value
      * @param string $entryName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorHistoryEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorHistoryEntryDTO
      */
     public function setEntryName(?string $entryName = null): self
     {
@@ -109,7 +110,7 @@ class DebitorHistoryEntryDTO extends AbstractStructBase
     /**
      * Set entryValue value
      * @param string $entryValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorHistoryEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorHistoryEntryDTO
      */
     public function setEntryValue(?string $entryValue = null): self
     {
@@ -132,7 +133,7 @@ class DebitorHistoryEntryDTO extends AbstractStructBase
     /**
      * Set historyId value
      * @param int $historyId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DebitorHistoryEntryDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DebitorHistoryEntryDTO
      */
     public function setHistoryId(?int $historyId = null): self
     {

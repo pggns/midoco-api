@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Deprecated and replaced by GenerateInvoiceFileRequest
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
 {
     /**
@@ -73,12 +74,13 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
         return $this->documentIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setDocumentIds method
+     * This method is responsible for validating the value(s) passed to the setDocumentIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDocumentIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDocumentIdsForArrayConstraintsFromSetDocumentIds(?array $values = []): string
+    public static function validateDocumentIdsForArrayConstraintFromSetDocumentIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -107,7 +109,7 @@ class GenerateCsvForBatchInvoicingRequest extends AbstractStructBase
     public function setDocumentIds(?array $documentIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($documentIdsArrayErrorMessage = self::validateDocumentIdsForArrayConstraintsFromSetDocumentIds($documentIds))) {
+        if ('' !== ($documentIdsArrayErrorMessage = self::validateDocumentIdsForArrayConstraintFromSetDocumentIds($documentIds))) {
             throw new InvalidArgumentException($documentIdsArrayErrorMessage, __LINE__);
         }
         $this->documentIds = $documentIds;

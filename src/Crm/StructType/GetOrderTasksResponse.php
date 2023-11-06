@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getHistory --- returns the list of order notices (manual tasks) for a given customer id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetOrderTasksResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetOrderTasksResponse extends AbstractStructBase
         return $this->MidocoOrderTask;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderTask method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderTask method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderTask method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderTaskForArrayConstraintsFromSetMidocoOrderTask(?array $values = []): string
+    public static function validateMidocoOrderTaskForArrayConstraintFromSetMidocoOrderTask(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetOrderTasksResponse extends AbstractStructBase
     public function setMidocoOrderTask(?array $midocoOrderTask = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderTaskArrayErrorMessage = self::validateMidocoOrderTaskForArrayConstraintsFromSetMidocoOrderTask($midocoOrderTask))) {
+        if ('' !== ($midocoOrderTaskArrayErrorMessage = self::validateMidocoOrderTaskForArrayConstraintFromSetMidocoOrderTask($midocoOrderTask))) {
             throw new InvalidArgumentException($midocoOrderTaskArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderTask = $midocoOrderTask;

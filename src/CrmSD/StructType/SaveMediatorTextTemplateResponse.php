@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMediatorTextTemplateResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMediatorTextTemplateResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class SaveMediatorTextTemplateResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorTextTemplateResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMediatorTextTemplateResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for Unprocessed-Units StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Unprocessed_Units extends AbstractStructBase
 {
     /**
@@ -20,7 +21,7 @@ class Unprocessed_Units extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $UnitName = [];
+    protected array $UnitName;
     /**
      * Constructor method for Unprocessed-Units
      * @uses Unprocessed_Units::setUnitName()
@@ -40,12 +41,13 @@ class Unprocessed_Units extends AbstractStructBase
         return $this->UnitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitName method
+     * This method is responsible for validating the value(s) passed to the setUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitNameForArrayConstraintsFromSetUnitName(?array $values = []): string
+    public static function validateUnitNameForArrayConstraintFromSetUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class Unprocessed_Units extends AbstractStructBase
     public function setUnitName(array $unitName): self
     {
         // validation for constraint: array
-        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintsFromSetUnitName($unitName))) {
+        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintFromSetUnitName($unitName))) {
             throw new InvalidArgumentException($unitNameArrayErrorMessage, __LINE__);
         }
         $this->UnitName = $unitName;

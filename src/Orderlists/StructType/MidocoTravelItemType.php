@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTravelItemType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTravelItemType extends TravelitemDTO
 {
     /**
@@ -208,12 +209,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoCarDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCarDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoCarDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCarDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCarDetailForArrayConstraintsFromSetMidocoCarDetail(?array $values = []): string
+    public static function validateMidocoCarDetailForArrayConstraintFromSetMidocoCarDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -242,7 +244,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoCarDetail(?array $midocoCarDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCarDetailArrayErrorMessage = self::validateMidocoCarDetailForArrayConstraintsFromSetMidocoCarDetail($midocoCarDetail))) {
+        if ('' !== ($midocoCarDetailArrayErrorMessage = self::validateMidocoCarDetailForArrayConstraintFromSetMidocoCarDetail($midocoCarDetail))) {
             throw new InvalidArgumentException($midocoCarDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoCarDetail = $midocoCarDetail;
@@ -274,12 +276,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoAccomodationDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAccomodationDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoAccomodationDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAccomodationDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAccomodationDetailForArrayConstraintsFromSetMidocoAccomodationDetail(?array $values = []): string
+    public static function validateMidocoAccomodationDetailForArrayConstraintFromSetMidocoAccomodationDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -308,7 +311,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoAccomodationDetail(?array $midocoAccomodationDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAccomodationDetailArrayErrorMessage = self::validateMidocoAccomodationDetailForArrayConstraintsFromSetMidocoAccomodationDetail($midocoAccomodationDetail))) {
+        if ('' !== ($midocoAccomodationDetailArrayErrorMessage = self::validateMidocoAccomodationDetailForArrayConstraintFromSetMidocoAccomodationDetail($midocoAccomodationDetail))) {
             throw new InvalidArgumentException($midocoAccomodationDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoAccomodationDetail = $midocoAccomodationDetail;
@@ -340,12 +343,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoFlightDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFlightDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoFlightDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFlightDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFlightDetailForArrayConstraintsFromSetMidocoFlightDetail(?array $values = []): string
+    public static function validateMidocoFlightDetailForArrayConstraintFromSetMidocoFlightDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -374,7 +378,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoFlightDetail(?array $midocoFlightDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFlightDetailArrayErrorMessage = self::validateMidocoFlightDetailForArrayConstraintsFromSetMidocoFlightDetail($midocoFlightDetail))) {
+        if ('' !== ($midocoFlightDetailArrayErrorMessage = self::validateMidocoFlightDetailForArrayConstraintFromSetMidocoFlightDetail($midocoFlightDetail))) {
             throw new InvalidArgumentException($midocoFlightDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoFlightDetail = $midocoFlightDetail;
@@ -406,12 +410,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoInsuranceDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInsuranceDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoInsuranceDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInsuranceDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInsuranceDetailForArrayConstraintsFromSetMidocoInsuranceDetail(?array $values = []): string
+    public static function validateMidocoInsuranceDetailForArrayConstraintFromSetMidocoInsuranceDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -440,7 +445,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoInsuranceDetail(?array $midocoInsuranceDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInsuranceDetailArrayErrorMessage = self::validateMidocoInsuranceDetailForArrayConstraintsFromSetMidocoInsuranceDetail($midocoInsuranceDetail))) {
+        if ('' !== ($midocoInsuranceDetailArrayErrorMessage = self::validateMidocoInsuranceDetailForArrayConstraintFromSetMidocoInsuranceDetail($midocoInsuranceDetail))) {
             throw new InvalidArgumentException($midocoInsuranceDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoInsuranceDetail = $midocoInsuranceDetail;
@@ -472,12 +477,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoTravelDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravelDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravelDetailForArrayConstraintsFromSetMidocoTravelDetail(?array $values = []): string
+    public static function validateMidocoTravelDetailForArrayConstraintFromSetMidocoTravelDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -506,7 +512,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoTravelDetail(?array $midocoTravelDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravelDetailArrayErrorMessage = self::validateMidocoTravelDetailForArrayConstraintsFromSetMidocoTravelDetail($midocoTravelDetail))) {
+        if ('' !== ($midocoTravelDetailArrayErrorMessage = self::validateMidocoTravelDetailForArrayConstraintFromSetMidocoTravelDetail($midocoTravelDetail))) {
             throw new InvalidArgumentException($midocoTravelDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravelDetail = $midocoTravelDetail;
@@ -557,12 +563,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoHint;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoHint method
+     * This method is responsible for validating the value(s) passed to the setMidocoHint method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoHint method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoHintForArrayConstraintsFromSetMidocoHint(?array $values = []): string
+    public static function validateMidocoHintForArrayConstraintFromSetMidocoHint(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -591,7 +598,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoHint(?array $midocoHint = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoHintArrayErrorMessage = self::validateMidocoHintForArrayConstraintsFromSetMidocoHint($midocoHint))) {
+        if ('' !== ($midocoHintArrayErrorMessage = self::validateMidocoHintForArrayConstraintFromSetMidocoHint($midocoHint))) {
             throw new InvalidArgumentException($midocoHintArrayErrorMessage, __LINE__);
         }
         $this->MidocoHint = $midocoHint;
@@ -623,12 +630,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoCruiseDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCruiseDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoCruiseDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCruiseDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCruiseDetailForArrayConstraintsFromSetMidocoCruiseDetail(?array $values = []): string
+    public static function validateMidocoCruiseDetailForArrayConstraintFromSetMidocoCruiseDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -657,7 +665,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoCruiseDetail(?array $midocoCruiseDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCruiseDetailArrayErrorMessage = self::validateMidocoCruiseDetailForArrayConstraintsFromSetMidocoCruiseDetail($midocoCruiseDetail))) {
+        if ('' !== ($midocoCruiseDetailArrayErrorMessage = self::validateMidocoCruiseDetailForArrayConstraintFromSetMidocoCruiseDetail($midocoCruiseDetail))) {
             throw new InvalidArgumentException($midocoCruiseDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoCruiseDetail = $midocoCruiseDetail;
@@ -689,12 +697,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoLeisureMixedDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoLeisureMixedDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoLeisureMixedDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoLeisureMixedDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoLeisureMixedDetailForArrayConstraintsFromSetMidocoLeisureMixedDetail(?array $values = []): string
+    public static function validateMidocoLeisureMixedDetailForArrayConstraintFromSetMidocoLeisureMixedDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -723,7 +732,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoLeisureMixedDetail(?array $midocoLeisureMixedDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoLeisureMixedDetailArrayErrorMessage = self::validateMidocoLeisureMixedDetailForArrayConstraintsFromSetMidocoLeisureMixedDetail($midocoLeisureMixedDetail))) {
+        if ('' !== ($midocoLeisureMixedDetailArrayErrorMessage = self::validateMidocoLeisureMixedDetailForArrayConstraintFromSetMidocoLeisureMixedDetail($midocoLeisureMixedDetail))) {
             throw new InvalidArgumentException($midocoLeisureMixedDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoLeisureMixedDetail = $midocoLeisureMixedDetail;
@@ -755,12 +764,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoBusDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBusDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoBusDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBusDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBusDetailForArrayConstraintsFromSetMidocoBusDetail(?array $values = []): string
+    public static function validateMidocoBusDetailForArrayConstraintFromSetMidocoBusDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -789,7 +799,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoBusDetail(?array $midocoBusDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBusDetailArrayErrorMessage = self::validateMidocoBusDetailForArrayConstraintsFromSetMidocoBusDetail($midocoBusDetail))) {
+        if ('' !== ($midocoBusDetailArrayErrorMessage = self::validateMidocoBusDetailForArrayConstraintFromSetMidocoBusDetail($midocoBusDetail))) {
             throw new InvalidArgumentException($midocoBusDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoBusDetail = $midocoBusDetail;
@@ -821,12 +831,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoRailDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoRailDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoRailDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRailDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoRailDetailForArrayConstraintsFromSetMidocoRailDetail(?array $values = []): string
+    public static function validateMidocoRailDetailForArrayConstraintFromSetMidocoRailDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -855,7 +866,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoRailDetail(?array $midocoRailDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoRailDetailArrayErrorMessage = self::validateMidocoRailDetailForArrayConstraintsFromSetMidocoRailDetail($midocoRailDetail))) {
+        if ('' !== ($midocoRailDetailArrayErrorMessage = self::validateMidocoRailDetailForArrayConstraintFromSetMidocoRailDetail($midocoRailDetail))) {
             throw new InvalidArgumentException($midocoRailDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoRailDetail = $midocoRailDetail;
@@ -887,12 +898,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoAdditionalService;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAdditionalService method
+     * This method is responsible for validating the value(s) passed to the setMidocoAdditionalService method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAdditionalService method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAdditionalServiceForArrayConstraintsFromSetMidocoAdditionalService(?array $values = []): string
+    public static function validateMidocoAdditionalServiceForArrayConstraintFromSetMidocoAdditionalService(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -921,7 +933,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoAdditionalService(?array $midocoAdditionalService = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAdditionalServiceArrayErrorMessage = self::validateMidocoAdditionalServiceForArrayConstraintsFromSetMidocoAdditionalService($midocoAdditionalService))) {
+        if ('' !== ($midocoAdditionalServiceArrayErrorMessage = self::validateMidocoAdditionalServiceForArrayConstraintFromSetMidocoAdditionalService($midocoAdditionalService))) {
             throw new InvalidArgumentException($midocoAdditionalServiceArrayErrorMessage, __LINE__);
         }
         $this->MidocoAdditionalService = $midocoAdditionalService;
@@ -953,12 +965,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoEventDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoEventDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoEventDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEventDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoEventDetailForArrayConstraintsFromSetMidocoEventDetail(?array $values = []): string
+    public static function validateMidocoEventDetailForArrayConstraintFromSetMidocoEventDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -987,7 +1000,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoEventDetail(?array $midocoEventDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoEventDetailArrayErrorMessage = self::validateMidocoEventDetailForArrayConstraintsFromSetMidocoEventDetail($midocoEventDetail))) {
+        if ('' !== ($midocoEventDetailArrayErrorMessage = self::validateMidocoEventDetailForArrayConstraintFromSetMidocoEventDetail($midocoEventDetail))) {
             throw new InvalidArgumentException($midocoEventDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoEventDetail = $midocoEventDetail;
@@ -1019,12 +1032,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoTransferDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTransferDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoTransferDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTransferDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTransferDetailForArrayConstraintsFromSetMidocoTransferDetail(?array $values = []): string
+    public static function validateMidocoTransferDetailForArrayConstraintFromSetMidocoTransferDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1053,7 +1067,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoTransferDetail(?array $midocoTransferDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTransferDetailArrayErrorMessage = self::validateMidocoTransferDetailForArrayConstraintsFromSetMidocoTransferDetail($midocoTransferDetail))) {
+        if ('' !== ($midocoTransferDetailArrayErrorMessage = self::validateMidocoTransferDetailForArrayConstraintFromSetMidocoTransferDetail($midocoTransferDetail))) {
             throw new InvalidArgumentException($midocoTransferDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoTransferDetail = $midocoTransferDetail;
@@ -1085,12 +1099,13 @@ class MidocoTravelItemType extends TravelitemDTO
         return $this->MidocoTouchedCountry;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTouchedCountry method
+     * This method is responsible for validating the value(s) passed to the setMidocoTouchedCountry method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTouchedCountry method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTouchedCountryForArrayConstraintsFromSetMidocoTouchedCountry(?array $values = []): string
+    public static function validateMidocoTouchedCountryForArrayConstraintFromSetMidocoTouchedCountry(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1119,7 +1134,7 @@ class MidocoTravelItemType extends TravelitemDTO
     public function setMidocoTouchedCountry(?array $midocoTouchedCountry = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTouchedCountryArrayErrorMessage = self::validateMidocoTouchedCountryForArrayConstraintsFromSetMidocoTouchedCountry($midocoTouchedCountry))) {
+        if ('' !== ($midocoTouchedCountryArrayErrorMessage = self::validateMidocoTouchedCountryForArrayConstraintFromSetMidocoTouchedCountry($midocoTouchedCountry))) {
             throw new InvalidArgumentException($midocoTouchedCountryArrayErrorMessage, __LINE__);
         }
         $this->MidocoTouchedCountry = $midocoTouchedCountry;

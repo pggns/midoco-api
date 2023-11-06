@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerCommission StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerCommission extends CommissionDefinitionDTO
 {
     /**
@@ -63,7 +64,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set isPaidToCooperation value
      * @param bool $isPaidToCooperation
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerCommission
      */
     public function setIsPaidToCooperation(?bool $isPaidToCooperation = null): self
     {
@@ -86,7 +87,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerCommission
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -109,7 +110,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set isInherited value
      * @param bool $isInherited
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerCommission
      */
     public function setIsInherited(?bool $isInherited = null): self
     {
@@ -132,7 +133,7 @@ class MidocoCustomerCommission extends CommissionDefinitionDTO
     /**
      * Set useCooperationTurnover value
      * @param bool $useCooperationTurnover
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerCommission
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerCommission
      */
     public function setUseCooperationTurnover(?bool $useCooperationTurnover = null): self
     {

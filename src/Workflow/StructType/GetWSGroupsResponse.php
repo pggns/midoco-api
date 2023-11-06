@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetWSGroupsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetWSGroupsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetWSGroupsResponse extends AbstractStructBase
         return $this->MidocoWsGroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoWsGroup method
+     * This method is responsible for validating the value(s) passed to the setMidocoWsGroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoWsGroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoWsGroupForArrayConstraintsFromSetMidocoWsGroup(?array $values = []): string
+    public static function validateMidocoWsGroupForArrayConstraintFromSetMidocoWsGroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetWSGroupsResponse extends AbstractStructBase
     public function setMidocoWsGroup(?array $midocoWsGroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoWsGroupArrayErrorMessage = self::validateMidocoWsGroupForArrayConstraintsFromSetMidocoWsGroup($midocoWsGroup))) {
+        if ('' !== ($midocoWsGroupArrayErrorMessage = self::validateMidocoWsGroupForArrayConstraintFromSetMidocoWsGroup($midocoWsGroup))) {
             throw new InvalidArgumentException($midocoWsGroupArrayErrorMessage, __LINE__);
         }
         $this->MidocoWsGroup = $midocoWsGroup;

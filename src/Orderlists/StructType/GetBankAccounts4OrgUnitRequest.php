@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: return all bank accounts to a given orgUnit
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBankAccounts4OrgUnitRequest extends AbstractStructBase
 {
     /**
@@ -21,14 +22,24 @@ class GetBankAccounts4OrgUnitRequest extends AbstractStructBase
      */
     protected ?string $orgUnit = null;
     /**
+     * The forQR
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var bool|null
+     */
+    protected ?bool $forQR = null;
+    /**
      * Constructor method for GetBankAccounts4OrgUnitRequest
      * @uses GetBankAccounts4OrgUnitRequest::setOrgUnit()
+     * @uses GetBankAccounts4OrgUnitRequest::setForQR()
      * @param string $orgUnit
+     * @param bool $forQR
      */
-    public function __construct(?string $orgUnit = null)
+    public function __construct(?string $orgUnit = null, ?bool $forQR = null)
     {
         $this
-            ->setOrgUnit($orgUnit);
+            ->setOrgUnit($orgUnit)
+            ->setForQR($forQR);
     }
     /**
      * Get orgUnit value
@@ -50,6 +61,29 @@ class GetBankAccounts4OrgUnitRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($orgUnit, true), gettype($orgUnit)), __LINE__);
         }
         $this->orgUnit = $orgUnit;
+        
+        return $this;
+    }
+    /**
+     * Get forQR value
+     * @return bool|null
+     */
+    public function getForQR(): ?bool
+    {
+        return $this->forQR;
+    }
+    /**
+     * Set forQR value
+     * @param bool $forQR
+     * @return \Pggns\MidocoApi\Orderlists\StructType\GetBankAccounts4OrgUnitRequest
+     */
+    public function setForQR(?bool $forQR = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($forQR) && !is_bool($forQR)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($forQR, true), gettype($forQR)), __LINE__);
+        }
+        $this->forQR = $forQR;
         
         return $this;
     }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getComplaintReasonDescriptions --- returns the list of complaint reason descriptions of a given complaint reason type
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableComplaintReasonDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class GetAvailableComplaintReasonDescriptionsResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoComplaintReasonDescription
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO[]
      */
     protected ?array $MidocoComplaintReasonDescription = null;
     /**
      * Constructor method for GetAvailableComplaintReasonDescriptionsResponse
      * @uses GetAvailableComplaintReasonDescriptionsResponse::setMidocoComplaintReasonDescription()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO[] $midocoComplaintReasonDescription
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO[] $midocoComplaintReasonDescription
      */
     public function __construct(?array $midocoComplaintReasonDescription = null)
     {
@@ -36,19 +37,20 @@ class GetAvailableComplaintReasonDescriptionsResponse extends AbstractStructBase
     }
     /**
      * Get MidocoComplaintReasonDescription value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO[]
      */
     public function getMidocoComplaintReasonDescription(): ?array
     {
         return $this->MidocoComplaintReasonDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoComplaintReasonDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoComplaintReasonDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoComplaintReasonDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoComplaintReasonDescriptionForArrayConstraintsFromSetMidocoComplaintReasonDescription(?array $values = []): string
+    public static function validateMidocoComplaintReasonDescriptionForArrayConstraintFromSetMidocoComplaintReasonDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class GetAvailableComplaintReasonDescriptionsResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAvailableComplaintReasonDescriptionsResponseMidocoComplaintReasonDescriptionItem) {
             // validation for constraint: itemType
-            if (!$getAvailableComplaintReasonDescriptionsResponseMidocoComplaintReasonDescriptionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO) {
+            if (!$getAvailableComplaintReasonDescriptionsResponseMidocoComplaintReasonDescriptionItem instanceof \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO) {
                 $invalidValues[] = is_object($getAvailableComplaintReasonDescriptionsResponseMidocoComplaintReasonDescriptionItem) ? get_class($getAvailableComplaintReasonDescriptionsResponseMidocoComplaintReasonDescriptionItem) : sprintf('%s(%s)', gettype($getAvailableComplaintReasonDescriptionsResponseMidocoComplaintReasonDescriptionItem), var_export($getAvailableComplaintReasonDescriptionsResponseMidocoComplaintReasonDescriptionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoComplaintReasonDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoComplaintReasonDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class GetAvailableComplaintReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Set MidocoComplaintReasonDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO[] $midocoComplaintReasonDescription
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableComplaintReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO[] $midocoComplaintReasonDescription
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAvailableComplaintReasonDescriptionsResponse
      */
     public function setMidocoComplaintReasonDescription(?array $midocoComplaintReasonDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoComplaintReasonDescriptionArrayErrorMessage = self::validateMidocoComplaintReasonDescriptionForArrayConstraintsFromSetMidocoComplaintReasonDescription($midocoComplaintReasonDescription))) {
+        if ('' !== ($midocoComplaintReasonDescriptionArrayErrorMessage = self::validateMidocoComplaintReasonDescriptionForArrayConstraintFromSetMidocoComplaintReasonDescription($midocoComplaintReasonDescription))) {
             throw new InvalidArgumentException($midocoComplaintReasonDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoComplaintReasonDescription = $midocoComplaintReasonDescription;
@@ -87,14 +89,14 @@ class GetAvailableComplaintReasonDescriptionsResponse extends AbstractStructBase
     /**
      * Add item to MidocoComplaintReasonDescription value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableComplaintReasonDescriptionsResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAvailableComplaintReasonDescriptionsResponse
      */
-    public function addToMidocoComplaintReasonDescription(\Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO $item): self
+    public function addToMidocoComplaintReasonDescription(\Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoComplaintReasonDescription property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ComplaintReasonDescrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoComplaintReasonDescription property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ComplaintReasonDescrDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoComplaintReasonDescription[] = $item;
         

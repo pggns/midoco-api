@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetExternDocumentByIdResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetExternDocumentByIdResponse extends AbstractStructBase
 {
     /**

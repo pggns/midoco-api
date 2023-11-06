@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: returns the supplier settlement error records
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierSettlementErrorResponse extends AbstractStructBase
 {
     /**
@@ -43,12 +44,13 @@ class GetSupplierSettlementErrorResponse extends AbstractStructBase
         return $this->MidocoSupplierSettlementInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierSettlementInfo method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierSettlementInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierSettlementInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierSettlementInfoForArrayConstraintsFromSetMidocoSupplierSettlementInfo(?array $values = []): string
+    public static function validateMidocoSupplierSettlementInfoForArrayConstraintFromSetMidocoSupplierSettlementInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,7 +79,7 @@ class GetSupplierSettlementErrorResponse extends AbstractStructBase
     public function setMidocoSupplierSettlementInfo(?array $midocoSupplierSettlementInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierSettlementInfoArrayErrorMessage = self::validateMidocoSupplierSettlementInfoForArrayConstraintsFromSetMidocoSupplierSettlementInfo($midocoSupplierSettlementInfo))) {
+        if ('' !== ($midocoSupplierSettlementInfoArrayErrorMessage = self::validateMidocoSupplierSettlementInfoForArrayConstraintFromSetMidocoSupplierSettlementInfo($midocoSupplierSettlementInfo))) {
             throw new InvalidArgumentException($midocoSupplierSettlementInfoArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierSettlementInfo = $midocoSupplierSettlementInfo;

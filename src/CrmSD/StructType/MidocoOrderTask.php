@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoOrderTask StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoOrderTask extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -86,7 +87,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set orderId value
      * @param int $orderId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask
      */
     public function setOrderId(?int $orderId = null): self
     {
@@ -109,7 +110,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set position value
      * @param int $position
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask
      */
     public function setPosition(?int $position = null): self
     {
@@ -132,7 +133,7 @@ class MidocoOrderTask extends AbstractStructBase
     /**
      * Set unit value
      * @param string $unit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrderTask
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrderTask
      */
     public function setUnit(?string $unit = null): self
     {

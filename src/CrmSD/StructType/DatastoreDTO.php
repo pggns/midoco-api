@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DatastoreDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DatastoreDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class DatastoreDTO extends AbstractStructBase
     /**
      * Set datastoreId value
      * @param string $datastoreId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO
      */
     public function setDatastoreId(?string $datastoreId = null): self
     {
@@ -78,7 +79,7 @@ class DatastoreDTO extends AbstractStructBase
     /**
      * Set jndiUri value
      * @param string $jndiUri
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO
      */
     public function setJndiUri(?string $jndiUri = null): self
     {
@@ -101,7 +102,7 @@ class DatastoreDTO extends AbstractStructBase
     /**
      * Set sessionUri value
      * @param string $sessionUri
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO
      */
     public function setSessionUri(?string $sessionUri = null): self
     {

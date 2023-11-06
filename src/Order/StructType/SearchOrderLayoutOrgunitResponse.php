@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchOrderLayoutOrgunitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
         return $this->notAllowedUnits;
     }
     /**
-     * This method is responsible for validating the values passed to the setNotAllowedUnits method
+     * This method is responsible for validating the value(s) passed to the setNotAllowedUnits method
      * This method is willingly generated in order to preserve the one-line inline validation within the setNotAllowedUnits method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateNotAllowedUnitsForArrayConstraintsFromSetNotAllowedUnits(?array $values = []): string
+    public static function validateNotAllowedUnitsForArrayConstraintFromSetNotAllowedUnits(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
     public function setNotAllowedUnits(?array $notAllowedUnits = null): self
     {
         // validation for constraint: array
-        if ('' !== ($notAllowedUnitsArrayErrorMessage = self::validateNotAllowedUnitsForArrayConstraintsFromSetNotAllowedUnits($notAllowedUnits))) {
+        if ('' !== ($notAllowedUnitsArrayErrorMessage = self::validateNotAllowedUnitsForArrayConstraintFromSetNotAllowedUnits($notAllowedUnits))) {
             throw new InvalidArgumentException($notAllowedUnitsArrayErrorMessage, __LINE__);
         }
         $this->notAllowedUnits = $notAllowedUnits;
@@ -117,12 +119,13 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
         return $this->asNeighbor;
     }
     /**
-     * This method is responsible for validating the values passed to the setAsNeighbor method
+     * This method is responsible for validating the value(s) passed to the setAsNeighbor method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAsNeighbor method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAsNeighborForArrayConstraintsFromSetAsNeighbor(?array $values = []): string
+    public static function validateAsNeighborForArrayConstraintFromSetAsNeighbor(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -151,7 +154,7 @@ class SearchOrderLayoutOrgunitResponse extends AbstractStructBase
     public function setAsNeighbor(?array $asNeighbor = null): self
     {
         // validation for constraint: array
-        if ('' !== ($asNeighborArrayErrorMessage = self::validateAsNeighborForArrayConstraintsFromSetAsNeighbor($asNeighbor))) {
+        if ('' !== ($asNeighborArrayErrorMessage = self::validateAsNeighborForArrayConstraintFromSetAsNeighbor($asNeighbor))) {
             throw new InvalidArgumentException($asNeighborArrayErrorMessage, __LINE__);
         }
         $this->asNeighbor = $asNeighbor;

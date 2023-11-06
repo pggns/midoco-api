@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExternalCampaignAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExternalCampaignAssignDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class ExternalCampaignAssignDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalCampaignAssignDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -94,7 +95,7 @@ class ExternalCampaignAssignDTO extends AbstractStructBase
     /**
      * Set extCampId value
      * @param int $extCampId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalCampaignAssignDTO
      */
     public function setExtCampId(?int $extCampId = null): self
     {
@@ -117,7 +118,7 @@ class ExternalCampaignAssignDTO extends AbstractStructBase
     /**
      * Set externalReference value
      * @param string $externalReference
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalCampaignAssignDTO
      */
     public function setExternalReference(?string $externalReference = null): self
     {
@@ -140,7 +141,7 @@ class ExternalCampaignAssignDTO extends AbstractStructBase
     /**
      * Set recipient value
      * @param string $recipient
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalCampaignAssignDTO
      */
     public function setRecipient(?string $recipient = null): self
     {
@@ -163,7 +164,7 @@ class ExternalCampaignAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalCampaignAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalCampaignAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

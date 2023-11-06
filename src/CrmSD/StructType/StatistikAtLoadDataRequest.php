@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for StatistikAtLoadDataRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class StatistikAtLoadDataRequest extends AbstractStructBase
 {
     /**
@@ -86,7 +87,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set dataType value
      * @param string $dataType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtLoadDataRequest
      */
     public function setDataType(?string $dataType = null): self
     {
@@ -109,7 +110,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterCityName value
      * @param string $filterCityName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterCityName(?string $filterCityName = null): self
     {
@@ -132,7 +133,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterPostalCode value
      * @param string $filterPostalCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterPostalCode(?string $filterPostalCode = null): self
     {
@@ -155,7 +156,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterRegion value
      * @param string $filterRegion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterRegion(?string $filterRegion = null): self
     {
@@ -178,7 +179,7 @@ class StatistikAtLoadDataRequest extends AbstractStructBase
     /**
      * Set filterStreetName value
      * @param string $filterStreetName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\StatistikAtLoadDataRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\StatistikAtLoadDataRequest
      */
     public function setFilterStreetName(?string $filterStreetName = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmMidocoSettlement StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
 {
     /**
@@ -65,12 +66,13 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
         return $this->MidocoCrmMidocoSettlLevel;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoSettlLevel method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoSettlLevel method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoSettlLevel method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoSettlLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlLevel(?array $values = []): string
+    public static function validateMidocoCrmMidocoSettlLevelForArrayConstraintFromSetMidocoCrmMidocoSettlLevel(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -99,7 +101,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     public function setMidocoCrmMidocoSettlLevel(?array $midocoCrmMidocoSettlLevel = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoSettlLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlLevel($midocoCrmMidocoSettlLevel))) {
+        if ('' !== ($midocoCrmMidocoSettlLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlLevelForArrayConstraintFromSetMidocoCrmMidocoSettlLevel($midocoCrmMidocoSettlLevel))) {
             throw new InvalidArgumentException($midocoCrmMidocoSettlLevelArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoSettlLevel = $midocoCrmMidocoSettlLevel;
@@ -131,12 +133,13 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
         return $this->MidocoCrmMidocoSettlFee;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoSettlFee method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoSettlFee method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoSettlFee method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoSettlFeeForArrayConstraintsFromSetMidocoCrmMidocoSettlFee(?array $values = []): string
+    public static function validateMidocoCrmMidocoSettlFeeForArrayConstraintFromSetMidocoCrmMidocoSettlFee(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -165,7 +168,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     public function setMidocoCrmMidocoSettlFee(?array $midocoCrmMidocoSettlFee = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoSettlFeeArrayErrorMessage = self::validateMidocoCrmMidocoSettlFeeForArrayConstraintsFromSetMidocoCrmMidocoSettlFee($midocoCrmMidocoSettlFee))) {
+        if ('' !== ($midocoCrmMidocoSettlFeeArrayErrorMessage = self::validateMidocoCrmMidocoSettlFeeForArrayConstraintFromSetMidocoCrmMidocoSettlFee($midocoCrmMidocoSettlFee))) {
             throw new InvalidArgumentException($midocoCrmMidocoSettlFeeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoSettlFee = $midocoCrmMidocoSettlFee;
@@ -197,12 +200,13 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
         return $this->MidocoAssignedMidocoSettlOUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAssignedMidocoSettlOUnit method
+     * This method is responsible for validating the value(s) passed to the setMidocoAssignedMidocoSettlOUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAssignedMidocoSettlOUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAssignedMidocoSettlOUnitForArrayConstraintsFromSetMidocoAssignedMidocoSettlOUnit(?array $values = []): string
+    public static function validateMidocoAssignedMidocoSettlOUnitForArrayConstraintFromSetMidocoAssignedMidocoSettlOUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -231,7 +235,7 @@ class MidocoCrmMidocoSettlement extends CrmMidocoSettlementDTO
     public function setMidocoAssignedMidocoSettlOUnit(?array $midocoAssignedMidocoSettlOUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAssignedMidocoSettlOUnitArrayErrorMessage = self::validateMidocoAssignedMidocoSettlOUnitForArrayConstraintsFromSetMidocoAssignedMidocoSettlOUnit($midocoAssignedMidocoSettlOUnit))) {
+        if ('' !== ($midocoAssignedMidocoSettlOUnitArrayErrorMessage = self::validateMidocoAssignedMidocoSettlOUnitForArrayConstraintFromSetMidocoAssignedMidocoSettlOUnit($midocoAssignedMidocoSettlOUnit))) {
             throw new InvalidArgumentException($midocoAssignedMidocoSettlOUnitArrayErrorMessage, __LINE__);
         }
         $this->MidocoAssignedMidocoSettlOUnit = $midocoAssignedMidocoSettlOUnit;

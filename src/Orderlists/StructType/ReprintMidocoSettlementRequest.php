@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ReprintMidocoSettlementRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ReprintMidocoSettlementRequest extends AbstractStructBase
 {
     /**

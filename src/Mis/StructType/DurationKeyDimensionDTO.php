@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DurationKeyDimensionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DurationKeyDimensionDTO extends AbstractStructBase
 {
     /**

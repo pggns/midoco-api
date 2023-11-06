@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCampaignForeverRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCampaignForeverRequest extends AbstractStructBase
 {
     /**

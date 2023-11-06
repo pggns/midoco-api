@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoContactHistory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoContactHistory extends ContactHistoryDTO
 {
     /**
@@ -39,7 +40,7 @@ class MidocoContactHistory extends ContactHistoryDTO
     /**
      * Set userLogin value
      * @param string $userLogin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoContactHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoContactHistory
      */
     public function setUserLogin(?string $userLogin = null): self
     {

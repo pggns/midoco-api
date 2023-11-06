@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: get the active mandate that is assigned to a billing document
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeletePersonTitleRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class DeletePersonTitleRequest extends AbstractStructBase
     /**
      * Set titleId value
      * @param int $titleId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeletePersonTitleRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeletePersonTitleRequest
      */
     public function setTitleId(?int $titleId = null): self
     {

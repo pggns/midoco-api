@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteMidocoGuiAttributeDefinitionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteMidocoGuiAttributeDefinitionRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class DeleteMidocoGuiAttributeDefinitionRequest extends AbstractStructBase
     /**
      * Set attributeId value
      * @param int $attributeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteMidocoGuiAttributeDefinitionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteMidocoGuiAttributeDefinitionRequest
      */
     public function setAttributeId(?int $attributeId = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmConnectionTypeDescDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmConnectionTypeDescDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class CrmConnectionTypeDescDTO extends AbstractStructBase
     /**
      * Set connectionTypeId value
      * @param int $connectionTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmConnectionTypeDescDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmConnectionTypeDescDTO
      */
     public function setConnectionTypeId(?int $connectionTypeId = null): self
     {
@@ -78,7 +79,7 @@ class CrmConnectionTypeDescDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmConnectionTypeDescDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmConnectionTypeDescDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -101,7 +102,7 @@ class CrmConnectionTypeDescDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmConnectionTypeDescDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmConnectionTypeDescDTO
      */
     public function setDescription(?string $description = null): self
     {

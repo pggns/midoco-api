@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllCompanyCustomersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllCompanyCustomersResponse extends AbstractStructBase
 {
     /**
@@ -19,7 +20,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoGetCompanyCustomer
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType[]
      */
     protected ?array $MidocoGetCompanyCustomer = null;
     /**
@@ -31,7 +32,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
      * Constructor method for GetAllCompanyCustomersResponse
      * @uses GetAllCompanyCustomersResponse::setMidocoGetCompanyCustomer()
      * @uses GetAllCompanyCustomersResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
      * @param int $noOfResults
      */
     public function __construct(?array $midocoGetCompanyCustomer = null, ?int $noOfResults = null)
@@ -42,19 +43,20 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoGetCompanyCustomer value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType[]
      */
     public function getMidocoGetCompanyCustomer(): ?array
     {
         return $this->MidocoGetCompanyCustomer;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoGetCompanyCustomer method
+     * This method is responsible for validating the value(s) passed to the setMidocoGetCompanyCustomer method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoGetCompanyCustomer method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoGetCompanyCustomerForArrayConstraintsFromSetMidocoGetCompanyCustomer(?array $values = []): string
+    public static function validateMidocoGetCompanyCustomerForArrayConstraintFromSetMidocoGetCompanyCustomer(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -63,12 +65,12 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem) {
             // validation for constraint: itemType
-            if (!$getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType) {
+            if (!$getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType) {
                 $invalidValues[] = is_object($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem) ? get_class($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem) : sprintf('%s(%s)', gettype($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem), var_export($getAllCompanyCustomersResponseMidocoGetCompanyCustomerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,13 +79,13 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     /**
      * Set MidocoGetCompanyCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCompanyCustomersResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType[] $midocoGetCompanyCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllCompanyCustomersResponse
      */
     public function setMidocoGetCompanyCustomer(?array $midocoGetCompanyCustomer = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoGetCompanyCustomerArrayErrorMessage = self::validateMidocoGetCompanyCustomerForArrayConstraintsFromSetMidocoGetCompanyCustomer($midocoGetCompanyCustomer))) {
+        if ('' !== ($midocoGetCompanyCustomerArrayErrorMessage = self::validateMidocoGetCompanyCustomerForArrayConstraintFromSetMidocoGetCompanyCustomer($midocoGetCompanyCustomer))) {
             throw new InvalidArgumentException($midocoGetCompanyCustomerArrayErrorMessage, __LINE__);
         }
         $this->MidocoGetCompanyCustomer = $midocoGetCompanyCustomer;
@@ -93,14 +95,14 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     /**
      * Add item to MidocoGetCompanyCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCompanyCustomersResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllCompanyCustomersResponse
      */
-    public function addToMidocoGetCompanyCustomer(\Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType $item): self
+    public function addToMidocoGetCompanyCustomer(\Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType) {
-            throw new InvalidArgumentException(sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoGetCompanyCustomerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType) {
+            throw new InvalidArgumentException(sprintf('The MidocoGetCompanyCustomer property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoGetCompanyCustomerType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoGetCompanyCustomer[] = $item;
         
@@ -117,7 +119,7 @@ class GetAllCompanyCustomersResponse extends AbstractStructBase
     /**
      * Set noOfResults value
      * @param int $noOfResults
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAllCompanyCustomersResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAllCompanyCustomersResponse
      */
     public function setNoOfResults(?int $noOfResults = null): self
     {

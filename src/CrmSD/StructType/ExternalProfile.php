@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExternalProfile StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExternalProfile extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ExternalProfile extends AbstractStructBase
     /**
      * Set gds value
      * @param string $gds
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalProfile
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalProfile
      */
     public function setGds(?string $gds = null): self
     {
@@ -78,7 +79,7 @@ class ExternalProfile extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalProfile
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalProfile
      */
     public function setId(?string $id = null): self
     {
@@ -101,7 +102,7 @@ class ExternalProfile extends AbstractStructBase
     /**
      * Set version value
      * @param int $version
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ExternalProfile
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ExternalProfile
      */
     public function setVersion(?int $version = null): self
     {

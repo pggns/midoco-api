@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: The response is only filled in the test system to show the testers where to find the order.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ImportHandlerResponseType extends AbstractStructBase
 {
     /**

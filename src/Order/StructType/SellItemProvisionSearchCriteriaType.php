@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemProvisionSearchCriteriaType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemProvisionSearchCriteriaType extends AbstractStructBase
 {
     /**
@@ -69,6 +70,21 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
      */
     protected ?bool $suppressZeroRevenue = null;
     /**
+     * The excludeCalculatedCommissionOfZero
+     * @var bool|null
+     */
+    protected ?bool $excludeCalculatedCommissionOfZero = null;
+    /**
+     * The noPurchaseInvoiceBooked
+     * @var bool|null
+     */
+    protected ?bool $noPurchaseInvoiceBooked = null;
+    /**
+     * The purchaseInvoicePartiallyBooked
+     * @var bool|null
+     */
+    protected ?bool $purchaseInvoicePartiallyBooked = null;
+    /**
      * The unitName
      * @var string|null
      */
@@ -89,6 +105,11 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
      */
     protected ?int $itemId = null;
     /**
+     * The settlementType
+     * @var string|null
+     */
+    protected ?string $settlementType = null;
+    /**
      * Constructor method for SellItemProvisionSearchCriteriaType
      * @uses SellItemProvisionSearchCriteriaType::setSupplier()
      * @uses SellItemProvisionSearchCriteriaType::setSupplierSettlementGroup()
@@ -101,10 +122,14 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
      * @uses SellItemProvisionSearchCriteriaType::setSurname()
      * @uses SellItemProvisionSearchCriteriaType::setShowGrantedRevenues()
      * @uses SellItemProvisionSearchCriteriaType::setSuppressZeroRevenue()
+     * @uses SellItemProvisionSearchCriteriaType::setExcludeCalculatedCommissionOfZero()
+     * @uses SellItemProvisionSearchCriteriaType::setNoPurchaseInvoiceBooked()
+     * @uses SellItemProvisionSearchCriteriaType::setPurchaseInvoicePartiallyBooked()
      * @uses SellItemProvisionSearchCriteriaType::setUnitName()
      * @uses SellItemProvisionSearchCriteriaType::setOrderNo()
      * @uses SellItemProvisionSearchCriteriaType::setPaymentType()
      * @uses SellItemProvisionSearchCriteriaType::setItemId()
+     * @uses SellItemProvisionSearchCriteriaType::setSettlementType()
      * @param string $supplier
      * @param string $supplierSettlementGroup
      * @param string $startTravel
@@ -116,12 +141,16 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
      * @param string $surname
      * @param bool $showGrantedRevenues
      * @param bool $suppressZeroRevenue
+     * @param bool $excludeCalculatedCommissionOfZero
+     * @param bool $noPurchaseInvoiceBooked
+     * @param bool $purchaseInvoicePartiallyBooked
      * @param string $unitName
      * @param string $orderNo
      * @param string $paymentType
      * @param int $itemId
+     * @param string $settlementType
      */
-    public function __construct(?string $supplier = null, ?string $supplierSettlementGroup = null, ?string $startTravel = null, ?string $endTravel = null, ?string $creationStartDate = null, ?string $creationEndDate = null, ?string $bookingId = null, ?string $forename = null, ?string $surname = null, ?bool $showGrantedRevenues = null, ?bool $suppressZeroRevenue = null, ?string $unitName = null, ?string $orderNo = null, ?string $paymentType = null, ?int $itemId = null)
+    public function __construct(?string $supplier = null, ?string $supplierSettlementGroup = null, ?string $startTravel = null, ?string $endTravel = null, ?string $creationStartDate = null, ?string $creationEndDate = null, ?string $bookingId = null, ?string $forename = null, ?string $surname = null, ?bool $showGrantedRevenues = null, ?bool $suppressZeroRevenue = null, ?bool $excludeCalculatedCommissionOfZero = null, ?bool $noPurchaseInvoiceBooked = null, ?bool $purchaseInvoicePartiallyBooked = null, ?string $unitName = null, ?string $orderNo = null, ?string $paymentType = null, ?int $itemId = null, ?string $settlementType = null)
     {
         $this
             ->setSupplier($supplier)
@@ -135,10 +164,14 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
             ->setSurname($surname)
             ->setShowGrantedRevenues($showGrantedRevenues)
             ->setSuppressZeroRevenue($suppressZeroRevenue)
+            ->setExcludeCalculatedCommissionOfZero($excludeCalculatedCommissionOfZero)
+            ->setNoPurchaseInvoiceBooked($noPurchaseInvoiceBooked)
+            ->setPurchaseInvoicePartiallyBooked($purchaseInvoicePartiallyBooked)
             ->setUnitName($unitName)
             ->setOrderNo($orderNo)
             ->setPaymentType($paymentType)
-            ->setItemId($itemId);
+            ->setItemId($itemId)
+            ->setSettlementType($settlementType);
     }
     /**
      * Get supplier value
@@ -394,6 +427,75 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
         return $this;
     }
     /**
+     * Get excludeCalculatedCommissionOfZero value
+     * @return bool|null
+     */
+    public function getExcludeCalculatedCommissionOfZero(): ?bool
+    {
+        return $this->excludeCalculatedCommissionOfZero;
+    }
+    /**
+     * Set excludeCalculatedCommissionOfZero value
+     * @param bool $excludeCalculatedCommissionOfZero
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType
+     */
+    public function setExcludeCalculatedCommissionOfZero(?bool $excludeCalculatedCommissionOfZero = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($excludeCalculatedCommissionOfZero) && !is_bool($excludeCalculatedCommissionOfZero)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($excludeCalculatedCommissionOfZero, true), gettype($excludeCalculatedCommissionOfZero)), __LINE__);
+        }
+        $this->excludeCalculatedCommissionOfZero = $excludeCalculatedCommissionOfZero;
+        
+        return $this;
+    }
+    /**
+     * Get noPurchaseInvoiceBooked value
+     * @return bool|null
+     */
+    public function getNoPurchaseInvoiceBooked(): ?bool
+    {
+        return $this->noPurchaseInvoiceBooked;
+    }
+    /**
+     * Set noPurchaseInvoiceBooked value
+     * @param bool $noPurchaseInvoiceBooked
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType
+     */
+    public function setNoPurchaseInvoiceBooked(?bool $noPurchaseInvoiceBooked = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($noPurchaseInvoiceBooked) && !is_bool($noPurchaseInvoiceBooked)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($noPurchaseInvoiceBooked, true), gettype($noPurchaseInvoiceBooked)), __LINE__);
+        }
+        $this->noPurchaseInvoiceBooked = $noPurchaseInvoiceBooked;
+        
+        return $this;
+    }
+    /**
+     * Get purchaseInvoicePartiallyBooked value
+     * @return bool|null
+     */
+    public function getPurchaseInvoicePartiallyBooked(): ?bool
+    {
+        return $this->purchaseInvoicePartiallyBooked;
+    }
+    /**
+     * Set purchaseInvoicePartiallyBooked value
+     * @param bool $purchaseInvoicePartiallyBooked
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType
+     */
+    public function setPurchaseInvoicePartiallyBooked(?bool $purchaseInvoicePartiallyBooked = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($purchaseInvoicePartiallyBooked) && !is_bool($purchaseInvoicePartiallyBooked)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($purchaseInvoicePartiallyBooked, true), gettype($purchaseInvoicePartiallyBooked)), __LINE__);
+        }
+        $this->purchaseInvoicePartiallyBooked = $purchaseInvoicePartiallyBooked;
+        
+        return $this;
+    }
+    /**
      * Get unitName value
      * @return string|null
      */
@@ -482,6 +584,29 @@ class SellItemProvisionSearchCriteriaType extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($itemId, true), gettype($itemId)), __LINE__);
         }
         $this->itemId = $itemId;
+        
+        return $this;
+    }
+    /**
+     * Get settlementType value
+     * @return string|null
+     */
+    public function getSettlementType(): ?string
+    {
+        return $this->settlementType;
+    }
+    /**
+     * Set settlementType value
+     * @param string $settlementType
+     * @return \Pggns\MidocoApi\Order\StructType\SellItemProvisionSearchCriteriaType
+     */
+    public function setSettlementType(?string $settlementType = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($settlementType) && !is_string($settlementType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($settlementType, true), gettype($settlementType)), __LINE__);
+        }
+        $this->settlementType = $settlementType;
         
         return $this;
     }

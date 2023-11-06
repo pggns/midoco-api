@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: filterMidocoSettlementCandidates --- take from crm_mediator_charges all the customers (companies) that are not locked and have the settlement month between the start and end date of their charges
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FilterMidocoSettlementCandidatesResponse extends AbstractStructBase
 {
     /**
@@ -42,12 +43,13 @@ class FilterMidocoSettlementCandidatesResponse extends AbstractStructBase
         return $this->customerId;
     }
     /**
-     * This method is responsible for validating the values passed to the setCustomerId method
+     * This method is responsible for validating the value(s) passed to the setCustomerId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCustomerId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCustomerIdForArrayConstraintsFromSetCustomerId(?array $values = []): string
+    public static function validateCustomerIdForArrayConstraintFromSetCustomerId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -76,7 +78,7 @@ class FilterMidocoSettlementCandidatesResponse extends AbstractStructBase
     public function setCustomerId(?array $customerId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($customerIdArrayErrorMessage = self::validateCustomerIdForArrayConstraintsFromSetCustomerId($customerId))) {
+        if ('' !== ($customerIdArrayErrorMessage = self::validateCustomerIdForArrayConstraintFromSetCustomerId($customerId))) {
             throw new InvalidArgumentException($customerIdArrayErrorMessage, __LINE__);
         }
         $this->customerId = $customerId;

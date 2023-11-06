@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateUserSessionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateUserSessionResponse extends AbstractStructBase
 {
     /**

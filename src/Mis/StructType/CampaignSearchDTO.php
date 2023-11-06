@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CampaignSearchDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CampaignSearchDTO extends AbstractStructBase
 {
     /**

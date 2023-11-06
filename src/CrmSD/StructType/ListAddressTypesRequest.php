@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListAddressTypesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListAddressTypesRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class ListAddressTypesRequest extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ListAddressTypesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ListAddressTypesRequest
      */
     public function setLocale(?string $locale = 'de'): self
     {

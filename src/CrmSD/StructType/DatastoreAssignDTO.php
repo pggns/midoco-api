@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DatastoreAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DatastoreAssignDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set datastoreId value
      * @param string $datastoreId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreAssignDTO
      */
     public function setDatastoreId(?string $datastoreId = null): self
     {
@@ -86,7 +87,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set datastoreTypeId value
      * @param string $datastoreTypeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreAssignDTO
      */
     public function setDatastoreTypeId(?string $datastoreTypeId = null): self
     {
@@ -109,7 +110,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set hierarchical value
      * @param bool $hierarchical
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreAssignDTO
      */
     public function setHierarchical(?bool $hierarchical = null): self
     {
@@ -132,7 +133,7 @@ class DatastoreAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

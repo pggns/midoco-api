@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SalesListBySupplierResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SalesListBySupplierResponse extends AbstractStructBase
 {
     /**
@@ -59,12 +60,13 @@ class SalesListBySupplierResponse extends AbstractStructBase
         return $this->MidocoSalesListsBySupplier;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSalesListsBySupplier method
+     * This method is responsible for validating the value(s) passed to the setMidocoSalesListsBySupplier method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSalesListsBySupplier method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSalesListsBySupplierForArrayConstraintsFromSetMidocoSalesListsBySupplier(?array $values = []): string
+    public static function validateMidocoSalesListsBySupplierForArrayConstraintFromSetMidocoSalesListsBySupplier(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -93,7 +95,7 @@ class SalesListBySupplierResponse extends AbstractStructBase
     public function setMidocoSalesListsBySupplier(?array $midocoSalesListsBySupplier = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSalesListsBySupplierArrayErrorMessage = self::validateMidocoSalesListsBySupplierForArrayConstraintsFromSetMidocoSalesListsBySupplier($midocoSalesListsBySupplier))) {
+        if ('' !== ($midocoSalesListsBySupplierArrayErrorMessage = self::validateMidocoSalesListsBySupplierForArrayConstraintFromSetMidocoSalesListsBySupplier($midocoSalesListsBySupplier))) {
             throw new InvalidArgumentException($midocoSalesListsBySupplierArrayErrorMessage, __LINE__);
         }
         $this->MidocoSalesListsBySupplier = $midocoSalesListsBySupplier;

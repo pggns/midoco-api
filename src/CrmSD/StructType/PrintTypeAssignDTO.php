@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintTypeAssignDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintTypeAssignDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set isMandatory value
      * @param bool $isMandatory
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeAssignDTO
      */
     public function setIsMandatory(?bool $isMandatory = null): self
     {
@@ -94,7 +95,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set noOfCopies value
      * @param int $noOfCopies
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeAssignDTO
      */
     public function setNoOfCopies(?int $noOfCopies = null): self
     {
@@ -117,7 +118,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set printPosition value
      * @param int $printPosition
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeAssignDTO
      */
     public function setPrintPosition(?int $printPosition = null): self
     {
@@ -140,7 +141,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeAssignDTO
      */
     public function setTypeId(?string $typeId = null): self
     {
@@ -163,7 +164,7 @@ class PrintTypeAssignDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintTypeAssignDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintTypeAssignDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

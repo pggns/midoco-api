@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetApplicationsForCurrentRoleRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetApplicationsForCurrentRoleRequest extends AbstractStructBase
 {
 }

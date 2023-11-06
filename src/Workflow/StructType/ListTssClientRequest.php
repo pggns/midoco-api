@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListTssClientRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListTssClientRequest extends AbstractStructBase
 {
     /**
@@ -30,6 +31,8 @@ class ListTssClientRequest extends AbstractStructBase
     protected ?\Pggns\MidocoApi\Workflow\StructType\MidocoTssClient $MidocoTssClient = null;
     /**
      * The extern
+     * Meta information extracted from the WSDL
+     * - documentation: If true, the TSS and Clients are requested from the external service provider.
      * @var bool|null
      */
     protected ?bool $extern = null;
@@ -58,12 +61,13 @@ class ListTssClientRequest extends AbstractStructBase
         return $this->unit;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnit method
+     * This method is responsible for validating the value(s) passed to the setUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitForArrayConstraintsFromSetUnit(?array $values = []): string
+    public static function validateUnitForArrayConstraintFromSetUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -92,7 +96,7 @@ class ListTssClientRequest extends AbstractStructBase
     public function setUnit(?array $unit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unitArrayErrorMessage = self::validateUnitForArrayConstraintsFromSetUnit($unit))) {
+        if ('' !== ($unitArrayErrorMessage = self::validateUnitForArrayConstraintFromSetUnit($unit))) {
             throw new InvalidArgumentException($unitArrayErrorMessage, __LINE__);
         }
         $this->unit = $unit;

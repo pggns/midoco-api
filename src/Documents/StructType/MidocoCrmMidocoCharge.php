@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmMidocoCharge StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
 {
     /**
@@ -41,12 +42,13 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
         return $this->MidocoAssignedMidocoChargeOu;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAssignedMidocoChargeOu method
+     * This method is responsible for validating the value(s) passed to the setMidocoAssignedMidocoChargeOu method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAssignedMidocoChargeOu method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAssignedMidocoChargeOuForArrayConstraintsFromSetMidocoAssignedMidocoChargeOu(?array $values = []): string
+    public static function validateMidocoAssignedMidocoChargeOuForArrayConstraintFromSetMidocoAssignedMidocoChargeOu(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
     public function setMidocoAssignedMidocoChargeOu(?array $midocoAssignedMidocoChargeOu = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAssignedMidocoChargeOuArrayErrorMessage = self::validateMidocoAssignedMidocoChargeOuForArrayConstraintsFromSetMidocoAssignedMidocoChargeOu($midocoAssignedMidocoChargeOu))) {
+        if ('' !== ($midocoAssignedMidocoChargeOuArrayErrorMessage = self::validateMidocoAssignedMidocoChargeOuForArrayConstraintFromSetMidocoAssignedMidocoChargeOu($midocoAssignedMidocoChargeOu))) {
             throw new InvalidArgumentException($midocoAssignedMidocoChargeOuArrayErrorMessage, __LINE__);
         }
         $this->MidocoAssignedMidocoChargeOu = $midocoAssignedMidocoChargeOu;

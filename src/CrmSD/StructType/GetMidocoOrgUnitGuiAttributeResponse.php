@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoOrgUnitGuiAttributeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoOrgUnitGuiAttributeResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetMidocoOrgUnitGuiAttributeResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoOrgunitGuiAttribute
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute[]
      */
     protected ?array $MidocoOrgunitGuiAttribute = null;
     /**
      * Constructor method for GetMidocoOrgUnitGuiAttributeResponse
      * @uses GetMidocoOrgUnitGuiAttributeResponse::setMidocoOrgunitGuiAttribute()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute[] $midocoOrgunitGuiAttribute
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute[] $midocoOrgunitGuiAttribute
      */
     public function __construct(?array $midocoOrgunitGuiAttribute = null)
     {
@@ -34,19 +35,20 @@ class GetMidocoOrgUnitGuiAttributeResponse extends AbstractStructBase
     }
     /**
      * Get MidocoOrgunitGuiAttribute value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute[]
      */
     public function getMidocoOrgunitGuiAttribute(): ?array
     {
         return $this->MidocoOrgunitGuiAttribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrgunitGuiAttribute method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrgunitGuiAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrgunitGuiAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrgunitGuiAttributeForArrayConstraintsFromSetMidocoOrgunitGuiAttribute(?array $values = []): string
+    public static function validateMidocoOrgunitGuiAttributeForArrayConstraintFromSetMidocoOrgunitGuiAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetMidocoOrgUnitGuiAttributeResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getMidocoOrgUnitGuiAttributeResponseMidocoOrgunitGuiAttributeItem) {
             // validation for constraint: itemType
-            if (!$getMidocoOrgUnitGuiAttributeResponseMidocoOrgunitGuiAttributeItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute) {
+            if (!$getMidocoOrgUnitGuiAttributeResponseMidocoOrgunitGuiAttributeItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute) {
                 $invalidValues[] = is_object($getMidocoOrgUnitGuiAttributeResponseMidocoOrgunitGuiAttributeItem) ? get_class($getMidocoOrgUnitGuiAttributeResponseMidocoOrgunitGuiAttributeItem) : sprintf('%s(%s)', gettype($getMidocoOrgUnitGuiAttributeResponseMidocoOrgunitGuiAttributeItem), var_export($getMidocoOrgUnitGuiAttributeResponseMidocoOrgunitGuiAttributeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoOrgunitGuiAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoOrgunitGuiAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetMidocoOrgUnitGuiAttributeResponse extends AbstractStructBase
     /**
      * Set MidocoOrgunitGuiAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute[] $midocoOrgunitGuiAttribute
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoOrgUnitGuiAttributeResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute[] $midocoOrgunitGuiAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoOrgUnitGuiAttributeResponse
      */
     public function setMidocoOrgunitGuiAttribute(?array $midocoOrgunitGuiAttribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrgunitGuiAttributeArrayErrorMessage = self::validateMidocoOrgunitGuiAttributeForArrayConstraintsFromSetMidocoOrgunitGuiAttribute($midocoOrgunitGuiAttribute))) {
+        if ('' !== ($midocoOrgunitGuiAttributeArrayErrorMessage = self::validateMidocoOrgunitGuiAttributeForArrayConstraintFromSetMidocoOrgunitGuiAttribute($midocoOrgunitGuiAttribute))) {
             throw new InvalidArgumentException($midocoOrgunitGuiAttributeArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrgunitGuiAttribute = $midocoOrgunitGuiAttribute;
@@ -85,14 +87,14 @@ class GetMidocoOrgUnitGuiAttributeResponse extends AbstractStructBase
     /**
      * Add item to MidocoOrgunitGuiAttribute value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoOrgUnitGuiAttributeResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoOrgUnitGuiAttributeResponse
      */
-    public function addToMidocoOrgunitGuiAttribute(\Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute $item): self
+    public function addToMidocoOrgunitGuiAttribute(\Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute) {
-            throw new InvalidArgumentException(sprintf('The MidocoOrgunitGuiAttribute property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoOrgunitGuiAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute) {
+            throw new InvalidArgumentException(sprintf('The MidocoOrgunitGuiAttribute property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoOrgunitGuiAttribute, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoOrgunitGuiAttribute[] = $item;
         

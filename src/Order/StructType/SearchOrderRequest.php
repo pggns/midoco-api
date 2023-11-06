@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchOrderRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchOrderRequest extends AbstractStructBase
 {
     /**
@@ -28,17 +29,27 @@ class SearchOrderRequest extends AbstractStructBase
      */
     protected ?int $maxReturned = null;
     /**
+     * The searchType
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $searchType = null;
+    /**
      * Constructor method for SearchOrderRequest
      * @uses SearchOrderRequest::setMidocoSearchOrderCriteria()
      * @uses SearchOrderRequest::setMaxReturned()
+     * @uses SearchOrderRequest::setSearchType()
      * @param \Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria
      * @param int $maxReturned
+     * @param string $searchType
      */
-    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria = null, ?int $maxReturned = null)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\MidocoSearchOrderCriteriaType $midocoSearchOrderCriteria = null, ?int $maxReturned = null, ?string $searchType = null)
     {
         $this
             ->setMidocoSearchOrderCriteria($midocoSearchOrderCriteria)
-            ->setMaxReturned($maxReturned);
+            ->setMaxReturned($maxReturned)
+            ->setSearchType($searchType);
     }
     /**
      * Get MidocoSearchOrderCriteria value
@@ -79,6 +90,32 @@ class SearchOrderRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($maxReturned, true), gettype($maxReturned)), __LINE__);
         }
         $this->maxReturned = $maxReturned;
+        
+        return $this;
+    }
+    /**
+     * Get searchType value
+     * @return string|null
+     */
+    public function getSearchType(): ?string
+    {
+        return $this->searchType;
+    }
+    /**
+     * Set searchType value
+     * @uses \Pggns\MidocoApi\Order\EnumType\SearchType::valueIsValid()
+     * @uses \Pggns\MidocoApi\Order\EnumType\SearchType::getValidValues()
+     * @throws InvalidArgumentException
+     * @param string $searchType
+     * @return \Pggns\MidocoApi\Order\StructType\SearchOrderRequest
+     */
+    public function setSearchType(?string $searchType = null): self
+    {
+        // validation for constraint: enumeration
+        if (!\Pggns\MidocoApi\Order\EnumType\SearchType::valueIsValid($searchType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Pggns\MidocoApi\Order\EnumType\SearchType', is_array($searchType) ? implode(', ', $searchType) : var_export($searchType, true), implode(', ', \Pggns\MidocoApi\Order\EnumType\SearchType::getValidValues())), __LINE__);
+        }
+        $this->searchType = $searchType;
         
         return $this;
     }

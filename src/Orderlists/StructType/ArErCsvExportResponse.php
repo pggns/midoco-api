@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ArErCsvExportResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ArErCsvExportResponse extends AbstractStructBase
 {
     /**

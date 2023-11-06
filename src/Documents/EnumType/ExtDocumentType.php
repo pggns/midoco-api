@@ -38,12 +38,18 @@ class ExtDocumentType extends AbstractStructEnumBase
      */
     const VALUE_RECEIPT = 'RECEIPT';
     /**
+     * Constant for value 'CASH_BOOK'
+     * @return string 'CASH_BOOK'
+     */
+    const VALUE_CASH_BOOK = 'CASH_BOOK';
+    /**
      * Return allowed values
      * @uses self::VALUE_BILLING
      * @uses self::VALUE_INVOICE
      * @uses self::VALUE_MEDIATOR_SETTLEMENT
      * @uses self::VALUE_AGENCY_SETTLEMENT
      * @uses self::VALUE_RECEIPT
+     * @uses self::VALUE_CASH_BOOK
      * @return string[]
      */
     public static function getValidValues(): array
@@ -54,6 +60,7 @@ class ExtDocumentType extends AbstractStructEnumBase
             self::VALUE_MEDIATOR_SETTLEMENT,
             self::VALUE_AGENCY_SETTLEMENT,
             self::VALUE_RECEIPT,
+            self::VALUE_CASH_BOOK,
         ];
     }
 }

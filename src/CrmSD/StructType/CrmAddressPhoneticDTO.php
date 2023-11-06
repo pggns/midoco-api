@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmAddressPhoneticDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmAddressPhoneticDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set addressId value
      * @param int $addressId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmAddressPhoneticDTO
      */
     public function setAddressId(?int $addressId = null): self
     {
@@ -94,7 +95,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmAddressPhoneticDTO
      */
     public function setCity(?string $city = null): self
     {
@@ -117,7 +118,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set exactCity value
      * @param string $exactCity
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmAddressPhoneticDTO
      */
     public function setExactCity(?string $exactCity = null): self
     {
@@ -140,7 +141,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set exactStreet value
      * @param string $exactStreet
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmAddressPhoneticDTO
      */
     public function setExactStreet(?string $exactStreet = null): self
     {
@@ -163,7 +164,7 @@ class CrmAddressPhoneticDTO extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmAddressPhoneticDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmAddressPhoneticDTO
      */
     public function setStreet(?string $street = null): self
     {

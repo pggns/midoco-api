@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoPaymentOrdersInfos StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoPaymentOrdersInfos extends AbstractStructBase
 {
     /**
@@ -990,12 +991,13 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
         return $this->MidocoPaymentServiceInfos;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPaymentServiceInfos method
+     * This method is responsible for validating the value(s) passed to the setMidocoPaymentServiceInfos method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPaymentServiceInfos method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPaymentServiceInfosForArrayConstraintsFromSetMidocoPaymentServiceInfos(?array $values = []): string
+    public static function validateMidocoPaymentServiceInfosForArrayConstraintFromSetMidocoPaymentServiceInfos(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -1024,7 +1026,7 @@ class MidocoPaymentOrdersInfos extends AbstractStructBase
     public function setMidocoPaymentServiceInfos(?array $midocoPaymentServiceInfos = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPaymentServiceInfosArrayErrorMessage = self::validateMidocoPaymentServiceInfosForArrayConstraintsFromSetMidocoPaymentServiceInfos($midocoPaymentServiceInfos))) {
+        if ('' !== ($midocoPaymentServiceInfosArrayErrorMessage = self::validateMidocoPaymentServiceInfosForArrayConstraintFromSetMidocoPaymentServiceInfos($midocoPaymentServiceInfos))) {
             throw new InvalidArgumentException($midocoPaymentServiceInfosArrayErrorMessage, __LINE__);
         }
         $this->MidocoPaymentServiceInfos = $midocoPaymentServiceInfos;

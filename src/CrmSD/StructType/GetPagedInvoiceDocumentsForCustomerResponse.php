@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetPagedInvoiceDocumentsForCustomerResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
 {
     /**
@@ -19,7 +20,7 @@ class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoInvoiceDocInfoForCustomer
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer[]
      */
     protected ?array $MidocoInvoiceDocInfoForCustomer = null;
     /**
@@ -31,7 +32,7 @@ class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
      * Constructor method for GetPagedInvoiceDocumentsForCustomerResponse
      * @uses GetPagedInvoiceDocumentsForCustomerResponse::setMidocoInvoiceDocInfoForCustomer()
      * @uses GetPagedInvoiceDocumentsForCustomerResponse::setTotalNoOfRecords()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer[] $midocoInvoiceDocInfoForCustomer
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer[] $midocoInvoiceDocInfoForCustomer
      * @param int $totalNoOfRecords
      */
     public function __construct(?array $midocoInvoiceDocInfoForCustomer = null, ?int $totalNoOfRecords = null)
@@ -42,19 +43,20 @@ class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
     }
     /**
      * Get MidocoInvoiceDocInfoForCustomer value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer[]
      */
     public function getMidocoInvoiceDocInfoForCustomer(): ?array
     {
         return $this->MidocoInvoiceDocInfoForCustomer;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoInvoiceDocInfoForCustomer method
+     * This method is responsible for validating the value(s) passed to the setMidocoInvoiceDocInfoForCustomer method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInvoiceDocInfoForCustomer method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoInvoiceDocInfoForCustomerForArrayConstraintsFromSetMidocoInvoiceDocInfoForCustomer(?array $values = []): string
+    public static function validateMidocoInvoiceDocInfoForCustomerForArrayConstraintFromSetMidocoInvoiceDocInfoForCustomer(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -63,12 +65,12 @@ class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getPagedInvoiceDocumentsForCustomerResponseMidocoInvoiceDocInfoForCustomerItem) {
             // validation for constraint: itemType
-            if (!$getPagedInvoiceDocumentsForCustomerResponseMidocoInvoiceDocInfoForCustomerItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer) {
+            if (!$getPagedInvoiceDocumentsForCustomerResponseMidocoInvoiceDocInfoForCustomerItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer) {
                 $invalidValues[] = is_object($getPagedInvoiceDocumentsForCustomerResponseMidocoInvoiceDocInfoForCustomerItem) ? get_class($getPagedInvoiceDocumentsForCustomerResponseMidocoInvoiceDocInfoForCustomerItem) : sprintf('%s(%s)', gettype($getPagedInvoiceDocumentsForCustomerResponseMidocoInvoiceDocInfoForCustomerItem), var_export($getPagedInvoiceDocumentsForCustomerResponseMidocoInvoiceDocInfoForCustomerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoInvoiceDocInfoForCustomer property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoInvoiceDocInfoForCustomer property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -77,13 +79,13 @@ class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
     /**
      * Set MidocoInvoiceDocInfoForCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer[] $midocoInvoiceDocInfoForCustomer
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPagedInvoiceDocumentsForCustomerResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer[] $midocoInvoiceDocInfoForCustomer
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPagedInvoiceDocumentsForCustomerResponse
      */
     public function setMidocoInvoiceDocInfoForCustomer(?array $midocoInvoiceDocInfoForCustomer = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoInvoiceDocInfoForCustomerArrayErrorMessage = self::validateMidocoInvoiceDocInfoForCustomerForArrayConstraintsFromSetMidocoInvoiceDocInfoForCustomer($midocoInvoiceDocInfoForCustomer))) {
+        if ('' !== ($midocoInvoiceDocInfoForCustomerArrayErrorMessage = self::validateMidocoInvoiceDocInfoForCustomerForArrayConstraintFromSetMidocoInvoiceDocInfoForCustomer($midocoInvoiceDocInfoForCustomer))) {
             throw new InvalidArgumentException($midocoInvoiceDocInfoForCustomerArrayErrorMessage, __LINE__);
         }
         $this->MidocoInvoiceDocInfoForCustomer = $midocoInvoiceDocInfoForCustomer;
@@ -93,14 +95,14 @@ class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
     /**
      * Add item to MidocoInvoiceDocInfoForCustomer value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPagedInvoiceDocumentsForCustomerResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPagedInvoiceDocumentsForCustomerResponse
      */
-    public function addToMidocoInvoiceDocInfoForCustomer(\Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer $item): self
+    public function addToMidocoInvoiceDocInfoForCustomer(\Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer) {
-            throw new InvalidArgumentException(sprintf('The MidocoInvoiceDocInfoForCustomer property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoInvoiceDocInfoForCustomer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer) {
+            throw new InvalidArgumentException(sprintf('The MidocoInvoiceDocInfoForCustomer property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoInvoiceDocInfoForCustomer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoInvoiceDocInfoForCustomer[] = $item;
         
@@ -117,7 +119,7 @@ class GetPagedInvoiceDocumentsForCustomerResponse extends AbstractStructBase
     /**
      * Set totalNoOfRecords value
      * @param int $totalNoOfRecords
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetPagedInvoiceDocumentsForCustomerResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetPagedInvoiceDocumentsForCustomerResponse
      */
     public function setTotalNoOfRecords(?int $totalNoOfRecords = null): self
     {

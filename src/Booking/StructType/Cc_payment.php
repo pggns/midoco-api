@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for cc-payment StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class Cc_payment extends AbstractStructBase
 {
     /**
@@ -282,7 +283,7 @@ class Cc_payment extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cc_valid_year, true), gettype($cc_valid_year)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{4})
-        if (!is_null($cc_valid_year) && !preg_match('/[0-9]{4}/', $cc_valid_year)) {
+        if (!is_null($cc_valid_year) && !preg_match('/[0-9]{4}/', (string) $cc_valid_year)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{4}/', var_export($cc_valid_year, true)), __LINE__);
         }
         $this->cc_valid_year = $this->{'cc-valid-year'} = $cc_valid_year;
@@ -309,7 +310,7 @@ class Cc_payment extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cc_valid_month, true), gettype($cc_valid_month)), __LINE__);
         }
         // validation for constraint: pattern([0-9]{2})
-        if (!is_null($cc_valid_month) && !preg_match('/[0-9]{2}/', $cc_valid_month)) {
+        if (!is_null($cc_valid_month) && !preg_match('/[0-9]{2}/', (string) $cc_valid_month)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a literal that is among the set of character sequences denoted by the regular expression /[0-9]{2}/', var_export($cc_valid_month, true)), __LINE__);
         }
         $this->cc_valid_month = $this->{'cc-valid-month'} = $cc_valid_month;
@@ -352,12 +353,13 @@ class Cc_payment extends AbstractStructBase
         return $this->{'cc-additional-info'};
     }
     /**
-     * This method is responsible for validating the values passed to the setCc_additional_info method
+     * This method is responsible for validating the value(s) passed to the setCc_additional_info method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCc_additional_info method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCc_additional_infoForArrayConstraintsFromSetCc_additional_info(?array $values = []): string
+    public static function validateCc_additional_infoForArrayConstraintFromSetCc_additional_info(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -386,7 +388,7 @@ class Cc_payment extends AbstractStructBase
     public function setCc_additional_info(?array $cc_additional_info = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cc_additional_infoArrayErrorMessage = self::validateCc_additional_infoForArrayConstraintsFromSetCc_additional_info($cc_additional_info))) {
+        if ('' !== ($cc_additional_infoArrayErrorMessage = self::validateCc_additional_infoForArrayConstraintFromSetCc_additional_info($cc_additional_info))) {
             throw new InvalidArgumentException($cc_additional_infoArrayErrorMessage, __LINE__);
         }
         $this->cc_additional_info = $this->{'cc-additional-info'} = $cc_additional_info;
@@ -441,12 +443,13 @@ class Cc_payment extends AbstractStructBase
         return $this->{'cc-token'};
     }
     /**
-     * This method is responsible for validating the values passed to the setCc_token method
+     * This method is responsible for validating the value(s) passed to the setCc_token method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCc_token method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCc_tokenForArrayConstraintsFromSetCc_token(?array $values = []): string
+    public static function validateCc_tokenForArrayConstraintFromSetCc_token(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -475,7 +478,7 @@ class Cc_payment extends AbstractStructBase
     public function setCc_token(?array $cc_token = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cc_tokenArrayErrorMessage = self::validateCc_tokenForArrayConstraintsFromSetCc_token($cc_token))) {
+        if ('' !== ($cc_tokenArrayErrorMessage = self::validateCc_tokenForArrayConstraintFromSetCc_token($cc_token))) {
             throw new InvalidArgumentException($cc_tokenArrayErrorMessage, __LINE__);
         }
         $this->cc_token = $this->{'cc-token'} = $cc_token;

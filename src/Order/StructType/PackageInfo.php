@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: In case of a package booking, this section contains the necessary information about the selling supplier and additional fee
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PackageInfo extends AbstractStructBase
 {
     /**
@@ -330,12 +331,13 @@ class PackageInfo extends AbstractStructBase
         return $this->price_calculation;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrice_calculation method
+     * This method is responsible for validating the value(s) passed to the setPrice_calculation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrice_calculation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrice_calculationForArrayConstraintsFromSetPrice_calculation(?array $values = []): string
+    public static function validatePrice_calculationForArrayConstraintFromSetPrice_calculation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -364,7 +366,7 @@ class PackageInfo extends AbstractStructBase
     public function setPrice_calculation(?array $price_calculation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($price_calculationArrayErrorMessage = self::validatePrice_calculationForArrayConstraintsFromSetPrice_calculation($price_calculation))) {
+        if ('' !== ($price_calculationArrayErrorMessage = self::validatePrice_calculationForArrayConstraintFromSetPrice_calculation($price_calculation))) {
             throw new InvalidArgumentException($price_calculationArrayErrorMessage, __LINE__);
         }
         $this->price_calculation = $price_calculation;
@@ -396,12 +398,13 @@ class PackageInfo extends AbstractStructBase
         return $this->packagefee;
     }
     /**
-     * This method is responsible for validating the values passed to the setPackagefee method
+     * This method is responsible for validating the value(s) passed to the setPackagefee method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPackagefee method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePackagefeeForArrayConstraintsFromSetPackagefee(?array $values = []): string
+    public static function validatePackagefeeForArrayConstraintFromSetPackagefee(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -430,7 +433,7 @@ class PackageInfo extends AbstractStructBase
     public function setPackagefee(?array $packagefee = null): self
     {
         // validation for constraint: array
-        if ('' !== ($packagefeeArrayErrorMessage = self::validatePackagefeeForArrayConstraintsFromSetPackagefee($packagefee))) {
+        if ('' !== ($packagefeeArrayErrorMessage = self::validatePackagefeeForArrayConstraintFromSetPackagefee($packagefee))) {
             throw new InvalidArgumentException($packagefeeArrayErrorMessage, __LINE__);
         }
         $this->packagefee = $packagefee;
@@ -462,12 +465,13 @@ class PackageInfo extends AbstractStructBase
         return $this->person;
     }
     /**
-     * This method is responsible for validating the values passed to the setPerson method
+     * This method is responsible for validating the value(s) passed to the setPerson method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPerson method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePersonForArrayConstraintsFromSetPerson(?array $values = []): string
+    public static function validatePersonForArrayConstraintFromSetPerson(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -496,7 +500,7 @@ class PackageInfo extends AbstractStructBase
     public function setPerson(?array $person = null): self
     {
         // validation for constraint: array
-        if ('' !== ($personArrayErrorMessage = self::validatePersonForArrayConstraintsFromSetPerson($person))) {
+        if ('' !== ($personArrayErrorMessage = self::validatePersonForArrayConstraintFromSetPerson($person))) {
             throw new InvalidArgumentException($personArrayErrorMessage, __LINE__);
         }
         $this->person = $person;
@@ -528,12 +532,13 @@ class PackageInfo extends AbstractStructBase
         return $this->attribute;
     }
     /**
-     * This method is responsible for validating the values passed to the setAttribute method
+     * This method is responsible for validating the value(s) passed to the setAttribute method
      * This method is willingly generated in order to preserve the one-line inline validation within the setAttribute method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateAttributeForArrayConstraintsFromSetAttribute(?array $values = []): string
+    public static function validateAttributeForArrayConstraintFromSetAttribute(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -562,7 +567,7 @@ class PackageInfo extends AbstractStructBase
     public function setAttribute(?array $attribute = null): self
     {
         // validation for constraint: array
-        if ('' !== ($attributeArrayErrorMessage = self::validateAttributeForArrayConstraintsFromSetAttribute($attribute))) {
+        if ('' !== ($attributeArrayErrorMessage = self::validateAttributeForArrayConstraintFromSetAttribute($attribute))) {
             throw new InvalidArgumentException($attributeArrayErrorMessage, __LINE__);
         }
         $this->attribute = $attribute;

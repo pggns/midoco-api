@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoParticipantList StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoParticipantList extends MidocoParticipantListType
 {
     /**

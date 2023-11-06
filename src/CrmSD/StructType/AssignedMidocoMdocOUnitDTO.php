@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AssignedMidocoMdocOUnitDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
     /**
      * Set contractEndDate value
      * @param string $contractEndDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO
      */
     public function setContractEndDate(?string $contractEndDate = null): self
     {
@@ -110,7 +111,7 @@ class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
     /**
      * Set contractStartDate value
      * @param string $contractStartDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO
      */
     public function setContractStartDate(?string $contractStartDate = null): self
     {
@@ -133,7 +134,7 @@ class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -156,7 +157,7 @@ class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
     /**
      * Set isParent value
      * @param bool $isParent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO
      */
     public function setIsParent(?bool $isParent = null): self
     {
@@ -179,7 +180,7 @@ class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
     /**
      * Set settlMdocId value
      * @param int $settlMdocId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO
      */
     public function setSettlMdocId(?int $settlMdocId = null): self
     {
@@ -202,7 +203,7 @@ class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -225,7 +226,7 @@ class AssignedMidocoMdocOUnitDTO extends AbstractStructBase
     /**
      * Set useAllUnitsFromDb value
      * @param bool $useAllUnitsFromDb
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO
      */
     public function setUseAllUnitsFromDb(?bool $useAllUnitsFromDb = null): self
     {

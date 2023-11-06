@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBillingDocumentType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBillingDocumentType extends BillingDocumentDTO
 {
     /**
@@ -101,6 +102,15 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      */
     protected ?\Pggns\MidocoApi\Order\StructType\MidocoBillingEinvoice $MidocoBillingEinvoice = null;
     /**
+     * The MidocoCollectiveInvoiceSetting
+     * Meta information extracted from the WSDL
+     * - maxOccurs: 1
+     * - minOccurs: 0
+     * - ref: crm:MidocoCollectiveInvoiceSetting
+     * @var \Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO|null
+     */
+    protected ?\Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO $MidocoCollectiveInvoiceSetting = null;
+    /**
      * The unitAlias
      * @var string|null
      */
@@ -133,6 +143,26 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      */
     protected ?bool $isDraft = null;
     /**
+     * The bulkItemTypeSetting
+     * @var string|null
+     */
+    protected ?string $bulkItemTypeSetting = null;
+    /**
+     * The bulkCostCentreSetting
+     * @var string|null
+     */
+    protected ?string $bulkCostCentreSetting = null;
+    /**
+     * The bulkUserSplitSetting
+     * @var string|null
+     */
+    protected ?string $bulkUserSplitSetting = null;
+    /**
+     * The bulkDepartureDateSetting
+     * @var string|null
+     */
+    protected ?string $bulkDepartureDateSetting = null;
+    /**
      * Constructor method for MidocoBillingDocumentType
      * @uses MidocoBillingDocumentType::setMidocoBillingRemark()
      * @uses MidocoBillingDocumentType::setMidocoBillingAttribute()
@@ -144,12 +174,17 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * @uses MidocoBillingDocumentType::setMidocoBillingPrint()
      * @uses MidocoBillingDocumentType::setMidocoEinvoiceDocument()
      * @uses MidocoBillingDocumentType::setMidocoBillingEinvoice()
+     * @uses MidocoBillingDocumentType::setMidocoCollectiveInvoiceSetting()
      * @uses MidocoBillingDocumentType::setUnitAlias()
      * @uses MidocoBillingDocumentType::setDbiStatus()
      * @uses MidocoBillingDocumentType::setCancellationDocNo()
      * @uses MidocoBillingDocumentType::setConfirmationGroup()
      * @uses MidocoBillingDocumentType::setStoreUntil()
      * @uses MidocoBillingDocumentType::setIsDraft()
+     * @uses MidocoBillingDocumentType::setBulkItemTypeSetting()
+     * @uses MidocoBillingDocumentType::setBulkCostCentreSetting()
+     * @uses MidocoBillingDocumentType::setBulkUserSplitSetting()
+     * @uses MidocoBillingDocumentType::setBulkDepartureDateSetting()
      * @param \Pggns\MidocoApi\Order\StructType\BillingRemarkDTO[] $midocoBillingRemark
      * @param \Pggns\MidocoApi\Order\StructType\BillingAttributeDTO $midocoBillingAttribute
      * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingVatCalculation[] $midocoBillingVatCalculation
@@ -160,14 +195,19 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
      * @param \Pggns\MidocoApi\Order\StructType\BillingPrintDTO[] $midocoBillingPrint
      * @param \Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument
      * @param \Pggns\MidocoApi\Order\StructType\MidocoBillingEinvoice $midocoBillingEinvoice
+     * @param \Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting
      * @param string $unitAlias
      * @param int $dbiStatus
      * @param int $cancellationDocNo
      * @param string $confirmationGroup
      * @param string $storeUntil
      * @param bool $isDraft
+     * @param string $bulkItemTypeSetting
+     * @param string $bulkCostCentreSetting
+     * @param string $bulkUserSplitSetting
+     * @param string $bulkDepartureDateSetting
      */
-    public function __construct(?array $midocoBillingRemark = null, ?\Pggns\MidocoApi\Order\StructType\BillingAttributeDTO $midocoBillingAttribute = null, ?array $midocoBillingVatCalculation = null, ?array $midocoBillingPosition = null, ?\Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null, ?\Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null, ?array $midocoOrderBilling = null, ?array $midocoBillingPrint = null, ?\Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null, ?\Pggns\MidocoApi\Order\StructType\MidocoBillingEinvoice $midocoBillingEinvoice = null, ?string $unitAlias = null, ?int $dbiStatus = null, ?int $cancellationDocNo = null, ?string $confirmationGroup = null, ?string $storeUntil = null, ?bool $isDraft = false)
+    public function __construct(?array $midocoBillingRemark = null, ?\Pggns\MidocoApi\Order\StructType\BillingAttributeDTO $midocoBillingAttribute = null, ?array $midocoBillingVatCalculation = null, ?array $midocoBillingPosition = null, ?\Pggns\MidocoApi\Order\StructType\MidocoBillingOnlinePayment $midocoBillingOnlinePayment = null, ?\Pggns\MidocoApi\Order\StructType\BillingAdvisedPaymentDTO $midocoBillingAdvisedPayment = null, ?array $midocoOrderBilling = null, ?array $midocoBillingPrint = null, ?\Pggns\MidocoApi\Order\StructType\MidocoEinvoiceDocument $midocoEinvoiceDocument = null, ?\Pggns\MidocoApi\Order\StructType\MidocoBillingEinvoice $midocoBillingEinvoice = null, ?\Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting = null, ?string $unitAlias = null, ?int $dbiStatus = null, ?int $cancellationDocNo = null, ?string $confirmationGroup = null, ?string $storeUntil = null, ?bool $isDraft = false, ?string $bulkItemTypeSetting = null, ?string $bulkCostCentreSetting = null, ?string $bulkUserSplitSetting = null, ?string $bulkDepartureDateSetting = null)
     {
         $this
             ->setMidocoBillingRemark($midocoBillingRemark)
@@ -180,12 +220,17 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
             ->setMidocoBillingPrint($midocoBillingPrint)
             ->setMidocoEinvoiceDocument($midocoEinvoiceDocument)
             ->setMidocoBillingEinvoice($midocoBillingEinvoice)
+            ->setMidocoCollectiveInvoiceSetting($midocoCollectiveInvoiceSetting)
             ->setUnitAlias($unitAlias)
             ->setDbiStatus($dbiStatus)
             ->setCancellationDocNo($cancellationDocNo)
             ->setConfirmationGroup($confirmationGroup)
             ->setStoreUntil($storeUntil)
-            ->setIsDraft($isDraft);
+            ->setIsDraft($isDraft)
+            ->setBulkItemTypeSetting($bulkItemTypeSetting)
+            ->setBulkCostCentreSetting($bulkCostCentreSetting)
+            ->setBulkUserSplitSetting($bulkUserSplitSetting)
+            ->setBulkDepartureDateSetting($bulkDepartureDateSetting);
     }
     /**
      * Get MidocoBillingRemark value
@@ -196,12 +241,13 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         return $this->MidocoBillingRemark;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingRemark method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingRemark method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingRemark method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingRemarkForArrayConstraintsFromSetMidocoBillingRemark(?array $values = []): string
+    public static function validateMidocoBillingRemarkForArrayConstraintFromSetMidocoBillingRemark(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -230,7 +276,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     public function setMidocoBillingRemark(?array $midocoBillingRemark = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingRemarkArrayErrorMessage = self::validateMidocoBillingRemarkForArrayConstraintsFromSetMidocoBillingRemark($midocoBillingRemark))) {
+        if ('' !== ($midocoBillingRemarkArrayErrorMessage = self::validateMidocoBillingRemarkForArrayConstraintFromSetMidocoBillingRemark($midocoBillingRemark))) {
             throw new InvalidArgumentException($midocoBillingRemarkArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingRemark = $midocoBillingRemark;
@@ -281,12 +327,13 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         return $this->MidocoBillingVatCalculation;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingVatCalculation method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingVatCalculation method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingVatCalculation method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingVatCalculationForArrayConstraintsFromSetMidocoBillingVatCalculation(?array $values = []): string
+    public static function validateMidocoBillingVatCalculationForArrayConstraintFromSetMidocoBillingVatCalculation(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -315,7 +362,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     public function setMidocoBillingVatCalculation(?array $midocoBillingVatCalculation = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingVatCalculationArrayErrorMessage = self::validateMidocoBillingVatCalculationForArrayConstraintsFromSetMidocoBillingVatCalculation($midocoBillingVatCalculation))) {
+        if ('' !== ($midocoBillingVatCalculationArrayErrorMessage = self::validateMidocoBillingVatCalculationForArrayConstraintFromSetMidocoBillingVatCalculation($midocoBillingVatCalculation))) {
             throw new InvalidArgumentException($midocoBillingVatCalculationArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingVatCalculation = $midocoBillingVatCalculation;
@@ -347,12 +394,13 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         return $this->MidocoBillingPosition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingPosition method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingPosition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingPosition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingPositionForArrayConstraintsFromSetMidocoBillingPosition(?array $values = []): string
+    public static function validateMidocoBillingPositionForArrayConstraintFromSetMidocoBillingPosition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -381,7 +429,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     public function setMidocoBillingPosition(?array $midocoBillingPosition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingPositionArrayErrorMessage = self::validateMidocoBillingPositionForArrayConstraintsFromSetMidocoBillingPosition($midocoBillingPosition))) {
+        if ('' !== ($midocoBillingPositionArrayErrorMessage = self::validateMidocoBillingPositionForArrayConstraintFromSetMidocoBillingPosition($midocoBillingPosition))) {
             throw new InvalidArgumentException($midocoBillingPositionArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingPosition = $midocoBillingPosition;
@@ -451,12 +499,13 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         return $this->MidocoOrderBilling;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrderBilling method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrderBilling method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrderBilling method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrderBillingForArrayConstraintsFromSetMidocoOrderBilling(?array $values = []): string
+    public static function validateMidocoOrderBillingForArrayConstraintFromSetMidocoOrderBilling(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -485,7 +534,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     public function setMidocoOrderBilling(?array $midocoOrderBilling = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrderBillingArrayErrorMessage = self::validateMidocoOrderBillingForArrayConstraintsFromSetMidocoOrderBilling($midocoOrderBilling))) {
+        if ('' !== ($midocoOrderBillingArrayErrorMessage = self::validateMidocoOrderBillingForArrayConstraintFromSetMidocoOrderBilling($midocoOrderBilling))) {
             throw new InvalidArgumentException($midocoOrderBillingArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrderBilling = $midocoOrderBilling;
@@ -517,12 +566,13 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
         return $this->MidocoBillingPrint;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingPrint method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingPrint method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingPrint method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingPrintForArrayConstraintsFromSetMidocoBillingPrint(?array $values = []): string
+    public static function validateMidocoBillingPrintForArrayConstraintFromSetMidocoBillingPrint(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -551,7 +601,7 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     public function setMidocoBillingPrint(?array $midocoBillingPrint = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingPrintArrayErrorMessage = self::validateMidocoBillingPrintForArrayConstraintsFromSetMidocoBillingPrint($midocoBillingPrint))) {
+        if ('' !== ($midocoBillingPrintArrayErrorMessage = self::validateMidocoBillingPrintForArrayConstraintFromSetMidocoBillingPrint($midocoBillingPrint))) {
             throw new InvalidArgumentException($midocoBillingPrintArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingPrint = $midocoBillingPrint;
@@ -609,6 +659,25 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
     public function setMidocoBillingEinvoice(?\Pggns\MidocoApi\Order\StructType\MidocoBillingEinvoice $midocoBillingEinvoice = null): self
     {
         $this->MidocoBillingEinvoice = $midocoBillingEinvoice;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoCollectiveInvoiceSetting value
+     * @return \Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO|null
+     */
+    public function getMidocoCollectiveInvoiceSetting(): ?\Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO
+    {
+        return $this->MidocoCollectiveInvoiceSetting;
+    }
+    /**
+     * Set MidocoCollectiveInvoiceSetting value
+     * @param \Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocumentType
+     */
+    public function setMidocoCollectiveInvoiceSetting(?\Pggns\MidocoApi\Order\StructType\CollectInvSettingDTO $midocoCollectiveInvoiceSetting = null): self
+    {
+        $this->MidocoCollectiveInvoiceSetting = $midocoCollectiveInvoiceSetting;
         
         return $this;
     }
@@ -747,6 +816,98 @@ class MidocoBillingDocumentType extends BillingDocumentDTO
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isDraft, true), gettype($isDraft)), __LINE__);
         }
         $this->isDraft = $isDraft;
+        
+        return $this;
+    }
+    /**
+     * Get bulkItemTypeSetting value
+     * @return string|null
+     */
+    public function getBulkItemTypeSetting(): ?string
+    {
+        return $this->bulkItemTypeSetting;
+    }
+    /**
+     * Set bulkItemTypeSetting value
+     * @param string $bulkItemTypeSetting
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocumentType
+     */
+    public function setBulkItemTypeSetting(?string $bulkItemTypeSetting = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($bulkItemTypeSetting) && !is_string($bulkItemTypeSetting)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bulkItemTypeSetting, true), gettype($bulkItemTypeSetting)), __LINE__);
+        }
+        $this->bulkItemTypeSetting = $bulkItemTypeSetting;
+        
+        return $this;
+    }
+    /**
+     * Get bulkCostCentreSetting value
+     * @return string|null
+     */
+    public function getBulkCostCentreSetting(): ?string
+    {
+        return $this->bulkCostCentreSetting;
+    }
+    /**
+     * Set bulkCostCentreSetting value
+     * @param string $bulkCostCentreSetting
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocumentType
+     */
+    public function setBulkCostCentreSetting(?string $bulkCostCentreSetting = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($bulkCostCentreSetting) && !is_string($bulkCostCentreSetting)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bulkCostCentreSetting, true), gettype($bulkCostCentreSetting)), __LINE__);
+        }
+        $this->bulkCostCentreSetting = $bulkCostCentreSetting;
+        
+        return $this;
+    }
+    /**
+     * Get bulkUserSplitSetting value
+     * @return string|null
+     */
+    public function getBulkUserSplitSetting(): ?string
+    {
+        return $this->bulkUserSplitSetting;
+    }
+    /**
+     * Set bulkUserSplitSetting value
+     * @param string $bulkUserSplitSetting
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocumentType
+     */
+    public function setBulkUserSplitSetting(?string $bulkUserSplitSetting = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($bulkUserSplitSetting) && !is_string($bulkUserSplitSetting)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bulkUserSplitSetting, true), gettype($bulkUserSplitSetting)), __LINE__);
+        }
+        $this->bulkUserSplitSetting = $bulkUserSplitSetting;
+        
+        return $this;
+    }
+    /**
+     * Get bulkDepartureDateSetting value
+     * @return string|null
+     */
+    public function getBulkDepartureDateSetting(): ?string
+    {
+        return $this->bulkDepartureDateSetting;
+    }
+    /**
+     * Set bulkDepartureDateSetting value
+     * @param string $bulkDepartureDateSetting
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoBillingDocumentType
+     */
+    public function setBulkDepartureDateSetting(?string $bulkDepartureDateSetting = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($bulkDepartureDateSetting) && !is_string($bulkDepartureDateSetting)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($bulkDepartureDateSetting, true), gettype($bulkDepartureDateSetting)), __LINE__);
+        }
+        $this->bulkDepartureDateSetting = $bulkDepartureDateSetting;
         
         return $this;
     }

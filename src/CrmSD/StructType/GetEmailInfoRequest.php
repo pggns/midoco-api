@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetEmailInfoRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetEmailInfoRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetEmailInfoRequest extends AbstractStructBase
     /**
      * Set emailSender value
      * @param string $emailSender
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetEmailInfoRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetEmailInfoRequest
      */
     public function setEmailSender(?string $emailSender = null): self
     {

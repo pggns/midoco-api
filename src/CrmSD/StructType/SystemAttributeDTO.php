@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SystemAttributeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SystemAttributeDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set attributeName value
      * @param string $attributeName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO
      */
     public function setAttributeName(?string $attributeName = null): self
     {
@@ -86,7 +87,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set attributeValue value
      * @param string $attributeValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO
      */
     public function setAttributeValue(?string $attributeValue = null): self
     {
@@ -109,7 +110,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set systemName value
      * @param string $systemName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO
      */
     public function setSystemName(?string $systemName = null): self
     {
@@ -132,7 +133,7 @@ class SystemAttributeDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SystemAttributeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SystemAttributeDTO
      */
     public function setType(?string $type = null): self
     {

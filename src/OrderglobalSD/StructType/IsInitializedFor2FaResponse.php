@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for IsInitializedFor2FaResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class IsInitializedFor2FaResponse extends AbstractStructBase
 {
     /**

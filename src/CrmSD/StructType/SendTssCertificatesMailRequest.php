@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SendTssCertificatesMailRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SendTssCertificatesMailRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssCertificatesMailRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -86,7 +87,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssCertificatesMailRequest
      */
     public function setTssSystem(?string $tssSystem = null): self
     {
@@ -109,7 +110,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssCertificatesMailRequest
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -132,7 +133,7 @@ class SendTssCertificatesMailRequest extends AbstractStructBase
     /**
      * Set emailAddresses value
      * @param string $emailAddresses
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SendTssCertificatesMailRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SendTssCertificatesMailRequest
      */
     public function setEmailAddresses(?string $emailAddresses = null): self
     {

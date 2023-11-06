@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintQueueDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintQueueDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set creationUnitName value
      * @param string $creationUnitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintQueueDTO
      */
     public function setCreationUnitName(?string $creationUnitName = null): self
     {
@@ -94,7 +95,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set lastAccessTime value
      * @param string $lastAccessTime
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintQueueDTO
      */
     public function setLastAccessTime(?string $lastAccessTime = null): self
     {
@@ -117,7 +118,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set lastWorkstationId value
      * @param string $lastWorkstationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintQueueDTO
      */
     public function setLastWorkstationId(?string $lastWorkstationId = null): self
     {
@@ -140,7 +141,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set queueId value
      * @param int $queueId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintQueueDTO
      */
     public function setQueueId(?int $queueId = null): self
     {
@@ -163,7 +164,7 @@ class PrintQueueDTO extends AbstractStructBase
     /**
      * Set queueName value
      * @param string $queueName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintQueueDTO
      */
     public function setQueueName(?string $queueName = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FareTypeDimensionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class FareTypeDimensionDTO extends AbstractStructBase
 {
     /**

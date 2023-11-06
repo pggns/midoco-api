@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MakeBillingDocument4BonusClearingResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MakeBillingDocument4BonusClearingResponse extends AbstractStructBase
 {
     /**
@@ -39,12 +40,13 @@ class MakeBillingDocument4BonusClearingResponse extends AbstractStructBase
         return $this->printjobId;
     }
     /**
-     * This method is responsible for validating the values passed to the setPrintjobId method
+     * This method is responsible for validating the value(s) passed to the setPrintjobId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPrintjobId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePrintjobIdForArrayConstraintsFromSetPrintjobId(?array $values = []): string
+    public static function validatePrintjobIdForArrayConstraintFromSetPrintjobId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -73,7 +75,7 @@ class MakeBillingDocument4BonusClearingResponse extends AbstractStructBase
     public function setPrintjobId(?array $printjobId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($printjobIdArrayErrorMessage = self::validatePrintjobIdForArrayConstraintsFromSetPrintjobId($printjobId))) {
+        if ('' !== ($printjobIdArrayErrorMessage = self::validatePrintjobIdForArrayConstraintFromSetPrintjobId($printjobId))) {
             throw new InvalidArgumentException($printjobIdArrayErrorMessage, __LINE__);
         }
         $this->printjobId = $printjobId;

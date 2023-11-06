@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getFirstCustomerForCampaign --- returns the first result customer from a campaign (for display template)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetFirstCustomerForCampaignResponse extends AbstractStructBase
 {
     /**

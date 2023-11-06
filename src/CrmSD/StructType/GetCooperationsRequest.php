@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCooperationsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCooperationsRequest extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class GetCooperationsRequest extends AbstractStructBase
     /**
      * Set cooperationId value
      * @param string $cooperationId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCooperationsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCooperationsRequest
      */
     public function setCooperationId(?string $cooperationId = null): self
     {
@@ -78,7 +79,7 @@ class GetCooperationsRequest extends AbstractStructBase
     /**
      * Set notLocked value
      * @param bool $notLocked
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCooperationsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCooperationsRequest
      */
     public function setNotLocked(?bool $notLocked = null): self
     {
@@ -101,7 +102,7 @@ class GetCooperationsRequest extends AbstractStructBase
     /**
      * Set notDeleted value
      * @param bool $notDeleted
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetCooperationsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetCooperationsRequest
      */
     public function setNotDeleted(?bool $notDeleted = null): self
     {

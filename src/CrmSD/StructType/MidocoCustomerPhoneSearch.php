@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerPhoneSearch StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerPhoneSearch extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class MidocoCustomerPhoneSearch extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerPhoneSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerPhoneSearch
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -102,7 +103,7 @@ class MidocoCustomerPhoneSearch extends AbstractStructBase
     /**
      * Set contactId value
      * @param int $contactId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerPhoneSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerPhoneSearch
      */
     public function setContactId(?int $contactId = null): self
     {
@@ -125,7 +126,7 @@ class MidocoCustomerPhoneSearch extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerPhoneSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerPhoneSearch
      */
     public function setName(?string $name = null): self
     {
@@ -148,7 +149,7 @@ class MidocoCustomerPhoneSearch extends AbstractStructBase
     /**
      * Set forname value
      * @param string $forname
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerPhoneSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerPhoneSearch
      */
     public function setForname(?string $forname = null): self
     {
@@ -171,7 +172,7 @@ class MidocoCustomerPhoneSearch extends AbstractStructBase
     /**
      * Set phoneNo value
      * @param string $phoneNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerPhoneSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerPhoneSearch
      */
     public function setPhoneNo(?string $phoneNo = null): self
     {
@@ -194,7 +195,7 @@ class MidocoCustomerPhoneSearch extends AbstractStructBase
     /**
      * Set normaalizedPhoneNo value
      * @param string $normaalizedPhoneNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerPhoneSearch
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerPhoneSearch
      */
     public function setNormaalizedPhoneNo(?string $normaalizedPhoneNo = null): self
     {

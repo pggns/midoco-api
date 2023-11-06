@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetEMDSubgroupsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetEMDSubgroupsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetEMDSubgroupsResponse extends AbstractStructBase
         return $this->MidocoEMDSubgroup;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoEMDSubgroup method
+     * This method is responsible for validating the value(s) passed to the setMidocoEMDSubgroup method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEMDSubgroup method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoEMDSubgroupForArrayConstraintsFromSetMidocoEMDSubgroup(?array $values = []): string
+    public static function validateMidocoEMDSubgroupForArrayConstraintFromSetMidocoEMDSubgroup(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetEMDSubgroupsResponse extends AbstractStructBase
     public function setMidocoEMDSubgroup(?array $midocoEMDSubgroup = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoEMDSubgroupArrayErrorMessage = self::validateMidocoEMDSubgroupForArrayConstraintsFromSetMidocoEMDSubgroup($midocoEMDSubgroup))) {
+        if ('' !== ($midocoEMDSubgroupArrayErrorMessage = self::validateMidocoEMDSubgroupForArrayConstraintFromSetMidocoEMDSubgroup($midocoEMDSubgroup))) {
             throw new InvalidArgumentException($midocoEMDSubgroupArrayErrorMessage, __LINE__);
         }
         $this->MidocoEMDSubgroup = $midocoEMDSubgroup;

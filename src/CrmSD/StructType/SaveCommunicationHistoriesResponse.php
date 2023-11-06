@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveCommunicationHistoriesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveCommunicationHistoriesResponse extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class SaveCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCommunicationHistoriesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCommunicationHistoriesResponse
      */
     public function setId(?int $id = null): self
     {
@@ -70,7 +71,7 @@ class SaveCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveCommunicationHistoriesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveCommunicationHistoriesResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

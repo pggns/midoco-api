@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MailQueueDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MailQueueDTO extends AbstractStructBase
 {
     /**
@@ -87,7 +88,7 @@ class MailQueueDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MailQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MailQueueDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -110,7 +111,7 @@ class MailQueueDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MailQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MailQueueDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -133,7 +134,7 @@ class MailQueueDTO extends AbstractStructBase
     /**
      * Set lastTryTimestamp value
      * @param string $lastTryTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MailQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MailQueueDTO
      */
     public function setLastTryTimestamp(?string $lastTryTimestamp = null): self
     {
@@ -156,7 +157,7 @@ class MailQueueDTO extends AbstractStructBase
     /**
      * Set mailId value
      * @param int $mailId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MailQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MailQueueDTO
      */
     public function setMailId(?int $mailId = null): self
     {
@@ -179,7 +180,7 @@ class MailQueueDTO extends AbstractStructBase
     /**
      * Set mailMessage value
      * @param string $mailMessage
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MailQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MailQueueDTO
      */
     public function setMailMessage(?string $mailMessage = null): self
     {
@@ -202,7 +203,7 @@ class MailQueueDTO extends AbstractStructBase
     /**
      * Set noOfTries value
      * @param int $noOfTries
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MailQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MailQueueDTO
      */
     public function setNoOfTries(?int $noOfTries = null): self
     {
@@ -225,7 +226,7 @@ class MailQueueDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MailQueueDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MailQueueDTO
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SavePrintjobRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SavePrintjobRequest extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class SavePrintjobRequest extends AbstractStructBase
     /**
      * Set preview value
      * @param bool $preview
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePrintjobRequest
      */
     public function setPreview(?bool $preview = null): self
     {
@@ -102,7 +103,7 @@ class SavePrintjobRequest extends AbstractStructBase
     /**
      * Set num_copies value
      * @param int $num_copies
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePrintjobRequest
      */
     public function setNum_copies(?int $num_copies = null): self
     {
@@ -125,7 +126,7 @@ class SavePrintjobRequest extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePrintjobRequest
      */
     public function setType(?string $type = null): self
     {
@@ -148,7 +149,7 @@ class SavePrintjobRequest extends AbstractStructBase
     /**
      * Set printjob_data value
      * @param string $printjob_data
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePrintjobRequest
      */
     public function setPrintjob_data(?string $printjob_data = null): self
     {
@@ -171,7 +172,7 @@ class SavePrintjobRequest extends AbstractStructBase
     /**
      * Set printjobId value
      * @param string $printjobId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePrintjobRequest
      */
     public function setPrintjobId(?string $printjobId = null): self
     {
@@ -194,7 +195,7 @@ class SavePrintjobRequest extends AbstractStructBase
     /**
      * Set media value
      * @param string $media
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SavePrintjobRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SavePrintjobRequest
      */
     public function setMedia(?string $media = null): self
     {

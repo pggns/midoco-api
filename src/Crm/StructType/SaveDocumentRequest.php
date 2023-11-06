@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveDocumentRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveDocumentRequest extends AbstractStructBase
 {
     /**
@@ -26,17 +27,25 @@ class SaveDocumentRequest extends AbstractStructBase
      */
     protected ?int $internalVersion = null;
     /**
+     * The documentContent
+     * @var string|null
+     */
+    protected ?string $documentContent = null;
+    /**
      * Constructor method for SaveDocumentRequest
      * @uses SaveDocumentRequest::setMidocoCrmDocument()
      * @uses SaveDocumentRequest::setInternalVersion()
+     * @uses SaveDocumentRequest::setDocumentContent()
      * @param \Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $midocoCrmDocument
      * @param int $internalVersion
+     * @param string $documentContent
      */
-    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $midocoCrmDocument = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CrmDocumentDTO $midocoCrmDocument = null, ?int $internalVersion = null, ?string $documentContent = null)
     {
         $this
             ->setMidocoCrmDocument($midocoCrmDocument)
-            ->setInternalVersion($internalVersion);
+            ->setInternalVersion($internalVersion)
+            ->setDocumentContent($documentContent);
     }
     /**
      * Get MidocoCrmDocument value
@@ -77,6 +86,29 @@ class SaveDocumentRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($internalVersion, true), gettype($internalVersion)), __LINE__);
         }
         $this->internalVersion = $internalVersion;
+        
+        return $this;
+    }
+    /**
+     * Get documentContent value
+     * @return string|null
+     */
+    public function getDocumentContent(): ?string
+    {
+        return $this->documentContent;
+    }
+    /**
+     * Set documentContent value
+     * @param string $documentContent
+     * @return \Pggns\MidocoApi\Crm\StructType\SaveDocumentRequest
+     */
+    public function setDocumentContent(?string $documentContent = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($documentContent) && !is_string($documentContent)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($documentContent, true), gettype($documentContent)), __LINE__);
+        }
+        $this->documentContent = $documentContent;
         
         return $this;
     }

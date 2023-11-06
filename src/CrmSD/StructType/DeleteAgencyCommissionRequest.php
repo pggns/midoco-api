@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteAgencyCommissionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteAgencyCommissionRequest extends AbstractStructBase
 {
     /**
      * The MidocoAgencyCommission
      * Meta information extracted from the WSDL
      * - ref: MidocoAgencyCommission
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $MidocoAgencyCommission = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO $MidocoAgencyCommission = null;
     /**
      * The internalVersion
      * @var int|null
@@ -29,10 +30,10 @@ class DeleteAgencyCommissionRequest extends AbstractStructBase
      * Constructor method for DeleteAgencyCommissionRequest
      * @uses DeleteAgencyCommissionRequest::setMidocoAgencyCommission()
      * @uses DeleteAgencyCommissionRequest::setInternalVersion()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO $midocoAgencyCommission
      * @param int $internalVersion
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission = null, ?int $internalVersion = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO $midocoAgencyCommission = null, ?int $internalVersion = null)
     {
         $this
             ->setMidocoAgencyCommission($midocoAgencyCommission)
@@ -40,18 +41,18 @@ class DeleteAgencyCommissionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoAgencyCommission value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO|null
      */
-    public function getMidocoAgencyCommission(): ?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO
+    public function getMidocoAgencyCommission(): ?\Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO
     {
         return $this->MidocoAgencyCommission;
     }
     /**
      * Set MidocoAgencyCommission value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteAgencyCommissionRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO $midocoAgencyCommission
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteAgencyCommissionRequest
      */
-    public function setMidocoAgencyCommission(?\Pggns\MidocoApi\CrmSD\StructType\AgencyCommissionDTO $midocoAgencyCommission = null): self
+    public function setMidocoAgencyCommission(?\Pggns\MidocoApi\Crmsd\StructType\AgencyCommissionDTO $midocoAgencyCommission = null): self
     {
         $this->MidocoAgencyCommission = $midocoAgencyCommission;
         
@@ -68,7 +69,7 @@ class DeleteAgencyCommissionRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteAgencyCommissionRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteAgencyCommissionRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

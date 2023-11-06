@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetReportWithSameParamRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetReportWithSameParamRequest extends AbstractStructBase
 {
     /**

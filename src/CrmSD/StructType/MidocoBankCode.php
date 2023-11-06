@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoBankCode StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoBankCode extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class MidocoBankCode extends AbstractStructBase
     /**
      * Set stadt value
      * @param string $stadt
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoBankCode
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoBankCode
      */
     public function setStadt(?string $stadt = null): self
     {
@@ -78,7 +79,7 @@ class MidocoBankCode extends AbstractStructBase
     /**
      * Set bank value
      * @param string $bank
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoBankCode
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoBankCode
      */
     public function setBank(?string $bank = null): self
     {
@@ -101,7 +102,7 @@ class MidocoBankCode extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoBankCode
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoBankCode
      */
     public function setCode(?string $code = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmMidocoSettlMdoc StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
 {
     /**
@@ -19,7 +20,7 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmMidocoSettlMdocLevel
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO[]
      */
     protected ?array $MidocoCrmMidocoSettlMdocLevel = null;
     /**
@@ -28,15 +29,15 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoMdocOUnit
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO[]
      */
     protected ?array $MidocoAssignedMidocoMdocOUnit = null;
     /**
      * Constructor method for MidocoCrmMidocoSettlMdoc
      * @uses MidocoCrmMidocoSettlMdoc::setMidocoCrmMidocoSettlMdocLevel()
      * @uses MidocoCrmMidocoSettlMdoc::setMidocoAssignedMidocoMdocOUnit()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
      */
     public function __construct(?array $midocoCrmMidocoSettlMdocLevel = null, ?array $midocoAssignedMidocoMdocOUnit = null)
     {
@@ -46,19 +47,20 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     }
     /**
      * Get MidocoCrmMidocoSettlMdocLevel value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO[]
      */
     public function getMidocoCrmMidocoSettlMdocLevel(): ?array
     {
         return $this->MidocoCrmMidocoSettlMdocLevel;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmMidocoSettlMdocLevel method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmMidocoSettlMdocLevel method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmMidocoSettlMdocLevel method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlMdocLevel(?array $values = []): string
+    public static function validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintFromSetMidocoCrmMidocoSettlMdocLevel(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -67,12 +69,12 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO) {
+            if (!$midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem) ? get_class($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem), var_export($midocoCrmMidocoSettlMdocMidocoCrmMidocoSettlMdocLevelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -81,13 +83,13 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Set MidocoCrmMidocoSettlMdocLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO[] $midocoCrmMidocoSettlMdocLevel
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmMidocoSettlMdoc
      */
     public function setMidocoCrmMidocoSettlMdocLevel(?array $midocoCrmMidocoSettlMdocLevel = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmMidocoSettlMdocLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintsFromSetMidocoCrmMidocoSettlMdocLevel($midocoCrmMidocoSettlMdocLevel))) {
+        if ('' !== ($midocoCrmMidocoSettlMdocLevelArrayErrorMessage = self::validateMidocoCrmMidocoSettlMdocLevelForArrayConstraintFromSetMidocoCrmMidocoSettlMdocLevel($midocoCrmMidocoSettlMdocLevel))) {
             throw new InvalidArgumentException($midocoCrmMidocoSettlMdocLevelArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmMidocoSettlMdocLevel = $midocoCrmMidocoSettlMdocLevel;
@@ -97,14 +99,14 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Add item to MidocoCrmMidocoSettlMdocLevel value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmMidocoSettlMdoc
      */
-    public function addToMidocoCrmMidocoSettlMdocLevel(\Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO $item): self
+    public function addToMidocoCrmMidocoSettlMdocLevel(\Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmMidocoSettlMdocLevel property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\CrmMidocoSettlMdocLevelDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmMidocoSettlMdocLevel[] = $item;
         
@@ -112,19 +114,20 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     }
     /**
      * Get MidocoAssignedMidocoMdocOUnit value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO[]
      */
     public function getMidocoAssignedMidocoMdocOUnit(): ?array
     {
         return $this->MidocoAssignedMidocoMdocOUnit;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAssignedMidocoMdocOUnit method
+     * This method is responsible for validating the value(s) passed to the setMidocoAssignedMidocoMdocOUnit method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAssignedMidocoMdocOUnit method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAssignedMidocoMdocOUnitForArrayConstraintsFromSetMidocoAssignedMidocoMdocOUnit(?array $values = []): string
+    public static function validateMidocoAssignedMidocoMdocOUnitForArrayConstraintFromSetMidocoAssignedMidocoMdocOUnit(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -133,12 +136,12 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO) {
+            if (!$midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem instanceof \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem) ? get_class($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem), var_export($midocoCrmMidocoSettlMdocMidocoAssignedMidocoMdocOUnitItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -147,13 +150,13 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Set MidocoAssignedMidocoMdocOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO[] $midocoAssignedMidocoMdocOUnit
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmMidocoSettlMdoc
      */
     public function setMidocoAssignedMidocoMdocOUnit(?array $midocoAssignedMidocoMdocOUnit = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAssignedMidocoMdocOUnitArrayErrorMessage = self::validateMidocoAssignedMidocoMdocOUnitForArrayConstraintsFromSetMidocoAssignedMidocoMdocOUnit($midocoAssignedMidocoMdocOUnit))) {
+        if ('' !== ($midocoAssignedMidocoMdocOUnitArrayErrorMessage = self::validateMidocoAssignedMidocoMdocOUnitForArrayConstraintFromSetMidocoAssignedMidocoMdocOUnit($midocoAssignedMidocoMdocOUnit))) {
             throw new InvalidArgumentException($midocoAssignedMidocoMdocOUnitArrayErrorMessage, __LINE__);
         }
         $this->MidocoAssignedMidocoMdocOUnit = $midocoAssignedMidocoMdocOUnit;
@@ -163,14 +166,14 @@ class MidocoCrmMidocoSettlMdoc extends CrmMidocoSettlMdocDTO
     /**
      * Add item to MidocoAssignedMidocoMdocOUnit value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoSettlMdoc
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmMidocoSettlMdoc
      */
-    public function addToMidocoAssignedMidocoMdocOUnit(\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO $item): self
+    public function addToMidocoAssignedMidocoMdocOUnit(\Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoMdocOUnit property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoMdocOUnitDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAssignedMidocoMdocOUnit[] = $item;
         

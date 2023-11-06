@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoAgencyProvisionInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoAgencyProvisionInfo extends AbstractStructBase
 {
     /**
@@ -69,6 +70,11 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
      */
     protected ?bool $containsStorno = null;
     /**
+     * The agencyCurrency
+     * @var string|null
+     */
+    protected ?string $agencyCurrency = null;
+    /**
      * Constructor method for MidocoAgencyProvisionInfo
      * @uses MidocoAgencyProvisionInfo::setTempRepositoryId()
      * @uses MidocoAgencyProvisionInfo::setAgencyId()
@@ -81,6 +87,7 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
      * @uses MidocoAgencyProvisionInfo::setInkassoAmount()
      * @uses MidocoAgencyProvisionInfo::setOrders()
      * @uses MidocoAgencyProvisionInfo::setContainsStorno()
+     * @uses MidocoAgencyProvisionInfo::setAgencyCurrency()
      * @param int $tempRepositoryId
      * @param string $agencyId
      * @param string $agencyName
@@ -92,8 +99,9 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
      * @param float $inkassoAmount
      * @param int $orders
      * @param bool $containsStorno
+     * @param string $agencyCurrency
      */
-    public function __construct(?int $tempRepositoryId = null, ?string $agencyId = null, ?string $agencyName = null, ?float $paidAmount = null, ?string $settlementDate = null, ?int $settlementId = null, ?float $totalProvisionVat = null, ?float $totalProvision = null, ?float $inkassoAmount = null, ?int $orders = null, ?bool $containsStorno = null)
+    public function __construct(?int $tempRepositoryId = null, ?string $agencyId = null, ?string $agencyName = null, ?float $paidAmount = null, ?string $settlementDate = null, ?int $settlementId = null, ?float $totalProvisionVat = null, ?float $totalProvision = null, ?float $inkassoAmount = null, ?int $orders = null, ?bool $containsStorno = null, ?string $agencyCurrency = null)
     {
         $this
             ->setTempRepositoryId($tempRepositoryId)
@@ -106,7 +114,8 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
             ->setTotalProvision($totalProvision)
             ->setInkassoAmount($inkassoAmount)
             ->setOrders($orders)
-            ->setContainsStorno($containsStorno);
+            ->setContainsStorno($containsStorno)
+            ->setAgencyCurrency($agencyCurrency);
     }
     /**
      * Get tempRepositoryId value
@@ -358,6 +367,29 @@ class MidocoAgencyProvisionInfo extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($containsStorno, true), gettype($containsStorno)), __LINE__);
         }
         $this->containsStorno = $containsStorno;
+        
+        return $this;
+    }
+    /**
+     * Get agencyCurrency value
+     * @return string|null
+     */
+    public function getAgencyCurrency(): ?string
+    {
+        return $this->agencyCurrency;
+    }
+    /**
+     * Set agencyCurrency value
+     * @param string $agencyCurrency
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoAgencyProvisionInfo
+     */
+    public function setAgencyCurrency(?string $agencyCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($agencyCurrency) && !is_string($agencyCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($agencyCurrency, true), gettype($agencyCurrency)), __LINE__);
+        }
+        $this->agencyCurrency = $agencyCurrency;
         
         return $this;
     }

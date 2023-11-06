@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ComplaintStateDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ComplaintStateDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ComplaintStateDTO extends AbstractStructBase
     /**
      * Set complaintId value
      * @param int $complaintId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintStateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintStateDTO
      */
     public function setComplaintId(?int $complaintId = null): self
     {
@@ -78,7 +79,7 @@ class ComplaintStateDTO extends AbstractStructBase
     /**
      * Set state value
      * @param int $state
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintStateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintStateDTO
      */
     public function setState(?int $state = null): self
     {
@@ -101,7 +102,7 @@ class ComplaintStateDTO extends AbstractStructBase
     /**
      * Set stateId value
      * @param string $stateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ComplaintStateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ComplaintStateDTO
      */
     public function setStateId(?string $stateId = null): self
     {

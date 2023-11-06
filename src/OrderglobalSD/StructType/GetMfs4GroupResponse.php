@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfs4GroupResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfs4GroupResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMfs4GroupResponse extends AbstractStructBase
         return $this->MidocoMf;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMf method
+     * This method is responsible for validating the value(s) passed to the setMidocoMf method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMf method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMfForArrayConstraintsFromSetMidocoMf(?array $values = []): string
+    public static function validateMidocoMfForArrayConstraintFromSetMidocoMf(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMfs4GroupResponse extends AbstractStructBase
     public function setMidocoMf(?array $midocoMf = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMfArrayErrorMessage = self::validateMidocoMfForArrayConstraintsFromSetMidocoMf($midocoMf))) {
+        if ('' !== ($midocoMfArrayErrorMessage = self::validateMidocoMfForArrayConstraintFromSetMidocoMf($midocoMf))) {
             throw new InvalidArgumentException($midocoMfArrayErrorMessage, __LINE__);
         }
         $this->MidocoMf = $midocoMf;

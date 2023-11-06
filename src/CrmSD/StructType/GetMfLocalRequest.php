@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,15 +11,16 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMfLocalRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMfLocalRequest extends AbstractStructBase
 {
     /**
      * The MidocoMfLocal
      * Meta information extracted from the WSDL
      * - ref: MidocoMfLocal
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal $MidocoMfLocal = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal $MidocoMfLocal = null;
     /**
      * The unitName
      * @var string|null
@@ -29,10 +30,10 @@ class GetMfLocalRequest extends AbstractStructBase
      * Constructor method for GetMfLocalRequest
      * @uses GetMfLocalRequest::setMidocoMfLocal()
      * @uses GetMfLocalRequest::setUnitName()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal $midocoMfLocal
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal $midocoMfLocal
      * @param string $unitName
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal $midocoMfLocal = null, ?string $unitName = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal $midocoMfLocal = null, ?string $unitName = null)
     {
         $this
             ->setMidocoMfLocal($midocoMfLocal)
@@ -40,18 +41,18 @@ class GetMfLocalRequest extends AbstractStructBase
     }
     /**
      * Get MidocoMfLocal value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal|null
      */
-    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal
+    public function getMidocoMfLocal(): ?\Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal
     {
         return $this->MidocoMfLocal;
     }
     /**
      * Set MidocoMfLocal value
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal $midocoMfLocal
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfLocalRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal $midocoMfLocal
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfLocalRequest
      */
-    public function setMidocoMfLocal(?\Pggns\MidocoApi\CrmSD\StructType\MidocoMfLocal $midocoMfLocal = null): self
+    public function setMidocoMfLocal(?\Pggns\MidocoApi\Crmsd\StructType\MidocoMfLocal $midocoMfLocal = null): self
     {
         $this->MidocoMfLocal = $midocoMfLocal;
         
@@ -68,7 +69,7 @@ class GetMfLocalRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMfLocalRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMfLocalRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: actualize customer contact data (in background); MidocoContactType can have the old ContactType and optional the new; if MidocoContactType is empty than all customer contacts will be checked and actualized.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ActualizeCustomerContactDataRequest extends AbstractStructBase
 {
     /**
@@ -54,12 +55,13 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
         return $this->MidocoContactType;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoContactType method
+     * This method is responsible for validating the value(s) passed to the setMidocoContactType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoContactType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoContactTypeForArrayConstraintsFromSetMidocoContactType(?array $values = []): string
+    public static function validateMidocoContactTypeForArrayConstraintFromSetMidocoContactType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -88,7 +90,7 @@ class ActualizeCustomerContactDataRequest extends AbstractStructBase
     public function setMidocoContactType(?array $midocoContactType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoContactTypeArrayErrorMessage = self::validateMidocoContactTypeForArrayConstraintsFromSetMidocoContactType($midocoContactType))) {
+        if ('' !== ($midocoContactTypeArrayErrorMessage = self::validateMidocoContactTypeForArrayConstraintFromSetMidocoContactType($midocoContactType))) {
             throw new InvalidArgumentException($midocoContactTypeArrayErrorMessage, __LINE__);
         }
         // validation for constraint: maxOccurs(2)

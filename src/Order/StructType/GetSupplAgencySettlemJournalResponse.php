@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplAgencySettlemJournalResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
         return $this->MidocoSupplAgencySettlemJournal;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplAgencySettlemJournal method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplAgencySettlemJournal method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplAgencySettlemJournal method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplAgencySettlemJournalForArrayConstraintsFromSetMidocoSupplAgencySettlemJournal(?array $values = []): string
+    public static function validateMidocoSupplAgencySettlemJournalForArrayConstraintFromSetMidocoSupplAgencySettlemJournal(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSupplAgencySettlemJournalResponse extends AbstractStructBase
     public function setMidocoSupplAgencySettlemJournal(?array $midocoSupplAgencySettlemJournal = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplAgencySettlemJournalArrayErrorMessage = self::validateMidocoSupplAgencySettlemJournalForArrayConstraintsFromSetMidocoSupplAgencySettlemJournal($midocoSupplAgencySettlemJournal))) {
+        if ('' !== ($midocoSupplAgencySettlemJournalArrayErrorMessage = self::validateMidocoSupplAgencySettlemJournalForArrayConstraintFromSetMidocoSupplAgencySettlemJournal($midocoSupplAgencySettlemJournal))) {
             throw new InvalidArgumentException($midocoSupplAgencySettlemJournalArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplAgencySettlemJournal = $midocoSupplAgencySettlemJournal;

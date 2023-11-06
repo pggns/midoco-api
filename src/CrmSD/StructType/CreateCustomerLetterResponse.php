@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CreateCustomerLetterResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CreateCustomerLetterResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class CreateCustomerLetterResponse extends AbstractStructBase
     /**
      * Set PrintjobContent value
      * @param string $printjobContent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CreateCustomerLetterResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CreateCustomerLetterResponse
      */
     public function setPrintjobContent(?string $printjobContent = null): self
     {

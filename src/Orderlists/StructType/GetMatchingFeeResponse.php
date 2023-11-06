@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMatchingFeeResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMatchingFeeResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMatchingFeeResponse extends AbstractStructBase
         return $this->MidocoFeeTypeAssign;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFeeTypeAssign method
+     * This method is responsible for validating the value(s) passed to the setMidocoFeeTypeAssign method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFeeTypeAssign method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFeeTypeAssignForArrayConstraintsFromSetMidocoFeeTypeAssign(?array $values = []): string
+    public static function validateMidocoFeeTypeAssignForArrayConstraintFromSetMidocoFeeTypeAssign(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMatchingFeeResponse extends AbstractStructBase
     public function setMidocoFeeTypeAssign(?array $midocoFeeTypeAssign = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFeeTypeAssignArrayErrorMessage = self::validateMidocoFeeTypeAssignForArrayConstraintsFromSetMidocoFeeTypeAssign($midocoFeeTypeAssign))) {
+        if ('' !== ($midocoFeeTypeAssignArrayErrorMessage = self::validateMidocoFeeTypeAssignForArrayConstraintFromSetMidocoFeeTypeAssign($midocoFeeTypeAssign))) {
             throw new InvalidArgumentException($midocoFeeTypeAssignArrayErrorMessage, __LINE__);
         }
         $this->MidocoFeeTypeAssign = $midocoFeeTypeAssign;

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SkippedBookingDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SkippedBookingDTO extends AbstractStructBase
 {
     /**

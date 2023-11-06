@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetActualConsentResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetActualConsentResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetActualConsentResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoConsent
-     * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent[]
      */
     protected ?array $MidocoConsent = null;
     /**
      * Constructor method for GetActualConsentResponse
      * @uses GetActualConsentResponse::setMidocoConsent()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent[] $midocoConsent
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent[] $midocoConsent
      */
     public function __construct(?array $midocoConsent = null)
     {
@@ -34,19 +35,20 @@ class GetActualConsentResponse extends AbstractStructBase
     }
     /**
      * Get MidocoConsent value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent[]
      */
     public function getMidocoConsent(): ?array
     {
         return $this->MidocoConsent;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoConsent method
+     * This method is responsible for validating the value(s) passed to the setMidocoConsent method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoConsent method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoConsentForArrayConstraintsFromSetMidocoConsent(?array $values = []): string
+    public static function validateMidocoConsentForArrayConstraintFromSetMidocoConsent(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetActualConsentResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getActualConsentResponseMidocoConsentItem) {
             // validation for constraint: itemType
-            if (!$getActualConsentResponseMidocoConsentItem instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent) {
+            if (!$getActualConsentResponseMidocoConsentItem instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent) {
                 $invalidValues[] = is_object($getActualConsentResponseMidocoConsentItem) ? get_class($getActualConsentResponseMidocoConsentItem) : sprintf('%s(%s)', gettype($getActualConsentResponseMidocoConsentItem), var_export($getActualConsentResponseMidocoConsentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetActualConsentResponse extends AbstractStructBase
     /**
      * Set MidocoConsent value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent[] $midocoConsent
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetActualConsentResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent[] $midocoConsent
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetActualConsentResponse
      */
     public function setMidocoConsent(?array $midocoConsent = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoConsentArrayErrorMessage = self::validateMidocoConsentForArrayConstraintsFromSetMidocoConsent($midocoConsent))) {
+        if ('' !== ($midocoConsentArrayErrorMessage = self::validateMidocoConsentForArrayConstraintFromSetMidocoConsent($midocoConsent))) {
             throw new InvalidArgumentException($midocoConsentArrayErrorMessage, __LINE__);
         }
         $this->MidocoConsent = $midocoConsent;
@@ -85,14 +87,14 @@ class GetActualConsentResponse extends AbstractStructBase
     /**
      * Add item to MidocoConsent value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetActualConsentResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetActualConsentResponse
      */
-    public function addToMidocoConsent(\Pggns\MidocoApi\CrmSD\StructType\MidocoConsent $item): self
+    public function addToMidocoConsent(\Pggns\MidocoApi\Crmsd\StructType\MidocoConsent $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent) {
-            throw new InvalidArgumentException(sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\MidocoConsent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent) {
+            throw new InvalidArgumentException(sprintf('The MidocoConsent property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\MidocoConsent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoConsent[] = $item;
         

@@ -19,7 +19,7 @@ class Get extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Order\ServiceType\Get
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -128,6 +128,33 @@ class Get extends AbstractSoapClientBase
             ], [], [], $this->outputHeaders));
         
             return $resultGetBillingDocumentForSellItem;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getExtendedOrder
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\GetExtendedOrderRequest $paramGetExtendedOrderRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetExtendedOrderResponse|bool
+     */
+    public function getExtendedOrder(\Pggns\MidocoApi\Order\StructType\GetExtendedOrderRequest $paramGetExtendedOrderRequest)
+    {
+        try {
+            $this->setResult($resultGetExtendedOrder = $this->getSoapClient()->__soapCall('getExtendedOrder', [
+                $paramGetExtendedOrderRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetExtendedOrder;
         } catch (SoapFault $soapFault) {
             $this->saveLastError(__METHOD__, $soapFault);
         
@@ -4030,9 +4057,117 @@ class Get extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named getTravelnoPurchaseAssignments
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\GetTravelnoPurchaseAssignmentsRequest $paramGetTravelnoPurchaseAssignmentsRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetTravelnoPurchaseAssignmentsResponse|bool
+     */
+    public function getTravelnoPurchaseAssignments(\Pggns\MidocoApi\Order\StructType\GetTravelnoPurchaseAssignmentsRequest $paramGetTravelnoPurchaseAssignmentsRequest)
+    {
+        try {
+            $this->setResult($resultGetTravelnoPurchaseAssignments = $this->getSoapClient()->__soapCall('getTravelnoPurchaseAssignments', [
+                $paramGetTravelnoPurchaseAssignmentsRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetTravelnoPurchaseAssignments;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getUnprintedBulkCustomerInvoices
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\GetUnprintedBulkCustomerInvoicesRequest $paramGetUnprintedBulkCustomerInvoicesRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetUnprintedBulkCustomerInvoicesResponse|bool
+     */
+    public function getUnprintedBulkCustomerInvoices(\Pggns\MidocoApi\Order\StructType\GetUnprintedBulkCustomerInvoicesRequest $paramGetUnprintedBulkCustomerInvoicesRequest)
+    {
+        try {
+            $this->setResult($resultGetUnprintedBulkCustomerInvoices = $this->getSoapClient()->__soapCall('getUnprintedBulkCustomerInvoices', [
+                $paramGetUnprintedBulkCustomerInvoicesRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetUnprintedBulkCustomerInvoices;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getNeoExportString
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\GetNeoExportStringRequest $paramGetNeoExportStringRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetNeoExportStringResponse|bool
+     */
+    public function getNeoExportString(\Pggns\MidocoApi\Order\StructType\GetNeoExportStringRequest $paramGetNeoExportStringRequest)
+    {
+        try {
+            $this->setResult($resultGetNeoExportString = $this->getSoapClient()->__soapCall('getNeoExportString', [
+                $paramGetNeoExportStringRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetNeoExportString;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named getSabreVacationsExportString
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\GetSabreVacationsExportStringRequest $paramGetSabreVacationsExportStringRequest
+     * @return \Pggns\MidocoApi\Order\StructType\GetSabreVacationsExportStringResponse|bool
+     */
+    public function getSabreVacationsExportString(\Pggns\MidocoApi\Order\StructType\GetSabreVacationsExportStringRequest $paramGetSabreVacationsExportStringRequest)
+    {
+        try {
+            $this->setResult($resultGetSabreVacationsExportString = $this->getSoapClient()->__soapCall('getSabreVacationsExportString', [
+                $paramGetSabreVacationsExportStringRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultGetSabreVacationsExportString;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorBalanceResponse|\Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorPageResponse|\Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse|\Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetAdviceDetailResponse|\Pggns\MidocoApi\Order\StructType\GetAdviceSettlementDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetAgencySettlementLevelDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\GetAmadeusExportStringResponse|\Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetATOLType4OrderResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentForSellItemResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocValueResponse|\Pggns\MidocoApi\Order\StructType\GetBillingInternalVersionResponse|\Pggns\MidocoApi\Order\StructType\GetBillingNoticeCommentsResponse|\Pggns\MidocoApi\Order\StructType\GetBillingNoticesResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositions4BonusClearingResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositionsForDocumentIdResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositionsForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositionsForSellItemResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPrintInfoResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPrintSettingsResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPrintsResponse|\Pggns\MidocoApi\Order\StructType\GetBookingControlDataResponse|\Pggns\MidocoApi\Order\StructType\GetBookingInfo4KickbackResponse|\Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse|\Pggns\MidocoApi\Order\StructType\GetBookingMessage4OrderResponse|\Pggns\MidocoApi\Order\StructType\GetBookingMessage4TakeoffResponse|\Pggns\MidocoApi\Order\StructType\GetCashbooksResponse|\Pggns\MidocoApi\Order\StructType\GetCashTurnoverExportsResponse|\Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType|\Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierResponse|\Pggns\MidocoApi\Order\StructType\GetDebitInfoForReceiptResponse|\Pggns\MidocoApi\Order\StructType\GetDebitorForOrgunitResponse|\Pggns\MidocoApi\Order\StructType\GetDetailedBillingPositionsInfoResponse|\Pggns\MidocoApi\Order\StructType\GetDocumentIdForInvoiceResponse|\Pggns\MidocoApi\Order\StructType\GetEmailListResponse|\Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeResponse|\Pggns\MidocoApi\Order\StructType\GetEntryHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetErmMailInfoResponse|\Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberResponse|\Pggns\MidocoApi\Order\StructType\GetExportChangedOrdersResponse|\Pggns\MidocoApi\Order\StructType\GetExportMessages4OrderResponse|\Pggns\MidocoApi\Order\StructType\GetExternalLinksResponse|\Pggns\MidocoApi\Order\StructType\GetFeeTypesForAgencyResponse|\Pggns\MidocoApi\Order\StructType\GetFilteredBillingDocumentsForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetIncomingInvoiceResponse|\Pggns\MidocoApi\Order\StructType\GetInvoiceOrderByCustomerIdResponse|\Pggns\MidocoApi\Order\StructType\GetJournalExportFileResponse|\Pggns\MidocoApi\Order\StructType\GetLastDunningResponse|\Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse|\Pggns\MidocoApi\Order\StructType\GetMediatorBillingDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMediatorCommissionResponse|\Pggns\MidocoApi\Order\StructType\GetMediatorProductSettlementDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningResponse|\Pggns\MidocoApi\Order\StructType\GetMergedDunningResponse|\Pggns\MidocoApi\Order\StructType\GetMerlinExportStringResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementSellItemDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoBonusAdditionResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoBonusCalculationResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoItemSellingModesResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoOrderRecapMessageResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoVoucher4KickbackResponse|\Pggns\MidocoApi\Order\StructType\GetOrderAndCrmContactHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetOrderAttributesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderContactHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetOrderContextResponse|\Pggns\MidocoApi\Order\StructType\GetOrderCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetOrderDebitPaymentResponse|\Pggns\MidocoApi\Order\StructType\GetOrderDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetOrderHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetOrderIdForSellItemIdResponse|\Pggns\MidocoApi\Order\StructType\GetOrderInfoResponse|\Pggns\MidocoApi\Order\StructType\GetOrderInternalVersionResponse|\Pggns\MidocoApi\Order\StructType\GetOrderInvoicesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderLockPeriodResponse|\Pggns\MidocoApi\Order\StructType\GetOrderMarginResponse|\Pggns\MidocoApi\Order\StructType\GetOrderNoticeCommentsResponse|\Pggns\MidocoApi\Order\StructType\GetOrderNoticesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderOnlinePaymentResponse|\Pggns\MidocoApi\Order\StructType\GetOrderPaymentPaycodesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderPaymentsResponse|\Pggns\MidocoApi\Order\StructType\GetOrderRemarksResponse|\Pggns\MidocoApi\Order\StructType\GetOrderResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersContactHistoryForCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersForMediatorResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersForTravellerResponse|\Pggns\MidocoApi\Order\StructType\GetOrderStatusResponse|\Pggns\MidocoApi\Order\StructType\GetOrderVoucherResponse|\Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse|\Pggns\MidocoApi\Order\StructType\GetOrgUnitAndUserCashbookResponse|\Pggns\MidocoApi\Order\StructType\GetPackageInfoForBookingResponse|\Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse|\Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementResponse|\Pggns\MidocoApi\Order\StructType\GetPPTransactionsResponse|\Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocResponse|\Pggns\MidocoApi\Order\StructType\GetPrintSelectsForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetProcessedBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetReceiptResponse|\Pggns\MidocoApi\Order\StructType\GetRevenueBookingForSellitemResponse|\Pggns\MidocoApi\Order\StructType\GetSaveBookingControlResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemAttributesForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemAttributesResponse|\Pggns\MidocoApi\Order\StructType\GetSellitemDetailsForBonusEmployeeResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemProvisionResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemRevenuesResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemTooltipsResponse|\Pggns\MidocoApi\Order\StructType\GetSettlementInfoDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetShortOrderStatusResponse|\Pggns\MidocoApi\Order\StructType\GetSkippedBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetSubOrdersInfoResponse|\Pggns\MidocoApi\Order\StructType\GetSupplAgencySettlemJournalResponse|\Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetSupplierSettlementErrorResponse|\Pggns\MidocoApi\Order\StructType\GetTextForSellItemErrorResponse|\Pggns\MidocoApi\Order\StructType\GetTotalPartialInvoiceResponse|\Pggns\MidocoApi\Order\StructType\GetTravelCMSResponse|\Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoResponse|\Pggns\MidocoApi\Order\StructType\GetTravelDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetTravelersForDocumentIdResponse|\Pggns\MidocoApi\Order\StructType\GetTravelNoMarginItemsResponse|\Pggns\MidocoApi\Order\StructType\GetTravelNoMargins4SettlTypeResponse|\Pggns\MidocoApi\Order\StructType\GetTravelPlansResponse|\Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromAgencyResponse|\Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetTssProtocolResponse|\Pggns\MidocoApi\Order\StructType\GetUnassignedBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetUnitNameForBookingByIdResponse|\Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsResponse|\Pggns\MidocoApi\Order\StructType\GetUsersFromBonusCalculationResponse|\Pggns\MidocoApi\Order\StructType\GetVouchersForOrderResponse|\Pggns\MidocoApi\Order\StructType\TotalPartialPaymentsResponse
+     * @return \Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorBalanceResponse|\Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorPageResponse|\Pggns\MidocoApi\Order\StructType\GetAccountEntriesForDebitorResponse|\Pggns\MidocoApi\Order\StructType\GetAccountEntriesForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetAdviceDetailResponse|\Pggns\MidocoApi\Order\StructType\GetAdviceSettlementDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetAgencySettlementLevelDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\GetAmadeusExportStringResponse|\Pggns\MidocoApi\Order\StructType\GetAmwayMediatorBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetATOLType4OrderResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentForCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentForSellItemResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocumentResponse|\Pggns\MidocoApi\Order\StructType\GetBillingDocValueResponse|\Pggns\MidocoApi\Order\StructType\GetBillingInternalVersionResponse|\Pggns\MidocoApi\Order\StructType\GetBillingNoticeCommentsResponse|\Pggns\MidocoApi\Order\StructType\GetBillingNoticesResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositions4AgencyFeeTypeResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositions4BonusClearingResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositionsForDocumentIdResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositionsForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPositionsForSellItemResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPrintInfoResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPrintSettingsResponse|\Pggns\MidocoApi\Order\StructType\GetBillingPrintsResponse|\Pggns\MidocoApi\Order\StructType\GetBookingControlDataResponse|\Pggns\MidocoApi\Order\StructType\GetBookingInfo4KickbackResponse|\Pggns\MidocoApi\Order\StructType\GetBookingJournalResponse|\Pggns\MidocoApi\Order\StructType\GetBookingMessage4OrderResponse|\Pggns\MidocoApi\Order\StructType\GetBookingMessage4TakeoffResponse|\Pggns\MidocoApi\Order\StructType\GetCashbooksResponse|\Pggns\MidocoApi\Order\StructType\GetCashTurnoverExportsResponse|\Pggns\MidocoApi\Order\StructType\GetCmsHotelDataResponseType|\Pggns\MidocoApi\Order\StructType\GetConfirmationReceivedSellitemsForSupplierResponse|\Pggns\MidocoApi\Order\StructType\GetDebitInfoForReceiptResponse|\Pggns\MidocoApi\Order\StructType\GetDebitorForOrgunitResponse|\Pggns\MidocoApi\Order\StructType\GetDetailedBillingPositionsInfoResponse|\Pggns\MidocoApi\Order\StructType\GetDocumentIdForInvoiceResponse|\Pggns\MidocoApi\Order\StructType\GetEmailListResponse|\Pggns\MidocoApi\Order\StructType\GetEmailText4PrintTypeResponse|\Pggns\MidocoApi\Order\StructType\GetEntryHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetErmMailInfoResponse|\Pggns\MidocoApi\Order\StructType\GetExistingVoucherNumberResponse|\Pggns\MidocoApi\Order\StructType\GetExportChangedOrdersResponse|\Pggns\MidocoApi\Order\StructType\GetExportMessages4OrderResponse|\Pggns\MidocoApi\Order\StructType\GetExtendedOrderResponse|\Pggns\MidocoApi\Order\StructType\GetExternalLinksResponse|\Pggns\MidocoApi\Order\StructType\GetFeeTypesForAgencyResponse|\Pggns\MidocoApi\Order\StructType\GetFilteredBillingDocumentsForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetIncomingInvoiceResponse|\Pggns\MidocoApi\Order\StructType\GetInvoiceOrderByCustomerIdResponse|\Pggns\MidocoApi\Order\StructType\GetJournalExportFileResponse|\Pggns\MidocoApi\Order\StructType\GetLastDunningResponse|\Pggns\MidocoApi\Order\StructType\GetMdcSettlementBillingResponse|\Pggns\MidocoApi\Order\StructType\GetMediatorBillingDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMediatorCommissionResponse|\Pggns\MidocoApi\Order\StructType\GetMediatorProductSettlementDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMergedBillingDunningResponse|\Pggns\MidocoApi\Order\StructType\GetMergedDunningResponse|\Pggns\MidocoApi\Order\StructType\GetMerlinExportStringResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementOrderDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoAgencySettlementSellItemDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoBonusAdditionResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoBonusCalculationResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoBonusEmployeeResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoItemSellingModesResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoOrderRecapMessageResponse|\Pggns\MidocoApi\Order\StructType\GetMidocoVoucher4KickbackResponse|\Pggns\MidocoApi\Order\StructType\GetNeoExportStringResponse|\Pggns\MidocoApi\Order\StructType\GetOrderAndCrmContactHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetOrderAttributesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderContactHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetOrderContextResponse|\Pggns\MidocoApi\Order\StructType\GetOrderCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetOrderDebitPaymentResponse|\Pggns\MidocoApi\Order\StructType\GetOrderDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetOrderHistoryResponse|\Pggns\MidocoApi\Order\StructType\GetOrderIdForSellItemIdResponse|\Pggns\MidocoApi\Order\StructType\GetOrderInfoResponse|\Pggns\MidocoApi\Order\StructType\GetOrderInternalVersionResponse|\Pggns\MidocoApi\Order\StructType\GetOrderInvoicesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderLockPeriodResponse|\Pggns\MidocoApi\Order\StructType\GetOrderMarginResponse|\Pggns\MidocoApi\Order\StructType\GetOrderNoticeCommentsResponse|\Pggns\MidocoApi\Order\StructType\GetOrderNoticesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderOnlinePaymentResponse|\Pggns\MidocoApi\Order\StructType\GetOrderPaymentPaycodesResponse|\Pggns\MidocoApi\Order\StructType\GetOrderPaymentsResponse|\Pggns\MidocoApi\Order\StructType\GetOrderRemarksResponse|\Pggns\MidocoApi\Order\StructType\GetOrderResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersContactHistoryForCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersDbiInfosResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersForMediatorResponse|\Pggns\MidocoApi\Order\StructType\GetOrdersForTravellerResponse|\Pggns\MidocoApi\Order\StructType\GetOrderStatusResponse|\Pggns\MidocoApi\Order\StructType\GetOrderVoucherResponse|\Pggns\MidocoApi\Order\StructType\GetOrderWithSellItemExportLogResponse|\Pggns\MidocoApi\Order\StructType\GetOrgUnitAndUserCashbookResponse|\Pggns\MidocoApi\Order\StructType\GetPackageInfoForBookingResponse|\Pggns\MidocoApi\Order\StructType\GetPaymentAccrualForCreditorResponse|\Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetPaymentProviderSettlementResponse|\Pggns\MidocoApi\Order\StructType\GetPPTransactionsResponse|\Pggns\MidocoApi\Order\StructType\GetPrintedBillingDocResponse|\Pggns\MidocoApi\Order\StructType\GetPrintSelectsForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetProcessedBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetReceiptResponse|\Pggns\MidocoApi\Order\StructType\GetRevenueBookingForSellitemResponse|\Pggns\MidocoApi\Order\StructType\GetSabreVacationsExportStringResponse|\Pggns\MidocoApi\Order\StructType\GetSaveBookingControlResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemAttributesForOrderResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemAttributesResponse|\Pggns\MidocoApi\Order\StructType\GetSellitemDetailsForBonusEmployeeResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemProvisionResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemRevenuesResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemsSettlementNeededResponse|\Pggns\MidocoApi\Order\StructType\GetSellItemTooltipsResponse|\Pggns\MidocoApi\Order\StructType\GetSettlementInfoDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetShortOrderStatusResponse|\Pggns\MidocoApi\Order\StructType\GetSkippedBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetSubOrdersInfoResponse|\Pggns\MidocoApi\Order\StructType\GetSupplAgencySettlemJournalResponse|\Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetSupplierAgencySettlementDetailsResponse|\Pggns\MidocoApi\Order\StructType\GetSupplierSettlementErrorResponse|\Pggns\MidocoApi\Order\StructType\GetTextForSellItemErrorResponse|\Pggns\MidocoApi\Order\StructType\GetTotalPartialInvoiceResponse|\Pggns\MidocoApi\Order\StructType\GetTravelCMSResponse|\Pggns\MidocoApi\Order\StructType\GetTravelDocsPrintInfoResponse|\Pggns\MidocoApi\Order\StructType\GetTravelDocumentsResponse|\Pggns\MidocoApi\Order\StructType\GetTravelersForDocumentIdResponse|\Pggns\MidocoApi\Order\StructType\GetTravelNoMarginItemsResponse|\Pggns\MidocoApi\Order\StructType\GetTravelNoMargins4SettlTypeResponse|\Pggns\MidocoApi\Order\StructType\GetTravelnoPurchaseAssignmentsResponse|\Pggns\MidocoApi\Order\StructType\GetTravelPlansResponse|\Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromAgencyResponse|\Pggns\MidocoApi\Order\StructType\GetTravelStartDatesFromCustomerResponse|\Pggns\MidocoApi\Order\StructType\GetTssProtocolResponse|\Pggns\MidocoApi\Order\StructType\GetUnassignedBookingsResponse|\Pggns\MidocoApi\Order\StructType\GetUnitNameForBookingByIdResponse|\Pggns\MidocoApi\Order\StructType\GetUnprintedBulkCustomerInvoicesResponse|\Pggns\MidocoApi\Order\StructType\GetUnprintedOrderIDsResponse|\Pggns\MidocoApi\Order\StructType\GetUsersFromBonusCalculationResponse|\Pggns\MidocoApi\Order\StructType\GetVouchersForOrderResponse|\Pggns\MidocoApi\Order\StructType\TotalPartialPaymentsResponse
      */
     public function getResult()
     {

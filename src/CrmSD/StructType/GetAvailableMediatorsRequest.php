@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: get all available Medaitors for orgUnit
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailableMediatorsRequest extends AbstractStructBase
 {
     /**
@@ -41,7 +42,7 @@ class GetAvailableMediatorsRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAvailableMediatorsRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAvailableMediatorsRequest
      */
     public function setUnitName(?string $unitName = null): self
     {

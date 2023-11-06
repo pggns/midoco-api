@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RulesetTypeDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RulesetTypeDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class RulesetTypeDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RulesetTypeDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RulesetTypeDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoBonusAdditionResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoBonusAdditionResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetMidocoBonusAdditionResponse extends AbstractStructBase
         return $this->MidocoBonusAddition;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBonusAddition method
+     * This method is responsible for validating the value(s) passed to the setMidocoBonusAddition method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBonusAddition method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBonusAdditionForArrayConstraintsFromSetMidocoBonusAddition(?array $values = []): string
+    public static function validateMidocoBonusAdditionForArrayConstraintFromSetMidocoBonusAddition(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetMidocoBonusAdditionResponse extends AbstractStructBase
     public function setMidocoBonusAddition(?array $midocoBonusAddition = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBonusAdditionArrayErrorMessage = self::validateMidocoBonusAdditionForArrayConstraintsFromSetMidocoBonusAddition($midocoBonusAddition))) {
+        if ('' !== ($midocoBonusAdditionArrayErrorMessage = self::validateMidocoBonusAdditionForArrayConstraintFromSetMidocoBonusAddition($midocoBonusAddition))) {
             throw new InvalidArgumentException($midocoBonusAdditionArrayErrorMessage, __LINE__);
         }
         $this->MidocoBonusAddition = $midocoBonusAddition;

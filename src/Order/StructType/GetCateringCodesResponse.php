@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCateringCodesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCateringCodesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCateringCodesResponse extends AbstractStructBase
         return $this->MidocoCateringCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCateringCode method
+     * This method is responsible for validating the value(s) passed to the setMidocoCateringCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCateringCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCateringCodeForArrayConstraintsFromSetMidocoCateringCode(?array $values = []): string
+    public static function validateMidocoCateringCodeForArrayConstraintFromSetMidocoCateringCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCateringCodesResponse extends AbstractStructBase
     public function setMidocoCateringCode(?array $midocoCateringCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCateringCodeArrayErrorMessage = self::validateMidocoCateringCodeForArrayConstraintsFromSetMidocoCateringCode($midocoCateringCode))) {
+        if ('' !== ($midocoCateringCodeArrayErrorMessage = self::validateMidocoCateringCodeForArrayConstraintFromSetMidocoCateringCode($midocoCateringCode))) {
             throw new InvalidArgumentException($midocoCateringCodeArrayErrorMessage, __LINE__);
         }
         $this->MidocoCateringCode = $midocoCateringCode;

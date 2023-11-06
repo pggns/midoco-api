@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for VirtualAccountDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class VirtualAccountDTO extends AbstractStructBase
 {
     /**
@@ -18,16 +19,6 @@ class VirtualAccountDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $accountId = null;
-    /**
-     * The bookingPeriod
-     * @var int|null
-     */
-    protected ?int $bookingPeriod = null;
-    /**
-     * The bookingYear
-     * @var int|null
-     */
-    protected ?int $bookingYear = null;
     /**
      * The planId
      * @var string|null
@@ -51,26 +42,20 @@ class VirtualAccountDTO extends AbstractStructBase
     /**
      * Constructor method for VirtualAccountDTO
      * @uses VirtualAccountDTO::setAccountId()
-     * @uses VirtualAccountDTO::setBookingPeriod()
-     * @uses VirtualAccountDTO::setBookingYear()
      * @uses VirtualAccountDTO::setPlanId()
      * @uses VirtualAccountDTO::setProductType()
      * @uses VirtualAccountDTO::setUsedAccount()
      * @uses VirtualAccountDTO::setVirtualAccountId()
      * @param string $accountId
-     * @param int $bookingPeriod
-     * @param int $bookingYear
      * @param string $planId
      * @param string $productType
      * @param string $usedAccount
      * @param int $virtualAccountId
      */
-    public function __construct(?string $accountId = null, ?int $bookingPeriod = null, ?int $bookingYear = null, ?string $planId = null, ?string $productType = null, ?string $usedAccount = null, ?int $virtualAccountId = null)
+    public function __construct(?string $accountId = null, ?string $planId = null, ?string $productType = null, ?string $usedAccount = null, ?int $virtualAccountId = null)
     {
         $this
             ->setAccountId($accountId)
-            ->setBookingPeriod($bookingPeriod)
-            ->setBookingYear($bookingYear)
             ->setPlanId($planId)
             ->setProductType($productType)
             ->setUsedAccount($usedAccount)
@@ -96,52 +81,6 @@ class VirtualAccountDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($accountId, true), gettype($accountId)), __LINE__);
         }
         $this->accountId = $accountId;
-        
-        return $this;
-    }
-    /**
-     * Get bookingPeriod value
-     * @return int|null
-     */
-    public function getBookingPeriod(): ?int
-    {
-        return $this->bookingPeriod;
-    }
-    /**
-     * Set bookingPeriod value
-     * @param int $bookingPeriod
-     * @return \Pggns\MidocoApi\Orderlists\StructType\VirtualAccountDTO
-     */
-    public function setBookingPeriod(?int $bookingPeriod = null): self
-    {
-        // validation for constraint: int
-        if (!is_null($bookingPeriod) && !(is_int($bookingPeriod) || ctype_digit($bookingPeriod))) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bookingPeriod, true), gettype($bookingPeriod)), __LINE__);
-        }
-        $this->bookingPeriod = $bookingPeriod;
-        
-        return $this;
-    }
-    /**
-     * Get bookingYear value
-     * @return int|null
-     */
-    public function getBookingYear(): ?int
-    {
-        return $this->bookingYear;
-    }
-    /**
-     * Set bookingYear value
-     * @param int $bookingYear
-     * @return \Pggns\MidocoApi\Orderlists\StructType\VirtualAccountDTO
-     */
-    public function setBookingYear(?int $bookingYear = null): self
-    {
-        // validation for constraint: int
-        if (!is_null($bookingYear) && !(is_int($bookingYear) || ctype_digit($bookingYear))) {
-            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($bookingYear, true), gettype($bookingYear)), __LINE__);
-        }
-        $this->bookingYear = $bookingYear;
         
         return $this;
     }

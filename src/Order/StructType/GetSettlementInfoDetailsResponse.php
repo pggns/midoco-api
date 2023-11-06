@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: retrieve the settlement info details
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSettlementInfoDetailsResponse extends AbstractStructBase
 {
     /**
@@ -55,12 +56,13 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
         return $this->MidocoSettlementInfoDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSettlementInfoDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoSettlementInfoDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSettlementInfoDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSettlementInfoDetailForArrayConstraintsFromSetMidocoSettlementInfoDetail(?array $values = []): string
+    public static function validateMidocoSettlementInfoDetailForArrayConstraintFromSetMidocoSettlementInfoDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -89,7 +91,7 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     public function setMidocoSettlementInfoDetail(?array $midocoSettlementInfoDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSettlementInfoDetailArrayErrorMessage = self::validateMidocoSettlementInfoDetailForArrayConstraintsFromSetMidocoSettlementInfoDetail($midocoSettlementInfoDetail))) {
+        if ('' !== ($midocoSettlementInfoDetailArrayErrorMessage = self::validateMidocoSettlementInfoDetailForArrayConstraintFromSetMidocoSettlementInfoDetail($midocoSettlementInfoDetail))) {
             throw new InvalidArgumentException($midocoSettlementInfoDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoSettlementInfoDetail = $midocoSettlementInfoDetail;
@@ -121,12 +123,13 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
         return $this->MidocoMediatorCharge;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoMediatorCharge method
+     * This method is responsible for validating the value(s) passed to the setMidocoMediatorCharge method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoMediatorCharge method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoMediatorChargeForArrayConstraintsFromSetMidocoMediatorCharge(?array $values = []): string
+    public static function validateMidocoMediatorChargeForArrayConstraintFromSetMidocoMediatorCharge(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -155,7 +158,7 @@ class GetSettlementInfoDetailsResponse extends AbstractStructBase
     public function setMidocoMediatorCharge(?array $midocoMediatorCharge = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoMediatorChargeArrayErrorMessage = self::validateMidocoMediatorChargeForArrayConstraintsFromSetMidocoMediatorCharge($midocoMediatorCharge))) {
+        if ('' !== ($midocoMediatorChargeArrayErrorMessage = self::validateMidocoMediatorChargeForArrayConstraintFromSetMidocoMediatorCharge($midocoMediatorCharge))) {
             throw new InvalidArgumentException($midocoMediatorChargeArrayErrorMessage, __LINE__);
         }
         $this->MidocoMediatorCharge = $midocoMediatorCharge;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetModifiedCustomersRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetModifiedCustomersRequest extends AbstractStructBase
 {
     /**
@@ -51,7 +52,7 @@ class GetModifiedCustomersRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetModifiedCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetModifiedCustomersRequest
      */
     public function setStartDate(string $startDate): self
     {
@@ -74,7 +75,7 @@ class GetModifiedCustomersRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetModifiedCustomersRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetModifiedCustomersRequest
      */
     public function setEndDate(?string $endDate = null): self
     {

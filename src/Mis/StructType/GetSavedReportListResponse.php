@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSavedReportListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSavedReportListResponse extends AbstractStructBase
 {
     /**
@@ -40,12 +41,13 @@ class GetSavedReportListResponse extends AbstractStructBase
         return $this->MidocoSavedReportSameParamList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSavedReportSameParamList method
+     * This method is responsible for validating the value(s) passed to the setMidocoSavedReportSameParamList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSavedReportSameParamList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSavedReportSameParamListForArrayConstraintsFromSetMidocoSavedReportSameParamList(?array $values = []): string
+    public static function validateMidocoSavedReportSameParamListForArrayConstraintFromSetMidocoSavedReportSameParamList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -74,7 +76,7 @@ class GetSavedReportListResponse extends AbstractStructBase
     public function setMidocoSavedReportSameParamList(?array $midocoSavedReportSameParamList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSavedReportSameParamListArrayErrorMessage = self::validateMidocoSavedReportSameParamListForArrayConstraintsFromSetMidocoSavedReportSameParamList($midocoSavedReportSameParamList))) {
+        if ('' !== ($midocoSavedReportSameParamListArrayErrorMessage = self::validateMidocoSavedReportSameParamListForArrayConstraintFromSetMidocoSavedReportSameParamList($midocoSavedReportSameParamList))) {
             throw new InvalidArgumentException($midocoSavedReportSameParamListArrayErrorMessage, __LINE__);
         }
         $this->MidocoSavedReportSameParamList = $midocoSavedReportSameParamList;

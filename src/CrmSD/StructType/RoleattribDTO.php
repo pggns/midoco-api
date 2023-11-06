@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RoleattribDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RoleattribDTO extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class RoleattribDTO extends AbstractStructBase
     /**
      * Set attribName value
      * @param string $attribName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\RoleattribDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\RoleattribDTO
      */
     public function setAttribName(?string $attribName = null): self
     {

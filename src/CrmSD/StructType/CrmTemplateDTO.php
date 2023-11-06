@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CrmTemplateDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CrmTemplateDTO extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class CrmTemplateDTO extends AbstractStructBase
     /**
      * Set defaultLanguage value
      * @param string $defaultLanguage
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateDTO
      */
     public function setDefaultLanguage(?string $defaultLanguage = null): self
     {
@@ -94,7 +95,7 @@ class CrmTemplateDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -117,7 +118,7 @@ class CrmTemplateDTO extends AbstractStructBase
     /**
      * Set templateId value
      * @param int $templateId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateDTO
      */
     public function setTemplateId(?int $templateId = null): self
     {
@@ -140,7 +141,7 @@ class CrmTemplateDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -163,7 +164,7 @@ class CrmTemplateDTO extends AbstractStructBase
     /**
      * Set visibility value
      * @param int $visibility
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CrmTemplateDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CrmTemplateDTO
      */
     public function setVisibility(?int $visibility = null): self
     {

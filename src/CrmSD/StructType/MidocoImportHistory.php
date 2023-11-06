@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoImportHistory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoImportHistory extends AbstractStructBase
 {
     /**
@@ -135,7 +136,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set customerId value
      * @param string $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setCustomerId(?string $customerId = null): self
     {
@@ -158,7 +159,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set SupplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setSupplierId(?string $supplierId = null): self
     {
@@ -181,7 +182,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set bookingId value
      * @param string $bookingId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setBookingId(?string $bookingId = null): self
     {
@@ -204,7 +205,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set noOfPersons value
      * @param string $noOfPersons
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setNoOfPersons(?string $noOfPersons = null): self
     {
@@ -227,7 +228,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set dateOfBooking value
      * @param string $dateOfBooking
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setDateOfBooking(?string $dateOfBooking = null): self
     {
@@ -250,7 +251,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set startTravel value
      * @param string $startTravel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setStartTravel(?string $startTravel = null): self
     {
@@ -273,7 +274,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set endTravel value
      * @param string $endTravel
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setEndTravel(?string $endTravel = null): self
     {
@@ -296,7 +297,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setStatus(?string $status = null): self
     {
@@ -319,7 +320,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set totalPrice value
      * @param string $totalPrice
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setTotalPrice(?string $totalPrice = null): self
     {
@@ -342,7 +343,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set hotelName value
      * @param string $hotelName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setHotelName(?string $hotelName = null): self
     {
@@ -365,7 +366,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set destinationCode value
      * @param string $destinationCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setDestinationCode(?string $destinationCode = null): self
     {
@@ -388,7 +389,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set travelTypeKey value
      * @param string $travelTypeKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setTravelTypeKey(?string $travelTypeKey = null): self
     {
@@ -411,7 +412,7 @@ class MidocoImportHistory extends AbstractStructBase
     /**
      * Set mediatorId value
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoImportHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoImportHistory
      */
     public function setMediatorId(?string $mediatorId = null): self
     {

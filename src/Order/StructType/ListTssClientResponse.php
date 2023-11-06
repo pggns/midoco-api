@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListTssClientResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListTssClientResponse extends TssApiErrorConveyingResponse
 {
     /**
@@ -41,12 +42,13 @@ class ListTssClientResponse extends TssApiErrorConveyingResponse
         return $this->MidocoTssClient;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTssClient method
+     * This method is responsible for validating the value(s) passed to the setMidocoTssClient method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTssClient method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTssClientForArrayConstraintsFromSetMidocoTssClient(?array $values = []): string
+    public static function validateMidocoTssClientForArrayConstraintFromSetMidocoTssClient(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class ListTssClientResponse extends TssApiErrorConveyingResponse
     public function setMidocoTssClient(?array $midocoTssClient = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTssClientArrayErrorMessage = self::validateMidocoTssClientForArrayConstraintsFromSetMidocoTssClient($midocoTssClient))) {
+        if ('' !== ($midocoTssClientArrayErrorMessage = self::validateMidocoTssClientForArrayConstraintFromSetMidocoTssClient($midocoTssClient))) {
             throw new InvalidArgumentException($midocoTssClientArrayErrorMessage, __LINE__);
         }
         $this->MidocoTssClient = $midocoTssClient;

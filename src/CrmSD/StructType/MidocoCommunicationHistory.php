@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCommunicationHistory StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCommunicationHistory extends CommunicationHistoryDTO
 {
     /**
@@ -40,12 +41,13 @@ class MidocoCommunicationHistory extends CommunicationHistoryDTO
         return $this->Ids;
     }
     /**
-     * This method is responsible for validating the values passed to the setIds method
+     * This method is responsible for validating the value(s) passed to the setIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateIdsForArrayConstraintsFromSetIds(?array $values = []): string
+    public static function validateIdsForArrayConstraintFromSetIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -69,12 +71,12 @@ class MidocoCommunicationHistory extends CommunicationHistoryDTO
      * Set Ids value
      * @throws InvalidArgumentException
      * @param int[] $ids
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory
      */
     public function setIds(?array $ids = null): self
     {
         // validation for constraint: array
-        if ('' !== ($idsArrayErrorMessage = self::validateIdsForArrayConstraintsFromSetIds($ids))) {
+        if ('' !== ($idsArrayErrorMessage = self::validateIdsForArrayConstraintFromSetIds($ids))) {
             throw new InvalidArgumentException($idsArrayErrorMessage, __LINE__);
         }
         $this->Ids = $ids;
@@ -85,7 +87,7 @@ class MidocoCommunicationHistory extends CommunicationHistoryDTO
      * Add item to Ids value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCommunicationHistory
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCommunicationHistory
      */
     public function addToIds(int $item): self
     {

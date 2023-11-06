@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ActivityPriorityDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ActivityPriorityDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class ActivityPriorityDTO extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ActivityPriorityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ActivityPriorityDTO
      */
     public function setPriority(?int $priority = null): self
     {
@@ -78,7 +79,7 @@ class ActivityPriorityDTO extends AbstractStructBase
     /**
      * Set timeframe value
      * @param int $timeframe
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ActivityPriorityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ActivityPriorityDTO
      */
     public function setTimeframe(?int $timeframe = null): self
     {
@@ -101,7 +102,7 @@ class ActivityPriorityDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ActivityPriorityDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ActivityPriorityDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

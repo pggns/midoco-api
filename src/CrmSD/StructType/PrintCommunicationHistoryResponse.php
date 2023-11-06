@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintCommunicationHistoryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintCommunicationHistoryResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class PrintCommunicationHistoryResponse extends AbstractStructBase
     /**
      * Set PrintjobId value
      * @param int $printjobId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\PrintCommunicationHistoryResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\PrintCommunicationHistoryResponse
      */
     public function setPrintjobId(?int $printjobId = null): self
     {

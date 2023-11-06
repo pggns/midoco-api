@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAreaCodesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAreaCodesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAreaCodesResponse extends AbstractStructBase
         return $this->MidocoAreaCode;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAreaCode method
+     * This method is responsible for validating the value(s) passed to the setMidocoAreaCode method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAreaCode method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAreaCodeForArrayConstraintsFromSetMidocoAreaCode(?array $values = []): string
+    public static function validateMidocoAreaCodeForArrayConstraintFromSetMidocoAreaCode(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAreaCodesResponse extends AbstractStructBase
     public function setMidocoAreaCode(?array $midocoAreaCode = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAreaCodeArrayErrorMessage = self::validateMidocoAreaCodeForArrayConstraintsFromSetMidocoAreaCode($midocoAreaCode))) {
+        if ('' !== ($midocoAreaCodeArrayErrorMessage = self::validateMidocoAreaCodeForArrayConstraintFromSetMidocoAreaCode($midocoAreaCode))) {
             throw new InvalidArgumentException($midocoAreaCodeArrayErrorMessage, __LINE__);
         }
         $this->MidocoAreaCode = $midocoAreaCode;

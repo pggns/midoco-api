@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAgedDebtorCreditorReportsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAgedDebtorCreditorReportsRequest extends AbstractStructBase
 {
     /**

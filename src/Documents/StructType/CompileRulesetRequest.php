@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CompileRulesetRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CompileRulesetRequest extends AbstractStructBase
 {
     /**

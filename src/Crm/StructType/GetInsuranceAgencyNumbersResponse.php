@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetInsuranceAgencyNumbersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetInsuranceAgencyNumbersResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class GetInsuranceAgencyNumbersResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoCrmCriteria
-     * @var \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO[]
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria[]
      */
     protected ?array $MidocoCrmCriteria = null;
     /**
      * Constructor method for GetInsuranceAgencyNumbersResponse
      * @uses GetInsuranceAgencyNumbersResponse::setMidocoCrmCriteria()
-     * @param \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria[] $midocoCrmCriteria
      */
     public function __construct(?array $midocoCrmCriteria = null)
     {
@@ -34,19 +35,20 @@ class GetInsuranceAgencyNumbersResponse extends AbstractStructBase
     }
     /**
      * Get MidocoCrmCriteria value
-     * @return \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO[]
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria[]
      */
     public function getMidocoCrmCriteria(): ?array
     {
         return $this->MidocoCrmCriteria;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCrmCriteria method
+     * This method is responsible for validating the value(s) passed to the setMidocoCrmCriteria method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCrmCriteria method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCrmCriteriaForArrayConstraintsFromSetMidocoCrmCriteria(?array $values = []): string
+    public static function validateMidocoCrmCriteriaForArrayConstraintFromSetMidocoCrmCriteria(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class GetInsuranceAgencyNumbersResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $getInsuranceAgencyNumbersResponseMidocoCrmCriteriaItem) {
             // validation for constraint: itemType
-            if (!$getInsuranceAgencyNumbersResponseMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO) {
+            if (!$getInsuranceAgencyNumbersResponseMidocoCrmCriteriaItem instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria) {
                 $invalidValues[] = is_object($getInsuranceAgencyNumbersResponseMidocoCrmCriteriaItem) ? get_class($getInsuranceAgencyNumbersResponseMidocoCrmCriteriaItem) : sprintf('%s(%s)', gettype($getInsuranceAgencyNumbersResponseMidocoCrmCriteriaItem), var_export($getInsuranceAgencyNumbersResponseMidocoCrmCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class GetInsuranceAgencyNumbersResponse extends AbstractStructBase
     /**
      * Set MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO[] $midocoCrmCriteria
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria[] $midocoCrmCriteria
      * @return \Pggns\MidocoApi\Crm\StructType\GetInsuranceAgencyNumbersResponse
      */
     public function setMidocoCrmCriteria(?array $midocoCrmCriteria = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCrmCriteriaArrayErrorMessage = self::validateMidocoCrmCriteriaForArrayConstraintsFromSetMidocoCrmCriteria($midocoCrmCriteria))) {
+        if ('' !== ($midocoCrmCriteriaArrayErrorMessage = self::validateMidocoCrmCriteriaForArrayConstraintFromSetMidocoCrmCriteria($midocoCrmCriteria))) {
             throw new InvalidArgumentException($midocoCrmCriteriaArrayErrorMessage, __LINE__);
         }
         $this->MidocoCrmCriteria = $midocoCrmCriteria;
@@ -85,14 +87,14 @@ class GetInsuranceAgencyNumbersResponse extends AbstractStructBase
     /**
      * Add item to MidocoCrmCriteria value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO $item
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria $item
      * @return \Pggns\MidocoApi\Crm\StructType\GetInsuranceAgencyNumbersResponse
      */
-    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO $item): self
+    public function addToMidocoCrmCriteria(\Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Crm\StructType\CrmCriteriaDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria) {
+            throw new InvalidArgumentException(sprintf('The MidocoCrmCriteria property can only contain items of type \Pggns\MidocoApi\Crm\StructType\MidocoCrmCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoCrmCriteria[] = $item;
         

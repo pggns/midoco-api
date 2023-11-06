@@ -11,22 +11,19 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetBillingReportRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingReportRequest extends AbstractStructBase
 {
     /**
      * The fromReceiptDate
-     * Meta information extracted from the WSDL
-     * - minOccurs: 1
-     * @var string
+     * @var string|null
      */
-    protected string $fromReceiptDate;
+    protected ?string $fromReceiptDate = null;
     /**
      * The toReceiptDate
-     * Meta information extracted from the WSDL
-     * - minOccurs: 1
-     * @var string
+     * @var string|null
      */
-    protected string $toReceiptDate;
+    protected ?string $toReceiptDate = null;
     /**
      * The creationUser
      * Meta information extracted from the WSDL
@@ -53,7 +50,7 @@ class GetBillingReportRequest extends AbstractStructBase
      * @param int[] $creationUser
      * @param string $paymentType
      */
-    public function __construct(string $fromReceiptDate, string $toReceiptDate, ?array $creationUser = null, ?string $paymentType = null)
+    public function __construct(?string $fromReceiptDate = null, ?string $toReceiptDate = null, ?array $creationUser = null, ?string $paymentType = null)
     {
         $this
             ->setFromReceiptDate($fromReceiptDate)
@@ -63,9 +60,9 @@ class GetBillingReportRequest extends AbstractStructBase
     }
     /**
      * Get fromReceiptDate value
-     * @return string
+     * @return string|null
      */
-    public function getFromReceiptDate(): string
+    public function getFromReceiptDate(): ?string
     {
         return $this->fromReceiptDate;
     }
@@ -74,7 +71,7 @@ class GetBillingReportRequest extends AbstractStructBase
      * @param string $fromReceiptDate
      * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingReportRequest
      */
-    public function setFromReceiptDate(string $fromReceiptDate): self
+    public function setFromReceiptDate(?string $fromReceiptDate = null): self
     {
         // validation for constraint: string
         if (!is_null($fromReceiptDate) && !is_string($fromReceiptDate)) {
@@ -86,9 +83,9 @@ class GetBillingReportRequest extends AbstractStructBase
     }
     /**
      * Get toReceiptDate value
-     * @return string
+     * @return string|null
      */
-    public function getToReceiptDate(): string
+    public function getToReceiptDate(): ?string
     {
         return $this->toReceiptDate;
     }
@@ -97,7 +94,7 @@ class GetBillingReportRequest extends AbstractStructBase
      * @param string $toReceiptDate
      * @return \Pggns\MidocoApi\Orderlists\StructType\GetBillingReportRequest
      */
-    public function setToReceiptDate(string $toReceiptDate): self
+    public function setToReceiptDate(?string $toReceiptDate = null): self
     {
         // validation for constraint: string
         if (!is_null($toReceiptDate) && !is_string($toReceiptDate)) {
@@ -116,12 +113,13 @@ class GetBillingReportRequest extends AbstractStructBase
         return $this->creationUser;
     }
     /**
-     * This method is responsible for validating the values passed to the setCreationUser method
+     * This method is responsible for validating the value(s) passed to the setCreationUser method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCreationUser method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCreationUserForArrayConstraintsFromSetCreationUser(?array $values = []): string
+    public static function validateCreationUserForArrayConstraintFromSetCreationUser(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -150,7 +148,7 @@ class GetBillingReportRequest extends AbstractStructBase
     public function setCreationUser(?array $creationUser = null): self
     {
         // validation for constraint: array
-        if ('' !== ($creationUserArrayErrorMessage = self::validateCreationUserForArrayConstraintsFromSetCreationUser($creationUser))) {
+        if ('' !== ($creationUserArrayErrorMessage = self::validateCreationUserForArrayConstraintFromSetCreationUser($creationUser))) {
             throw new InvalidArgumentException($creationUserArrayErrorMessage, __LINE__);
         }
         $this->creationUser = $creationUser;

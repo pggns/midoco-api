@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GdsProfileAttribute StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GdsProfileAttribute extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set gds value
      * @param string $gds
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsProfileAttribute
      */
     public function setGds(?string $gds = null): self
     {
@@ -94,7 +95,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsProfileAttribute
      */
     public function setType(?string $type = null): self
     {
@@ -117,7 +118,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set subType value
      * @param string $subType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsProfileAttribute
      */
     public function setSubType(?string $subType = null): self
     {
@@ -140,7 +141,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsProfileAttribute
      */
     public function setCategory(?string $category = null): self
     {
@@ -163,7 +164,7 @@ class GdsProfileAttribute extends AbstractStructBase
     /**
      * Set translatedValue value
      * @param string $translatedValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GdsProfileAttribute
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GdsProfileAttribute
      */
     public function setTranslatedValue(?string $translatedValue = null): self
     {

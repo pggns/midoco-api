@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: uses 2 procedures: 1. sendOneDocumentPerEmail == true Send an email with one attachment. 2. sendOneDocumentPerEmail == false Send one email with n (n>1) attachments.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SendBatchInvoiceEmailRequest extends AbstractStructBase
 {
     /**
@@ -61,12 +62,13 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
         return $this->documentIds;
     }
     /**
-     * This method is responsible for validating the values passed to the setDocumentIds method
+     * This method is responsible for validating the value(s) passed to the setDocumentIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDocumentIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDocumentIdsForArrayConstraintsFromSetDocumentIds(?array $values = []): string
+    public static function validateDocumentIdsForArrayConstraintFromSetDocumentIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -95,7 +97,7 @@ class SendBatchInvoiceEmailRequest extends AbstractStructBase
     public function setDocumentIds(?array $documentIds = null): self
     {
         // validation for constraint: array
-        if ('' !== ($documentIdsArrayErrorMessage = self::validateDocumentIdsForArrayConstraintsFromSetDocumentIds($documentIds))) {
+        if ('' !== ($documentIdsArrayErrorMessage = self::validateDocumentIdsForArrayConstraintFromSetDocumentIds($documentIds))) {
             throw new InvalidArgumentException($documentIdsArrayErrorMessage, __LINE__);
         }
         $this->documentIds = $documentIds;

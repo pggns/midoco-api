@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SaveMediatorRevenuesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveMediatorRevenuesResponse extends AbstractStructBase
 {
     /**
@@ -19,7 +20,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: ErrorInfoAgencyMissingInDocument
-     * @var \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument[]
      */
     protected ?array $ErrorInfoAgencyMissingInDocument = null;
     /**
@@ -34,7 +35,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * Constructor method for SaveMediatorRevenuesResponse
      * @uses SaveMediatorRevenuesResponse::setErrorInfoAgencyMissingInDocument()
      * @uses SaveMediatorRevenuesResponse::setExcelRows()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
      * @param int[] $excelRows
      */
     public function __construct(?array $errorInfoAgencyMissingInDocument = null, ?array $excelRows = null)
@@ -45,19 +46,20 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     }
     /**
      * Get ErrorInfoAgencyMissingInDocument value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument[]
      */
     public function getErrorInfoAgencyMissingInDocument(): ?array
     {
         return $this->ErrorInfoAgencyMissingInDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setErrorInfoAgencyMissingInDocument method
+     * This method is responsible for validating the value(s) passed to the setErrorInfoAgencyMissingInDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setErrorInfoAgencyMissingInDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateErrorInfoAgencyMissingInDocumentForArrayConstraintsFromSetErrorInfoAgencyMissingInDocument(?array $values = []): string
+    public static function validateErrorInfoAgencyMissingInDocumentForArrayConstraintFromSetErrorInfoAgencyMissingInDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -66,12 +68,12 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem) {
             // validation for constraint: itemType
-            if (!$saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem instanceof \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument) {
+            if (!$saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem instanceof \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument) {
                 $invalidValues[] = is_object($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem) ? get_class($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem) : sprintf('%s(%s)', gettype($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem), var_export($saveMediatorRevenuesResponseErrorInfoAgencyMissingInDocumentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -80,13 +82,13 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     /**
      * Set ErrorInfoAgencyMissingInDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument[] $errorInfoAgencyMissingInDocument
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMediatorRevenuesResponse
      */
     public function setErrorInfoAgencyMissingInDocument(?array $errorInfoAgencyMissingInDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($errorInfoAgencyMissingInDocumentArrayErrorMessage = self::validateErrorInfoAgencyMissingInDocumentForArrayConstraintsFromSetErrorInfoAgencyMissingInDocument($errorInfoAgencyMissingInDocument))) {
+        if ('' !== ($errorInfoAgencyMissingInDocumentArrayErrorMessage = self::validateErrorInfoAgencyMissingInDocumentForArrayConstraintFromSetErrorInfoAgencyMissingInDocument($errorInfoAgencyMissingInDocument))) {
             throw new InvalidArgumentException($errorInfoAgencyMissingInDocumentArrayErrorMessage, __LINE__);
         }
         $this->ErrorInfoAgencyMissingInDocument = $errorInfoAgencyMissingInDocument;
@@ -96,14 +98,14 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
     /**
      * Add item to ErrorInfoAgencyMissingInDocument value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMediatorRevenuesResponse
      */
-    public function addToErrorInfoAgencyMissingInDocument(\Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument $item): self
+    public function addToErrorInfoAgencyMissingInDocument(\Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument) {
-            throw new InvalidArgumentException(sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument) {
+            throw new InvalidArgumentException(sprintf('The ErrorInfoAgencyMissingInDocument property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\ErrorInfoAgencyMissingInDocument, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ErrorInfoAgencyMissingInDocument[] = $item;
         
@@ -118,12 +120,13 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
         return $this->excelRows;
     }
     /**
-     * This method is responsible for validating the values passed to the setExcelRows method
+     * This method is responsible for validating the value(s) passed to the setExcelRows method
      * This method is willingly generated in order to preserve the one-line inline validation within the setExcelRows method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateExcelRowsForArrayConstraintsFromSetExcelRows(?array $values = []): string
+    public static function validateExcelRowsForArrayConstraintFromSetExcelRows(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -147,12 +150,12 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * Set excelRows value
      * @throws InvalidArgumentException
      * @param int[] $excelRows
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMediatorRevenuesResponse
      */
     public function setExcelRows(?array $excelRows = null): self
     {
         // validation for constraint: array
-        if ('' !== ($excelRowsArrayErrorMessage = self::validateExcelRowsForArrayConstraintsFromSetExcelRows($excelRows))) {
+        if ('' !== ($excelRowsArrayErrorMessage = self::validateExcelRowsForArrayConstraintFromSetExcelRows($excelRows))) {
             throw new InvalidArgumentException($excelRowsArrayErrorMessage, __LINE__);
         }
         $this->excelRows = $excelRows;
@@ -163,7 +166,7 @@ class SaveMediatorRevenuesResponse extends AbstractStructBase
      * Add item to excelRows value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SaveMediatorRevenuesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SaveMediatorRevenuesResponse
      */
     public function addToExcelRows(int $item): self
     {

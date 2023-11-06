@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TssClientDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TssClientDTO extends AbstractStructBase
 {
     /**
@@ -279,7 +280,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set adminMail value
      * @param string $adminMail
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setAdminMail(?string $adminMail = null): self
     {
@@ -302,7 +303,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set adminName value
      * @param string $adminName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setAdminName(?string $adminName = null): self
     {
@@ -325,7 +326,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set adminPin value
      * @param string $adminPin
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setAdminPin(?string $adminPin = null): self
     {
@@ -348,7 +349,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set adminPuk value
      * @param string $adminPuk
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setAdminPuk(?string $adminPuk = null): self
     {
@@ -371,7 +372,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set cancelReason value
      * @param string $cancelReason
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setCancelReason(?string $cancelReason = null): self
     {
@@ -394,7 +395,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set cancelTimestamp value
      * @param string $cancelTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setCancelTimestamp(?string $cancelTimestamp = null): self
     {
@@ -417,7 +418,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set cancelUser value
      * @param int $cancelUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setCancelUser(?int $cancelUser = null): self
     {
@@ -440,7 +441,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set certificate value
      * @param string $certificate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setCertificate(?string $certificate = null): self
     {
@@ -463,7 +464,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set certificateSerial value
      * @param string $certificateSerial
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setCertificateSerial(?string $certificateSerial = null): self
     {
@@ -486,7 +487,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set clientId value
      * @param string $clientId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -509,7 +510,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set creationTimestamp value
      * @param string $creationTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setCreationTimestamp(?string $creationTimestamp = null): self
     {
@@ -532,7 +533,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set creationUser value
      * @param int $creationUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setCreationUser(?int $creationUser = null): self
     {
@@ -555,7 +556,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set env value
      * @param string $env
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setEnv(?string $env = null): self
     {
@@ -578,7 +579,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set initTimestamp value
      * @param string $initTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setInitTimestamp(?string $initTimestamp = null): self
     {
@@ -601,7 +602,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set lastContractDate value
      * @param string $lastContractDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setLastContractDate(?string $lastContractDate = null): self
     {
@@ -624,7 +625,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set lastTxNumber value
      * @param int $lastTxNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setLastTxNumber(?int $lastTxNumber = null): self
     {
@@ -647,7 +648,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set modifyTimestamp value
      * @param string $modifyTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setModifyTimestamp(?string $modifyTimestamp = null): self
     {
@@ -670,7 +671,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set modifyUser value
      * @param int $modifyUser
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setModifyUser(?int $modifyUser = null): self
     {
@@ -693,7 +694,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set publicKey value
      * @param string $publicKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setPublicKey(?string $publicKey = null): self
     {
@@ -716,7 +717,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set signatureAlgorithm value
      * @param string $signatureAlgorithm
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setSignatureAlgorithm(?string $signatureAlgorithm = null): self
     {
@@ -739,7 +740,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set signatureCounter value
      * @param int $signatureCounter
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setSignatureCounter(?int $signatureCounter = null): self
     {
@@ -762,7 +763,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set signatureTimestampFormat value
      * @param string $signatureTimestampFormat
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setSignatureTimestampFormat(?string $signatureTimestampFormat = null): self
     {
@@ -785,7 +786,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -808,7 +809,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set transactionCounter value
      * @param int $transactionCounter
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setTransactionCounter(?int $transactionCounter = null): self
     {
@@ -831,7 +832,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set transactionDataEncoding value
      * @param string $transactionDataEncoding
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setTransactionDataEncoding(?string $transactionDataEncoding = null): self
     {
@@ -854,7 +855,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set tssId value
      * @param string $tssId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setTssId(?string $tssId = null): self
     {
@@ -877,7 +878,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set tssSystem value
      * @param string $tssSystem
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setTssSystem(?string $tssSystem = null): self
     {
@@ -900,7 +901,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setType(?string $type = null): self
     {
@@ -923,7 +924,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set uninitTimestamp value
      * @param string $uninitTimestamp
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setUninitTimestamp(?string $uninitTimestamp = null): self
     {
@@ -946,7 +947,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -969,7 +970,7 @@ class TssClientDTO extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssClientDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssClientDTO
      */
     public function setVersion(?string $version = null): self
     {

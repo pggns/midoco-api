@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ListSignatureDocsRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ListSignatureDocsRequest extends AbstractStructBase
 {
     /**
@@ -170,12 +171,13 @@ class ListSignatureDocsRequest extends AbstractStructBase
         return $this->dispatchType;
     }
     /**
-     * This method is responsible for validating the values passed to the setDispatchType method
+     * This method is responsible for validating the value(s) passed to the setDispatchType method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDispatchType method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDispatchTypeForArrayConstraintsFromSetDispatchType(?array $values = []): string
+    public static function validateDispatchTypeForArrayConstraintFromSetDispatchType(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -204,7 +206,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     public function setDispatchType(?array $dispatchType = null): self
     {
         // validation for constraint: array
-        if ('' !== ($dispatchTypeArrayErrorMessage = self::validateDispatchTypeForArrayConstraintsFromSetDispatchType($dispatchType))) {
+        if ('' !== ($dispatchTypeArrayErrorMessage = self::validateDispatchTypeForArrayConstraintFromSetDispatchType($dispatchType))) {
             throw new InvalidArgumentException($dispatchTypeArrayErrorMessage, __LINE__);
         }
         $this->dispatchType = $dispatchType;
@@ -236,12 +238,13 @@ class ListSignatureDocsRequest extends AbstractStructBase
         return $this->documentNature;
     }
     /**
-     * This method is responsible for validating the values passed to the setDocumentNature method
+     * This method is responsible for validating the value(s) passed to the setDocumentNature method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDocumentNature method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateDocumentNatureForArrayConstraintsFromSetDocumentNature(?array $values = []): string
+    public static function validateDocumentNatureForArrayConstraintFromSetDocumentNature(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -270,7 +273,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     public function setDocumentNature(?array $documentNature = null): self
     {
         // validation for constraint: array
-        if ('' !== ($documentNatureArrayErrorMessage = self::validateDocumentNatureForArrayConstraintsFromSetDocumentNature($documentNature))) {
+        if ('' !== ($documentNatureArrayErrorMessage = self::validateDocumentNatureForArrayConstraintFromSetDocumentNature($documentNature))) {
             throw new InvalidArgumentException($documentNatureArrayErrorMessage, __LINE__);
         }
         $this->documentNature = $documentNature;
@@ -302,12 +305,13 @@ class ListSignatureDocsRequest extends AbstractStructBase
         return $this->unitName;
     }
     /**
-     * This method is responsible for validating the values passed to the setUnitName method
+     * This method is responsible for validating the value(s) passed to the setUnitName method
      * This method is willingly generated in order to preserve the one-line inline validation within the setUnitName method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateUnitNameForArrayConstraintsFromSetUnitName(?array $values = []): string
+    public static function validateUnitNameForArrayConstraintFromSetUnitName(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -336,7 +340,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     public function setUnitName(?array $unitName = null): self
     {
         // validation for constraint: array
-        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintsFromSetUnitName($unitName))) {
+        if ('' !== ($unitNameArrayErrorMessage = self::validateUnitNameForArrayConstraintFromSetUnitName($unitName))) {
             throw new InvalidArgumentException($unitNameArrayErrorMessage, __LINE__);
         }
         $this->unitName = $unitName;
@@ -368,12 +372,13 @@ class ListSignatureDocsRequest extends AbstractStructBase
         return $this->crtUser;
     }
     /**
-     * This method is responsible for validating the values passed to the setCrtUser method
+     * This method is responsible for validating the value(s) passed to the setCrtUser method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCrtUser method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCrtUserForArrayConstraintsFromSetCrtUser(?array $values = []): string
+    public static function validateCrtUserForArrayConstraintFromSetCrtUser(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -402,7 +407,7 @@ class ListSignatureDocsRequest extends AbstractStructBase
     public function setCrtUser(?array $crtUser = null): self
     {
         // validation for constraint: array
-        if ('' !== ($crtUserArrayErrorMessage = self::validateCrtUserForArrayConstraintsFromSetCrtUser($crtUser))) {
+        if ('' !== ($crtUserArrayErrorMessage = self::validateCrtUserForArrayConstraintFromSetCrtUser($crtUser))) {
             throw new InvalidArgumentException($crtUserArrayErrorMessage, __LINE__);
         }
         $this->crtUser = $crtUser;

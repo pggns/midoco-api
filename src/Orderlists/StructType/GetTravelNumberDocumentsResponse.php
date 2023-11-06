@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTravelNumberDocumentsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTravelNumberDocumentsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetTravelNumberDocumentsResponse extends AbstractStructBase
         return $this->MidocoTravelNumberDocument;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoTravelNumberDocument method
+     * This method is responsible for validating the value(s) passed to the setMidocoTravelNumberDocument method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTravelNumberDocument method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoTravelNumberDocumentForArrayConstraintsFromSetMidocoTravelNumberDocument(?array $values = []): string
+    public static function validateMidocoTravelNumberDocumentForArrayConstraintFromSetMidocoTravelNumberDocument(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetTravelNumberDocumentsResponse extends AbstractStructBase
     public function setMidocoTravelNumberDocument(?array $midocoTravelNumberDocument = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoTravelNumberDocumentArrayErrorMessage = self::validateMidocoTravelNumberDocumentForArrayConstraintsFromSetMidocoTravelNumberDocument($midocoTravelNumberDocument))) {
+        if ('' !== ($midocoTravelNumberDocumentArrayErrorMessage = self::validateMidocoTravelNumberDocumentForArrayConstraintFromSetMidocoTravelNumberDocument($midocoTravelNumberDocument))) {
             throw new InvalidArgumentException($midocoTravelNumberDocumentArrayErrorMessage, __LINE__);
         }
         $this->MidocoTravelNumberDocument = $midocoTravelNumberDocument;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCustomerTravelType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCustomerTravelType extends CrmTravelDTO
 {
     /**
@@ -47,7 +48,7 @@ class MidocoCustomerTravelType extends CrmTravelDTO
     /**
      * Set bookingUserName value
      * @param string $bookingUserName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType
      */
     public function setBookingUserName(?string $bookingUserName = null): self
     {
@@ -70,7 +71,7 @@ class MidocoCustomerTravelType extends CrmTravelDTO
     /**
      * Set travelDuration value
      * @param int $travelDuration
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCustomerTravelType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCustomerTravelType
      */
     public function setTravelDuration(?int $travelDuration = null): self
     {

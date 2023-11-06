@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AgencyNumberDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AgencyNumberDTO extends AbstractStructBase
 {
     /**
@@ -79,7 +80,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set agencyNo value
      * @param string $agencyNo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyNumberDTO
      */
     public function setAgencyNo(?string $agencyNo = null): self
     {
@@ -102,7 +103,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set creationDate value
      * @param string $creationDate
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyNumberDTO
      */
     public function setCreationDate(?string $creationDate = null): self
     {
@@ -125,7 +126,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyNumberDTO
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -148,7 +149,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set isLocked value
      * @param bool $isLocked
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyNumberDTO
      */
     public function setIsLocked(?bool $isLocked = null): self
     {
@@ -171,7 +172,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyNumberDTO
      */
     public function setRemark(?string $remark = null): self
     {
@@ -194,7 +195,7 @@ class AgencyNumberDTO extends AbstractStructBase
     /**
      * Set supplierId value
      * @param string $supplierId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AgencyNumberDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AgencyNumberDTO
      */
     public function setSupplierId(?string $supplierId = null): self
     {

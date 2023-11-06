@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PreparePseudoRevenueBookingResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PreparePseudoRevenueBookingResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PreparePseudoRevenueBookingResponse extends AbstractStructBase
         return $this->PseudoRevenueBookingInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setPseudoRevenueBookingInfo method
+     * This method is responsible for validating the value(s) passed to the setPseudoRevenueBookingInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPseudoRevenueBookingInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validatePseudoRevenueBookingInfoForArrayConstraintsFromSetPseudoRevenueBookingInfo(?array $values = []): string
+    public static function validatePseudoRevenueBookingInfoForArrayConstraintFromSetPseudoRevenueBookingInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PreparePseudoRevenueBookingResponse extends AbstractStructBase
     public function setPseudoRevenueBookingInfo(?array $pseudoRevenueBookingInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($pseudoRevenueBookingInfoArrayErrorMessage = self::validatePseudoRevenueBookingInfoForArrayConstraintsFromSetPseudoRevenueBookingInfo($pseudoRevenueBookingInfo))) {
+        if ('' !== ($pseudoRevenueBookingInfoArrayErrorMessage = self::validatePseudoRevenueBookingInfoForArrayConstraintFromSetPseudoRevenueBookingInfo($pseudoRevenueBookingInfo))) {
             throw new InvalidArgumentException($pseudoRevenueBookingInfoArrayErrorMessage, __LINE__);
         }
         $this->PseudoRevenueBookingInfo = $pseudoRevenueBookingInfo;

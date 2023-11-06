@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteJobFunctionRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteJobFunctionRequest extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class DeleteJobFunctionRequest extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoJobFunction
-     * @var \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO[]
      */
     protected ?array $MidocoJobFunction = null;
     /**
      * Constructor method for DeleteJobFunctionRequest
      * @uses DeleteJobFunctionRequest::setMidocoJobFunction()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[] $midocoJobFunction
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO[] $midocoJobFunction
      */
     public function __construct(?array $midocoJobFunction = null)
     {
@@ -34,19 +35,20 @@ class DeleteJobFunctionRequest extends AbstractStructBase
     }
     /**
      * Get MidocoJobFunction value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO[]
      */
     public function getMidocoJobFunction(): ?array
     {
         return $this->MidocoJobFunction;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoJobFunction method
+     * This method is responsible for validating the value(s) passed to the setMidocoJobFunction method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoJobFunction method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoJobFunctionForArrayConstraintsFromSetMidocoJobFunction(?array $values = []): string
+    public static function validateMidocoJobFunctionForArrayConstraintFromSetMidocoJobFunction(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class DeleteJobFunctionRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deleteJobFunctionRequestMidocoJobFunctionItem) {
             // validation for constraint: itemType
-            if (!$deleteJobFunctionRequestMidocoJobFunctionItem instanceof \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO) {
+            if (!$deleteJobFunctionRequestMidocoJobFunctionItem instanceof \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO) {
                 $invalidValues[] = is_object($deleteJobFunctionRequestMidocoJobFunctionItem) ? get_class($deleteJobFunctionRequestMidocoJobFunctionItem) : sprintf('%s(%s)', gettype($deleteJobFunctionRequestMidocoJobFunctionItem), var_export($deleteJobFunctionRequestMidocoJobFunctionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class DeleteJobFunctionRequest extends AbstractStructBase
     /**
      * Set MidocoJobFunction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO[] $midocoJobFunction
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteJobFunctionRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO[] $midocoJobFunction
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteJobFunctionRequest
      */
     public function setMidocoJobFunction(?array $midocoJobFunction = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoJobFunctionArrayErrorMessage = self::validateMidocoJobFunctionForArrayConstraintsFromSetMidocoJobFunction($midocoJobFunction))) {
+        if ('' !== ($midocoJobFunctionArrayErrorMessage = self::validateMidocoJobFunctionForArrayConstraintFromSetMidocoJobFunction($midocoJobFunction))) {
             throw new InvalidArgumentException($midocoJobFunctionArrayErrorMessage, __LINE__);
         }
         $this->MidocoJobFunction = $midocoJobFunction;
@@ -85,14 +87,14 @@ class DeleteJobFunctionRequest extends AbstractStructBase
     /**
      * Add item to MidocoJobFunction value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteJobFunctionRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteJobFunctionRequest
      */
-    public function addToMidocoJobFunction(\Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO $item): self
+    public function addToMidocoJobFunction(\Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\JobFunctionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoJobFunction property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\JobFunctionDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoJobFunction[] = $item;
         

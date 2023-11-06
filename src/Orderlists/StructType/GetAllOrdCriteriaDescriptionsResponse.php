@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAllOrdCriteriaDescriptionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAllOrdCriteriaDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAllOrdCriteriaDescriptionsResponse extends AbstractStructBase
         return $this->MidocoOrdCriteriaDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoOrdCriteriaDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoOrdCriteriaDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoOrdCriteriaDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoOrdCriteriaDescriptionForArrayConstraintsFromSetMidocoOrdCriteriaDescription(?array $values = []): string
+    public static function validateMidocoOrdCriteriaDescriptionForArrayConstraintFromSetMidocoOrdCriteriaDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAllOrdCriteriaDescriptionsResponse extends AbstractStructBase
     public function setMidocoOrdCriteriaDescription(?array $midocoOrdCriteriaDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoOrdCriteriaDescriptionArrayErrorMessage = self::validateMidocoOrdCriteriaDescriptionForArrayConstraintsFromSetMidocoOrdCriteriaDescription($midocoOrdCriteriaDescription))) {
+        if ('' !== ($midocoOrdCriteriaDescriptionArrayErrorMessage = self::validateMidocoOrdCriteriaDescriptionForArrayConstraintFromSetMidocoOrdCriteriaDescription($midocoOrdCriteriaDescription))) {
             throw new InvalidArgumentException($midocoOrdCriteriaDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoOrdCriteriaDescription = $midocoOrdCriteriaDescription;

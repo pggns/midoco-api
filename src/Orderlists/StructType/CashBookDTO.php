@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CashBookDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CashBookDTO extends AbstractStructBase
 {
     /**
@@ -58,6 +59,11 @@ class CashBookDTO extends AbstractStructBase
      * @var bool|null
      */
     protected ?bool $isDefault = null;
+    /**
+     * The locked
+     * @var bool|null
+     */
+    protected ?bool $locked = null;
     /**
      * The nextPrintingPage
      * @var int|null
@@ -109,6 +115,7 @@ class CashBookDTO extends AbstractStructBase
      * @uses CashBookDTO::setForeignCurrency()
      * @uses CashBookDTO::setForeignPrintBalance()
      * @uses CashBookDTO::setIsDefault()
+     * @uses CashBookDTO::setLocked()
      * @uses CashBookDTO::setNextPrintingPage()
      * @uses CashBookDTO::setNotifyEmail()
      * @uses CashBookDTO::setPrintingBalance()
@@ -126,6 +133,7 @@ class CashBookDTO extends AbstractStructBase
      * @param string $foreignCurrency
      * @param float $foreignPrintBalance
      * @param bool $isDefault
+     * @param bool $locked
      * @param int $nextPrintingPage
      * @param string $notifyEmail
      * @param float $printingBalance
@@ -135,7 +143,7 @@ class CashBookDTO extends AbstractStructBase
      * @param string $unitName
      * @param int $userId
      */
-    public function __construct(?string $accountId = null, ?float $actualBalance = null, ?bool $autoBalance = null, ?int $cashBookId = null, ?string $description = null, ?float $foreignBalance = null, ?string $foreignCurrency = null, ?float $foreignPrintBalance = null, ?bool $isDefault = null, ?int $nextPrintingPage = null, ?string $notifyEmail = null, ?float $printingBalance = null, ?int $receiptNoAct = null, ?int $receiptNoEnd = null, ?int $receiptNoStart = null, ?string $unitName = null, ?int $userId = null)
+    public function __construct(?string $accountId = null, ?float $actualBalance = null, ?bool $autoBalance = null, ?int $cashBookId = null, ?string $description = null, ?float $foreignBalance = null, ?string $foreignCurrency = null, ?float $foreignPrintBalance = null, ?bool $isDefault = null, ?bool $locked = null, ?int $nextPrintingPage = null, ?string $notifyEmail = null, ?float $printingBalance = null, ?int $receiptNoAct = null, ?int $receiptNoEnd = null, ?int $receiptNoStart = null, ?string $unitName = null, ?int $userId = null)
     {
         $this
             ->setAccountId($accountId)
@@ -147,6 +155,7 @@ class CashBookDTO extends AbstractStructBase
             ->setForeignCurrency($foreignCurrency)
             ->setForeignPrintBalance($foreignPrintBalance)
             ->setIsDefault($isDefault)
+            ->setLocked($locked)
             ->setNextPrintingPage($nextPrintingPage)
             ->setNotifyEmail($notifyEmail)
             ->setPrintingBalance($printingBalance)
@@ -360,6 +369,29 @@ class CashBookDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isDefault, true), gettype($isDefault)), __LINE__);
         }
         $this->isDefault = $isDefault;
+        
+        return $this;
+    }
+    /**
+     * Get locked value
+     * @return bool|null
+     */
+    public function getLocked(): ?bool
+    {
+        return $this->locked;
+    }
+    /**
+     * Set locked value
+     * @param bool $locked
+     * @return \Pggns\MidocoApi\Orderlists\StructType\CashBookDTO
+     */
+    public function setLocked(?bool $locked = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($locked) && !is_bool($locked)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($locked, true), gettype($locked)), __LINE__);
+        }
+        $this->locked = $locked;
         
         return $this;
     }

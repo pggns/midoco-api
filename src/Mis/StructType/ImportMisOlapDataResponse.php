@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: importMisOlapData --- import the data for the Mis statistics (into the OLAP tabels) from the crm_travels table (CRM database)
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ImportMisOlapDataResponse extends AbstractStructBase
 {
 }

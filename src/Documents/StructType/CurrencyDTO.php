@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CurrencyDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CurrencyDTO extends AbstractStructBase
 {
     /**

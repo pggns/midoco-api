@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoHandlerType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoHandlerType extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoHandlerType extends AbstractStructBase
     /**
      * Set handler value
      * @param string $handler
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoHandlerType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoHandlerType
      */
     public function setHandler(?string $handler = null): self
     {
@@ -70,7 +71,7 @@ class MidocoHandlerType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoHandlerType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoHandlerType
      */
     public function setDescription(?string $description = null): self
     {

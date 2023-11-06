@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchMidocoAttributeLocalizationResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchMidocoAttributeLocalizationResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class SearchMidocoAttributeLocalizationResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoSystemAttributeLocalization
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO[]
      */
     protected ?array $MidocoSystemAttributeLocalization = null;
     /**
      * Constructor method for SearchMidocoAttributeLocalizationResponse
      * @uses SearchMidocoAttributeLocalizationResponse::setMidocoSystemAttributeLocalization()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO[] $midocoSystemAttributeLocalization
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO[] $midocoSystemAttributeLocalization
      */
     public function __construct(?array $midocoSystemAttributeLocalization = null)
     {
@@ -34,19 +35,20 @@ class SearchMidocoAttributeLocalizationResponse extends AbstractStructBase
     }
     /**
      * Get MidocoSystemAttributeLocalization value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO[]
      */
     public function getMidocoSystemAttributeLocalization(): ?array
     {
         return $this->MidocoSystemAttributeLocalization;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSystemAttributeLocalization method
+     * This method is responsible for validating the value(s) passed to the setMidocoSystemAttributeLocalization method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSystemAttributeLocalization method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSystemAttributeLocalizationForArrayConstraintsFromSetMidocoSystemAttributeLocalization(?array $values = []): string
+    public static function validateMidocoSystemAttributeLocalizationForArrayConstraintFromSetMidocoSystemAttributeLocalization(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class SearchMidocoAttributeLocalizationResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchMidocoAttributeLocalizationResponseMidocoSystemAttributeLocalizationItem) {
             // validation for constraint: itemType
-            if (!$searchMidocoAttributeLocalizationResponseMidocoSystemAttributeLocalizationItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO) {
+            if (!$searchMidocoAttributeLocalizationResponseMidocoSystemAttributeLocalizationItem instanceof \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO) {
                 $invalidValues[] = is_object($searchMidocoAttributeLocalizationResponseMidocoSystemAttributeLocalizationItem) ? get_class($searchMidocoAttributeLocalizationResponseMidocoSystemAttributeLocalizationItem) : sprintf('%s(%s)', gettype($searchMidocoAttributeLocalizationResponseMidocoSystemAttributeLocalizationItem), var_export($searchMidocoAttributeLocalizationResponseMidocoSystemAttributeLocalizationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoSystemAttributeLocalization property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoSystemAttributeLocalization property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class SearchMidocoAttributeLocalizationResponse extends AbstractStructBase
     /**
      * Set MidocoSystemAttributeLocalization value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO[] $midocoSystemAttributeLocalization
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoAttributeLocalizationResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO[] $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchMidocoAttributeLocalizationResponse
      */
     public function setMidocoSystemAttributeLocalization(?array $midocoSystemAttributeLocalization = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSystemAttributeLocalizationArrayErrorMessage = self::validateMidocoSystemAttributeLocalizationForArrayConstraintsFromSetMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization))) {
+        if ('' !== ($midocoSystemAttributeLocalizationArrayErrorMessage = self::validateMidocoSystemAttributeLocalizationForArrayConstraintFromSetMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization))) {
             throw new InvalidArgumentException($midocoSystemAttributeLocalizationArrayErrorMessage, __LINE__);
         }
         $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
@@ -85,14 +87,14 @@ class SearchMidocoAttributeLocalizationResponse extends AbstractStructBase
     /**
      * Add item to MidocoSystemAttributeLocalization value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchMidocoAttributeLocalizationResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchMidocoAttributeLocalizationResponse
      */
-    public function addToMidocoSystemAttributeLocalization(\Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO $item): self
+    public function addToMidocoSystemAttributeLocalization(\Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoSystemAttributeLocalization property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AttributeDefinitionLocalDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoSystemAttributeLocalization property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AttributeDefinitionLocalDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoSystemAttributeLocalization[] = $item;
         

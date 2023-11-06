@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CcproxySingleUseTokenDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CcproxySingleUseTokenDTO extends AbstractStructBase
 {
     /**
@@ -18,6 +19,11 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
      * @var string|null
      */
     protected ?string $createdAt = null;
+    /**
+     * The email
+     * @var string|null
+     */
+    protected ?string $email = null;
     /**
      * The expireAt
      * @var string|null
@@ -66,6 +72,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Constructor method for CcproxySingleUseTokenDTO
      * @uses CcproxySingleUseTokenDTO::setCreatedAt()
+     * @uses CcproxySingleUseTokenDTO::setEmail()
      * @uses CcproxySingleUseTokenDTO::setExpireAt()
      * @uses CcproxySingleUseTokenDTO::setModifiedAt()
      * @uses CcproxySingleUseTokenDTO::setOrgUnit()
@@ -76,6 +83,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
      * @uses CcproxySingleUseTokenDTO::setTokenValue()
      * @uses CcproxySingleUseTokenDTO::setUserId()
      * @param string $createdAt
+     * @param string $email
      * @param string $expireAt
      * @param string $modifiedAt
      * @param string $orgUnit
@@ -86,10 +94,11 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
      * @param string $tokenValue
      * @param int $userId
      */
-    public function __construct(?string $createdAt = null, ?string $expireAt = null, ?string $modifiedAt = null, ?string $orgUnit = null, ?string $sensitiveid = null, ?string $status = null, ?string $token = null, ?int $tokenId = null, ?string $tokenValue = null, ?int $userId = null)
+    public function __construct(?string $createdAt = null, ?string $email = null, ?string $expireAt = null, ?string $modifiedAt = null, ?string $orgUnit = null, ?string $sensitiveid = null, ?string $status = null, ?string $token = null, ?int $tokenId = null, ?string $tokenValue = null, ?int $userId = null)
     {
         $this
             ->setCreatedAt($createdAt)
+            ->setEmail($email)
             ->setExpireAt($expireAt)
             ->setModifiedAt($modifiedAt)
             ->setOrgUnit($orgUnit)
@@ -111,7 +120,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set createdAt value
      * @param string $createdAt
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setCreatedAt(?string $createdAt = null): self
     {
@@ -120,6 +129,29 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($createdAt, true), gettype($createdAt)), __LINE__);
         }
         $this->createdAt = $createdAt;
+        
+        return $this;
+    }
+    /**
+     * Get email value
+     * @return string|null
+     */
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+    /**
+     * Set email value
+     * @param string $email
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
+     */
+    public function setEmail(?string $email = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($email) && !is_string($email)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($email, true), gettype($email)), __LINE__);
+        }
+        $this->email = $email;
         
         return $this;
     }
@@ -134,7 +166,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set expireAt value
      * @param string $expireAt
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setExpireAt(?string $expireAt = null): self
     {
@@ -157,7 +189,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set modifiedAt value
      * @param string $modifiedAt
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setModifiedAt(?string $modifiedAt = null): self
     {
@@ -180,7 +212,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -203,7 +235,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set sensitiveid value
      * @param string $sensitiveid
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setSensitiveid(?string $sensitiveid = null): self
     {
@@ -226,7 +258,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setStatus(?string $status = null): self
     {
@@ -249,7 +281,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set token value
      * @param string $token
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setToken(?string $token = null): self
     {
@@ -272,7 +304,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set tokenId value
      * @param int $tokenId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setTokenId(?int $tokenId = null): self
     {
@@ -295,7 +327,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set tokenValue value
      * @param string $tokenValue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setTokenValue(?string $tokenValue = null): self
     {
@@ -318,7 +350,7 @@ class CcproxySingleUseTokenDTO extends AbstractStructBase
     /**
      * Set userId value
      * @param int $userId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CcproxySingleUseTokenDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CcproxySingleUseTokenDTO
      */
     public function setUserId(?int $userId = null): self
     {

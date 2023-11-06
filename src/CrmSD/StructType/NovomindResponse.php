@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for NovomindResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class NovomindResponse extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class NovomindResponse extends AbstractStructBase
     /**
      * Set result value
      * @param int $result
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NovomindResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NovomindResponse
      */
     public function setResult(?int $result = null): self
     {
@@ -70,7 +71,7 @@ class NovomindResponse extends AbstractStructBase
     /**
      * Set accessToken value
      * @param string $accessToken
-     * @return \Pggns\MidocoApi\CrmSD\StructType\NovomindResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\NovomindResponse
      */
     public function setAccessToken(?string $accessToken = null): self
     {

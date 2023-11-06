@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchDatastoresResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchDatastoresResponse extends AbstractStructBase
 {
     /**
@@ -19,13 +20,13 @@ class SearchDatastoresResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoDatastore
-     * @var \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO[]
      */
     protected ?array $MidocoDatastore = null;
     /**
      * Constructor method for SearchDatastoresResponse
      * @uses SearchDatastoresResponse::setMidocoDatastore()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO[] $midocoDatastore
+     * @param \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO[] $midocoDatastore
      */
     public function __construct(?array $midocoDatastore = null)
     {
@@ -34,19 +35,20 @@ class SearchDatastoresResponse extends AbstractStructBase
     }
     /**
      * Get MidocoDatastore value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO[]
      */
     public function getMidocoDatastore(): ?array
     {
         return $this->MidocoDatastore;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDatastore method
+     * This method is responsible for validating the value(s) passed to the setMidocoDatastore method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDatastore method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDatastoreForArrayConstraintsFromSetMidocoDatastore(?array $values = []): string
+    public static function validateMidocoDatastoreForArrayConstraintFromSetMidocoDatastore(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class SearchDatastoresResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchDatastoresResponseMidocoDatastoreItem) {
             // validation for constraint: itemType
-            if (!$searchDatastoresResponseMidocoDatastoreItem instanceof \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO) {
+            if (!$searchDatastoresResponseMidocoDatastoreItem instanceof \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO) {
                 $invalidValues[] = is_object($searchDatastoresResponseMidocoDatastoreItem) ? get_class($searchDatastoresResponseMidocoDatastoreItem) : sprintf('%s(%s)', gettype($searchDatastoresResponseMidocoDatastoreItem), var_export($searchDatastoresResponseMidocoDatastoreItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoDatastore property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoDatastore property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class SearchDatastoresResponse extends AbstractStructBase
     /**
      * Set MidocoDatastore value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO[] $midocoDatastore
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchDatastoresResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO[] $midocoDatastore
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchDatastoresResponse
      */
     public function setMidocoDatastore(?array $midocoDatastore = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDatastoreArrayErrorMessage = self::validateMidocoDatastoreForArrayConstraintsFromSetMidocoDatastore($midocoDatastore))) {
+        if ('' !== ($midocoDatastoreArrayErrorMessage = self::validateMidocoDatastoreForArrayConstraintFromSetMidocoDatastore($midocoDatastore))) {
             throw new InvalidArgumentException($midocoDatastoreArrayErrorMessage, __LINE__);
         }
         $this->MidocoDatastore = $midocoDatastore;
@@ -85,14 +87,14 @@ class SearchDatastoresResponse extends AbstractStructBase
     /**
      * Add item to MidocoDatastore value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchDatastoresResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchDatastoresResponse
      */
-    public function addToMidocoDatastore(\Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO $item): self
+    public function addToMidocoDatastore(\Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoDatastore property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\DatastoreDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoDatastore property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\DatastoreDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoDatastore[] = $item;
         

@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: saveJasperReportParamValue --- saves a default value for a parameter of a report
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SaveJasperReportParamValueResponse extends AbstractStructBase
 {
     /**

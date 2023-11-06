@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for InfoForCustomer StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class InfoForCustomer extends AbstractStructBase
 {
     /**

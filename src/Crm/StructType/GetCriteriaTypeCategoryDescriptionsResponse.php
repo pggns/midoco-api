@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetCriteriaTypeCategoryDescriptionsResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetCriteriaTypeCategoryDescriptionsResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetCriteriaTypeCategoryDescriptionsResponse extends AbstractStructBase
         return $this->MidocoCriteriaTypeCategoryDescription;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCriteriaTypeCategoryDescription method
+     * This method is responsible for validating the value(s) passed to the setMidocoCriteriaTypeCategoryDescription method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCriteriaTypeCategoryDescription method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCriteriaTypeCategoryDescriptionForArrayConstraintsFromSetMidocoCriteriaTypeCategoryDescription(?array $values = []): string
+    public static function validateMidocoCriteriaTypeCategoryDescriptionForArrayConstraintFromSetMidocoCriteriaTypeCategoryDescription(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetCriteriaTypeCategoryDescriptionsResponse extends AbstractStructBase
     public function setMidocoCriteriaTypeCategoryDescription(?array $midocoCriteriaTypeCategoryDescription = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCriteriaTypeCategoryDescriptionArrayErrorMessage = self::validateMidocoCriteriaTypeCategoryDescriptionForArrayConstraintsFromSetMidocoCriteriaTypeCategoryDescription($midocoCriteriaTypeCategoryDescription))) {
+        if ('' !== ($midocoCriteriaTypeCategoryDescriptionArrayErrorMessage = self::validateMidocoCriteriaTypeCategoryDescriptionForArrayConstraintFromSetMidocoCriteriaTypeCategoryDescription($midocoCriteriaTypeCategoryDescription))) {
             throw new InvalidArgumentException($midocoCriteriaTypeCategoryDescriptionArrayErrorMessage, __LINE__);
         }
         $this->MidocoCriteriaTypeCategoryDescription = $midocoCriteriaTypeCategoryDescription;

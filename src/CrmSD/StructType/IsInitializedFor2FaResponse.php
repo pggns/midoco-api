@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for IsInitializedFor2FaResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class IsInitializedFor2FaResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class IsInitializedFor2FaResponse extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \Pggns\MidocoApi\CrmSD\StructType\IsInitializedFor2FaResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\IsInitializedFor2FaResponse
      */
     public function setStatus(?string $status = null): self
     {

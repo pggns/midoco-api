@@ -14,6 +14,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * record, a false is returned
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CheckLetterReachabilityResponse extends AbstractStructBase
 {
     /**

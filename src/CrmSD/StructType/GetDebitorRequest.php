@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetDebitorRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetDebitorRequest extends AbstractStructBase
 {
     /**
@@ -71,7 +72,7 @@ class GetDebitorRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitorRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -94,7 +95,7 @@ class GetDebitorRequest extends AbstractStructBase
     /**
      * Set orgUnit value
      * @param string $orgUnit
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitorRequest
      */
     public function setOrgUnit(?string $orgUnit = null): self
     {
@@ -117,7 +118,7 @@ class GetDebitorRequest extends AbstractStructBase
     /**
      * Set customerName value
      * @param string $customerName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitorRequest
      */
     public function setCustomerName(?string $customerName = null): self
     {
@@ -140,7 +141,7 @@ class GetDebitorRequest extends AbstractStructBase
     /**
      * Set onlyDirectAssigned value
      * @param bool $onlyDirectAssigned
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitorRequest
      */
     public function setOnlyDirectAssigned(?bool $onlyDirectAssigned = null): self
     {
@@ -163,7 +164,7 @@ class GetDebitorRequest extends AbstractStructBase
     /**
      * Set currency value
      * @param string $currency
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetDebitorRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetDebitorRequest
      */
     public function setCurrency(?string $currency = null): self
     {

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCommunicationHistoryPrintInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCommunicationHistoryPrintInfo extends CommunicationHistoryDTO
 {
     /**
@@ -71,12 +72,13 @@ class MidocoCommunicationHistoryPrintInfo extends CommunicationHistoryDTO
         return $this->Ids;
     }
     /**
-     * This method is responsible for validating the values passed to the setIds method
+     * This method is responsible for validating the value(s) passed to the setIds method
      * This method is willingly generated in order to preserve the one-line inline validation within the setIds method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateIdsForArrayConstraintsFromSetIds(?array $values = []): string
+    public static function validateIdsForArrayConstraintFromSetIds(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -105,7 +107,7 @@ class MidocoCommunicationHistoryPrintInfo extends CommunicationHistoryDTO
     public function setIds(?array $ids = null): self
     {
         // validation for constraint: array
-        if ('' !== ($idsArrayErrorMessage = self::validateIdsForArrayConstraintsFromSetIds($ids))) {
+        if ('' !== ($idsArrayErrorMessage = self::validateIdsForArrayConstraintFromSetIds($ids))) {
             throw new InvalidArgumentException($idsArrayErrorMessage, __LINE__);
         }
         $this->Ids = $ids;

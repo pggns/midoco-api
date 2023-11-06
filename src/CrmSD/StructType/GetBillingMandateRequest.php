@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: get the active mandate that is assigned to a billing document
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetBillingMandateRequest extends AbstractStructBase
 {
     /**
@@ -43,7 +44,7 @@ class GetBillingMandateRequest extends AbstractStructBase
     /**
      * Set documentId value
      * @param string $documentId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetBillingMandateRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetBillingMandateRequest
      */
     public function setDocumentId(string $documentId): self
     {

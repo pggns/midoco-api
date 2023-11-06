@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RecalculateTravelNoMarginRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RecalculateTravelNoMarginRequest extends AbstractStructBase
 {
     /**
@@ -35,20 +36,30 @@ class RecalculateTravelNoMarginRequest extends AbstractStructBase
      */
     protected ?string $endTravelStart = null;
     /**
+     * The removePurchaseAssignments
+     * Meta information extracted from the WSDL
+     * - minOccurs: 0
+     * @var bool|null
+     */
+    protected ?bool $removePurchaseAssignments = null;
+    /**
      * Constructor method for RecalculateTravelNoMarginRequest
      * @uses RecalculateTravelNoMarginRequest::setTravelNo()
      * @uses RecalculateTravelNoMarginRequest::setStartTravelStart()
      * @uses RecalculateTravelNoMarginRequest::setEndTravelStart()
+     * @uses RecalculateTravelNoMarginRequest::setRemovePurchaseAssignments()
      * @param string $travelNo
      * @param string $startTravelStart
      * @param string $endTravelStart
+     * @param bool $removePurchaseAssignments
      */
-    public function __construct(?string $travelNo = null, ?string $startTravelStart = null, ?string $endTravelStart = null)
+    public function __construct(?string $travelNo = null, ?string $startTravelStart = null, ?string $endTravelStart = null, ?bool $removePurchaseAssignments = null)
     {
         $this
             ->setTravelNo($travelNo)
             ->setStartTravelStart($startTravelStart)
-            ->setEndTravelStart($endTravelStart);
+            ->setEndTravelStart($endTravelStart)
+            ->setRemovePurchaseAssignments($removePurchaseAssignments);
     }
     /**
      * Get travelNo value
@@ -116,6 +127,29 @@ class RecalculateTravelNoMarginRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($endTravelStart, true), gettype($endTravelStart)), __LINE__);
         }
         $this->endTravelStart = $endTravelStart;
+        
+        return $this;
+    }
+    /**
+     * Get removePurchaseAssignments value
+     * @return bool|null
+     */
+    public function getRemovePurchaseAssignments(): ?bool
+    {
+        return $this->removePurchaseAssignments;
+    }
+    /**
+     * Set removePurchaseAssignments value
+     * @param bool $removePurchaseAssignments
+     * @return \Pggns\MidocoApi\Order\StructType\RecalculateTravelNoMarginRequest
+     */
+    public function setRemovePurchaseAssignments(?bool $removePurchaseAssignments = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($removePurchaseAssignments) && !is_bool($removePurchaseAssignments)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($removePurchaseAssignments, true), gettype($removePurchaseAssignments)), __LINE__);
+        }
+        $this->removePurchaseAssignments = $removePurchaseAssignments;
         
         return $this;
     }

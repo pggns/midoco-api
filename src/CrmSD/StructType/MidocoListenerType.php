@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoListenerType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoListenerType extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class MidocoListenerType extends AbstractStructBase
     /**
      * Set listener value
      * @param string $listener
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoListenerType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoListenerType
      */
     public function setListener(?string $listener = null): self
     {
@@ -70,7 +71,7 @@ class MidocoListenerType extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoListenerType
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoListenerType
      */
     public function setDescription(?string $description = null): self
     {

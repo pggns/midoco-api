@@ -19,7 +19,7 @@ class Set extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Order\ServiceType\Set
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Order\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -81,9 +81,63 @@ class Set extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named setOrderMandate
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\SetOrderMandateRequest $paramSetOrderMandateRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SetOrderMandateResponse|bool
+     */
+    public function setOrderMandate(\Pggns\MidocoApi\Order\StructType\SetOrderMandateRequest $paramSetOrderMandateRequest)
+    {
+        try {
+            $this->setResult($resultSetOrderMandate = $this->getSoapClient()->__soapCall('setOrderMandate', [
+                $paramSetOrderMandateRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultSetOrderMandate;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named setRevenueBookingPayment
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Order\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Order\StructType\SetRevenueBookingPaymentRequest $paramSetRevenueBookingPaymentRequest
+     * @return \Pggns\MidocoApi\Order\StructType\SetRevenueBookingPaymentResponse|bool
+     */
+    public function setRevenueBookingPayment(\Pggns\MidocoApi\Order\StructType\SetRevenueBookingPaymentRequest $paramSetRevenueBookingPaymentRequest)
+    {
+        try {
+            $this->setResult($resultSetRevenueBookingPayment = $this->getSoapClient()->__soapCall('setRevenueBookingPayment', [
+                $paramSetRevenueBookingPaymentRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultSetRevenueBookingPayment;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemResponse|\Pggns\MidocoApi\Order\StructType\SetFinishedFlagResponse
+     * @return \Pggns\MidocoApi\Order\StructType\SetConfirmationRequiredOfSellitemResponse|\Pggns\MidocoApi\Order\StructType\SetFinishedFlagResponse|\Pggns\MidocoApi\Order\StructType\SetOrderMandateResponse|\Pggns\MidocoApi\Order\StructType\SetRevenueBookingPaymentResponse
      */
     public function getResult()
     {

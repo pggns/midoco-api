@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CustomerMfDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CustomerMfDTO extends AbstractStructBase
 {
     /**
@@ -64,6 +65,16 @@ class CustomerMfDTO extends AbstractStructBase
      */
     protected ?string $printingLabel = null;
     /**
+     * The validFrom
+     * @var string|null
+     */
+    protected ?string $validFrom = null;
+    /**
+     * The validTo
+     * @var string|null
+     */
+    protected ?string $validTo = null;
+    /**
      * Constructor method for CustomerMfDTO
      * @uses CustomerMfDTO::setAttrName()
      * @uses CustomerMfDTO::setBean()
@@ -75,6 +86,8 @@ class CustomerMfDTO extends AbstractStructBase
      * @uses CustomerMfDTO::setPresetValue()
      * @uses CustomerMfDTO::setPrintEnforced()
      * @uses CustomerMfDTO::setPrintingLabel()
+     * @uses CustomerMfDTO::setValidFrom()
+     * @uses CustomerMfDTO::setValidTo()
      * @param string $attrName
      * @param string $bean
      * @param string $className
@@ -85,8 +98,10 @@ class CustomerMfDTO extends AbstractStructBase
      * @param string $presetValue
      * @param bool $printEnforced
      * @param string $printingLabel
+     * @param string $validFrom
+     * @param string $validTo
      */
-    public function __construct(?string $attrName = null, ?string $bean = null, ?string $className = null, ?int $customerId = null, ?bool $isOptional = null, ?bool $onlyNumeric = null, ?bool $presetContent = null, ?string $presetValue = null, ?bool $printEnforced = null, ?string $printingLabel = null)
+    public function __construct(?string $attrName = null, ?string $bean = null, ?string $className = null, ?int $customerId = null, ?bool $isOptional = null, ?bool $onlyNumeric = null, ?bool $presetContent = null, ?string $presetValue = null, ?bool $printEnforced = null, ?string $printingLabel = null, ?string $validFrom = null, ?string $validTo = null)
     {
         $this
             ->setAttrName($attrName)
@@ -98,7 +113,9 @@ class CustomerMfDTO extends AbstractStructBase
             ->setPresetContent($presetContent)
             ->setPresetValue($presetValue)
             ->setPrintEnforced($printEnforced)
-            ->setPrintingLabel($printingLabel);
+            ->setPrintingLabel($printingLabel)
+            ->setValidFrom($validFrom)
+            ->setValidTo($validTo);
     }
     /**
      * Get attrName value
@@ -327,6 +344,52 @@ class CustomerMfDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($printingLabel, true), gettype($printingLabel)), __LINE__);
         }
         $this->printingLabel = $printingLabel;
+        
+        return $this;
+    }
+    /**
+     * Get validFrom value
+     * @return string|null
+     */
+    public function getValidFrom(): ?string
+    {
+        return $this->validFrom;
+    }
+    /**
+     * Set validFrom value
+     * @param string $validFrom
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerMfDTO
+     */
+    public function setValidFrom(?string $validFrom = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($validFrom) && !is_string($validFrom)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validFrom, true), gettype($validFrom)), __LINE__);
+        }
+        $this->validFrom = $validFrom;
+        
+        return $this;
+    }
+    /**
+     * Get validTo value
+     * @return string|null
+     */
+    public function getValidTo(): ?string
+    {
+        return $this->validTo;
+    }
+    /**
+     * Set validTo value
+     * @param string $validTo
+     * @return \Pggns\MidocoApi\Mis\StructType\CustomerMfDTO
+     */
+    public function setValidTo(?string $validTo = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($validTo) && !is_string($validTo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($validTo, true), gettype($validTo)), __LINE__);
+        }
+        $this->validTo = $validTo;
         
         return $this;
     }

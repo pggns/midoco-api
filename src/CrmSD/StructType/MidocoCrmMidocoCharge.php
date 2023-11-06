@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmMidocoCharge StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
 {
     /**
@@ -19,13 +20,13 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoAssignedMidocoChargeOu
-     * @var \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO[]
      */
     protected ?array $MidocoAssignedMidocoChargeOu = null;
     /**
      * Constructor method for MidocoCrmMidocoCharge
      * @uses MidocoCrmMidocoCharge::setMidocoAssignedMidocoChargeOu()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
      */
     public function __construct(?array $midocoAssignedMidocoChargeOu = null)
     {
@@ -34,19 +35,20 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
     }
     /**
      * Get MidocoAssignedMidocoChargeOu value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO[]
      */
     public function getMidocoAssignedMidocoChargeOu(): ?array
     {
         return $this->MidocoAssignedMidocoChargeOu;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoAssignedMidocoChargeOu method
+     * This method is responsible for validating the value(s) passed to the setMidocoAssignedMidocoChargeOu method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAssignedMidocoChargeOu method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoAssignedMidocoChargeOuForArrayConstraintsFromSetMidocoAssignedMidocoChargeOu(?array $values = []): string
+    public static function validateMidocoAssignedMidocoChargeOuForArrayConstraintFromSetMidocoAssignedMidocoChargeOu(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -55,12 +57,12 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
         $invalidValues = [];
         foreach ($values as $midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem) {
             // validation for constraint: itemType
-            if (!$midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO) {
+            if (!$midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem instanceof \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO) {
                 $invalidValues[] = is_object($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem) ? get_class($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem) : sprintf('%s(%s)', gettype($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem), var_export($midocoCrmMidocoChargeMidocoAssignedMidocoChargeOuItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,13 +71,13 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
     /**
      * Set MidocoAssignedMidocoChargeOu value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoCharge
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO[] $midocoAssignedMidocoChargeOu
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmMidocoCharge
      */
     public function setMidocoAssignedMidocoChargeOu(?array $midocoAssignedMidocoChargeOu = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoAssignedMidocoChargeOuArrayErrorMessage = self::validateMidocoAssignedMidocoChargeOuForArrayConstraintsFromSetMidocoAssignedMidocoChargeOu($midocoAssignedMidocoChargeOu))) {
+        if ('' !== ($midocoAssignedMidocoChargeOuArrayErrorMessage = self::validateMidocoAssignedMidocoChargeOuForArrayConstraintFromSetMidocoAssignedMidocoChargeOu($midocoAssignedMidocoChargeOu))) {
             throw new InvalidArgumentException($midocoAssignedMidocoChargeOuArrayErrorMessage, __LINE__);
         }
         $this->MidocoAssignedMidocoChargeOu = $midocoAssignedMidocoChargeOu;
@@ -85,14 +87,14 @@ class MidocoCrmMidocoCharge extends CrmMidocoChargeDTO
     /**
      * Add item to MidocoAssignedMidocoChargeOu value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmMidocoCharge
+     * @param \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmMidocoCharge
      */
-    public function addToMidocoAssignedMidocoChargeOu(\Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO $item): self
+    public function addToMidocoAssignedMidocoChargeOu(\Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAssignedMidocoChargeOu property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\AssignedMidocoChargeOuDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoAssignedMidocoChargeOu[] = $item;
         

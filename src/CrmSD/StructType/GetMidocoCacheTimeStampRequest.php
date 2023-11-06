@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMidocoCacheTimeStampRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMidocoCacheTimeStampRequest extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetMidocoCacheTimeStampRequest extends AbstractStructBase
     /**
      * Set loaderKey value
      * @param string $loaderKey
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMidocoCacheTimeStampRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMidocoCacheTimeStampRequest
      */
     public function setLoaderKey(?string $loaderKey = null): self
     {

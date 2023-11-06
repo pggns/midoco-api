@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetTemplatesRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTemplatesRequest extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class GetTemplatesRequest extends AbstractStructBase
     /**
      * Set unitName value
      * @param string $unitName
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplatesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTemplatesRequest
      */
     public function setUnitName(?string $unitName = null): self
     {
@@ -86,7 +87,7 @@ class GetTemplatesRequest extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplatesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTemplatesRequest
      */
     public function setDescription(?string $description = null): self
     {
@@ -109,7 +110,7 @@ class GetTemplatesRequest extends AbstractStructBase
     /**
      * Set defaultLanguage value
      * @param string $defaultLanguage
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplatesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTemplatesRequest
      */
     public function setDefaultLanguage(?string $defaultLanguage = null): self
     {
@@ -132,7 +133,7 @@ class GetTemplatesRequest extends AbstractStructBase
     /**
      * Set visibility value
      * @param int $visibility
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetTemplatesRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetTemplatesRequest
      */
     public function setVisibility(?int $visibility = null): self
     {

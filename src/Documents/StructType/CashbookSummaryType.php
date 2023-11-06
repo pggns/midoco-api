@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CashbookSummaryType StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CashbookSummaryType extends AbstractStructBase
 {
     /**
@@ -72,12 +73,13 @@ class CashbookSummaryType extends AbstractStructBase
         return $this->MidocoCashbookSummaryDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCashbookSummaryDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoCashbookSummaryDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCashbookSummaryDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCashbookSummaryDetailForArrayConstraintsFromSetMidocoCashbookSummaryDetail(?array $values = []): string
+    public static function validateMidocoCashbookSummaryDetailForArrayConstraintFromSetMidocoCashbookSummaryDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -106,7 +108,7 @@ class CashbookSummaryType extends AbstractStructBase
     public function setMidocoCashbookSummaryDetail(?array $midocoCashbookSummaryDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCashbookSummaryDetailArrayErrorMessage = self::validateMidocoCashbookSummaryDetailForArrayConstraintsFromSetMidocoCashbookSummaryDetail($midocoCashbookSummaryDetail))) {
+        if ('' !== ($midocoCashbookSummaryDetailArrayErrorMessage = self::validateMidocoCashbookSummaryDetailForArrayConstraintFromSetMidocoCashbookSummaryDetail($midocoCashbookSummaryDetail))) {
             throw new InvalidArgumentException($midocoCashbookSummaryDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoCashbookSummaryDetail = $midocoCashbookSummaryDetail;

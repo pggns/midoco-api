@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: searchBank --- searches a bank according to the BankSearch parameter. returns a list of BankSearchResults
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchBankResponse extends AbstractStructBase
 {
     /**
@@ -21,13 +22,13 @@ class SearchBankResponse extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - ref: MidocoBankSearcResult
-     * @var \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO[]
+     * @var \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO[]
      */
     protected ?array $MidocoBankSearcResult = null;
     /**
      * Constructor method for SearchBankResponse
      * @uses SearchBankResponse::setMidocoBankSearcResult()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO[] $midocoBankSearcResult
+     * @param \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO[] $midocoBankSearcResult
      */
     public function __construct(?array $midocoBankSearcResult = null)
     {
@@ -36,19 +37,20 @@ class SearchBankResponse extends AbstractStructBase
     }
     /**
      * Get MidocoBankSearcResult value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO[]
+     * @return \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO[]
      */
     public function getMidocoBankSearcResult(): ?array
     {
         return $this->MidocoBankSearcResult;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBankSearcResult method
+     * This method is responsible for validating the value(s) passed to the setMidocoBankSearcResult method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBankSearcResult method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBankSearcResultForArrayConstraintsFromSetMidocoBankSearcResult(?array $values = []): string
+    public static function validateMidocoBankSearcResultForArrayConstraintFromSetMidocoBankSearcResult(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -57,12 +59,12 @@ class SearchBankResponse extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $searchBankResponseMidocoBankSearcResultItem) {
             // validation for constraint: itemType
-            if (!$searchBankResponseMidocoBankSearcResultItem instanceof \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO) {
+            if (!$searchBankResponseMidocoBankSearcResultItem instanceof \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO) {
                 $invalidValues[] = is_object($searchBankResponseMidocoBankSearcResultItem) ? get_class($searchBankResponseMidocoBankSearcResultItem) : sprintf('%s(%s)', gettype($searchBankResponseMidocoBankSearcResultItem), var_export($searchBankResponseMidocoBankSearcResultItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The MidocoBankSearcResult property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The MidocoBankSearcResult property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -71,13 +73,13 @@ class SearchBankResponse extends AbstractStructBase
     /**
      * Set MidocoBankSearcResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO[] $midocoBankSearcResult
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBankResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO[] $midocoBankSearcResult
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBankResponse
      */
     public function setMidocoBankSearcResult(?array $midocoBankSearcResult = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBankSearcResultArrayErrorMessage = self::validateMidocoBankSearcResultForArrayConstraintsFromSetMidocoBankSearcResult($midocoBankSearcResult))) {
+        if ('' !== ($midocoBankSearcResultArrayErrorMessage = self::validateMidocoBankSearcResultForArrayConstraintFromSetMidocoBankSearcResult($midocoBankSearcResult))) {
             throw new InvalidArgumentException($midocoBankSearcResultArrayErrorMessage, __LINE__);
         }
         $this->MidocoBankSearcResult = $midocoBankSearcResult;
@@ -87,14 +89,14 @@ class SearchBankResponse extends AbstractStructBase
     /**
      * Add item to MidocoBankSearcResult value
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\SearchBankResponse
+     * @param \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO $item
+     * @return \Pggns\MidocoApi\Crmsd\StructType\SearchBankResponse
      */
-    public function addToMidocoBankSearcResult(\Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO $item): self
+    public function addToMidocoBankSearcResult(\Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO) {
-            throw new InvalidArgumentException(sprintf('The MidocoBankSearcResult property can only contain items of type \Pggns\MidocoApi\CrmSD\StructType\BankSearchResultDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBankSearcResult property can only contain items of type \Pggns\MidocoApi\Crmsd\StructType\BankSearchResultDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoBankSearcResult[] = $item;
         

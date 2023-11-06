@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetMediatorSettlementLevelRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetMediatorSettlementLevelRequest extends AbstractStructBase
 {
     /**
@@ -20,9 +21,9 @@ class GetMediatorSettlementLevelRequest extends AbstractStructBase
      * - choiceMaxOccurs: 1
      * - choiceMinOccurs: 1
      * - ref: MidocoCustomerId
-     * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @var \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    protected ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $MidocoCustomerId = null;
+    protected ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $MidocoCustomerId = null;
     /**
      * The MediatorId
      * Meta information extracted from the WSDL
@@ -36,10 +37,10 @@ class GetMediatorSettlementLevelRequest extends AbstractStructBase
      * Constructor method for GetMediatorSettlementLevelRequest
      * @uses GetMediatorSettlementLevelRequest::setMidocoCustomerId()
      * @uses GetMediatorSettlementLevelRequest::setMediatorId()
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
      * @param string $mediatorId
      */
-    public function __construct(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $mediatorId = null)
+    public function __construct(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null, ?string $mediatorId = null)
     {
         $this
             ->setMidocoCustomerId($midocoCustomerId)
@@ -47,20 +48,20 @@ class GetMediatorSettlementLevelRequest extends AbstractStructBase
     }
     /**
      * Get MidocoCustomerId value
-     * @return \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO|null
+     * @return \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO|null
      */
-    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO
+    public function getMidocoCustomerId(): ?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO
     {
-        return isset($this->MidocoCustomerId) ? $this->MidocoCustomerId : null;
+        return $this->MidocoCustomerId ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setMidocoCustomerId method
+     * This method is responsible for validating the value(s) passed to the setMidocoCustomerId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCustomerId method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateMidocoCustomerIdForChoiceConstraintsFromSetMidocoCustomerId($value): string
+    public function validateMidocoCustomerIdForChoiceConstraintFromSetMidocoCustomerId($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -87,13 +88,13 @@ class GetMediatorSettlementLevelRequest extends AbstractStructBase
      * therefore removable from the request, consequently if the value assigned to this
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
-     * @param \Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorSettlementLevelRequest
+     * @param \Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorSettlementLevelRequest
      */
-    public function setMidocoCustomerId(?\Pggns\MidocoApi\CrmSD\StructType\CustomerIdDTO $midocoCustomerId = null): self
+    public function setMidocoCustomerId(?\Pggns\MidocoApi\Crmsd\StructType\CustomerIdDTO $midocoCustomerId = null): self
     {
         // validation for constraint: choice(MidocoCustomerId, MediatorId)
-        if ('' !== ($midocoCustomerIdChoiceErrorMessage = self::validateMidocoCustomerIdForChoiceConstraintsFromSetMidocoCustomerId($midocoCustomerId))) {
+        if ('' !== ($midocoCustomerIdChoiceErrorMessage = self::validateMidocoCustomerIdForChoiceConstraintFromSetMidocoCustomerId($midocoCustomerId))) {
             throw new InvalidArgumentException($midocoCustomerIdChoiceErrorMessage, __LINE__);
         }
         if (is_null($midocoCustomerId) || (is_array($midocoCustomerId) && empty($midocoCustomerId))) {
@@ -110,16 +111,16 @@ class GetMediatorSettlementLevelRequest extends AbstractStructBase
      */
     public function getMediatorId(): ?string
     {
-        return isset($this->MediatorId) ? $this->MediatorId : null;
+        return $this->MediatorId ?? null;
     }
     /**
-     * This method is responsible for validating the value passed to the setMediatorId method
+     * This method is responsible for validating the value(s) passed to the setMediatorId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMediatorId method
      * This has to validate that the property which is being set is the only one among the given choices
      * @param mixed $value
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public function validateMediatorIdForChoiceConstraintsFromSetMediatorId($value): string
+    public function validateMediatorIdForChoiceConstraintFromSetMediatorId($value): string
     {
         $message = '';
         if (is_null($value)) {
@@ -147,7 +148,7 @@ class GetMediatorSettlementLevelRequest extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
      * @param string $mediatorId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetMediatorSettlementLevelRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetMediatorSettlementLevelRequest
      */
     public function setMediatorId(?string $mediatorId = null): self
     {
@@ -156,7 +157,7 @@ class GetMediatorSettlementLevelRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mediatorId, true), gettype($mediatorId)), __LINE__);
         }
         // validation for constraint: choice(MidocoCustomerId, MediatorId)
-        if ('' !== ($mediatorIdChoiceErrorMessage = self::validateMediatorIdForChoiceConstraintsFromSetMediatorId($mediatorId))) {
+        if ('' !== ($mediatorIdChoiceErrorMessage = self::validateMediatorIdForChoiceConstraintFromSetMediatorId($mediatorId))) {
             throw new InvalidArgumentException($mediatorIdChoiceErrorMessage, __LINE__);
         }
         if (is_null($mediatorId) || (is_array($mediatorId) && empty($mediatorId))) {

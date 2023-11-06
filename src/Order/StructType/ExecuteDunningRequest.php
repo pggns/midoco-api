@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ExecuteDunningRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ExecuteDunningRequest extends AbstractStructBase
 {
     /**
@@ -76,12 +77,13 @@ class ExecuteDunningRequest extends AbstractStructBase
         return $this->MidocoDunning;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoDunning method
+     * This method is responsible for validating the value(s) passed to the setMidocoDunning method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoDunning method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoDunningForArrayConstraintsFromSetMidocoDunning(?array $values = []): string
+    public static function validateMidocoDunningForArrayConstraintFromSetMidocoDunning(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -110,7 +112,7 @@ class ExecuteDunningRequest extends AbstractStructBase
     public function setMidocoDunning(?array $midocoDunning = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoDunningArrayErrorMessage = self::validateMidocoDunningForArrayConstraintsFromSetMidocoDunning($midocoDunning))) {
+        if ('' !== ($midocoDunningArrayErrorMessage = self::validateMidocoDunningForArrayConstraintFromSetMidocoDunning($midocoDunning))) {
             throw new InvalidArgumentException($midocoDunningArrayErrorMessage, __LINE__);
         }
         $this->MidocoDunning = $midocoDunning;

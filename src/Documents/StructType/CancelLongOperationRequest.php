@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for CancelLongOperationRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class CancelLongOperationRequest extends AbstractStructBase
 {
     /**

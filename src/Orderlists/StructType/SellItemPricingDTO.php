@@ -11,8 +11,14 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SellItemPricingDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SellItemPricingDTO extends AbstractStructBase
 {
+    /**
+     * The agencyCurrency
+     * @var string|null
+     */
+    protected ?string $agencyCurrency = null;
     /**
      * The baseBuyingPrice
      * @var float|null
@@ -29,10 +35,20 @@ class SellItemPricingDTO extends AbstractStructBase
      */
     protected ?float $baseSellingPrice = null;
     /**
+     * The calculatedCommissionMediatorCurrency
+     * @var float|null
+     */
+    protected ?float $calculatedCommissionMediatorCurrency = null;
+    /**
      * The calculatedRevenue
      * @var float|null
      */
     protected ?float $calculatedRevenue = null;
+    /**
+     * The commissionAgencyCurrency
+     * @var float|null
+     */
+    protected ?float $commissionAgencyCurrency = null;
     /**
      * The commissionPercentage
      * @var float|null
@@ -58,6 +74,11 @@ class SellItemPricingDTO extends AbstractStructBase
      * @var float|null
      */
     protected ?float $customerSellingPrice = null;
+    /**
+     * The fromAgencyCurrencyRate
+     * @var float|null
+     */
+    protected ?float $fromAgencyCurrencyRate = null;
     /**
      * The grantedRevenue
      * @var float|null
@@ -109,6 +130,16 @@ class SellItemPricingDTO extends AbstractStructBase
      */
     protected ?float $marginSupplier = null;
     /**
+     * The mediatorCommissionPercent
+     * @var float|null
+     */
+    protected ?float $mediatorCommissionPercent = null;
+    /**
+     * The mediatorCurrency
+     * @var string|null
+     */
+    protected ?string $mediatorCurrency = null;
+    /**
      * The modeRevenueCalculation
      * @var string|null
      */
@@ -129,15 +160,30 @@ class SellItemPricingDTO extends AbstractStructBase
      */
     protected ?float $originalSupplierCommissionAmount = null;
     /**
+     * The paidCommissionMediatorCurrency
+     * @var float|null
+     */
+    protected ?float $paidCommissionMediatorCurrency = null;
+    /**
      * The pricingCalculationMode
      * @var int|null
      */
     protected ?int $pricingCalculationMode = null;
     /**
+     * The providedMediatorCommissionOption
+     * @var string|null
+     */
+    protected ?string $providedMediatorCommissionOption = null;
+    /**
      * The sellItemCoreValueIndicator
      * @var int|null
      */
     protected ?int $sellItemCoreValueIndicator = null;
+    /**
+     * The sumOfFees
+     * @var float|null
+     */
+    protected ?float $sumOfFees = null;
     /**
      * The supplierBuyingPrice
      * @var float|null
@@ -164,16 +210,25 @@ class SellItemPricingDTO extends AbstractStructBase
      */
     protected ?float $supplierSellingPrice = null;
     /**
+     * The toAgencyCurrencyRate
+     * @var float|null
+     */
+    protected ?float $toAgencyCurrencyRate = null;
+    /**
      * Constructor method for SellItemPricingDTO
+     * @uses SellItemPricingDTO::setAgencyCurrency()
      * @uses SellItemPricingDTO::setBaseBuyingPrice()
      * @uses SellItemPricingDTO::setBaseCurrency()
      * @uses SellItemPricingDTO::setBaseSellingPrice()
+     * @uses SellItemPricingDTO::setCalculatedCommissionMediatorCurrency()
      * @uses SellItemPricingDTO::setCalculatedRevenue()
+     * @uses SellItemPricingDTO::setCommissionAgencyCurrency()
      * @uses SellItemPricingDTO::setCommissionPercentage()
      * @uses SellItemPricingDTO::setCustomerAdoptPurchaseValue()
      * @uses SellItemPricingDTO::setCustomerCurrency()
      * @uses SellItemPricingDTO::setCustomerCurrencyRate()
      * @uses SellItemPricingDTO::setCustomerSellingPrice()
+     * @uses SellItemPricingDTO::setFromAgencyCurrencyRate()
      * @uses SellItemPricingDTO::setGrantedRevenue()
      * @uses SellItemPricingDTO::setIsCustomCustomerFxAmount()
      * @uses SellItemPricingDTO::setIsIndividualSupplierCurrencyRate()
@@ -184,26 +239,36 @@ class SellItemPricingDTO extends AbstractStructBase
      * @uses SellItemPricingDTO::setMarginCustomer()
      * @uses SellItemPricingDTO::setMarginPercentage()
      * @uses SellItemPricingDTO::setMarginSupplier()
+     * @uses SellItemPricingDTO::setMediatorCommissionPercent()
+     * @uses SellItemPricingDTO::setMediatorCurrency()
      * @uses SellItemPricingDTO::setModeRevenueCalculation()
      * @uses SellItemPricingDTO::setOriginalCalculatedRevenue()
      * @uses SellItemPricingDTO::setOriginalGrantedRevenue()
      * @uses SellItemPricingDTO::setOriginalSupplierCommissionAmount()
+     * @uses SellItemPricingDTO::setPaidCommissionMediatorCurrency()
      * @uses SellItemPricingDTO::setPricingCalculationMode()
+     * @uses SellItemPricingDTO::setProvidedMediatorCommissionOption()
      * @uses SellItemPricingDTO::setSellItemCoreValueIndicator()
+     * @uses SellItemPricingDTO::setSumOfFees()
      * @uses SellItemPricingDTO::setSupplierBuyingPrice()
      * @uses SellItemPricingDTO::setSupplierCommissionAmount()
      * @uses SellItemPricingDTO::setSupplierCurrency()
      * @uses SellItemPricingDTO::setSupplierCurrencyRate()
      * @uses SellItemPricingDTO::setSupplierSellingPrice()
+     * @uses SellItemPricingDTO::setToAgencyCurrencyRate()
+     * @param string $agencyCurrency
      * @param float $baseBuyingPrice
      * @param string $baseCurrency
      * @param float $baseSellingPrice
+     * @param float $calculatedCommissionMediatorCurrency
      * @param float $calculatedRevenue
+     * @param float $commissionAgencyCurrency
      * @param float $commissionPercentage
      * @param bool $customerAdoptPurchaseValue
      * @param string $customerCurrency
      * @param float $customerCurrencyRate
      * @param float $customerSellingPrice
+     * @param float $fromAgencyCurrencyRate
      * @param float $grantedRevenue
      * @param bool $isCustomCustomerFxAmount
      * @param bool $isIndividualSupplierCurrencyRate
@@ -214,30 +279,40 @@ class SellItemPricingDTO extends AbstractStructBase
      * @param float $marginCustomer
      * @param float $marginPercentage
      * @param float $marginSupplier
+     * @param float $mediatorCommissionPercent
+     * @param string $mediatorCurrency
      * @param string $modeRevenueCalculation
      * @param float $originalCalculatedRevenue
      * @param float $originalGrantedRevenue
      * @param float $originalSupplierCommissionAmount
+     * @param float $paidCommissionMediatorCurrency
      * @param int $pricingCalculationMode
+     * @param string $providedMediatorCommissionOption
      * @param int $sellItemCoreValueIndicator
+     * @param float $sumOfFees
      * @param float $supplierBuyingPrice
      * @param float $supplierCommissionAmount
      * @param string $supplierCurrency
      * @param float $supplierCurrencyRate
      * @param float $supplierSellingPrice
+     * @param float $toAgencyCurrencyRate
      */
-    public function __construct(?float $baseBuyingPrice = null, ?string $baseCurrency = null, ?float $baseSellingPrice = null, ?float $calculatedRevenue = null, ?float $commissionPercentage = null, ?bool $customerAdoptPurchaseValue = null, ?string $customerCurrency = null, ?float $customerCurrencyRate = null, ?float $customerSellingPrice = null, ?float $grantedRevenue = null, ?bool $isCustomCustomerFxAmount = null, ?bool $isIndividualSupplierCurrencyRate = null, ?int $itemId = null, ?bool $manualRevenue = null, ?float $marginBase = null, ?int $marginCoreValueIndicator = null, ?float $marginCustomer = null, ?float $marginPercentage = null, ?float $marginSupplier = null, ?string $modeRevenueCalculation = null, ?float $originalCalculatedRevenue = null, ?float $originalGrantedRevenue = null, ?float $originalSupplierCommissionAmount = null, ?int $pricingCalculationMode = null, ?int $sellItemCoreValueIndicator = null, ?float $supplierBuyingPrice = null, ?float $supplierCommissionAmount = null, ?string $supplierCurrency = null, ?float $supplierCurrencyRate = null, ?float $supplierSellingPrice = null)
+    public function __construct(?string $agencyCurrency = null, ?float $baseBuyingPrice = null, ?string $baseCurrency = null, ?float $baseSellingPrice = null, ?float $calculatedCommissionMediatorCurrency = null, ?float $calculatedRevenue = null, ?float $commissionAgencyCurrency = null, ?float $commissionPercentage = null, ?bool $customerAdoptPurchaseValue = null, ?string $customerCurrency = null, ?float $customerCurrencyRate = null, ?float $customerSellingPrice = null, ?float $fromAgencyCurrencyRate = null, ?float $grantedRevenue = null, ?bool $isCustomCustomerFxAmount = null, ?bool $isIndividualSupplierCurrencyRate = null, ?int $itemId = null, ?bool $manualRevenue = null, ?float $marginBase = null, ?int $marginCoreValueIndicator = null, ?float $marginCustomer = null, ?float $marginPercentage = null, ?float $marginSupplier = null, ?float $mediatorCommissionPercent = null, ?string $mediatorCurrency = null, ?string $modeRevenueCalculation = null, ?float $originalCalculatedRevenue = null, ?float $originalGrantedRevenue = null, ?float $originalSupplierCommissionAmount = null, ?float $paidCommissionMediatorCurrency = null, ?int $pricingCalculationMode = null, ?string $providedMediatorCommissionOption = null, ?int $sellItemCoreValueIndicator = null, ?float $sumOfFees = null, ?float $supplierBuyingPrice = null, ?float $supplierCommissionAmount = null, ?string $supplierCurrency = null, ?float $supplierCurrencyRate = null, ?float $supplierSellingPrice = null, ?float $toAgencyCurrencyRate = null)
     {
         $this
+            ->setAgencyCurrency($agencyCurrency)
             ->setBaseBuyingPrice($baseBuyingPrice)
             ->setBaseCurrency($baseCurrency)
             ->setBaseSellingPrice($baseSellingPrice)
+            ->setCalculatedCommissionMediatorCurrency($calculatedCommissionMediatorCurrency)
             ->setCalculatedRevenue($calculatedRevenue)
+            ->setCommissionAgencyCurrency($commissionAgencyCurrency)
             ->setCommissionPercentage($commissionPercentage)
             ->setCustomerAdoptPurchaseValue($customerAdoptPurchaseValue)
             ->setCustomerCurrency($customerCurrency)
             ->setCustomerCurrencyRate($customerCurrencyRate)
             ->setCustomerSellingPrice($customerSellingPrice)
+            ->setFromAgencyCurrencyRate($fromAgencyCurrencyRate)
             ->setGrantedRevenue($grantedRevenue)
             ->setIsCustomCustomerFxAmount($isCustomCustomerFxAmount)
             ->setIsIndividualSupplierCurrencyRate($isIndividualSupplierCurrencyRate)
@@ -248,17 +323,46 @@ class SellItemPricingDTO extends AbstractStructBase
             ->setMarginCustomer($marginCustomer)
             ->setMarginPercentage($marginPercentage)
             ->setMarginSupplier($marginSupplier)
+            ->setMediatorCommissionPercent($mediatorCommissionPercent)
+            ->setMediatorCurrency($mediatorCurrency)
             ->setModeRevenueCalculation($modeRevenueCalculation)
             ->setOriginalCalculatedRevenue($originalCalculatedRevenue)
             ->setOriginalGrantedRevenue($originalGrantedRevenue)
             ->setOriginalSupplierCommissionAmount($originalSupplierCommissionAmount)
+            ->setPaidCommissionMediatorCurrency($paidCommissionMediatorCurrency)
             ->setPricingCalculationMode($pricingCalculationMode)
+            ->setProvidedMediatorCommissionOption($providedMediatorCommissionOption)
             ->setSellItemCoreValueIndicator($sellItemCoreValueIndicator)
+            ->setSumOfFees($sumOfFees)
             ->setSupplierBuyingPrice($supplierBuyingPrice)
             ->setSupplierCommissionAmount($supplierCommissionAmount)
             ->setSupplierCurrency($supplierCurrency)
             ->setSupplierCurrencyRate($supplierCurrencyRate)
-            ->setSupplierSellingPrice($supplierSellingPrice);
+            ->setSupplierSellingPrice($supplierSellingPrice)
+            ->setToAgencyCurrencyRate($toAgencyCurrencyRate);
+    }
+    /**
+     * Get agencyCurrency value
+     * @return string|null
+     */
+    public function getAgencyCurrency(): ?string
+    {
+        return $this->agencyCurrency;
+    }
+    /**
+     * Set agencyCurrency value
+     * @param string $agencyCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setAgencyCurrency(?string $agencyCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($agencyCurrency) && !is_string($agencyCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($agencyCurrency, true), gettype($agencyCurrency)), __LINE__);
+        }
+        $this->agencyCurrency = $agencyCurrency;
+        
+        return $this;
     }
     /**
      * Get baseBuyingPrice value
@@ -330,6 +434,29 @@ class SellItemPricingDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get calculatedCommissionMediatorCurrency value
+     * @return float|null
+     */
+    public function getCalculatedCommissionMediatorCurrency(): ?float
+    {
+        return $this->calculatedCommissionMediatorCurrency;
+    }
+    /**
+     * Set calculatedCommissionMediatorCurrency value
+     * @param float $calculatedCommissionMediatorCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setCalculatedCommissionMediatorCurrency(?float $calculatedCommissionMediatorCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($calculatedCommissionMediatorCurrency) && !(is_float($calculatedCommissionMediatorCurrency) || is_numeric($calculatedCommissionMediatorCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedCommissionMediatorCurrency, true), gettype($calculatedCommissionMediatorCurrency)), __LINE__);
+        }
+        $this->calculatedCommissionMediatorCurrency = $calculatedCommissionMediatorCurrency;
+        
+        return $this;
+    }
+    /**
      * Get calculatedRevenue value
      * @return float|null
      */
@@ -349,6 +476,29 @@ class SellItemPricingDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($calculatedRevenue, true), gettype($calculatedRevenue)), __LINE__);
         }
         $this->calculatedRevenue = $calculatedRevenue;
+        
+        return $this;
+    }
+    /**
+     * Get commissionAgencyCurrency value
+     * @return float|null
+     */
+    public function getCommissionAgencyCurrency(): ?float
+    {
+        return $this->commissionAgencyCurrency;
+    }
+    /**
+     * Set commissionAgencyCurrency value
+     * @param float $commissionAgencyCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setCommissionAgencyCurrency(?float $commissionAgencyCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($commissionAgencyCurrency) && !(is_float($commissionAgencyCurrency) || is_numeric($commissionAgencyCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($commissionAgencyCurrency, true), gettype($commissionAgencyCurrency)), __LINE__);
+        }
+        $this->commissionAgencyCurrency = $commissionAgencyCurrency;
         
         return $this;
     }
@@ -464,6 +614,29 @@ class SellItemPricingDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($customerSellingPrice, true), gettype($customerSellingPrice)), __LINE__);
         }
         $this->customerSellingPrice = $customerSellingPrice;
+        
+        return $this;
+    }
+    /**
+     * Get fromAgencyCurrencyRate value
+     * @return float|null
+     */
+    public function getFromAgencyCurrencyRate(): ?float
+    {
+        return $this->fromAgencyCurrencyRate;
+    }
+    /**
+     * Set fromAgencyCurrencyRate value
+     * @param float $fromAgencyCurrencyRate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setFromAgencyCurrencyRate(?float $fromAgencyCurrencyRate = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($fromAgencyCurrencyRate) && !(is_float($fromAgencyCurrencyRate) || is_numeric($fromAgencyCurrencyRate))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($fromAgencyCurrencyRate, true), gettype($fromAgencyCurrencyRate)), __LINE__);
+        }
+        $this->fromAgencyCurrencyRate = $fromAgencyCurrencyRate;
         
         return $this;
     }
@@ -698,6 +871,52 @@ class SellItemPricingDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get mediatorCommissionPercent value
+     * @return float|null
+     */
+    public function getMediatorCommissionPercent(): ?float
+    {
+        return $this->mediatorCommissionPercent;
+    }
+    /**
+     * Set mediatorCommissionPercent value
+     * @param float $mediatorCommissionPercent
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setMediatorCommissionPercent(?float $mediatorCommissionPercent = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($mediatorCommissionPercent) && !(is_float($mediatorCommissionPercent) || is_numeric($mediatorCommissionPercent))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($mediatorCommissionPercent, true), gettype($mediatorCommissionPercent)), __LINE__);
+        }
+        $this->mediatorCommissionPercent = $mediatorCommissionPercent;
+        
+        return $this;
+    }
+    /**
+     * Get mediatorCurrency value
+     * @return string|null
+     */
+    public function getMediatorCurrency(): ?string
+    {
+        return $this->mediatorCurrency;
+    }
+    /**
+     * Set mediatorCurrency value
+     * @param string $mediatorCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setMediatorCurrency(?string $mediatorCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($mediatorCurrency) && !is_string($mediatorCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mediatorCurrency, true), gettype($mediatorCurrency)), __LINE__);
+        }
+        $this->mediatorCurrency = $mediatorCurrency;
+        
+        return $this;
+    }
+    /**
      * Get modeRevenueCalculation value
      * @return string|null
      */
@@ -790,6 +1009,29 @@ class SellItemPricingDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get paidCommissionMediatorCurrency value
+     * @return float|null
+     */
+    public function getPaidCommissionMediatorCurrency(): ?float
+    {
+        return $this->paidCommissionMediatorCurrency;
+    }
+    /**
+     * Set paidCommissionMediatorCurrency value
+     * @param float $paidCommissionMediatorCurrency
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setPaidCommissionMediatorCurrency(?float $paidCommissionMediatorCurrency = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($paidCommissionMediatorCurrency) && !(is_float($paidCommissionMediatorCurrency) || is_numeric($paidCommissionMediatorCurrency))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($paidCommissionMediatorCurrency, true), gettype($paidCommissionMediatorCurrency)), __LINE__);
+        }
+        $this->paidCommissionMediatorCurrency = $paidCommissionMediatorCurrency;
+        
+        return $this;
+    }
+    /**
      * Get pricingCalculationMode value
      * @return int|null
      */
@@ -813,6 +1055,29 @@ class SellItemPricingDTO extends AbstractStructBase
         return $this;
     }
     /**
+     * Get providedMediatorCommissionOption value
+     * @return string|null
+     */
+    public function getProvidedMediatorCommissionOption(): ?string
+    {
+        return $this->providedMediatorCommissionOption;
+    }
+    /**
+     * Set providedMediatorCommissionOption value
+     * @param string $providedMediatorCommissionOption
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setProvidedMediatorCommissionOption(?string $providedMediatorCommissionOption = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($providedMediatorCommissionOption) && !is_string($providedMediatorCommissionOption)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($providedMediatorCommissionOption, true), gettype($providedMediatorCommissionOption)), __LINE__);
+        }
+        $this->providedMediatorCommissionOption = $providedMediatorCommissionOption;
+        
+        return $this;
+    }
+    /**
      * Get sellItemCoreValueIndicator value
      * @return int|null
      */
@@ -832,6 +1097,29 @@ class SellItemPricingDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($sellItemCoreValueIndicator, true), gettype($sellItemCoreValueIndicator)), __LINE__);
         }
         $this->sellItemCoreValueIndicator = $sellItemCoreValueIndicator;
+        
+        return $this;
+    }
+    /**
+     * Get sumOfFees value
+     * @return float|null
+     */
+    public function getSumOfFees(): ?float
+    {
+        return $this->sumOfFees;
+    }
+    /**
+     * Set sumOfFees value
+     * @param float $sumOfFees
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setSumOfFees(?float $sumOfFees = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($sumOfFees) && !(is_float($sumOfFees) || is_numeric($sumOfFees))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($sumOfFees, true), gettype($sumOfFees)), __LINE__);
+        }
+        $this->sumOfFees = $sumOfFees;
         
         return $this;
     }
@@ -947,6 +1235,29 @@ class SellItemPricingDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($supplierSellingPrice, true), gettype($supplierSellingPrice)), __LINE__);
         }
         $this->supplierSellingPrice = $supplierSellingPrice;
+        
+        return $this;
+    }
+    /**
+     * Get toAgencyCurrencyRate value
+     * @return float|null
+     */
+    public function getToAgencyCurrencyRate(): ?float
+    {
+        return $this->toAgencyCurrencyRate;
+    }
+    /**
+     * Set toAgencyCurrencyRate value
+     * @param float $toAgencyCurrencyRate
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellItemPricingDTO
+     */
+    public function setToAgencyCurrencyRate(?float $toAgencyCurrencyRate = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($toAgencyCurrencyRate) && !(is_float($toAgencyCurrencyRate) || is_numeric($toAgencyCurrencyRate))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($toAgencyCurrencyRate, true), gettype($toAgencyCurrencyRate)), __LINE__);
+        }
+        $this->toAgencyCurrencyRate = $toAgencyCurrencyRate;
         
         return $this;
     }

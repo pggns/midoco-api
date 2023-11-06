@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrepareAdviceInfoRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrepareAdviceInfoRequest extends AbstractStructBase
 {
     /**
@@ -120,12 +121,13 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
         return $this->sellItemId;
     }
     /**
-     * This method is responsible for validating the values passed to the setSellItemId method
+     * This method is responsible for validating the value(s) passed to the setSellItemId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSellItemId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSellItemIdForArrayConstraintsFromSetSellItemId(?array $values = []): string
+    public static function validateSellItemIdForArrayConstraintFromSetSellItemId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -154,7 +156,7 @@ class PrepareAdviceInfoRequest extends AbstractStructBase
     public function setSellItemId(?array $sellItemId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($sellItemIdArrayErrorMessage = self::validateSellItemIdForArrayConstraintsFromSetSellItemId($sellItemId))) {
+        if ('' !== ($sellItemIdArrayErrorMessage = self::validateSellItemIdForArrayConstraintFromSetSellItemId($sellItemId))) {
             throw new InvalidArgumentException($sellItemIdArrayErrorMessage, __LINE__);
         }
         $this->sellItemId = $sellItemId;

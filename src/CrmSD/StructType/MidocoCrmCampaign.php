@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoCrmCampaign StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoCrmCampaign extends CrmCampaignDTO
 {
     /**
@@ -55,7 +56,7 @@ class MidocoCrmCampaign extends CrmCampaignDTO
     /**
      * Set dateOfIssue value
      * @param string $dateOfIssue
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCampaign
      */
     public function setDateOfIssue(?string $dateOfIssue = null): self
     {
@@ -78,7 +79,7 @@ class MidocoCrmCampaign extends CrmCampaignDTO
     /**
      * Set remark value
      * @param string $remark
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCampaign
      */
     public function setRemark(?string $remark = null): self
     {
@@ -101,7 +102,7 @@ class MidocoCrmCampaign extends CrmCampaignDTO
     /**
      * Set recipientInfo value
      * @param string $recipientInfo
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MidocoCrmCampaign
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MidocoCrmCampaign
      */
     public function setRecipientInfo(?string $recipientInfo = null): self
     {

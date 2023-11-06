@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAvailablePrintQueues4UserResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
         return $this->MidocoPrintQueue;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintQueue method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintQueue method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintQueue method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintQueueForArrayConstraintsFromSetMidocoPrintQueue(?array $values = []): string
+    public static function validateMidocoPrintQueueForArrayConstraintFromSetMidocoPrintQueue(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetAvailablePrintQueues4UserResponse extends AbstractStructBase
     public function setMidocoPrintQueue(?array $midocoPrintQueue = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintQueueArrayErrorMessage = self::validateMidocoPrintQueueForArrayConstraintsFromSetMidocoPrintQueue($midocoPrintQueue))) {
+        if ('' !== ($midocoPrintQueueArrayErrorMessage = self::validateMidocoPrintQueueForArrayConstraintFromSetMidocoPrintQueue($midocoPrintQueue))) {
             throw new InvalidArgumentException($midocoPrintQueueArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintQueue = $midocoPrintQueue;

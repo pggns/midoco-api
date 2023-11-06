@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OpenErCsvExportResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OpenErCsvExportResponse extends AbstractStructBase
 {
     /**

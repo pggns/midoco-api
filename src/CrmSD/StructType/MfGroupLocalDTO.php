@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MfGroupLocalDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MfGroupLocalDTO extends AbstractStructBase
 {
     /**
@@ -63,7 +64,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfGroupLocalDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -86,7 +87,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set groupId value
      * @param string $groupId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfGroupLocalDTO
      */
     public function setGroupId(?string $groupId = null): self
     {
@@ -109,7 +110,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set locale value
      * @param string $locale
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfGroupLocalDTO
      */
     public function setLocale(?string $locale = null): self
     {
@@ -132,7 +133,7 @@ class MfGroupLocalDTO extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MfGroupLocalDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MfGroupLocalDTO
      */
     public function setName(?string $name = null): self
     {

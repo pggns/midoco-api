@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PrintRemarkDestinationList StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PrintRemarkDestinationList extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PrintRemarkDestinationList extends AbstractStructBase
         return $this->MidocoPrintRemarkDestination;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoPrintRemarkDestination method
+     * This method is responsible for validating the value(s) passed to the setMidocoPrintRemarkDestination method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoPrintRemarkDestination method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoPrintRemarkDestinationForArrayConstraintsFromSetMidocoPrintRemarkDestination(?array $values = []): string
+    public static function validateMidocoPrintRemarkDestinationForArrayConstraintFromSetMidocoPrintRemarkDestination(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PrintRemarkDestinationList extends AbstractStructBase
     public function setMidocoPrintRemarkDestination(?array $midocoPrintRemarkDestination = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoPrintRemarkDestinationArrayErrorMessage = self::validateMidocoPrintRemarkDestinationForArrayConstraintsFromSetMidocoPrintRemarkDestination($midocoPrintRemarkDestination))) {
+        if ('' !== ($midocoPrintRemarkDestinationArrayErrorMessage = self::validateMidocoPrintRemarkDestinationForArrayConstraintFromSetMidocoPrintRemarkDestination($midocoPrintRemarkDestination))) {
             throw new InvalidArgumentException($midocoPrintRemarkDestinationArrayErrorMessage, __LINE__);
         }
         $this->MidocoPrintRemarkDestination = $midocoPrintRemarkDestination;

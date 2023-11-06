@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: getTempDocumentRepositoryById --- retrieves a temp document repository record by id
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetTempDocumentRepositoryByIdResponse extends AbstractStructBase
 {
     /**

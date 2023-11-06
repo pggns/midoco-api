@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SearchOrderForAgencyResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SearchOrderForAgencyResponse extends AbstractStructBase
 {
     /**
@@ -51,12 +52,13 @@ class SearchOrderForAgencyResponse extends AbstractStructBase
         return $this->MidocoBookingInfoExt;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBookingInfoExt method
+     * This method is responsible for validating the value(s) passed to the setMidocoBookingInfoExt method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBookingInfoExt method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBookingInfoExtForArrayConstraintsFromSetMidocoBookingInfoExt(?array $values = []): string
+    public static function validateMidocoBookingInfoExtForArrayConstraintFromSetMidocoBookingInfoExt(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -85,7 +87,7 @@ class SearchOrderForAgencyResponse extends AbstractStructBase
     public function setMidocoBookingInfoExt(?array $midocoBookingInfoExt = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBookingInfoExtArrayErrorMessage = self::validateMidocoBookingInfoExtForArrayConstraintsFromSetMidocoBookingInfoExt($midocoBookingInfoExt))) {
+        if ('' !== ($midocoBookingInfoExtArrayErrorMessage = self::validateMidocoBookingInfoExtForArrayConstraintFromSetMidocoBookingInfoExt($midocoBookingInfoExt))) {
             throw new InvalidArgumentException($midocoBookingInfoExtArrayErrorMessage, __LINE__);
         }
         $this->MidocoBookingInfoExt = $midocoBookingInfoExt;

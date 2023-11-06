@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for RebookingSupplierInvoiceRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class RebookingSupplierInvoiceRequest extends AbstractStructBase
 {
     /**
@@ -64,12 +65,13 @@ class RebookingSupplierInvoiceRequest extends AbstractStructBase
         return $this->revenues;
     }
     /**
-     * This method is responsible for validating the values passed to the setRevenues method
+     * This method is responsible for validating the value(s) passed to the setRevenues method
      * This method is willingly generated in order to preserve the one-line inline validation within the setRevenues method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateRevenuesForArrayConstraintsFromSetRevenues(?array $values = []): string
+    public static function validateRevenuesForArrayConstraintFromSetRevenues(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -98,7 +100,7 @@ class RebookingSupplierInvoiceRequest extends AbstractStructBase
     public function setRevenues(?array $revenues = null): self
     {
         // validation for constraint: array
-        if ('' !== ($revenuesArrayErrorMessage = self::validateRevenuesForArrayConstraintsFromSetRevenues($revenues))) {
+        if ('' !== ($revenuesArrayErrorMessage = self::validateRevenuesForArrayConstraintFromSetRevenues($revenues))) {
             throw new InvalidArgumentException($revenuesArrayErrorMessage, __LINE__);
         }
         $this->revenues = $revenues;

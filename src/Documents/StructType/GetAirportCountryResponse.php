@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAirportCountryResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAirportCountryResponse extends AbstractStructBase
 {
     /**

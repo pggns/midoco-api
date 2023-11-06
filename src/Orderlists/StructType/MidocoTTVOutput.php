@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoTTVOutput StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoTTVOutput extends AbstractStructBase
 {
     /**

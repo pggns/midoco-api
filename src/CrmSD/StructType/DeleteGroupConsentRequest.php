@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteGroupConsentRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteGroupConsentRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class DeleteGroupConsentRequest extends AbstractStructBase
     /**
      * Set customerId value
      * @param int $customerId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteGroupConsentRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteGroupConsentRequest
      */
     public function setCustomerId(?int $customerId = null): self
     {
@@ -70,7 +71,7 @@ class DeleteGroupConsentRequest extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteGroupConsentRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteGroupConsentRequest
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

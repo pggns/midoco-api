@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DocumenttypeDescriptionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DocumenttypeDescriptionDTO extends AbstractStructBase
 {
     /**
@@ -55,7 +56,7 @@ class DocumenttypeDescriptionDTO extends AbstractStructBase
     /**
      * Set cultureId value
      * @param string $cultureId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumenttypeDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumenttypeDescriptionDTO
      */
     public function setCultureId(?string $cultureId = null): self
     {
@@ -78,7 +79,7 @@ class DocumenttypeDescriptionDTO extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumenttypeDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumenttypeDescriptionDTO
      */
     public function setDescription(?string $description = null): self
     {
@@ -101,7 +102,7 @@ class DocumenttypeDescriptionDTO extends AbstractStructBase
     /**
      * Set typeId value
      * @param string $typeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DocumenttypeDescriptionDTO
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DocumenttypeDescriptionDTO
      */
     public function setTypeId(?string $typeId = null): self
     {

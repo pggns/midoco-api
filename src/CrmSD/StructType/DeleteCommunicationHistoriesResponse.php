@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCommunicationHistoriesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCommunicationHistoriesResponse extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class DeleteCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set result value
      * @param bool $result
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCommunicationHistoriesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCommunicationHistoriesResponse
      */
     public function setResult(?bool $result = null): self
     {
@@ -70,7 +71,7 @@ class DeleteCommunicationHistoriesResponse extends AbstractStructBase
     /**
      * Set internalVersion value
      * @param int $internalVersion
-     * @return \Pggns\MidocoApi\CrmSD\StructType\DeleteCommunicationHistoriesResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\DeleteCommunicationHistoriesResponse
      */
     public function setInternalVersion(?int $internalVersion = null): self
     {

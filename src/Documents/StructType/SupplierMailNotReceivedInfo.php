@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SupplierMailNotReceivedInfo StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
 {
     /**
@@ -53,12 +54,13 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
         return $this->SupplierMailNotReceivedCustomerInfo;
     }
     /**
-     * This method is responsible for validating the values passed to the setSupplierMailNotReceivedCustomerInfo method
+     * This method is responsible for validating the value(s) passed to the setSupplierMailNotReceivedCustomerInfo method
      * This method is willingly generated in order to preserve the one-line inline validation within the setSupplierMailNotReceivedCustomerInfo method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateSupplierMailNotReceivedCustomerInfoForArrayConstraintsFromSetSupplierMailNotReceivedCustomerInfo(?array $values = []): string
+    public static function validateSupplierMailNotReceivedCustomerInfoForArrayConstraintFromSetSupplierMailNotReceivedCustomerInfo(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -87,7 +89,7 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     public function setSupplierMailNotReceivedCustomerInfo(?array $supplierMailNotReceivedCustomerInfo = null): self
     {
         // validation for constraint: array
-        if ('' !== ($supplierMailNotReceivedCustomerInfoArrayErrorMessage = self::validateSupplierMailNotReceivedCustomerInfoForArrayConstraintsFromSetSupplierMailNotReceivedCustomerInfo($supplierMailNotReceivedCustomerInfo))) {
+        if ('' !== ($supplierMailNotReceivedCustomerInfoArrayErrorMessage = self::validateSupplierMailNotReceivedCustomerInfoForArrayConstraintFromSetSupplierMailNotReceivedCustomerInfo($supplierMailNotReceivedCustomerInfo))) {
             throw new InvalidArgumentException($supplierMailNotReceivedCustomerInfoArrayErrorMessage, __LINE__);
         }
         $this->SupplierMailNotReceivedCustomerInfo = $supplierMailNotReceivedCustomerInfo;
@@ -119,12 +121,13 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
         return $this->MidocoFlightDetail;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoFlightDetail method
+     * This method is responsible for validating the value(s) passed to the setMidocoFlightDetail method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFlightDetail method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoFlightDetailForArrayConstraintsFromSetMidocoFlightDetail(?array $values = []): string
+    public static function validateMidocoFlightDetailForArrayConstraintFromSetMidocoFlightDetail(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -153,7 +156,7 @@ class SupplierMailNotReceivedInfo extends SupplierMailNotReceivedSellItemInfo
     public function setMidocoFlightDetail(?array $midocoFlightDetail = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoFlightDetailArrayErrorMessage = self::validateMidocoFlightDetailForArrayConstraintsFromSetMidocoFlightDetail($midocoFlightDetail))) {
+        if ('' !== ($midocoFlightDetailArrayErrorMessage = self::validateMidocoFlightDetailForArrayConstraintFromSetMidocoFlightDetail($midocoFlightDetail))) {
             throw new InvalidArgumentException($midocoFlightDetailArrayErrorMessage, __LINE__);
         }
         $this->MidocoFlightDetail = $midocoFlightDetail;

@@ -11,16 +11,9 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BillingDataListResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class BillingDataListResponse extends AbstractStructBase
 {
-    /**
-     * The MidocoBillingDataListSums
-     * Meta information extracted from the WSDL
-     * - maxOccurs: 1
-     * - minOccurs: 1
-     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType
-     */
-    protected \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $MidocoBillingDataListSums;
     /**
      * The MidocoBillingDataList
      * Meta information extracted from the WSDL
@@ -29,6 +22,11 @@ class BillingDataListResponse extends AbstractStructBase
      * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType[]
      */
     protected ?array $MidocoBillingDataList = null;
+    /**
+     * The MidocoBillingDataListSums
+     * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType|null
+     */
+    protected ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $MidocoBillingDataListSums = null;
     /**
      * The CdfTitle
      * Meta information extracted from the WSDL
@@ -46,41 +44,22 @@ class BillingDataListResponse extends AbstractStructBase
     protected ?int $noOfResults = null;
     /**
      * Constructor method for BillingDataListResponse
-     * @uses BillingDataListResponse::setMidocoBillingDataListSums()
      * @uses BillingDataListResponse::setMidocoBillingDataList()
+     * @uses BillingDataListResponse::setMidocoBillingDataListSums()
      * @uses BillingDataListResponse::setCdfTitle()
      * @uses BillingDataListResponse::setNoOfResults()
-     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
      * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListType[] $midocoBillingDataList
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
      * @param \Pggns\MidocoApi\Orderlists\StructType\CdfTitle[] $cdfTitle
      * @param int $noOfResults
      */
-    public function __construct(\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums, ?array $midocoBillingDataList = null, ?array $cdfTitle = null, ?int $noOfResults = null)
+    public function __construct(?array $midocoBillingDataList = null, ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums = null, ?array $cdfTitle = null, ?int $noOfResults = null)
     {
         $this
-            ->setMidocoBillingDataListSums($midocoBillingDataListSums)
             ->setMidocoBillingDataList($midocoBillingDataList)
+            ->setMidocoBillingDataListSums($midocoBillingDataListSums)
             ->setCdfTitle($cdfTitle)
             ->setNoOfResults($noOfResults);
-    }
-    /**
-     * Get MidocoBillingDataListSums value
-     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType
-     */
-    public function getMidocoBillingDataListSums(): \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType
-    {
-        return $this->MidocoBillingDataListSums;
-    }
-    /**
-     * Set MidocoBillingDataListSums value
-     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
-     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
-     */
-    public function setMidocoBillingDataListSums(\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums): self
-    {
-        $this->MidocoBillingDataListSums = $midocoBillingDataListSums;
-        
-        return $this;
     }
     /**
      * Get MidocoBillingDataList value
@@ -91,12 +70,13 @@ class BillingDataListResponse extends AbstractStructBase
         return $this->MidocoBillingDataList;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoBillingDataList method
+     * This method is responsible for validating the value(s) passed to the setMidocoBillingDataList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBillingDataList method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoBillingDataListForArrayConstraintsFromSetMidocoBillingDataList(?array $values = []): string
+    public static function validateMidocoBillingDataListForArrayConstraintFromSetMidocoBillingDataList(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -125,7 +105,7 @@ class BillingDataListResponse extends AbstractStructBase
     public function setMidocoBillingDataList(?array $midocoBillingDataList = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoBillingDataListArrayErrorMessage = self::validateMidocoBillingDataListForArrayConstraintsFromSetMidocoBillingDataList($midocoBillingDataList))) {
+        if ('' !== ($midocoBillingDataListArrayErrorMessage = self::validateMidocoBillingDataListForArrayConstraintFromSetMidocoBillingDataList($midocoBillingDataList))) {
             throw new InvalidArgumentException($midocoBillingDataListArrayErrorMessage, __LINE__);
         }
         $this->MidocoBillingDataList = $midocoBillingDataList;
@@ -149,6 +129,25 @@ class BillingDataListResponse extends AbstractStructBase
         return $this;
     }
     /**
+     * Get MidocoBillingDataListSums value
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType|null
+     */
+    public function getMidocoBillingDataListSums(): ?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType
+    {
+        return $this->MidocoBillingDataListSums;
+    }
+    /**
+     * Set MidocoBillingDataListSums value
+     * @param \Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums
+     * @return \Pggns\MidocoApi\Orderlists\StructType\BillingDataListResponse
+     */
+    public function setMidocoBillingDataListSums(?\Pggns\MidocoApi\Orderlists\StructType\MidocoBillingDataListSumsType $midocoBillingDataListSums = null): self
+    {
+        $this->MidocoBillingDataListSums = $midocoBillingDataListSums;
+        
+        return $this;
+    }
+    /**
      * Get CdfTitle value
      * @return \Pggns\MidocoApi\Orderlists\StructType\CdfTitle[]
      */
@@ -157,12 +156,13 @@ class BillingDataListResponse extends AbstractStructBase
         return $this->CdfTitle;
     }
     /**
-     * This method is responsible for validating the values passed to the setCdfTitle method
+     * This method is responsible for validating the value(s) passed to the setCdfTitle method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCdfTitle method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateCdfTitleForArrayConstraintsFromSetCdfTitle(?array $values = []): string
+    public static function validateCdfTitleForArrayConstraintFromSetCdfTitle(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -191,7 +191,7 @@ class BillingDataListResponse extends AbstractStructBase
     public function setCdfTitle(?array $cdfTitle = null): self
     {
         // validation for constraint: array
-        if ('' !== ($cdfTitleArrayErrorMessage = self::validateCdfTitleForArrayConstraintsFromSetCdfTitle($cdfTitle))) {
+        if ('' !== ($cdfTitleArrayErrorMessage = self::validateCdfTitleForArrayConstraintFromSetCdfTitle($cdfTitle))) {
             throw new InvalidArgumentException($cdfTitleArrayErrorMessage, __LINE__);
         }
         $this->CdfTitle = $cdfTitle;

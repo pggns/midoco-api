@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetSupplierTraveltypesResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetSupplierTraveltypesResponse extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class GetSupplierTraveltypesResponse extends AbstractStructBase
         return $this->MidocoSupplierTraveltype;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoSupplierTraveltype method
+     * This method is responsible for validating the value(s) passed to the setMidocoSupplierTraveltype method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoSupplierTraveltype method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoSupplierTraveltypeForArrayConstraintsFromSetMidocoSupplierTraveltype(?array $values = []): string
+    public static function validateMidocoSupplierTraveltypeForArrayConstraintFromSetMidocoSupplierTraveltype(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class GetSupplierTraveltypesResponse extends AbstractStructBase
     public function setMidocoSupplierTraveltype(?array $midocoSupplierTraveltype = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoSupplierTraveltypeArrayErrorMessage = self::validateMidocoSupplierTraveltypeForArrayConstraintsFromSetMidocoSupplierTraveltype($midocoSupplierTraveltype))) {
+        if ('' !== ($midocoSupplierTraveltypeArrayErrorMessage = self::validateMidocoSupplierTraveltypeForArrayConstraintFromSetMidocoSupplierTraveltype($midocoSupplierTraveltype))) {
             throw new InvalidArgumentException($midocoSupplierTraveltypeArrayErrorMessage, __LINE__);
         }
         $this->MidocoSupplierTraveltype = $midocoSupplierTraveltype;

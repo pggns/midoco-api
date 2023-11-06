@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoSearchUnit StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoSearchUnit extends OrgunitDTO
 {
 }

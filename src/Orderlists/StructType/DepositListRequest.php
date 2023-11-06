@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DepositListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DepositListRequest extends AbstractStructBase
 {
     /**

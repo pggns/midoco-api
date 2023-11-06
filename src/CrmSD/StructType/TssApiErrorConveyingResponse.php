@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for TssApiErrorConveyingResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class TssApiErrorConveyingResponse extends AbstractStructBase
 {
     /**
@@ -91,7 +92,7 @@ class TssApiErrorConveyingResponse extends AbstractStructBase
     /**
      * Set errorBundle value
      * @param string $errorBundle
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssApiErrorConveyingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssApiErrorConveyingResponse
      */
     public function setErrorBundle(?string $errorBundle = null): self
     {
@@ -114,7 +115,7 @@ class TssApiErrorConveyingResponse extends AbstractStructBase
     /**
      * Set errorCode value
      * @param string $errorCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssApiErrorConveyingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssApiErrorConveyingResponse
      */
     public function setErrorCode(?string $errorCode = null): self
     {
@@ -137,7 +138,7 @@ class TssApiErrorConveyingResponse extends AbstractStructBase
     /**
      * Set apiErrorCode value
      * @param string $apiErrorCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssApiErrorConveyingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssApiErrorConveyingResponse
      */
     public function setApiErrorCode(?string $apiErrorCode = null): self
     {
@@ -160,7 +161,7 @@ class TssApiErrorConveyingResponse extends AbstractStructBase
     /**
      * Set apiErrorMessage value
      * @param string $apiErrorMessage
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssApiErrorConveyingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssApiErrorConveyingResponse
      */
     public function setApiErrorMessage(?string $apiErrorMessage = null): self
     {
@@ -183,7 +184,7 @@ class TssApiErrorConveyingResponse extends AbstractStructBase
     /**
      * Set apiStatusCode value
      * @param int $apiStatusCode
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssApiErrorConveyingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssApiErrorConveyingResponse
      */
     public function setApiStatusCode(?int $apiStatusCode = null): self
     {
@@ -206,7 +207,7 @@ class TssApiErrorConveyingResponse extends AbstractStructBase
     /**
      * Set apiStatusText value
      * @param string $apiStatusText
-     * @return \Pggns\MidocoApi\CrmSD\StructType\TssApiErrorConveyingResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\TssApiErrorConveyingResponse
      */
     public function setApiStatusText(?string $apiStatusText = null): self
     {

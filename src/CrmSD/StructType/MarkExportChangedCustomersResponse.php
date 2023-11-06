@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MarkExportChangedCustomersResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MarkExportChangedCustomersResponse extends AbstractStructBase
 {
     /**
@@ -48,12 +49,13 @@ class MarkExportChangedCustomersResponse extends AbstractStructBase
         return $this->notFoundChangeId;
     }
     /**
-     * This method is responsible for validating the values passed to the setNotFoundChangeId method
+     * This method is responsible for validating the value(s) passed to the setNotFoundChangeId method
      * This method is willingly generated in order to preserve the one-line inline validation within the setNotFoundChangeId method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateNotFoundChangeIdForArrayConstraintsFromSetNotFoundChangeId(?array $values = []): string
+    public static function validateNotFoundChangeIdForArrayConstraintFromSetNotFoundChangeId(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -77,12 +79,12 @@ class MarkExportChangedCustomersResponse extends AbstractStructBase
      * Set notFoundChangeId value
      * @throws InvalidArgumentException
      * @param int[] $notFoundChangeId
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkExportChangedCustomersResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MarkExportChangedCustomersResponse
      */
     public function setNotFoundChangeId(?array $notFoundChangeId = null): self
     {
         // validation for constraint: array
-        if ('' !== ($notFoundChangeIdArrayErrorMessage = self::validateNotFoundChangeIdForArrayConstraintsFromSetNotFoundChangeId($notFoundChangeId))) {
+        if ('' !== ($notFoundChangeIdArrayErrorMessage = self::validateNotFoundChangeIdForArrayConstraintFromSetNotFoundChangeId($notFoundChangeId))) {
             throw new InvalidArgumentException($notFoundChangeIdArrayErrorMessage, __LINE__);
         }
         $this->notFoundChangeId = $notFoundChangeId;
@@ -93,7 +95,7 @@ class MarkExportChangedCustomersResponse extends AbstractStructBase
      * Add item to notFoundChangeId value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkExportChangedCustomersResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MarkExportChangedCustomersResponse
      */
     public function addToNotFoundChangeId(int $item): self
     {
@@ -116,7 +118,7 @@ class MarkExportChangedCustomersResponse extends AbstractStructBase
     /**
      * Set numEntriesMarked value
      * @param int $numEntriesMarked
-     * @return \Pggns\MidocoApi\CrmSD\StructType\MarkExportChangedCustomersResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\MarkExportChangedCustomersResponse
      */
     public function setNumEntriesMarked(?int $numEntriesMarked = null): self
     {

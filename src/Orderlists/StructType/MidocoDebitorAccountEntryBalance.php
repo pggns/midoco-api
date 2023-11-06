@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MidocoDebitorAccountEntryBalance StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class MidocoDebitorAccountEntryBalance extends AbstractStructBase
 {
     /**
@@ -64,6 +65,16 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
      */
     protected ?string $currency = null;
     /**
+     * The creditLimit
+     * @var float|null
+     */
+    protected ?float $creditLimit = null;
+    /**
+     * The creditLimitIndicator
+     * @var string|null
+     */
+    protected ?string $creditLimitIndicator = null;
+    /**
      * The originalCurrency
      * @var string|null
      */
@@ -80,6 +91,8 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
      * @uses MidocoDebitorAccountEntryBalance::setOriginalInvoicedAmount()
      * @uses MidocoDebitorAccountEntryBalance::setOriginalOpenAmount()
      * @uses MidocoDebitorAccountEntryBalance::setCurrency()
+     * @uses MidocoDebitorAccountEntryBalance::setCreditLimit()
+     * @uses MidocoDebitorAccountEntryBalance::setCreditLimitIndicator()
      * @uses MidocoDebitorAccountEntryBalance::setOriginalCurrency()
      * @param string $accountId
      * @param float $paidAmount
@@ -91,9 +104,11 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
      * @param float $originalInvoicedAmount
      * @param float $originalOpenAmount
      * @param string $currency
+     * @param float $creditLimit
+     * @param string $creditLimitIndicator
      * @param string $originalCurrency
      */
-    public function __construct(?string $accountId = null, ?float $paidAmount = null, ?float $invoicedAmount = null, ?float $openAmount = null, ?string $accountName = null, ?string $accountType = null, ?float $originalPaidAmount = null, ?float $originalInvoicedAmount = null, ?float $originalOpenAmount = null, ?string $currency = null, ?string $originalCurrency = null)
+    public function __construct(?string $accountId = null, ?float $paidAmount = null, ?float $invoicedAmount = null, ?float $openAmount = null, ?string $accountName = null, ?string $accountType = null, ?float $originalPaidAmount = null, ?float $originalInvoicedAmount = null, ?float $originalOpenAmount = null, ?string $currency = null, ?float $creditLimit = null, ?string $creditLimitIndicator = null, ?string $originalCurrency = null)
     {
         $this
             ->setAccountId($accountId)
@@ -106,6 +121,8 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
             ->setOriginalInvoicedAmount($originalInvoicedAmount)
             ->setOriginalOpenAmount($originalOpenAmount)
             ->setCurrency($currency)
+            ->setCreditLimit($creditLimit)
+            ->setCreditLimitIndicator($creditLimitIndicator)
             ->setOriginalCurrency($originalCurrency);
     }
     /**
@@ -335,6 +352,52 @@ class MidocoDebitorAccountEntryBalance extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($currency, true), gettype($currency)), __LINE__);
         }
         $this->currency = $currency;
+        
+        return $this;
+    }
+    /**
+     * Get creditLimit value
+     * @return float|null
+     */
+    public function getCreditLimit(): ?float
+    {
+        return $this->creditLimit;
+    }
+    /**
+     * Set creditLimit value
+     * @param float $creditLimit
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitorAccountEntryBalance
+     */
+    public function setCreditLimit(?float $creditLimit = null): self
+    {
+        // validation for constraint: float
+        if (!is_null($creditLimit) && !(is_float($creditLimit) || is_numeric($creditLimit))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($creditLimit, true), gettype($creditLimit)), __LINE__);
+        }
+        $this->creditLimit = $creditLimit;
+        
+        return $this;
+    }
+    /**
+     * Get creditLimitIndicator value
+     * @return string|null
+     */
+    public function getCreditLimitIndicator(): ?string
+    {
+        return $this->creditLimitIndicator;
+    }
+    /**
+     * Set creditLimitIndicator value
+     * @param string $creditLimitIndicator
+     * @return \Pggns\MidocoApi\Orderlists\StructType\MidocoDebitorAccountEntryBalance
+     */
+    public function setCreditLimitIndicator(?string $creditLimitIndicator = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($creditLimitIndicator) && !is_string($creditLimitIndicator)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creditLimitIndicator, true), gettype($creditLimitIndicator)), __LINE__);
+        }
+        $this->creditLimitIndicator = $creditLimitIndicator;
         
         return $this;
     }

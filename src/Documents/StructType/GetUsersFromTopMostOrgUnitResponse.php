@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetUsersFromTopMostOrgUnitResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
 {
     /**
@@ -23,14 +24,25 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
      */
     protected ?array $MidocoUser = null;
     /**
+     * The userId
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * @var int[]
+     */
+    protected ?array $userId = null;
+    /**
      * Constructor method for GetUsersFromTopMostOrgUnitResponse
      * @uses GetUsersFromTopMostOrgUnitResponse::setMidocoUser()
+     * @uses GetUsersFromTopMostOrgUnitResponse::setUserId()
      * @param \Pggns\MidocoApi\Documents\StructType\MidocoUser[] $midocoUser
+     * @param int[] $userId
      */
-    public function __construct(?array $midocoUser = null)
+    public function __construct(?array $midocoUser = null, ?array $userId = null)
     {
         $this
-            ->setMidocoUser($midocoUser);
+            ->setMidocoUser($midocoUser)
+            ->setUserId($userId);
     }
     /**
      * Get MidocoUser value
@@ -41,12 +53,13 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
         return $this->MidocoUser;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoUser method
+     * This method is responsible for validating the value(s) passed to the setMidocoUser method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoUser method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoUserForArrayConstraintsFromSetMidocoUser(?array $values = []): string
+    public static function validateMidocoUserForArrayConstraintFromSetMidocoUser(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +88,7 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
     public function setMidocoUser(?array $midocoUser = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoUserArrayErrorMessage = self::validateMidocoUserForArrayConstraintsFromSetMidocoUser($midocoUser))) {
+        if ('' !== ($midocoUserArrayErrorMessage = self::validateMidocoUserForArrayConstraintFromSetMidocoUser($midocoUser))) {
             throw new InvalidArgumentException($midocoUserArrayErrorMessage, __LINE__);
         }
         $this->MidocoUser = $midocoUser;
@@ -95,6 +108,73 @@ class GetUsersFromTopMostOrgUnitResponse extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('The MidocoUser property can only contain items of type \Pggns\MidocoApi\Documents\StructType\MidocoUser, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->MidocoUser[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get userId value
+     * @return int[]
+     */
+    public function getUserId(): ?array
+    {
+        return $this->userId;
+    }
+    /**
+     * This method is responsible for validating the value(s) passed to the setUserId method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setUserId method
+     * This has to validate that each item contained by the array match the itemType constraint
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateUserIdForArrayConstraintFromSetUserId(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $getUsersFromTopMostOrgUnitResponseUserIdItem) {
+            // validation for constraint: itemType
+            if (!(is_int($getUsersFromTopMostOrgUnitResponseUserIdItem) || ctype_digit($getUsersFromTopMostOrgUnitResponseUserIdItem))) {
+                $invalidValues[] = is_object($getUsersFromTopMostOrgUnitResponseUserIdItem) ? get_class($getUsersFromTopMostOrgUnitResponseUserIdItem) : sprintf('%s(%s)', gettype($getUsersFromTopMostOrgUnitResponseUserIdItem), var_export($getUsersFromTopMostOrgUnitResponseUserIdItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The userId property can only contain items of type int, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set userId value
+     * @throws InvalidArgumentException
+     * @param int[] $userId
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsersFromTopMostOrgUnitResponse
+     */
+    public function setUserId(?array $userId = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($userIdArrayErrorMessage = self::validateUserIdForArrayConstraintFromSetUserId($userId))) {
+            throw new InvalidArgumentException($userIdArrayErrorMessage, __LINE__);
+        }
+        $this->userId = $userId;
+        
+        return $this;
+    }
+    /**
+     * Add item to userId value
+     * @throws InvalidArgumentException
+     * @param int $item
+     * @return \Pggns\MidocoApi\Documents\StructType\GetUsersFromTopMostOrgUnitResponse
+     */
+    public function addToUserId(int $item): self
+    {
+        // validation for constraint: itemType
+        if (!(is_int($item) || ctype_digit($item))) {
+            throw new InvalidArgumentException(sprintf('The userId property can only contain items of type int, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->userId[] = $item;
         
         return $this;
     }

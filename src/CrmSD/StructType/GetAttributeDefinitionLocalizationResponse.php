@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAttributeDefinitionLocalizationResponse StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAttributeDefinitionLocalizationResponse extends AbstractStructBase
 {
     /**
@@ -39,7 +40,7 @@ class GetAttributeDefinitionLocalizationResponse extends AbstractStructBase
     /**
      * Set localization value
      * @param string $localization
-     * @return \Pggns\MidocoApi\CrmSD\StructType\GetAttributeDefinitionLocalizationResponse
+     * @return \Pggns\MidocoApi\Crmsd\StructType\GetAttributeDefinitionLocalizationResponse
      */
     public function setLocalization(?string $localization = null): self
     {

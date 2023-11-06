@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PerformLetterCampaignRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PerformLetterCampaignRequest extends AbstractStructBase
 {
     /**

@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for OpenErListRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class OpenErListRequest extends AbstractStructBase
 {
     /**

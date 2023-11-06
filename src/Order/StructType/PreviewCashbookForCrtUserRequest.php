@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for PreviewCashbookForCrtUserRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class PreviewCashbookForCrtUserRequest extends AbstractStructBase
 {
     /**
@@ -41,12 +42,13 @@ class PreviewCashbookForCrtUserRequest extends AbstractStructBase
         return $this->MidocoCashbookSummary;
     }
     /**
-     * This method is responsible for validating the values passed to the setMidocoCashbookSummary method
+     * This method is responsible for validating the value(s) passed to the setMidocoCashbookSummary method
      * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCashbookSummary method
+     * This has to validate that each item contained by the array match the itemType constraint
      * @param array $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateMidocoCashbookSummaryForArrayConstraintsFromSetMidocoCashbookSummary(?array $values = []): string
+    public static function validateMidocoCashbookSummaryForArrayConstraintFromSetMidocoCashbookSummary(?array $values = []): string
     {
         if (!is_array($values)) {
             return '';
@@ -75,7 +77,7 @@ class PreviewCashbookForCrtUserRequest extends AbstractStructBase
     public function setMidocoCashbookSummary(?array $midocoCashbookSummary = null): self
     {
         // validation for constraint: array
-        if ('' !== ($midocoCashbookSummaryArrayErrorMessage = self::validateMidocoCashbookSummaryForArrayConstraintsFromSetMidocoCashbookSummary($midocoCashbookSummary))) {
+        if ('' !== ($midocoCashbookSummaryArrayErrorMessage = self::validateMidocoCashbookSummaryForArrayConstraintFromSetMidocoCashbookSummary($midocoCashbookSummary))) {
             throw new InvalidArgumentException($midocoCashbookSummaryArrayErrorMessage, __LINE__);
         }
         $this->MidocoCashbookSummary = $midocoCashbookSummary;

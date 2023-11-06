@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for AttributePositionDTO StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AttributePositionDTO extends AbstractStructBase
 {
     /**

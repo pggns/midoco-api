@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pggns\MidocoApi\CrmSD\StructType;
+namespace Pggns\MidocoApi\Crmsd\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -11,6 +11,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ValidateCreditCardRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class ValidateCreditCardRequest extends AbstractStructBase
 {
     /**
@@ -47,7 +48,7 @@ class ValidateCreditCardRequest extends AbstractStructBase
     /**
      * Set ccNumber value
      * @param string $ccNumber
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateCreditCardRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateCreditCardRequest
      */
     public function setCcNumber(?string $ccNumber = null): self
     {
@@ -70,7 +71,7 @@ class ValidateCreditCardRequest extends AbstractStructBase
     /**
      * Set creditCardType value
      * @param string $creditCardType
-     * @return \Pggns\MidocoApi\CrmSD\StructType\ValidateCreditCardRequest
+     * @return \Pggns\MidocoApi\Crmsd\StructType\ValidateCreditCardRequest
      */
     public function setCreditCardType(?string $creditCardType = null): self
     {

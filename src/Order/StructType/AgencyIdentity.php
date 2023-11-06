@@ -13,6 +13,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * - documentation: Identification of the booking agency. Important when the loginInformation do not contain the correct information for assigning the data to the midoco OrgUnit.
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class AgencyIdentity extends AbstractStructBase
 {
     /**
@@ -82,11 +83,20 @@ class AgencyIdentity extends AbstractStructBase
     /**
      * The agency_commission_amount
      * Meta information extracted from the WSDL
-     * - documentation: in case of a message for a supplier, add agency commission here, if preCalculated. Midoco will calculate commission amount otherwise by agency_no and commission_id using masterDate
+     * - documentation: in case of a message for a supplier, add agency commission here, if preCalculated. Midoco will calculate commission amount otherwise by agency_no and commission_id using masterDate. Empty will be treated as 0, for no preCalculated
+     * agencyCommission for order element should not be sent at all
      * - minOccurs: 0
      * @var float|null
      */
     protected ?float $agency_commission_amount = null;
+    /**
+     * The agencyCommissionCurrency
+     * Meta information extracted from the WSDL
+     * - documentation: the commission currency - use only for foreign currency agency settlement
+     * - minOccurs: 0
+     * @var string|null
+     */
+    protected ?string $agencyCommissionCurrency = null;
     /**
      * The invoicing_mode
      * Meta information extracted from the WSDL
@@ -122,6 +132,7 @@ class AgencyIdentity extends AbstractStructBase
      * @uses AgencyIdentity::setAgentAffiliate()
      * @uses AgencyIdentity::setAgency_no()
      * @uses AgencyIdentity::setAgency_commission_amount()
+     * @uses AgencyIdentity::setAgencyCommissionCurrency()
      * @uses AgencyIdentity::setInvoicing_mode()
      * @uses AgencyIdentity::setUnderAgencyId()
      * @uses AgencyIdentity::setAgencyInfo()
@@ -134,11 +145,12 @@ class AgencyIdentity extends AbstractStructBase
      * @param string $agentAffiliate
      * @param string $agency_no
      * @param float $agency_commission_amount
+     * @param string $agencyCommissionCurrency
      * @param string $invoicing_mode
      * @param string $underAgencyId
      * @param \Pggns\MidocoApi\Order\StructType\AgencyInfoType $agencyInfo
      */
-    public function __construct(?string $crsAgencyNo = null, ?string $crsType = null, ?string $crsExpedientCode = null, ?int $midocoUserId = null, ?string $subagency = null, ?string $agent = null, ?string $agentAffiliate = null, ?string $agency_no = null, ?float $agency_commission_amount = null, ?string $invoicing_mode = null, ?string $underAgencyId = null, ?\Pggns\MidocoApi\Order\StructType\AgencyInfoType $agencyInfo = null)
+    public function __construct(?string $crsAgencyNo = null, ?string $crsType = null, ?string $crsExpedientCode = null, ?int $midocoUserId = null, ?string $subagency = null, ?string $agent = null, ?string $agentAffiliate = null, ?string $agency_no = null, ?float $agency_commission_amount = null, ?string $agencyCommissionCurrency = null, ?string $invoicing_mode = null, ?string $underAgencyId = null, ?\Pggns\MidocoApi\Order\StructType\AgencyInfoType $agencyInfo = null)
     {
         $this
             ->setCrsAgencyNo($crsAgencyNo)
@@ -150,6 +162,7 @@ class AgencyIdentity extends AbstractStructBase
             ->setAgentAffiliate($agentAffiliate)
             ->setAgency_no($agency_no)
             ->setAgency_commission_amount($agency_commission_amount)
+            ->setAgencyCommissionCurrency($agencyCommissionCurrency)
             ->setInvoicing_mode($invoicing_mode)
             ->setUnderAgencyId($underAgencyId)
             ->setAgencyInfo($agencyInfo);
@@ -358,6 +371,29 @@ class AgencyIdentity extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a float value, %s given', var_export($agency_commission_amount, true), gettype($agency_commission_amount)), __LINE__);
         }
         $this->agency_commission_amount = $agency_commission_amount;
+        
+        return $this;
+    }
+    /**
+     * Get agencyCommissionCurrency value
+     * @return string|null
+     */
+    public function getAgencyCommissionCurrency(): ?string
+    {
+        return $this->agencyCommissionCurrency;
+    }
+    /**
+     * Set agencyCommissionCurrency value
+     * @param string $agencyCommissionCurrency
+     * @return \Pggns\MidocoApi\Order\StructType\AgencyIdentity
+     */
+    public function setAgencyCommissionCurrency(?string $agencyCommissionCurrency = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($agencyCommissionCurrency) && !is_string($agencyCommissionCurrency)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($agencyCommissionCurrency, true), gettype($agencyCommissionCurrency)), __LINE__);
+        }
+        $this->agencyCommissionCurrency = $agencyCommissionCurrency;
         
         return $this;
     }
