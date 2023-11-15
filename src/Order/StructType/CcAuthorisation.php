@@ -45,9 +45,20 @@ class CcAuthorisation extends AbstractStructBase
     protected ?string $ccType = null;
     /**
      * The ccNumber
+     * Meta information extracted from the WSDL
+     * - documentation: mandatory for cc payment, not mandatory for paypal via cc Provider
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $ccNumber = null;
+    /**
+     * The authorisationExecuted
+     * Meta information extracted from the WSDL
+     * - documentation: authorisationExecuted = true, paypal transaction is authenticated and autorised , otherwise only authenticated | not mandatory for cc payment, mandatory for paypal via cc Provider
+     * - minOccurs: 0
+     * @var bool|null
+     */
+    protected ?bool $authorisationExecuted = null;
     /**
      * The ccToken
      * Meta information extracted from the WSDL
@@ -74,6 +85,7 @@ class CcAuthorisation extends AbstractStructBase
      * @uses CcAuthorisation::setCaptureExecuted()
      * @uses CcAuthorisation::setCcType()
      * @uses CcAuthorisation::setCcNumber()
+     * @uses CcAuthorisation::setAuthorisationExecuted()
      * @uses CcAuthorisation::setCcToken()
      * @uses CcAuthorisation::setPosition()
      * @uses CcAuthorisation::setTransactionRefId()
@@ -83,11 +95,12 @@ class CcAuthorisation extends AbstractStructBase
      * @param bool $captureExecuted
      * @param string $ccType
      * @param string $ccNumber
+     * @param bool $authorisationExecuted
      * @param \Pggns\MidocoApi\Order\StructType\CcToken $ccToken
      * @param int $position
      * @param string $transactionRefId
      */
-    public function __construct(?string $authCode = null, ?float $authAmount = null, ?string $currency = null, ?bool $captureExecuted = null, ?string $ccType = null, ?string $ccNumber = null, ?\Pggns\MidocoApi\Order\StructType\CcToken $ccToken = null, ?int $position = null, ?string $transactionRefId = null)
+    public function __construct(?string $authCode = null, ?float $authAmount = null, ?string $currency = null, ?bool $captureExecuted = null, ?string $ccType = null, ?string $ccNumber = null, ?bool $authorisationExecuted = null, ?\Pggns\MidocoApi\Order\StructType\CcToken $ccToken = null, ?int $position = null, ?string $transactionRefId = null)
     {
         $this
             ->setAuthCode($authCode)
@@ -96,6 +109,7 @@ class CcAuthorisation extends AbstractStructBase
             ->setCaptureExecuted($captureExecuted)
             ->setCcType($ccType)
             ->setCcNumber($ccNumber)
+            ->setAuthorisationExecuted($authorisationExecuted)
             ->setCcToken($ccToken)
             ->setPosition($position)
             ->setTransactionRefId($transactionRefId);
@@ -235,6 +249,29 @@ class CcAuthorisation extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($ccNumber, true), gettype($ccNumber)), __LINE__);
         }
         $this->ccNumber = $ccNumber;
+        
+        return $this;
+    }
+    /**
+     * Get authorisationExecuted value
+     * @return bool|null
+     */
+    public function getAuthorisationExecuted(): ?bool
+    {
+        return $this->authorisationExecuted;
+    }
+    /**
+     * Set authorisationExecuted value
+     * @param bool $authorisationExecuted
+     * @return \Pggns\MidocoApi\Order\StructType\CcAuthorisation
+     */
+    public function setAuthorisationExecuted(?bool $authorisationExecuted = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($authorisationExecuted) && !is_bool($authorisationExecuted)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($authorisationExecuted, true), gettype($authorisationExecuted)), __LINE__);
+        }
+        $this->authorisationExecuted = $authorisationExecuted;
         
         return $this;
     }

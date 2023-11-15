@@ -63,6 +63,11 @@ class CreditCardTypeType extends AbstractStructEnumBase
      */
     const VALUE_PV = 'PV';
     /**
+     * Constant for value 'PP'
+     * @return string 'PP'
+     */
+    const VALUE_PP = 'PP';
+    /**
      * Return allowed values
      * @uses self::VALUE_VI
      * @uses self::VALUE_MC
@@ -74,6 +79,7 @@ class CreditCardTypeType extends AbstractStructEnumBase
      * @uses self::VALUE_CB
      * @uses self::VALUE_TP
      * @uses self::VALUE_PV
+     * @uses self::VALUE_PP
      * @return string[]
      */
     public static function getValidValues(): array
@@ -89,6 +95,7 @@ class CreditCardTypeType extends AbstractStructEnumBase
             self::VALUE_CB,
             self::VALUE_TP,
             self::VALUE_PV,
+            self::VALUE_PP,
         ];
     }
 }

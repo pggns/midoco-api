@@ -34,20 +34,28 @@ class InvokeProcessOrderRequest extends AbstractStructBase
      */
     protected ?bool $forceSameConfirmationGroupForPrintedItems = null;
     /**
+     * The sourceOfRequest
+     * @var string|null
+     */
+    protected ?string $sourceOfRequest = null;
+    /**
      * Constructor method for InvokeProcessOrderRequest
      * @uses InvokeProcessOrderRequest::setOrderId()
      * @uses InvokeProcessOrderRequest::setPreventWorkflow()
      * @uses InvokeProcessOrderRequest::setForceSameConfirmationGroupForPrintedItems()
+     * @uses InvokeProcessOrderRequest::setSourceOfRequest()
      * @param int $orderId
      * @param bool $preventWorkflow
      * @param bool $forceSameConfirmationGroupForPrintedItems
+     * @param string $sourceOfRequest
      */
-    public function __construct(?int $orderId = null, ?bool $preventWorkflow = false, ?bool $forceSameConfirmationGroupForPrintedItems = false)
+    public function __construct(?int $orderId = null, ?bool $preventWorkflow = false, ?bool $forceSameConfirmationGroupForPrintedItems = false, ?string $sourceOfRequest = null)
     {
         $this
             ->setOrderId($orderId)
             ->setPreventWorkflow($preventWorkflow)
-            ->setForceSameConfirmationGroupForPrintedItems($forceSameConfirmationGroupForPrintedItems);
+            ->setForceSameConfirmationGroupForPrintedItems($forceSameConfirmationGroupForPrintedItems)
+            ->setSourceOfRequest($sourceOfRequest);
     }
     /**
      * Get orderId value
@@ -115,6 +123,29 @@ class InvokeProcessOrderRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($forceSameConfirmationGroupForPrintedItems, true), gettype($forceSameConfirmationGroupForPrintedItems)), __LINE__);
         }
         $this->forceSameConfirmationGroupForPrintedItems = $forceSameConfirmationGroupForPrintedItems;
+        
+        return $this;
+    }
+    /**
+     * Get sourceOfRequest value
+     * @return string|null
+     */
+    public function getSourceOfRequest(): ?string
+    {
+        return $this->sourceOfRequest;
+    }
+    /**
+     * Set sourceOfRequest value
+     * @param string $sourceOfRequest
+     * @return \Pggns\MidocoApi\Order\StructType\InvokeProcessOrderRequest
+     */
+    public function setSourceOfRequest(?string $sourceOfRequest = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($sourceOfRequest) && !is_string($sourceOfRequest)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($sourceOfRequest, true), gettype($sourceOfRequest)), __LINE__);
+        }
+        $this->sourceOfRequest = $sourceOfRequest;
         
         return $this;
     }

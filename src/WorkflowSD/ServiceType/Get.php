@@ -37,15 +37,13 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionRequest $paramGetMidocoTaskDefinitionRequest
-     * @param \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials
      * @return \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionResponse|bool
      */
-    public function getMidocoTaskDefinition(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionRequest $paramGetMidocoTaskDefinitionRequest, \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials)
+    public function getMidocoTaskDefinition(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionRequest $paramGetMidocoTaskDefinitionRequest)
     {
         try {
             $this->setResult($resultGetMidocoTaskDefinition = $this->getSoapClient()->__soapCall('getMidocoTaskDefinition', [
                 $paramGetMidocoTaskDefinitionRequest,
-                $credentials,
             ], [], [], $this->outputHeaders));
         
             return $resultGetMidocoTaskDefinition;
@@ -66,15 +64,13 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskPriorityRequest $paramGetMidocoTaskPriorityRequest
-     * @param \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials
      * @return \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskPriorityResponse|bool
      */
-    public function getMidocoTaskPriority(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskPriorityRequest $paramGetMidocoTaskPriorityRequest, \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials)
+    public function getMidocoTaskPriority(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskPriorityRequest $paramGetMidocoTaskPriorityRequest)
     {
         try {
             $this->setResult($resultGetMidocoTaskPriority = $this->getSoapClient()->__soapCall('getMidocoTaskPriority', [
                 $paramGetMidocoTaskPriorityRequest,
-                $credentials,
             ], [], [], $this->outputHeaders));
         
             return $resultGetMidocoTaskPriority;
@@ -95,15 +91,13 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionDescriptionRequest $paramGetMidocoTaskDefinitionDescriptionRequest
-     * @param \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials
      * @return \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionDescriptionResponse|bool
      */
-    public function getMidocoTaskDefinitionDescription(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionDescriptionRequest $paramGetMidocoTaskDefinitionDescriptionRequest, \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials)
+    public function getMidocoTaskDefinitionDescription(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskDefinitionDescriptionRequest $paramGetMidocoTaskDefinitionDescriptionRequest)
     {
         try {
             $this->setResult($resultGetMidocoTaskDefinitionDescription = $this->getSoapClient()->__soapCall('getMidocoTaskDefinitionDescription', [
                 $paramGetMidocoTaskDefinitionDescriptionRequest,
-                $credentials,
             ], [], [], $this->outputHeaders));
         
             return $resultGetMidocoTaskDefinitionDescription;
@@ -124,15 +118,13 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskQueueRequest $paramGetMidocoTaskQueueRequest
-     * @param \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials
      * @return \Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskQueueResponse|bool
      */
-    public function getMidocoTaskQueue(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskQueueRequest $paramGetMidocoTaskQueueRequest, \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials)
+    public function getMidocoTaskQueue(\Pggns\MidocoApi\WorkflowSD\StructType\GetMidocoTaskQueueRequest $paramGetMidocoTaskQueueRequest)
     {
         try {
             $this->setResult($resultGetMidocoTaskQueue = $this->getSoapClient()->__soapCall('getMidocoTaskQueue', [
                 $paramGetMidocoTaskQueueRequest,
-                $credentials,
             ], [], [], $this->outputHeaders));
         
             return $resultGetMidocoTaskQueue;
@@ -153,15 +145,13 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param \Pggns\MidocoApi\WorkflowSD\StructType\GetTaskViewRequest $paramGetTaskViewRequest
-     * @param \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials
      * @return \Pggns\MidocoApi\WorkflowSD\StructType\GetTaskViewResponse|bool
      */
-    public function getTaskView(\Pggns\MidocoApi\WorkflowSD\StructType\GetTaskViewRequest $paramGetTaskViewRequest, \Pggns\MidocoApi\WorkflowSD\StructType\MidocoCredentialsType $credentials)
+    public function getTaskView(\Pggns\MidocoApi\WorkflowSD\StructType\GetTaskViewRequest $paramGetTaskViewRequest)
     {
         try {
             $this->setResult($resultGetTaskView = $this->getSoapClient()->__soapCall('getTaskView', [
                 $paramGetTaskViewRequest,
-                $credentials,
             ], [], [], $this->outputHeaders));
         
             return $resultGetTaskView;

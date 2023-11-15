@@ -35,6 +35,11 @@ class SellRemarkDTO extends AbstractStructBase
      */
     protected ?bool $isAutoPrint = null;
     /**
+     * The isManuallyCreated
+     * @var bool|null
+     */
+    protected ?bool $isManuallyCreated = null;
+    /**
      * The itemId
      * @var int|null
      */
@@ -100,6 +105,7 @@ class SellRemarkDTO extends AbstractStructBase
      * @uses SellRemarkDTO::setCreationUser()
      * @uses SellRemarkDTO::setImportHashvalue()
      * @uses SellRemarkDTO::setIsAutoPrint()
+     * @uses SellRemarkDTO::setIsManuallyCreated()
      * @uses SellRemarkDTO::setItemId()
      * @uses SellRemarkDTO::setModifyTimestamp()
      * @uses SellRemarkDTO::setModifyUser()
@@ -116,6 +122,7 @@ class SellRemarkDTO extends AbstractStructBase
      * @param int $creationUser
      * @param int $importHashvalue
      * @param bool $isAutoPrint
+     * @param bool $isManuallyCreated
      * @param int $itemId
      * @param string $modifyTimestamp
      * @param int $modifyUser
@@ -129,13 +136,14 @@ class SellRemarkDTO extends AbstractStructBase
      * @param int $servicePosition
      * @param bool $tokenChecked
      */
-    public function __construct(?string $creationTimestamp = null, ?int $creationUser = null, ?int $importHashvalue = null, ?bool $isAutoPrint = null, ?int $itemId = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notifyDate = null, ?string $notifyUnit = null, ?int $positionNo = null, ?bool $printAllowed = null, ?string $printMarker = null, ?string $printType = null, ?string $remark = null, ?int $servicePosition = null, ?bool $tokenChecked = null)
+    public function __construct(?string $creationTimestamp = null, ?int $creationUser = null, ?int $importHashvalue = null, ?bool $isAutoPrint = null, ?bool $isManuallyCreated = null, ?int $itemId = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?string $notifyDate = null, ?string $notifyUnit = null, ?int $positionNo = null, ?bool $printAllowed = null, ?string $printMarker = null, ?string $printType = null, ?string $remark = null, ?int $servicePosition = null, ?bool $tokenChecked = null)
     {
         $this
             ->setCreationTimestamp($creationTimestamp)
             ->setCreationUser($creationUser)
             ->setImportHashvalue($importHashvalue)
             ->setIsAutoPrint($isAutoPrint)
+            ->setIsManuallyCreated($isManuallyCreated)
             ->setItemId($itemId)
             ->setModifyTimestamp($modifyTimestamp)
             ->setModifyUser($modifyUser)
@@ -238,6 +246,29 @@ class SellRemarkDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isAutoPrint, true), gettype($isAutoPrint)), __LINE__);
         }
         $this->isAutoPrint = $isAutoPrint;
+        
+        return $this;
+    }
+    /**
+     * Get isManuallyCreated value
+     * @return bool|null
+     */
+    public function getIsManuallyCreated(): ?bool
+    {
+        return $this->isManuallyCreated;
+    }
+    /**
+     * Set isManuallyCreated value
+     * @param bool $isManuallyCreated
+     * @return \Pggns\MidocoApi\Orderlists\StructType\SellRemarkDTO
+     */
+    public function setIsManuallyCreated(?bool $isManuallyCreated = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isManuallyCreated) && !is_bool($isManuallyCreated)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isManuallyCreated, true), gettype($isManuallyCreated)), __LINE__);
+        }
+        $this->isManuallyCreated = $isManuallyCreated;
         
         return $this;
     }

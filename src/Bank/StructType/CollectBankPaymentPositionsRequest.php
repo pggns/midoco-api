@@ -63,6 +63,11 @@ class CollectBankPaymentPositionsRequest extends AbstractStructBase
      */
     protected ?array $SepaTransactionType = null;
     /**
+     * The creditorSelected
+     * @var bool|null
+     */
+    protected ?bool $creditorSelected = null;
+    /**
      * The creditorFrom
      * @var string|null
      */
@@ -72,6 +77,11 @@ class CollectBankPaymentPositionsRequest extends AbstractStructBase
      * @var string|null
      */
     protected ?string $creditorTo = null;
+    /**
+     * The debitorSelected
+     * @var bool|null
+     */
+    protected ?bool $debitorSelected = null;
     /**
      * The debitorFrom
      * @var string|null
@@ -98,8 +108,10 @@ class CollectBankPaymentPositionsRequest extends AbstractStructBase
      * @uses CollectBankPaymentPositionsRequest::setPaymentType()
      * @uses CollectBankPaymentPositionsRequest::setDebitType()
      * @uses CollectBankPaymentPositionsRequest::setSepaTransactionType()
+     * @uses CollectBankPaymentPositionsRequest::setCreditorSelected()
      * @uses CollectBankPaymentPositionsRequest::setCreditorFrom()
      * @uses CollectBankPaymentPositionsRequest::setCreditorTo()
+     * @uses CollectBankPaymentPositionsRequest::setDebitorSelected()
      * @uses CollectBankPaymentPositionsRequest::setDebitorFrom()
      * @uses CollectBankPaymentPositionsRequest::setDebitorTo()
      * @uses CollectBankPaymentPositionsRequest::setMediatorId()
@@ -112,13 +124,15 @@ class CollectBankPaymentPositionsRequest extends AbstractStructBase
      * @param int $paymentType
      * @param int $debitType
      * @param string[] $sepaTransactionType
+     * @param bool $creditorSelected
      * @param string $creditorFrom
      * @param string $creditorTo
+     * @param bool $debitorSelected
      * @param string $debitorFrom
      * @param string $debitorTo
      * @param string $mediatorId
      */
-    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountCountry = null, ?string $iban = null, ?string $swiftBicCode = null, ?string $perDate = null, ?int $paymentType = null, ?int $debitType = null, ?array $sepaTransactionType = null, ?string $creditorFrom = null, ?string $creditorTo = null, ?string $debitorFrom = null, ?string $debitorTo = null, ?string $mediatorId = null)
+    public function __construct(?string $accountNo = null, ?string $accountBlz = null, ?string $accountCountry = null, ?string $iban = null, ?string $swiftBicCode = null, ?string $perDate = null, ?int $paymentType = null, ?int $debitType = null, ?array $sepaTransactionType = null, ?bool $creditorSelected = null, ?string $creditorFrom = null, ?string $creditorTo = null, ?bool $debitorSelected = null, ?string $debitorFrom = null, ?string $debitorTo = null, ?string $mediatorId = null)
     {
         $this
             ->setAccountNo($accountNo)
@@ -130,8 +144,10 @@ class CollectBankPaymentPositionsRequest extends AbstractStructBase
             ->setPaymentType($paymentType)
             ->setDebitType($debitType)
             ->setSepaTransactionType($sepaTransactionType)
+            ->setCreditorSelected($creditorSelected)
             ->setCreditorFrom($creditorFrom)
             ->setCreditorTo($creditorTo)
+            ->setDebitorSelected($debitorSelected)
             ->setDebitorFrom($debitorFrom)
             ->setDebitorTo($debitorTo)
             ->setMediatorId($mediatorId);
@@ -392,6 +408,29 @@ class CollectBankPaymentPositionsRequest extends AbstractStructBase
         return $this;
     }
     /**
+     * Get creditorSelected value
+     * @return bool|null
+     */
+    public function getCreditorSelected(): ?bool
+    {
+        return $this->creditorSelected;
+    }
+    /**
+     * Set creditorSelected value
+     * @param bool $creditorSelected
+     * @return \Pggns\MidocoApi\Bank\StructType\CollectBankPaymentPositionsRequest
+     */
+    public function setCreditorSelected(?bool $creditorSelected = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($creditorSelected) && !is_bool($creditorSelected)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($creditorSelected, true), gettype($creditorSelected)), __LINE__);
+        }
+        $this->creditorSelected = $creditorSelected;
+        
+        return $this;
+    }
+    /**
      * Get creditorFrom value
      * @return string|null
      */
@@ -434,6 +473,29 @@ class CollectBankPaymentPositionsRequest extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($creditorTo, true), gettype($creditorTo)), __LINE__);
         }
         $this->creditorTo = $creditorTo;
+        
+        return $this;
+    }
+    /**
+     * Get debitorSelected value
+     * @return bool|null
+     */
+    public function getDebitorSelected(): ?bool
+    {
+        return $this->debitorSelected;
+    }
+    /**
+     * Set debitorSelected value
+     * @param bool $debitorSelected
+     * @return \Pggns\MidocoApi\Bank\StructType\CollectBankPaymentPositionsRequest
+     */
+    public function setDebitorSelected(?bool $debitorSelected = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($debitorSelected) && !is_bool($debitorSelected)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($debitorSelected, true), gettype($debitorSelected)), __LINE__);
+        }
+        $this->debitorSelected = $debitorSelected;
         
         return $this;
     }

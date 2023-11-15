@@ -25,6 +25,11 @@ class OrderRemarkDTO extends AbstractStructBase
      */
     protected ?int $creationUser = null;
     /**
+     * The isManuallyCreated
+     * @var bool|null
+     */
+    protected ?bool $isManuallyCreated = null;
+    /**
      * The modifyTimestamp
      * @var string|null
      */
@@ -68,6 +73,7 @@ class OrderRemarkDTO extends AbstractStructBase
      * Constructor method for OrderRemarkDTO
      * @uses OrderRemarkDTO::setCreationTimestamp()
      * @uses OrderRemarkDTO::setCreationUser()
+     * @uses OrderRemarkDTO::setIsManuallyCreated()
      * @uses OrderRemarkDTO::setModifyTimestamp()
      * @uses OrderRemarkDTO::setModifyUser()
      * @uses OrderRemarkDTO::setOrderId()
@@ -78,6 +84,7 @@ class OrderRemarkDTO extends AbstractStructBase
      * @uses OrderRemarkDTO::setRemark()
      * @param string $creationTimestamp
      * @param int $creationUser
+     * @param bool $isManuallyCreated
      * @param string $modifyTimestamp
      * @param int $modifyUser
      * @param int $orderId
@@ -87,11 +94,12 @@ class OrderRemarkDTO extends AbstractStructBase
      * @param string $printType
      * @param string $remark
      */
-    public function __construct(?string $creationTimestamp = null, ?int $creationUser = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?int $orderId = null, ?int $position = null, ?bool $printAllowed = null, ?string $printMarker = null, ?string $printType = null, ?string $remark = null)
+    public function __construct(?string $creationTimestamp = null, ?int $creationUser = null, ?bool $isManuallyCreated = null, ?string $modifyTimestamp = null, ?int $modifyUser = null, ?int $orderId = null, ?int $position = null, ?bool $printAllowed = null, ?string $printMarker = null, ?string $printType = null, ?string $remark = null)
     {
         $this
             ->setCreationTimestamp($creationTimestamp)
             ->setCreationUser($creationUser)
+            ->setIsManuallyCreated($isManuallyCreated)
             ->setModifyTimestamp($modifyTimestamp)
             ->setModifyUser($modifyUser)
             ->setOrderId($orderId)
@@ -144,6 +152,29 @@ class OrderRemarkDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($creationUser, true), gettype($creationUser)), __LINE__);
         }
         $this->creationUser = $creationUser;
+        
+        return $this;
+    }
+    /**
+     * Get isManuallyCreated value
+     * @return bool|null
+     */
+    public function getIsManuallyCreated(): ?bool
+    {
+        return $this->isManuallyCreated;
+    }
+    /**
+     * Set isManuallyCreated value
+     * @param bool $isManuallyCreated
+     * @return \Pggns\MidocoApi\Documents\StructType\OrderRemarkDTO
+     */
+    public function setIsManuallyCreated(?bool $isManuallyCreated = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isManuallyCreated) && !is_bool($isManuallyCreated)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isManuallyCreated, true), gettype($isManuallyCreated)), __LINE__);
+        }
+        $this->isManuallyCreated = $isManuallyCreated;
         
         return $this;
     }

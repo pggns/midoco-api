@@ -36,9 +36,9 @@ class Customer_1 extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 0
      * - ref: Address
-     * @var \Pggns\MidocoApi\Order\StructType\Address_1|null
+     * @var \Pggns\MidocoApi\Order\StructType\Address|null
      */
-    protected ?\Pggns\MidocoApi\Order\StructType\Address_1 $Address = null;
+    protected ?\Pggns\MidocoApi\Order\StructType\Address $Address = null;
     /**
      * The Communication
      * Meta information extracted from the WSDL
@@ -124,7 +124,7 @@ class Customer_1 extends AbstractStructBase
      * @uses Customer_1::setOverrideExistingOrderCustomer()
      * @param \Pggns\MidocoApi\Order\StructType\PrivateData_1 $privateData
      * @param \Pggns\MidocoApi\Order\StructType\CompanyData_1 $companyData
-     * @param \Pggns\MidocoApi\Order\StructType\Address_1 $address
+     * @param \Pggns\MidocoApi\Order\StructType\Address $address
      * @param \Pggns\MidocoApi\Order\StructType\Communication_1[] $communication
      * @param int[] $creditCardRefId
      * @param int[] $bankAccountRefId
@@ -135,7 +135,7 @@ class Customer_1 extends AbstractStructBase
      * @param string $type
      * @param bool $overrideExistingOrderCustomer
      */
-    public function __construct(?\Pggns\MidocoApi\Order\StructType\PrivateData_1 $privateData = null, ?\Pggns\MidocoApi\Order\StructType\CompanyData_1 $companyData = null, ?\Pggns\MidocoApi\Order\StructType\Address_1 $address = null, ?array $communication = null, ?array $creditCardRefId = null, ?array $bankAccountRefId = null, ?int $midocoCustomerId = null, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?string $type = 'INVOICE', ?bool $overrideExistingOrderCustomer = false)
+    public function __construct(?\Pggns\MidocoApi\Order\StructType\PrivateData_1 $privateData = null, ?\Pggns\MidocoApi\Order\StructType\CompanyData_1 $companyData = null, ?\Pggns\MidocoApi\Order\StructType\Address $address = null, ?array $communication = null, ?array $creditCardRefId = null, ?array $bankAccountRefId = null, ?int $midocoCustomerId = null, ?string $referenceCustomerId = null, ?string $referenceSystem = null, ?string $referenceUrl = null, ?string $type = 'INVOICE', ?bool $overrideExistingOrderCustomer = false)
     {
         $this
             ->setPrivateData($privateData)
@@ -191,18 +191,18 @@ class Customer_1 extends AbstractStructBase
     }
     /**
      * Get Address value
-     * @return \Pggns\MidocoApi\Order\StructType\Address_1|null
+     * @return \Pggns\MidocoApi\Order\StructType\Address|null
      */
-    public function getAddress(): ?\Pggns\MidocoApi\Order\StructType\Address_1
+    public function getAddress(): ?\Pggns\MidocoApi\Order\StructType\Address
     {
         return $this->Address;
     }
     /**
      * Set Address value
-     * @param \Pggns\MidocoApi\Order\StructType\Address_1 $address
+     * @param \Pggns\MidocoApi\Order\StructType\Address $address
      * @return \Pggns\MidocoApi\Order\StructType\Customer_1
      */
-    public function setAddress(?\Pggns\MidocoApi\Order\StructType\Address_1 $address = null): self
+    public function setAddress(?\Pggns\MidocoApi\Order\StructType\Address $address = null): self
     {
         $this->Address = $address;
         

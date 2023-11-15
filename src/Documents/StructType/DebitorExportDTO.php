@@ -20,6 +20,11 @@ class DebitorExportDTO extends AbstractStructBase
      */
     protected ?string $debitorNo = null;
     /**
+     * The exportDate
+     * @var string|null
+     */
+    protected ?string $exportDate = null;
+    /**
      * The lastExportData
      * @var string|null
      */
@@ -27,14 +32,17 @@ class DebitorExportDTO extends AbstractStructBase
     /**
      * Constructor method for DebitorExportDTO
      * @uses DebitorExportDTO::setDebitorNo()
+     * @uses DebitorExportDTO::setExportDate()
      * @uses DebitorExportDTO::setLastExportData()
      * @param string $debitorNo
+     * @param string $exportDate
      * @param string $lastExportData
      */
-    public function __construct(?string $debitorNo = null, ?string $lastExportData = null)
+    public function __construct(?string $debitorNo = null, ?string $exportDate = null, ?string $lastExportData = null)
     {
         $this
             ->setDebitorNo($debitorNo)
+            ->setExportDate($exportDate)
             ->setLastExportData($lastExportData);
     }
     /**
@@ -57,6 +65,29 @@ class DebitorExportDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($debitorNo, true), gettype($debitorNo)), __LINE__);
         }
         $this->debitorNo = $debitorNo;
+        
+        return $this;
+    }
+    /**
+     * Get exportDate value
+     * @return string|null
+     */
+    public function getExportDate(): ?string
+    {
+        return $this->exportDate;
+    }
+    /**
+     * Set exportDate value
+     * @param string $exportDate
+     * @return \Pggns\MidocoApi\Documents\StructType\DebitorExportDTO
+     */
+    public function setExportDate(?string $exportDate = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($exportDate) && !is_string($exportDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($exportDate, true), gettype($exportDate)), __LINE__);
+        }
+        $this->exportDate = $exportDate;
         
         return $this;
     }

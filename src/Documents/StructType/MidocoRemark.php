@@ -75,6 +75,11 @@ class MidocoRemark extends AbstractStructBase
      */
     protected ?string $printMarker = null;
     /**
+     * The isManuallyCreated
+     * @var bool|null
+     */
+    protected ?bool $isManuallyCreated = null;
+    /**
      * Constructor method for MidocoRemark
      * @uses MidocoRemark::setItemId()
      * @uses MidocoRemark::setPositionNo()
@@ -88,6 +93,7 @@ class MidocoRemark extends AbstractStructBase
      * @uses MidocoRemark::setPrintType()
      * @uses MidocoRemark::setServicePosition()
      * @uses MidocoRemark::setPrintMarker()
+     * @uses MidocoRemark::setIsManuallyCreated()
      * @param int $itemId
      * @param int $positionNo
      * @param bool $printAllowed
@@ -100,8 +106,9 @@ class MidocoRemark extends AbstractStructBase
      * @param string $printType
      * @param int $servicePosition
      * @param string $printMarker
+     * @param bool $isManuallyCreated
      */
-    public function __construct(?int $itemId = null, ?int $positionNo = null, ?bool $printAllowed = null, ?bool $isAutoPrint = null, ?string $remark = null, ?int $creationUser = null, ?string $creationTimestamp = null, ?int $modifyUser = null, ?string $modifyTimestamp = null, ?string $printType = null, ?int $servicePosition = null, ?string $printMarker = null)
+    public function __construct(?int $itemId = null, ?int $positionNo = null, ?bool $printAllowed = null, ?bool $isAutoPrint = null, ?string $remark = null, ?int $creationUser = null, ?string $creationTimestamp = null, ?int $modifyUser = null, ?string $modifyTimestamp = null, ?string $printType = null, ?int $servicePosition = null, ?string $printMarker = null, ?bool $isManuallyCreated = null)
     {
         $this
             ->setItemId($itemId)
@@ -115,7 +122,8 @@ class MidocoRemark extends AbstractStructBase
             ->setModifyTimestamp($modifyTimestamp)
             ->setPrintType($printType)
             ->setServicePosition($servicePosition)
-            ->setPrintMarker($printMarker);
+            ->setPrintMarker($printMarker)
+            ->setIsManuallyCreated($isManuallyCreated);
     }
     /**
      * Get itemId value
@@ -390,6 +398,29 @@ class MidocoRemark extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($printMarker, true), gettype($printMarker)), __LINE__);
         }
         $this->printMarker = $printMarker;
+        
+        return $this;
+    }
+    /**
+     * Get isManuallyCreated value
+     * @return bool|null
+     */
+    public function getIsManuallyCreated(): ?bool
+    {
+        return $this->isManuallyCreated;
+    }
+    /**
+     * Set isManuallyCreated value
+     * @param bool $isManuallyCreated
+     * @return \Pggns\MidocoApi\Documents\StructType\MidocoRemark
+     */
+    public function setIsManuallyCreated(?bool $isManuallyCreated = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($isManuallyCreated) && !is_bool($isManuallyCreated)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($isManuallyCreated, true), gettype($isManuallyCreated)), __LINE__);
+        }
+        $this->isManuallyCreated = $isManuallyCreated;
         
         return $this;
     }

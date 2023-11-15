@@ -45,9 +45,20 @@ class Cc_authorisation extends AbstractStructBase
     protected ?string $cc_type = null;
     /**
      * The cc_number
+     * Meta information extracted from the WSDL
+     * - documentation: mandatory for cc payment, not mandatory for paypal via cc Provider
+     * - minOccurs: 0
      * @var string|null
      */
     protected ?string $cc_number = null;
+    /**
+     * The authorisation_executed
+     * Meta information extracted from the WSDL
+     * - documentation: authorisation-executed = true, paypal transaction is authenticated and autorised , otherwise only authenticated | not mandatory for cc payment, mandatory for paypal via cc Provider
+     * - minOccurs: 0
+     * @var bool|null
+     */
+    protected ?bool $authorisation_executed = null;
     /**
      * The cc_token
      * Meta information extracted from the WSDL
@@ -74,6 +85,7 @@ class Cc_authorisation extends AbstractStructBase
      * @uses Cc_authorisation::setCapture_executed()
      * @uses Cc_authorisation::setCc_type()
      * @uses Cc_authorisation::setCc_number()
+     * @uses Cc_authorisation::setAuthorisation_executed()
      * @uses Cc_authorisation::setCc_token()
      * @uses Cc_authorisation::setPosition()
      * @uses Cc_authorisation::setTransaction_ref_id()
@@ -83,11 +95,12 @@ class Cc_authorisation extends AbstractStructBase
      * @param bool $capture_executed
      * @param string $cc_type
      * @param string $cc_number
+     * @param bool $authorisation_executed
      * @param \Pggns\MidocoApi\Documents\StructType\Cc_token $cc_token
      * @param int $position
      * @param string $transaction_ref_id
      */
-    public function __construct(?string $auth_code = null, ?float $auth_amount = null, ?string $currency = null, ?bool $capture_executed = null, ?string $cc_type = null, ?string $cc_number = null, ?\Pggns\MidocoApi\Documents\StructType\Cc_token $cc_token = null, ?int $position = null, ?string $transaction_ref_id = null)
+    public function __construct(?string $auth_code = null, ?float $auth_amount = null, ?string $currency = null, ?bool $capture_executed = null, ?string $cc_type = null, ?string $cc_number = null, ?bool $authorisation_executed = null, ?\Pggns\MidocoApi\Documents\StructType\Cc_token $cc_token = null, ?int $position = null, ?string $transaction_ref_id = null)
     {
         $this
             ->setAuth_code($auth_code)
@@ -96,6 +109,7 @@ class Cc_authorisation extends AbstractStructBase
             ->setCapture_executed($capture_executed)
             ->setCc_type($cc_type)
             ->setCc_number($cc_number)
+            ->setAuthorisation_executed($authorisation_executed)
             ->setCc_token($cc_token)
             ->setPosition($position)
             ->setTransaction_ref_id($transaction_ref_id);
@@ -235,6 +249,29 @@ class Cc_authorisation extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($cc_number, true), gettype($cc_number)), __LINE__);
         }
         $this->cc_number = $this->{'cc-number'} = $cc_number;
+        
+        return $this;
+    }
+    /**
+     * Get authorisation_executed value
+     * @return bool|null
+     */
+    public function getAuthorisation_executed(): ?bool
+    {
+        return $this->{'authorisation-executed'};
+    }
+    /**
+     * Set authorisation_executed value
+     * @param bool $authorisation_executed
+     * @return \Pggns\MidocoApi\Documents\StructType\Cc_authorisation
+     */
+    public function setAuthorisation_executed(?bool $authorisation_executed = null): self
+    {
+        // validation for constraint: boolean
+        if (!is_null($authorisation_executed) && !is_bool($authorisation_executed)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a bool, %s given', var_export($authorisation_executed, true), gettype($authorisation_executed)), __LINE__);
+        }
+        $this->authorisation_executed = $this->{'authorisation-executed'} = $authorisation_executed;
         
         return $this;
     }

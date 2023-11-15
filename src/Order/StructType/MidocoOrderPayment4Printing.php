@@ -64,6 +64,11 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
      */
     protected ?int $itemId = null;
     /**
+     * The paymentMethod
+     * @var string|null
+     */
+    protected ?string $paymentMethod = null;
+    /**
      * Constructor method for MidocoOrderPayment4Printing
      * @uses MidocoOrderPayment4Printing::setPaymentDate()
      * @uses MidocoOrderPayment4Printing::setPaymentAmount()
@@ -74,6 +79,7 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
      * @uses MidocoOrderPayment4Printing::setCcTypeDesc()
      * @uses MidocoOrderPayment4Printing::setIsExecuted()
      * @uses MidocoOrderPayment4Printing::setItemId()
+     * @uses MidocoOrderPayment4Printing::setPaymentMethod()
      * @param string $paymentDate
      * @param float $paymentAmount
      * @param string $paymentCurrency
@@ -83,8 +89,9 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
      * @param string $ccTypeDesc
      * @param bool $isExecuted
      * @param int $itemId
+     * @param string $paymentMethod
      */
-    public function __construct(?string $paymentDate = null, ?float $paymentAmount = null, ?string $paymentCurrency = null, ?string $inkassoType = null, ?string $paymentType = null, ?string $ccType = null, ?string $ccTypeDesc = null, ?bool $isExecuted = null, ?int $itemId = null)
+    public function __construct(?string $paymentDate = null, ?float $paymentAmount = null, ?string $paymentCurrency = null, ?string $inkassoType = null, ?string $paymentType = null, ?string $ccType = null, ?string $ccTypeDesc = null, ?bool $isExecuted = null, ?int $itemId = null, ?string $paymentMethod = null)
     {
         $this
             ->setPaymentDate($paymentDate)
@@ -95,7 +102,8 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
             ->setCcType($ccType)
             ->setCcTypeDesc($ccTypeDesc)
             ->setIsExecuted($isExecuted)
-            ->setItemId($itemId);
+            ->setItemId($itemId)
+            ->setPaymentMethod($paymentMethod);
     }
     /**
      * Get paymentDate value
@@ -301,6 +309,29 @@ class MidocoOrderPayment4Printing extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($itemId, true), gettype($itemId)), __LINE__);
         }
         $this->itemId = $itemId;
+        
+        return $this;
+    }
+    /**
+     * Get paymentMethod value
+     * @return string|null
+     */
+    public function getPaymentMethod(): ?string
+    {
+        return $this->paymentMethod;
+    }
+    /**
+     * Set paymentMethod value
+     * @param string $paymentMethod
+     * @return \Pggns\MidocoApi\Order\StructType\MidocoOrderPayment4Printing
+     */
+    public function setPaymentMethod(?string $paymentMethod = null): self
+    {
+        // validation for constraint: string
+        if (!is_null($paymentMethod) && !is_string($paymentMethod)) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($paymentMethod, true), gettype($paymentMethod)), __LINE__);
+        }
+        $this->paymentMethod = $paymentMethod;
         
         return $this;
     }

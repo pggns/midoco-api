@@ -110,6 +110,11 @@ class DatahubQueueDTO extends AbstractStructBase
      */
     protected ?string $systemId = null;
     /**
+     * The tryNo
+     * @var int|null
+     */
+    protected ?int $tryNo = null;
+    /**
      * The unitName
      * @var string|null
      */
@@ -135,6 +140,7 @@ class DatahubQueueDTO extends AbstractStructBase
      * @uses DatahubQueueDTO::setReservationId()
      * @uses DatahubQueueDTO::setSalesChannel()
      * @uses DatahubQueueDTO::setSystemId()
+     * @uses DatahubQueueDTO::setTryNo()
      * @uses DatahubQueueDTO::setUnitName()
      * @param string $creationTime
      * @param string $env
@@ -155,9 +161,10 @@ class DatahubQueueDTO extends AbstractStructBase
      * @param string $reservationId
      * @param string $salesChannel
      * @param string $systemId
+     * @param int $tryNo
      * @param string $unitName
      */
-    public function __construct(?string $creationTime = null, ?string $env = null, ?string $externalSystem = null, ?int $id = null, ?string $importError = null, ?int $importUser = null, ?string $importableAloneAfter = null, ?bool $isIgnored = null, ?bool $isImportableAlone = null, ?bool $isImported = null, ?bool $isProcessed = null, ?string $messageBytes = null, ?string $messageType = null, ?int $orderId = null, ?string $processedTime = null, ?string $processingStart = null, ?string $reservationId = null, ?string $salesChannel = null, ?string $systemId = null, ?string $unitName = null)
+    public function __construct(?string $creationTime = null, ?string $env = null, ?string $externalSystem = null, ?int $id = null, ?string $importError = null, ?int $importUser = null, ?string $importableAloneAfter = null, ?bool $isIgnored = null, ?bool $isImportableAlone = null, ?bool $isImported = null, ?bool $isProcessed = null, ?string $messageBytes = null, ?string $messageType = null, ?int $orderId = null, ?string $processedTime = null, ?string $processingStart = null, ?string $reservationId = null, ?string $salesChannel = null, ?string $systemId = null, ?int $tryNo = null, ?string $unitName = null)
     {
         $this
             ->setCreationTime($creationTime)
@@ -179,6 +186,7 @@ class DatahubQueueDTO extends AbstractStructBase
             ->setReservationId($reservationId)
             ->setSalesChannel($salesChannel)
             ->setSystemId($systemId)
+            ->setTryNo($tryNo)
             ->setUnitName($unitName);
     }
     /**
@@ -615,6 +623,29 @@ class DatahubQueueDTO extends AbstractStructBase
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($systemId, true), gettype($systemId)), __LINE__);
         }
         $this->systemId = $systemId;
+        
+        return $this;
+    }
+    /**
+     * Get tryNo value
+     * @return int|null
+     */
+    public function getTryNo(): ?int
+    {
+        return $this->tryNo;
+    }
+    /**
+     * Set tryNo value
+     * @param int $tryNo
+     * @return \Pggns\MidocoApi\Orderlists\StructType\DatahubQueueDTO
+     */
+    public function setTryNo(?int $tryNo = null): self
+    {
+        // validation for constraint: int
+        if (!is_null($tryNo) && !(is_int($tryNo) || ctype_digit($tryNo))) {
+            throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($tryNo, true), gettype($tryNo)), __LINE__);
+        }
+        $this->tryNo = $tryNo;
         
         return $this;
     }
